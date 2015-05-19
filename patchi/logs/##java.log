@@ -1,0 +1,23 @@
+**** BEGIN LOGGING AT Fri May 08 19:36:29 2015
+
+*	Now talking on ##java
+*	Topic for ##java is: Welcome! || Read http://javachannel.org/ before participating. || Paste limit is two lines; ~pastebin lists options. || No applets, please. || Minecraft, Android, and Javascript all have their own channel.
+*	Topic for ##java set by tjsnell (Tue Dec 23 09:34:37 2014)
+-ChanServ-	[##java] Please read the topic for basic channel guidelines. Thanks.
+<DarkElement>	 guys how can my java function accept any value as a parameter?
+<mebigfatguy>	ddefine the parm as Object
+<DarkElement>	ahh,thnaks
+<DarkElement>	It does not work with double, however.
+<mebigfatguy>	it would work for Double
+<DarkElement>		public static void print(Object var){
+<DarkElement>			System.out.println(var);
+<DarkElement>		}
+<DarkElement>	trying to do this, "not applicable"
+<mebigfatguy>	print(Double.valueOf(1.1))
+<ojacobson>	DarkElement: javac -version?
+<mebigfatguy>	you can't specify a parmaeter type that handles both primitive values and objects
+<DarkElement>	alright
+<i-make-robots>	mebigfatguy - thanks for trying to help.  I'll probably just use export for now and fix maven in the next edition.
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Fri May 08 20:51:12 2015
+

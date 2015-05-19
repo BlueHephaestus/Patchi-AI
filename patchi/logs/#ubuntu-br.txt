@@ -1,0 +1,279 @@
+[00:00] <rafaelsoaresbr_> Robfisico, desativou secure boot? se funcionava antes ou vc resetou/atualizou a bios
+[00:00] <rafaelsoaresbr_> Robfisico, tenta se lembrar o que vc fez.
+[00:01] <Robfisico> rafaelsoaresbr_: O meu note n tem a opcao (Positivo Premium S5005)
+[00:01] <Robfisico> rafaelsoaresbr_: Vou tentar sim
+[00:02] <rafaelsoaresbr_> Robfisico, vc reinstalou o windows recentemente? deveria ter instalado em partição MBR comum
+[00:03] <Robfisico> rafaelsoaresbr_: Reinstalei sim
+[00:04] <rafaelsoaresbr_> Robfisico, na BIOS está setado AHCI ou IDE?
+[00:05] <rafaelsoaresbr_> Robfisico, se bem que se você mudar essa opção o windows vai dar tela azul
+[00:07] <Robfisico> rafaelsoaresbr_: AHCI
+[01:27] <shallwe> boa noite galera
+[01:29] <astroo-> ola
+[01:29] <shallwe> alguem assim por acaso usando drive ati no ubuntu? estou usando o 14.04 e tenho uma Radeon 6290 , é onboard
+[01:30] <shallwe> mas esta dando erro na hora de instalar o drive proprietário simplesmente nao vai!
+[01:34] <shallwe> Alguém com placa de vídeo da AMD com drive proprietário?
+[01:35] <astroo-> da uns 15 minutos pela possivel resposta de alguem
+[01:43] <shallwe> sabadao a noite eu não espero muito não :)
+[01:46] <astroo-> pior em geral e sexta
+[01:49] <shallwe> kkk
+[01:50] <astroo-> ve o privado
+[02:00] <ary> Opa. Alguém sabe me dizer como instalo o flashplugin no opera?
+[02:03] <ary> Opa. Alguém sabe me dizer como instalo o flashplugin no opera?
+[02:07] <astroo-> ola
+[03:52] <astroo-> ciao pessoal
+=== marcos is now known as Guest78587
+[06:39] <Guest78587> Alguém online?
+[07:06] <Chadus> Fala povo, bom dia
+[07:07] <Chadus> Alguém pode me dar uma força para fazer dual boot com w8?
+[13:37] <rafaelsoaresbr_> Bom dia moçada.
+=== rafaelsoaresbr_ is now known as rafaelsoaresbr
+[14:27] <augustot1> olá
+[14:27] <augustot1> olá
+[17:00] <marcelomauro> bom dia. Alguém teria uma indicação de literatura sobre as especificações do sistema de arquivo EXT (do 1 ao 4). Estou precisando estudar sobre o assunto para apresentar um seminário e tenho encontrado apenas artigos de blogs. Precisando de algo mais completo.
+[17:09] <rafaelsoaresbr> marcelomauro, infelizmente é difícil encontrar material em pt-br
+[17:09] <marcelomauro> pode ser ingles
+[17:09] <marcelomauro> sem problema
+[17:16] <mirqui> boa tarde :)
+[17:23] <Elfon_> marcelomauro: www.vivaolinux.com.br/artigo/Sistemas-de-arquivos-para-GNU-Linux
+[17:27] <marcelomauro> Elfon_, cara eu até já li este. Acontece que a maioria das fontes que ele usa é a Wikipedia, ou seja, fontes secundária. Estou precisando de indicação de fontes primárias, com a própria documentação do sistema de arquivo ou coisa do tipo.
+[17:27] <marcelomauro> mas obrigado por ajudar
+[17:28] <Elfon_> ah sim. Se você quer um artigo científico aí  tem que procurar em algum periodoco
+[17:29] <Elfon_> só  que não conheço nenhum
+[17:30] <marcelomauro> pronto, é isso que eu preciso. Trabalho de faculdade e já coletando dados pro TCC
+[17:30] <marcelomauro> valeu mano
+[17:31] <mirqui> marcelo , olha isto
+[17:31] <mirqui> https://www.ecosia.org/search?q=GNU%2FLinux+atuais%2C+tais+como+ext3%2C+ext4%2C+XFS%2C+JFS+e+ReiserFS+%2B+fontes+primarias&addon=opensearch
+[17:32] <mirqui> vê se ajuda
+[17:33] <mirqui> http://pt.slideshare.net/michaelnickolas/apostila-so
+[17:35] <marcelomauro> este ultimo é o que mais sse aproxima. Mas o cara apenas parafrasea o Tanembaum (usa até figuras do livro dele, rsrs)
+[17:36] <mirqui> sinto muito , nem sei do que se trata , só lancei no buscador
+[17:37] <marcelomauro> agradeço irmão
+[17:39] <marcelomauro> eu preciso dar uma palestra sobre sistema de arquivo com log (e consequentemente journaling). Foram divididas as tarefas e cada mebro falará de um tipo distinto (reserfs, hfs, ntfs...) A mim coube a familia EXT ( EXT, EXT2, EXT3, EXT4).
+[17:40] <marcelomauro> Já encontrei inumeros artigos em blogs e portais da net, mas preciso de livros, ou especificações técnicas para dar mais credibilidade
+[17:40] <mirqui> no ecosia tem pouca coisa , mas no google tem bastante
+[17:40] <mirqui> https://www.google.com.br/?gws_rd=ssl#q=+distribui%C3%A7%C3%B5es+GNU%2FLinux+atuais%2C+tais+como+ext3%2C+ext4%2C+XFS%2C+JFS+e+ReiserFS+%2B+fontes+prim%C3%A1rias
+[17:41] <marcelomauro> enfim...
+[17:41] <marcelomauro> livros são dificeis... então pensei que alguém por aqui com mais experiencia já conhecesse algum.
+[17:42] <mirqui> o elfon é avançado , o rudolf
+[17:42] <mirqui> o hggdh
+[17:43] <mirqui> faz um quais quais quais no ouvido deles , pode ser que te indiquem algo
+[17:45] <marcelomauro> blz
+[17:48] <rafaelsoaresbr> https://scholar.google.com.br/
+[17:48] <rafaelsoaresbr> http://www.scielo.br/?lng=pt
+[17:54] <Fabianin> Pessoal, já tentei de tudo na internet mas nada funciona, meu notebook tem aquelas placas hibridas, uma intel e outra ATI HD 7730m e eu não consigo fazer de jeito nenhum fazer a radaeon funcionar... Alguém ai provavelmente já teve problema parecido, como faço?
+[17:55] <rafaelsoaresbr> tenho um amigo que um problema parecido em outra distro. nunca tive notes com esse sistema dual
+[17:57] <rafaelsoaresbr> Fabianin, você instalou os drivers proprietários?
+[17:59] <rafaelsoaresbr> Fabianin, se instalou, tenta instalar uma versão mais recente
+[18:03] <Fabianin> Eu já tentei basicamente de tudo
+[18:03] <Fabianin> segui váriios tutoriais rafaelsoaresbr
+[18:04] <mirqui> fabianin vê se vc pesquisou isto
+[18:04] <mirqui> https://www.google.com.br/?gws_rd=ssl#q=+meu+notebook+tem+aquelas+placas+hibridas%2C+uma+intel+e+outra+ATI+HD+7730m+e+eu+n%C3%A3o+consigo+fazer+de+jeito+nenhum+fazer+a+radaeon+funcionar+%2C+o+que+fazer
+[18:06] <Fabianin> ....
+[18:06] <mirqui> ahaha isto é sim ou não ?
+[18:07] <Fabianin> Não...
+[18:07] <Fabianin> Eu já disse, já to a 3 dias tentando instalar isso
+[18:07] <Fabianin> pra eu apelar pro irc é pq a coisa tá feia
+[18:07] <mirqui> tenta drivers proprietários
+[18:07] <Fabianin> já tentei...
+[18:08] <mirqui> xii
+[18:08] <Fabianin> já tentei desativar a placa da intel
+[18:08] <mirqui> pq vc usa duas placas de vídeo ?
+[18:08] <mirqui> a intel é mais compativel
+[18:09] <Fabianin> Pq meu notebook veio assim uai
+[18:09] <Fabianin> é mais compativel só que com muito menos desempenho que uma dedicada
+[18:09] <mirqui> vc é gamer ou usa o pc para o trabalho ?
+[18:10] <Fabianin> Trabalho
+[18:11] <mirqui> e o desempenho da placa de deixa muito abaixo do que vc precisa para o dia a dia ?
+[18:11] <rafaelsoaresbr__> Fabianin, já instalou drivers do site da AMD?
+[18:13] <Fabianin> Já rafaelsoaresbr__ , mirqui bastante
+[18:15] <mirqui> não sei o que dizer cara ,
+[18:16] <mirqui> vc usa linux ou windows ?
+[18:28] <Fabianin> mirqui: uso linux
+[18:28] <Fabianin> mirqui: mas to vendo que vou ter de usar o windows
+[18:28] <mirqui> olha isto
+[18:29] <mirqui> https://www.google.com.br/?gws_rd=ssl#q=ati+hd+7730m+driver+linux
+[18:30] <mirqui> e as placas intel
+[18:31] <mirqui> https://www.google.com.br/?gws_rd=ssl#q=placas+de+v%C3%ADdeo+intel+%2B+drivers
+[18:31] <mirqui> se vc não achar nada , meu caro , está com um bruto azar ahaha
+[18:32] <mirqui> e em último caso faz dual boot
+[18:33] <android_> Alguem ai
+[18:34] <mirqui> falaaaa :)
+[18:34] <android_> to tendo dificuldade com o comando airmon-ng start wlan0
+[18:35] <android_> Ta pedindo pra instala alguma coisa
+[18:35] <mirqui> xii tenta o elfon ou o rudolf
+[18:35] <mirqui> ou alguém mais avançado
+[18:36] <android_> Tao offs ?
+[18:36] <mirqui> espera
+[18:37] <mirqui> opa vc está tentando descobrir senhas ?
+[18:37] <android_> Sim
+[18:38] <android_> To testando vunerabilidade da rede da empresa que trabalhor
+[18:38] <android_> Com meu celular
+[18:38] <mirqui> sou novo no linux cara
+[18:39] <android_> Mais vc ja falo com alguem aq que sabe alguma coisa
+[18:39] <mirqui> de senhas para celular só sei senha do wifi
+[18:39] <mirqui> não , só pesquisei no google
+[18:40] <android_> Fico emprecionado com que vc pode fazer com um celular hj em dia
+[18:40] <mirqui> tipo ?
+[18:41] <android_> To rodando debian no meu celular agora
+[18:41] <android_> to falando por ele
+[18:41] <mirqui> eu estou querendo baixar o ubuntu touch
+[18:42] <mirqui> quando chegar
+[18:45] <mirqui> ou seja , uma derivação debian :)
+[19:42] <ukinami> boas
+[19:43] <mirqui> blza :)
+[19:43] <ukinami> ppl eu tentei actualizar o ubuntu 14.04  para o 15 por favor ja tentei não consegui Obrigado
+[19:44] <mirqui> me parece que o 15 ainda está bruto
+[19:45] <mirqui> o 14.10 tem atualizações por9 meses
+[19:45] <mirqui> por 9 meses
+[19:45] <mirqui> qual erro dá ?
+[19:46] <ukinami> eu tentei pelo actualizador no ubuntu diz que não tem actualizações
+[19:46] <ukinami> eu li no google instalei coisas no terminal alterei no updater
+[19:46] <ukinami> e continua a dizer que não tem actualizações
+[19:47] <mirqui> então não existem , acho que o 15 é para testes ainda
+[19:47] <ukinami> e para o 14.10 tambem, não actualiza
+[19:47] <mirqui> você é desenvolvedor ?
+[19:48] <ukinami> não mas gostava mas nao sou
+[19:48] <mirqui> o 14.10 é estável
+[19:48] <ukinami> como actualizo para p 14.10 ?
+[19:48] <mirqui> qual verção você tem ?
+[19:48] <ukinami> 14.04
+[19:49] <mirqui> eu atualizei para a14.04.02 tem suporte para 5 anos
+[19:50] <mirqui> a 14.10 é só por 9 meses
+[19:50] <ukinami> então amntenho me com o 14.04 ?
+[19:50] <mirqui> não sei para o que você quer o ubuntu
+[19:50] <mirqui> não posso te dizer
+[19:51] <mirqui> o lógico é :
+[19:51] <ukinami> para utilizaão normal
+[19:51] <ukinami> utilização normal
+[19:51] <mirqui> 14.04 porque tem suporte por 5 anos
+[19:51] <ukinami> ok
+[19:52] <cyber> ola
+[19:52] <mirqui> oi :)
+[19:52] <cyber> sou novo
+[19:52] <cyber> no irc
+[19:52] <ukinami> ok obrigado
+[19:52] <mirqui> ukinami , para que você quer o ubuntu?
+[19:52] <cyber> como isso fuciona?
+[19:53] <mirqui> se você tem uma dúvida
+[19:53] <mirqui> ou problema , tem os participantes do chat para ajudar
+[20:00] <cyber> ???
+[20:00] <mirqui> ahaha que foi ?
+[20:01] <cyber> nada
+[20:05] <mario__> Ola pessoal estou com problemas no meu ubuntu....
+[20:06] <mirqui> fala ,
+[20:06] <mario__> sou novo no linux.
+[20:06] <manokara_> seja bem vindo :)
+[20:06] <mirqui> ahaha tbm , se der te ajudo
+[20:07] <mario__> dai o seguinte como faço para reinstalar a versão 64 bits por cima de uma 32 bits
+[20:07] <mirqui> lado a lado
+[20:07] <manokara_> hmmm, bom, você que fazer exatamente isso
+[20:07] <mario__> há tenho um note velho
+[20:07] <mirqui> dualboot
+[20:08] <mario__> tipo só tenho 2 gb de ram
+[20:08] <manokara_> nunca tentei algo do gênero mas, deveria substituir o sistema de base e deixar só os teus dados da pasta /home
+[20:09] <mario__> bom hoje tenho dois sistema "ruindows" e linux
+[20:09] <mirqui> que tem 2gb , se fizer dual boot vai usar um sistema de ccada vez
+=== manokara_ is now known as manokara
+[20:10] <mirqui> eu já fiz trial boot
+[20:10] <mirqui> windows , mint e ubuntu
+[20:10] <mario__> eu já estou estou usando dual boot..
+[20:10] <mirqui> eu agora estou só usando o ubuntu
+[20:11] <mirqui> tanto no note como no desk
+[20:11] <mario__> mas será que há possibilidade de atualizar a versão de 32 para 64?
+[20:11] <manokara> tive uma má experiência com dual boot, sempre bixava ou o windows ou o linux depois de um tempo
+[20:11] <mirqui> isso não sei te dizer mario
+[20:12] <v1n4x> Esperando os adm freenode me dar invisibilidade : https://xumacao.files.wordpress.com/2009/12/caveirainternauta.jpg
+[20:12] <cyber> axo que nao
+[20:13] <mirqui> usava 32 bits no note
+[20:13] <mirqui> agora uso 64
+[20:13] <manokara> mario, você quer manter os programas instalados, fazendo um upgrade ou isso não é muita preocupação?
+[20:13] <mario__> bom então só me resta forma matar novamente o hd e reinstalar a versão 64
+=== xGrind is now known as xGrind-AFK
+[20:13] <mirqui> faz backup
+[20:14] <mirqui> tem muitos dados no hd ?
+[20:14] <mario__> manokara .... não tenho nada salvo ainda na versão 32
+[20:14] <mario__> então não tenho nada a perder
+[20:14] <manokara> então, não tem com o que se preocupar, é só reinstalar mesmo
+[20:15] <manokara> mas seria bom deixar a partição /home separada do resto, assim se você quisesse formatar a distro em um momento futuro, não ia perder seus arquivos pessoais
+[20:16] <mario__> Eu ja fiz isso meu hd é pequeno mas deixei um espaço pra isso.
+[20:16] <manokara> hmm, legal
+[20:16] <mirqui> eu baixei o ubuntu 64 bits do superdownloads
+[20:17] <manokara> to juntando umas economias pra comprar um SSD pra distro (boot na velocidade da luz! rsrs), e um HD de 4TB pra minha /home
+[20:18] <mirqui> o ssd tem ciclos
+[20:18] <mario__> num hd de 160GB deixei um espaço para" ruindows" 80gb e mais 40gb para linux e 35 gb para arquivos....e 3 gb para fashe
+[20:19] <mario__> cara meu note é velho estou usando para teste.
+[20:19] <mario__> tipo é de 2008....kkkk
+[20:20] <manokara> kkk
+[20:20] <manokara> normal
+[20:20] <manokara> linux é o sistema amigo dos pcs velhos que aquele seu tio dá
+[20:22] <mario__> por isso estou migrando para o linux.... tem outros motivos também...kkk
+[20:22] <mario__> quero que meu filho aprenda sobre a plataforma linux
+[20:23] <mirqui> qual a idade dele ?
+[20:23] <mario__> tipo o muleque tem 7 anos e fuça em tudo..kkk
+[20:24] <mirqui> olha isto
+[20:24] <mirqui> http://www.guiafoca.org/
+[20:24] <mirqui> tem um belo início :)
+[20:25] <mario__> mas deixa comigo.... vou tentar fazer funfar a distro
+[20:25] <mario__> vlw..... muito obrigado
+[20:42] <magnific> boa tarde pessoal, os botoes do mouse no meu laptop estao completamente doidos, estou sem o botao primario.. ele funciona como o secundario alguem ai ja resolveu algo parecido, vlw
+[20:43] <mirqui> xii não te entendi
+[20:43] <mirqui> destro e canhoto , é isso ?
+[20:44] <magnific> isso
+[20:44] <cyber> va em configuracoes de tochpad e mouse
+[20:44] <magnific> ja tentei isso e nao funfou, atualizei pra ultima versao do ubuntu e tb nao funfou
+[20:45] <mirqui> qual versão ?
+[20:45] <magnific> a ultima, 15
+[20:45] <mirqui> xii estou na 14
+[20:46] <magnific> na 14 estava com o mesmo problema, atualizei e continua igual
+[20:46] <manokara> hmm, diz aí, qual o modelo do teu note?
+[20:46] <mirqui> opa
+[20:46] <mirqui> vc viu os drivers ?
+[20:46] <manokara> mesmo mudando nas opções e nao adiantado, talvez o driver de touchpads não tá de bem com teu hardware
+[20:46] <mirqui> ou pacotes
+[20:47] <magnific> é um dell
+[20:47] <magnific> manokara isso eu percebi tb
+[20:48] <mirqui> drivers proprietários
+[20:48] <magnific> eu tava com a versao 12 e funcionava tudo normal, na 14 comecou esse bug
+[20:48] <mirqui> ou no site vê se tem para linux
+[20:48] <mirqui> faz downgrade
+[20:49] <magnific> putz downgrade nem vira cara
+[20:49] <mirqui> os programas são atualizados normalmente
+[20:49] <mirqui> é só o kernel que muda
+[20:49] <mirqui> por que ?
+[20:49] <magnific> muito trampo
+[20:50] <mirqui> não tens a iso ?
+[20:50] <manokara> né.. rsrs
+[20:50] <manokara> é um del 5537?
+[20:50] <manokara> dell*
+[20:50] <manokara> dando uma pesquisada, achei isto: http://askubuntu.com/questions/483229/dell-5537-touchpad-not-working-ubuntu-14-04
+[20:51] <manokara> vê se você tem os pacotes xserver-xorg-input-synaptics e gpointing-device-settings instalados
+[20:51] <magnific> manokara: olhei esse topic tb estao instalados
+[20:51] <magnific> deixa eu ver a qual eh a versao desse laptop guentae
+[20:52] <manokara> hmm, blz
+[20:52] <mirqui> boa sorte , fui :)
+[20:53] <magnific> acho que é um Dell Inspiron 14R no site deles nao tem mais o modelo pra checar vish
+[20:54] <manokara> é tenso isso :/
+[20:54] <manokara> tem embaixo dele não?
+[20:55] <magnific> eh perae
+[20:57] <magnific> manokara Dell Inspiron 14 (3421, Early 2013)
+[20:59] <magnific> eh vou ter que voltar pra versao 12 mesmo, as outras tem alguns componentes que nao vao funcionar =/
+[21:00] <manokara> hmmm, não consegui achar nada de bom por aqui :/
+[21:00] <manokara> deve ter alguma gambiarra sinistra pra trocar os botões
+[21:00] <manokara> hehe
+[21:01] <magnific> deve ter mas, por enquanto ninguem postou sobre isso aonde
+[21:01] <magnific> http://www.ubuntu.com/certification/hardware/201209-11718/
+[21:01] <magnific> eles recomendam a 12 mesmo
+[21:01] <magnific> putz
+[21:02] <manokara> https://wiki.archlinux.org/index.php/Touchpad_Synaptics - dá uma olhada boa nisso aqui, quem sabe haja uma luz
+[21:03] <manokara> tem todo um guia pra testar o funcionamento, editar o .conf do synaptics manualmente..
+[21:03] <astroo-> ola pessoal
+[21:03] <manokara> olá
+[21:03] <magnific> ahn sei la
+[21:03] <magnific> mto trampo
+[21:03] <astroo-> ola
+[21:03] <magnific> astroo-: olá
+[21:03] <manokara> ^^
+[21:03] <astroo-> ola
+[21:04] <manokara> astro, já passou por algum problema desse tipo? botoes do touchpad trocados, e não resolvem nas confs...
+[21:27] <magnific> vlw ai galera, vou fazer backup e voltar pra versao 12 mesmo
+[21:27] <magnific> obrigado

@@ -1,0 +1,9 @@
+[01:30] <ubottu> LinStatSDR called the ops in #ubuntu-offtopic ()
+[10:09] <ubottu> lotuspsychje called the ops in #ubuntu ([FreeLay])
+[14:04] <teward> can someone check #ubuntu and the jira_ person?  They seem to be ignoring that they are being offtopic
+[14:04] <teward> (although i've called them out on it once already)
+[14:04] <teward> it now reads as 'senseless banter' and useless questions but meh.
+[14:06] <teward> jiri_ *  (system autocorrect is evil)
+[14:07] <teward> IdleOne: thanks
+[15:30] <ubottu> OerHeks called the ops in #ubuntu ()
+[17:05] <phunyguy> Hey, hopefully this guy isn't smart enough to evade a ban of *power!*@172.56.* - should keep him at bay for a while  (the black_power fella).

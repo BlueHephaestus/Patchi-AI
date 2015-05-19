@@ -1,0 +1,1871 @@
+*	topic for ##security is: computer & physical security http://fnsecurity.org/ http://ow.ly/gsvto | spammer, troll? !op <reason> | be nice or gtfo | about/security/contributor cloaks now available from electr0n in case any more people are interested.
+<cybrnaut->	how common is it for a vpn service to block port 25?
+<paraxor>	cybrnaut-: quite common.
+<okwex>	i was advised by jnpplf to have two security engineers for auditing design and code each. would both of them be full-time active then?
+<cybrnaut->	it's common for isps to block port 25, so i would expect users to use a vpn to escape their nanny isp
+<cybrnaut->	but if many vpns are also nannies, how do i find a proper one?
+<okwex>	the latter meaning the release code.
+<ser_berry>	cybrnaut-: run your own vpn
+<ser_berry>	openvpn is quite easy to set up
+<cybrnaut->	ser_berry: i've done that before, and did hit some glitches (the vps needed a special administrator action to allow the openvpn server to have the network perms it needed)
+<cybrnaut->	although i eventually got it working, i didn't like being the only one with that ip address
+<ser_berry>	well why are you using a vpn?
+<ser_berry>	because they're not really great for anonymonity if that's your goal
+<cybrnaut->	ser_berry: marginal anonymity is useful when i need to access sites that block tor
+<cybrnaut->	and i also need to circumvent a nanny isp that blocks ports
+<holstein>	sounds like, you can just have a simple vpn to get around your isp restrictions, if you cannot change isp's.. i would tackle the other issue seperately, since, its likely not something that comes up as often
+*	topic for ##security is: computer & physical security http://fnsecurity.org/ http://ow.ly/gsvto | spammer, troll? !op <reason> | be nice or gtfo | about/security/contributor cloaks now available from electr0n in case any more people are interested.
+<okwex>	from the information i received until here, i think 'often enough to be timely' may be the answer.
+<freeroute>	hi everyone, are there any projects or otherwise tutorials instructing how to (and i'm still bewildered at saying this) harden hdd and usb firmware?
+*	topic for ##security is: computer & physical security http://fnsecurity.org/ http://ow.ly/gsvto | spammer, troll? !op <reason> | be nice or gtfo | about/security/contributor cloaks now available from electr0n in case any more people are interested.
+<xmppwocky>	discretionary?
+<kryczek>	xmppwocky: https://www.youtube.com/watch?v=71nck0pzwt8
+<kryczek>	james bond classic :)
+<thomas123>	kryczek: any idea? :(
+<stoned>	xmppwocky, yeah that's the proper term
+<stoned>	though ownership/capability is also used afaik
+<stoned>	and from the wikipedia  page
+<stoned>	the meaning of the term in practice is not as clear-cut as the definition given in the tcsec standard, because tcsec definition of dac does not impose implementation concept. there are at least two implementations: with owner (as widespread example) and with capabilities .
+<thomas123>	yes dac is correct thank you!
+<thomas123>	xmppwocky:
+<stoned>	thomas123, you doing homework?
+<thomas123>	yer
+<stoned>	don't use irc.
+<stoned>	do it on your own.
+<thomas123>	don't lecture me.
+<thomas123>	thanks
+<kryczek>	thomas123: sorry just saw your question, yes dac as opposed to mac (mandatory)
+<stoned>	if you're going to have other people do your work for you...
+<thomas123>	go smoke some kush, man
+<thomas123>	chill
+<stoned>	projecting much? :)
+<stoned>	seriously? you're not embarrassed by this?
+<stoned>	in public? having others do your homework for you?
+<stoned>	wow.
+<alyx>	..you wouldn't have other people do your homework if you could get away with it?
+<stoned>	no.
+<hdm>	stoned: stop being a jerk
+<hdm>	you dont have to answer him, or really, be here
+<thomas123>	i find it ironic he's called stoned and he's jumping down my throat for asking a simple question.
+<stoned>	that's not the point.
+<hdm>	talk to yourself about it loudly
+<stoned>	thomas123, i'm as calm as a hindu cow.
+<thomas123>	life's too short to me mad, man
+<hdm>	drop it, move on
+<stoned>	o_o
+<thomas123>	i'm on a time limit on these question and i appreciate the answer that was given, dont understimate that please
+<alyx>	thomas123: maybe the nick is in response to how he wants people who use irc for their homework dealt with
+<stoned>	anyway, i wasn't trying to be a jerk. but imo it's important to do your own work, otherwise it doesn't really benefit your mind.
+<alyx>	not his current mental state
+<hdm>	thomas123: nobody is going to answer you "within a time limit" either, so you can ask nicely, or go somewhere else
+<alyx>	hdm: he already got his answer. :p
+<stoned>	i didn't mind helpnig him. i'm simply giving friendly advice and being slightly sarcasticall jocular. nothing serious.
+<thomas123>	hdm: that's not what i meantlol
+<stoned>	i've done homeworks before too man.
+<thomas123>	i meant i'm pushed for time and appreciate the guy who helped me.
+<stoned>	i was also time contstained, . been through it. no big deal.
+<thomas123>	life's too short bro
+<stoned>	it's just that sometimes you see thsoe peopel on irc who use irc folks to do their homework.
+<stoned>	the cheaters.
+<thomas123>	life is a cheat...
+<stoned>	eh.
+<thomas123>	the billionaires in this world are cheaters
+<thomas123>	that's life
+<reveredge>	thomas123, ur frustration is speaking out
+<toothe>	i'm a little depressed.
+<reveredge>	why so complaints about life
+<toothe>	i was reading earlier today about why pgp has failed so miserably...and pretty much there's no way to overcome that.
+<toothe>	like, its all but impossible to overcome.
+<alyx>	.w 60
+<thomas123>	life is a big frustration isn't it
+<thomas123>	somone send me an ounce of bud to wash away my troubles
+<thomas123>	stoned:  what's your favourite strain
+<toothe>	i wonder where's a good spot to store maybe 1 tb of stuff for a day or two...
+<toothe>	i plan on ditching ubuntu for mint.
+<xmppwocky>	500 dropbox accounts?
+<reveredge>	toothe, its same dude, except ui
+<toothe>	lol
+<toothe>	same dude?
+<toothe>	there was that one site, megaupload...
+<stoned>	there is ##stoned for that
+<hdm>	thomas123: also.. not on topic
+<toothe>	hdm: i can't thank you enough :-)
+<xmppwocky>	mega.co.nz is still around
+<reveredge>	toothe, i should have put comma
+<stoned>	i downloaded 40gb of mugen games from mega
+<stoned>	they're pretty solid.
+<toothe>	do you have simtower?
+<toothe>	i miss that game :-(
+<stoned>	##videogames
+<stoned>	also
+<reveredge>	u can use facebook, i think fb doesn't have limit on uploaded files
+<xmppwocky>	you could also try 712 floppies
+<stoned>	reveredge, but they take all your personal info
+<reveredge>	xmppwocky, i think you have google calculator opened in next tab :p
+<toothe>	i was mowing the lawn thinking about trust and i realized...its basically the equivalent of saying "i've never met you, but i want to be able to know who you are"
+<toothe>	which is absurd.
+<stoned>	that's nhot what trust is.
+<stoned>	at all.
+<toothe>	"i've never met you, and we have no one in common whom we trust, but i want to be able to know who you are with absolute certainty"
+<toothe>	stoned: in the sense that...that's the problem we're trying to overcome.
+<stoned>	hm. i don't quite follow
+<reveredge>	but thats not the case , we have ca authorities for that
+<thomas123>	hmm why did windows xp limit dac?
+<reveredge>	else whole ssl/tls would have flopped
+<toothe>	pgp has been around since the 90s and its never really taken off - even on the enterprise level where there's some way to force it. why not? because there's really no way to establish that level of trust.
+<toothe>	there's no way to say "i know who you are from another organization"
+<toothe>	without putting in some widescale effort.
+<toothe>	and without that, it'll never come a mass phenomena
+<fuzzkillon>	well once you have the public key in your kzyring
+<reveredge>	fuzzkillon, sometime i wonder about possibility of mistypes considering touch-typing
+<reveredge>	fuzzkillon, you u mistyped e by z
+<fuzzkillon>	yes i'm on my phone,sorry
+<toothe>	stoned: also, people who tend to use pgp don't have any type of infrastructure that they trust -and they sorta can't.
+<rawtaz>	yo apachez
+<rawtaz>	jo*
+<toothe>	i just went to the "download my google data" section
+<toothe>	its insane how much information on me they have.
+<george2>	how do yall feel about keybase.io? as i understand it, this is exactly the problem they're trying to solve, by linking social identities in a cryptographically verifiable way.
+<fuzzkillon>	toothe, indeed yesterday i saw an android app sending  to the servers my phone name as well as my gps coordinates and my system version
+<fuzzkillon>	i dont see why these app would need these infos
+<toothe>	i have a 90mb file of my location history
+<toothe>	that google lets you dl
+<toothe>	90 megabytes....
+<rawtaz>	interesting. since when have they had this functionality? :)
+<jnpplf>	excluding e-mail and voice, i have 543mbs of data
+<jnpplf>	hmmm
+<toothe>	im slowly separating myself from them.
+<toothe>	cuz that's a crazy amount of data...
+<toothe>	i wonder if getting a rooted phone will give me any more freedom
+<apachez>	any of you who happens to run ubuntu 15.04 on intel hd 5000 graphics?
+<stoned>	apachez, ##hardware or ##linux maybe
+<jodaz>	seh is at ~30kb down the stack from the buffer i can overflow by like 3kb :'(
+<stoned>	more likely or in #ubuntu but traffic is horrible there
+<toothe>	traffic is horrible?
+<fuzzkillon>	toothe, i've installed cyanogenmod and i was able to disable the location feature
+<toothe>	oh?
+<toothe>	i dunno if my phone can be rooted.
+<fuzzkillon>	what phone do you have toothe?
+<apachez>	stoned: tried #ubuntu and #intel-gfx with no luck
+<jnpplf>	welp, in all this google data i think the location history is the most bothersome
+<fuzzkillon>	true
+<jnpplf>	     26         "type" : "invehicle",
+<jnpplf>	     27         "confidence" : 8
+<jnpplf>	:-/
+<jnpplf>	    106         "type" : "onbicycle",
+<jnpplf>	    107         "confidence" : 2
+<kryczek>	is the confidence a percentage?
+<jnpplf>	i have that says 100
+<jnpplf>	one that*
+<fuzzkillon>	are they infering that from speed?
+<jnpplf>	so... i guess so
+<kryczek>	you need to exercise more :p
+<toothe>	im blown away
+<toothe>	i still can't get over this....
+<jnpplf>	4.5 million lines of json
+<jnpplf>	describing where i've been
+<toothe>	exactly
+<toothe>	hm...having trouble converting this timestamp into something human-readable. not sure what format its in.
+<jnpplf>	toothe, https://maps.google.com/locationhistory/b/0
+<jnpplf>	yeah, it didn't seem to be unix time
+<jnpplf>	oh nice, google's location history website will even track you across a map over time
+<jnpplf>	with animations
+<jnpplf>	some csi shit right there
+<toothe>	i don't see anything listed there...
+<jnpplf>	try changing day?
+<reveredge>	jnpplf,  for me its showing no location history
+<toothe>	i did.
+<toothe>	reveredge: same.
+<toothe>	but i just dl'ed 90 mbs of json data showing where i've been
+<toothe>	i mean, my god. 90 gigs.
+<toothe>	err, mbs
+<jnpplf>	heh, slightly inaccurate on flight days
+<jnpplf>	seems to think i flew fl-az-sc-ca
+<jnpplf>	o.o
+<reveredge>	toothe, from where u downloaded?
+<toothe>	https://myaccount.google.com/
+<toothe>	its like "liberate my data" or something like that.
+<toothe>	i guess i can't get them to delete it..
+<jnpplf>	aaaand all location history deleted
+<jnpplf>	pyew pyew
+<toothe>	oh, we can do that?
+<toothe>	but is it really deleted?
+<jnpplf>	up yours, hydrogenum :p
+<jnpplf>	https://support.google.com/gmm/answer/3118687?hl=en
+<rawtaz>	toothe: mine was 1,7 mb :p and i didnt find anything relevant in it :)
+<rawtaz>	1.7*
+<rawtaz>	just a ton of css and stuff
+<jnpplf>	rawtaz, not an android user?
+<toothe>	rawtaz: pretty light!
+<rawtaz>	jnpplf: i am, but i make sure not to sign in with anything but a dummy account :)
+<rawtaz>	(and not do any personal searches or data storage)
+<toothe>	im using duckduckgo
+<toothe>	stupid name, but its actually pretty good.
+<rawtaz>	lovely logo :)
+<toothe>	ha! so, on a side note...i read this rfc that email will try to re-send for 3-4 days
+<toothe>	something like that.
+<rawtaz>	yeah thats normal behavior
+<toothe>	so last night i sent myself a dummy email to a vm that wasn't up
+<toothe>	i just got it :-)
+<xmppwocky>	" i just the other day got… an internet was sent by my staff at 10 o'clock in the morning on friday. i got it yesterday [tuesday]."
+<thejh>	hydrogenum: wow, the ratelimits on google translate are strict
+<toothe>	wow...if things ever got really really bad, i could quit using a vps entirely and host my email entirely locally
+<toothe>	and, google sends email after 16+ seconds i noticed. its got a pretty big delay.
+<toothe>	that means that if you have an ip address, you could effectively host your own email system even if you have to shut down every so often.
+<rawtaz>	sure thing
+<rawtaz>	and you could set up a backup mx in case your primary is down for long
+<toothe>	right...
+<toothe>	maybe a vps for email isn't necessary?
+<rawtaz>	what do you mean by that?
+<toothe>	in transitioning my email to a vps server that i host.
+<toothe>	in theory, its still exposed....which i guess i accept as a risk.
+<toothe>	but, if you hosted it entirely on your own personal machine your risk factor would be even less.
+<rawtaz>	toothe: what risk and exposure are you talking about?
+<b0t00>	ping admin
+<yrp>	hi
+<drathir>	hi...
+<yrp>	i think you want something like !op or !admin
+<yrp>	but i forget exactly what it is
+<jnpplf>	hmm?
+<yrp>	i am not an admin, just poorly timed hello
+<jnpplf>	sup
+<thejh>	admin powerup
+<yrp>	144335           b0t00 │ ping admin
+<yrp>	not me
+<jnpplf>	oh, he left
+<yrp>	yeah
+<thejh>	23:53 -!- b0t00 [~b0t@101.212.69.66] has quit [ping timeout: 276 seconds]
+<kryczek>	thejh: ironic isn't it :)
+<karstensrage>	that escalated quickly
+<nsh>	--
+<nsh>	a character controlled by a hacker who used exploits to dominate online game guild wars 2 has been put to death in the virtual world.
+<nsh>	the character, called darkside, was stripped then forced to leap to their death from a high bridge.
+<nsh>	the death sentence was carried out after players gathered evidence about the trouble the hacker had caused.
+<nsh>	this helped the game's security staff find the player, take over their account and kill them off.
+<nsh>	-- http://www.bbc.com/news/technology-32654414
+<kickalong>	epilog: don't smart off at people you don't know.
+<kryczek>	kickalong: i was being playful, but now i feel like pointing out at the "be nice or gtfo" part of the topic
+<kickalong>	kryczek: no.  you were being a smartoff.  stop it.
+<kickalong>	again, don't smart off at people you don't know.  you don't know me well enough to make comments like that on join.  smarten up.
+<kryczek>	haha
+<karstensrage>	there are studies showing that conservatives have wiring that make them extremely defensive and feeling like the most trivial things are attacks
+<yrp>	i heard that kicks can melt steel beams. care to comment?
+<kickalong>	meh.  ignorant self important smart offs.  i weep for the future.
+<adam_vollrath>	no yrp nothing can melt steel beams.
+<soulisson_>	so i see that everyone is having a good evening
+<yrp>	til
+<kryczek>	soulisson_: not a bad evening indeed :) and you how are you?
+<soulisson_>	kryczek, fine thanks :)
+<thejh>	so can you steal beams?
+<kryczek>	can you steal coffee beams plz
+<lunaphyte>	a backup mx in 2015?  funny
+<rawtaz>	lunaphyte: why?
+<kryczek>	karstensrage: seeing how he went on to repeatedly insult me and tell me to "grow up" (lol) in private i guess he must be extremely conservative by that measure
+<thejh>	kryczek: if you're short, maybe he meant physically grow up to your mental size
+<electrojustin>	dafuq did i just read
+<electrojustin>	nothing about this backlog seems coherent
+<lunaphyte>	rawtaz: backup mxes are a relic of the past, from a time when most computers spent the majority of the time not connected to the internet.  that's not the case in 2015
+<lunaphyte>	backup mxes are to email as cnames are to dns.  their usefulness is mostly in exposing people who don't know what their doing ;)
+<electrojustin>	shit. i just type rm instead of mv
+<thejh>	electrojustin: in-brain autocomplete? :d
+<thejh>	electrojustin: file still open anywhere?
+<electrojustin>	i just redownloaded it, it's fine
+<lunaphyte>	freudian slip.  embrace it
+*	topic for ##security is: computer & physical security http://fnsecurity.org/ http://ow.ly/gsvto | spammer, troll? !op <reason> | be nice or gtfo | about/security/contributor cloaks now available from electr0n in case any more people are interested.
+*	topic for ##security is: computer & physical security http://fnsecurity.org/ http://ow.ly/gsvto | spammer, troll? !op <reason> | be nice or gtfo | about/security/contributor cloaks now available from electr0n in case any more people are interested.
+<thejh>	hdm: to be fair, cloud routers are probably one of the least ugly ways to get https on the way to your router :d
+<hdm>	thejh: true
+<apachez>	any of you who experienced laggy performance in google chrome (displaying hd material) with ubuntu 15.04?
+<ma3str0>	is flash still a nightmare on linux? cuz that's probably it
+<ma3str0>	flash is a nightmare in general
+<apachez>	it worked this morning
+<ma3str0>	haha well then
+<apachez>	but then i had some stroke and tried installing xorg-edgers
+<apachez>	seems like a bad move
+<ma3str0>	lol
+<apachez>	ppa-purged but the lag remained
+<hdm>	http://lcamtuf.coredump.cx/evilfinder/ef.cgi?said=apachez
+<apachez>	so i need to find someone else with hd 5000 and ubuntu 15.04 which doesnt have laggy google chrome
+<thejh>	ma3str0: not really, at least if you run chrome - it ships with flash directly, and that works really well
+<apachez>	so i can verify output of dpkg -l and shit like that
+<ma3str0>	oh it ships with it? neat. i did not know that.
+<hdm>	ive managed to avoid any laptop without dedicated non-intel graphics
+<thejh>	ma3str0: afaik google has the flash source and makes their own builds of it
+*	topic for ##security is: computer & physical security http://fnsecurity.org/ http://ow.ly/gsvto | spammer, troll? !op <reason> | be nice or gtfo | about/security/contributor cloaks now available from electr0n in case any more people are interested.
+<kaosu>	kryczek: i am pretty sure the pepperflash plugin just downloads google's flash version and configures chromium to use it.
+<kaosu>	i mean, yeah, both would then technically be pepperflash, but the plugin wouldn't really solve any issues with google chrome. however, you could install chromium + pepperflashplugin and see if the problem persists there.
+<kryczek>	ah i see what you mean
+<bonhoeffer>	hmm. . . https://gist.github.com/tbbooher/5160de13d12f2687cce8 any idea what this is?
+<apachez>	k disabled
+<apachez>	lets see how this 3948934 attempt will go
+<thejh>	bonhoeffer: if you found it on your webserver, it's a notification that you should probably audit your server software for vulns and then setup your server from scratch
+<bonhoeffer>	my cousin was hacked . . . not my server, not my site
+<wilsonfisk>	your cousins sisters aunts best friends husbands son?
+<bonhoeffer>	pretty much — anyway — just a dude’s site — but the question is how to track this stuff down
+<bonhoeffer>	the question is what can be learned from source
+<bonhoeffer>	my thought is that smart folks in this area can id this attack as a more general thing
+<bonhoeffer>	i’m asking some professional types to look at it, but wasn’t sure the background of folks here
+<thejh>	bonhoeffer: well, you can see that the page was probably copypasted from another "hacked" page - the name in the <title> is different from the other ones. in general, you can see that the owner of that website had pretty lousy security and was hacked by script kiddies
+<thejh>	bonhoeffer: from which you can conclude that he probably pissed off said script kiddies
+<|ryan|>	i've seen a couple of "software licensed to: xx" in deface page comments
+<bonhoeffer>	|ryan|: what does that tell you
+<thejh>	bonhoeffer: so he should either secure his server properly or stop pissing off whoever he's pissing off
+<|ryan|>	bonhoeffer: xx being a name
+<bonhoeffer>	|ryan|: got it
+<bonhoeffer>	so his theory is that he is targeted
+*	topic for ##security is: computer & physical security http://fnsecurity.org/ http://ow.ly/gsvto | spammer, troll? !op <reason> | be nice or gtfo | about/security/contributor cloaks now available from electr0n in case any more people are interested.
+<bonhoeffer>	my thought is that there is some type of cve or something for this . . .
+<thejh>	bonhoeffer: yes, there is a way: https://www.google.com/search?q=%22hacked+by+h1d3n+root%22
+<bonhoeffer>	yeah — and  966 is pretty small
+<bonhoeffer>	so you feel that is a rough proxy for the spread
+<kokut>	hello, anyone knows a website or something i can use to check the security of my system from the outside internet like scan ports etc
+<cluelessperson>	aha!  setup two factor authentication with owncloud.  :d
+<cluelessperson>	kokut, yes!
+<kokut>	cluelessperson: link?
+<cluelessperson>	kokut, https://www.ssllabs.com/ssltest/analyze.html?d=cluelessperson.com
+<wilsonfisk>	kokut: nmap.online-domain-tools.com
+<cluelessperson>	kokut,   setup ufw with your own personal port blocking rules, i personally have it block all ports except those i wish to use.
+<thejh>	hm, looks like that "hacked by h1d3n root" might have been a wordpress vuln?
+<thejh>	lots of wp-admin.php in the google results
+<kokut>	cluelessperson: can i use torrent clients ?
+<cluelessperson>	kokut, i try to route everything through ssh tunnel on 22 as much as possible, so i wind up only have 22/80/443/993/25 open to the public, and they all use ssl.
+<kokut>	wilsonfisk: theres not much point on just checking if the ports are open i need to check for security
+<cluelessperson>	kokut, you can tell the ufw to disable all unknown ports coming in yes
+<cluelessperson>	kokut, you can also typically dictate what ports the torrent client will use.
+<kokut>	cluelessperson: seems like too much work
+<cluelessperson>	kokut, break it down.  it's actually very easy.
+<kokut>	i just want to know if im vulnerable to someone with little technical knowledge or access to off-the-shelf scripts
+<cluelessperson>	kokut, somewhere in the torrent client's config you'll have "ports" you just need to dictate what they are, and open the same ports in the firewall.
+<cluelessperson>	kokut, unless you install tons of unknown or old stuff and don't update, i doubt it.
+<kokut>	cluelessperson: seems like i will have open ports in my firewall?
+<cluelessperson>	kokut, just because a port is open doesn't mean it's vulnerable.  a service or program would have to be listening on that port in order for smoeone to connect to it.
+<cluelessperson>	kokut, firewalls just act as a safety barrier that you configure to block everything you essentially don't know. :)
+<kokut>	cluelessperson: i dont trust that shit
+<kokut>	only thing i trust is my offline stuff
+<wilsonfisk>	https://www.youtube.com/watch?v=6ofouzi5nma   neat! :)
+*	topic for ##security is: computer & physical security http://fnsecurity.org/ http://ow.ly/gsvto | spammer, troll? !op <reason> | be nice or gtfo | about/security/contributor cloaks now available from electr0n in case any more people are interested.
+<cluelessperson>	kokut, it's attempting to connect to your ip address on all those ports.
+<cluelessperson>	kokut,   if it's a public ip, those ports would have to be forwarded to your server.
+<cluelessperson>	and the firewall would have to allow those ports
+<cluelessperson>	and there'd have to be a service/program listening on that port
+<cluelessperson>	kokut, so really it comes down to understanding what you install on your system, and make sure to use rather trusted stuff.  and then it's just a matter of makign sure you use encryption for their connections as much as possible to prevent mitm
+<wilsonfisk>	kokut: add '-t insane' to your nmap command ;)
+<wilsonfisk>	won't take that long.
+<cluelessperson>	kokut, he's right.
+<cluelessperson>	kokut, what torrent client are you using?  i've used deluge in the past.
+<cluelessperson>	i'm not using it now because my server only has 32gb ssd
+<cluelessperson>	i'm saving up for a car so i haven't bought a set of hdds for raid.
+<kokut>	cluelessperson: deluge
+<kokut>	this http://nmap.online-domain-tools.com/ is not showing the outpud
+<kokut>	"nmap done: 1 ip address (1 host up) scanned in 517.52 seconds"
+<cluelessperson>	kokut, it's easy enough to configure deluge to only use certain ports
+<kokut>	cluelessperson: yea i guess
+<bonhoeffer>	sorry back in
+<kokut>	cluelessperson: its just that i'm using ubuntu and it probably has a lot of software that connects to the internet like samba and w/e that i'm probably not aware of
+<wilsonfisk>	it's also just as easy to block the bittorrent protocol itself.
+<wilsonfisk>	:)
+<bonhoeffer>	so what are ways to know if a hack is targeted or not
+<cluelessperson>	kokut, samba is not enabled by default.
+<cluelessperson>	bonhoeffer, targetting behavior.
+<thejh>	bonhoeffer: ah, you're back
+<cluelessperson>	bonhoeffer,   ssh "root" on port 22 bruteforcing from china is not targetting behavior
+<thejh>	bonhoeffer: an awful lot of the google results was wordpress
+<bonhoeffer>	so thejh, that makes me think it wasn’t targeted — plus no specfic text, etc
+<thejh>	bonhoeffer: yeah, you're probably right, i guess
+<cluelessperson>	kokut, honestly, the most dangerous thing you seem to be doing is saying "that sounds like too much work" without even trying it.  because it's honestly not that much work once you go through it all once.
+<bonhoeffer>	it is funny, i’m in the field, but not familiar with web/wordpress security like this
+<cluelessperson>	kokut, it's extremely easy to configure those ports, to setup ssl/tls and encryption.
+<cluelessperson>	over all it's a lot of steps, but easy to do once you get into it.
+<cluelessperson>	bonhoeffer, i don't think wordpress is generally trusted.
+<kokut>	cluelessperson: well i might do it
+<bonhoeffer>	but i’m curious what can be told without forensics — so the https://www.google.com/search?q=%22hacked+by+h1d3n+root%22 is pretty crude
+<bonhoeffer>	my theory is there was a wordpress update gone bad
+<thejh>	bonhoeffer: i think everyone in security who can steers clear of wordpress :d
+<bonhoeffer>	i wouldnt’ see sql injection as a likely thing — but maybe
+<bonhoeffer>	however, 966 infections seems really small to be
+<cluelessperson>	thejh, bonhoeffer   absolutely.  wordpress is too sliced and diced together.  too many apps updated from unknown sources running php on your system, no thanks.
+<bonhoeffer>	yeah — so i would look at his plugins and their updates
+<thejh>	cluelessperson: and the code is too lulzy to be run in a production system :d
+<cluelessperson>	thejh,   i dawdle in php and would call myself a shit coder, and i think i could do better than what's in wordpress.
+<bonhoeffer>	so i get it — wp is too open to be secure, but in general, curious how much i can find out externally
+<cluelessperson>	i'm struggling a bit with abstration and oop, but i handle logic depth pretty well.
+<bonhoeffer>	and would love to convince my cousin what i know — that is very unlikely there is a team of isis guys focused on attacking him
+<cluelessperson>	bonhoeffer, i wouldn't say too open, but close.  just reckless.
+<bonhoeffer>	cluelessperson: you might now more than i do, but i wouldn’t call wp reckless
+<thejh>	bonhoeffer: you could try to figure out whether the affected websites used wp plugins, and which wp versions they're running
+<cluelessperson>	bonhoeffer, i doubt isis is after him in particular unless you are close to them.
+<kokut>	bonhoeffer: whats that hacked by h1d3n root?
+<bonhoeffer>	yes
+<bonhoeffer>	nope — he just plays music for vets
+<bonhoeffer>	not something they particularly care about
+<bonhoeffer>	they would take what they get — but i don’t think isis has any real skill in this area
+<bonhoeffer>	i wish i could say. you were attacked by the xyz attack, which comes in through a weak wp-plugin
+<bonhoeffer>	https://www.google.com/search?q=%22hacked+by+h1d3n+root%22&ei=66fovbruieswbok_geao&start=10&sa=n&biw=1440&bih=801 shows the affected sites are random
+<cluelessperson>	bonhoeffer, i think isis is smaller than you realize, distant, and they have larger problems than a man playing music on the radio.
+<cluelessperson>	to the point i'd call it paranoia to think isis is targetting you.
+<cluelessperson>	;_;
+<bonhoeffer>	we are on the same page
+*	topic for ##security is: computer & physical security http://fnsecurity.org/ http://ow.ly/gsvto | spammer, troll? !op <reason> | be nice or gtfo | about/security/contributor cloaks now available from electr0n in case any more people are interested.
+<wilsonfisk>	that too.
+<bonhoeffer>	so — i don’t see anything evil in: http://smilenet4u.googlecode.com/files/tipingtext.js
+<thejh>	bonhoeffer: not evil, just horrible style and ancient
+<thejh>	"tested in firefox v1.5.0.1, opera v8.52, konqueror v3.5.1, and ie v6."
+<wilsonfisk>	aww i missed neighborhood sniper :<
+<bonhoeffer>	thejh:
+<thejh>	ie 6.
+<thejh>	konqueror.
+<bonhoeffer>	and bad music
+<thejh>	and not many people who know proper js do this: `settimeout("document.getelementbyid('" + this.element.id + "').typingtext.run()", this.interval)`
+<honey>	night all.
+<wilsonfisk>	night :)
+<bonhoeffer>	thejh: so you seem to know your stuff — it looks like a defacement page only tells you who else might have been infected, but you really can’t learn anything about the vulnerability or access from it
+<ma3str0>	does konqueror still exist?
+<thejh>	bonhoeffer: i think you'd need access to the server for that. look at the modification time of the modified php script / html page, then hope that the access logs still exist for that time
+<wilsonfisk>	hdm_: why do people always dm me after you ban them? is there something on my face? :p
+<thejh>	bonhoeffer: that might give you a clue
+<ma3str0>	lol @ wilsonfisk
+<thejh>	ma3str0: and if so, have they finally added support for x-frame-options? :d
+<ma3str0>	oh god i'm glad i've never known that much about konqueror :)
+<bonhoeffer>	looks like there is little i can do to tell him otherwise . .. . thanks
+<thejh>	ma3str0: https://bugs.kde.org/show_bug.cgi?id=259070 "bug 259070 - konqueror should support x-frame-options header to protect against clickjacking", status: unconfirmed
+<thejh>	reported 2010
+<ma3str0>	lol
+<thejh>	*crickets*
+<hdm_>	konqueror's uri support is awesome (terminal://)
+<hdm_>	maybe its better in kde5
+<thejh>	hdm: uh... what does that do? spawn a terminal? without prompting the user?
+<hdm>	thejh: in kde 3, yeah
+<thejh>	:d
+<hdm>	kde4 made some improvements, but there were still ~100 + uri handlers
+<ma3str0>	yikes
+<ma3str0>	thank god nobody actually really uses konqueror
+<ma3str0>	lol
+<cluelesszac>	!op hdm abusively banned cluelessperson  need another mod please.
+<wilsonfisk>	wot? lolol
+<wilsonfisk>	who does that?
+<thejh>	great, whack-a-mole :/
+<|ryan|>	https://www.youtube.com/watch?v=6736w7dbfqs
+<wilsonfisk>	./troll.py  *playing*  https://www.youtube.com/watch?v=vnlh2d96jbc
+<hdm>	lol
+<wilsonfisk>	very formal. very official.
+<hdm>	thanks
+<wilsonfisk>	:)
+<wilsonfisk>	do i get cake? :d
+<lunaphyte>	rawtaz: on the contrary, comes from years of experience
+<ma3str0>	lol just switched back to this channel
+<ma3str0>	hahahahaha
+<wilsonfisk>	www.kitploit.com/2015/05/autorize-automatic-authorization.html  new burp extension.
+<wilsonfisk>	hdm: just realized; that wasn't directed towards you :p (re troll.py)
+<jnpplf>	thejh, beat me to it :)
+<wilsonfisk>	metasploit: automobile edition?  https://www.youtube.com/watch?v=6ofouzi5nma
+<jnpplf>	wilsonfisk, looks more like obd
+<wilsonfisk>	probably; says need physical access to the vehicle. i'm guessing that's what they are using for accessing the ecu
+<jnpplf>	oh mebbe both
+<jnpplf>	i hadn't seen them stop the car :)
+<jnpplf>	was just watching the bit where he was messing with the readouts
+<wilsonfisk>	yea; disables like lojack
+<wilsonfisk>	well; if anyone steals this guys car all he has to do is call it -> get car gps -> find car heh.
+<hdm>	wilsonfisk: chris was bitching on twitter that they didnt credit them for their work
+<wilsonfisk>	there's a poc?
+<hdm>	chris and co worked with nhtsa to demo it
+<hdm>	nhtsa then did the interview without crediting them using their tools
+<jnpplf>	did think it was weird that a gov agency did work that good ;)
+<wilsonfisk>	chris and co should call his car ;p;p
+<wilsonfisk>	hdm: they would have their name on the research material no?  did they even refute?
+<hdm>	just came out apparently, ill try to find the reference
+<hdm>	https://twitter.com/nudehaberdasher/status/596679196761436162
+<wilsonfisk>	sec ... just found a full-auto gause rifle video o.o
+<jnpplf>	ioactive is really spamming up my drama feed lately :)
+<wilsonfisk>	https://www.youtube.com/watch?v=twejsacigq0
+<toothe>	just to be clear, my understanding is that spamassassin will tag spam with a header, but that its later sorted with maildrop?
+<hdm>	yup
+<wilsonfisk>	rt that.
+<toothe>	i need to figure out how to use maildrop...
+<francis>	my brother in law thinks he is targeted -- his phone is getting strange calls and his website was hacked -- how can i help?
+<aewffwea>	francis: contact the police
+<swiftynb>	hey i was asking sec questions yesterday trying to figure out ssl for my client verification, do i really not need to use public keys in this application ?
+<swiftynb>	https://bpaste.net/show/e259ea4ea9dc
+<swiftynb>	and also am i doing it right? the client/server are at the top, the keygen is at the bottom
+<francis>	but wait -- it is isis -- this is serious stuff -- he is a rock-star who is targeted because he is a vet
+<francis>	so -- seriously -- he is freaking out -- what should we do -- who in the government (us) can help us?
+<francis>	but wait -- it is isis -- this is serious stuff -- he is a rock-star who is targeted because he is a vet -- sorry i was logged off automatically
+<francis>	how can i help him?
+<francis>	is isis targeting people?
+<francis>	do they have skills?
+<toothe>	i can't figure out how to install or configure dropmail!
+<toothe>	maildrop*
+<emerson>	interesting how it went from "cousin" to "brother in law"...
+<emerson>	and why are you still on as bonhoeffer, but talking from a different nick now?
+<bonhoeffer>	i’m not — my cousin is on now . . . please talk to him
+<bonhoeffer>	he is not convinced
+<nisstyre>	how does one make lots of money off of buttcoin fraud
+<nisstyre>	and such
+<stoned>	https://www.youtube.com/watch?v=5cwrzvjylww
+<stoned>	this was a pretty good talk
+<bonhoeffer>	no such luck — i told him — you are dillusional — ask the experts
+<nisstyre>	stoned: will this help me make money
+<stoned>	huh
+<stoned>	?
+<nisstyre>	stoned: if i watch this talk
+<nisstyre>	will i get ideas on how to make money?
+<stoned>	knock it off already.
+<wilsonfisk>	troll chat war ii?
+<nisstyre>	wilsonfisk: aint trollin
+<wilsonfisk>	nisstyre: i know ;) reference to previous issue that has since been resolved :)
+<nisstyre>	oic
+<nisstyre>	i was busy
+<kryczek>	wilsonfisk: it needs more power and spin on the bullets! :)
+<nisstyre>	i'm mostly detached
+<wilsonfisk>	kryczek: that's what rifleing is for isn't it? :p
+<nisstyre>	wilsonfisk: but all irc is is trolls and opers on power trips
+<wilsonfisk>	eh; not all the time.
+<wilsonfisk>	kryczek: or just build a fully automatic gaus cannon; it's on youtube :p
+<kryczek>	wilsonfisk: yeah i thought of rifling but i guess with that little power it wouldn't have much effect, and apparently the cannon cannot be thin enough
+<kryczek>	wilsonfisk: the trick would be to apply a spin through em force, which is a good brainteaser :)
+<wilsonfisk>	not sure you could spin & accelerate with the same magnets.
+<wilsonfisk>	maybe float projectile on 1 magnetic field and use another field to spin?
+<uberjar>	so like.. pardon me but why is it that security experts tend to advise putting passwords on your wifi access point ? wouldn't privacy ultimately be enhanced for everyone if people jsut leeched off each other's wifi ?
+<uberjar>	traffic analysis would still be possible i suppose, but it'd be more difficult to determine real life identity for any given traffic stream
+<wilsonfisk>	because *i* enjoy paying for other people to use my bandwidth. </humor>
+<kryczek>	wilsonfisk: i don't know if the two can be combined without messing each other but i guess you could always have different sections
+<wilsonfisk>	kryczek: yea; the fields would effect each other :(
+<kryczek>	wilsonfisk: as in [solenoid][stator][solenoid][stator] etc
+<thejh>	uberjar: depending on legislation, legal trouble (being responsible for what people did over your internet connection) and depending on the router's capabilities, the ability for people in your wifi to talk to your computer directly
+<wilsonfisk>	that takes care of acceleration; i think another field to do the spinning would effect the first field.
+<uberjar>	thejh: legal trouble should not be an issue, there is presadent at least in the us that an ip address is not enough to determine the identity of an online activity
+<uberjar>	and the more people share wifi.. the stronger that will be in court.. enhancing privacy even more
+<thejh>	uberjar: well, i know that it's different in germany (keyword "störerhaftung")
+<thejh>	uberjar: in germany, unless you're an isp, you're responsible for stuff that comes from your network if you can't say who did it
+<uberjar>	thejh:  well that seems dangerious.. becuase any attacker could quite easily frame someone for a serious crime then
+<thejh>	uberjar: if you make your wifi open? yeah
+<uberjar>	thejh:  even if your wifi is closed, but you click on a phising link and get a trojan/backdoor installed in your system
+<kryczek>	wilsonfisk: http://www.google.com/patents/us5189244 :(
+<uberjar>	perhaps if sharing wifi were more common then courts could not justify holding individuals responsible for the ip.. and that would make everyone safer from such attacks
+<nisstyre>	uberjar: but isps put it in their terms of service that you can't share
+<nisstyre>	because $$$
+<wilsonfisk>	kryczek: i thought google's motto was 'don't be evil' :p
+<uberjar>	nisstyre: this is part of the whole net neturality debate in the usa.. some want that to change
+<aewffwea>	wilsonfisk: not really... that was a confusion
+<nisstyre>	that has nothing to do with net neutrality
+<kryczek>	wilsonfisk: ah no that's just google's patent search engine
+<uberjar>	nisstyre: in the usa you can share actually under certain conditions
+<uberjar>	you just can't charge people $$ to share
+<nisstyre>	it depends on the tos
+<wilsonfisk>	something google *doesn't* own....no way.
+<nisstyre>	it's similar in canada
+<nisstyre>	liability is a separate issue
+<uberjar>	i personally want to see a future where free mesh wifi is ubiquitious, an ip address no longer can be reasonabily tied to any particular individual
+<kryczek>	wilsonfisk: i'd much prefer an fbi van than a "free candy" type van that's using your wifi in the first place
+<nisstyre>	wilsonfisk: just line your walls with shielding
+<uberjar>	meh.. that's when you turn the tables on the van… start spying on it :)
+<wilsonfisk>	if they didn't have an address; who would you be sending the data too? and how would it arrive at the intended recipient?
+<nisstyre>	that will stop both types of people
+<uberjar>	first let the air out of it's tires
+<wilsonfisk>	kryczek: true. the fbi doesn't dpi their own traffic. hidding in plain sight :p
+<kryczek>	wouldn't that make you accessory to whatever call they cannot respond to because you have disabled their vehicle?
+<wilsonfisk>	nisstyre: i'd need a few layers to cover the frequencies i want dampened.
+<wilsonfisk>	kryczek: nah; maybe destruction of public property and maybe hindering an investigation :p
+<wilsonfisk>	how would they prove it's my herf gun? ;)
+<uberjar>	i suppose the ultimate privacy rig would be to run your computer out of a van yourself, the steel frame would act as sheidling, and you could mount one of these on the roof to access long distance open wifi networks http://store.rokland.com/products/new-16-dbi-gain-outdoor-yagi-wi-fi-directional-antenna-rp-sma?utm_medium=cpc&utm_source=googlepla&variant=90557672
+<wilsonfisk>	it's not sticking out a window.
+<nisstyre>	wilsonfisk: basically you want to block anything in the microwave range
+<wilsonfisk>	more than that.
+<nisstyre>	what else is there?
+<nisstyre>	like what types of things
+<wilsonfisk>	they'd have access to all frequency bands.
+<kryczek>	wilsonfisk: looks like you just got a shady van to blast
+<wilsonfisk>	where!?!
+<wilsonfisk>	hehe
+<kryczek>	04:04 < uberjar> i suppose the ultimate privacy rig would be to run your computer out of a van yourself, the steel frame would act as sheidling, and
+<wilsonfisk>	oooh :)
+<wilsonfisk>	nisstyre: i have a dual bi-quad antenna and a primestar dish ;)
+<wilsonfisk>	but that's not really incognito.
+<nisstyre>	wilsonfisk: what is the dish for?
+<nisstyre>	tv?
+<wilsonfisk>	reflecting 2.4ghz radiation
+<wilsonfisk>	i need a different dish for 5ghz
+<wilsonfisk>	https://youtu.be/doot2_z-gie  heeeheee
+<uberjar>	what about tx
+<wilsonfisk>	what about it?
+<uberjar>	i've always wondered about satellite tcp/ip how well it works, never got into it
+<nisstyre>	wilsonfisk: is this legal?
+<wilsonfisk>	uberjar: it's not satelite isp
+<uberjar>	oohhh nvm i misread
+<wilsonfisk>	nisstyre: idk; i had/have? a technicians license from the arrl
+<wilsonfisk>	but probably not
+<nisstyre>	what about fcc?
+<wilsonfisk>	what about them?
+<nisstyre>	don't they have regulations for how much power you can use?
+<wilsonfisk>	yea
+<nisstyre>	for certain frequencies
+<wilsonfisk>	haven't been bothered by them so far ;)
+<nisstyre>	well
+<nisstyre>	they're busy with lawsuits from comcast and shit
+<wilsonfisk>	worst case scenario: i get a ticket or my license is revoked.
+<nisstyre>	fair enough
+<wilsonfisk>	nisstyre: just stay off the military gps band ;) and you'll be good
+<uberjar>	it's the local hams you have to worry about from what ih ear
+<uberjar>	they're so bored and have nothing better to do than to triangulate your ass and call in the federales
+<wilsonfisk>	which would require 3 radios.
+<nisstyre>	^
+<nisstyre>	so the local ham club
+<wilsonfisk>	so 3 operators :)
+<kryczek>	wilsonfisk: or one in 3+ different positions
+<kryczek>	see multilateration
+<wilsonfisk>	http://alljammers.com/jammers-shop/unf-vhf-jammers/portable-cellphone-jammer-wifi-jammer-uhf-jammer-3g-jammer.html :)
+<wilsonfisk>	not really 'portable'...it's huge.
+<wilsonfisk>	kryczek: thought that required 2 radios?
+<paraxor_>	decision time. is 500//500 fios worth $275/month?
+<wilsonfisk>	no fios in my area :x:x
+<kryczek>	wilsonfisk: lol just grow hippy hair and pretend it's your comb? :p
+<wilsonfisk>	lololol
+<wilsonfisk>	they have one that looks like a pack of cigarettes; but it's only cell phone frequencies.
+<kryczek>	wilsonfisk: why would you want to jam that much anyway?
+<wilsonfisk>	i don't :)
+<wilsonfisk>	http://alljammers.com/jammers-shop/top-sales/usa-all-bands-cell-phone-jammer-and-gps-wifi-vhf-uhf-4g-rf433-12-antenna.html  better 'comb' :p
+<kryczek>	haha wow
+<kryczek>	total output power: 25-30w
+<kryczek>	you don't want kids?
+<wilsonfisk>	found it!  http://alljammers.com/jammers-shop/cell-phone-jammers/portable-mobile-phone-signal-jammer-cigarette-case.html
+<wilsonfisk>	haha. i would never stand anywhere near that.
+<uberjar>	too many rads to the nads
+<maslen>	pretty sure fcc busted a guy who had a cigarette-lighter cell phone jammer
+<uberjar>	paraxor: yes.. but get a neighbor to go in on it with you
+<wilsonfisk>	rf-dos
+<nisstyre>	just don't jam from your house
+<poutine>	i don't get what purpose people would use these for, jam other drivers so they're more distracted trying to figure out why their call dropped?
+<wilsonfisk>	yea; fcc/arrl frown on jamming frequencies.
+<kryczek>	poutine: exactly my question
+<wilsonfisk>	poutine: some movie theatres have them for their theatres
+<kryczek>	what's the point of cigarette-lighter cellphone jammers, other than jamming police trackers?
+<wilsonfisk>	i don't get signal in the campus library but everywhere else; haven't found a strange box though
+<wilsonfisk>	kryczek: lojack is a seperate frequency ;)
+<wilsonfisk>	onstar uses regular cell frequencies iirc.
+<kryczek>	wilsonfisk: ok so no point at all? :)
+<wilsonfisk>	kryczek: well...if you want to watch a movie/study in peace maybe.
+<wilsonfisk>	other than that; not really.
+<kryczek>	no i'm referring to the cigarette-lighter one
+<wilsonfisk>	but jamming lojack + cell frequencies might get you a new car :)
+<wilsonfisk>	me too; it's not that powerful.
+<wilsonfisk>	</nefarious_uses>
+<wilsonfisk>	you could always keep a sw transmitter in your car; harder to triangulate.
+<wilsonfisk>	http://www.oddee.com/item_98906.aspx  is neat
+*	topic for ##security is: computer & physical security http://fnsecurity.org/ http://ow.ly/gsvto | spammer, troll? !op <reason> | be nice or gtfo | about/security/contributor cloaks now available from electr0n in case any more people are interested.
+<jnpplf>	https://github.com/x0r1/jellyfish
+<jnpplf>	gpu rootkit
+<wilsonfisk>	jnpplf: there's more
+<wilsonfisk>	sec
+<wilsonfisk>	https://twitter.com/wils0nfisk/status/595279667126358016
+<wilsonfisk>	fuck.
+<wilsonfisk>	ah well; same info.
+<wilsonfisk>	keylogger too :p
+<jnpplf>	did you just link me to your tweet containing the url i just linked? :p
+<phantomcircuit>	jnpplf, shrug
+<wilsonfisk>	not intentionally...but yea :/
+<phantomcircuit>	you need to have already been rooted for that to matter
+<wilsonfisk>	from may 4th :p
+<xception>	hello guys, its been awhile
+<wilsonfisk>	hi
+<jnpplf>	oh cool, work bumped up the minimum password length :)
+<wilsonfisk>	work is 10; school is 8.
+<jnpplf>	10s not bad
+<uberjar>	28 chars here.. but unfortunately there is some repetition
+<uberjar>	although i do use special chars, mixed case, and leet speak numrials
+<zerowaitstate>	there's nothing wrong with repetition as long as it isn't predictable repetition
+<uberjar>	hrmmmm
+<jnpplf>	this is minimum length, not actual length
+<zerowaitstate>	and leet speak doesn't help much
+<uberjar>	it's a problem with my wetware to be honest..  i have a hard time remembering enough entropy and whenever i come up with clever ideas to help me remember
+<uberjar>	they jsut end up making my passwords less secure
+<uberjar>	i should really go through some kind of memory training seminar
+<uberjar>	what i really need is some kind of hardware keyring that reads off a password for me
+<uberjar>	paper doesn't cut it.. i need it to.. actually fit on my keychain
+<ryouma>	if i zero out a previously-encrypted partition, will that notify the drive that it is not being used so that it can overprovision?
+<ryouma>	hmm i guess it isn't really a security question
+<xmppwocky>	ryouma: there's some tool to trim an entire partition away, iirc
+<ryouma>	xmppwocky: i'd heard that trim is bad with encryption, but i don't know how bad.  i heard that trimming even once can affect all the other partitions.  but perhaps that is not true?
+<ryouma>	but i never heard of trimmingjust one partition though
+<xmppwocky>	trim is block-level
+<lald>	don't try to cram many secure passwords in your head, thats a waste of brainspace.
+<lald>	remember 1 to 3 really good ones and use a password manager.
+<lald>	thats my $.02 at least.
+<penguinspy_>	since the truecrypt audit came back, what are your thoughts on its security?
+<penguinspy_>	(your = everyone here)
+<zerowaitstate>	i think the " its not secure" thing was a canary.
+<flyingtriangle1>	df
+<|ryan|>	zerowaitstate: why would that be a canary
+<zerowaitstate>	court order
+<zerowaitstate>	my opinion
+<flyingtriangle1>	i am trying to get a shell on a system. i have the ability to run arbitrary php but there's no nc, wget, curl, nor can i use file_put_contents or php curl. so i'm doing something like: <?php system("echo \"stuff\" > file.txt)?>      but i'm struggling to fit in both single and double quotes in the echo. i need both for the various shellcode i want to write to file. how can i include both single and double quotes?
+<flyingtriangle1>	its freebsd btw
+<zerowaitstate>	penguimspy_:  i don't think the problem was that tc wasnt secure.  i think the trouble was that it was secure.
+<uberjar>	flyingtriangle:  go examine various metsploit modules relating to php
+<uberjar>	flyingtriangle: you'll find some stuff to try i bet
+<flyingtriangle1>	uberjar, the problem is not that i can't find a shell, it's that i'm executing a php script on the server with "system('echo xxxxxx > xxx.php')" but there's no way i know of to have both single and double quotes inside an echo inside a system() call in php
+<flyingtriangle1>	it throws an error every time
+<flyingtriangle1>	i'm trying to just echo the msfvenom payload into a php file
+<uberjar>	sounds like you're going to have to write a script to brute force try all the possabilities
+<uberjar>	unless i misunderstand you
+<uberjar>	does'nt sound like at on of fun to me
+<uberjar>	i might misunderstand what you mean though.. either way.. sounds tough
+<lald>	it sounds more like he's trying to exploit a vulnerability that he doesn't know the exact parameters of, and is discovering them through repeated errors.
+<xmppwocky>	doesn't php have escaping
+<hdm>	xmppwocky: it escapes so hard most apps turn it off
+<hdm>	thats how awesome it is
+<wilsonfisk>	php == chris angel?
+<wilsonfisk>	or houdini ... he could escape almost anything
+<toothe>	hm..i setup two airodump's, and yet i stil can't seem to catch a handshake.
+<toothe>	even though i'm logging in and off on both a phone and a mac.
+<toothe>	strange....
+<wilsonfisk>	<stupid_question> are you sure the card is in monitor mode? </stupid_question> just to be sure :)
+<toothe>	hm...airmong-ng ?
+<wilsonfisk>	airmon-ng start <card>
+<toothe>	possibly not,let me start over.
+<toothe>	yes, i did that...
+<wilsonfisk>	airodump-ng -i mon0 ?
+<toothe>	yes...
+<toothe>	just a sec, startin over.
+<wilsonfisk>	try ifconfig to see if mon0 shows up...
+<toothe>	thre, its back up.
+<toothe>	yes, it does.
+<wilsonfisk>	hmmm.... <confused> sorry :/
+<wilsonfisk>	phone associated with ap?
+<toothe>	yes....
+<toothe>	yeah, and i'm on the right channel. let me absolutely verify.
+<wilsonfisk>	ok. out of questions. really don't know :/
+<wilsonfisk>	ruled everything out i can think of at this time of night ;p
+<wilsonfisk>	generate some traffic from the phone's browser?
+<somekittens>	you creep
+<wilsonfisk>	no. if you google kittens and don't smile...then you're creepy.
+<toothe>	yeah, i'm on the right channel.
+<toothe>	took me a bit to verify, but yes.
+<somekittens>	toothe: you're in ##security
+<wilsonfisk>	somekittens: talking about wifi channel
+<somekittens>	heh, i figured
+<wilsonfisk>	his card is in monitor mode; his phone is associated; but airodump-ng still shows nothing.
+<toothe>	yeah, is that wrong to be here?
+<toothe>	alright, i"m on the right frequency and everything.
+<toothe>	yeah, what the hell....
+<toothe>	why won't it say "handshake captured' or wahtever.
+<toothe>	now, i should also say, it won't log anything....
+<toothe>	frustrating....
+<toothe>	it won't log those iv packets either, which is odd....
+<toothe>	it should at least do that.
+<l3lu3>	toothe: assuming you can see both the ap and client, have you tried sending deauth packets for giggles?
+<l3lu3>	s/you/airodump
+<toothe>	i have.
+<toothe>	it even disconnected me.
+<l3lu3>	toothe: what card?
+<l3lu3>	toothe: distance of card to the station and client?
+<toothe>	l3lu3: i'm literally right nex to it
+<toothe>	sorry for the delay
+<toothe>	the phone is right in front of me, so it he laptop.
+<toothe>	weird....
+<l3lu3>	toothe: chipset issue? only thing i can come up with atm
+<toothe>	ath5k, but i am also using an alfa
+<toothe>	so both.
+<toothe>	this is really weird
+<toothe>	i didn't expect this.
+<toothe>	yeah, i don't get this...
+<toothe>	im really confused.
+<toothe>	i tried three wifi cards.
+<toothe>	and two devices authenticating.
+<toothe>	hm...
+<toothe>	i'm really confused.
+<toothe>	something must be going on....its wpa2 ccmp, if that makes a difference.
+<guest23901>	guys, a question. i have blocked ports and want to connect my internal e.g. udp 22 to external udp 6000. how do you do that in *nix?
+<billa>	may be this is offtopic,if i copy a url,is there a way the title of that url gets copied automatically(the url i copied converts to hyperlink)?
+<svcr3d-shvd0ws>	hey guys im goin nuts over snort.... ive been trying to get this thing running for the past 3 days and ive hit a wall, any help would be greatly apreciated as im ready to start putting holes in the drywall .....
+<svcr3d-shvd0ws>	this is the error i keep getting ...... error: failed to load /usr/cellar/snort/snort_dynamicpreprocessor/libsf_dce2_preproc.so: dlopen(/usr/cellar/snort/snort_dynamicpreprocessor/libsf_dce2_preproc.so, 6): image not found
+<rawtaz>	lunaphyte: you seem to miss the fact that there are people who do know what they're doing and yet might use a backup mx. everything isn't black and white, and not everything might be according to your resources and/or way of doing things.
+<svcr3d-shvd0ws>	someone please help me
+<svcr3d-shvd0ws>	http://pastebin.com/skstxjkq
+<akhld>	svcr3d-shvd0ws: https://www.google.ca/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=utf-8#safe=off&q=libsf_dce2_preproc.so%2c%206%20image%20not%20found
+<svcr3d-shvd0ws>	already tried google and searched that and been through the first page of that search.. but thanks?
+<svcr3d-shvd0ws>	has anyone ran into the error on nmap?
+<svcr3d-shvd0ws>	found no matches for the service mask 's' and your specified protocols
+<svcr3d-shvd0ws>	i searched google but couldent find anything relevent
+<reveredge>	what command u used?
+<svcr3d-shvd0ws>	my bad.. i did -ps instead of -ps    *embarassing face palm*
+<reveredge>	ok
+<cym13>	http://niebezpiecznik.pl/wp-content/uploads/2015/05/img_5802.png
+<thejh>	cym13: :d
+<thejh>	cym13: typical bugbounty stuff. the reporter leaves all the research to the fixer.
+<superfast>	http://onlineocr.a9t9.com/
+<superfast>	awesome tool
+<taylorswift>	really nice
+<superfast>	taylorswift, ya, how are you? what is our song?
+<taylorswift>	my irc client is buggy
+<taylorswift>	superfast: thanks. i feel good. how about you? the song is "shake is off"
+<hexhaxtron>	where can i get a huge collection of computer viruses?
+<zerowaitstate>	just go to cnet and download the top 10 free programs and accept anything they ask you to install
+<zerowaitstate>	you should get quite a collection
+<gnuyawk>	sup
+<hirogen1>	bored
+<lunaphyte>	rawtaz: we're not talking about those people.  they're not here asking rudimentary questions about running mail servers.  so no, because that fact is not referenced as it's clearly not within the context, does not mean that it "is missed"
+<apachez>	looks like google chrome stable 42.x has broken hwaccel with intel hd graphics (5000 in my case) and ubuntu 15.04, anyone else noticed this (workaround is to disable attempt to use hwaccel in the bottom of advanced settings in chrome://settings) ?
+<honey>	hello
+<roey>	hello
+<honey>	hiya roey
+<roey>	hello h
+<honey>	lol
+<roey>	what's the word on security
+<honey>	secure your mom? its mothers day. idk.
+<honey>	mommysploit?
+<roey>	yeah i'm meeting with said relation in about fifteen minutes
+<roey>	how about you?
+<honey>	very nice. enjoy
+<honey>	celebrated yesterday
+<roey>	by the way, i was wondering, are you male or female?
+<honey>	female. lol
+<roey>	honey:  ha! okay
+<roey>	honey:  i just had some in my oatmeal this morning.  lsat time i had honey was like...gaaaaaaaaaaaaaaahbazillion years ago
+<roey>	but i ran out of maple syrup :(
+<honey>	good substitute
+<honey>	gotten expensive though
+<roey>	it's so *sweet* though!
+<roey>	oh
+<honey>	you should hack a hive. lol
+<roey>	maple syrup, yeah
+<roey>	honey:  in the east coast we have this place called my organic market (mom)
+<roey>	and trader joe
+<honey>	we have trader joes here
+<roey>	and trader joe's in particular sells maple syrup cheaper than the others.
+<chono91>	http://www.honeybitcoin.com/
+<honey>	whole foods.. etc
+<roey>	oh ok, so yeah, i get my maple syrup from tj's
+<honey>	nice chono91
+<roey>	honey:  you live in modernity, gotcha :)
+<roey>	ooh thanks chono91
+<roey>	ok gotta go shower prior to meeting mom.
+<chono91>	figured its a nice hive to hack
+<honey>	cya
+<honey>	i'm not a hacker
+<chono91>	everyone is a hacker
+<honey>	i'm hacking chicken on the stove atm.
+<chono91>	i've never heard of that protocol before, hows it taste?
+<honey>	lol
+<chono91>	on a more security note, has anyone participated in a bug bounty before that might have tips on where to start or what to learn in preparation?
+<jodaz>	does honey even exist in america?
+<jodaz>	or just honey flavored hfcs?
+<honey>	organic honey is available.
+<honey>	just like real maple syrup.
+<jodaz>	hahaha, you have to prefix it to separate it from the fake shit
+<jodaz>	"organic"
+<jodaz>	"real"
+<chono91>	you just have to care enough to read the bottle.
+<jodaz>	well, if it says honey, it should be honey, if it says maple syrup, it should be maple syrup
+<chono91>	http://c2.q-assets.com/images/products/p/psq/psq-037_1z.jpg
+<jodaz>	xd
+<chono91>	i despise this stuff
+<honey>	tell that to aunt jemima and mrs butterworth
+<jodaz>	no maple
+<chono91>	nope no maple, but its implied and everyone calls it maple syrup, im like b*tch no
+<honey>	you're going to be ok. lol
+<chono91>	no.. no im not.. it breaks my heart every time someone degrades maples syrup like that.. i think i'm secretly canadian
+<honey>	lol hold on chono91
+<gibbers>	hey, can anone tell me what this instruction does: mov:zbl (%eax),%eax
+<gibbers>	movzbl*
+<en4rab>	for movzbl, the low 8 bits of the destination are replaced by the source operand. the top 24 bits are set to 0. the source operand is unaffected.
+<gibbers>	can you give an example? i'm still pretty new to reading x86
+<gibbers>	and the ()s mean it's the value pointed to by eax, right?
+<en4rab>	i have no idea, my asm skills ended with the 6805
+<gibbers>	haha, no problem
+<hdm>	mov (eax), eax would write the pointer value of eax into *eax, not sure about zbl offhand
+<maslen>	it sounds like that's the same as anding with 0000 00ff
+<maslen>	oh, () is to dereference?
+<hdm>	eax = 0x1000* -> "0x4141", a mov (eax), eax; would write 0x1000 over the 0x4141
+<hdm>	zbl would just mask the 0x1000 value i guess
+<en4rab>	http://cs61.seas.harvard.edu/cs61wiki/images/3/3f/scribe12-l08-benzguo-hysun-jonathanmiller.pdf see example f10 on page 5
+<gibbers>	ugh, i've really slipped on my x86. school caught up to me and i didn't do any re all semester
+<leearl>	dudes
+<leearl>	wattup?
+<leearl>	anyone got exp[erience iwth snort and cisco asa?
+<maslen>	hdm: any specific file formats you think would be wise to fuzz? i'm trying to get started with afl-fuzz
+<maslen>	(and a specific parsing library/utility)
+<leearl>	what  is fuzzing?
+<leearl>	giving apps random input?
+<maslen>	yeah
+<leearl>	is this an automated process?
+<maslen>	only if you want to maintain sanity
+<leearl>	if so then how u know when the app failed?
+<chono91>	i like to run it manually, i get about 1-5 entries per minuet depending on the length
+<chono91>	i guess it depends on what you are fuzzing
+<chono91>	and what your using to fuzz
+<leearl>	did u know that snort was started by some cisco manager? ;d
+<apachez>	swedish cops vs drunken students: 1-0, http://www.liveleak.com/view?i=cce_1431098629
+<leearl>	https://www.youtube.com/watch?v=-qvcb-kopje&html5=true
+<leearl>	european police are very kind
+<leearl>	us police kills people for nothing
+<karstensrage>	well certain people
+<leearl>	certain people what?
+<leearl>	umean non-white?
+<karstensrage>	they kill certain people for nothing
+<leearl>	us police kills all regardless of race
+<karstensrage>	thats ridiculous
+<karstensrage>	there are some of us still living
+<karstensrage>	not killed by police
+<apachez>	yeah us police dont discriminate, they kill everybody =)
+<apachez>	however 95% of the ones being shot at are blacks
+<apachez>	even if they "only" are behind 60% of the crimes =)
+<karstensrage>	better shoot them all to be sure
+<karstensrage>	the scary thing is that it has always been this way, we are just seeing it more now
+<karstensrage>	so they are like "what? we always do this? youve never complained before?"
+<leearl>	http://mrconservative.com/2014/08/48057-black-officer-shoots-white-man-no-media-outrage/
+<zerowaitstate>	karstensrage: you pretty much hit it on the head. social media
+<zerowaitstate>	karstensrage: we live in the age of cellphone cameras and lte. that means when someone gets shot in the back everyone in the city gets to watch a video of it
+<karstensrage>	zerowaitstate, and now everyone has a phone/movie camera in their pocket
+<gibbers>	is it possible to run gdb so that the addresses of values (with no protections) would be the same as if i ran it with env -i?
+<gibbers>	i think gdb adds some environment variables and it moves addresses away from where they would be if i ran the program straight
+<honey>	karstensrage, but yeah, not everyone cares about everything.
+<honey>	its the same people that slow down to look at a car accident and cause backups
+<karstensrage>	honey, the people that dont do that are at the edges of the bell curve, statistically irrelevant
+<honey>	that is true.
+<karstensrage>	honey, and that doesnt change the fact that its happening all the time and more than we know
+<honey>	i'm statistically irrelevant then. lol
+<hdm>	gibbers: afaik, even with the right env, addrs still move around due to other things gdb does
+<karstensrage>	its not a quantum effect
+<honey>	i dont know how old you are, but the world is a very different place the last 20 years.
+<karstensrage>	48
+<honey>	so you know what i'm talking about then.
+<karstensrage>	totally
+<honey>	and it varies per country too
+<karstensrage>	damn kids git awfff mah lawn
+<honey>	lol
+<honey>	i got rid of my lawn
+<honey>	its more like, get off my bandwidth
+<leearl>	honey, last 20 years since when?
+<apachez>	get off my vent or ill have you bent?
+<apachez>	balls of stell!
+<apachez>	eel
+<leearl>	1995?
+<honey>	yeah why?
+<apachez>	why not is the formal question
+<leearl>	thing is how old were u in 1995?
+<honey>	mentally or physically?
+<apachez>	and who is your daddy and what does he do?
+<leearl>	both
+<honey>	mentally i'm stuck on 28.
+<honey>	but i'm 52
+<leearl>	so your mental counter stopped at 28 ;d
+<leearl>	funny that
+<honey>	sorta. lol
+<apachez>	i didnt know they allowed people from the jail to irc ;)
+<honey>	lol
+<honey>	shh dont tell.
+<leearl>	the jail!
+<honey>	i'm on the new irc release program
+<leearl>	which jail!
+<honey>	sing sing of course
+<honey>	lol
+<leearl>	who is in jail?
+<leearl>	physical jail or cyber one?
+<gibbers>	hdm: what's the best way to find "real" addresses then? guess-and-check?
+<leearl>	why does hdm get a lot of questioning?
+<gibbers>	leearl: he answered my question and i had a followup question
+<apachez>	how rude
+<apachez>	you should take your second question through his seceratery
+<apachez>	+spelling
+<leearl>	apachez, u talk weird english, where r u from?
+<apachez>	being a racist, you are... mmm?
+<leearl>	no i am just wondering
+<leearl>	how can i be a racist when i dont even know where u r from!
+<leearl>	that is falwed logic
+<apachez>	falwed?
+<apachez>	like falwe you?
+<leearl>	flawed
+<leearl>	typo
+<honey>	its sunday, we're supposed to behave
+<honey>	lol
+<apachez>	no were not
+<leearl>	here we go to work on sunday
+<apachez>	we are suppose to nerdrage
+<honey>	you can work here too on sunday.
+<honey>	i just dont.
+<apachez>	because you are not a racist?
+<honey>	not on sundays
+<honey>	lol
+<apachez>	like you hate dogs but you love cats, like a true racist?
+<apachez>	like cats would be any better than dogs, pfff
+<honey>	i'm pissed off at my cat actually.
+<leearl>	so guys i wanna be a security specialist
+<leearl>	what do i have to do?
+<honey>	on sundays?
+<leearl>	i just got my bachelor in it and 0 experience with any it./
+<honey>	no internships or anything?
+<leearl>	on all weekdays
+<leearl>	nothing at all
+<honey>	any work experience?
+<pie_>	well i didn't know about this http://www.pc-freak.net/blog/browse-the-web-graphically-in-text-console-ttys-with-w3m-img-and-links2-on-debian-ubuntu-fedora-and-centos-linux/
+<leearl>	honey, 0 expereince
+<honey>	depends where you live and work on where you could start.
+<honey>	helpdesk, a noc, soc.. idk.
+<leearl>	they want fresh grads
+<leearl>	and young 20ish kids
+<leearl>	i am 41 now :'(
+<leearl>	just about 2/3 of a mans age
+<leearl>	22 + 22 + 22 = 66 :)
+<leearl>	what is noc soc?
+<leearl>	network/.system ?
+<leearl>	oc?
+<leearl>	well...
+<apachez>	security operations center
+<apachez>	staring at logs, scream when you find a breakin, and perform the nobel art of "fika"
+<thejh>	apachez: and swing the banhammer at kids who just learned about arp spoofing in a lecture and decide to test it in a public network
+<apachez>	:)
+<apachez>	"challenge accepted"
+<apachez>	int x
+<apachez>	shutdown
+<apachez>	save
+<apachez>	exit
+<apachez>	done!
+<thejh>	apachez: apparently, after arp spoofing was explained in a lecture a few years ago (and the course was new, so the lecturer didn't have past experiences to learn from), the noc did some mass-banning of students who decided to try it in the student dorms
+<superfast>	does an admin need any logs related to the ip while maintaining a nice email service? cannot an irreversible hash be used for the same, in order to avoid the profiling?
+<thejh>	superfast: you can't irreversibly hash an ipv4 address
+<superfast>	thejh, why cannot we?
+<apachez>	thejh: sounds more like a very bad network design :)
+<thejh>	superfast: because bruteforce
+<apachez>	at our place if someone tries arp spoofing they will only hurt themselfs
+<superfast>	thejh, sha512+salt of ip?
+<thejh>	superfast: do you know what bruteforce means? also, if you use a salt, why save the ip at all?
+<superfast>	sha512 of salt+ip?
+<superfast>	thejh, i am trying to avoid saving the ip at all, i want it to be replacement by an irretrievable hash
+<thejh>	superfast: and why do you just not save anything at all?
+<leearl>	guys anyone have experience of both snort and cisco asa?
+<thejh>	*why don't you
+<superfast>	thejh, ya, that is nice idea, i am asking is, do we need to retain the ip and other data for debugging and other admin work regardless of the law wants?
+<maslen>	superfast: the issue is that you can simply try every single ip address.
+<maslen>	superfast: consult a lawyer re: that.
+<superfast>	maslen, but they cannot still find out that ip address from my logs
+<apachez>	well its nice to find out shit afterwards
+<apachez>	could take a couple of months before it ends up at your desk to investigate
+<apachez>	or as with the kaspersky reports "so we found out this shit has been going on for the past 7 years, here are the 50 ip addresses... ktnxbye"
+<apachez>	then its nice to take that list of 50 cc addresses from the report and match through your logs
+<apachez>	to find out if any of your clients or servers have been trying to (or succeeded) to speak with these
+<leearl>	guys u never worked with any idses?
+<apachez>	sure
+<apachez>	but your question was a bit of a non question
+<apachez>	something particular you had in mind?
+<wilsonfisk>	happy mothers day to the moms :)
+<wilsonfisk>	(or significant others :p)
+<en4rab>	as a badly worked out ballpark i found a reference saying that oclhashcat can do about 267 mh/s for sha512, so you could hash every ipv4 address in about 16 seconds
+<en4rab>	http://thepasswordproject.com/oclhashcat_benchmarking
+<wilsonfisk>	suuuuup en4rab
+<en4rab>	evening wilsonfisk
+<wilsonfisk>	plus; with ipv4 there's only 2**32 combos (4,294,967,296)
+<wilsonfisk>	not that big of a range ;)
+<en4rab>	yeah 2^23/267000000 = 16.08
+<en4rab>	ffs 2^32
+<wilsonfisk>	sha512: card1 == 89518.5 kh/s  card2 == 89520.5 kh/s  :)
+<apachez>	4 cards per 1ru
+<apachez>	42ru per rack
+<wilsonfisk>	no; that's what mine will do :)
+<apachez>	15 120 000 000 hash/s
+<apachez>	so roughly 0.1seconds to bruteforce ipv4 :p
+<apachez>	since in average you only need to test about half of the address space
+<honey>	thanks wilsonfisk
+<thejh>	and on top of that, the distribution of ipv4 addresses probably isn't very even
+<karstensrage>	brute force ipv4?
+<karstensrage>	whats the point of that?
+<apachez>	ask superfast who wanted to sha512+salt of ip? :p
+<thejh>	(which is particularly pointless because of the salt)
+<en4rab>	karstensrage, superfast was asking about obfuscatng ips in logs by replacing them with a hash of the ip
+<wilsonfisk>	'it was in fact, more of an experiment to see who would blindly run obfuscated code. the results where interesting needless to say.'
+<wilsonfisk>	https://phl4nk.wordpress.com/2015/05/10/facepwn-part-2-the-results/  lol
+<wilsonfisk>	deobfuscated code in reddit link. 'looks like you de-obfuscated the code...1234this is a simple experiment to see how many people run this code blindly' heh
+<samy^^>	hola
+<wilsonfisk>	hi samy^^ :)
+<samy^^>	how's it going wilsonfisk?
+<wilsonfisk>	could be better; took a sick day :x. you?
+<apachez>	:)
+<samy^^>	wilsonfisk: ahh feel better man. working on hacking some firmware
+<wilsonfisk>	what kind?
+<leearl_>	yo
+<chouhartem>	hi
+<leearl_>	guys u heard about iran hitting turkish power grid?
+<xmppwocky>	http://i.imgur.com/is9wiye.png
+<leearl_>	http://www.ibtimes.co.uk/turkey-power-cut-5-theories-what-behind-nationwide-electricity-blackout-1494406
+<wilsonfisk>	xmppwocky: lol
+<chouhartem>	xmppwocky: a critical security issue :)
+<en4rab>	its not exactly confidence inspiring when news storys describe the outage as "the worst in 15 years"
+<leearl_>	so when taking picture say "slacks" instead of cheese.
+<en4rab>	id be expecting phrases like "never before seen" or "unprecedented"
+<wilsonfisk>	it was seen before...15 years ago :p:p
+<honey>	can someone hack me a butler so i can rest?
+<honey>	k thanks. lol
+<en4rab>	yeah so the story is more "dodgy national grid running on chewing gum and string finally falls over"
+<maslen>	en4rab: you should have seen teh story a while back about the outage in pakistan
+<leearl_>	pakistan is retarded unlike turkey
+<leearl_>	turkey is expected to make it in the top 10 countries soon.
+<xmppwocky>	i read "doggy national grid"
+<xmppwocky>	which sounds adorable
+*	topic for ##security is: computer & physical security http://fnsecurity.org/ http://ow.ly/gsvto | spammer, troll? !op <reason> | be nice or gtfo | about/security/contributor cloaks now available from electr0n in case any more people are interested.
+<apachez>	there are no squirells as the cybersquirells!
+<apachez>	*plays themesong*
+<en4rab>	oh and wilsonfisk i saw the video about hacking cars you tweeted, my first thought was the symptoms of hacking are very similar to a landrover discovery with water in the fusebox :)
+<wilsonfisk>	hahaha
+<wilsonfisk>	yea; fuse boxes aren't water-tight
+<wilsonfisk>	did it mess up the ecu when it shorted out?
+<en4rab>	i havent seen it yet, just got pestered about it at work by one of the fitters, like i know anything about cars lol
+<en4rab>	from the description either the fusebox or bcu  or both are knackered
+<wilsonfisk>	lolol
+<wilsonfisk>	reading an article about jtag sniffing and this is @ the top of the page 'disclaimer: everything here will void your product warranty' lol
+<en4rab>	fusebox  just get one from the scrappers for £35ish, the bcu appears to be a no fly zone unless you have expensive diagnostic software
+<wilsonfisk>	http://shop.advanceautoparts.com/p/actron-auto-scanner-obd-ii-code-reader-cp9575/99994272-p?navigationpath=l1*14924|l2*15044|l3*16232
+<en4rab>	no theres all custom can messages for pairing the ecu and bcu and stuff, obd2 wont cut it
+<wilsonfisk>	i've grown to dislike the word 'custom' :p:p
+<wilsonfisk>	'custom' usually means more work :p
+<en4rab>	i already have a chinese knockoff bluetooth obd2 dongle and torque on my phone for "clear the error and hope it doesnt come back" fixes :)
+<wilsonfisk>	they work ;)
+<wilsonfisk>	well...for ~50 miles anyway :p
+<undisclosed>	ohai
+<undisclosed>	a friends server seems to be under attack from a chinese ip. for some reason fail2ban isnt blocking it.
+<apachez>	then manually nullroute that bastard?
+<apachez>	with urpf strict traffic in both directions will get dropped
+<undisclosed>	apachez, how? what about sending his packets back to him
+<apachez>	if its udp you dont know the true source
+<apachez>	could be using you as reflection attack
+<undisclosed>	wouldnt i see arp traffic in tcpdump
+<undisclosed>	i see: 20:32:46.553397 ip (tos 0x28, ttl 43, id 26383, offset 0, flags [df], proto tcp (6), length 552)
+<apachez>	thats tcp
+<apachez>	but yeah in a tcpdump with no filters you should see arps too
+<apachez>	but for a limited network the arp timeout is anything from 300sec (5min) to 4 hours
+<apachez>	generally speaking
+<undisclosed>	i just did a: tcpdump -vvv host 117.21.191.23
+<apachez>	so if you tcpdump for like 1 minute theres a great chance you will never see an arp
+<undisclosed>	anything else i can try
+<apachez>	tcpdump -s0 -i eth0 -w dump.pcap
+<wilsonfisk>	tshark/wireshark
+<sonicwall>	:-)
+<undisclosed>	lunaphyte, iftop is showing a lot of traffic from that "attacking" ip
+<lunaphyte>	i mean, i'm assumming you wanted actual help
+<sonicwall>	oh no
+<undisclosed>	i do, and i'm wondering what you mean. literally :p
+<sonicwall>	red alert
+<lunaphyte>	naturally, actual information begets that ;)
+<lunaphyte>	*what* "traffic"?
+<sonicwall>	who what when where and why
+<undisclosed>	anything else you guys would check? apachez had a good tip with nullroute
+<lunaphyte>	i would check to see what kind of traffic it is
+<lunaphyte>	fail2ban isn't magic, after all.  all it does is watch log files for predefined patterns
+<apachez>	the classic way is to enable urpf strict
+<apachez>	and then nullroute 192.0.2.1
+<toothe>	hm..having trouble configuring maildrop.
+<sonicwall>	na the ip
+<sonicwall>	ban the ip
+<apachez>	and then whatever you want to drop in both directions you put it as nexthop 192.0.2.1
+<apachez>	tada!
+<apachez>	now you can use bgp or whatever to propagate what traffic (based on ip) to drop in both direction across your network (all border routers for example)
+<sonicwall>	geo-ip filter works well for me
+<sonicwall>	oh no its honey
+<sonicwall>	aaaaa
+<honey>	hi
+<sonicwall>	ah she left
+<sonicwall>	oh wait she back
+<sonicwall>	aaaaa
+<honey>	o.o
+<thedarkb>	ever seen the inside of a steam locomotive?
+<thedarkb>	http://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/boiler_explosion_1850.jpg/800px-boiler_explosion_1850.jpg
+<thedarkb>	this one exploded
+<apachez>	where's the driver?
+<honey>	not there.
+<thedarkb>	left in quite a hurry after the explosion apparently
+<honey>	thats old
+<sonicwall>	error generating thumbnail
+<sonicwall>	the given path of the specified thumbnail is incorrect; expected '8/8c/boiler_explosion_1850.jpg/800px-boiler_explosion_1850.jpg' but got '8/8c/boiler_explosion_1850.jpg/800px-boiler_explosion'.
+<sonicwall>	it dont work
+<thedarkb>	does for me
+<thedarkb>	wait
+<thedarkb>	i put this in the wrong channel didn't i
+<lunaphyte>	yes
+<maslen>	thedarkb: also see https://en.wikipedia.org/w/index.php?title=aurora_generator_test
+<apachez>	its like watching those suicidebombingvideos in slowmotion
+<apachez>	frame x now he is there
+<apachez>	frame x+1, now he is not
+<honey>	lol
+<pistrix>	crossposting from #steam.risks ?
+<honey>	i havent been on a train in a very long time.
+<honey>	thedarkb, what chan were you to post in then?
+<thedarkb>	#trains
+<pistrix>	ah.
+<thedarkb>	i've posted it in there now
+<honey>	oh.. an official chan of trains.. sweet.
+<honey>	actually i have a cool link to old abandoned trains from germany. the other desktop
+<undisclosed>	apachez, did a "iptables -a input -s 117.21.191.23 -j drop" and it took a good 90 seconds before the traffic actually stopped
+<undisclosed>	hi honey
+<honey>	heya undisclosed
+<honey>	how are you?
+<undisclosed>	as we say in the 'hood, 'm'aiggght
+<honey>	lol ok.
+<honey>	i havent been to harlem in years but i gotcha. lol
+<sonicwall>	hmm this  is a bad ip
+<sonicwall>	china
+<sonicwall>	lots of people bitching about this ip
+<undisclosed>	sonicwall, sauce
+<sonicwall>	all over you face... mahahahah
+<undisclosed>	you're high again. gtfo back down here
+<toothe>	okay, im frustrated now...been trying to get this nonsense working for a whiles now.
+<sonicwall>	get what to work
+<toothe>	so, spamassassin will tag my spam, great
+<toothe>	but i can't get it to sort that into the spam or junk folder.
+<sonicwall>	well spam is junk
+<sonicwall>	ljunk is spam
+<toothe>	either or...
+<undisclosed>	is spam still junk if it's not in the junk folder?
+<toothe>	hm...good question.
+<rawtaz>	lunaphyte: if that level of detail makes you happy, be my guest ;p
+<toothe>	i can change it to junk just to make sure.
+<lunaphyte>	heh,  a modest amount?  sure
+<apachez>	undisclosed: ddosed box?
+<apachez>	or you mean it took 90 sec for the chinese ip to find out its being blocked and stop its retries?
+<sonicwall>	7hmm
+<sonicwall>	never have such issue
+<undisclosed>	apachez, i mean it took that long for iptables to "kick in"
+<sonicwall>	hmm'something not config right
+<apachez>	undisclosed: sounds odd unless your box was under heavy use
+<sonicwall>	maybe config issue
+<apachez>	iptables kicks in imediately
+*	topic for ##security is: computer & physical security http://fnsecurity.org/ http://ow.ly/gsvto | spammer, troll? !op <reason> | be nice or gtfo | about/security/contributor cloaks now available from electr0n in case any more people are interested.
+<chono91>	does anyone have any recommendations for a metadata scrubber<
+<wilsonfisk>	what file type?
+<chono91>	i was hoping for something that handles everything, but pdf and office documents mostly.
+<wilsonfisk>	adobe gives instructions:  http://www.adobe.com/content/dam/adobe/en/products/acrobat/pdfs/adobe-acrobat-xi-pdf-sanitization-remove-hidden-data-from-pdf-files-tutorial-ue.pdf
+<chono91>	oh sweet, and i just found that office 2013 does the same, thanks!
+<geoffmcc>	on many distro's, if not all, the command 'netstat -antp` requires sudo. does anyone where this setting of needing sudo is achived? i ask becuase i am on a shell that allows the use of command as regular user and i am trying to determine how to disable that, and make it require sudo, as it should.
+<wilsonfisk>	np.
+<reveredge>	geoffmcc, it depends on the files that program is accessing. if any file requires sudo permission then the application requries sudo
+<geoffmcc>	reveredge: so the proble is not with netstat itself, but rather than what netstat is looking at then?
+<reveredge>	yup
+<geoffmcc>	thank you
+<toothe>	gah! i"m really frustrated now!
+<toothe>	i just want this to work at this point.
+<toothe>	like, i don't want to keep re-reading explanations...
+<toothe>	frustrating...
+<apachez>	geoffmcc: because it requires su to get the maping of pid vs executable
+<apachez>	you could add in the sudoers that it will happily run as root for that particular syntax
+<undisclosed>	toothe, step back from it for a while. come back with a fresh outlook
+<apachez>	freeze!
+<apachez>	step back from your computer!
+<apachez>	dont make any sudden moves!
+<geoffmcc>	apachez: but if it is not, any idea where i would look to fix that
+<toothe>	undisclosed: its been like 14 days now...
+<toothe>	undisclosed: its that there's like a lack of documentation out there.
+<undisclosed>	have you made any progress. i have no idea what you're working on btw
+<toothe>	sorry, let me start over.
+<toothe>	so, i am setting up an email system for msyelf.
+<toothe>	i have it tag incoming email messages that are spam as spam - great.
+<toothe>	but, it doens't do any sorting. so it doesn't put spam mail into /junk.
+<toothe>	and i cannot figure out how to do that.
+<undisclosed>	is it dovecot?
+<toothe>	yes..
+<toothe>	dovecot + postfix + spamassassin.
+<toothe>	so, the mail is marked -great!
+<toothe>	but...it still goes to the inbox, which doesn't solve anything.
+<undisclosed>	what did the guys in #dovecot suggest might be the problem
+<en4rab>	http://wiki.dovecot.org/lda/sieve#spamassassin.2bac8-amavis_tagged_mail_filtering
+<en4rab>	example sieve rule for dovecot to move spamassasin tagged mails to another folder
+<toothe>	undisclosed: to be honest.
+<toothe>	they kinda just keep saying like
+<toothe>	"go rea dthis"
+<toothe>	a wikipedia page that i might have read perhaps a dozen times over the past weeks
+<toothe>	so, i asked like 3 times "what is sieve"
+<toothe>	and i wasn't really given an explanation.
+<toothe>	which...i guess was a bit vexing...
+<en4rab>	https://tools.ietf.org/html/rfc5228 an email filtering language
+<toothe>	i've read that...
+<toothe>	i don't have a clear path of what i"m supposed to do
+<toothe>	like, that isn't really ehlping me.
+<toothe>	i need a clear path of "install this, then this"
+<toothe>	like...what am i supposed to do?
+<toothe>	i need that question answered.
+<toothe>	the wiki page of  mda isn't realy going to help.
+<lunaphyte>	with dovecot, you wouldn't use maildrop
+<toothe>	right, they seem to occupy the same purpose...
+<undisclosed>	toothe, nothing worse than those lazy, greater-than-thou reponses from guys who could easily help
+<toothe>	i know...
+*	topic for ##security is: computer & physical security http://fnsecurity.org/ http://ow.ly/gsvto | spammer, troll? !op <reason> | be nice or gtfo | about/security/contributor cloaks now available from electr0n in case any more people are interested.
+*	topic for ##security is: computer & physical security http://fnsecurity.org/ http://ow.ly/gsvto | spammer, troll? !op <reason> | be nice or gtfo | about/security/contributor cloaks now available from electr0n in case any more people are interested.
+*	topic for ##security is: computer & physical security http://fnsecurity.org/ http://ow.ly/gsvto | spammer, troll? !op <reason> | be nice or gtfo | about/security/contributor cloaks now available from electr0n in case any more people are interested.
+<gorlob>	hello honey.
+<gorlob>	how are you?
+<honey>	hi gorlob
+<honey>	i'm in win 8.1 hell. lol
+<honey>	well i left hell 2 mins ago
+<honey>	how are you?
+<wilsonfisk>	windows 10 will be the last 'windows'. what are they going to call it next...opendoor?
+<honey>	all i wanted to do was talk on the mic in paltalk. lol
+<honey>	such an issue. idk.
+<gorlob>	i just got home from a 19 hour exploit development session.
+<honey>	how was that?
+<gorlob>	tiring.
+<honey>	long time.
+<gorlob>	but now i have a cool new chrome exploit.
+<honey>	neat.
+<happyfr0gg>	gorlob, what does the new chrome exploit do?
+<gorlob>	it lets me run code in a gpu process.
+<mak0_o>	not bad for 19 hours :d
+<happyfr0gg>	hmm. okay. the point of that would be?
+<gorlob>	i just really like running code in peoples' gpu processes, i guess.
+<wilsonfisk>	gorlob: related to jellyfish/demon?
+<gorlob>	that question has thrown me into an existential crisis.
+<mak0_o>	lol
+<wilsonfisk>	sorry about that.
+<gorlob>	what is the point of anything?
+<mak0_o>	the other q i imagine
+<mak0_o>	yeah
+<mak0_o>	:d
+<mak0_o>	why run any code anywhere
+<toothe>	stupid question - what is the purpose of a pgp sub key?
+<gorlob>	what have i been doing with my life?
+<gorlob>	wilsonfisk: no, unrelated.
+<gorlob>	it's just an old use after free bug in some out of the way code.
+<wilsonfisk>	nvidia and/or amd?
+<terabit>	both
+<terabit>	coz wy not
+<gorlob>	it's not a gpu exploit.  it just lands in the chrome gpu process.
+<wilsonfisk>	ooh. i misunderstood you. sorry.
+<gorlob>	which is where skia send command buffers after rasterization.
+<gorlob>	assuming the software renderer plugin is not in play.
+<wilsonfisk>	19 hours.... how are you not sleeping?
+<gorlob>	i am waiting for food.  i don't eat while coding.
+<gorlob>	or drink, for that matter.
+<wilsonfisk>	i can't write code in silence; i have to have noise.
+<wilsonfisk>	starving && tired == no good.
+<gorlob>	i only eat once a day anyway.
+<wilsonfisk>	what! that's soooo bad for you :p
+<wilsonfisk>	well; not if you're trying to gain weight :p
+<gorlob>	hunter-gatherers don't eat three meals a day, and they're usually pretty fit.
+<wilsonfisk>	but they are running from bears and mountain lions heh ;p
+<wilsonfisk>	that will lower your metabolism rate quick
+<wilsonfisk>	when did volatility get a web interface?
+<gorlob>	that's largely a myth.  metabolism is just not that flexible in warm-blooded things.
+<wilsonfisk>	more because i need to time it with my medication; but ups the metabolism rate ;)
+<gorlob>	sure it does.
+<wilsonfisk>	:s/sure/i hope  :)
+<wilsonfisk>	https://github.com/jameshabben/evolve   new2me.
+<pepperoni>	anyone read any good security books lately, recommendations?
+<apachez>	http://www.liveleak.com/view?i=dec_1431282440  wow, that escalated quickly =)
+<honey>	ahh.. the sound of ny.
+<|1n3|>	probably a long shot but anyone doing the pentestit labs? https://lab.pentestit.ru/pentestlabs/3
+<|1n3|>	got an awesome vpn lab setup for pentesting/ctf for free
+<grend>	heya
+<grend>	:d
+<karstensrage>	i really dont get the point of cisco ise
+<karstensrage>	do admins love configuring every tiny detail of every single device in their system?
+<karstensrage>	rsa was chock full of shitty dashboards for configuring confusing details about everything
+<karstensrage>	do admins love that?
+<thejh>	karstensrage: well, it won't exactly hurt job security, right?
+<karstensrage>	i guess
+<karstensrage>	but what a boring job
+<lunaphyte>	cargo cult admins love it, yes
+<lunaphyte>	anti pattern purveyors
+<karstensrage>	hi lunaphyte
+<karstensrage>	the problem is thejh for job security, these things dont handle everything, so how many shitty dashboards are you going to have to deal with?
+<ma3str0>	maybe some people really like shitty dashboards
+<karstensrage>	when i say shitty dashboard i mean something very specific btw
+<karstensrage>	http://attackwithnumbers.com/the-laws-of-shitty-dashboard
+<ma3str0>	so you mean... shitty dashboards?
+<hdm>	or "dashboard"
+<ma3str0>	^
+<apachez>	one dashboard to shit them all?
+<ma3str0>	my company had the dashboard idea a few years ago
+<ma3str0>	it's completely useless
+<ma3str0>	but we have one now baby!
+<apachez>	you and your boss got a baby?
+<wilsonfisk>	http://i.imgur.com/zcznvfwh.png   cluttered
+<ma3str0>	the "picture" widget seems especially useful
+<karstensrage>	wilsonfisk, exactly
+<wilsonfisk>	http://nsa26.casimages.com/img/2011/03/12/110312074534942144.png   not as cluttered
+<wilsonfisk>	guess it depends :)
+<karstensrage>	but take that and turn it into options that you can set
+<karstensrage>	and omg
+<lopx>	sup sup
+<gorlob>	greetings.
+*	topic for ##security is: computer & physical security http://fnsecurity.org/ http://ow.ly/gsvto | spammer, troll? !op <reason> | be nice or gtfo | about/security/contributor cloaks now available from electr0n in case any more people are interested.
+<enthddddd>	lmbo
+<enthddddd>	lllllllllllllllloooooooooooo<llllllllllllllllllllllll
+<sartan>	ok!
+<sartan>	does anyone here know chinese and can contribute something really small to a project? i need to translate 'ok' 'cancel' 'next' 'i agree' etc from english to chinese for some regular expression matching on the cuckoo project. wonder if someone can help ^_^
+<sartan>	pretty simple
+<maslen>	google translate ?
+<sartan>	not sure it would be the accurate, i dno't use chinese apps and can't totally validate
+<sartan>	that*
+<mangekyo>	u can use google translate to verfify your translator didnt troll you
+<ma3str0>	ummmm if you still haven't found an answer by tomorrow, a coworker who sits next to me is native chinese
+<sartan>	cool
+<lunaphyte>	karstensrage: hi :)
+<jeffrey3234>	we have a chinese sysadmin, he scares the shit of me, 2gb upload to china?? oh it's only lu
+<ma3str0>	lol
+<lald>	gorlob: gpu+dma makes chrome's sandbox into maginot line?
+<toothe>	gonna d a pentest next week with a raspberry pi.
+<toothe>	if only my raspberry pi had a battery....
+<ma3str0>	that may hinder your plans
+<toothe>	wy's that?
+<toothe>	i won't be doing the planting, but i setup the pi
+<toothe>	i"m not good at social engineering and that sorta stuff...
+<ma3str0>	is it useful without a battery?
+<toothe>	meaning...
+<toothe>	so, i dunno how we're going to plan it on the premises
+<toothe>	we'd have to hook it up to something
+<toothe>	an outlet.
+<toothe>	ideally, i'd have a battery that would last like a week or so.
+<lald>	*the
+<lald>	how goes it ##security
+<karstensrage>	it goes
+<lald>	indeed. i just converted a putty key to openssh's format, and the comment was "imported ssh key"... so i guess i unimported it
+<nate_b_higgers>	hi guys
+<nate_b_higgers>	any good courses on intel 8086 assembly
+<maslen>	http://opensecuritytraining.info/introx86.html
+<maslen>	g'luck and g'nite
+<nate_b_higgers>	thanks maslen
+<toothe>	totally weird question - think there's any way to contact a verizon technical guy?
+<toothe>	i wanna unfilter port 25....
+<jeffrey3234>	toothe nanog?
+<toothe>	pardon?
+<jeffrey3234>	mailing list for networking guys, i always see people asking for tech contact for isp x
+<toothe>	oh? i'll ddg that
+<jeffrey3234>	north american network operators group
+<toothe>	do you subscribe?
+<jeffrey3234>	for the last year i have yes, from about 2 weeks ago i canceled
+<toothe>	http://mailman.nanog.org/pipermail/nanog/
+<toothe>	i used to get bugtraq when i was a kid lol
+<toothe>	yeah, i don't want to end up getting a business line, that's like $70 a month
+<jeffrey3234>	want to run your own mail server?
+<nate_b_higgers>	has anyone heard of codeschool?
+<toothe>	jeffrey3234: yes...
+<toothe>	but down the line.
+<toothe>	i can receive on port 25, but can't send out.
+<jeffrey3234>	toothe searching through my emails, couldn't find anyone from verizon
+<jeffrey3234>	apparently it's a bitch to run and maintain your own mailserver, never tried though
+<nate_b_higgers>	why would you do that jeffrey3234 ?
+<toothe>	it is.
+<toothe>	it really is.
+<nate_b_higgers>	i was wondering if there was a codeschool for hacking
+<toothe>	its confusing as french connection united kingdom.
+<jeffrey3234>	nate_b_higgers do what?
+<toothe>	nate_b_higgers: prob not codeschool, but there's other stuff out there.
+<toothe>	nate_b_higgers: hacking is a large concept -what specifically are you trying to learn?
+<nate_b_higgers>	toothe, i would like to learn assembly programming x86 and x64 and then i would like to learn programming and exploitation
+<nate_b_higgers>	after that i would like to learn shellcode
+<jeffrey3234>	nate_b_higgers the art of exploitation book
+<nate_b_higgers>	i have the book, it requires prerequisites
+<nate_b_higgers>	a lot of the stuff is just over my head
+<toothe>	reat, that's specific
+<toothe>	great*
+<toothe>	nate_b_higgers: security tube has a great video series on assembly.
+<jeffrey3234>	when you get to a part you don't understand, stop and study up on that, then come back to it
+<nate_b_higgers>	i met the author at defcon, great guy
+<nate_b_higgers>	i seriously don't know what i was doing at defcon since i don't know anything about computers
+<nate_b_higgers>	thanks toothe i'll check out security tube
+<nate_b_higgers>	but is there like a mooc for assembly?
+<nate_b_higgers>	that would be gold
+<nate_b_higgers>	like cs50 on edx is gold
+<paraxor>	nate_b_higgers: do you get a lot of hate from dyslexic people?
+<nate_b_higgers>	what do you mean?
+<lald>	yeah, paraxor is being really opaque here.
+<nate_b_higgers>	lald, yeah some transparency would be nice?
+<nate_b_higgers>	i hope nobody hates me
+<toothe>	yeah, not sure how i'd get in touch with a verizon guy
+<nate_b_higgers>	don't go through verizon, they're the worst
+<paraxor>	nate_b_higgers: is that your real name
+<toothe>	i can't, they're my only choice.
+<nate_b_higgers>	yes, why?
+<nate_b_higgers>	should we not use our real names?
+<toothe>	why would you?
+<paraxor>	well, some dyslexic people swap letters at fronts of words
+<nate_b_higgers>	oh.......
+<nate_b_higgers>	i hate my name now
+<toothe>	i was just thinking, the only real way to guarantee data security is by running your own server.
+<toothe>	and since email doesn't really require much cpu power, i could experiment with a pi.
+<nate_bradley>	toothe, no guarantees when the nsa installs trojans on routers
+<toothe>	the only thing that does is spam filtering.
+<nate_bradley>	how is that not illegal?
+<toothe>	true true.
+<toothe>	but, if you contorl the physical device.
+<toothe>	but tbh, my threat model isn't really about the nsa
+<toothe>	i mean...im pretty certain the nsa isn't interested in me.
+<toothe>	its more about google and the likes.
+<nate_bradley>	what's a bigger threat than the nsa?
+<nate_bradley>	don't you want to be #1 on google and have a zillion likes?
+<paraxor>	nate_bradley: climate change, the ever-looming threat of nuclear armageddon
+<nate_bradley>	death is a gift
+<paraxor>	kidding. assuming the government doesn't care about you, some guy in ukraine may pose a bigger threat
+<nate_bradley>	the world sucks
+<nate_bradley>	if the government didn't care about you then they wouldn't be setting up surveillance equipment tracking your life
+<toothe>	do you think it would be possible to have an smtp alternative?
+<paraxor>	probably never going to happen
+<nate_bradley>	implementing your own protocol?
+<toothe>	the ipv6 of email.
+<toothe>	and be "dual stack" if you will.
+<nate_bradley>	you can always implement your own protocol and send it to the authorities
+<toothe>	paraxor: yeah....you're probably right.
+<nate_bradley>	or you can keep it a secret
+<nate_bradley>	i worked in sales when i found out from our it department that they were implementing their own protocols
+<jeffrey3234>	toothe dark mail? they are trying
+<toothe>	i guess i really internalized how encryption just...cna't really be done on a mass scale.
+<nate_bradley>	why not?
+<toothe>	verification
+<toothe>	knowing someone's identity.
+<toothe>	what's the wrod for it...like, how do i securely get my pgp key to you if i don't even know you?
+<nate_bradley>	pub key?
+<toothe>	public key.
+<nate_bradley>	but the nsa has cracking stations
+<toothe>	im sure they do.
+<toothe>	in my last job so did we
+<toothe>	but we could never crack certificates
+<toothe>	passwords are a joke.
+<nate_bradley>	apparently they also have installed 4g antennas in laptops that send information to their servers even if your computer never connects via wifi
+<nate_bradley>	i always copy and paste my passwords
+<toothe>	hm...that doesn't sound right.
+<toothe>	nate_bradley: then your passwords are in cleartext
+<jeffrey3234>	nate_bradley im sure ee guys would have found it by now if that was the case
+<nate_bradley>	toothe, but then i change it every week
+<nate_bradley>	you'd have to root my machine to get the password
+<toothe>	what is this for?
+<toothe>	you change the pw on your personal machine once a wek?
+<toothe>	week*
+<nate_bradley>	* tgcid has quit (ping timeout: 250 seconds)
+<nate_bradley>	<nate_bradley> if the government didn't care about you then they wouldn't be setting up surveillance equipment tracking your life
+<nate_bradley>	<toothe> do you think it would be possible to have an smtp alternative?
+<nate_bradley>	toothe, yes i do i'm a bit paranoid
+<nate_bradley>	toothe that's not what i copied, my client is acting up :(
+<toothe>	nate_bradley: you should use a one-time password system
+<toothe>	like yubikey
+<nate_bradley>	http://www.forbes.com/sites/erikkain/2013/12/29/report-nsa-intercepting-laptops-ordered-online-installing-spyware/
+<nate_bradley>	toothe, how would i set that up for facebook and gmail?
+<toothe>	ha! wow...
+<toothe>	nate_bradley: if you're concerned about security....you don't use facebook or gmail.
+<nate_bradley>	but i need it for work
+<toothe>	then you make your work do the setup on that, honestly
+<toothe>	you can do two-factor on gmail
+<toothe>	that's doable with an app
+<toothe>	as far as fb is concerned...why do you need fb for work/
+<nate_bradley>	promoting my company
+<toothe>	oh..hrm....
+<lald>	i think toothe probably meant, "don't put your personal life on fb or gmail."
+<toothe>	honestly, i'd reply on fb's security - shift the burden onto them.
+<toothe>	lald: yeah.
+<lald>	rather than your work's facebook.
+<lald>	which presumably wouldn't have your personal information.
+<nate_bradley>	i'm sure i'm on their terrorist list
+<lald>	but if you log into it with your personal computer, they'll still tie it to like buttons on the web.
+<nate_bradley>	interesting
+<lald>	there are lots of lists. people usually use "terrorist list" to refer to the "do not fly list"
+<lald>	and if you've flown anywhere recently, you're not on it.
+<nate_bradley>	wait, so terrorists can't fly?
+<torchinz>	i am curious about this scenario: assuming that a person having sensitive info on a hard drive "a" comes to know that the police is looking for him. he detaches and replaces hard drive "a" with "b". nw the forensics people take it all (minus hdd a), will they ever be able to know the real shit?
+<nate_bradley>	how did they pull off 9/11? i knew it! 9/11 was an inside job
+<lald>	people with the same first, middle, and last name as someone who the government thinks kinda sorta may be a terrorist can't fly.
+<lald>	(under their real name.)
+<nate_bradley>	so this pretty much confirms 9/11 being done by jews and our own government to steal oil from the middle east and topple their supremacy
+<lald>	torchinz: the police are starting to train dogs to sniff for hard drives, sd cards, etc., but i don't suppose they can analyze what they can't find.
+<lald>	does it now.
+<torchinz>	 so, there will be no hardware or software footprint of that previous (drive "a") on that pc?
+<nate_bradley>	larry silversetin got a 5 billion dollar insurance payout
+<nate_bradley>	a short time before the "attack" he ordered insurance that covered plane damage
+<nate_bradley>	it can't be coincidental
+<nate_bradley>	the insurance was 120 million dollars
+<nate_bradley>	or something like that
+<wilsonfisk>	topic. please. :)
+<nate_bradley>	wilsonfisk, we're talking about national security
+<lald>	national security isn't on topic
+<nate_bradley>	but isn't this security?
+<nate_bradley>	computer and physical security?
+<nate_bradley>	isn't national security physical security?
+<lald>	i've argued that it is, but the prevailing opinion is that it isn't.
+<wilsonfisk>	nate_bradley: no; you are talking about conspiracys. try ##conspiracy :)
+<wilsonfisk>	or ##tinfoilhats
+<nate_bradley>	wilsonfisk, i know you think i'm nuts, but think how many times our government lied to us and all of us "conspiracy theorists" have been right
+<lald>	torchinz: i'm not qualified to say, but it could happen. especially if theres some kind of caching going on; if, say, the drive was part of a raid.
+<lald>	even if you replace both drives in the raid, the raid may have sensitive data cached.
+<wilsonfisk>	nate_bradley: idc, b/c this is ##security and not ##conspiracy. i know they sound similiar; but they are different :)
+<torchinz>	anyway, if autonuking may help? dban?
+<nate_bradley>	wilsonfisk, if you read the topic it says computer and physical security
+<karstensrage>	when has a conspiracy "theorist" ever been right?
+<wilsonfisk>	nate_bradley: how is saying 'the jews caused 9/11' have anything to do with the topic?
+<nate_bradley>	now you're taking what i said out of context
+<nate_bradley>	karstensrage, http://www.infowars.com/33-conspiracy-theories-that-turned-out-to-be-true-what-every-person-should-know/
+<karstensrage>	infowars?
+<wilsonfisk>	kind of like faux news.
+<karstensrage>	how about something remotely credible?
+<nate_bradley>	it's the only honest source of information
+<nate_bradley>	there's nothing more credible than infowars
+<karstensrage>	how about snopes?
+<nate_bradley>	snopes is great
+<wilsonfisk>	idk if you're trolling or are actually serious...
+<karstensrage>	trolling
+<nate_bradley>	why waste time trolling... no i'm serious
+<nate_bradley>	i know what i see and the right things to believe in
+<lald>	torchinz: deleting a whole drive takes a lot of time and the information may still be recoverable. better to keep it encrypted from the get go.
+<nate_bradley>	http://lmgtfy.com/?q=conspiracy+theories+that+were+true
+<nate_bradley>	how about that?
+<wilsonfisk>	troll? o/ o\ ?
+<torchinz>	wouldn't encryption be broken? like by forensics?
+<lald>	jk, o/ for their previous nick alone
+<wilsonfisk>	we can't have any undecides :p
+<lald>	man, i didn't know this channel was democratic.
+<wilsonfisk>	:s/undecides/undecideds
+<wilsonfisk>	should be :p
+<lald>	does this mean we can vote you out of op?
+<lald>	i vote you can't be op if your average lag is > 10s
+<wilsonfisk>	lolol
+<wilsonfisk>	no bar tonight :)
+<wilsonfisk>	lald: if you had twc you'd understand *cries*
+<lald>	:( your network is not as powerful as your networking equipment.
+<wilsonfisk>	what if your network (isp) is sh*t?
+<wilsonfisk>	we have commercials for fios but it's not 'offered in my area' :x
+<karstensrage>	there has been some studies that show that trolls have traits of sadism
+<karstensrage>	the common refrain of 'for the lulz' for any atrociously inappropriate behavior has to be some sort of mental aberration
+<baordog>	ugh
+<nate_bradley>	there have been studies that trolls are overweight
+<baordog>	i have some horrible thing wrong with my mac... cpu usage is 1% but i can't do anything without a beachball
+<baordog>	something is very wrong.
+<karstensrage>	baordog, reboot
+<karstensrage>	vmware?
+<karstensrage>	virtualbox?
+<wilsonfisk>	https://www.youtube.com/watch?v=vnlh2d96jbc
+<baordog>	karstensrage: what do you mean wmware?
+<baordog>	i use it, but this mac is on bare metal
+<karstensrage>	virtualbox?
+<baordog>	i use vmware
+<karstensrage>	are you running a bunch of vms?
+<baordog>	i was before i rebooted
+<nate_bradley>	use virtualbox it's free and vmware costs a lot of money
+<karstensrage>	you rebooted and its still slow?
+<baordog>	yeah
+<karstensrage>	hmm
+<baordog>	like beachball on everything slow
+<karstensrage>	close chrome?
+<baordog>	chrome isn't open
+<baordog>	ls -l takes 30 seconds
+<nate_bradley>	the money you spent on vmware could have been put to a better use like hiring a couple of asian escorts
+<karstensrage>	disk is dying/dead?
+<baordog>	disk utility thinks it's fine
+<karstensrage>	did you shutdown or just restart?
+<baordog>	shut down
+<karstensrage>	dunno then
+<karstensrage>	thats all the tricks i have
+<baordog>	it even takes like 5x long for file vault to decrypt
+<baordog>	than it did yesterday
+<karstensrage>	that would suck
+<karstensrage>	how easy is it to bypass the regular lock screen?
+<karstensrage>	youre worried about someone stealing the mac and taking out the hard drive and reading it?
+<baordog>	karstensrage: because it's mandatory at my job
+<superfast>	hi
+<baordog>	think a full disk backup is dangerous if the hd is going bad?
+<superfast>	baordog, certainly
+<baordog>	ugh. my sysadmin is going to kill me. he hates setting this things up.
+<baordog>	it's gotta be the hard drive. only explanation i can come up with no.
+<baordog>	cpu usage is like 1%. 13g of free ram
+<baordog>	beachball on everything.
+<wilsonfisk>	thank you :)
+<baordog>	unless a jellybean got stuck in the fan port or something...
+<baordog>	no, that's stupid.
+<hdm>	ban fast and often :/
+<hdm>	troll smell is almost reason enough these days
+<wilsonfisk>	we were democratic :) o/ thumbs up o\ thumbs down :p
+<hdm>	this is sparta mode works too
+<|ryan|>	itc: hdm trying to cover up the truth
+<|ryan|>	censoring infowars
+<baordog>	it's almost like the cpu isn't even trying
+<baordog>	|ryan|: you are going to get him trouble with his illuminati handlers.
+<wilsonfisk>	:s/this is sparta/https://www.youtube.com/watch?v=jwh9rtprwbq  :p
+<baordog>	disk utility thinks the hd is fine.
+<baordog>	:( i can just imagine this sys admin.
+<baordog>	he will grow two heads and scream.
+<hust921>	"morning" people
+<lald>	"morning."
+<torchinz>	guten morgen
+<hust921>	what are people up to? just sitting in school listing to a presentation on system development methodologies zzzz
+<lald>	hacking gibsons
+<lald>	actually getting ready to go to bed.
+<jeffrey3234>	trying to sync gmail to emacs orgmode
+<hust921>	jeffrey3234, so that you can do what? :)
+<lald>	presumably read his email
+<maurize>	listening to exotic liability and playing on curvytron.com
+<jeffrey3234>	live more inside emacs :)
+<hust921>	lald, in emacs - what
+<lald>	why not.
+<lald>	mutt for life
+<alyx>	w/ 136
+<hust921>	good point, might have a practical purpose. other than accessing gmail in the terminal
+<hust921>	actually, that's reason enough
+<toothe>	so, i'm looking to get a new phone that is rooted
+<toothe>	maybe i can customize it more and make it more "secure"
+<hust921>	toothe, why not just root it yourself?
+<toothe>	?
+<toothe>	oh, misread you - i can't...
+<toothe>	i don' tknow that this phone is rootable.
+<alyx>	'w 113
+<hust921>	you have one or you're looking for a good one to root?
+<toothe>	no...i was looking for suggestions.
+<hust921>	oh
+<hust921>	misunderstood most of the samsungs are easy to root and have an unlocked bootloader. (depends, some phone companies lock the bootloader before reselling)
+<toothe>	man, this sieve crap is really really confusing.
+<toothe>	i can't get this shit working.
+<lald>	toothe: sieve of eratosthenes?
+<chouhartem>	number field sieve?
+<superfast>	did anyone of try tox?
+<superfast>	especially antox?
+<jeffrey3234>	i've tried it, it didn't like 2 endpoints behind nat when i tested > 6months ago
+<chouhartem>	superfast: i tried utox
+<superfast>	chouhartem, do you like it? did you look at the security?
+<wilsonfisk>	lald: chouhartem no; it's a language for spam filters.
+<thehiddenrain>	[04:11] <wilsonfisk> deobfuscated code in reddit link. 'looks like you de-obfuscated the code...1234this is a simple experiment to see how many people run this code blindly' heh
+<thehiddenrain>	sounds like a shit experiment
+<chouhartem>	superfast: not yet :/
+<reader960>	ooh ive never used irc before  o-o
+<superfast>	i see, chouhartem, i really like it especially it has got potential on mobile platforms
+<superfast>	we really need such an application on mobile platforms
+<chutchut>	welcome reader960! x)
+<reader960>	hi there!
+<reader960>	ooh since im new, would someone perhaps like to redirect me to an irc i had in mind?
+<superfast>	anyone using textsecure here?
+<chutchut>	whats that reader960?
+<reader960>	well im a new aspiring web dev guy
+<reader960>	and i was just wondering if there were particular stack ircs or if there was a place to look up irc channels
+<reader960>	security interests me too so im here, but ill most likely lurk most of the time
+<chutchut>	fair enough reader well i find freenode a good network for general dev stuff. im pretty sure theres a #java/#php #python etc
+<chutchut>	also specific rooms for certain things like #concrete5 etc
+<chutchut>	just have a browse of the room list and search for keywords i guess x)
+<reader960>	awesome. any other general irc tips you might have for me?
+<jnixx>	yes. run it on a machine that's always on if you can and use something like screen. that way you can ask a question and leave. then comeback and see if anyone jhas replied
+<jnixx>	if you log out you loose the conversation history
+<chutchut>	haha im sure youll pick them up as you go reader960, but one thing; dont take people too seriously. some ppl will troll or just be idiots..
+<chutchut>	^ thts a good point too but i dont bother myself
+<jnixx>	i
+<jnixx>	i'm often in channels with few users. so sometime i have to wait a day for a reply. really only reason why i do it
+<lasdam>	could a vpn connection be easily decrypted if the greeting/authentication stuff was sniffed?
+<marcusvinter>	o/
+<superfast>	lasdam, not if it is using tls_dhe/ecdhe
+<superfast>	as the cipher suites
+<lasdam>	superfast: alright, thanks
+<superfast>	lasdam, but it really depends don't your vpn and how it is implemented
+<superfast>	which vpn are you talking about?
+<lasdam>	superfast: mullvad, using openpn. my conf says: tls-cipher tls-dhe-rsa-with-aes-256-cbc-sha:tls-dhe-rsa-with-camellia-256-cbc-sha:tls-dhe-rsa-with-3des-ede-cbc-sha:tls-dhe-rsa-with-aes-128-cbc-sha:tls-dhe-rsa-with-seed-cbc-sha:tls-dhe-rsa-with-camellia-128-cbc-sha
+<superfast>	lasdam, which os?
+<superfast>	what is the version of your openvpn?
+<lasdam>	ubuntu gnome. i don't know how to get the version of openvpn
+<zeroxten>	o/
+<lasdam>	ubuntu 14.04.2 lts where unity is replaced with gnome
+<lasdam>	manually
+<superfast>	lasdam, ok, it is going to use tls_dhe_aes_256_cbc_sha256
+<superfast>	it is pretty standard
+<superfast>	but you won't get the benefits of tls_dhe_aes_256_gcm_sha384 tls 1.2
+<superfast>	lasdam, mullvad is pretty neat, hope you like it
+<cubeast>	hey, any *2015* recommendations for a vpn? mullvad is one option on my list.
+<honey>	morning
+<lasdam>	superfast: yeah, it seems pretty neat. but so the tls should be safe from mitm then?
+<aewffwea>	any idea how to configure bitdefender not to block my vmware connections?
+<plushwork>	hello, i have a php application that has 500 internal errors on some php files (trying to extend a class that is not included etc.). the audit complained about the 500s, how big of an issues is a 500?
+<plushwork>	i don't udnerstand how it can be used in ddos
+<plushwork>	(and no, i don't feel like analyzing several thousands of 3rd party files to try and fix all of them)
+<chutchut>	500 errors, depending on the system/framework used could give away sensitive information about the server or the web-application, which could be used to mount further attacks plushwork
+<plushwork>	chutchut: php fails, it's just a blank page
+<chutchut>	could also help the attacker to infer logic errors, control flow, or potential sqli vectors
+<chutchut>	doesnt matter in the case of blind sqli plushwork, but i expect whatever is 'auditing' the system is being overly cautious
+<plushwork>	chutchut: this is open-source anyway so everything is know about it
+<plushwork>	chutchut: i was thinking more like...flooding the logs? taking longer time than normal to handle a 500?
+<chutchut>	fair enough plushwork, owasp defines it here: https://www.owasp.org/index.php/testing_for_error_code_%28otg-err-001%29
+<chutchut>	really, anything can flood the logs (like lots of gets to / - these would be 200s but would still flood the logs)
+<chutchut>	a 500 code could be cause by some bad logic causing a long running req to fail after some time (which would put more load on the server), and these would be a good candidate for a dos target
+<chutchut>	its really dependent on the web-app error handling and backend logic plushwork
+<peng>	it could also be caused by some basic bug that causes hte page to drop dead 1 ms in.
+<spb>	plushwork: even if you're not concerned about source code disclosure, showing stack traces and the like to users can allow them to infer bits of information that they shouldn't be able to
+<chutchut>	indeed ^^
+<spb>	and since in most webservers it's pretty trivial to just replace all 500 error pages with a single generic one, there's no reason not to do it
+<peng>	you shoud also examine and fix the bugs causing 500 errors to happen at all. :-\
+<satan-lucifer_>	can any1 help me with wifi wpa/wpa2/wps passsword hacking?
+<satan-lucifer_>	i tried reaver but did not understand it
+<peng>	an uncontrolled 500 error means *something* wasn't handled right. it's usually harmless, but "something wasn't handled right" is also the basic description of security vulnerabilities. :-\
+<satan-lucifer_>	hey guyz
+<chutchut>	check out aircrack satan-lucifer_ : http://www.aircrack-ng.org/doku.php?id=main&dokuwiki=baac127849d2ac772f775e9521a67b28
+<spb>	peng: that is something that should be done by the developers of the software, who are often not the same people that are deploying it. replacing error pages with generic uninformative ones is a simple measure that can be taken when deploying it; fixing code bugs is not.
+<satan-lucifer_>	i am a noob so plz caan you guyz help me with aircrack ng
+<honey>	you're satan-lucifer_ cant you just command someone?
+<satan-lucifer_>	pardon honey
+<chutchut>	lol honey x)
+<honey>	i gtg.
+<chutchut>	noooooooooooo!
+<plushwork>	spb: so you really think that hijacking the 500 error (which has no info on it) and replacing it with generic message is okay? should that error page be a 500 itself or a 200?
+<satan-lucifer_>	so chutchut plz can you help me with aircrack ng
+<chutchut>	generic "something went wrong" page would suffice im sure plushwork, like the github unicorn x)
+<chutchut>	im at work satan-lucifer_, havnt got too much time!
+<chutchut>	im sure you can figure it out yourself x)
+<satan-lucifer_>	chutchut can you atleast provide some webpages to go through
+<chutchut>	i did satan-lucifer_! look up to the link i posted
+<chutchut>	plushwork, see: https://github.com/503.html
+<chutchut>	thats the start of aircrack online docs
+<satan-lucifer_>	dude good ne
+<gorlob>	lald: no, there's no dma from the gpu process.  it doesn't run on the gpu or anything.  it is a sandboxed windows process.
+<gorlob>	it is just a different process from thr renderer.
+<satan-lucifer_>	btw i heard aircrack is overrated so is thr any other replacement to it
+<plushwork>	chutchut: so a 200 then, okay. thanks
+<plushwork>	but how would i deal with "enumeration of directories by using access denied error messages" then?
+<chutchut>	lol use whatever you want satan-lucifer_
+<gorlob>	lald: for web page rasterization, skia runs in the renderer and produces a series of command buffers to render the page.  it then delivers those command buffers to the glu process, which has the task of actually sending them to the gpu via the normal gpu apis for the platform, which go through the drivers.
+<gorlob>	the point being that the renderer should not have unsandboxed gpu driver access.
+<chutchut>	various ways of dealing with that plushwork
+<plushwork>	chutchut: treat it as a 404?
+<chutchut>	could just not return 404s and route to a standard error page again
+<plushwork>	i mean treat a 500 just like 404
+<chutchut>	or 404 like a 500?
+<chutchut>	this is a great resource for all things webapp sec related plushwork: https://www.owasp.org/index.php/owasp_testing_guide_v4_table_of_contents
+<plushwork>	omg, noone told me being a dev meant i'd have to read that much! j/k thanks mate
+<swiftynb>	is this book worth buying? https://www.feistyduck.com/books/bulletproof-ssl-and-tls/ or is there a better one out there
+<chutchut>	np! x)
+<sling>	swiftynb: yup, it's quite nice
+<sling>	have it in my bookcase :)
+<maslen>	sling: but have you read it ;) ?
+<sling>	parts of it
+<sling>	not from cover to cover
+<swiftynb>	the cookbook version they have looks really clean and easy to read
+<bittarman>	does the ssl part just say 'use tls'? :)
+<sling>	bittarman: sort of yea
+<bittarman>	:d
+<sling>	it includes all the recent (incl 2014) horribleness
+<bittarman>	i would hope so given its release date
+<swiftynb>	i was trying to go through network security with openssl first but it all seems so dated
+<swiftynb>	it's kinda hard to read
+<the-legend>	guyz i have found a open port on a victim pc how can i hack it and get controll of the system
+<bezaban>	the-legend: an open port doesn't mean that you can hack a system. the internet literally consists of open ports
+<the-legend>	its a tcp port
+<bezaban>	i suggest you read up on some basic networking. seems like you're starting on the wrong end
+<the-legend>	ok
+<the-legend>	thanks
+<pandzilla>	hm
+<pandzilla>	what kind of legend was that?
+<dmnc>	pandzilla: seems to have been a legend of the troll kind.
+<pandzilla>	dmnc: troll or bozo, hard to tell due to the brevity of appearance
+<dmnc>	pandzilla: he started with "guize"
+<dmnc>	no, he didn't :/
+<dmnc>	but close enough ;)
+<dmnc>	(what that razor does, that is)
+<naughtybeard>	hi folks, can anyone here give a comment from a sec perspective on nginx/firejail
+<naughtybeard>	in order to isolate cgi/php processes?
+<nicoo>	naughtybeard: i use something similar (bsd jails) on my web servers, and it makes sense from a security standpoint
+<nicoo>	however, linux namespaces (the feature firejail is built upon) are not really mature yet (on the other hand, some isolation is better than no isolation)
+<naughtybeard>	nicoo: i'm also having a look on rkt
+<naughtybeard>	(from coreos)
+<naughtybeard>	i'd be glad to see reviews and opinions but it's a bit limited
+<nicoo>	afaik, it uses the same features from the kernel
+<naughtybeard>	hmm i'm setting up a few webservers and would like to do it in 'the right way' from the beginning
+<naughtybeard>	selinux and containers seem like the way to go
+<nicoo>	firejail looks interesting, though
+<naughtybeard>	but it's a bit confusing to see so many different not-completely-mature solutions
+<nicoo>	well, i don't know that much on the linux ecosystem, as i'm more of a bsd server person
+<naughtybeard>	ah i see
+<naughtybeard>	don't you miss something like selinux there?
+<naughtybeard>	or do you have another mac/dac solution in the bsd world?
+<nicoo>	but compartimentalisation, imo, makes sense also from a sysadmin standpoint: being able to migrate the containers by taking an incremental snapshot of it, sending it over the network, and restarting it on the other end is really convenient, and containers are much more lightweight than vms
+<lunaphyte>	omg, don't you know?  you do that with docker now!!
+<nicoo>	naughtybeard: https://www.freebsd.org/doc/en/books/handbook/mac.html
+<nicoo>	naughtybeard: we also have a nice capability system called capsicum
+<nicoo>	but that's more relevent to devs than sysadmins
+<nicoo>	lunaphyte: well, we have been doing that with jails for about 2 decades before docker was invented
+<nicoo>	(also, as i mentionned, lxc and namespaces are not very mature yet, security-wise)
+<lunaphyte>	nicoo: if you expect to be taken seriously by the hipster cargo cult admins, you had better get on it and get everything switched over to docker, pronto
+<lunaphyte>	fbsd jails are just so passe!
+<nicoo>	ahah
+<naughtybeard>	haha
+<nicoo>	lunaphyte: well, i'm not hype and cool anyways

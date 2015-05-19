@@ -1,0 +1,34 @@
+<^k^> 新 kubuntu • 能将kde下设置gnome应用程序为中文？ http://forum.ubuntu.org.cn/viewtopic.php?t=470253 装的kubuntu，14.04。 locale，系统和kde的都是中文。 gnome的中文包也安装了。 language-pack-gnome-zh-hans is already the newest version. zz: liyulongmen — 2015-05-17 8:47
+<^k^> 逛了一下论坛,暂时无新贴.
+<lowy> 有人在吗 问个问题
+<lowy> w: 无法下载 http://mirrors.aliyun.com/debian-backports/dists/jessie-backports/main/binary-i386/packages  404  not found [ip: 115.28.122.210 80]
+<lowy> w: 无法下载 http://mirrors.aliyun.com/debian-backports/dists/jessie-backports/contrib/binary-i386/packages  404  not found [ip: 115.28.122.210 80]
+<lowy> w: 无法下载 http://mirrors.aliyun.com/debian-backports/dists/jessie-backports/non-free/binary-i386/packages  404  not found [ip: 115.28.122.210 80]
+<botk>  ⇪ f: 取标题 404 not found
+<botk>  ⇪ t: 404 => net::httpnotfound for http://mirrors.aliyun.com/debian-backports/dists/jessie-backports/main/binary-i386/packages -- unhandled response
+<botk>  ⇪ f: 取标题 404 not found
+<botk>  ⇪ t: 404 => net::httpnotfound for http://mirrors.aliyun.com/debian-backports/dists/jessie-backports/contrib/binary-i386/packages -- unhandled response
+<^k^> 暂无新帖 讲个笑话吧: 喝药以后 : 妈妈:"你为什么一个劲的翻跟头?" 儿子:"我刚喝完药。我喝药之前忘了把瓶摇匀,我现在正在摇它。"
+<lowy> 这个404怎么整啊 求解
+<^k^> 暂无新帖 讲个笑话吧: 什么都比不上别人 : 一对情侣吵架。 女:"你每一样东西都比不上任何人！ " 男:"对,尤其是女朋友！ "
+<guest33572> exitei
+<^k^> 暂无新帖 讲个笑话吧: 怎么长大的 : "妈妈,我是怎么长大的呀??"乐乐看着自己小时候的照片好奇地问。  妈妈一听,教育的机会来了,就说:"你是妈妈一把屎一把尿喂大的。" 乐乐一听就哭了:"你怎么给我吃这个呀?呜！ "
+<^k^> 新 手机和平板 • 今天魅族开售ubuntu手机了，不过就200台。。。 http://forum.ubuntu.org.cn/viewtopic.php?t=470257 1.png今天中午12点，魅族官网开售ub手机，试着抢了下，没抢到。。。。 http://bbs.meizu.cn/thread-5606940-1-1.html zz: cyf0427 — 2015-05-17 14:51
+<yanlf666> 下午好
+<^k^> 取新帖 timeout
+<yanlf666> sdcc开发单片机  bit怎么声明变量
+<yanlf666> 如：bit backup = 1 ; 报错
+<^k^> 新 新闻和通知 • 魅族mx4 ubuntu手机，今天开卖！ http://forum.ubuntu.org.cn/viewtopic.php?t=470258 魅族mx4 ubuntu手机，今天开卖！ http://www.meizu.com/products/ubuntu.html <b
+<^k^> 取新帖 timeout
+<^k^> 暂无新帖 讲个笑话吧: 竟然是图片 http://i3.xiaohua.fd.zol-img.com.cn/t_s600x5000/g3/m0b/00/08/cg-4wfi2sncidgthaaey3m8g3_kaalrlwlmixuaarj0583.jpg 简体字下,到底丢了什么?
+<jackness> 大家还好吗？
+<jackness> 我的论坛，http://www.nuaavpn.com/ 欢迎大家来灌水！
+<botk> jackness: ⇪ 論壇 - powered by discuz!
+<^k^> 新 ubuntu 15.10 • 我实在受不了这flash plugins了！！！ http://forum.ubuntu.org.cn/viewtopic.php?t=470260 os版本为1504，安装了3个浏览器，firefox chrome opera，firefox默认安装后爱奇艺等视频可以加载adobe flash插件，另外两个复制了flashplugins.so插件到个子相应的flush plugins目录，重启后依然无法加载。 firefox
+<^k^>  ─> 看个视频视频卡的要死，老假死，各种方法都试了，大牛们给点意见吧，谢谢！ zz: dba_xyx …
+<jackness> 最近大家都忙什么技术啊？
+<gfxmode> qtcloud有人用么？ https://console.qtcloudservices.com/login
+<botk>  ⇪ f: qt cloud services
+<jackness> gfxmode: 这是个什么东东啊
+<stardiviner> 没人阿
+<jackness> 大家晚上好啊！

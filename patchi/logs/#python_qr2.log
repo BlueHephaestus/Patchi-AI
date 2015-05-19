@@ -1,0 +1,1295 @@
+projectrevotpp: ok, so you in fact get an integer, like 138?	but then he has to manually encode. easier to specify the line ending.
+yhg1s: i like it more within the class, but i guess that it's just a language limitation and it has to be defined outside, is that correct?	it's not so much a language limitation as how variables work but sure. it doesn't make sense to put the decorator in the class to start with; you don't want it to become a method (it wouldn't work)
+redis?	- this kepler guy is giving me deja vu
+what is the point of using an orm? i'm really struggling with sqlalchemy, even though i've had a bit of experience with sql	well if using an orm like djangos it lets your framework understand your objects much better which makes many things nicer
+whoa, what in the hell?  he ran pystone in pypy.js and it was faster than cpython natively	so i have it so i can list all the firewalls. also have it so i can list all the contexts per firewall. now i can't get it to add the config stuff to only the context it should be
+which one is darwin?	you have a non-ascii character in your source (â) and haven't set the encoding of your source
+do you guys have a link to a good example of a pythonic way of "try to do this for x amount of time and else fail" ? "do this" is call a method until the return is a certain one, so not a blocking process	just busy loop until you get the return value you want or your timeout has expired?
+hmm. what's wrong them?	yeah i can see it's value in debugging issues.
+meorge: i take it this is an android app?  grab the apk, unzip it (pretty sure they're actually zip files), and poke around a bit with the 'strings' command	so i have it so i can list all the firewalls. also have it so i can list all the contexts per firewall. now i can't get it to add the config stuff to only the context it should be
+desophos, ?	no.
+or is it even a file?	it's an extension module defined in objects/unicodeobject.c.
+shibe: how did pypy crash?	http//i.imgur.com/gxsvrly.png
+i'm collecting the frequency count of letters in a string via for letter in string: if letter in dict: dict[letter] += 1 else dict[letter] = 1. it doesn't feel very pythonic, anyone have any other suggestions?	collections.counter
+so it just means that /dev/null is open for writing ?	os.devnull is just a variable that tells you the file path of the null device.
+medwards: no, i'm not right or no, it doesn't?	it doesn't raise an exception... i mean not unless you do something in (...) that causes its own exception
+_habnabit: may when c++0x out?	er you realise that this is 2015 right? we're not in 200x anymore and c++11 is already out
+oh hey, are we lexing integer literals with regexes?	yeah
+kingplusplus: but why couldn't classes *also* be instances?	that's gonna probably sound weird so ask some questions
+pdtpatrick, are you trying to implement enum yourself?	no .. already got that working .. i'm just trying to play around and understand how i can intercept the error raised
+how determined are you meorge?  you could probably crack open the games binary and find the names that way	i take it this is an android app?  grab the apk unzip it (pretty sure they're actually zip files) and poke around a bit with the 'strings' command
+java will do that to you?	saying that twisted is bad because 'factories and camelcase' is like saying python is bad because it uses whitespace for lexical scoping it's entirely missing the point
+simpson, haskell?	haskell can't magically turn mutable refs into immutable refs though.
+nedbat: but where is that c file?	it's an extension module defined in objects/unicodeobject.c.
+how does type(object) determine the type?	do you need specific c code?
+2. if i have a threaded connection pool, what's the best way to make sure the connection gets put back in case of an exception in the middle of the function?	use sqlalchemy's connection pool instead of writing your own
+and why web.py is bad?	do you have experience with web application development and security?
+yvear: are you referring to the bash command?	yes did you see exactly what it evaluates to?
+could someone tell me what is w in os.devnull, 'w', does it mean write ?	you mean open(os.devnull 'w')? then yes
+what do you want to do with python right now/first?	yes
+https://www.youtube.com/watch?v=pibfofqdiai	no `del x` doesn't have to do with __del__
+cast: ok, but what was it? i'm just curious, i won't berate you... :)	thx yours too )
+nedbat, can i retrieve a list of references to a given object?	no it isn't recorded
+what is a good place to put the code files?	that can depend on what web server you're using and how you have it configured
+dlitz: but the decorator has access to the kwargs whitelist, so it could override that i guess? or generate a note in the docstring at least	zahlman i am trying cygwin now same thing happens. cygwin should support unicode right?
+and i remember older versions of python having issues with string concatenation, is 2.7 better in that regard?	depends on what you mean
+how should i organize a module that has a single file?  i want to use a setup.py to be able to install it.  i should have setup.py in the root directory, but should i have foo.py also at the root, or should i have a foo directory with the content in __init__.py?	the former.
+nedbat: hen what do i do with it?	then pip will be installed
+pycoderf, what have you tried?	not much yet. i just have my directory structure up with a sample hello world script for the moment.
+jim, does b1 call super() in its __init__?	ok then there's no way for b2's __init__ to be called
+what version of python was available in 2008?	http//nedbatchelder.com/blog/201109/whats_in_which_python.html
+how do i check if a string contains a word, but not a perfect match?	define "contains"
+jennifer, what's the code?	detre i've been writing code since 1988 and i've been writing code for pay since 2001 and much of this has involved web development.   is correct python is good for web development.
+any help?	python 2?
+i will do a sleep instead of a bus. i'll init. wait 30 seconds, and ask "is everybody accounted for?" and act. the sad part of this is it'll always delay startup 30 seconds. if they're all in 5 seconds in, i'll waste 25 seconds in a sleep	this can be easily accomplished with a start = time.time(); while start - time.time() <= timeout doyourstuff()
+any ideas about my code?	can you convert the matrix to a full rather than sparse matrix? the error message means that numpy doesn't know how to convert from an object to a float.
+alex333333: assert vara what?  you need to get the value from whatever the form returns and compare it to what you sent, right?	example  email_field = webdriverwait(driver timeout).until(lambda xx.find_element_by_id('field_email'));  email_field.send_keys(email)
+jackcom, your question is unclear, can your rephrase? check /topic for a python channel in your language.	what is the function?
+forgot: have you made pip packages?	yes it's easy once you convert the project src into a package
+uskerine, do you have experience with web application development and security?	web.py predates python code being good
+hello python boys and girls, i have a question, how do i print hello world?	quickly.
+python243: it is possible i have misunderstood the problem. what is the regex you're using?	okay i was right.
+put em in some sort of storage?	how?
+it doesn't seem unsafe. as far as i know there is no way to inject code this way. anyway, is there a library or something builtin that can replace eval?	though i probably don't have to mention it at this point - no
+karstenk, sorry, can you rephrase that?	looks like you want for cat in cats.values() if category["categoryparentid"] ...
+hi all, i'm trying to make a class json-serializable, do you know what __super__ must be overidden to return the json equivalent? i thought it was __repr__ but apparently it's not, since it raises typeerror: [0, 0] is not json serializable ([0, 0] is actually my __repr__ output, but i think it's just used for display in my case, but this is not the real data that is being encoded	there isn't a magic method that json.dump will use
+.add?	codetaku - this  guy is giving me deja vu
+is it possible to have a dict key as a variable thats equal to a string? like example_key = 'example_key'  and example_dict = {example_key : 1}	sure did you try it?
+here's a link jwad :  https://www.youtube.com/watch?v=pibfofqdiai	it's entirely based on the length
+is there any library that gives me a bit higher level tcp-sockets? for example i want to read 5 bytes and block until exactly 5 bytes are read and keep the rest for later reading. is there any library that allows me to do this by a simple socket.read(5) or similar?	python 3's asyncio module has .readexactly(5) but if you don't want to use asyncio you can use rfile = socket.makefile("rb") and then use rfile.read(5) which i think will work how you want
+runciter: if i dont explicity poll, how will i know if everybody is account for or not?	it depends on what it is you're polling
+can python pull in data from a pre-made sql query?	python can do anything you need.
+what isnt concret with this i have a list with elements. elements have 4 key:value pairs (name, id, parent_id,level). from that list i need to transform to an multidemensional array, level represents level in array and parent_id refers to id. how can i do that???	so you have a list of dictionaries and you want to turn it into a list of lists?
+are they stored as char, or as int?	|zz| a python bool is just a python int basically
+what provider if you don't mind my asking?	well no
+veegee: hmm, maybe get the connection in the decorator from somewhere?	no no i'll just override getconn() to store a copy in a threadlocal and have the decorator close the object in the threadlocal this will work
+eyess: what would you want it to produce?	list items 1 and 3
+codingthings, show some code?	you did a dict() on the whole thing fetchall returned though; i have no idea what this did or why didn't it error out
+you mean, besides a python 3 installation? ;)	2.1 through 2.5 are basically equally hard more or less
+spaceone: do you know if that uses a classes memory address, or something else? the class in question has a custom __repr__ method	cffi
+detre, who knows, maybe because my professor knows a lot more than you? :)	re-read again i have been a system developer for 12 years with a master in embedded systems. your professor is exactly as you said professor. not developer.
+are you certain that video['html'] is a list of strings?  and that the exact sequence of characters is 'file: ' and not 'file:' or  'file: ' or 'file:<tab>'?	could be some beautifulsoup output and video['html'] be the whole html doc
+fladd: are you using regex.match rather than regex.fullmatch?	you need to use fullmatch if you want to match the entire string
+i forget, in unittest, do the setup and teardown methods run in between each test method, or just nonce at the very beginning and very end?	right before and after each test method
+qwerty1793: something like all(f(i) == g(i) for l in x for i in l) ?	but one of them is iterating over x and one is going over y so i need some clever zip or something
+are you asking what the traceroute command is?  i imagine it is 'traceroute'	mostly?
+dlitz: is python 4 announced already?	i don't think so but when python 3 was being announced they said that python 4 won't be this big of a change.
+hey, if i were planning to ditch cheetah, so that i could port 2to3, which templating framework would you guys recommend? i am considering jinja2, mako, and anything suggested...	i'd probably recommend jinja2 because it seems to be the most widely used (i might be wrong that's just how it seems to me)
+this still matches c+: "^(objective-)?c[#|(\+{2})]?$"	an optional pattern at the begining or the end of a string may even be not there it's still the same.
+_habnabit, i'm using pyserial, should i use that instead?	twisted works with pyserial
+foist: also, can i see the exception/error/log/whatever that makes you think the code in one virtualenv is calling into another virtualenv?	sounds logical.
+how do i check if a datetime object is within a day?	subtraction and comparison to a datetime.timedelta.
+'apple' does not exist in your big string then... is it a single big string, not a list of strings or anything?	i'm iterating over a list of strings before checking each of them for the word
+is there some way i can tell him: "please, launch this file sub/main.py and count that sub/ is root for it" ?	you need to modify the project structure
+grr, my keyboard, which i dearly love, has something wrong with its o key... sometimes it will miss a keypress, soometimes it will double them (see?)... either that or i have a brain tumor which is screwing with fine motor control	let us help you kepler.  will be the main and i'll be the wing
+_habnabit, tos9: that looks pretty nice. why is it turrible? :)	envdir probably
+ldlework: what do you get if you lex "1 < 3"?	token.literal.number.integer
+nedbat, listdir(r"c:\laptop\test") ?	dammit yes does it work?
+what's wrong?	apache and flask?  i've never used flask but doesn't it run its own server process?
+does anyone know why csv.writer could still be quoting all fields, even with quoting=quote_minimal set?	i think that's what a csv is... so when you read it it comes back the way it was when you wrote it
+exarkun: this python process is in a virtualenv, right?	yes
+well tpp streamer said gevent is more readable code, why would it be that way and not the other way around?	some people think that gevent is more readable because it doesn't have explicit indication of where context switches happen but it turns out that this makes code /less/ readable because you can't look at a function and tell if it it can context-switch out from under you
+srpx: why do you ask?	perhaps it isn't for that reason >
+so how do you want to preserve structure? with tab-indents?	how is that?
+spaceone, what return value? the output of popen()?	the correct returncode
+yhg1s, are you online?	(124047)  dadaas driver.find_elements_by_xpath returns a list. presumably a list of elements. you can't call the 'text' method on a list because it has no such method. perhaps you want to iterate over the list of elements and call the 'text' method of the items. (can someone explain in more details so what i really need to do? loop trough the list and how to call text on each of it? what command i need to use?)
+john: are your jobs i/o limited?	like in shared memory?
+any interest in netsec or the like?	interesting. not likely i'll be back in nola around then but if so i'll be sure to pass by.
+anyone knows what's the correct synthax to match multiples attributes of an xml tag with lxml? i always forget.	depends on if you want and or if you want or
+chipyy: ok, what programming languages do you know well?	look into enumerate()
+sampath, what are you expecting ?	
+score_under: still here?	which re function are you calling?
+why do you leave?	do i need to import certain exceptions specifically?
+isarl: why not have the "requires user intervention" points be the end of one task and the start of a new one?	that's definitely one of the strategies i'm considering.
+riderplus: so i've got the table from here, http://www.atpworldtour.com/rankings/top-matchfacts.aspx?y=2015&s=1#, using beautifulsoup, then i've made that a dataframe with pandas now i want to query it so i can get the 1st serve percentage for the player novak djokovic and turn that cell, from a percentage to a decimal so i can use it in calculations.	i don't understand it fully either i've never used pandas before yesterday and the code doesn't work without the second df.
+lanox, you mean open(os.devnull, 'w')? then yes	yes that is correct
+how could i tell setup.py where the source code of required packages are?	setup.py doesn't really have support for that.
+rasi: i don't see how.  can you show me?	ooooooh you are right. fun. python just saved me lots of trouble. dont ask how but thanks p
+runciter: you mean i should check if they're all in on the callback used when a client registers or dies?	so that you don't have to poll.
+a specific type of db?	- this kepler guy is giving me deja vu
+it shoudl be called once for each loop in the main loop ? and then the for line below it will be called for as many times as are in the text file ?	http//paste.pound-python.org/show/kb71zmr1aqoo4cu6lajm/ (repasted for yggdl)
+felqer: did you write these functions?	doh! thanks
+bsmithers: but what if i have several placeholders to replace and the result of one matches the name of another placeholder?	so you do not want to replace a replacement? in that case i think you'll have to find all occurrences of each string before applying any changes. to do that i'd probably stick with a regex although you could use repeated calls to string.find
+dothak: do you understand how dicts work?	yes. so you can have many different keys each with a count as a value
+what does it mean when a multi-line string, delimited by three apostrophes before, and three after, is defined without any apparent assignment to an identifier?	it means the person who wrote it is confused
+if i put return statements in both the try and except blocks, is there any chance that both return statement could get executed?	every function in python returns 1 object unless it has an uncaught exception always.
+gjvc, use what?	for my purpose it is enough to use ctypes and load libc.so
+so what would be a good organization for the files?	if your code is linking to static files yes
+cyphase: will this work with rectangles?	http//www.pygame.org/docs/ref/rect.html#pygame.rect.collidepoint
+hey guys, aynone got recommendation for good hosting, and why? :d	ovh
+jim fubar?	i believe they are descendants of fubar... f..d up beyond all recognition a military-oorigin term
+how do i get the expected result? https://www.irccloud.com/pastebin/txdzanih/splitting+issue	use .extend not .append
+what lib?	i am pretty sure yes. the zip is generated from one software (not ours).
+or at least used python to auth to a saml resource?	i think now just thinking here that you could be a teeny bit biased d
+schlitzer: do you understand what i mean about only testing the public interface?	in some ways what do you care whether the attributes have the right values?  as long as the class behaves correctly what's the difference?
+omarlittle, depends! how long would maps be typically?	btw don't do `for i in range(len(l)) l[i]` it's better to simply do `for e in l e` instead
+1. if i want to contribute to psycopg2, is the author open to merging patches?	use sqlalchemy's connection pool instead of writing your own
+are chr and unichr completely compatible with each other? i thought chr would use utf-8 and unichr would use unicode?	one makes str objects and one makes unicode objects
+schlitzer: what else could it be? what would make it something else?	it sounds like you are testing internal details of the class which may not be what you want.  test the public interface of the class
+so why not use it?	maybe i'm just reading it badly but the professor gave some of the code for move and one of the explicit lines he gave was r = -minimax(b 3 - p d) # rate the move for this player by negating other player's utility. p ought to be player so i'm not sure what 3 - p was (that line was in the code already)
+when i see someone catting two lists like this:    list1[0:0] = list2     - list2 is prepended to list1.   is this a performance hack?  i can't imagine why else to use so non-obvious a format.  list2.extend(list1) is not the same?	for what it's worth list1[00] = list2 is more clear to me than list2.extend(list1) … i don't even have to think about what "extend" is
+this might seem like a weird question but whats the easiest way to convert a number in either hexadecimal or decimal to binary and return the number of bits that are 1?	what do you concretely mean by 'series of octets'?
+iron_houzi, you 'lost' it? you destroyed your entire vcs history?	aaah. then no i don't think it's possible (
+dyce, when you know exactly the interval/time the process needs to be run?	yes it's for locking read/write.
+need help. what is wrong with line 9? https://bpaste.net/show/adb7a3cc98b6	why do you think there is something wrong with line 9?
+macuser, and that's the python you use, and you want to install other stuff to?	wait we suggested using a different python before and you said you wanted to use this one.
+python243: which re function are you calling?	
+deadsix27: do they come as "12.12.12 22:00, gmt-5", and you split them?	i thought about just parsing the gmt string manually and printing it out as f ull time string i guess that could work
+as you can tell i am learning python .. looking at this https://docs.python.org/2/library/os.html?highlight=os.devnull#os.devnull	os.devnull is just a variable that tells you the file path of the null device.
+do you call it a function because it returns a value?	what is happening in the while loop is that i give it some input and it returns some output to me (a string in this case)
+is the number of pages limited?	intersections. list 1 and list 2 have 700 titles in common list 1 and list 3 have 30 titles in common etc.
+jim: hasattr(self, "foo") ?	what's that?
+kepler, what style of configuration file is it?	http//paste.pound-python.org/show/kofxugd8e6kxy9fwb5jr/
+does anyone mind answering a few questions regarding a line of code using selenium?	the lesson to be learned from your not getting a response? just ask your followup question and skip the survey.
+is the task so hard?	maybe your question is just too dificult understand in the limited time people are willing to spend thinking about someones problem. maybe try to break it down to smaller pieces
+carljm, how do you distinguish between build artifacts that you want to include in a source distribution and build artifacts that you don't want to include ever? both go in .gitignore	yeah. it's a bit of a puzzle to figure out how it _should_ work but i hope they work something out.
+youd think a class that suclasses another class would have its own instance of a static class attribute, but its actually the static attribute of the ancestor?	if there's one = outside of a function there's only one actual object
+dlitz: i suppose. on the other hand, if they *don't* make that big of a change, do they have a motivation to not just call it 3.(n+1)?	*shrug* i never thought there was going to be a linux 3.x until the userspace abi changed (like it did from 1.x -> 2.x) but here i am running linux 3.19.
+can anyone tell me why this isn't working? https://bpaste.net/show/e77aa424c416	"isn't working"?
+(i'm trying to get rid of my __init__s...) can i check to see if self.foo exists?	hasattr(self "foo") ?
+seylerius: does this help? http://stackoverflow.com/questions/20739639/how-to-escape-hash-character-in-a-multi-line-string-in-yaml	that's pretty harsh man
+"failed to import set_exc_info: dll load failed, %1 is not a valid win32 application"?	http//paste.pound-python.org/show/qca9kagc0bx5ikvmjjfu/ (repasted for )
+anderoonies: del d[a][b][c][d] ?	@ that's the strategy i had been trying...the issue i ran into was that i'm pruning a leaf testing if classification accuracy improves then either keeping the change or recursing on the leaf
+yhg1s: so sys.getsizeof(true) -> 28 ? how can this be?	|zz| i'm not sure what's confusing you sorry.
+pdtpatrick, sorry?	are you trying to implement enum yourself?
+yhg1s: but how can i be in it if it doesn’t exist?	because of filesystems and processes and unix.
+_habnabit: they'd need to run setup.py first to generate it?	i don't use vcversioner so i don't know what special considerations that implies but i always have a "bump version to x.y" commit and i don't see the problem with that.
+what makes you say that gsnedders?	there are plenty of places where userland deviates from posix to do something saner; strict posix compliance has never been a goal
+although this looks like a crc16 checksum, maybe there's not a standard library crc16 function?	he knows. lol
+chipyy, can you paste some code?	^
+anyone familiar with pygments? when i lex some python, i don't get any tokens more specific than token.name. what gives?	what do you get if you lex "1 < 3"?
+codetaku: what version of python are you using?	wait it's working but now i wanted it to
+projectrevotpp: how do you get those data?	why would that matter?
+dict comprehension?	what do you mean by "get them"?
+anyone? :)	can you convert the matrix to a full rather than sparse matrix? the error message means that numpy doesn't know how to convert from an object to a float.
+lvh: any other encodings come to mind off the top of your head?	there's plenty capnproto's nice i guess.
+salvakiya: why do you think there is something wrong with line 9?	https//bpaste.net/show/e8dfd21d047f
+3to2? :)	yeah something like that
+kingplusplus: yep, and what's f2.__class__ ?	foo2
+is py?	reversed(range(3))
+_habnabit: is this not what i want?	did you print out whole command then try in terminal?
+is there somewhere i can see examples?	of course.  python has been used to create many large websites
+srpx: hm?	go on.
+why do some function signatures in scipy have curly brackets in them? e.g. "scipy.signal.cspline2d(input {, lambda, precision}) → ck". if i understand correctly square brackets usually mean optional parameters. for example, "x, [out]" means that "out" parameter is optional.  what is the difference between curly and square brakets and why do some people prefer to write it in such way to begin with, instead of a more simple "x, out	i take it you're referring to documentation?  maybe scipy thought using square brackets could confuse people since square brackets are used as list constructors in python?  (although curly braces with tuples inside is the set constructor...)
+colonolgron: are you sure you ran pip for the right python install/version?	i am not s this is all very comlicated. but afaik i have only one python version installed
+do you mean a hashtable lookup ?	well it depends on what you mean by 'the unicode update'
+to be bit more precise about my initial question: is there a best practice in determining the encoding of a file name in a zip file? i've encountered unicodedecodeerrors and realized that filenames from one vendor who ships us the zips use cp437. but i can't hardcode that into the lib (python 2.7).	it's a real mess.
+hey guys, do you know of a collaborating text editor that is like bpaste?	http//www.hackerpad.tn/ ?
+what is the official document to configure python on a windows server 2012 r2? i already installed python, but the paths are not configured	dammit recent python installers will ask if you want to add it to the registry and to the path environment variable. or you can use py.exe instead.
+pc_:  apache and flask?  i've never used flask, but doesn't it run its own server process?	http//flask.pocoo.org/docs/0.10/deploying/mod_wsgi/
+sasl?	yes sasl. https//freenode.net/sasl/
+hey guys! i'm trying to interface my python code with the "snap!" visual programming language. the principle is simple: the user writes a program in his web browser thanks to blocks, and some blocks allow to communicate with outside world. snap's connectivity to outside world is made of xmlhttprequests.  as a n00b in web techs, i wonder if there is a python module ready-to-use to handle as simple as possible xmlhttprequests? (that would be	look into the requests library and the built-in json module
+pycoderf: what do you mean?	== is comparison = is assignment
+do you mean string-escape is poorly defined?	i mean it means your escapes are exactly the same as python's which can hypothetically change in different releases
+do i get one list in foo for all foo objects?	yes everything defined inside the `class` block is part of the class
+can someone help me figure out how to use os.getcwd() ? i am in a directory which celarly exists (line 1-2), and yet when i enter a python shell, os.getcwd() results in this: https://bpaste.net/show/4b465078b322	it does not "clearly exist" i'm afraid.
+someone can help me with why my frame containing pictures won't show? https://bpaste.net/show/99b19e803aae	sec i'm trying to run it
+srpx, it's in haskell?	you can't just up the recursion limit arbitrarily.  there's a reason there's a limit
+moldy: yes, it has hooks like preactivate, postactivate.. and what about autoenv?	python-dotenv its just was i were looking for d
+whats the best way to parse timezone strings, such as gmt-5? i couldn't find a good way in pytz (yet) does anyone here have more info on that?	try out arrow
+can you take the absolute value of the difference of datetimes?	tias?
+kingplusplus: foo.__class__ -> type, and type() might give us what?	gives us type
+_habnabit, is that just a pythonic rule?	'pythonic rule'? you mean the iterating over sets thing?
+speakertomeat: sounds not so good.  what's this for?	i wanted descriptive names ... i almost named the tool itself something with church though. except i noticed it had a religious connotation.
+network operate group?	that's the normal syntax.
+if i want my object to be iterable, as in to be used in a for loop, my object must implement next using yield. correct ?	no. that is merely one way to implement next / __next__
+ycyclist: it might be a docstring.  is it the first thing in the function or file?	regarding classify function any way to simplify it?
+in json/javascript "\u0424\u0438\u043b\u0438\u043f" is completely valid printable string, in python3 that raises a unicodeencodeerror on my console... why?	if you can't just `print` it it's more an issue with your terminal setup than with python
+_habnabit, what would you recommend for simple rest services?	do you have experience with web application development and security?
+or throw it on the end? .decode().returncode	so you do know that you have a single string right?
+are you sure it is supposed to work on windows adam007 ?	as result i wanted to iterate over that tree to create new records to my db. the problem is the callback of create is the new id of that record which have to be stored for using to create children.
+why web.py rpedates python code being good?	ok then there's a number of choices. i like pyramid a lot but i've heard good things about falcon too specifically for apis
+anyone know how to use pyqt4 to use user/pass to log into a forum?	use a python http library like requests
+so how'd you start that?	i have this make target http//dpaste.com/2gk8skr
+_habnabit, ?	?
+celelibi: sed?	the current code uses subprocess to call sed after building its arguments.
+what is the name of the construct where you include a library named mylib, and then you name it below with @mylib?	'@foo' is a decorator.
+shlant, 'debug' in what way?	if the subprocess fails i want the error. the doc note says i can't use stdout=pipe stderr=pipe? https//docs.python.org/3/library/subprocess.html#subprocess.call
+why is this? / how to fix it	what return value? the output of popen()?
+mekhami, huh. why the .items?	why not make the dict iterable?
+what's the crossplatform way to create an absolute path with os.path.join? e.g. os.path.join("foo", "bar") -> foo/bar, will os.path.join("/foo", "bar") -> "/foo/bar" create the proper root path delimiter for windows?	if you want it relative to the current drive just use '/' yes. paths with forward slashes actually work everywhere.
+did you write theresa bot?	if your data fits in memory its quite nice... operations are usually measured in microseconds too
+dawiisss: what do you mean by 'clone'?	you want to make a class for a different window maybe?
+are the logging objects saved to disk somehow?	well print logging.root.handlers
+srpx: why would you write it this way?	what language?
+the big advantage of latex is that anyone can take a text editor like vim (hehe, "anyone") and easily update it? :p	it's not the right way )
+codetaku: at 1st sight, the requests module allow to *perform* requests, does it allow to *answer to* requests as well?	indeed
+yhg1s, where can things be cached?	in the implementation.
+cannot use which methods?	the error is generated from the hash_vector method
+asdf` so, how is transforming the resultproxy object, to its final form handled best?	hmm perhaps read the sqlalchemy tutorial you'll learn how it is best used
+ohh i see, also would this be the same? https://bpaste.net/show/9bb9dd2612b6	or if it's in the global scope it will never be collected to begin with untill execution ends / you quit because it does not know whether you might decide to use that object in the next statement or not. if i understand correctly it will garbage collect object only when they are either out of scope (reference count reaches 0) or after they are manually deleted. reference count will not auto reach 0 in the global namespac
+is there something like next that will get all dicts from a list w/a particular value preferably returning a new list?	you can write a listcomp `[somedict for somedict in mylist if "key" not in somedict]`
+sthzg, where are you getting strings from that you don't know the encoding of?	the file names in zip files
+karstenk, what is your starting data??	it's late; you need to be more clear so i don't have to think as hard about what you mean )
+michele: not necessarily!  if you're writing tests, and they exercise your code meaningfully, why change what you use?	i just mean you've got tools that work well for you why switch it up?
+carljm: why?	so that you don't have to poll.
+are they long-running?	dunno my first stop would be "can i not use ftp?"
+_habnabit: if the subprocess fails, i want the error. the doc note says i can't use stdout=pipe, stderr=pipe? https://docs.python.org/3/library/subprocess.html#subprocess.call	here's the relavent code block https//gist.github.com/mrmmorris/01c7781acb3669378b05
+harej: so you want to compare one list to 2099 other lists?	rather i want to compare each list to all the other lists. so list 1 will be compared with 2 through 2100; list 2 will be compared with 1;3-2100; list 3 will be compared with 1-2;4-2100 and so on...
+kingplusplus: and as an object, what's its relation to the class foo?	not sure
+mircx1: that's from *installing* it, not trying to use it?	why do you think this has anything to do with chardet?
+don't you need all of it though?  i mean, if it's different...	i have recently haha. very confusing. just wanted to know his thoughts.
+... or have a src directory, etc?	the former.
+simpson, what if i try to except a specific error, but the exception created by the block of code actually turns out to be a different type of exception?	correct
+miigotu: what about situations where a literal contains '?	it would seem that using single-quote characters makes more sense for triple-quoted strings no? . however i'll stick with whatever's convention.
+_habnabit: it is not ready for it? a well-defined abi?	c++11 does not define an abi
+how do you make an object iterable?	http//stackoverflow.com/a/4019987 ?
+python243: r"(\d*\.\d+|\d+)(e-?\d+)?"	thanks a lot - i will try it! d
+ho do i setup virtualenv to detec my env var defined in .env file at the project root folter?	what's .env?
+editshare-ericf: perhaps you should pastebin your code? :)	i understand that a built distribution is different from the source codebase but that's really a different distinction. i still want my source codebase to be independent enough from the
+by id, do you mean categoryid?	http//pastebin.com/vbvvuz7q
+so if i do u"__main__" instead, it should work?	no because __name__ is bytes
+barraponto: a particular april 1 or any april 1?	subtract it from the datetime for april 1st then compare the resulting datetime.timedelta object with datetime.timedelta objects for the ranges you want.
+bullhorn: tried the plain old python docs?	someone said theyre not fully suitable for complete beginners
+carljm, ok, but how do you 'use' them?	i understand the desire for single source of truth but i would rather have release-version information duplicated in vcs and codebase than have the codebase's knowledge of its own version reliant on also having the entine vcs history present.
+speakertomeat: if i understand you right you've got some_dict, the keys of which are machines and the values of which are... something?  maybe just true?	yes true for reported false for not reported or known dead.
+nedbat: do you happen to have anything on your blog, or previous talks about doing dates correctly (with pytz, or otherwise)?	no that stuff baffles me (
+ajay2611, 'correct' in what way?	thanks ;)
+is there a resource that someone has explains the python packaging and distribution story that works for a newbee?	the error is error command '['/home/python/py/bin/python3.4' '-im' 'ensurepip' '--upgrade' '--default-pip']' returned non-zero exit status 1
+what needs lxml?	well i dont know whats wrong then
+is there some other language you're thinking of that has this ability?	haskell?
+if anyone uses python in microsoft visual studio, i'm kind of new to it. how do you add line numbers? notepadd++ has it by default, just trying to figure it out. thanks in advance.	https//msdn.microsoft.com/en-us/library/ms165340.aspx
+is my english really so worst that you cant understand?	i am recommending a dict keyed on categoryid not a list
+omarlittle, what's up?	hmm the former should work as well but the latter sure is nicer
+can someone please explain set function? http://imgur.com/56ac4wg	what is confusing you?
+https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=39a8804455fb23f09157341d3ba7db6d7ae6ee76	lol well there you go.  til.  heh i thought you weren't supposed to know anything since you're "just a student"? p
+schlitzer: about your lock parameter, how would a unittest determine that the caller had passed the right kind of thing anyway?  that's caller code, not class code.	yes i guess you are right i think i tried to over engineer this
+or maybe i'm not clever enough?	you can compare bytes with unicode
+_habnabit what's the right channel?	idk
+to both?	what do you mean?
+igenius: i know, right?	yeah. the end game is to be able to have a website where people can type in an ip address it will show which firewall it is on which context it is in and all the firewall rules for that ip (or its entire zone)
+chimeno, that's not where the 'if' goes. what are you reading to learn python?	https//bpaste.net/show/cf32c41d22a7
+runciter, boot2docker?	ah okay; i use a mac with docker
+whats the difference between name (which is different betweent he two instances) and myvars?	you set .name for each instance in its __init__ and you don't set .myvars there
+somelauw: have you seen that?	thanks will watch it sometime
+projectrevotpp: is an exception bring thrown in the try block in send()?	your try-except is masking the errors
+assuming you don't change the location, is that the one?	yes
+simpson, i'm having trouble seeing it, can you spell it out?	ah the second point is great
+_habnabit: hm, do you know anything about performance when using cffi? (it compiles c at run time?)	unix systems typically only ban the null byte from being in filenames.  everything else is technically fair game.
+hi there. i am looking for a suggestion for a python test framework. in the past i used pyunit and nose. it seems that cool kids on the block still use nose. am i right?	py.test is also widely used.
+yvear, what is confusing you?	assume that n<256 put n in binary it is of the form xxxxxyyy then the result of set(n) is that the element a[xxxxxxx] changes its yyy bit to 1
+john: like, in shared memory?	that would be the ideal but in python i dont think you can effectively share memory
+synt4x`, tias?	it's new age to support age-old grammatical conventions for the sake of inclusiveness
+jonreed: i take it you're referring to documentation?  maybe scipy thought using square brackets could confuse people since square brackets are used as list constructors in python?  (although curly braces with tuples inside is the set constructor...)	yes i'm referring to documentation. but to me both square and curly brackets were confusing and a more simple "x out=none" would be more understanble (i think the same is true for other people as well). numpy uses a lot of square brackets and numpy is usually used in combination with scipy. e.g. most ufuncs in numpy have square bracket notation like http//docs.scipy.org/doc/numpy/reference/generated/numpy.add.html#nump
+r00s,  but how can i make the decorator aware of the connection object that the function itself requires?	wow contextmanager. memory is not reliable. https//docs.python.org/2/library/contextlib.html
+what does it have to say as to why?	yeah i can see it's value in debugging issues.
+igenius, how is that?	sorry i was away for a bit. i only got your last message
+monkeyseer, what on a webpage is unprintable...?	https//github.com/habnabit/theresa-bot/blob/master/theresa.py#l31-l35
+n00bster: three = {k: v for k, v in one.items() if k not in two} ?	nice! )
+locusasaf, instead of calling func1, can't you just call myvar2.func2(a, b) directly?	or when you need objects to stick together you can define a wrapper class that contains such variables
+why don't you want to use virtual environments?	what is pipsi  ?
+is there a resource that i can read more about this? this is definatly an area of ignorance on my part	read about what in particular?
+how to do a for loop in cython?	http//paste.pound-python.org/show/ukxw6jyq1lm5vc1bwied/ (repasted for )
+do people not use pyenv any more or something?	pipsi solves a different problem
+this is from python 2.7's string library: https://github.com/python/cpython/blob/2.7/lib/string.py#l378-390 what is the point of creating those underscored variables rather than just using the builtin float, int, and long.  furthermore, what is the point of string.atof/i/l if all they are is basically identity wrappers around int, float, and long?	looking up in builtins is a tiny bit slower than a global. it's a microoptimization.
+so can you construct a regexp that will mathc "objective-c", "c", and "c++"?	"^(objective-c|c|c\+\+)$" may be what you want.
+alex333333: the lesson to be learned from your not getting a response?: just ask your followup question and skip the survey.	ask away
+hey. why this sql doesnt work?     x.execute("""insert into dashboard (title, slug, data) values (%s,%s,%s)""",(title, slug, data))	in what way does it fail?
+hi all! anyone know how i can return the status variable as part of the 500 error here?: https://gist.github.com/mrmmorris/c060125684b107a89e9b	status is going to be a string. so it won't ever equal 0. if what you're seeing is just "failure" that implies status is an empty string.
+foist: what's the problem?	i have two projects that communicate with each other. i’m running some functional tests so the inter-project communication needs to take place. when i make a call to project 2 it is apparent that it is trying to invoke the libraries in project 1’s virtualenv rather than its own.
+chipyy: what are you using to learn python?  and is it your first programming language?	"for homework" usually includes a tutorial or syllabus.  if it doesn't you should ask for your money back.
+for what?	i believe they are descendants of fubar... f..d up beyond all recognition a military-oorigin term
+i ca 't see the first way... if i tell you the first way by mistake, not knowing what you've tried yet, would you resent that?	that's like sending the output to garbage
+kosh: why?  tuples are hashable aren't they?	i was thinking of his current list if he turns it into a dictionary then it would be o(1) pretty much
+or in other words: why does "(hello)?" also match "hell"?	an optional pattern at the begining or the end of a string may even be not there it's still the same.
+karstenk: what code are you trying?	what they said but if that isn't enoughcould you pastebin your code and the error?
+kepler, what do you need then?	i'm not sure i entirely understand but could you handle bvi4 separately?
+chchjesus: how can i open python interpreter ?	are you sure it is supposed to work on windows  ?
+http://www.businessinsider.com/syndromes-drive-coders-crazy-2014-3?ir=t	have you tried programming for money?
+couldn't you inheret from something already immutable?	i like / vs. // to mean 'true' and 'floor' division
+codetaku: i have a question where you defined a create_frame you put the entry and stuff as frm9frame , frm8frame etc etc why not just use frame? as fun sets the frame anyway??	you mean where i pass frmframe[0] to the call to self.create_login_frame() ?
+what is it counting, and how, anyway?	trying to do a re split on youtube's new api to try and make it more sane (convert into seconds)
+_habnabit: usually i don't use versions between releases. why?	i don't understand your usage of the word 'use' here
+i want study about parameter that is given as function. but i can’t find it. who can tell me link?	your question is unclear can your rephrase? check /topic for a python channel in your language.
+kepler, dict.setdefault?	well you could use something like 'if element not in dict' but i'm not sure if there is a one-liner which i imagine is what you're asking
+with the normal raw-string syntax?	yes
+exarkun: it didn't call that_socket.settimeout or that didn't work?	also another reason why it'd be nice to have pthread_kill bindings in python 2
+and you are probably on debian or ubuntu?	6
+simpson, what do you mean?	the decorator should also be able to access the function arguments
+mackan90096, err, why?	to make it a oneliner.
+i imagine this is expected behavior per python- but i've been wrestling (after much googling) with creating a clause that checks whether the key will even exist in the first place before attempting anything. is there a way to possibly do this against a dbus method for clementine? i apologize ahead of time if what i type seems like jargon. i am somewhat new at this.	what would you prefer to happen?  an empty string be returned?
+eckod: http://www.hackerpad.tn/ ?	i like / vs. // to mean 'true' and 'floor' division
+anyone know how i can debug this subprocess? status = subprocess.call(["/bin/bash", command, app_name, app_envs]) do i add stdout=pipe, stderr=pipe or something?	'debug' in what way?
+guys, can you tell why i am getting everything inside the same index instead of getting a dictionary out of the json environment variable? please see http://pastebin.com/21drzarz	http//paste.pound-python.org/show/jni7qzajod07urx5c1gk/ (repasted for )
+how to make an md5 hash of a large file while not eating up the ram?	read it in chunks feed it to a hashlib.md5 instance.
+sublim3__, one thing i see, your apt-get upgrade did not go well... could it be you've tried to install packages meant for other versions of debian? built a system-wide python? apt-get i think uses python, so the packaged version is what you should be using	yah i am trying to rebuild python2.7.9 from source now
+what is the most efficient way of check if a path is dir?	oftentimes the least error-prone thing to do is to use it and catch the exception.
+anyone have any advice on my bpaste or was the question too vague?	if i am not mistaken a function will capture a global variable as long as you assign nothing to it
+_habnabit: instead of subprocess.call?	windows?
+flound1129: sure. what kind of state are you wondering about?	yes that is stored somewhere.
+igenius: by not catching them? ;)	i.e. by not using bare excepts for example
+jeffspeff: where does that second one say it's incompatible?	that's just the version history.
+vgr what's that?	what's what?
+hey guys if i have a 2d array i can do [1].append(element), correct?	how about you actually show us what you want that to look like
+dlitz, did you read the most recent post by linus? it's sort of humorous. i'll post it if you ike.	which one?
+kingplusplus: what gets printed?	<class '__main__.foo'>
+felqer: what do these functions do?	if i have understood things right one is running a server and the other one is supposed to do measurements every hour.
+im trying to import a package(django) from another package. both are installed in the virtualenv's site-packages dir. however, it seems that it cant find the django package from the other package. any idea if i need to add something in the manifest file for that?	need more details
+papna: ?	but then he has to manually encode. easier to specify the line ending.
+hi there, can anyone tell me how to match "c" and "c++" but not "c+" in a regex? "c(\+\+)?" does not work, as it also matches "c+" for some reason...	c(\+{2})?
+jim: how?	if you don't mind me asking why is it a problem that it goes to /usr/local?
+macuser: you don't want to use /usr/local/bin/python?	if you use virtualenv this will all be solved
+nedbat, still here??!	yo  he's watching the big fight
+is that a py 3 only feature \u03b5?	\ kafka
+if sys.platform == 'darwin': which other system platform are there?	posix for linux and other such systems
+mlody: what do you think that error message means?	if i have understood things right one is running a server and the other one is supposed to do measurements every hour.
+can i pm you?	nedbat  needs help. he needs a program to query a database which contains a large amount of data. he wants to know the limitations of python
+the-compiler: there is some kind of memory increase due to indirection, no? because sys.getsizeof([true]*2048) gives only 8224	|zz| no it's just 2048 pointers to the same thing and a bit of overhead.
+or custom compiled python environments?	well no
+zzattack, sorry?	it's one of those problems that's a non-issue because the entire system is fundamentally broken so there's no reason to use it in the first place
+john, why not just try it? i'm sure there's companies around you that are hiring	oh sure - but i'd feel like an imposter just applying
+foist: are you are making a call to project 2?	i am making an http call to project 2.
+codetaku: so for my use case it is ok to use when everythign will run on the same python and flask version?	yes although it will duplicate the flask files (i believe) it is recommended.. it might save you configuration headaches in the future... now if these are all actually part of one project you might want to reconsider separate venvs and perhaps just make one for the whole project which they all share
+isn't there some kind of code analyser like lint for c?	absolutely agreed. i'm convinced it nevertheless happens a lot in comp sci related classes
+diminoten: how so?	oh i'm suggesting you decouple your timeout from your checking if things are in a state you like
+mfilipe: have you seen my messages?	a static method on slaccounts is also a simpler way to go.
+kosh: hm, your host system is some linux?	my desktop has 256gm ssd 8g of ram and i3 - you have a pretty quick laptop
+somebody should do a plot of the linux & python version numbers over time.  linux sat on 2.6.x for a long time, but then, how many of us have been able to deprecate python 2.6 yet?	"awscli"? a cli module by amazon web services or something?
+shlant: second, do you want one or 5 strings? you have one right now	i think one. i am creating a file with that as the content
+nmz787_i: more than what?	thank you
+shlant, did you print out whole command then try in term?	sorry just testing what _habnabit suggested
+commonoddity: what would you prefer to happen?  an empty string be returned?	yes if possible. i'm just not sure if this is possible against the getmetadata method that is used with clementine/dbus
+{'bla': 'foo', 'bla2': 'foo2', 'bla2': '[foo, bar]', 'bla4': '[bar, foo]'} < how can i transform such a dict into one without lists? (i want the first item of each list only)	are those values really all strings some of which look like lists?
+i think it might be something with the inheritance chain?	so why is weight a class attribute?
+is this syntax correct? fn is a string var previously set... scp.put(fn, '/var/spool/received/tmp/' + fn)	
+perhaps you see a -m argument?	hm i need the real rand()... maybe i write a c binding myself
+voodoonofx: cool do you know the parent id for shared folders? "shared" doesnt work and "calendar" shows only local calendars.	you can use stuff like this (http//timgolden.me.uk/pywin32-docs/html/com/help/active_directory.html) to auto-discover objects then get the id
+what's the git+ for?	are you referring to the bash command?
+dlitz: "awscli"? a cli module by amazon web services, or something?	def method(self *args timeout=none) doesn't work in py2 so i made a decorator that allows me to do @restrict_kwargs('timeout')\ndef method(self *args **kwargs). that way even though it's using kwargs anything but timeout causes a typeerror as if it was defined as def method(self *args timeout=none)
+yeryry: and what do i do with the second print?	i get some empty file
+nedbat: i mean that del will remove a name from a global namespace, would it not? and if before that the ref count was 1, then it will be garbage collected eventuall. but if there is something else referencing object, then it still will exist, even after del. i'm not sure about that though.	that is right.  the way you said it earlier sounded different
+nedbat: do you take suggestions for additions to that page?	i do
+_habnabit - when i see a closing tag in xml which has the slash after the word, what does that mean?	i'm not sure why you're asking me or why you're asking #python
+omarlittle, hmm! what other operations are there to perform? instead you could use a dict like {(x,y): [z]}	if (coord0 coord1 0) in self.vr.maps return (coord0 coord1 0) else return (coord0 coord1 1) ?
+what do you do when you get this? valueerror: need more than 6 values to unpack	looks like you're not giving enough values for the number of variables you're trying to unpack into
+how does a try/except statement work? if a line in the try block gets triggered, does it immediately jump to the except block?	yes.
+is it bad form to have multiple asserts in a test function?	_at_work somelauw for transcoding you can do codecs.decode(s 'string-escape')
+i'm reading the info on header parsers here https://docs.python.org/3/library/email-examples.html   my information would be coming in from stdin. so, should i use "headers = parser().sys.stdin.read()" ?	you'd probably be importing sys instead then and using stdin through that
+but mutables inside a tuple are still mutable, right?	yes.
+and how can i create a dictionary (with empty values) from a string? like i have string = "alpha,beta,gamma,delta" and i want a dict = {'alpha': '', 'beta': '', 'gamma': '', 'delta': ''}	check out the dict.fromkeys classmethod
+which pip?	how?
+kucukmubasir: and what are you doing the import in?	then ipython browser is using a different python installation or it was started before you installed six.
+:set smarttab ??	for sure but i hope it's already enabled in your vimrc )
+what time zone are you guys in? why aren't you all sleeping?	pacific but it's still 2am here
+and what exactly do you mean by "comparing" them? equality?	intersections. list 1 and list 2 have 700 titles in common list 1 and list 3 have 30 titles in common etc.
+exarkun: you do have python2.7-dbg installed?	yes
+or do you have 'video = soup.findall()'?	lol
+foist: so you're doing this, hm?	something else is going on with your code then
+kirkmcdonald: maybe?	you could also try dict.clear()
+what?  python /does/ have eval	does that work on unicode objects?
+yhg1s: i want to move the virtualenv to another machine from osx to linux, so the binaries won't work. how could i make it reinstall all sources in virtualenv?	'pip freeze' and 'pip install'. you can tell pip to use a separate server for the packages or provide a cache directory.
+i'm confused: what am i doing wrong here? https://bpaste.net/show/b745667d8537	self.myvarz is never defined anywhere.
+papna: why would that matter?	because you'd write code that uses that data
+can i ask u why is .format added?	it's a better way of creating a string from variables than using +
+nick_zwg, that's the default, isn't it?	?
+can anyone tell me why even though i auth to nickserv as soon as i connect, i always get shunted into the unregistered channel?	because you don't wait long enough for the identification to finish.
+chipyy, did you put it in the for loop? also, put this in a script; don't use the repl right now	it is useful; now i know you didn't use the for loop
+jim : what do you mean?	for i in range(n 0 -1)   oor for i in reversed(range(n))
+https://www.google.com/?gws_rd=ssl#q=site:https:%2f%2fs3.amazonaws.com%2fshadowpuzzle%2f	i take it this is an android app?  grab the apk unzip it (pretty sure they're actually zip files) and poke around a bit with the 'strings' command
+codetaku, now that i'm reading from the json file, is the structure i'm getting back also still a dictionary?	all my strings in my dict have "u" in front of them now
+not even for the lowly math lib?	just because something is good in c doesn't mean it's good in python
+does anyone here program professionally - but were more-or-less self taught?	lots of people do sure
+karstenk: what they said, but if that isn't enough,could you pastebin your code and the error?	what they said but if that isn't enoughcould you pastebin your code and the traceback? *
+i have a another question, python object to json , is () to [] ?	yes. json doesn't have the concept of tuples so the json module uses json arrays instead.
+what user do you guys dev flask applications as? root and then chown them?	don't do that as root ever
+nedbat: would you add anything to it or how would you reorder the items ?	are there things which you'd like to see in a list like that which are currently missing ?
+simpson, oh, is this why tornado has a bigger community than twisted?	i'm having trouble seeing it can you spell it out?
+harej: what's in those lists? can you represent them as vectors?	ultimately it will call malloc() and free().
+hi folks, anybody got pycharm? i sort of failed to get it work properly.... i have "project" with multiple subfolders, each containing separate program, aaaand pycharm still thinks that "root folder" for each subprogram is the main directory	you need to modify the project structure
+exarkun: what version of gdb btw?	it's ubuntu 14.04 using the os packaged version of python
+anyone ever made a saml client?	i think now just thinking here that you could be a teeny bit biased d
+asdf' ?	what's up?
+codetaku: unfortunately i got another error message. would it be alright if i were to print it to you in private?	sure though you might get more help if you ask in here my knowledge is by no means endless
+ikanobori, how can i find out ?:d	openssl 1.0.1e-fips 11 feb 2013
+is this a group assignment or something?	that's pretty harsh man
+if it was so broken why are so many using it?	because everybody is talking about it
+when i merge two dictionaries like this: http://paste.pound-python.org/show/nanowe7crbbjiuw4njle/ will the duplicate keys automagically be deleted?	the keys in ld2 will override those in ld1.
+dadaas: what do you want to do, just concatenate all of the items text attributes?	it's hard to say without knowing what you want to do with the result. a for loop is probably what you want to use but perhaps you want a list comprehension instead. both of those are covered in any python tutorial
+eg: ({"a":123},{"a":345}) will be converted to [{"a":123},{"a":345}] ?	yes. json doesn't have the concept of tuples so the json module uses json arrays instead.
+_habnabit, just out of curiosity, since you mentioned it earlier, how does python catch the error?	sorry for all the questions. interested student here.
+what about just in time optimization?	the list will actually be recognized as a constant in this particular case
+and you mentioned don't ever put more than one statement in a try block - does it also apply to the except block?	every function in python returns 1 object unless it has an uncaught exception always.
+malinoff, but what if you require upstream changes to the vendor packages?	like what?
+thoughts on how could improve this home brew counter?  http://pastebin.com/yv5yyc5v	http//paste.pound-python.org/show/l2mh67sc5jw4z8vvny5u/ (repasted for )
+schlitzer: in some ways, what do you care whether the attributes have the right values?  as long as the class behaves correctly, what's the difference?	so i should only test the methods if they are doing what they are supposed to do?
+desophos, ? what?	at class definition time the body of the class is executed
+what happens if you pass unnecessary keyword args to "".format()?	try it.
+kad--: why are you using a regex? just use the sting's split method.	if you actually needed regex (e.g. for a variable separator) you could use re.split. but it doesn't look like you do.
+karstenk: 'first when a parent is created'?  you are creating new categories, but not creating them with ebay (so you don't have an ebay id for them)?	so for my use case it is ok to use when everythign will run on the same python and flask version?
+_habnabit, quick aside: why does this loop not work without sorted()?	if by 'not work' you mean 'it throws a runtimeerror' it's because sorted() makes a copy
+useless or?	which one?
+jeffspeff: why would you start learning a sooner to be deprecated version?	haha
+if i am not doing any scientific processing, what are the use cases if any for using ipython notebook? i have seen some people render then online, which is kinda interesting.	any time you want a sequential presentation of your code would be a good time to use a notebook
+how can i fix "_ssl.c:492: error:14077438:ssl routines:ssl23_get_server_hello:tlsv1 alert internal error" when using urllib3?	you probably lack a cipher.
+3x nested dicts?	you could.  but i think a more direct mapping of your data would probably be easier too work with.  you have a bunch of firewalls make them a list or set.  each firewall has a bunch of configs.  make that a list or set.  the configs have name->value properties so make that a dict
+i have a decision tree made of nested dictionaries...what's the best way to go about pruning an item at the bottom of the tree?	del d[a][b][c][d] ?
+exarkun: did that work?	bingo
+you may be able to just do slacker.api_whatever = whatever?	good point
+_myth: what do you mean async mode?	write it in a separate thread
+how ?	did you install udemy-dl using pip?
+schwarzbaer: you're automating the login?	or do you want the user actually to do it in a browser?
+in foo methods, i can access it with self.s?	yes. however note that *assigning* to self.s will *not* affect the class attribute but add a separate one on the instance
+is javascript faster than python?	http//benchmarksgame.alioth.debian.org/
+this if statement is valid right?  if int(row[6]) <> 12 or int(row[6]) <> 15:	use != rather than <>
+can anyone suggest a lightweight python cms-like thingy? i basically need a relatively simple site where non-devs can edit the content. but i would like to keep full control over the layout and template system. i am fine if it takes a week or so to put this together.	https//wiki.python.org/moin/contentmanagementsystems
+i need to put a file from the local system (linux) running the python script to another linux system. what is the recommended way to do this? is there a scp module or something similar	subprocess or paramiko?
+what's that?	it's a struct format )
+dyce: if you're doing this via cron, maybe just use the commandline tool called lckdo?	apparently flock replaces it * * * * * flock -n /some/lockfile command_to_run_every_minute
+hm ok i guess i can check it out. does it hurt to have code int he doc root? and can you help wth my evenv question	it doesn't 'hurt' but it could lead to a security issue if your web server allows users to download your python source by specifying the .py file directly
+i want to write a log of data to local disk, how can it be non-blocked?	write it in a separate thread
+stormmore: or is it some other kind of information that you want to get? what do you want to do with it?	yeah i guess you'd need annotations there. maybe a simple string as return annotation naming the result variable?
+tylerdurden01: what do you expect anyone to say? you don't have that substring, that's it. the script works fine but it doesn't do what you wanted	now we're getting somewhere... so in the code you didn't show us you have "video['html'] = soup.findall(...)"?
+ok so math.sqrt() is no?	no it's fine
+can i make a firewall dict that has more dicts per config file, that has a dict for the objects in the config file?	you could.  but i think a more direct mapping of your data would probably be easier too work with.  you have a bunch of firewalls make them a list or set.  each firewall has a bunch of configs.  make that a list or set.  the configs have name->value properties so make that a dict
+rmwdeveloper: sure, did you try it?	i'll look at that..thanks!
+wleslie: just out of curiosity, would it be possible to define a decorator, say @extend, which will allow that with a cleaner syntax? (i don't know much about decorators)	eg @extend; def __init__(self) ...
+isaac_rks what side is python on?	python is made by people with crazy opinions
+why not exists a module do integrate a c++ like as ctypes for c?	c++ doesn't have a well-defined abi
+i'm very new to python and i'm trying to write a function to classify a full name intro names and surnames. i ended up with this function https://bpaste.net/show/acb495420989 i've two questions: 1. is there a practical limit in function lenghts? in java i usually have 10 lines functions. 2. is this simplificable? i think that i'm still programming as it was java...	the practical limit on function length is "one brain-full of code"
+shibe: which lxml?  the cffi one?	yes
+speakertomeat: what kind of path?	in this case a topic path in an mqtt message bus
+dimitrovskif: oh... yeah.  maybe idle works better?  (i forget, is idle unicode-aware on windows?)	but i can't do def func(self *args timeout=none) in python 2 anyway
+riderplus: i've been looking but can't see one which does what i want. do you know what one i need?	what's what?
+riderplus: sorry i'm not following, how would i do that?	i don't know what you mean i have this at the moment but you've seen it already - c = df[["1st srv"]][df['player'] == 'novak djokovic']
+papna, ah so i have to use len(data["mystuff"]) ?	if you wanted indices that's one way to get them but the thing to do is *not* to use indices )(
+_t0mb0_: how do you mean, ‘consumes a lot of data’? it’s a lightweight wrapper.	we have our own internal docker repository and use docker images to create clean builds from jenkins
+what's wrong with this? 3.x - https://bpaste.net/show/51beeed4fcac	that's not where the 'if' goes. what are you reading to learn python?
+pdtpatrick, have you seen the 'enum' module?	i'm not on 3 yet
+hello folk. i am defining a decorator within a class, that has accesso to instance variables. everything works, except for the fact that subclasses can not use the decorator. how can i fix it? minimal runnable code here: http://ideone.com/rl1afy	move the decorator out of the class.
+like maybe a wrapper library that's a bit easier to work with?	"cleaner" and "easier" are subjective
+so what do you need to know salvakiya?	i am trying to extract code from an xml document for editing in notepad... after i am finished i want to be able to put everything back how it was. the exported code would have tags so the program would remember where to put everything. i am so new to xml and dont know where to start. xml https//bpaste.net/show/c2522d583805 desired output https//bpaste.net/show/b21dbd5414f2
+hello everyone, this is driving me crazy, can anyone tell me how do i get the api key value from an environment variable? (see paste) http://pastebin.com/21drzarz	http//paste.pound-python.org/show/jni7qzajod07urx5c1gk/ (repasted for )
+does pip change its behaviour?	pip is -not- recomended for sudo or on the system-wide python
+never do that?	never
+igenius, 'unprefixed'?	how about "unflowered"
+isn't floor division the standard for integer math in general?	more than what?
+papna: to use what? os.path.isdir?	use the directory.
+nedbat - i need some recommendations please. is it possible to create something like a 'website' with python with data visualisations and then in other 'tabs' there is restricted access?	of course.  python has been used to create many large websites
+steeze when you drop a folder onto a python script, what does that actually do? call the script and pass the folder location as a parameter?	that's what im trying to do. but it's not working. it won't let me drop a file on a py script
+hello, why won't this python program run? http://lpaste.net/131685 it crashes and displays a system error. :( can i run it?	it's in haskell?
+isarl: do you mean  __anzr__ == h"__znva__"  ? :p	this works http//ix.io/ibh
+pycoderf: you'll go back through and re-test every code path through every single project whenever there's a new version of flask?	yes i'm referring to documentation. but to me both square and curly brackets were confusing and a more simple "x out=none" would be more understanble (i think the same is true for other people as well). numpy uses a lot of square brackets and numpy is usually used in combination with scipy. e.g. most ufuncs in numpy have square bracket notation like http//docs.scipy.org/doc/numpy/reference/generated/numpy.add.html#nump
+_habnabit: i've asked you this before i think, but what do you do to solve the race condition on tagging a release with vcversioner?	which race condition?
+kepler: i'm not sure i entirely understand, but could you handle bvi4 separately?	how about special-casing and if the object_name is 'bvi4' you append or prepend the context name so you get context1bvi4 context2bvi4 etc?
+it would seem that using single-quote characters makes more sense for triple-quoted strings, no? miigotu. however i'll stick with whatever's convention.	whatever you have to use to avoid backslashes and to match the formattin of the rest of the document
+i went for learning python2, good decision?	in my opinion don't learn python2 unless you have a very good reason to - but picking up python3 when you know 2 (or vice versa) will be easy as well
+jim: a print?	you're using super correctly.  make sure all your base classes also call super
+nedbat, oh? i didn't know. i've never really used it. i was just disappointed to discover it.	i never really forgave c++ for symbol mangling being so hard to sort out i guess.
+(12:40:47) yhg1s: dadaas: driver.find_elements_by_xpath returns a list. presumably a list of elements. you can't call the 'text' method on a list, because it has no such method. perhaps you want to iterate over the list of elements and call the 'text' method of the items. (can someone explain in more details, so what i really need to do? loop trough the list and how to call text on each of it? what command i need to use?)	what do you want to do just concatenate all of the items text attributes?
+pdtpatrick: if you didn't intend to instantiate the class, why is it important that it be a class?	i was going through someone's code and was wondering why they did something so i started experimenting
+adam007: did you install udemy-dl using pip?	open a python interpreter
+what if someone wants to install a package with dependencies offline?	then they install the dependencies. i'm not sure what problem you're forseeing.
+isaac_rks what does it consist of?	yes
+hi everybody. is there a way to take a screenshot of a webpage without using a webdriver? :)	you need a way to render the page
+jwad, "isn't working"?	uhmm
+what can i do?	pyrasite maybe?
+supay: and where is 'upload_from_path' supposed to come from? did you perhaps mean to import it from imgurpython, or use client.upload_from_path?	im not sure actually. its a function of imgurclient which i've already imported i guess.. https//github.com/imgur/imgurpython
+i have an odd question. i learnt the term “real programmer” today. i googled “programming syndrome” looking for any articles on being addicted to coding. i thought maybe it’s my aspergers and this is my special interest. but i hit an article that rang true. i literally spend 80% to 90% of my waking hours programming, or reading books. anyone here had similar issues?	hey  - talk to codeotaku when he comes back he has that issue
+remram:  perhaps there was sufficient time to update the core code to run on python 3.4 but not the ui/archiver components?  or there's compatibility concerns with any sort of addons.  (i don't know a lot about mailman, just wildly speculating)	| so i need to do some checks then. ok cheers.
+kosh: ah ha.  are you using virtualbox, really, or that fancy windows 8 hypervisor?	well thanks for showing me what i'm missing now i want to speed up my dumb vagrant boxes
+what program yhg1s , terminal ? yes, “ipythone notebook” command? yes	then you'll have to debug the issue. look at sys.path in the process that can't import six. look at the traceback you get when you try to import six.
+how can i import a file that is a keyword?	you shouldn't do that in first place
+monkeyget: everything that you don't know looks like a mess? have you looked at https://packaging.python.org/ ?	and avoid eggs the format is being killed
+jim: why wouldn't you know if an object had a given attribute?	that does not sound like a worthy goal )
+why are you using devnull anyway, if you don't know how to use normal files?	i never said i dont know how to use normal files thanks i was just confirming that is what it mean
+rasi: are those values really all strings, some of which look like lists?	?
+flound1129: well, what does this code do with logging?	http//paste.pound-python.org/show/o66kxbil09vjiwfyilsj/ (repasted for )
+igenius, why do you want to avoid using try-except?	dear  - because i don't know exactly where to put the tryexcept block
+nedbat: one question regarding unify file loading. one of the files have 3 columns and the other one only 2 so when i split the line i get a valueerror. how can i solve this? let me paste the code	https//bpaste.net/show/c6454bf9e9be
+what's that conditional doing? does it equal the name with the "main" file?	it checks if the module's __name__ is __main__ in which case it means it was run as a script (and not imported)
+is there a difference between, when using bit operators, 0xffff and 0xffff?	nope
+felqer, can you post your code?	i guess i could but i don't have it on github or anything
+that may in place of a newline?	i never said i dont know how to use normal files thanks i was just confirming that is what it mean
+titou: have you thought about latex?	latex could be an idea but the problem is that it's "too long" to compile and it's a big thing to install on a server...
+shlant, did you print  'output'  variable?	i'm just using status instead of output
+for starting off learning python, is it recommended to start with 2.7 or 3.4?	do you know any other programming languages?
+_habnabit: is there a term for something like a unicode modifier code point by itself?	a combining character?
+codetaku, is there a way to add it to the dictionary only if it doesn't exist?	dict.setdefaul?
+yvear: why ovh? :)	support and competitive prices
+would anyone like to give me some feedback on what they thing is missing from this ? http://jsbin.com/kusarutajo/1	an introduction explaining the purpose and audience.  i wouldn't have expected "file uploads" to be the first thing to figure out for example so i wonder if i don't understand the audience.
+sleblanc: on ventos 7 i have a /etc/uwsgi.d directory. do i put the configs there? tutorials say to put them in the focroot	can you pm me?
+so each worker has its own copy of the file in ram?	i think that's how multiprocesses usually goes down
+tylerdurden01: try printing out the script.text and see if 'file: ' is actually there?	what version of python are you using?
+is there any tool to minify python?	err why?
+ah, like a diacritic without a cdoe point to alter?  hmmm, never tried to do that	a combining character?
+kulelu88, so would you really have use for the function that runs multiple times? or does it only need to run once and come back to rest (to the menu or to exit entirely from python)	the function that runs is supposed to only do so once complete its work and then go back to a normal state where i can use it again without doing "python app.py". i seem to have it working properly now )
+and what does the "levellimit=2" parameter you set on line 17 do?	so for my use case it is ok to use when everythign will run on the same python and flask version?
+salvakiya - so you want to know how to separate the tags and datavalues from an xml file and put them in a text file, omitting all the extra <></> syntax?	my python is somewhat limited. granted i did create a complicated instance handling system. but i am trying to make a game with gamemaker and i hate the way gamemaker displays code in the gui... i am trying to extract the code for easy readability
+does it need to be python-related?	it does not really have to be python based. but i like python more than php. but if i would find a php thing that fits nicely than i would use that.
+elem.send_keys(randg.randomstring).get_attribute(value) then what??	current_attr = elem.get_attribute('attr555')
+jennifer: lol, well there you go.  til.  heh, i thought you weren't supposed to know anything, since you're "just a student"? :p	"awscli"? a cli module by amazon web services or something?
+ssbr_at_work, does psycopg2 support the with context?	if it doesn't it's trivial to write a context manager
+i thought darwin is os x or something?	you have a non-ascii character in your source (â) and haven't set the encoding of your source
+if i do multiple inheritance, how do i make sure all the __init__s get called?	super()
+hi, is there a way to have python list all web pages in a site's path?	the limitation there is that the web server will not allow you to just get a directory listing (in most cases)... plus many web pages are just dynamically generated content and "in a sites path" doesn't reall ymake sense
+can someone help me fix this probably simple syntax error? https://gist.github.com/mrmmorris/0f3ac5059dfe0cf794d5	so you do know that you have a single string right?
+crtxreavr, you mean validation? no, you need to do it in the function body, not in the arguments list	now it makes perfect sense. thank you
+can i use lib2to3 to parse python 3?	no. it only parses python 2
+riderplus: like this? https://bpaste.net/show/e41506b8521b	it doesn't fix the issue of me not knowing how to use the result of the query in calculations
+in python 2.7.9... in a finally block, is there any way to detect that an exception was raised in the associated try block?	doing things in the except block
+can you look at mark tolonen's answer and see what he wrote, if it makes sense to you?	is this python 2 or 3?
+hef_: excuse me?	is it part of a file path?  i was wondering if you are using a linux system
+diminoten: ok. any more feedback?	dewin|work as 's piece will tell you you can only iterate a generator once
+so python2 interprets things as unicode instead of utf-8 by default?	python 3 essentially removed the byte-string type which in 2.x was called str
+no django for you?	i hoped django would make things easier. but in many situations its abstraction made things much more difficult and ugly than they should have been. i think i spent more time fighting django than profiting from it.
+should i use something like platypus?	when you drop a folder onto a python script what does that actually do? call the script and pass the folder location as a parameter?
+\u03b5: just looked at sigtools.readthedocs.org page, it looks like (in the example anyway) that it relies on returning the same arguments, what about the scenario of different input and outputs?	\ i've got both double precision and real fields in the same table.
+dthor: is something not working right?	it's working now with *args
+add some prints to the function showing d.month etc?	unless the .zip was created by someone from austria or germany
+dlitz: zahlman i am trying cygwin now, same thing happens. cygwin should support unicode, right?	zahlman i know windows cmd has issues with unicode though.
+_habnabit, around for some more stuff? what i might do is have docommand(int) in its own class, classes could inherit from it in order to get a docommand, and have any class that wants to be the target of commands to inherit from it	requiring inheritance is rarely a good api
+(i don't think he was asking about inheritance though?)	yes
+why not?	(1) because you should know if an attribute exists. (2) because it does the equivalent of `except` rather than `except attribute error`
+so something like 'ruturn ('working...' + yay.yay_pimp())' but i have to define yay_pimp() in yayplugin first hey?	something like that yes
+notnola: are you formerly of new orleans? (only use of nola that i'm aware of, at least)	does it allow parsing just strings like "gmt-7"
+_habnabit: is there a way to parse python 3 and preserve comments?	- since i am using pyscripter in windows i don't hit ctrl-c i press the stop button. and everytime i do this stupid 'ssl.py' file opens up and wastes my time
+i am creating a script that checks a download folder, and uploads everything to google drive, then deletes, so i suppose a cronjob would suffice? with some kind of file lock	yes it's for locking read/write.
+is there a way to specify two possible options?	you mean validation? no you need to do it in the function body not in the arguments list
+tos9: which race condition?	^
+this some old centos?	6
+what's saml?	well i dont know whats wrong then
+how many memory does take up one boolean in cpython?	|zz| a python bool is just a python int basically
+i want to write a lot of data to local disk, how can it be non-blocked?	write it in a separate thread
+jeffspeff: subprocess or paramiko?	i like / vs. // to mean 'true' and 'floor' division
+isn't that for [] ?	don't forget that you can define  []
+speakertomeat: what if someone puts a \/ in the filename?	err i need to double check but i think it's not possible
+speakertomeat: just busy loop until you get the return value you want or your timeout has expired?	i don't udnerstand the connection between the two things in your second sentence.
+ldlework: so, does that mean the problem is not reproduced here?	its more for "a = 5" why is a parsed as just token.name
+shlant, do you understand why this is a syntax error?	i assume it's because i can't add the variable to the string in this context
+i'm attempting to write a script to rename screen logs i have to append them with the current time since they are only date stamped without hh:mm. is python able to get those attributes from the os? as in retrieve most recent time opened/edited.	os.stat(fname) will return lots of useful information https//docs.python.org/2/library/os.html#os.stat
+vorondao, are you interested in soap to follow the book?	thanks for the responses nedbat and  - so what it sounds like i'm hearing is there really isn't a good soap client. or that python isn't a good fit for that.
+oh, it does that now?	with boot2docker
+here's a real insult: https://www.youtube.com/watch?v=ivpoykcnzyw&spfreload=10	pacific but it's still 2am here
+is it normal for some functions to take longer with multiprocessing than without?	yes that can happen
+exarkun: i know right? ;)	this python process is in a virtualenv right?
+kingplusplus: they're not the same, but they don't look completely diffferent, do they?	also you got these similar things by the same syntax
+emilsp: perhaps you want to build a new dict instead?	i just realized the problem
+then the except specificerror: won't catch anything right?	correct
+is there an algorithm/design that limits sessions count established from client to server?	assign each connection a unique token then track to heart's content
+_habnabit, so using the "while" is just a way of looping without binding the loop to the unchanging list?	ah.
+omarlittle, why not directly iterate over your list of coordinates and stop when they match coord1 and coord2?	hmm! what other operations are there to perform? instead you could use a dict like {(xy) [z]}
+shibe, is it really difficult to pip install?	it isn't but i was wondering if i could do this faster
+carljm, how do your intermediate commits get a '.dev' version?	ah! i bump it to .dev1 immediately after release and increment that number at mostly arbitrary times in between (if there's been significant changes). not a great solution but imo better than having it always claim to be a "real" release that it's not.
+solidus-river: isn't kafka supposed to be something up and coming?  i have a vague memory of some project saying their next version was going to be called kafka...	thanks for the ideas anyway.
+dlitz, maybe i should wait for python 4?	python 4 won't be all that different from python 3.
+and you want to know how and why the dups happen? you want to get rid of the dups?	yes
+hi :) can you kindly check this post? https://gist.github.com/yasoob/f69bbab4d3397af9ee3a and tell me if i have made a mistake in understanding iterators and generators?	it's condescending as all hell
+alexwall, 2.7?	twistd -n web --path=.
+_habnabit: i didn't find a 'rational' module, did you mean 'fractions'?	yeah that one
+maybe you're keyerror is coming from category.categoryid? also, don't use list as a variable name; it's a built-in	cat of cats returned only the key as str confusing me
+the-compiler: ?	i have no idea about toscawidgets i'm afraid
+what can it be?	value being a tuple i think
+can i convert it to a float?	yes. you want print m.group(0)
+lseactuary, what kind of projects?	do you want a graphical user interface?
+projectrevotpp: what do you concretely mean by 'series of octets'?	how do you get those data?
+especially the get_route() part?	do you just want to get a traceroute?
+cast: interesting! what drew you to getrefcount?	having just enough knowledge to be dangerous [i'm 1/3rd through learning python 5th ed] and being prone to convoluted lines of thought
+can somone help me populate v ariables from a text doc or a csv ?	yggdl show some code )
+is there a way to pop an element in a dictionary from a sequence of keys? i.e.:	a.pop('a').pop('b')
+is there a python function which returns the output of c's rand() ?	try the random module
+how so?	cleaner code but still o(n)
+mmmmm, so if it is a set, items won't duplicate?	codetaku - this  guy is giving me deja vu
+they don't hit the disk, or network?	dunno my first stop would be "can i not use ftp?"
+zefferno, ?	i have a long dict and another dict with specific values to be "matched"
+did you try it?	o
+jkbbwr: okay, and what is your question?	if i do invalid = object() at the top of a module will it be unique?
+maybe something like: suite_elm.findall('verification/result[@type=fail|xfail]') ?	depends on if you want and or if you want or
+codetaku: yes i have another class which is the main class then i have a new file with this class and i call it so once i press that signup button i want the whole signup class to close so isn't app.destroy() the way to go?	you should have a 'main' function and it should create the signup object then call "run"... although it shouldn't be called 'run' it should really be called something like 'show_window' and then the main function should do app.mainloop() ... ooh and the 'app = tk()' call should be put in main too
+let's change the question. "how can i wait for a glass of water to warm 2 centigrades for 30 seconds, and act wether it hasn't warmed 2 centigrades or 30 seconds have passed in a pythonic way?"	you don't want a timer because you don't want something to happen after n seconds
+try changing that to www.slack.com?	good point
+amun_ra, link?	here's a link    https//www.youtube.com/watch?v=pibfofqdiai
+cyphase could you understand now?	maybe your question is just too dificult understand in the limited time people are willing to spend thinking about someones problem. maybe try to break it down to smaller pieces
+dude, would you please, please, please forget the bus?	this can be easily accomplished with a start = time.time(); while start - time.time() <= timeout doyourstuff()
+_habnabit: anyway, why the swig is not a good alternative?	it tries to be magical and as a result it's easy to get wrong and get memory leaks or weird obscure problems
+matthavard: but why isn't self.prop already "child"?	the question is why doesn't  it pick up the class attribute prop on staticchild or raise an attributeerror?
+malinoff: anyways is there any distribution for pypy like anaconda?	also https//bitbucket.org/pypy/compatibility/wiki/lxml
+if python is built in debug mode on windows,  does it look for foo.pyd_d instead of foo.pyd?	yes getting only the last element in a 0 to n depth path but not file path
+try unicode, if that fails, use cp437?	unless the .zip was created by someone from austria or germany
+mekhami you still here ?	http//paste.pound-python.org/show/kb71zmr1aqoo4cu6lajm/ (repasted for yggdl)
+am i dense or is project packaging/structure/deployment a mess in python?	virtualenv
+kosh: does matlab have the same conventions as python with [] being a list constructor, named parameters, etc?	slicing in numpy is really a little more featureful
+yourdict['machine'] = true ?	diminoten same reason why what  is telling me to do (same thing but with two callbacks chained)... because i need to check this during startup process. and react if it doesn't happens within a time window and if i hook this on the callback used when a machine comes in the bus and no machines ever come in the bus because the switch is down then this will never be checked and the startup process
+ how can i make the elements in the brackets appended to the key that is the item before the bracket?	how about you actually show us what you want that to look like
+if i get string '00:00' how do i turn it into null/false? (it represents a time)	s != '0000'      ?
+nedbat: ?	the way installing works the python you use implies the python you want to install onto
+which can be shortened to r"(\d*\.)?\d+(e[-+]?\d+)?"	who?
+sthzg: are all the filenames in that particular zip cp437?	i am pretty sure yes. the zip is generated from one software (not ours).
+what's special about the cpython python3.4m binary vs the regular python3.4 one ?	https//github.com/homebrew/homebrew/issues/32402
+so there's no way to override the attribute look up unless you create an instance of it? :(	are you trying to implement enum yourself?
+asdf` oh, so i have to iterate?	yes you have to do dict() on each of the elements returned by .fetchall()
+mircx1, what command?	that's charade not chardet
+jwad, 'pythonic rule'? you mean the iterating over sets thing?	yeah
+help! originally i had this function which was returning a string from an xml document. like "return soup_myprice.find('landedprice').amount.text ". but i realized just now that the field in xml doc may not always be there. so how can i make a try/except statement that will at least return something like "not avail" in that case, and also not cause my program to stop running?	yes.
+so if pip keeps installing stuff to my /usr/local/python instead of my /library/frameworks/ one what do i do?	you would use the pip installed with the /library/etc one
+the problem is the last %z, it would recognized the following: -0400 but not -04:00. should i just alterate the date_str ?	haha
+sral, or a general answer?	general... i see typeerror on something that is type 'undefined' and i'm wondering how that can even happen.
+what's a "column"?	
+i joined two list with zip function and sorted it, now i wanna print like before when i had two list so (' first column + second column') , any advice?	can you paste some code?
+dammitjim: yes, does it work?	...!
+i have lost my requirements.txt file. is there a simple way to parse my imports and generate a new one?	pip freeze
+jim: you mean torvalds?	i tend not to pay too much attention to linus when it comes to his views on politics or ethics or anything "social" like that (or crypto). he isn't very good at those things.
+http://pytest.org/latest/ <- py.test?	yes they do crazy things with their name sometimes
+mrcloud: what's the input fullname? is it a single fullname or a bunch of fullnames?	give me 1 minute to add some comments and i'll add the whole class. will be easier to understand
+when using sqlalchemy with postgres, is it ok to just use sqlalchemy.type.float in my table mapping instead of sqlalchemy.dialects.postgresql.double_precision? does it automatically map it to double_precision if i'm on postgres?	if the closest thing to a float in postgress is double yes
+jeffspeff, pretty well?	why would you start learning a sooner to be deprecated version?
+foist: ok, so how'd you start project 2?	i have this make target http//dpaste.com/2gk8skr
+karstenk: so you have a list of dictionaries, and you want to turn it into a list of lists?	why not mock up an example of what you're talking about - what an example of the input would look like and what you want the data structures to look like after your function runs on the input?
+jim: why doesn't it have __init__ ?	i think you will be ok.  are yous ure you want to use multiple inheritance?
+i know i could put a second while true loop within the try try/except, but is that the cleanest way?	twisted works with pyserial
+jaantr what do you try to accomplish?	so i've got the table from here http//www.atpworldtour.com/rankings/top-matchfacts.aspx?y=2015&s=1# using beautifulsoup then i've made that a dataframe with pandas now i want to query it so i can get the 1st serve percentage for the player novak djokovic and turn that cell from a percentage to a decimal so i can use it in calculations.
+maladmin: difference is that myvars is an attribute of the class, therefore it is bound to the class, where self.name is bound to each instance (i think that's correct?)	usually you never "declare" your attributes like that and if you want to document them write a class docstring
+anyone know why and how it can be fixed?	you installed into /usr/local/bin somehow perhaps with sudo easy_install or sudo pip and /usr/local/bin is still in your path
+ request_code, request_type, checksum, packet_id, \ <-- what is this \ doing here again? next line without executing code yet?	nope
+xcyclist: well, consider: how would you turn a mutable object into an immutable object?	haskell?
+if it's a good cms, you shouldn't need to mess with the code at all...?	i fear that with a cms that at some point i will have to change some things. and this is the reason i am looking for a lightweight cms that does not make me reading and experimenting for a month until i get it to do what i want.
+_habnabit: what's your preferred single source of truth for a version number?	git tag
+speakertomeat: is it part of a file path?  i was wondering if you are using a linux system	err os means operating system
+codetaku: and then point your doc root where the static stuff is? does the vhost then point at the homedir or the docroot	i am not fully confident that the way i do things is the "right way" but i use /var/www as the document root
+and then just do all my links to the docroot?	if your code is linking to static files yes
+stormmore: what do you need to know about the return statement?	yeah that's not very flexible but you could do it. you need to consider multiple return points too
+yggdrasil you realize line 94 will only be called once, and populated by the last line of your input file?	yggdl should that be indented in the for loop?
+jj15: i'll pm you the link, ok?	yeah sure bud
+it's not much of a modification: r"(\d*\.\d+|\d+)(e-?\d+)?" → r"(\d*\.\d+|\d+)(e[-+]?\d+)?"	why do you hate negative numbers
+peyed: what is fd? don't you mean output?	you're closing the file in the "for line in input" loop so the 2nd time through the file will be closed
+can any() be used to return dict in a list, and not just true/false if it exists?	you can use next() though
+how do you include a literal # in a list item in yaml?	does this help? http//stackoverflow.com/questions/20739639/how-to-escape-hash-character-in-a-multi-line-string-in-yaml
+diminoten: can you explain what you're looking for in some detail?	hm and /usr/bin/python-dbg is the same version/compiler/etcetc as the process you're attaching to?
+kulelu88: what is the python global directory?	mg this is where python is installed. if you find it you will find all the libs installed via pip in a folder inside there
+wooble: what happened when you tried saving in rot13 with emacs? haha	yhg1s that would explain using always the same number (which is what happens for me) not alternating between two numbers
+mrcloud: why are __names and __surnames different? you use them the same in classify	__names is a dict with names as keys and the probability of a given name to be a male name as value. __surnames is just a list of surnames
+is there a way in python to overload [][] ?	__getitem__?
+exarkun: if so, you can use symbol-file to load them?	when i try http//codepad.org/dagnaj95
+anyone have time for a quick question regarding selenium?	the lesson to be learned from your not getting a response? just ask your followup question and skip the survey.
+or does it even matter?	do you know any other programming languages?
+let's say i'm parsing a xml file and i realized that the text i'm looking for isn't always going to be there. can i put a return statement in a try/except block?	yes.
+cyphase can you again help with that line?         nodes = dict((cat['categoryid'], node(cat)) for cat in cats)	but i can explicitly specify **kwargs afterwards...
+oh, what?	i guess ubuntu screwed stuff up
+how do i fix this i/o error?   https://bpaste.net/show/c5bf29ef1d70	what is fd? don't you mean output?
+karstenk: what's up?	to hard?
+btw:  it appears pycharm doesn't go on open java up through ubuntu 14.04.  anyone know if it's possible to install it while both traditional and open java are both installed on an ubuntu?   (seems unlikely)	probably a config thing where you set the path to openjdk. i'd check in their channel if they have one.
+nedbat: are there things which you'd like to see in a list like that which are currently missing ?	sorry i can't look at it now
+you seriously don't use them much? they seem super useful	well i've been a developer for.... 27 years?  picking up another language when you have worked with a bunch of others doesn't take too long
+depends, what openssl version do you have?	how can i find out ?d
+karstenk: what they said, but if that isn't enough,could you pastebin your code and the traceback? *	yes.
+hey, what's the proper way to create python executables?	you can put a #!/path/to/python on the top line and make the file executable
+after building python2.7.9 from scratch how can i test if everything is ok without installing it?	same as anything else )
+but it seems that when prop is static, it doesn't get assigned to the object for some reason? maybe i'm misunderstanding static members in python	?
+igenius: well, i've been a developer for.... 27 years?  picking up another language when you have worked with a bunch of others doesn't take too long	if the key doesn't exist in the dict and you reference it it creates it with that default value
+diegao, what's .env?	tos9 that looks pretty nice. why is it turrible? )
+so no?	i can't figure out what this code is meant to do but it sure seems like you can't do it this way
+on debian, virtual envs don't pick up dist-packages?	did you create your virtualenv with --system-site-packages ?
+yeah saw that.... did you see his git talk?	you mean torvalds?
+are unicode "characters" always described by 4 bytes?	no utf-16 encoding uses 4 bytes always utf-8 is variable width (and quite clever)
+yes, it is a list and i expect a list. so why i cant call .text() on list? i was thinking it will attach a list to the variable. also i coded a for loop for each item in list to get.attribute('text') but that didnt work too. it gave me no error, but it sayed none	(124047) yhg1s  driver.find_elements_by_xpath returns a list. presumably a list of elements. you can't call the 'text' method on a list because it has no such method. perhaps you want to iterate over the list of elements and call the 'text' method of the items. (can someone explain in more details so what i really need to do? loop trough the list and how to call text on each of it? what command i need to use?)
+codetaku: is it the book by prentice hall? i think i already have it on my computer saved somewhere	ok thanks for everything i will look into it later now i am going to bed
+igenius, well, what do you want to do when someone hits c-c?	ok well there's effectively an infinite number of things it could do instead. what do you want to happen instead?
+the \ characters?	dammit r"c\laptop"
+karstenk: i don't understand why you are trying to make this into a tree.  if you want the children of a category (do you ever actually need this?), just pull out all the records where parentcategoryid=the category you're looking at,	i am recommending a dict keyed on categoryid not a list
+desophos, figure it out?	yep i think i got it
+i am using re - and i wrote re.findall(r"[-+]?\d*\.\d+|\d+", mystr) to find a number in a string. but i have one problem...	r"(\d*\.\d+|\d+)(e-?\d+)?"
+what kind of capitalization? like, where?	i meant that .
+nedbat, where do i need to do that?	dammit wherever you want to get the actual full path to the file
+i was hoping to get some guidance?	ask! )
+'readability' as in grade level for reading comprehension?	yes
+detre: so your basic plan is to ask a question, then belittle anyone who answers? fun.	if your credentials were relevant you would be using them to research an answer on your own.
+pdtpatrick, i mean, is there a specific reason you think that third-party modules are problematic for you?	i cannot just install random third party libs at work
+inad922: "doesn't seem to work" ? how about uninstall first	yeah but shouldn't the -i flag do the same
+exarkun: can you get the debug symbols onto the box?	if so you can use symbol-file to load them?
+sampath, it is not giving you any error then ? are they even starting?	it runs all the files in the list within a minute on a command prompt without showing any ui
+how do you do collision in pygame?	here are some functions you can use http//www.pygame.org/docs/ref/sprite.html#pygame.sprite.spritecollide
+yhg1s: how?	a particular april 1 or any april 1?
+does someone has a better idea?	have you thought about latex?
+bullicon: so i'll have to iterate over all the lines and apply my transformations?	you could read the entire file into a string if it's not too large
+codingthings: i can imagine...but theyre really long no..?	some are hundreds of pages.
+is there a performance penalty by using row[6] not in [12, 15]?	none of any importance
+can you incorporate pieces of it at a time?	haha well the bash script actually calls a python script already
+any idea why?	how is debian 8 going for you  ?
+hello. any expert python users here? im kinda new to programming need some help to determine what is best for my project. anyone know knows pig/scala etc also would be awesome. dont need technical help just advice.	welcome.  go ahead and ask your question
+hey guys how can i loop through a text file by index? i understandhow to do it normally, but it would be a lot easier if i could do it this way, like how you can do range(len(array))	list(fp) would give you a list of the lines. is that what you want?
+how can i write to a file in asnyc mode in python 2.x ?	what do you mean async mode?
+peng: yeah, that was part of my concern. on py3 that code would be memory efficient correct? its just under py2 it wouldn't be? i was pondering how to make it nice and memory efficient in py2 and 3 but didn't see a way	right.
+hey i'm trying to parse a packet and it is printing out like this in numpy:   'g\xb4\x19\x01\x07\x08\x08\x06'    what is this and how can i manipulate it?	parsing requires you know something about what you're parsing
+(python 3) so, i can't append a new member to an array after declaring it just like in javascript? ( array = []; array.member = "stuff"; )	http//bit.ly/mcahyx
+and the tier?	well no
+attwo, which one?	ok. i'd use cryptography's fernet recipe instead
+do you have source for segfault?	yes
+no?	well i've been a developer for.... 27 years?  picking up another language when you have worked with a bunch of others doesn't take too long
+why won't that work?	and  is saying.
+also did you see his talk to a debian crowd where he told his reasons for staying with gplv2 for the kernel?	i tend not to pay too much attention to linus when it comes to his views on politics or ethics or anything "social" like that (or crypto). he isn't very good at those things.
+r00s how do i handle a keybaord interrupt without using try catch?	why do you want to avoid using try-except?
+pycoderf: what are you trying to do? run python files on your system? you can have python files run anywhere (almost) on your system	sorry i had to go afk for a few... personally i usually put such files in the home directory of the web server user (my user is www a common choice for apache servers)
+nedbat: you're refering to "web backend programming" right ?	"learning a new web development language for backend" yes
+yhg1s: i woud say that a boolean would require 4 bytes if stored as an int. but 28? where the other 24 came from?	|zz| sys.getsizeof(['a']) == sys.getsizeof(['abcdef']) == 72
+that barely clarifies it, unfortunately. i'm assuming sets are stored in memory more efficiently?	no actually a hash table will use a little more memory than an array with the same number of items.
+runciter: i'm told when an object changes, one client. you mean i should also check when a meta object (all the clients) "changes" in the callback used for when one object changes?	no of course not -- the meta object should made to maintain a set of callbacks it calls when certain things happen
+dawiisss: can you paste your current code for me?	here you go https//bpaste.net/show/2c6cccf71317
+macuser, what does "which python" say?	and that's the python you use and you want to install other stuff to?
+michele: i just mean: you've got tools that work well for you, why switch it up?	that's right.
+kingplusplus: in what ways are they different?  well, classes have a special "template of" relationship with their instances, that's true	but why couldn't classes *also* be instances?
+what is pipsi runciter ?	https//github.com/mitsuhiko/pipsi
+nedbat, it is already optional then?	**options works fine if options is empty
+pdtpatrick, why not?	good news! enum34 is bsd-licensed
+how can i filter a dictionary with a list of properites (without using cascaded if conditions)?	a dict comprehension and a set?
+karstenk: why not mock up an example of what you're talking about - what an example of the input would look like and what you want the data structures to look like after your function runs on the input?	http//paste.pound-python.org/show/cgghw7l2f9fakfuxunqw/ (repasted for )
+hey, i joined two list with zip function, now i would like to print first column + second column for each row... how? :)	can you paste some code?
+harej: perhaps convert these lists to sets?	linear rather than quadratic...
+http://pastebin.com/raw.php?i=n4xpacny	http//paste.pound-python.org/show/zpor2ah2s1vroqpylaor/ (repasted for )
+so it's faster than json?	yeah. the end game is to be able to have a website where people can type in an ip address it will show which firewall it is on which context it is in and all the firewall rules for that ip (or its entire zone)
+why i must use `sudo pip install <something>` on mac os x recently? i use homebrew's python all the time.	pip is -not- recomended for sudo or on the system-wide python
+sral, do you need specific c code?	or a general answer?
+igenius: ignore them?	i would be very surprised if it did
+any alternative? http://pastebin.com/g3dh2cdy	http//paste.pound-python.org/show/1nmmoa4tlgzdogpdwhno/ (repasted for )
+is it because of gevent?	http//paste.pound-python.org/show/qca9kagc0bx5ikvmjjfu/ (repasted for )
+lseactuary, do you want a graphical user interface?	nedbat  needs help. he needs a program to query a database which contains a large amount of data. he wants to know the limitations of python
+kingplusplus: does that make sense?	it does a little bit
+score_under: so r"(\d*\.)?\d+(e[-+]?\d+)?" is the best one? :d	not sure where you got 'he' from but i don't know why you'd omit negative number support anyway
+so is the fact i did id(object()) id(object()) id(object()) just happen to recycle the first id, giving it to the 3rd?	pretty much.
+kingplusplus: so remember how type is a class?  foo2.__class__ is type	you can inherit from type!
+is there a pip in there?	there is not
+shibe, have you read https://bitbucket.org/pypy/compatibility/wiki/lxml?	pip install https//github.com/user/repo.git
+plm, er, you realise that this is 2015, right? we're not in 200x anymore, and c++11 is already out	sorry i was refering 11 )
+_t0mb0_: and you, does boot2docker work ok for you?	never really had any problems with it plus i like not having to use some privileged user to start docker containers
+does arrow handle leap seconds?	did you create your virtualenv with --system-site-packages ?
+kingplusplus: what is foo2?	i'll explain what type('foo2' () {}) means in a second
+right?	for which part?
+what's a good project i can look at which does all the packaging/testing/ci/... stuff?	pint?
+kingplusplus: and what's foo2.__class__ ?	type
+can someone explain the difference between workon_home and project_home in venv wrapper?	don't do that as root ever
+tsui: did you try it?	'array' is not something that exists in python as a builtin no. and if it did 'array[]' wouldn't work.
+what is the naming convention for "private" methods ? __?	just use a single leading underscore
+in_deep_thought: if you start python now, do you still get the same error?	ahh now it works!
+nedbat: ey, me again. could you take a look? https://bpaste.net/show/087155a6461d i implemented generators as you suggested	nice.  i would name the method differently but it's cool to factor it out like that.
+what in the bash script would be hard to rewrite?	well with the time i've spen trying to get this to work i'm asking myself the same question
+is the main frame showing up?	yes the main frame shows up
+malinoff: you can't use wheels?	for python programs - yes i can
+edlinde: can you convert the matrix to a full rather than sparse matrix? the error message means that numpy doesn't know how to convert from an object to a float.	the current code uses subprocess to call sed after building its arguments.
+hi, i have a test which looks like: [f(i) for l in x for i in l] == [g(i) for l in y for i in l]. is there a nice way of rewriting this using an any / zip? (here x and y are lists of lists of integers)	something like all(f(i) == g(i) for l in x for i in l) ?
+has anyone made a language in python?	`del x` removes the name x; when all the names pointing to a value are removed the value might be garbage collected when python feels like it; del doesn't by itself remove a value from memory and in particular doesn't cause __del__ to be called
+print(current.strftime("%a, %e %b %g"))    <-- i'm getting invalid string format on that line... what's wrong with it?	no such thing as %e
+runciter: what about the timeout?	and you can even begin to think about implementing a separate timeout mechanism that could work in a variety of situations
+https://bpaste.net/show/ca05750c077d last one for the night then i'm going to bed. thoughts?	you can use dpkt for handling raw packets and checksums
+question... in python using xml module how do i distinguish between <event eventtype="3"> and <event eventtype="4">?	why do you think there is something wrong with line 9?
+how would i go about validating the arg passed is valid strftime format?	try to use it with strftime and catch the exception
+how would you phrase it then vgr?	python 2 has strings of bytes and strings of unicode code points
+are you sure it wasn't utf-8 with unicode being the special case?	no never 'import *'
+http://p.pomf.se/7327 is there any obvious reason why this is so slow?	profile it.
+hey, how can i unittest if something is a instance of threading.lock? self.assertisinstance(clustermap._lock, threading.lock) is not working	there is no good way to test that.
+why does re.split('(\d+[hmsd])', '7h59m30s') return ['', '7h', '', '59m', '', '30s', ''] instead of ['7h','59m', '30s']?	because that is the string once you use that pattern as the splitter.  there are empty strings between the patterns.
+mrelendig: why?	it's a monty python reference.
+malinoff: it's mako template library throwing typeerror: unsupported operand type(s) for -: 'undefined' and 'undefined' and i wonder how that is even possible?	i'd expect it to throw nameerror foo not defined.
+karstenk, but i meant, what is your goal? what task are you trying to accomplish with this code?	yes knowing what cpython's pyobject struct looks like certainly introduces some biases.
+know how when you define a function, you can specify a defaults for an input?	you mean validation? no you need to do it in the function body not in the arguments list
+so my question is, how can i perform bidirectional communication with a task i've started with celery, and if using celery is the wrong way to do this then what should i be using instead?	what's the task you're trying to perform?
+speakertomeat: what's the message bus?	sorry to ask this but why?
+# struct -- interpret strings as packed binary data what is "packed binary data?"	they're the same number and the operators then work on the number itself; how you write the number is irrelevnt 0xffff 0xffff 0xffff 65556 (iirc!) are all the same. if that makes it clearer.
+codetaku: dunno, my first stop would be "can i not use ftp?"	\ that actually might be a wiser question
+why is "finally:" considered invalid syntax? hm.	if a line looks ok but throws a syntaxerror check the lines above it one of them might be missing a parenthesis or something
+solidus-river: what's that latest service?	is that a py 3 only feature \?
+kingplusplus: and foo.__class__ is type, what do you think happens if we call type()?	now type() has no leading class so we cant do type.__class__
+chipyy: have you tried to just print novdeg?	for item in novdeg print('first item is {0}; second item is {1}'.format(*item))
+could you recommend a package for python 2.7 that's as good as possible in detecting the encoding of strings?	where are you getting strings from that you don't know the encoding of?
+wavi: no pip support?	not currently sorry (
+yhg1s: if i do invalid = object() at the top of a module, will it be unique?	both the object and its id will be unique for the lifetime of the object yes.
+dlitz, oh, sure. but then it wouldn't work in python 2 :). am i missing something?	not really.  it's just that it pains me to take clean readable python 3 code and mangle it to support python 2.  we did that in pycrypto to support python 2.1 and the result is awful code that barely anyone understands.
+someone alive and kicking with a bitbucket account and 2 spare minutes?	video['html'] is a beautifulsoup.find_all() result
+jennifer: are you using struct?	yes.
+is there an easy way to replace a string by another in a file?	sed?
+jwad, ok, and what did you expect to happen?	i expected the set to be updated constantly and i expected to be yielded the minimum value (aside form the previously yielded one) every time next was called
+what kind of course is this jennifer?  i was assuming it's a networking course with python as a tool, but expecting you to implement your own checksum calculation function doesn't seem to fit with that	he knows. lol
+dstufft: but if you have that question in your mind ("is setup.py upload safe?") then you already understand the issues, and will know to use twine.	well i wouldn't exactly say you understand it you certainly are aware that there are some issues around it for sure though. it's not really something that i feel comfortable leaving up to "well i hope people are using an upgraded setuptools and they aren't using distutils or an old setuptools" because i know already that both of those things are true
+somehow? maybe compiling?	it's in haskell?
+anyone with 3 minutes spare and bitbucket account?	i have a really big string and i want to check if it has the word "apple" but not fail the whole string isn't the exact word "apple"
+can someone explain this kind of function signature? func(a=none, b='foo', *, baz=none) what is the * doing? is it the same as a *args but doesn't collect it into a variable?	it's so that you can only pass baz as a keyword argument
+hm?	yeah that would be nice if i was the one responsible for writing the fucntions. i am trying to build a module kinda like the cmd module but for safety checks that my team does manually right now
+tos9: speaking of which, why is easy_install still a thing?	because unfortunately things still use it internally.
+why, is it supposed to be hard to do?	well crap it's 4am.  i'd better get some sleep.  i'll be around tomorrow.  good luck
+what command produced it?	that sounds like 'required' to me
+why doesn't this work in python3 though? now i have to use python2 to write my rot13-ed code! ;)	yes exactly – in fact i just did an incomplete switch leaving out the h in front of "ebg13" and now python at least gave me a lookuperror )
+cyphase: couldnt i use that for loop?	yes you would do for idx item in enumerate(sdeg) print ...
+facebook sdk is returning "\u0424\u0438\u043b\u0438\u043f", how do i make that a printable string in python 3?	if you can't just `print` it it's more an issue with your terminal setup than with python
+dimitrovskif: you don't have a unicode console?	zahlman i am trying cygwin now same thing happens. cygwin should support unicode right?
+matthavard: are you looking for something in particular?	no just learning about our favorite language
+(do we not have any mods/ops here?)	oh ok
+what happens if you do that?>	how can i open python interpreter ?
+harej: how/where is this data living?	the data is derived from numerous sql queries
+exarkun: pyrasite maybe?	iirc it makes no assumptions about debug symbols but it will try to acquire the gil and run code -- so obviously it's of limited utility with a stuck process
+there's subprocess management libraries within twisted?	sure; there's reactor.spawnprocess() and a processprotocol to help you communicate with the other process
+m100? marathon?	i'll pm you the link ok?
+monkeyseer, what do you define as unprintable, and why do you want to get rid of them?	you might be able to use unicodedata.category and filter based on the category
+how comes there is a version 3 installed then? and why does pip install sh vor the version 3?	what os are you on?
+alexwall, python 2?	2.7?
+'g\xb4\x19\x01\x07\x08\x08\x06'      it's some kind of hex byte string?  how to i parse this ?	parsing requires you know something about what you're parsing
+jennifer: the comment refers to a previous exercise using ping, did you do that exercise?	yes.
+when used in decode?	i mean it means your escapes are exactly the same as python's which can hypothetically change in different releases
+unfortunately, it retrieves only the first and last element.. not the one in the middle.. any reason where i messed up?	why are you using a regex? just use the sting's split method.
+nedbat: better? https://bpaste.net/show/8d5dab96ec62	also interesting thank you
+when using pyodbc, do i have to have the odbc driver installed, or is it bundled?	i vagely remember that it required a compiled driver
+when i do log.exception(...) it doesn't raise an exception, right?	no
+so yes?	twistd -n web --path=.
+you mean configobj?	what i'd like to do is firewall[asa_dir][context_name] = configobj at the end
+anyone have a suggestion for a soap client lib?	gi201_ pip is -not- recomended for sudo or on the system-wide python
+what's the regular binary?	hm i need the real rand()... maybe i write a c binding myself
+why what?	yeah i can see it's value in debugging issues.
+igenius: are you actually certain that the headers are not included in the dict?  dicts are not ordered, so the records you see are pulled out in whatever order, it might be somewhere in there	can you paste the code you have now?
+somelauw: what's your goal here? this is just a nameerror (because r is undefined), and when using s it's a syntaxerror because "hello\n" is no valid python code	depending on where the value r came from it can be very unsafe.
+desophos, so why is weight a class attribute?	simplicity of syntax but i can compromise if necessary
+hey guys, if i have a parent class with a method, and i write the same method in its child class, i then overide the superclass method right? but i can still call it with super, right?	yes yes.
+how can i match this format?	r"(\d*\.\d+|\d+)(e-?\d+)?"
+cyphase: that sucks for docs generation, though, right?	i use functools.wraps inside; or do you mean something else?
+mailman's core runs on 3.4 and its user interface and archiver on 2.7? what kind of madness is that?	mailman is pretty mad
+what is it that you want to do?	i jsut want to take that input file and use it to populete those functions.
+codetaku: mostly?	yes it's by far the most common posix compliant os nowadays
+isn';t that because ascii is a subset of unicode?	no they're completely different things (bytes versus text.) see bit.ly/unipain for the difference and for why the comparison works in python 2.
+exarkun: but can you can reproduce the deadlock?	i've produced it once so far
+what does it really give me over just writing queries, for a simple web app?	well if using an orm like djangos it lets your framework understand your objects much better which makes many things nicer
+nosetests isn't picking up on app3/tests.py, but is picking up on app{1,2}/tests.py, even though they're identical. what might i have missed?	maybe you forgot __init__.py
+what should be the difference? i can not create my records from a list or a flat dict	why can't you?  you have an id for each record and each record has the id of its parent.
+foist: what's apply_async?	http//dpaste.com/2g6xe6j
+runciter: so you say make the callback for a machine logging in to call a callback to check if all machines are logged in?	yes. and that's the same thing i'm saying.
+if my main reason is web development, is python a good choice? all biased answers are ignored.	you want an unbiased answer why are you in python? of course people will say that python is a good choice (but in all honesty it is a great choice).
+do i change user, group, and threads?	nope sorry... are those os users and groups?  or perhaps accounts held by flask?
+_habnabit, then why does this test perform as expected? https://bpaste.net/show/a880cf8b8480	ok so you're ignoring the loop variable 'i' in your loop
+stevejobsinhell: what is the class you're writing?	why are you implementing your own rather than using the widely-used matrix types?
+kulelu88: but if the actual module is the project i'm working on, i feel like that doesn't belong in the core pythong install directory?	correct mg . my way is the hack way of doing it but i think codetaku answered you with the better way
+so it is not safe?	i just trust the pyca people more
+hmm my current project im doing with urllib2, is requests so much better? and if yes: why?	it is much better yes. it has a more useful interface does more work for you does ssl correctly and keeps up with all the standards at a pace that the python stdlib just can't.
+kirkmcdonald: if status.returncode == 0: ?	hey  can you help salva-kiya i'm at my limit here
+something else i noticed when browsing string.py (now on the master branch; before on 2.7)is this `import _string` at the top.  where is that `_string` located?	it's implemented in c. this is a common pattern in the stdlib.  random imports _random
+like?	run python.exe in powershell
+monkeyget: pint?	everyone has their own "right way" to do packaging/testing/whatever
+karstenk: what do you mean by "the callback of create"?	something like for record in response_list  thedict[record['categoryid']] = record
+shlant: why do you want to pass post parameters to a bash script ? why not do the http request straight from python ?	sorry i'm only familiar with django
+is there a python module which will let you test if the active terminal can display a glyph for a normalized codepoint?  i can test if the terminal supports utf-8, but don't see a way to check if it can display a specific codepoint	is there a way to add it to the dictionary only if it doesn't exist?
+jj15, have you tried programming for money?	yes i dislike it.
+runciter: sure, that all sounds fine. (does vcversioner hook into 'git archive' so it can work with that flow?)	(not yet)
+although, you say they're at the same level?  "import .test" then	still doesn't work
+using optparse, how do you make an optional argument that has no default value?	that's the default isn't it?
+is that comparing it to individual linux distros, or all distros combined?	no linux distro is posix compliant afaik
+i'm looking for a nice solution to generate diploma in pdf format from a template (in which format?)	have you thought about latex?
+how big is maps?	nope
+pdtpatrick: it seems like a __getattr__ on the metaclass could do what you want.  but what would you have that method do?	i was just trying to learn really. couldn't figure out why it wasn't working
+fladd: c(\+{2})?	are you using regex.match rather than regex.fullmatch?
+codetaku: those aren't characters?	i have a question where you defined a create_frame you put the entry and stuff as frm9frame  frm8frame etc etc why not just use frame? as fun sets the frame anyway??
+jennifer, are you a student?	yes.
+do you see many issues deving in docker but releasing to production in a vm? or do you use docker for production?	don't use docker in production
+intergage`: what's the problem?	the first return ends the function
+wooble: are we talking 3?	well newline='\n' is the same
+do you have an nginx user?	and then point your doc root where the static stuff is? does the vhost then point at the homedir or the docroot
+sampath, then? are they running?	no that is the problem i am facing
+meejah:  do you know what the circumstances are? like is it when a lot of memory needs to be copied to child processes or something?	http//www.dabeaz.com/python/gil.pdf
+okay?	that's what im trying to do. but it's not working. it won't let me drop a file on a py script
+dlitz, i see. we used python in the university to do scientific work and such but never have i looked at python for web development. so the last years i have been looking into some startups and i saw a lot of rails but also python. how will the future for python in the web development area look you think for 5, 10 years? node.js having some hype right now also. i use python for scientific work and we also used it in a comp	i don't really feel like answering more when you disparage the other volunteers here.  you'll have to do your own homework as far as i'm concerned.
+looking for an alternate sol'n?	well i've been a developer for.... 27 years?  picking up another language when you have worked with a bunch of others doesn't take too long
+kepler: is the ip you will be searching on one of the settings you're loading from the config files?	you are dropping all these abbrevs on me
+supposing i'm wanting to find the smallest value in a dictionary, would min(d.values()) be the nicest way?[d[d[d[d[d[d[d[d[d[d[d[d[d[d[d[d[d[d[d[d[d[d	sure
+epequeno: read about what in particular?	integer math is a lot simpler from a computer's perspective
+kepler: i'm in wv, where you at?	i will probably be moving to the pittsburgh area early next year
+what happens in python 3?	what happened when you tried saving in rot13 with emacs? haha
+holygoat: but since i don't use docker, i'll ask: you find boot2docker works pretty well?	never really had any problems with it plus i like not having to use some privileged user to start docker containers
+sleblanc: can you pm me?	sure good idea
+is this a good time to repeat the mantra "#python is for good ideas"? :)	what happened when you tried saving in rot13 with emacs? haha
+in py3, what do i need to override to intercept setting values in a dict?	if you're coming from another language it may take some getting used to. but python follows a very simple rule that which is described inside the `class` block is part of the class.
+speakertomeat: what os?	excuse me?
+how is debian 8 going for you fearful ?	i've been using debian 8 for ages p
+hello, has anyone ever encountered runtimeerror: dictionary changed size during iteration ?	yes. it's caused exactly by what it describes.
+could you take one of the derived classes, and in the init, show the call?	http//pastebin.com/qeh1z8uq
+kulelu88, so the exit condition does not depend on the function, in any way. yes?	not that i can think of. you just select your option it does the work and then goes back to the options. i will try to improve it with error-checking but for now i am trying to get the structure
+ronny: who is working on "egg death"? i've not seen this	me for example next step is teaching setuptools to tread wheels as zip-unsafe eggs
+where?	logger objects have a .handlers attribute which is a list. this isn't documented so i wouldn't use it for actual code. but for debugging have at it.
+the-compiler: sounds like a decent idea, open an issue on the githib repo? :)	sure that's fine too.
+nedbat so is python like 'the best' and i dont bother with pig/scala etc?	https//developer.salesforce.com/blogs/developer-relations/2014/01/python-and-the-force-com-rest-api-simple-simple-salesforce-example.html
+_habnabit: or i have to put it at the end?	first yes put it after the closing paren
+s1dev: but essentially it would have to return someting else than "self" right?	you can return whatever you want until that thing has 'to' method
+integrate with salesforce?	https//developer.salesforce.com/blogs/developer-relations/2014/01/python-and-the-force-com-rest-api-simple-simple-salesforce-example.html
+shlant, did you print out whole command then try in terminal?	are you referring to the bash command?
+igenius: can you paste the code you have now?	i'm curious how that might be  but i'd have to see the code to tell
+nedbat: can you kindly check it? it is a short read	it's condescending as all hell
+_habnabit ? any suggestions	- since i am using pyscripter in windows i don't hit ctrl-c i press the stop button. and everytime i do this stupid 'ssl.py' file opens up and wastes my time. i would like to at least have the 'ssl.py' file not open up
+alexwall, oh, windows?	so what do i do?
+... ah, we're stuck fixing someone else's code here, eh?	that's pretty harsh man
+jeffspeff, ok, and what do you want to do with python?	might as well stick with 2.7 then
+hey guys i want to use youtube-dl to download all the videos in a playlist, but it will only download the first. what am i doing wrong with thiscommand? youtube-dl --playlist-start 1 https://youtu.be/a5pbrd1jh04?list=pleseuhrelqohh1xzm05wo3r7q5cc-2bsl	wrong channel
+jim: https://www.google.com/search?q=python+hasattr&ie=utf-8&oe=utf-8	never ever use it
+runciter: any idea how to identify what’s going on?	i would have to see more of your code
+ok, now i do need it... so range(3) gives [0,1,2], how to reverse that?	reversed(range(3))
+yhg1s: why is that? is it because it has to store its type in addition of its value?	|zz| it's beause of how python objects are implemented yes.
+i have a list with elements. elements have 4 key:value pairs (name, id, parent_id,level). from that list i need to transform to an multidemensional array, level represents level in array and parent_id refers to id. how can i do that??? http://pastebin.com/	so you have a list of dictionaries and you want to turn it into a list of lists?
+skeletonking, still here? one thing i found is that the path entry needs to end with a /, or each image ref begin with / or the code that combines has to put a / inbetween	yes  im still here. thank you for the input. i was jsut caught up in some work..
+any ideas on how i can get people to contribute?	convince people that it fills a niche and also that it would be a stellar library but for a few low-hanging bugs that are easy to fix.
+what's the exact path to the python you're using?	there is not
+compiler?	i wanted descriptive names ... i almost named the tool itself something with church though. except i noticed it had a religious connotation.
+colonolgron: perhaps you're looking for `for x in data["mystuff"]:`?	it's always best to pastebin your full code and full traceback
+if i have a really big dictionary that i then wipe out with a "dict = {}", does that wipe it from ram and thus reduce my ram footprint?	maybe!
+like anaconda?	http//stackoverflow.com/questions/17341887/lxml-wont-install-under-pypy-using-easy-install
+schlitzer: what would it be if not a lock?	that is the point it could be something else but should be a instance of threading.lock
+is that ugly or pythonic? for i, a, b in zip(itertools.count(), [1,2,3],[4,5,6]): ...	depending on what exactly are you trying to do
+can i create raw strings in python?	yes
+anyone have suggestions of similar books to read?	it's not python focused but 'code' is really good
+with python 2.7, if using subprocess.check_call() in a try/except block, and you except calledprocessorerror, is the return code an attribute of the error itself?  i.e. subprocess.calledprocessorerror.returncode?	that's the default isn't it?
+(albeit, wasn't the community full of twelve year olds?)	yeah. bravo's community was decent but small. i had a disconnect with the larger mc community i offered quality software and they didn't really want it.
+what is this?	you have a non-ascii character in your source (â) and haven't set the encoding of your source
+yes i have scrape a list of proxies so i wish to append all of them to a file, but i think first i need to grab all of them and make a lsit fromt hem?	it's hard to say without knowing what you want to do with the result. a for loop is probably what you want to use but perhaps you want a list comprehension instead. both of those are covered in any python tutorial
+okay did i miss something ?	open a python interpreter
+why would thing be false?	we must program in python and simply i dont like it....
+you mean develop software as root?	yeah i am starting to setup my development environment
+pyenv virtualenv?	it enables you to have a virtual environment per command like pygments but to still use those commands easily
+_habnabit, what do i need to type in to cmd? python twistd -n web --path=.	oh windows?
+is there any other way to rewrite the entire code or any portion of the code in the link i posted? http://stackoverflow.com/questions/19897209/troubleshooting-typeerror-ord-expected-string-of-length-1-but-int-found	do you just want to get a traceroute?
+uskerine, 'obscure'?	i will try falcon it says minimalist and web api and phrases grace hopper in the landing page
+what's wrong with it?	https//pypi.python.org/pypi/twine
+jennifer: which one?	lol well there you go.  til.  heh i thought you weren't supposed to know anything since you're "just a student"? p
+i'm not having a clue about the turing test...is it to identify if a human being is human?	yes
+nedbat any recommended readings?	have you programmed before?
+stormmore: yeah, i guess you'd need annotations there. maybe a simple string as return annotation naming the result variable?	is that a py 3 only feature \?
+_habnabit: ok, and then how does someone with a fresh checkout use the package?	they install it
+dadaas: thelist = [element.text() for element in driver.find_elements_by_xpath()] might be in the neighborhood of what you want?	so for my use case it is ok to use when everythign will run on the same python and flask version?
+_t0mb0_, would you like something to practice on? :p	no thnx p
+tsui: are you using requests?	if you want specific help pastebin a sscce http//sscce.org/
+well, just use file.write instead of print?	but then it will be one column in my file wont it
+someone have any input? https://bpaste.net/show/99b19e803aae	sec i'm trying to run it
+so simpson, which exception type would you recommend for xml parsing?	whatever you like. tbh i probably wouldn't use exceptions if designing a new xml parser.
+i want study about parameter that is function. but i can’t find it. who can tell me link?	your question is unclear can your rephrase? check /topic for a python channel in your language.
+shlant, yes did you see exactly what it evaluates to?	thanks!
+is it possible to use two separate virtualenvs side-by-side? i can’t seem to get it to work.	what's the problem?
+the problem is can i maintain the context of the previous call somehow?	if you have a sort of verb/subject object
+chchjesus to hard?	so you have a list of dictionaries and you want to turn it into a list of lists?
+codingthings: does reading them help with understanding things, or are they only good for writing implementations of stuff? if the former, i might have to start reading rfcs :p	writing a toy implementation from an rfc is a good way to understand things
+stevejobsinhell, __getitem__?	don't forget that you can define  []
+and decode is bytes in python3, no?	in python 3 i'm not sure the right way to do this.
+darkelement: list(fp) would give you a list of the lines. is that what you want?	`for line in yourfile`
+asyncio will *eventually* replace twisted right?	they're not really comparable
+tos9: uh oh. hopefully they were edge cases and not core-functionality?	eh they were fairly "core". i only remember one of them at the moment
+oh, right, because python 3 separates out the bytes-to-bytes ones?	what happened when you tried saving in rot13 with emacs? haha
+stevejobsinhell: http://stackoverflow.com/a/4019987 ?	you define __next__ to make an iterable
+exarkun: do signal handlers still work (for that stuck issue)?	python2.7-dbg!
+but bbhhhd?	it's a struct format )
+flound1129: what happens to the stderr of this process?	precisely how is this process being run?
+kingplusplus: just to satisfy your curiousity?  or do you think might need one?	a metaclass is for when you want to do stuff in response to defining a class.
+if i have a test script in a test/ dir, how can it import the actual module which is at the same level as test/ if imports can't have .. or paths?	mg you can put that module in the python global directory
+mlody, "doesn't work"?	http//paste.pound-python.org/show/lbfqx2ektywjcxhakrsv/ (repasted for )
+hi. i'm trying to experiment with a oauth2-using api in an ipython notebook. what'd be the easiest way to start an http server for the callback?	i think what you probably want to do is receive the callback url redirect but not follow it instead just pulling what you want out of it directly.
+dpn` why?	maybe!
+hello!  i need to do a serial thing in a while loop, but since it's serial, i've got to put it in a try/except.  i don't like the idea of having to open and close the connection for each iteration though.  are there any other ways?	twisted does serial stuff
+fearful, not quite understanding. are you getting a message when you import something?	how you expect us to help you if you can't give us anything?
+anyone able to tell me what the mirc run folder is?	wrong channel
+how can i keep track of different counts?	sounds like a dict would be a good choice
+maybe at least https://packaging.python.org/en/latest/current.html should point out *why* twine is recommended (or add a more visible warning about that)?	to be clear (in a way) setup.py upload sometimes does tls and when it does tls it sometimes does verify it but sometimes doesn't. it all depends a lot on what version of python you're using and what version of setuptools you're using (if you're using setuptools at all)
+yhg1s: how should i do that then?	setuptools.find_packages
+umm the response data i think right? http://flask.pocoo.org/docs/0.10/api/#flask.response	i'll take a look thanks. i need to sleep. thanks again for your help yvear
+that's clout, right?	yeah. bravo's community was decent but small. i had a disconnect with the larger mc community i offered quality software and they didn't really want it.
+is there a daterange or something like that?	subtraction and comparison to a datetime.timedelta.
+it returns false?	yes
+alexwall, is it 2.7.9?	start up the repl
+yhg1s: yes but if i do hash.update(chunk) and thne again repeatedly, as the doc says : m.update(a); m.update(b) is equivalent to m.update(a+b). so wont the hash object in the end contain the whole file?	no it doesn't contain any of the data. it just contains the hash.
+what about gevent?	gevent is pretty crappy. i recommend twisted instead
+how do you manage indenation?	for sure but i hope it's already enabled in your vimrc )
+but wait, doesn't -m import it?	reversed(range(3))
+well for whatever reason i'd like to install gevent and see just how bad it is, can anybody tell me why i got "failed to import set_exc_info: dll load failed, %1 is not a valid win32 application"?	http//paste.pound-python.org/show/qca9kagc0bx5ikvmjjfu/ (repasted for )
+is it acceptable to do dev root while logged in as root?	don't do that as root ever
+_habnabit: i'm not sure what tias means? i am finding the difference of 2 datetimes and i want to know if they are >15 minutes apart	the abs() builtin will work.
+you say you've not 'released' anything... but have you 'completed' projects?  not being able to finish a project and just hopping from one to another is a bad habit	any other clue/link to the doc explaining servers maybe? ^^
+timvde: and you don't know cairo? maybe it's easy to create a flowed text arera?	no experience with it sorry
+for that matter... why not grpc? :o	yeah. bravo's community was decent but small. i had a disconnect with the larger mc community i offered quality software and they didn't really want it.
+codetaku: i did that now when i try to call the function from another python file it gives me the typeerror: run() missing 1 required positional argument: 'self'   so what would i set the self as ??	in order to construct an insance of a class you use the class name so you would have something like 'test = signup()' then you call its functions with test.run() and self will automatically be provided
+john:  the individual jobs... do they take a significant amount of time to run?  or are there many small tasks?	dunno my first stop would be "can i not use ftp?"
+so then is linux sys.platform not posix?	absolutely agreed. i'm convinced it nevertheless happens a lot in comp sci related classes
+i am interested in “data munging” i guess. idk what to call it. basically taking tons of really badly formatted data from different apis, csv files, sql databases, and piping it all into 1 format. are there any python libraries i should look into?	pandas
+is there anything wrong with calling super(c, self).__init__ from a method on c other than __init__?	i wouldn't say that it's "wrong" but it is weird as hell.
+i want to move a dictionary mapping  several million string keys to integer, float tuples from python to java. is there some sort of standard binary format for doing this stuff?	there's a few
+runciter: sorry to ask this, but why?	because busy looping is almost always wrong
+can someone tell me what i'm doing wrong with this scp test? the code and error are included https://gist.github.com/jeffclay/ccc2c696db16119d0f0e	
+dawiisss: you want to make a class for a different window maybe?	yes i have another class which is the main class then i have a new file with this class and i call it so once i press that signup button i want the whole signup class to close so isn't app.destroy() the way to go?
+fearful, how you expect us to help you if you can't give us anything?	there are literally zero information
+would i declare it as def docommand(self, intcommand, *args, **kwargs)?	if you want it to take arbitrary positional and keyword argumends as well as the 'intcomand' argument sure.
+a dict comprehension?	yes
+sthzg: where is it that you're having issues with unicode here?	are all the filenames in that particular zip cp437?
+papna, so it's implemented improperly?	yes it's conceptually poor and it's implemented improperly
+osx is posix-compliant though, isn't it?	mostly?
+_mb: oh, you're only overriding one method?	certainly not for calling super because there's no way to figure out what the first argument should be.
+kingplusplus: now what happens if you do foo.method ?	in some ways it's different than doing f.method
+flound1129: precisely how is this process being run?	oh well.
+with all this talk about packaging, i'm a bit confused. is there some up-to-date guide for this?	http//packaging.python.org/
+and suggestions for a good library for making soap calls?	i'm not sure there is a good soap library.  soap + python is not a popular combination
+it's not just a regular for loop? show what you're trying	was wondering if there was any other way
+score_under: seylerius already gave me r"(\d*\.\d+|\d+)(e-?\d+)?" - is that equivalent to your expression?	i was basing the expression on that
+https://bpaste.net/show/1ad6ff47c854 can anybody tell me about this one?	so why you answer my question if you obviously have no real life experience. i have been a system developer for 12 years i want to talk to someone that has some real experience. not biased answers.
+is there any distribution for pypy that comes with stuff installed?	http//stackoverflow.com/questions/17341887/lxml-wont-install-under-pypy-using-easy-install
+karstenk, what are you trying to do?	i had no idea what kind of object `cat` was so )
+shlant: so you do know that you have a single string, right?	do you understand why this is a syntax error?
+mrcloud: what is self.__ratios ?	dude-x  i thought that __ was to declare "private" functions
+and then /home/www for your code?	it doesn't 'hurt' but it could lead to a security issue if your web server allows users to download your python source by specifying the .py file directly
+matthavard, the question is why doesn't  it pick up the class attribute prop on staticchild or raise an attributeerror?	in parent.__init__
+ok potential odd question of the day, i know i can get the args spec of a function but can i get the return spec too?	you can get the return annotation
+sirlagz: using systemd?	some are
+runciter: and your use case woudl allow you to wait indifenitely for the slow clients?	we needed to know if something ran
+is the nth item on of the arrays?	i like / vs. // to mean 'true' and 'floor' division
+codetaku: doesn't python store strings internally as something closer to pure unicode than utf-8?	unicode doesn't specify any binary format
+has anyone here tried python embedded in html on the clientside?  (i believe there is a project involving pypy compiled to asm.js?  and maybe other options?)	watch pypy presentation from the latest pycon
+anybody experienced that?	you're probably printing a function call that has no return value
+any vim users here?	for sure but i hope it's already enabled in your vimrc )
+this link says that the e-mail module is compatible with python 2.7 https://docs.python.org/3/library/email.html#module-email    this link says that it's not  https://docs.python.org/2/library/email.html    which one do i go by?	where does that second one say it's incompatible?
+nedbat: oh that's a good plan. so some custom skiptest() that checks with the environment if this is fine, then skip or fail?	sure something like that.
+_habnabit: do you just always create a commit right afterwards with "updating version files"?	you don't commit those files
+monkeyseer, so where are you getting unprintable characters from?	is there a term for something like a unicode modifier code point by itself?
+cast:  why are you using a dict?  because you're very much treating it like a list	unfortunately i got another error message. would it be alright if i were to print it to you in private?
+i have class a(b1, b2): and when i needed to make sure b2.__init__ was called, someone said if b1.__init__ doesn't call super().__init__, b2.__init__ couldn't be called... what if b1 has an __init__ but b2 does not?	why doesn't it have __init__ ?
+why does # coding=utf8 work? hm...	if a line looks ok but throws a syntaxerror check the lines above it one of them might be missing a parenthesis or something
+how do you know when you want to exit?	
+and that's fixable?	then i have no idea sorry. i know debian recently removed sslv3 from openssl and thought the issue might've been there.
+dlitz, i use functools.wraps inside; or do you mean something else?	http//pastebin.com/cmdwmva5
+hello. pylint inside a virtualenv warns about import errors when it shouldn't. how would i go about amending this?	haha yeah sounds good
+isaac_rks, do you want to pass the turing test?	what does it consist of?
+hiptobecubic: you whoo nellying my code?	yggdl you realize line 94 will only be called once and populated by the last line of your input file?
+how to assign a new key to dict? i get every time keyerror	d[key] = value
+the-compiler, but why? when i run "python --version" i always get 2.7	what os are you on?
+stevejobsinhell: why are you implementing your own rather than using the widely-used matrix types?	cool
+are they something to be concerned about (ie, do i need to convert everything back to ascii?)	i would be very surprised if it did
+can someone help me with this error?	can you convert the matrix to a full rather than sparse matrix? the error message means that numpy doesn't know how to convert from an object to a float.
+isnt a programmer by definition lazy? creating code so he doesnt have to do as much work as possible?	this is a different kind of lazy
+isarl, what's the task you're trying to perform?	i'm trying to process a large file. every once in a while my algorithm can't continue on its own and requries user intervention at which point my current thinking is have the task set its own status to something custom and have the calling context poll the async task result looking for that status and send the data needed to continue processing back through something like task.backend.store_result()
+jennifer: is your use of that character intentional?  if so, just set your encoding by adding '# coding=utf-8' on the first or second line of your file	not sure why but i am trying to understand this person's code.
+if you _just_ want to make an api, wouldn't the best thing be something based on twisted?	hmm yeah maybe
+anyone familiar with this mongoengine error? https://bpaste.net/show/4ec4df780873	value being a tuple i think
+nedbat: maybe a function two load a random file and store the result in each variable?	sounds good
+tylerdurden01: perfect match?	what is the python global directory?
+tylerdurden01: what error do you get?	yes
+where do you see the trailing m?	hm i need the real rand()... maybe i write a c binding myself
+_habnabit, ahh, the next test works because there happens to be the same amount of items?	in your example there you're not changing the number of items in your set
+hi. how to get shared outlook calendars? win32com.client shows me only local calendars! https://bpaste.net/show/5ccfaa21af21	i've only done it through pyexchange
+exarkun: hm, and /usr/bin/python-dbg is the same version/compiler/etcetc as the process you're attaching to?	what version of gdb btw?
+kucukmubasir: and did you restart the program after you installed six?	pip itself will problably consume twine because i think it's a better ux to have that included there
+i like eval for parsing. i can just do: s = r"hello\n"; eval("{}".format(r)) # return "hello\n". is this good practice?	no.
+what's the difference between unit tests & functional tests?	the latter means a bunch of different things in different terminology sets.
+karstenk: are you sure you want to do this?  whatever you are going to do with the output after you transform this into a single frankendict would almost certainly be easier the way things are	as result i wanted to iterate over that tree to create new records to my db. the problem is the callback of create is the new id of that record which have to be stored for using to create children.
+zahlman: i mean, making another change this big would be pretty hard.  how often can you fundamentally change what "string" means?	i suppose. on the other hand if they *don't* make that big of a change do they have a motivation to not just call it 3.(n+1)?
+sternmull: so you want to insert text into a template or something?	users dont need to edit templates. for the things in the database there would be one template per "type" and the content that is rendered by that templates must be editable.
+stain: do you maybye know where can i get more information about headers, how should i set them etc.?	or keywords to look for
+okay so i got it to stop going into a forever loop, but the script still exits upon completion. should i assign exa= true after the while loop?	so the exit condition does not depend on the function in any way. yes?
+hi; i'm trying to override __init__ in a few classes, eg. https://bpaste.net/show/ab5fd75ece3f ; as i'll need to call super's __init__ each time, is there something less repetitive than https://bpaste.net/show/ffa11cde77c4 ?	not in python 2 no
+kingplusplus: for which part?	yeah that would be nice if i was the one responsible for writing the fucntions. i am trying to build a module kinda like the cmd module but for safety checks that my team does manually right now
+jennifer: what about just using the system tracert tool and capturing its output?	i'm doing the same exercise as the person in se.
+combining characters are some other category (m*?), but you'd only care about them if they occur before any character they can combine with, and that gets quite complex	i guess if they compiled those glyphs into one file it would be too large to be practically useful anyway
+titou: how long is "too long"?	python won't be any faster
+homework for what class?	couldnt i use that for loop?
+does pyodbc require freetds to be installed on the system? seem that pymssql requires this	i vagely remember that it required a compiled driver
+right or left?	that's what worries me
+kingplusplus: if i do f = foo(), what is f?	object
+pcatinean:    s != '00:00'      ?	that will be false when s is '0000'
+yvear: now, any idea why i get a 400 with this? https://gist.github.com/mrmmorris/daa18b4dc503c8dc7ceb	why do you want to pass post parameters to a bash script ? why not do the http request straight from python ?
+macuser: if you don't mind me asking, why is it a problem that it goes to /usr/local?	because my python that i'm using is a differeont one
+the one suggested here: r"(\d*\.\d+|\d+)(e[-+]?\d+)?"	okay i was right.
+runciter: as a way to stop everything... but hook the start process to the callback?	well again it'd be easier to talk about if we could be less abstract
+or can i just import the whole module and get the exception classes too?	by not catching them? ;)
+autrilla__ https://docs.python.org/3/library/stdtypes.html?highlight=.items#dict.items	why not make the dict iterable?
+runciter: what was it that you were missing?	oh he's got some vagrant boxes that use virtualbox as a provider that come up in ~2 seconds
+?	i do that with the manage and nap_manage variables.
+_habnabit, so what do i do?	is it 2.7.9?
+maybe people here remember when i was rambling about memory leaks here in #python ?	i'll have to take a look
+or do you mean like unprintable in unicode?	a combining character?
+actually i would not expect that the program could write more than one number in that line - will it simplify the problem, if we assume there is only one number in the line?	you could use re.search instead then.
+n00bster: so you want to prune all items that fit a certain key?	yeah
+kosh: what system?	maybe you've got a simpler base image than i do
+is __name__ a unicode?	no because __name__ is bytes
+nim?	uh not really
+so this isnt even close right ?	http//paste.pound-python.org/show/kb71zmr1aqoo4cu6lajm/ (repasted for yggdl)
+jennifer: is this python 2 or 3?	2.
+dawiisss: you mean where i pass frmframe[0] to the call to self.create_login_frame() ?	/codepoint/ is a better term i guess.
+why are people reluctant to use docker in production when they already use it for dev?	for one it consumes a lot of data. adds extra complexity.
+there is a decorator x that can be applied to any function; how can i apply it to a libabry function? coz usually decorators are applied af function creation time	wrapped_library_function = decorator(library.function)
+jim: what use case is that?	wild_cat i changed it to this https//pastee.org/ravj8
+r00s do i need to import certain exceptions specifically?	ha! i love this.
+would would you use then? i thought you always need exceptions in the event something bad happens	correct
+salvakiya - which xml parser are you using to learn about xml?	so what do you need to know ?
+_habnabit, what does "klein" mean?	it's a library
+how do i find two items in a list that set() would consider identical? i wonder if these are /actually/ the same (i don't know how set() determines if two items are the same)	it simply uses "==" (which is __eq__ afk)
+runciter: woudl that be preferable to using a threading timer ?	bus appart i see what you mean... i'll check down that path thanks
+i'd probably have to anyway, to make the comparison. but does that make it a lot more efficiently?	linear rather than quadratic...
+r, sql, tableau do they count?	code academy seemed decent for just getting you used to the syntax
+igenius, ok, well, there's effectively an infinite number of things it could do instead. what do you want to happen instead?	is there a way to parse python 3 and preserve comments?
+colonolgron: what os are you on?	which python
+for the latest version of python, i should use urllib for retrieving files?	define "contains"
+how good is the python simplecrypt as an encryption?	which one?
+commandoline: what is the key it fails to find?	yes if possible. i'm just not sure if this is possible against the getmetadata method that is used with clementine/dbus
+nedbat: regarding classify function, any way to simplify it?	nothing comes to mind
+scottsteiner: maybe you just want findall?	consider "foo".split()
+hiptobecubic: could you suggest an alternative in this case?	i wasn't very careful with it but here for example http//vpaste.net/tyy5h
+the-compiler: remember my question yesterday about the assertion message checker? turns out there is no 'msg' attribute on the assert node. its called 'fail' is this an error in the docs?	nvm... i guess it's just asteroid using a different name than python's ast
+asyncore.loop() causes 100% cpu use when writable() isn't overridden to not always return true. the example on python.org overrides the writable() body with "return (len(self.buffer) > 0)" - how does this prevent the busy waiting? there's still no kind of signalling involved	use something better because asyncore is crap
+hiptobecubic: this is about as close to my actual code as i can get; what's wrong with it? http://hastebin.com/ucatanudab.py	http//paste.pound-python.org/show/ddbtyahzdrpen3hvemru/ (repasted for )
+stormmore: what's "dependencies" mean?	then that's a design decision to make. it shifts the decision of which functions to call from being a static decision to a dynamic one (you need to reevaluate it depending on what has been returned)
+kulelu88 is correct, apple and apple are not the same thing... do you need to do a case-insensitive search?	the word in the string is lowercase as is my word
+srpx: what language?	that's not a language it's math.
+you can't put the classes you include into modules, and "install" those to your python instance?	i'm not sure what you're asking.  there is only one kind of function really and yes it can take *args and **kwargs.
+runciter: why don't you recommend threading.timer ?	with an object that lets you register observers you want to cancel all further action after n seconds if you've not arrived to the state you'd like to be in
+so, 400?	oh sure - but i'd feel like an imposter just applying
+kingplusplus: what created 'self', the instance of your class?	type did!
+codetaku, a combining character?	monkeyseer if you unprintable you probably want category c*
+yhg1s: how may i check if ipython using a different one?	yes it absolutely could and/or it could even be modified to support proper tls verification because even though there are problems on relying on that for a proper final solution adding it now as a stop gap isn't harmful (other than people might use it as an excuse to try and block breaking setup.py upload)
+jj15: https://www.youtube.com/watch?v=6ws5xoz7rq8	ha! i love this.
+triotorus: but why are you running things by hand in production?  debugging?	yes on a staging server i want to turn on debug easily or just change some stuff. so admittedly this is more for staging servers than the real production server.
+*that's* the part you're hung up on?  you already have eventing??	i have a dict but i'm being told checking this dict or a count is polling and bad
+anything? returning the # of 1s in a binary string obtained from a decimal or hexadecimal value?	https//pypi.python.org/pypi/bitarray/
+how do i make a python object immutable?	don't mutate it or encourage mutating it
+question -- if i want to run two python functions simultanously, am i choosing between the threading module and the multiprocessing package or is there another alternative that might be better?	it kind of depends what you mean by "simultaneously"
+tkiter /gtk / qt ?	it's pretty much personal choice (although the built-in one kinda sucks)
+please can anybody help me with my task?	what is your starting data??
+deadsix27: and what are you trying to do with this—normalize it into a standardized tz format?	i have unaware time and a timezone as string as described above and i try to apply that timezone to the unaware time
+does anyone know how to filter "unprintable" characters from a unicode string? :)	import the 'string' module and strip out anything not present in string.ascii_printable (i think that's it)
+what happens if i call pyimport_extendinittab after py_initialize?	i jsut want to take that input file and use it to populete those functions.
+phrearch, are you installing from pip?	with the virtualenv active "python -c 'import django'" throws an error?
+if python has automatic garbage collection what is the point of del?	`del x` removes the name x; when all the names pointing to a value are removed the value might be garbage collected when python feels like it; del doesn't by itself remove a value from memory and in particular doesn't cause __del__ to be called
+so if i move those static members into __init__ you think it'll fix it? i'll see	you can't guarantee anything about subclasses like that without just having the init method directly do a 'hasattr' check and throwing an exception.
+karstenk, can you create some small sample data, instead of that wall of text? also, there's no code there	http//paste.pound-python.org/show/uj0ejzkblz6ijfd5o6va/ (repasted for )
+hi, help. i'm using toscawidgets to display an error message, which widget should i use? textfield or lable?	i have no idea about toscawidgets i'm afraid
+oops, ?*	as result i wanted to create new records like this http//pastebin.com/bc0sf8r6
+yes desophos.  is there a question there?	? what?
+lnemo, haha what? gevent doesn't support python 3, but twisted does	my bad went back to my source and i'm wrong
+score_under: have you tried data.encode("hex")?	not true you would see where in the function the time is spent
+sral, this must mean you rendered a mako template but didn't pass in the names; btw. jinja has a strict mode that would throw an error when encountered an undefined name, maybe mako has a strict mode as well?	yeah i'm just trying to get my head around what's missing and mako code is not easy to follow.
+codetaku: any other clue/link to the doc explaining servers maybe? ^^	v. well said
+pc_: nope, sorry... are those os users and groups?  or perhaps accounts held by flask?	still doesn't work
+carljm, the problem wooble was talking about is: what version number is an arbitrary untagged commit?	it might not be in any release yet
+tylerdurden01: now we're getting somewhere... so in the code you didn't show us, you have "video['html'] = soup.findall(...)"?	now you should reveal the magician's trick
+please no one who can help?	maybe your question is just too dificult understand in the limited time people are willing to spend thinking about someones problem. maybe try to break it down to smaller pieces
+so i want to run a http server but when i type python -m http.server 8000 in the directory of the server it says module not found, where do i get the http.server module?	python 2?
+what kind of results can i expect on windows based systems if i do: os.environ['user']? just an empty (none) value i assume?	i don't have a user environment variable but i do have a username
+what do you get if you just type 'udemy-dl' at the commandline?	as result i wanted to iterate over that tree to create new records to my db. the problem is the callback of create is the new id of that record which have to be stored for using to create children.
+for example if i have two lines in the try block - one is a parsing xml and the one below it is a return statement, and the xml parsing line causes an exception, will the return statement below not get executed?	never bare except (except).
+riderplus: what's what?	i believe they are descendants of fubar... f..d up beyond all recognition a military-oorigin term
+or just if through the list?	you can write a listcomp `[somedict for somedict in mylist if "key" not in somedict]`
+mlody: in what way does it fail?	"doesn't work"?
+mekhami, why not make the dict iterable?	autrilla__ https//gist.github.com//929344e85574f1e4f05b
+rothschild_666: otherwise yes, it looks like valid syntax, why?	actually it will always pass.  things are always either not 12 or not 15
+% ?! what is this, tcsh?	i am pretty sure yes. the zip is generated from one software (not ours).
+how do i tie them all together?	the firewalls list would have lists of configs as its values and the configs would have dicts as their values
+how do i use pip to download from github?	pip install https//github.com/user/repo.git
+_habnabit: i'm curious about your opinion. do you think it was the right choice to have python2's '/' operator perform floor division on ints?	i like / vs. // to mean 'true' and 'floor' division
+_habnabit, any specific reason? reason that we are able to mutate lists while iterating but not sets, that is.	imo it should raise an exception for lists too
+remram, did you create your virtualenv with --system-site-packages ?	works4me
+cast: reduce(operator.add, d.values())   # ?	ahh nice i hadn't thought of that!
+triotorus, is this a private server?	you don't have to source it
+if a open afile on windows with this: with open( outfilepath, encoding='utf-8', mode='w' ) as outfile: and do a oufile.write('\n') will it be \r\n in the end?	try it and see™
+i want to write automated unittests for this https://github.com/nickedes/crypteda ,but how? can anyone help	there are many ways of doing unit tests. i like pytest pytest.org
+kepler: how about special-casing and if the object_name is 'bvi4', you append or prepend the context name so you get context1bvi4, context2bvi4, etc?	it seems like you need a master dictionary or some master datastructure
+please anyone here ready to help a brother? i need to grasp the concept onf meta classes programming python for 2yrs still don’t get its use	just to satisfy your curiousity?  or do you think might need one?
+oh lordy, all the way back to 2.1? :(	2.1 through 2.5 are basically equally hard more or less
+dude-x: is that for locking a file for read/write? i was thinking creating a inuse.lock file, if exists then wait	yes it's for locking read/write.
+schwarzbaer: or do you want the user actually to do it in a browser?	there are many http servers for python.
+is there something special i need to use to escape something like c:\laptop\test ?	dammit r"c\laptop"
+what?	that'll run a python http server on port 8080
+does http://x.cygwin.com/docs/faq/cygwin-x-faq.html#q-xterm-utf8 help?	dlitz  guys tried it on repl.it - yep it works; gotta be a console unicode support prob
+so then, if i don't know what exception type could be raised, i should just use a bare "except:" right?	a base except (without re-raising) is *always* (well 99.9% of the cases) the wrong thing - you'd usually find out what exceptions can be caused (by testing or reading the docs) and handle only those you actually know how to handle - because of what r00s just said
+one thing i've always wondered about unicode:  how do fonts deal with the necessity to define such a titanic number of glyphs?  is there a single 'reference' font which includes glyphs for every single one?  are there multiple such fonts, or are most specific to a locales charset?	in most systems in most cases if the current font doesn't contain a glyph you fallback to a font that does contain it or to some placeholder if no font does
+so what surprised me is when, in vim, i did an s/utf-8/rot_13/, then moved to the first line after the comments and did a g?g (or for non-vimmers, rot-13 encode the whole file). shown here: https://bpaste.net/show/e8631b76d2e8	hm odd
+editshare-ericf: no. perhaps you want to do something in except?	or the with statement.
+what does that 'else' go to?  there is no 'if' or 'for' on the same level as it	yes.
+like, maybe python-3.3 or -3.4.0 (if it works with your app), most likely you should just keep it for awhile longer... do you find yourself wanting to always upgrade to the latest version of everything?	for my dev tools and env i typically find myself deploying latest stable through brew or yauort
+how do you import web python package? (ubuntu 12.04)	oh yikes this tutorial is super awful
+they are separate projects, what would the benefit be of venvs for each using the same stuff?	the advantange would be that all the different parts of the project would be operating on the same coonfiguration... but if they are separate projects you probably want them to be able to vary so new projects can use newer versions of flask and the like without worrying about possibly breaking other parts that use the older version
+does the new pathlib thing correctly handles nfc normalization on osx?	did you create your virtualenv with --system-site-packages ?
+jim: i think you will be ok.  are yous ure you want to use multiple inheritance?	what use case is that?
+forgot: what kind of package? just a python package?	yes a python package and a setup.py then you can 'python setup.py register sdist upload' to pypi
+u playing with c++ also?	you mean torvalds?
+karstenk: why can't you?  you have an id for each record, and each record has the id of its parent.	'first when a parent is created'?  you are creating new categories but not creating them with ebay (so you don't have an ebay id for them)?
+given just a gmt offset like "-4", can pytz get a real tz object from it?	if the closest thing to a float in postgress is double yes
+can someone here help me with a scipy problem?	can you convert the matrix to a full rather than sparse matrix? the error message means that numpy doesn't know how to convert from an object to a float.
+dawiisss: have you gotten it to the point where you have seen the window get displayed?  i'm not sure 11 300x350 frames is really going to work... or does .pack() shrink them to the size they need to be?	yeah the code works perfectly but the issue is with the signuppress function
+how do i know it's installing where i want it?	what does "which python" say?
+oh, you're using sub*processes*, not threads?	that would be the ideal but in python i dont think you can effectively share memory
+any recommendations on what i should go through?	have you programmed before?
+xml files have the pattern like <tag>datavalue</tag> similar to html, do you know this yet?	i am trying to extract code from an xml document for editing in notepad... after i am finished i want to be able to put everything back how it was. the exported code would have tags so the program would remember where to put everything. i am so new to xml and dont know where to start. xml https//bpaste.net/show/c2522d583805 desired output https//bpaste.net/show/b21dbd5414f2
+kirkmcdonald: ah i see. so to properly handled succes/failure would i set exit 0 at the end of my bash script?	or return some string
+nedbat: you read gingerlime's stuff ? ^^ it's excellent	i'll have to take a look
+is there a way to keep virtualenv from doing a full install of python in each directory? i am making a web server that will run a bunch of flask apps. i may end up just installing it system wide in this case	unless you tell virtualenv to create actual copies it only actually creates symlinks so it looks like a separate python install but isn't really
+detre: so maybe if you posted some details about your question, instead of demanding credentials from the volunteers here as if they owe you something (they don't), you might get a more helpful response?	thanks  but we have decided that he's a troll. )
+never put a bare except:?	every function in python returns 1 object unless it has an uncaught exception always.
+simpson: you wrote bravo, right? that seems pretty successful as far as communities go.	oh is this why tornado has a bigger community than twisted?
+yggdrasil should that be indented in the for loop?	yggdl )
+would i be lynched for doing this?: result = some_string.split('/')[-1]	str.rpartition
+__name__ guard here is kind of silly anyway. do you really need to import from this? :)	what happened when you tried saving in rot13 with emacs? haha
+what about for os x? i am using that now.	you have a non-ascii character in your source (â) and haven't set the encoding of your source
+persisted somewhere?	well print logging.root.handlers
+detre, you want an unbiased answer, why are you in python? of course people will say that python is a good choice (but in all honesty it is a great choice).	are you a student?
+ok that is what i thought.  how would you decode it and print the individual bytes?	specifically that is the repr of a byte string.
+pcatinean: what do you mean by "get them"?	make them sets and compute the difference. you get the keys
+papna, what do you suggest in this case to be more simple?	have you seen my messages?
+now, i guess i should be asking my *real* question. say i have a dictionary of 2,100 lists, and i want to compare each list to the other ones and do a set comparison. 2,100 * 2,100 = 4.41 million, so what is the most efficient way of doing this?	so you want to compare one list to 2099 other lists?
+srpx: what is it?	or better rename lambda to lambdalib in all cases
+(or maybe, a better code organisation?)	not in python 2 no
+ah, how could i also add counter? so in each row would be number of counter	for future reference it's really very useful to have the whole script in a pastebin )
+well, you are saying that nose and py.test are exchangeable without modifying my tests?	i just mean you've got tools that work well for you why switch it up?
+how is this possible?	precisely how is this process being run?
+i use sh.git to acces git. now i would like to the all author names from sh.git("log") with python. how should one do that? i mean its not normal text right? its in a pager or something. do i have to pipe it in a file and then read it from the file?	if you use subprocess.check_output you should get the output
+whytrytofly: so you want what... it to all go into one string? or be written to a file?	file
+malinoff, do you suggest tailor made vms?	well no
+pc_: ah, ok... well then my guess would be the problem lies with your apache config... did you restart apache after editing the virtualhost entries?	wsgidaemonprocess logger user=user1 group=group1 threads=5
+shall i start with django directly or learn some python?	learn some python
+can someone teach me something about xml files? i know nothing but would like help	- which xml parser are you using to learn about xml?
+hi all, is anyone aware of a clear winner in terms of json rpc for python? it'd be nice if it worked with flask, but if not then i'm open to suggestions.	apparently flock replaces it * * * * * flock -n /some/lockfile command_to_run_every_minute
+wooble: so if i've happened to import string somewhere, would it be faster to call string.atoi or just int?  and if i've not already imported string, would it be worth whatever importing overhead to use atoi/f/l?	the string module predates both string methods and many of the features of the builtin types.
+jackcom, what is the function?	functions are first-class objects in python. you can pass them around like you would a string or an integer.
+https://bpaste.net/show/0b43a2cba95d what do i do when i see that an int is not callable?	checksumtotal(checksumtotal >> 16)  tries to call a function named checksumtotal and pass it checksumtotal right-shifted by 16 bits
+bullhorn: how are you liking lpthw so far?	its been pretty good. i usually learn best by doing. but his method is to first make you write a program without explaining it... i dont know if its the best approach
+but does at least one 'reference' complete font exist?  if so, vector or raster?	not to my knowledge; there's a "representative glyph" for each encoded character in the code charts but that's about it
+nedbat, so i should only test the methods if they are doing what they are supposed to do?	ideally yes.
+hmm, did you add a call to it?  it should only ever be called by tk itself as the event handler for the click	so i press signup button and basically thats what happens
+phrearch: with the virtualenv active "python -c 'import django'" throws an error?	yea that works ok. i just moved some testcase code to another package (ghost.py) which then needs django from that package
+frodopwns: are you trying to access slack.com or www.slack.com (or something else)? try the other...	so im not actually telling it...i just from slacker import slacker and it uses whatever url it hasd stored
+omarlittle: if (coord0, coord1, 0) in self.vr.maps: return (coord0, coord1, 0) else: return (coord0, coord1, 1) ?	cleaner code but still o(n)
+_habnabit, ah. why is that?	a lot of people get confused by what happens if you iterate over a list while removing items from it
+_habnabit: well, so the unique alternative is to use something like as swig?	yeesh no. just use cython
+score_under, who?	python243
+kingplusplus: what's the blank?	”object f is an ________ of class foo" instance
+does it work if you use curl or wget to access that website?	6
+hey. i have a question. i have coordinates like (x,y,z). z is gonna be 0 or 1, depend on another function. x and y are real coordinates. so i want to make a function which finds the z part of the coordinates from the map, when x and y given. i did this, but i have a feeling that this is a bit overkill. so, is there a better, easier function, maybe a built-in one, for this? http://pastebin.com/xggr2mwy	http//paste.pound-python.org/show/f4fieh6nz9fti7dxtui5/ (repasted for )
+and it should only pass if row[6] is anything but 12 or 15?	otherwise yes it looks like valid syntax why?
+'h\xb4\x19\x01\x07\x08\x08\x06'   supposed to by bytes 0-7 somehow ?	i don't understand the question.
+dlitz, i wonder how long i can squeeze py2? think i can still write code in py2 in the next 3-5 years?	your packetformat only contains 6 fields and you're unpacking 7 items
+does the python logging class store state somewhere?	sure. what kind of state are you wondering about?
+(does it even know about osx?)	did you create your virtualenv with --system-site-packages ?
+is it possible to make attributes from datetime object writeable?	no you need to make new datetimes
+jeffspeff, do you know any other programming languages?	pretty well?
+jennifer: do you just want to get a traceroute?	yes sure.
+ssbr: do you get the same thing?	got scared off
+eevee: does that work on unicode objects?	yeah for codecs that support unicode-to-unicode anyway
+tos9, so should i say try: return soup_myprice.find('landedprice').amount.text except: return 'none'  ?	never bare except (except).
+i need to run a python line n times where n is a var containing an int... a while loop with a decrementing index?	for i in range(n 0 -1)   oor for i in reversed(range(n))
+speakertomeat: for path seperation?	yes getting only the last element in a 0 to n depth path but not file path
+shlant, windows?	did you print out whole command then try in term?
+boomdala, what are you asking?	are you referring to the bash command?
+kirkmcdonald: but would i have the same problem with the tuples then?	well or it will return none if a match is not found.
+hm - but how does that solve the problem, if '6' is one match and 'e-05' is another match? it should be one match.	it is possible i have misunderstood the problem. what is the regex you're using?
+i guess you're working with a fairly static infrastructure then?	would you like something to practice on? p
+maybe it's overkill?	how?
+but which object is it trying to convert?	well then i think you cannot use those methods. i'm afraid i don't know if there are equivalents in scipy that work with sparse matrices.
+but i mean, in 2.1 you don't get list comprehensions iirc?	yeah something like that
+what i'm supposed to do ?	you need to import it first
+srpx: it's going to compile to arbitrary languages?	i wanted descriptive names ... i almost named the tool itself something with church though. except i noticed it had a religious connotation.
+mircx1, why do you think this has anything to do with chardet?	what command?
+ogre?	cat of cats returned only the key as str confusing me
+so the * does collect the positionals but basically throws them away?	no. it *doesn't* collect them or allow them
+_t0mb0_, like what?	define 'vendor packages'
+how could i debug why my __init__ is not called when inheriting from 3 classes?	are your derived classes calling the base-class __init__()?
+do you need to do that though?	- this kepler guy is giving me deja vu
+if i have a dict with 3 values inside and a second with the same 3 + 2 more, how do i get those 2 more?	what do you mean by "get them"?
+where do i get py.exe?	dammit https//bitbucket.org/vinay.sajip/pylauncher
+hey guys i want to represent this line in a log as a key and value in a dict: stumbles: redefine what?, ["yeah but python also clearly doesn't care about performance."]	how about you actually show us what you want that to look like
+you use vagrant kosh?	nope
+can you put *args and **kwargs into any func, so you can call it like foo(arg1, arg2, kw1=42)?	i'm not sure what you're asking.  there is only one kind of function really and yes it can take *args and **kwargs.
+kepler, dict.setdefaul?	dict.setdefault?
+zefferno, a dict comprehension and a set?	?
+so any certain location you recommend my python be in?	you aren't going to move your python.  you should choose one of your pythons and stick with it.
+how i fix this?	why do you think this has anything to do with chardet?
+findall - like: re.findall(r"[-+]?\d*\.\d+|\d+", mystr)	if you use re.finditer() instead it will yield match objects.
+anyone know a good package to calculate the readability of a text? textstat seems, umm, messed up	^ that was for you
+petazz, are your derived classes calling the base-class __init__()?	yes
+hi! anyone would know how i can format a float value (2.0 for example) as an integer? (2.0 --> 2) i'm using .format() function already.	haha
+what does that line do?	calculates the size of the given struct format.
+isarl: python2 or python3?	python3 apparently chokes on the rot_13 bit definitely python2
+any other complimenting tutorials ?	the tutorial on docs.python.org/tutorial (but only after you read lpthw)
+papna why do it that way in the first place? why does this require math? can't you just join the list items?	strings can be joined. numbers can be mathed.
+kirkmcdonald: oh - but i could not get just 6e-05 rather than the tuple then?	but if you use re.finditer() instead of re.findall() it will give you match objects instead of tuples.
+lseactuary: have you programmed before?	code academy seemed decent for just getting you used to the syntax
+someone?	i was waiting for more because this error doesn't seem to be related to chardet
+the weird thing is that c(++) will match correctly. but adding the ?, to make the ++ optional will result in also matching c+. can anyone explain to me why?	because it matches the c anywhere within the string. so all of these would return a match "c" "c+" "hello c world"
+when is it better to make a cronjob vs a daemon?	when you know exactly the interval/time the process needs to be run?

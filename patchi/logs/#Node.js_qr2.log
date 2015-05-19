@@ -1,0 +1,858 @@
+greves: mmm?	"as described in this highscalability article (slides here) youporn stacks haproxy varnish and nginx to achieve 300000 requests per second and 100 gbps of traffic all of this producing 15 gb of logs per hour."
+so i just forward tcp packets to localhost?	open command prompt
+hi every one, i have some trubble setting up nodejs on my windows xamp - for some reason as soon as any file or folder is a symbolic link the node.exe is acting like the file isn't there at all ... any idea?	no idea but i would not try to run it with windows and especially not with xamp
+uberjar, and for bigger pages?	in other words.. dokku is for single webserver deployments.. not good for when you need more than 1 box
+greves: ?	sorry - mappersmith
+lennym: any particular way recommended for ubuntu to get 0.12?	npm dedupe
+ljharb: it seems to do a ton of stuff (query generation? wtf?) from within the language	no i have a packagejson with sha1 in it
+why's that bad?	thanks a lot for the help.
+is there a library for replacing variables in strings or a dead-easy way to implement it?	i have a configuration object where i want some keys to act as vbles for inside values that are deeper e.g.
+http://www.wolframalpha.com/input/?i=3125+mbps+in+petabytes+per+month	ah no this is not continual
+do you need to differentiate between when it's set to a value and when it's just defined?	ok cool. thanks joepie91 and  .. i'll just check existence of foo with 'in' )
+what orm do you use for postgres?	in what sense?
+wtfexpress, what does your app.listen look like? you should just call app.listen(process.env.port || 3000) alternatively you can app.listen(process.env.port || 3000, '0.0.0.0')	quite some latency p
+ubuntu 14.04 & dokku = heroku dyno?	in other words.. dokku is for single webserver deployments.. not good for when you need more than 1 box
+dodobrain: what specifically do you need help with?	i have a lot of issues with point 1 there
+i use currently: https://github.com/felixge/node-mysql/. but how can i check is previous query executed?	it just queues those queries
+even like 'hipster' i could understand, but fud?	re your question let me run some numbers hold on
+oh? what's the right one?	well i mean i do all the tiny increments before it hits npm
+ok how do i get jquery?	what does global.js contain/do?
+greves: before i go to sleep, did you manage to find any bugs? :)	https//github.com/felixge/faster-than-c
+ludjer: might as well do that in a table in your regular rdbms, no?	which you can also do in postgresql )
+greves: oh... you have some experience to share of the joyent public cloud? would be interesting to hear	oh wait is that their load balancer?
+"adjust my teaching style (and language use)" does that mean you'll teach in quechua if asked? ;-)	elaborate on "pretty it up"?
+is it advisable to use transpiled code in production environment?	why not?
+any idea?	full code and full error message?
+joepie91, what do you mean control over what the client is?	well something's going to receive the data
+and does that mean that there are multiple copies of the same thing in the machine?	dependencies are installed per project
+perseus0: glittery success or we still crashing into the mountain?	success but still not being read in the project folder (
+dodobrain: i'd go for ?expanded=true or ?expanded=1	but yeah looks like you got the gist of it )
+joepie91: any other justification for forked threads?	thats what i read as well.. but i want to allow /datasets/org_name
+say -- how does npm work?  if i am a superuser and i npm install something, will other users be able to use it also?	dependencies are installed per project
+io.adapter(whatever) ?	got it to work! updated the version ) thanks
+is there any npm packages that can read the sheetname tabs for excel workbook ?	yes - try searching on npm.org and the first hit will probably be the excel parser
+tarkus - in express?	just add it to a property on req is the normal approach.
+bajix: did you actually read the thing i linked?	i don't think odm is the problem  is referring to. i think what he is getting at is that if you are going to make something structured why keep it in something that is unstructured.
+really? what would you do instead, bradleymeck ?	use either style which is just an if/else
+and a git url to boot?	lol you crazy
+aracodex12: npmjs.com/forms ?	https//www.npmjs.com/package/forms this one?
+beaky, you do know webscale is a sarcastic term, right?	loopback isn't platform-independent and afaik doesn't generate a client
+are you shipping the function code over the wire?	why  ?
+i'd like to get down to the function level, not just request level?	under load?
+greenjello, well if i'm running on aws/heroku and using nginx x-sendfile, does that work?	joepie91 /  this is sort of where i'm heading at the moment any feedback? https//bpaste.net/show/7afb0c105c0e
+so, how can i check which process is listening to the port 3000? so that i can kill it manually?	netstat -nlpt | grep 3000
+what is all the jade stuff about?	u wot m8?
+npm is like gems?	^
+low latency?	put the path to your node bin directory first in your path
+hmm, so using the request library like in their first example (https://github.com/request/request) none of that is a stream?	no but request is a little weird
+"stops running"? does it actually break, or just exit the process?	how to install the development headers?
+joepie91: indeed...i think it's because i'm using body-parser for url-encoded?	not sure. either way you'll need something that parses json
+well i come from php in server side and using js on client side. what is a good reason to use node.js?	better language than php much richer module culture persistent processes faster networking streaming support for lots of things.
+yes, but why? :p	(that was 4 tabs and a comma by the way >.<) well if i serve the server-rendered react app right away with no css it'll show up unstyled and i'll get the fout
+or is that the standard/recommended/etc. way to do it?	that's fine
+how do you do authentication? currently i'm doing session + jwt (for api calls)	don't see an immediate reason for that
+i'm wondering if anyone knows of common reasons/mistakes this kind of thing could be a problem?	whatcha mean
+greves: "respond quickly" how? let you order an additional server? respond to support tickets? ..?	ah
+greves, what do you mean hardcoded?	you mean by looking at the current working dir (or basically path of the current file)?
+memory isn't?	if you have 30 different versions of foo that are required your app *can never work* without all 30.
+well, "code review" - is there a better name for this?	right
+if you have data and a template, "everything angular" is "make a bunch of extra ajax calls"?	y u not no evrything
+what's the advantage to be gotten from that?	(that was 4 tabs and a comma by the way >.<) well if i serve the server-rendered react app right away with no css it'll show up unstyled and i'll get the fout
+to..? seems like it's gone mostly private at this point, even if a lot of the private solutiosn are hreavily xmpp-based	different set of people
+hey guys how can i execute and get the live output of a phantomjs script in node.js?	phantomjs site has a nice getting started follow it
+then what are you talking about? :)	right not the right mermaid p https//github.com/mermaid-language/mermaid
+i'm trying to create an api endpoint in node for my rails application to post to...if i'm posting a json object, shouldn't i be able to access it via request.body?	using express?
+oh, okay. how do i find out my local ip?	open command prompt
+i do exact. why semver?	tbh forking packages is something to avoid too imo.
+iirc we talked about it in here a year or so ago when it was first announced?	i intend to use html w/ng
+output to where?	yes p
+derbie: you could however make that searching of the database a function and call it on both?	thanks )
+is there any time that i will actually need the bookshelf instance outside of adding models to it?	i actually want to execute common lisp natively
+jaawerth: so you're going to built elk except with couchdb instead of elasticsearch?	poor man's elk ;-)
+aria: should i just google "mongodb pooling and node" and read up?	what do you mean by replace the whole web server
+perseus0: ah that is ok, guessing it wasn’t gulp but some other dependency? just means they didn’t declare a `repository` in their package.json (i think, but am not sure)	also i'll have /datasets/dataset_name?expanded  which will return a  which includes all the attributes of that dataset
+joepie91: can you give a quick example? do you mean like 0.1.0 -> 0.1.1 ?	yep
+anyone have a tail -f as a webapp thing i can use?	no but ask me in 24 hours and i probably will (seriously)
+is there a framework to help with crud operations for node?	you can find out by running "nvm which current". typically it's ~/home/you/.nvm/versions/node/vx.y.z/bin/node
+is there a way to make this less ceremonial? https://github.com/lob/massage/blob/37314176739f437400590bd45b76a92f584dc90a/massage.js#l22-l50	make an array and push your functions on then map a function to create the prototype?
+dunno what cmis is, would have to look into it, but i guess you're talking about things like "this is the name of the post, and it is a string"?	more "this is a listing of repositories and what htey can do" "okay here is a list of nodes/folders/files in a given node/folder of the repository here are the features enabled for them here are the actions you can take with them with your acls" and the acls themselves come from payload info about the repository "here are the acls and how custom ones map to the built-in ones"
+are there any kinds of angular-interpreted things that ng-non-bindable wouldn't take care of?	y u not no evrything
+q: what's the best way to serialize json? e.g. res.send('var initialdata = ' + json.stringify(data))	close but you need to handle </script>
+thats interesting does nock auto-intercept? https://gist.github.com/anonymous/c441aee05ba280f5d3e2	try quoting 'foo-*'
+sonthonax: yeah. what's that got to do with making a request?	because making requests is fine. the module is running within jasmine.
+deltab: how would it?	a return is something you do for promises anyway
+anyone here?	can you gist the relevant pieces of code?
+looking for some nomenclature assistance. when designing a restful api you have structures like /users/userid/projects/projectid. users and projects are 'collections', what are userid and projectid? instances?	1 forked thread
+i'm looking for some guidance to structure a simple/small node app, i know this is quite generic, but could someone give me some pointers?	not without some detail other than equally vague advice.
+hey guys, is there any way of viewing documentation in the terminal without needing the website (like with python)? thanks	hi s
+hi,i'm using http.get and getting 'your browser does not support frames' , what do i need to add? http://pastebin.com/cnlrnpt5	nothing's triggered. that's just the html that's always returned.
+is there a reason you're using old everything?	to follow along with a tutorial
+so nvm is good?	got node running?
+does anyone know if the winston logging module has support for systemd/journald ?	i think node-systemd has a winston plugin/transport as part of the package
+ljharb: are there, erm, well known packages for accessing these arrays?	it's just built into the js engine you don't need packages
+sim642, readdouble?	and how would you output that?
+tejasmanohar: when does the error occur ?	l#80 of controller.js
+wouldn't that necessitate re-doing the npm install every time?	i will end you
+joepie91, can i get master-slave replication without automatic failover working with core tools?	not sure
+_rgn: make an array and push your functions on, then map a function to create the prototype?	unless you have a catch don't add one in order to catch the error and pass it to the parent catch. errors automatically bubble up the chain and will be caught by the next attached error handler
+steeze: as opposed to what, <ul><li><a href="#">linktext</a></li>...</ul>?	sounds like you just need a different templating language in js )
+should i www or not? :/	i never had problems with that
+asteele: internals as in the language on an expert level instead of for example up until everything front-facing?	yeah like a strong understanding of things like prototypes using async/sync scoping hoisting promises etc.  a solid understanding of the internals will give you more confidence with everything you write
+oh, they do 20 now?	they even increased to 30tb.
+joepie91, u f^**iun sure???	can think of any others?
+my personal guideline to whether my code sucks or not: is it easy to understand/test or add/remove/change stuff? if not then my code sucks :d	deriving from that; if your code sucks refactor it ;)
+ska-fan: are you running out of disk space?	it's a bit of a hack but if you have something which is required in a lot of your dependencies then add it as a dependency of your top level project then all your instances will use that one instead of installing their own.
+j0rd__: under load?	?
+do all browsers allow you to send a body with get?	even if they do don't
+"forgetting to do this thing? do this instead! (only works when you remember to do it)"	a return is something you do for promises anyway
+sim642: got tired of ironing edges, https://github.com/broofa/node-int64 work?	that example shows to me that it doesn't actually do anything
+joepie91: i'm just posting a lot to 6 different servers and need to keepalive, it is pretty simple honestly. do you recommend bhttp for that?	i haven't explicitly tested bhttp with keep-alive
+ljharb, so.. you suggest this?	you recommend building from sources? if so local vs global install? i had some funky permission behaviour (iirc) with local
+why isn't cheerio at 1.0.0 yet?	dirty (0.9.9) - a tiny & fast key value store with append-only disk log. ideal for apps with < 1 million records. -> https//npmjs.org/package/dirty
+greves: have you tested that? :p because while it is enough for voice, i'd still expect there to be some quality loss	voice of soprano or voice of donkey?
+is this bot open-source?	hey
+pawn: not that i'm likely to be able to answer your question, but what transport are you using?	that's the issue i created on nodemailer's github
+greves: hmm. basically an orm except it uses an api instead of a db as data source?	it does not use promises but promise-like api
+a basic question about unit testing a route for a node backend: suppose i want to test my users route well i can require('./users.js') and then like run the get method found within and make assertions that's great. but how do i mock the user model that the user route itself `require`s?	require-inject is one way.
+diegoviola: isn't that the only thing you'd use windows for anyway?	there's steam for linux these days so i wouldn't
+just curious why would null on a stream not end it?	not sure haven't explicitly tested it
+darkelement: stacktrace?	why are you specifying a remote websockets url? you're creating a server
+hipsterslapfight & asteele: any recommendation on node trainers?	i liked it better when it could have been lap-fight
+right?	yes but it's not being used anywhere
+pawn: if you use smtp, it should be native i think?	native to what the os or the library (nodemailer)?
+and how are you debugging the code in case of errors? after all, the actual code is not so clear as the "source" code	source maps
+is it a problem to treat  promise.catch(...)   within try { .. } catch { }  blocks rather than async .catch() ?	not sure what you mean there
+how has it gotten out of hand? *has no context*	eh?
+steeze: what's lacking in ejs?	partials usually work fine
+joepie91, what is the standard open source alternative to aws elb?	what's elb do again?
+ljharb: sorella: thoughts on opa (the language)?	i have a lot of issues with point 1 there
+value?	where does it say that?
+hmm is using npm dedupe bad tho?	sure
+is tj quitting?	germans do too understand jokes don't give your fellow countrymen such a bad rep p
+what is the consensus on having plural or singular or both for resource names in a rest api ?	thanks  i'll have to mock it up
+so there is no way for me to override a dependancies dependancy? ;o	did you run "npm dedupe"?
+and why not one of those?	we've looked at both - mean.io is good for some of the team angular is a hurdle - for others jade ) so i'm tasked with looking for alterantives
+fels: are you familiar w/ mongoose?	ttps//gist.github.com//085b373d4f8da9ea8d98#file-controller-js-l80
+are they based out of nl?	you'll want kvm probably
+jfhbrook: when you say conflating node and browser code, u are saying in my html, i reference nodejs which is known not to work?	npmjs.com/forms ?
+why such tight requirements, ska-fan?	@ so you say mvc make little sense since the flow of actions is unidirectional?
+how much extra overhead will it cost me to require('babel/register') in most of my node server-side files?	http//substack.net/task_automation_with_npm_run
+that even=stable thingie is bsd style, iirc?	lol i'm around most of the time
+so node.js is something like php but in js ?	like php if you use ejs; but node replaces not just php but the whole web server. and you can write completely not-web things with it.
+joepie91: ah. so you're thinking that it does some manual tcp stuff instead of using something like sendmail (which is an unix command, i think, right?)?	well it has an explicit sendmail transport if i'm not mistaken
+you migrate data? i thought the migrations essentially setup the schemas	hahahah
+someone here familiar with mongoose?	we've looked at both - mean.io is good for some of the team angular is a hurdle - for others jade ) so i'm tasked with looking for alterantives
+so how do i activate strict mode?	never use the repl/pipe to ever test how behavior works
+ another server for information) .. how do i make sure that not more then one instance queries the other server? so ifi have 4 i won't get the 3rd party queried 4 times	you're doing queuing?
+what's the rationale there? (for my own education)? cheaper cmparison?	because it won't be backwards-compatible if you do both.
+or browserify?	https//gist.github.com//7f531cc7fa7245e68cc8 / https//gist.github.com//9b1ca2392a72e82b44fb
+not a node project but anyone else got data request from? https://github.com/stamaimer/mruirf	yeah im crossing my fingers p
+@aria: looking into express-enrouten means that each route will be set inside each controller? so no routes file with the "map"	@ looking into the first example the `router.post('/' function (req res) {` looked strange
+rantanen: who says it has to be scoped under *usernames*?	maven actually got this right and leiningen/clojars makes a better use of that
+[04:10] <dodobrain> joepie91, right and i suppose if i were going with the idea of greves where filepath was indicative of the mountpoint, i would have foo=require('./routes/foo'); app.use('/foo', foo); bar=require('./routes/foo/bar'); app.use('/foo/bar', bar);  with routes/foo/index.js and routes/foo/bar.js  right?	better late than never! thanks )
+and?	it's not something you'd generally do but git is pretty flexible.
+don't they think they should maybe announce that before it happens?	to be followed by "organisers say they were disappointed at the lack of turnout and have cancelled a follow-up."
+fud-er?	okay so mostly just high-bandwidth - what kind of audio? teamspeak-level internet-radio-level ...?
+why use expressjs?	use expressjs it's like to use silex when you start to write php app
+what was the warning?	no repo field
+joepie91: native to what the os or the library (nodemailer)?	the lib
+do you keep a separate migrations folder in your models?	hold on explaining something to somebody for a bit will get back to you in 5 mins with the logic
+greves, how many endpoints you have?	~20
+jaawerth: any feedback on http://cryto.net/~joepie91/code-review.html?	nice
+greves: https://avatars1.githubusercontent.com/u/1663259?v=3&s=460 ;)	but yeah you'll find that despite the complete lack of tests my stuff is generally quite reliable
+razerglass: what does global.js contain/do?	that is client-side not server-side
+rostercook: what kind of fields are these?	i have a lot of issues with point 1 there
+caching?	- how should i deal with this?
+why does my node program fail on use of the 'new' keyword? same code works in the browser	paste your code example on a paste site
+greves: what's elb do again?	i believe it does what nginx does
+why ljharb ?	a number of reasons. you shouldn't ever assume someone's gender so unless they've explicitly told you what it is you should use genderless words.
+ah yeah.. i guess pushing {} sucks do detect?	not sure haven't explicitly tested it
+can you see where my function is broken and isnt console logging the 2nd message?	it's not broken it's just not doing what you think it would be doing )
+i'm sorry if my question was too vague, how can i improve my question?	what would you like to do?
+without getting a memory error? (my memory limit is at least 512 mb)	use a stream
+what is morgan?	u wot m8?
+chiper: is that to me?	just use source maps (or have your language implement a decent compiler for itself by generating debugging s in the js — which is the approach i'm taking with mermaid)
+have you ever actually scaled out mongodb?	i don't understand how we're even still having this argument
+hello, anyone have experience with running node on digital ocean?	digital ocean is just a vps host
+(and why do they need to be on the session data?)	i have a lot of issues with point 1 there
+what counts for/against having web service run on the same node as the database?	put the path to your node bin directory first in your path
+things using modern nan should be fine. however, things using old nan or manually binding v8? gonna break.	use either style which is just an if/else
+dodobrain: depends. browser or external client?	sessions are easier for a browser but if you want a rest client you should definitely go for api keys
+ian_mac: hm. can you give an example? the shorthand methods are a very thin abstraction, so if not using them breaks functionality, that's a bug :)	bhttp.request("http//blah.com/" {method "post" formfields {foo "bar} encodejson true})
+liranp: why not?	source maps
+so, running steam through wine?	yea why not
+okay... this is clientside code?	https//gist.github.com//7f531cc7fa7245e68cc8 / https//gist.github.com//9b1ca2392a72e82b44fb
+... sunos?!	how to install the development headers?
+tyrfingmjolnir: linux?	well anyway you need the development headers probably
+greves, and what if they end up keeping the stream alive for a much larger duration than your expected average of 30 mins?	well that's why the system needs to be scalable now isn't it? )
+ljharb, you around? i need to use nvm in a bash script, but it's set -e which nvm doesn't seem to like, any tips?	ah i thought you might have some insight. basically i was considering doing this https//github.com/jaawerth/js-csp/commit/1652c4915afc4343981fc679cf7f640d099cdeac
+are there any nodejs platform-as-service that run on aws other than heroku?	x only with the others heroku and aws if it helps
+o wait, youre talking about a particular implementation for a message passing system arent you?	i agree but that still leaves it limited in its capabilities when it comes to encoding "how to consume this" info with your data payload
+greenjello_: i’m new to all this, why do you say that?	pretty much no one uses http directly
+ok yeah, and how do i call the jquery in my global.js?	what does global.js contain/do?
+oh well i don't know how it will play with a git repo. what version are you actually getting from the repo?	thanks a lot for the help.
+wow, you're manually managing prod server configs?	ska-fan see 's warning
+joepie91, what's the logic behind that decision?	hold on explaining something to somebody for a bit will get back to you in 5 mins with the logic
+greves: far from convinced about my rationale? :p	alright i'll give you a practical example
+bajix, django? :d	functionality-wise bookshelf
+is it possible to give a name to a function that i generated with "new function"?	no
+err.. isn;t there something better than    if('foo' in req.query) { ... }    to check for the existence of ?foo&bar=baz query parameter with no value	that's fine
+joepie91: so if it is a stream, that means that on the server every time res() is called it sends it out?	not sure what you're describing but probably not
+btw, apt-get autoremove .. how do i use it?	sorry it's not "--pugre". it's "--purge"
+greves: okay, so mostly just high-bandwidth - what kind of audio? teamspeak-level, internet-radio-level, ...?	they moved node.js into a foundation. that's considered bad?
+i came from the relational db side.. another thing.. is that .. mongo db doesn't have like.. "transactions" right?, you can't rollback	nope
+jaawerth: at which point you are using a database because...? :p	well i don't mind losing data in redis p
+what if they're all the same versions?	then npm dedupe will dedupe them.
+is there any way to wildcard with ls?	try quoting 'foo-*'
+still di? that's a no from me then	well that narrows it down from 400 options to 399 good work ;)
+so like instead of django i can have node.js , right?	if you want to write a web application you need to run it somewhere. the easiest way is to use something like heroku or a vps (like digital ocean).
+greenjello_, ?	no but ask me in 24 hours and i probably will (seriously)
+do any of you guys do tdd or partially at least?	hold on explaining something to somebody for a bit will get back to you in 5 mins with the logic
+who  had tried back end approach in sharing files to specific email address to google drive for nodejs ?	yes - try searching on npm.org and the first hit will probably be the excel parser
+and getting files of another git repo into the server? sounds like you want to use npm?	it's not something you'd generally do but git is pretty flexible.
+letting it decide about where code should be run? what a nightmare	most of the site makes me go "ehhh. what?"
+jaawerth, what about context?	i'm undecided on the css coupling
+i.e....  function(uri, callback) and then later return callback(body); ?	yep.
+ok. so is it preferable to do the mounting in app.js and have the actual route itself just use router.get('/', func... ?	yes that's the idea
+what would your ideal (non-smelly) implementation look like? the req/res are the only persistent things through the request pipeline, so there aren't really any other options.	i see.  i do.
+are there any great alternatives to travis for open source node projects?	why would you need one?
+1/3 of the time maybe?	x why not use mocha + chai for this?
+ok well for the closest i can get to that kind of security, docker + instant or relatively fast scalability, and a separately hosted & provider-hardened database service (postgres), what do you recommend?	https//ramnode.com/ for example
+oh yeah i meant to ask - unrelated to the current topic but related to node - what is actually the difference between dependencies and dev-dependencies?	apparently so
+anyone know if nodemailer uses a unix library to send email?	around
+fruitsnveggies: what do you need it for?	or else i'll eventually write my own utility that i don't want to do now.
+tyrfingmjolnir: i suppose everything which is not an interface which browsers then use? i want to know which essential skills a node developer has to have, and optionally what skills would be beneficial on top of that.	http//nodeschool.io provides a good overview
+what's your argument?	1) possible info disclosure / session/token compromise for users copypasting urls to third parties 2) it completely screws up spiders archiving tools etc
+has anyone here used jest-cli?	perhaps paste some code showing what you've tried and what you are trying to do.  if somebody has suggestions they will offer them
+does anyone use the async/await functions?	why not?
+but what parts of your process are in gulp, what parts in webpack?	hold let me gist a gulpfile
+why, exactly, are you still defending mongodb in this matter?	is saying it offers the absence of schemas which you are using so what other value does mongo offer to you?
+konobi: link to github? :)	what is the standard open source alternative to aws elb?
+wow this is so interesting. how is this path resolving? i don't get it. it works, though.	don't worry it'll be considered terrible in 6 months -)
+instead of /api ?	np!
+has anyone here tried to hook in a middleware into gulp server (wrapper for connect) ? the docs say i can add middleware: function(req,res) but when i do this, req and res are both null	2 probably not but you would want to pick the right file system / have the file system able to replicate
+is there a way to simplify this? http://kopy.io/5tpzh	don't really have any idea what you're doing so i wouldn't know
+joepie91, similarly yes - and why don't you think migrations are easier? i've written like 50 migrations....	because you have no schema to validate/enforce against and you need to make modifications to the entirety of your db
+jaawerth what kinds of things in react do you think need improvement?	mainly css and the way changes propagate to children/leaf nodes
+are there any test runners that work with es6 without separate transpiling?	i think all of them have plugins but i'm sure mocha does
+ejs?	node also replaces e.g. apache/nginx
+greves: that clarify it any?	any reason you use gulp for scss instead of webpack?
+ljharb: looks like a relay bot?	yo you still around? i figured out some things regarding my issue and i was wondering if you knew anything about that ^
+when using child_process.spawn and listening to the childs stdout, is there any way to gracefully hand that stdout to /dev/null and exit?  i have found some apps, e.g., couchdb, don't deal well when i exit and leave them without a stdout listener.	i'd like to dynamically change the stdio after sing
+what effort is going on to make promises easier to use?	anyway re that router i'm not convinced off the bat that it solves any real-world problems i have
+what is the best template to use for creating simple node.js express app?	nunjucks is very html-like
+there's a company that is trying to hire me but they offered me a very crappy salary, would you take the job on these conditions?	doesn't sound like a good idea )
+are there any tutorials for creating/migrating database schemas in knex?	lodash? is that a loop over the array do you even know?
+angular_mike_: npm search? no	getter/setters/defaults extendable schemas event emitters aggregate pipelines streaming capabilities validation hooks query object validation etc
+greves: to get into what? your server?	as in hosting provider control panel then?
+dmamills: npm ls foo-* actually does things for you other than throw an error and return empty?	joepie91 do you mean 0.0.1 or 0.1.0?
+joepie91: yo, you still around? i figured out some things regarding my issue, and i was wondering if you knew anything about that ^	around
+django ?	use expressjs it's like to use silex when you start to write php app
+carolin: so, you're writing something in node, and wants this number crunching thingie? i'd recommend writing it in c++.	usually the numbers indicate bits not bytes.
+is it a standard?	basically if something is happening around xmpp the person responsible can *probably* be found in the prosody muc
+cjohnson: have you tried exhuberant ctags?	oh that may well .
+what do you like ljharb?	sounds like you just need a different templating language in js )
+sorella: and it's pretty simple for the publisher - "any breaks? major. no, but any additions? minor. else, patch"	they don't decide anything related to the version just what they did for that particular commit
+can i just download the tarball for the most recent node and just export path=/path/to/new/npm:$path?	you can do that you can also tell your package manager to set a proper prefix for npm and go complain at whomever probably debian
+is my parent app allowed to override node modules depedant node modules? :p	you can install any version you want in your app and it won't interfere with the other dependency even if you run npm dedupe
+sonthonax: so what's the problem?	superagent wont work when tested.
+has anyone set up node.js on a raspberry pi? what do you have to say about its performance?	ehm not on a raspberry pi but i did it on an android phone
+molework: ?	bandwidth is cheap basically
+greves: please share link for it?	hmm i think so
+if i setup a index.html and successfully got my button clicks registering in my global.js middleman file, how do i use cheerio on my html page?  "uncaught referenceerror: $ is not defined"	i think you may be confused
+diegoviola: were they the ones who approached you in the first place?	they asked me to go to their office
+jaawerth: okay? not sure how that's a response to what i said :)	what i mean is it's possible to do it securely
+how would i rebuild all global packages (after an upgrade from 0.10 to 0.12)? is that possible without much shell programming? alternatively - how do i uninstall all global packages?	in nvm it's very easy to migrate them. without it.. well i've never tried heh
+where find that settings?	heroku docs are a good place to start
+are there example config files somewhere?	i just opened the file and saw what to do by the format of it - i mean maybe there are more advanced options for globbing or whatever but at the very least pointing it at specific log files for various services becomes readily apparent once you see the file
+ljharb: is it on the public repo already?	who created mocha? gulp? express? grunt?
+guys, can you recommend any video tutorial for node/express that doesn't go into explaing mvc and stuff like that, since i just want to kickstart my learning and i already have good understanding on general topics like that from php (and frameworks like laravel/symphony ) ?	joepie91 that  yesterday that was asking about keep-alive
+huh? is async/await already implemented somewhere?	it's an experiment in interactive programming that runs on top of node and you interact with that from a nw.js-based client.
+is it possible to use httpkeepalive with the request library?	i wrote https//www.npmjs.com/package/bhttp and it passes on any options it doesn't recognize to http/https directly
+does this make more sense? https://bpaste.net/show/e694f7976e24	i actually want to execute common lisp natively
+so i'm going to make my api in routes/api/ or something?	for example up to you
+hi, being a full stack dev. after you've planned what to build, the features etc.. where do you start? front-end side? or back-end side?	netstat -nlpt | grep 3000
+dodobrain, what do you do after that? :p	hmm...  how about unexpected server stop because of some errors ?   how to handle that ?
+well what's your hourly rate?	hourly rate is somewhere between 25-50 euro/hour depending on how exhausting i expect the work to be (as more exhausting translates to less focus afterwards ie. getting less done)
+tristanp: tried increasing the interval?	_ yeah i guess thats what i figured out p works fine if i install locally
+triton?	never heard of it
+anyway, thanks for that greves, joepie91 . now i am a bit intrigued about multi level paths.  if i mount routes/foo.js (with router.get('/',...) as /foo   what to do if i want another mount /foo/bar ?	you can just mount it in the same one as '/' under '/bar' another nested router which itself will mount to '/'
+in linux how do i set what #!/usbin/env node points to?	put the path to your node bin directory first in your path
+yes?	per what mouth???
+knex error? io.js error? https://bpaste.net/show/e2becf43585e	lodash? is that a loop over the array do you even know?
+so it runs on the client or the server?	it's a programming platform that runs js. much like the standard python distribution and the jvm
+joepie91: okay, is that functionality in bhttp?	no because it's a terrible idea )
+how to do? :p	you can require('babel/register') which makes all subsequent requires go through babel
+anyone used swig?	pretty sure cheerios aren't sold here
+models/migrations/ ?	hold on explaining something to somebody for a bit will get back to you in 5 mins with the logic
+can someone tell me how i would define response?          response.writehead(200, {"content-type": "text/html"});	it gets passed into the request handler function so that it's available to that context
+just... change them?	to what?
+anyone here used: passport-local-express4 ?	u wot m8?
+i'm not sure how you would do a download in a token based system without a signed url?	i have no idea what kind of download you're even thinking of tbh
+greenjello_: you use console.log ?	npmjs.org/package/mysql is the basic mysql binding
+ljharb, are you there? the nodejs i installed with nvm ..	haha love that link
+wraithan: how to?	i have to setup my schema etc in node query o.o
+that flatterns all the node_modules?	sure
+so why are you using mongodb?	<> you're effectively dumping json received via the api directly into your db
+what are the respective versions?	thanks a lot for the help.
+oh, its all floats all the time?	yes. so all arithmetic computations have the overhead of dealing with floating points
+ljharb: what's "collections"?	... with aliases? *hides*
+example of callbacks?	foo(function(n){ console.log( n+1); }); function foo(cb){ cb(1); }
+yeah. i've used it. it's 6/10 awesome 3/10 strange and 1/10 what the hell language did you make this in again?!	in the console i can't access out of the current function scope's vbles
+is this right?	basically
+has anything as good as rails' activerecord caught on in node? or are most people going straight sql/nosql?	knex and bookshelf are popular. though the goodness of activerecord is disputable ;-)
+bajix: work, such as?	in what sense?
+symbol: using express?	indeed...i think it's because i'm using body-parser for url-encoded?
+and the *language* has mvc built in? o.o	seems so.
+adv_: trolling day ?	the v8 javascript engine in node is really kinda scarily fast.
+how is that not queuing?	thank i will look into it still confused but maybe all i need to do is to run the specific job manager only on the master
+or if you are trying to consume values but you have a timeout that decides they are no longer needed? you want cancellation, but the .catch method makes it look like the values are errors, when they really are just never coming in	my point is so are promises if you want them to be
+is that a third-party client, or something you develop?	ah no this is not continual
+so why mongodb?	have you seen this? https//github.com/tulios/mappersmith
+who remembers neopets?	lol i still have an account
+why did/is node splitting into io.js?	if you want the es6 features sure p
+$79 to use vagrant with vmware?? yeesh.	iirc that's for vmware itself
+joepie91, https://www.npmjs.com/package/express-session <-this one?	yeah that one
+is it good idea to have npm depend upon bower, and then invoke bower with node_modules/.bin/bower?	its better to have run it after the npm install is finished as a post install script
+and make sure that anything you chain to will ignore that error too?	really? what would you do instead  ?
+d4rklit3: why not put it in directly?	scroll down )
+ljharb: did you see this btw? https://github.com/boennemann/semantic-release	well we're talking about changes to npm so "npm install" going for npmjs.com receiving redirect response and changing the reference to the actual package wouldn't be *that* big of a reach.
+hipsterslapfight , where can i get working snippet or instruction?	heroku docs are a good place to start
+but what does pm2 have to do with 3rd party services?	what's a static file server?
+yeah yeah but what would you say on a interview "i'm not a node dev"?	were they the ones who approached you in the first place?
+should i run it in a bash -c?	doens't work for me
+dodobrain: how do you mean?	it's just a consistent rule )
+anyone had good experience running nodejs on azure?	x only with the others heroku and aws if it helps
+does it make sense to use both php and node.js ?	you kinda have to forget about php and just learn node; comparing it to php is hard because it doesn't line up well
+@aria: should wait for your next blog post on that?	hmmm... is it though...
+anyone can recommend me a json form builder? there's quite a number of them out there, but really, which one's good?	npmjs.com/forms ?
+what are you trying to do?	lol you crazy
+no but seriously if it wasn't called 'ajax' what would you have us say?	oh?
+anyone here used heroku as a low-cost host for soas?	soa?
+sonthonax: "in jasmine" ?	jasmine test framework.
+what does it do instead?	use either style which is just an if/else
+can anyone recommend a module for infinite scrolling? i might just use a pagination module and then use ajax to do some magic.	just use source maps (or have your language implement a decent compiler for itself by generating debugging s in the js — which is the approach i'm taking with mermaid)
+9hipsterslapfight?	what the how did you come up with that nick
+use a static file server aracodex12 ?	what's a static file server?
+the actual audio files you mean?	so what worries me more is your bandwidth cost
+does anyone know a linux media player that displays miliseconds?	one sec
+if i have an express rest api backend and a react/flux frontend, how should i actually serve the root path with the react app and assets and stuff?  should i serve it from same express app as the backend api but at the '/' path or should i create an entirely separate express app just for this?	it doesn't really matter express apps are basically just "routers" so you can mount them together like a jigsaw puzzle but if you mean using something like iis or nginx or iis to serve up the assets in front of the app that's probably preferable so you don't waste time serving up largerish files
+so what you are saying is.... fork away?	hm good point good point
+credentials?	i will end you
+ljharb: wasn’t there a discussion some time ago about making the dependencies flat but with semver added to the directory name? like node_modules/<dependency><delimiter>x.y.z?	npm 3 will `npm dedupe` on install tho
+what is the most popular framework ?	^
+ljharb: you recommend building from sources? if so, local vs global install? i had some funky permission behaviour (iirc) with local	can one try out io.js under any of those ve solutions?
+why not use github then?	github is for dev. not distribution.
+aria: how do you mean the different urls thing?	you will want to use a framework with node you could get away with using node at its most basic with out a framework but it would make life 100x harder for you.
+php is processing templates to add data and whatnot before delivering them for angular to make use of, right?	well not need but it'd be blocking
+if it requires manual commit messages, then how is that any better then me doing it? because what if someone doesn't follow it	it breaks d
+so i just heard in a sprint that apparently there was a problem with users entering text with quotes? curly braces? something or other, and angular	whatcha mean
+ist it bad to get your todo list of code changes by grepping the codebase for a unique 'todo' flagged comment? :p	nope that's exactly what i do
+and is this a current npm?	yeah but what about the try? bluebird says it should the first thing! that is how it easily handles rejections. i feel like if i don't put in a try first i might run into issues with handling rejecting/errors.
+and why would that be any different?	use either style which is just an if/else
+greves: can you elaborate on 'security' a bit more? or rather, what you expect from it	to get into what? your server?
+fels: what are you looking for in the kit?	we've looked at both - mean.io is good for some of the team angular is a hurdle - for others jade ) so i'm tasked with looking for alterantives
+has anyone looked into http2 and web sockets?	http//addyosmani.com/resources/essentialjsdesignpatterns/book/
+http://www.wolframalpha.com/input/?i=%283125+%2f+48%29+mbps+in+terabytes+per+month	heh i have no doubt aws could handle us just fine ;)
+devster31, ajaxy single page app or all server-side stuff?	do you know what front-end framework if any you want to work with?
+how do i get node installed on ubuntu? if i just install it according to the instructions (https://nodesource.com/blog/nodejs-v012-iojs-and-the-nodesource-linux-repositories) i can't do npm install -g as user, it doesn't set up the directories correctly	that is not the recommended way
+greves: oh?	extensions ['.js' '.jsx'] needs to be ['' '.js' '.jsx'] to recognize node_modules modules >.<
+talking of using node as a client, how do i use node as a client when tesitng it?	perhaps paste some code showing what you've tried and what you are trying to do.  if somebody has suggestions they will offer them
+sorella: it runs fine on wine: https://appdb.winehq.org/objectmanager.php?sclass=version&iid=31665	but my gaymes '(
+iamthechad: do you at least see the stdio msgs when you run make test?	they will probably hint as to what the problem is
+hipsterslapfight, what do you do?	what exactly do you mean by passing the db through to the functions that need them?
+oh wait, not a method?	array#values returns an iterator
+adgtl, forces? you can use express-generator and then practically throw away everything it created and still have an express app	ah
+joepie91, i still don't quite understand one thing that i was asking yesterday and sort of got some clarification on but not totally - am i going to run different apps for each part of my page? like one for the backend api, one for the static/public/landing pages, and one for the 'app' ?	don't see an immediate reason for that
+eh? just because that was a use case originally doesn't mean mongodb should be pigeonholed	i don't understand how we're even still having this argument
+any idea how to fix multi-line strings are not allowed lint error?	don't use multiline strings or use babel and es6 template strings
+joepie91: how to install the development headers?	not a clue but not with npm )
+well beyond tags what else could there be? syntax highlighting	have you tried exhuberant ctags?
+how do you decide what urls should be provided?	how do you mean?
+so there's a company that wants to hire me as a senior developer, but the salary looks more like a entry position salary... it's like a bad joke, would you still take the job anyway?	doesn't sound like a good idea )
+joepie91: they moved node.js into a foundation. that's considered bad?	are you unaware of the events around joyent for the past few months / years?
+oh really?	what's "scripts" for?
+i'll need to like pack the .scss files into a .css, but also stringify them to serve on initial load?	why?
+another? :p	true enough
+tristanp: gulp is serving? ceasing gulp causes your computer to behave as expected?	yes
+well if i'm looking for existing libraries what do you recommend? knex&bookshelf for the actual orm stuff	currently knex + bookshelf yes
+anoniem4l: a click event?	i tried onclick="my_function()" but nothing happens
+i am trying to design a callback and i am struck with.. how do i not send an error in the callback if it's true? i mean, most callbacks have the error as the first parameter	i do a patch release
+bradleymeck: link for composable functions proposal?	https//github.com/jhusain/compositional-functions
+goodness. and what is a reflux?	how do you mean the different urls thing?
+how so?	try changing a column/property name.
+well what operating system do you use? on linux, you usually install packages as root	ok interesting
+erste: how did you install it? sudo apt-get?	does just "node" open up repl?
+ovef: and instead of using `new function`, why not a hardcoded function and use a closure?	like `return function () { return render(str); }`
+samms: you're doing queuing?	(this came to mind https//github.com/automattic/kue)
+greves: oh wait, is that their load balancer?	oh here http//www.haproxy.org/they-use-it.html
+i have a question about callbacks, if i have a function that pulls some data from a website and assigns some variables, if i give that function another function as an argument will that be executed after the variables are assigned?	right now i'm having to use settimeout to intentionally delay the running of the 2nd function so that the first function has time to pull the data from the web address and set the vbles correctly
+is the right way to bubble an error to the next catch handler to throw it again?	unless you have a catch don't add one in order to catch the error and pass it to the parent catch. errors automatically bubble up the chain and will be caught by the next attached error handler
+right after http://lmgtfy.com?q= ;)	y u not no evrything
+windows/linux?	(number) 6
+joepie91: what's up?	don't. worry. about it.
+ah btw, one curiosity.. with mac pc's .. or .. laptops, can you boot a pendrive with linux?	netstat -nlpt | grep 3000
+hi, anyone uses stormpath for authentication? is it safe?	netstat -nlpt | grep 3000
+who said promise.reject needs to contain an error?	i would agree if it did not map 1-1 with catch when promise executor is being invoked / async/await used them for that
+is that markdown or just html?	html
+i refactor my app - from angular + express into 2 separate apps: nginx and node.js. i use passport for user/password auth. i noticed that after login. my future requests don't have any cookie. where do i start troubleshooting this?	np!
+greves: i'm assuming that db usage is read-heavy, not write-heavy?	how much do you want to come in on this project? p
+anyone have experience with any of of the cmss written for node?	what's lacking in ejs?
+aria: you around? was going to ask if ya'll run your node apps behind nginx or some other static file server	i am .
+i had an interview today at some shop and i've seen some of their developers were using windows, does node runs fine on windows? or a unix-based system is generally better?	it *not* shutting down unasked because of updates is still less annoying than it *shutting down* unasked because of updates
+[freelay]: ?	looks like a relay bot?
+bajix: in what sense?	... postgres odm?
+is that actually the right way to do it?	i actually want to execute common lisp natively
+konobi: are you unaware of the events around joyent for the past few months / years?	'studio quality voice recordings'
+any ideas?	netstat -nlpt | grep 3000
+elnerdo: is that the full output? it's missing a stacktrace	is saying it offers the absence of schemas which you are using so what other value does mongo offer to you?
+bloodyscythe: could you try and explain the exercise a bit? you could also open a ticket at https://github.com/nodeschool/discussions	or rather search it and see others who have had questions about that exercise.
+is that... er.. .painless enough?	it's not too hard.
+drama: how did you make that transition?	there's no equivilent mysql_fetch_row for example
+joepie91, what should i do to connect to that wss you see in my code?	creating a client insde of a server )
+how do work around this?	np!
+are you dutch?	https//avatars1.githubusercontent.com/u/1663259?v=3&s=460 ;)
+but the 'in' and 'typeof' and 'hasownproperty' still don;t differentiate between ?foo and ?foo=42	that's fine
+bajix: eh?	@ you can basically just directly do a 1-1 crud endpoint set to collection setup making everything very formulaic and use query parameters mirroring mongodb queries and have a fully fledged api almost instantly
+if a user navigates around on a site that is running node.js is there anyway to have a variable set for that specific user serverside, that is remembered when he navigates around?	yes with sessions but it's not foolproof. are you using express?
+faster networking?	how much do you like learning?
+aria: but where does the try come in?	yeah but what about the try? bluebird says it should the first thing! that is how it easily handles rejections. i feel like if i don't put in a try first i might run into issues with handling rejecting/errors.
+jaawerth: and if you consume more values than are ever produced? timeout race?	hmmm i'm not sure we're talking about/picturing the same scenarios
+p15x, would you say your testing framework setup will work with a team of developers? will be there be any hurdles? what would you have to do if you want make sure that a team has to use your testing infrastructure?	x also thanks for all the replies i am collecting personal insights of people testing their applications
+jaawerth: is angular 2 actually easier to use or?	i'll definitely be taking a look once its released but i'm not convinced i'll want to switch
+hey guys, i have an object 'app = express()' for my server. i have attached some objects to this app object so they can be accessed in my routes. i want to create another router, but i want all of these objects attached to it too. is there a way to use another router to as a prototype and create this other router from it?	forked thread
+care to explain?	well the main selling point of soap is that it has an industry standard way of specifying the data structure. you do a soap call and you have a unified way to get metadata on how to parse the payload you're getting
+joepie91, is the example shown in the express-session npmjs.org page the one to follow?	look at the example under "cookie options" and ideally use the redis session store
+joepie91, would anyone pay for having their code called shit?	looks good other than that but you may want to pretty it up a bit to shall we say strut your stuff a little on the client side
+emilyrose: ?	what's up?
+joepie91: you ever looked at this? it's... overkill for a number of things but the implementation is pretty cool, and it has a lot of neat use-cases for handling api stuff https://github.com/rcs/route-parser	i see.  i didn't really play with it much.  formfields wasn't obvious to me because i don't think in terms of formfields.
+hello everyone, what would you say are the best skills to learn if you would do back-end developing in node?	what would you like to do?
+so.. : kill 12284 ?	you'll have to decide for yourself
+hipsterslapfight: most of the site makes me go "ehhh. what?"	it uses mongo by default?
+sorella: hey, can i get your opinion about this? i decided to go ahead and fix that issue i was complaining about the other day about csp.closed in js-csp myself. was thinking it might make sense to use a symbol when available, otherwise an empty object. does this make sense to you? https://github.com/jaawerth/js-csp/commit/1652c4915afc4343981fc679cf7f640d099cdeac	just an empty object works but it strikes me that this particular use-case makes sense with a
+ovef: why do you think you want to make a function with "new function"?	except that strings of functions aren't in the spec. so it's not reliable.
+i'm more comfortable with php than with js, should i stay with php then ?	how much do you like learning?
+ljharb: was about to ask you "do you recommend a brew install?" and then read up on issues :p	ok just one more question (hopefully) - nvm is shell-based so when i start up many many shells automatically at once with different projects and node version requirements all in their own ttys there shouldn't be some sort of race-condition-like issues with nvm?
+the breakfast cereal joepie91 ?	pretty sure cheerios aren't sold here
+why is response undefined?	it gets passed into the request handler function so that it's available to that context
+bajix: functionality such as?	doesn't npm install use it
+why not just json_encode the data into the template?	i am trying to constructing a  object after several asynchronous calls. i am currently chaining promises. like each asynchronous call is going to give a piece of this  object. is there a better way to to do this than storing each piece as a variable? or passing an additional argument to the next async function in the chain?
+wait breakingthings rest is not just urls that return json? i thought rest stood for return express json text ??	backbone/marionette has been working great for me ever... it's mvc
+dodobrain: are you familiar with the concept of sessions in general?	the session id is generally
+does anyone know why i'm suddenly getting 304 codes instead of 200 with my express project?	you could be using some caching middleware that's setting cache-control... typically express by default uses etag caching which does an fs.stat on the file to calculate the etag
+does `npm ls` report any errors?	http//pastebin.com/18nqf4k2
+__dirname?	that is assuming the tests will actually run from the root (i have a habit of cd-ing to the test directory and running individual tests sometimes)
+does that work with bhttp?	not sure haven't explicitly tested it
+has anyone used bcrypt before?	just ask the question you have if somebody knows they will answer
+symbol: what do you mean by "db"?	just use source maps (or have your language implement a decent compiler for itself by generating debugging s in the js — which is the approach i'm taking with mermaid)
+so i wont need any intermediary build step?	deriving from that; if your code sucks refactor it ;)
+btw, this also means taking responsibility when there is hacking?	in relation to what?
+ljharb: which syntax?	http//php.net/manual/en/control-structures.alternative-syntax.php
+in each step?	yes and no you would still want to setup a timeout when you request it and race
+rla, hmm.. that's if your operations are in one single documents right?	i don't understand at all what you mean there are way too few buzzwords in your question
+for stuff that's not getting deployed on npm, does it make a difference?	apparently so
+btw, how is postgresql replication?	there are a few different replication systems with different approaches as i understand it
+greves: i think node-debug automatically breaks upon run?	also make sure you're on latest
+sorella: who created mocha? gulp? express? grunt?	people
+tyrfingmjolnir: u wot m8?	?
+dodobrain: right, so, access control basically?	well what do you want to control the access by )
+sorella: no one was aware of mermaid-language/mermaid in 2014? :)	that's why naming is hard )
+any idea why?	number of reasons to why that might occur. usually you’re behind a firewall (internal in a router) and it blocks all connections in.
+dodobrain: that clarify it any?	i'd go for ?expanded=true or ?expanded=1
+what do you mean, your signature?	tbh imho... it should be a pm... but maybe that's just me
+what's weird about it?	oh goodness . this seems really poorly maintained.
+so how does that not defeat the point?	is saying it offers the absence of schemas which you are using so what other value does mongo offer to you?
+breakingthings: okay. but the first thing i want to do is a join. so a group of promises that will only continue when all is resolved. how would i go about doing that?	where does it say that?
+sorella: awesome, do you remember the name?	just search for "diff" in the npmjs.org website there are many packages that do that and they work differently. pick the one that solves you problem the best/etc
+how do i get npm -g to install to a user-accessible directory? currently its trying to install to /usr/lib/node_modules which this user doesn't have access to	deployment isn't trivial but i'd start with making it git-based and go from there (but in the real world you'd want to for example package your dependencies into a production build rather than install from npm)
+would it make any sense to use the same distro/setup as the server i will be deploying on? i.e., heroku?	in other words.. dokku is for single webserver deployments.. not good for when you need more than 1 box
+joepie91: per what mouth???	5tb/month
+ok so if app.js/index.js is serving public/, everything else is going to be hidden from the interwebs right? and that means my stuff like scss or jsx files should not be in public/ ?	only the stuff in your static content directories (public/ if you used express-generator) and the routes you specified will be visible
+dodobrain, well, that's why the system needs to be scalable now, isn't it? :)	okay so this is potentially *very* network-heavy which makes me wonder how big ramnode's total network capacity is as they are relatively small (compared to eg. aws)
+why not add an interpreter wedge and your done?	and orthogonally extensible? or just reasonably sensible to a human reading it?
+maybe it comes from the same place as the x in ajax/xhr?	i want to rely on npm-cache which just md5s package.json.
+if they get hacked after review, you would pay their losses?	node isn't really particularly... special in terms of security
+but how did i decide to create the session in the first place?	correct - and the server retrieves the session data for that id and makes it available on req.session
+v8 upgrade on a stable branch?	not sure haven't explicitly tested it
+anyone here with experience testing a big node js app? would like to know your approach? how did you guys organize the tests? how much coverage was satisfactory for good results?	hey s is there any way of viewing documentation in the terminal without needing the website (like with python)? thanks
+mongodb question, if im planning on running mongo locally on my web server (hosted in the cloud, same server) are there any security precautions i need to take? does mongo point to any external ports that would open it up to a security breach?	how did you make that transition?
+what is passport-local-express4-pg/bin/www about? https://github.com/mjhea0/passport-local-express4/blob/master/bin/www	u wot m8?
+sorella: to what?	whatever makes sense for you.
+che-anarc: to handle an exception?	it has no relation to try/catch. `dox().catch(function(e){ return f(x) })` is equivalent to `dox(function(error data) { if (error) done(f(error)); else done(null data })`)
+because it's an object mode stream that you expect what you put in to come out the other side?	use either style which is just an if/else
+ljharb: but you think it'd be better to either solely support symbol-friendly environments or use an object, not attempt to be forwards-compatible?	i'd use the string-object and strict equality. you could change out the actual value later.
+"does nothing" or gives an error?	nothing
+also what are persistent processes?	how much do you like learning?
+hey guys, what would be a good package for touch?	npmjs.com/forms ?
+chilion: did you `npm install charenc --save`?	no i have a packagejson with sha1 in it
+is  bacon the reactive library?	pretty sure cheerios aren't sold here
+how do i remove all the items starting by "123." ?	_.remove(array function(text) { text.slice(03) === '123' }
+in the good way or the bad way?	well that narrows it down from 400 options to 399 good work ;)
+is that a different host?	does it mean that i have to use another nginx to be a reverse proxy? (so i can serve angular + nginx on 3000 and the api on 3001) ?
+how in the world is there an invisible breakpoint in my node debug session?	debugger statement?
+aria: yeah, but what about the try? bluebird says it should the first thing! that is how it easily handles rejections. i feel like if i don't put in a try first, i might run into issues with handling rejecting/errors.	where does it say that?
+joepie91 is saying it offers the absence of schemas, which you are using, so what other value does mongo offer to you?	have you seen this? https//github.com/tulios/mappersmith
+greves: like what?	if they're giving something away for free it's because they expect to make more money from it than they're giving away
+but for http calls? sure	for retrieving data from an http call sure for sending a post and forgetting... ehhhh
+hello everyone.  im just confuse what first to consider in developing nodejs api projects. ?	i think the first thing you decide is on the api itself
+what does backend mean for you?	i suppose everything which is not an interface which browsers then use? i want to know which essential skills a node developer has to have and optionally what skills would be beneficial on top of that.
+rla: better? :)	in relation to what?
+should node/io be installed as root or as the user who will be running it?	1 forked thread
+are cheerios world wide?	pretty sure cheerios aren't sold here
+when developing a module, how do you deal with varying nodejs binary names?	by telling your users to symlink node to nodejs )
+ska-fan: do you have that many binary modules globally installed??	no it's just a few but i don't want to hardcode them.
+erste: does just "node" open up repl?	thanks i'll try it
+also i'll have /datasets/:dataset_name?expanded  which will return a json which includes all the attributes of that dataset	i'd go for ?expanded=true or ?expanded=1
+so typed arrays is really just for storing the data, but as soon as you pull it out it becomes a float8?	like why not use c++ for this?
+ljharb: what about alpaca forms?	no it's just a few but i don't want to hardcode them.
+ljharb: can one try out io.js under any of those ve solutions?	yes. nvm installs iojs.
+greves: would i need to write any kind of bindings in node for that ?	probably need to write bindings for a child process and catch the stdout i guess
+joepie91, what's your price per ~1000 loc?	probably not what you meant but s/a hourly/an hourly ;-)
+what is "foo" set to if there's no value in the querystring?	ok cool. thanks joepie91 and  .. i'll just check existence of foo with 'in' )
+anybody good with webpack? can't get it working and i've got a fairly simple project to test, its totally broken: https://github.com/anyong/testing-webpack	i will end you
+greenjello isn't there also something like `node --harmony` or somehting ?	node --harmony is very limited and some things are just wrong
+is that something that one learns by experience? the type of urls to provide in an api?	it's just a consistent rule )
+jaawerth: you can? is it just that most servers discard/ignore it?	yep
+dodobrain: hello world with a ?name= parameter?	thats still more useful than his oneline app
+did it eh, scale well enough? :p	don't expect it to be fast
+how can i know if npm is ever done when it just keeps spinning for a long time?	if it's spinning then it's not done
+ljharb: ... with aliases? *hides*	aliases?
+do i just create routes/bar.js and mount it in app.js as /foo/bar  or do i somehow edit foo.js itself?	does that exist?
+seventoes: does it mean that i have to use another nginx to be a reverse proxy? (so i can serve angular + nginx on 3000 and the api on 3001) ?	but in production if i decide to put each components on a different hosts i don't need that nginx anymore right+
+you want to run lisp code in node or the other way around?	hmm i think so
+ska-fan: are you running ubuntu by any chance?	but the node 0.10 releases ship with 1.x because they went extremely conservative.
+somebody reinvented html?	u wot m8?
+yes with json/jsonb support with 9. .... 4 i think? postgres has very good support for anything you may've wanted mongo for in the past	bah!
+honestemu: where does it say that?	that wording may be a little confusing but they're not saying that's something you should always do
+so my front end is react and i'm using scss for styles... how does build stuff for that go?	depends. i personally use gulp with a lot of fancy sugar
+ljharb, nvm ls-remote = list all the versions.. how do i know which is stable? or i should just pick the latest one?	node even = stable iojs just pick latest.
+build from source? :p	y u not no evrything
+ljharb: https://www.npmjs.com/package/forms this one?	i don't specifically need just curious
+a requestlogger?	u wot m8?
+hmm...  how about unexpected server stop because of some errors ? dodobrain  how to handle that ?	because you 'migrate' data from one schema to another
+cjohnson: jsctags is from 2012. and barely worked then, it seems like. have you tried taginator or jstags? (jstags is othiym23's, and so likely to work)	the vnce you refer to is more like 'extensions' or 'additions' ;)
+btw.. one last question... i've heard that mongodb is really really good with big data.. but if i'm developing softwares for small (really small) companies... will ..using mongodb make my development easier or quicker?	i don't understand at all what you mean there are way too few buzzwords in your question
+d4rklit3: it escapes it i presume?	if so try !{'&nbsp;'}
+razerglass: not sure why you're using a callback there? print isn't asynchronous, and neither is console.log	then i'd recommend experimenting with fs.readfile instead )
+bajix: getters/setters/defaults check, extendable schemas needs more of a definition, event emitters how?, aggregrate pipelines is what you use knex for, streaming capabilities is missing in bookshelf but available in knex, validation (beyond schema) does not belong in an orm, hooks?	nothing already exists that you know of that does this?
+can anyone see any problems with this? is there any reason why single-threaded python is going to be faster than a node.js instance?	no
+greves: confused. what does it contain, and for what purpose?	usually scripts refers to command line scripts for deployment etc. and lib means third party (while src is your code) and you describe scripts as apps so call it apps -)
+razerglass: also, what kind of thing do the buttons do?	so there's code you write in node that runs on your server. some of that code say express sends files to web browsers that ask to view your page
+don't you have to have an understanding of the payload to get any use out of an api call anyway?	more "this is a listing of repositories and what htey can do" "okay here is a list of nodes/folders/files in a given node/folder of the repository here are the features enabled for them here are the actions you can take with them with your acls" and the acls themselves come from payload info about the repository "here are the acls and how custom ones map to the built-in ones"
+hey joepie91 what do you think about iojs?	then how to create a starting app
+why would anybody *want* unstructured data?	unstructred data can be the right choice in some circumstances
+*anything*?	really? what would you do instead  ?
+how to pass data from one route handler to the next down the pipeline?	- in express?
+is it something to do with the fact that my angular makes calls to http://localhost:3001/api ?	np!
+ok why does node installed with nvm not see my environment variables?	i am trying to constructing a json object after several asynchronous calls. i am currently chaining promises. like each asynchronous call is going to give a piece of this json object. is there a better way to to do this than storing each piece as a vble? or passing an additional argument to the next async function in the chain?
+do you need nosql and webscale?	x aaaah that feels better thanks
+(does laziness help in the timeout case?)	use either style which is just an if/else
+ljharb: ?	not disagreeing p
+alright. which version of node are you using?	to follow along with a tutorial
+what would be the best way to read 64 bits of a buffer into a number?	readdouble?
+is detecting extraneous query params a good thing when creating an api?	that's fine
+hello everyone, not sure where i should be asking that question, since this here channel is full of js programmers, i figured it'd be worth a shot. i am looking for a library to diff two js object literals (pass two objects, it produces an object describing the diff)? is there such a thing in the js ecosystem?	yes.
+tejasmanohar what!?	sorry.
+greves: why?	(that was 4 tabs and a comma by the way >.<) well if i serve the server-rendered react app right away with no css it'll show up unstyled and i'll get the fout
+is this a 'bad' scheme?	thanks  i'll have to mock it up
+lennym, but.. this way you risk to overwrite some existing property of req?	potentially yes
+what is this? is there some name for this syntax?	looks like some forum markup like phpbb
+sim642: are you ok with me writing you an ugly hack then?	sure if you can be bothered to
+is there such a thing as a 'best practices' or 'style guide' similar to john papa's angular style guide, for building full stack web apps with express?	i can give you some common conventions / suggestions but there is no hard style guide no
+why doesn't it check for that?	how would it?
+you can read/write to stdout/stderr via a spawned process?	zlepper https//nodejs.org/api/child_process.html#child_process_child_process_s_command_args_options  (then see the examples below)
+joepie91, on windows?	oh i have no idea about windows i use linux everywhere )
+joepie91, any reason you use gulp for scss instead of webpack?	i don't pack my stylesheets )
+is there a tutorial for node.js for people coming from php ?	it's just javascript... just treat any io like you were doing it with ajax
+deviavir_ thanks, new here ;-) so i am running a process.. using pm2 i'm running 4 instances. an instance has different modules using redis etc and a cron job manager, which all it does is checking if a specific key exists in redis and starts a job for every key that exists..so i think i'm going to have multiple cron jobs right? (each cron job asks	you're doing queuing?
+why don't we need to use the `new` keyword with express.router(); ?	installing a module globally most commonly adds command line utilities but does not extend to `requires`
+ljharb: because of the outdatedness?	so.. you suggest this?
+what is the pastebin du jour around here?	router.route never passes the "response" parameter to any handler
+hello. where should i implement the functionality for sharing file to google drive?  does should it be in front end or back end ?	yes - try searching on npm.org and the first hit will probably be the excel parser
+he/she likes having hipsters fight on his/her lap, what's the big deal?	thanks @
+what do you see there?	(number) 6
+huh.. what does mermaid have to do with node runtime?	it's an experiment in interactive programming that runs on top of node and you interact with that from a nw.js-based client.
+but now i have to wrap them inside of a module or some sort of?	yea sorry can’t really help at the moment. however i recommend waiting for some more activity here once the america wakes up or open an issue and/or check out repository for additional documentation. http//git.io/vulii
+scroll down to what?	lol you crazy
+which tool to use to make a new file with only the code in use?	u wot m8?
+i have a conceptual question. if i have a lot of html files that will be retrieved as just data/information (think pages of a book) and the searching/indexing/faceting for these files will be handled with solr, do i gain anything by putting these html files into document storage like mongodb vs having them on the file system and just using fs access to open them?	2 probably not but you would want to pick the right file system / have the file system able to replicate
+hipsterslapfight, so how do i get my model definitions available in my api routes that need to query them?	what do you do?
+molework: strange. might want to pick a less computationally intensive cipher?	ref https//istlsfastyet.com/
+it's my understanding that node doesn't need delayed jobs for tasks like sending an e-mail as i would with ruby?	sorella hey can i get your opinion about this? i decided to go ahead and fix that issue i was complaining about the other day about csp.closed in js-csp myself. was thinking it might make sense to use a  when available otherwise an empty object. does this make sense to you? https//github.com/jaawerth/js-csp/commit/1652c4915afc4343981fc679cf7f640d099cdeac
+rla, and how would you output that?	are you ok with me writing you an ugly hack then?
+what am i looking for in the firewall settings?	open command prompt
+sorella,   so it has no relation to try / catch in the traditional sense? - is there a way to not use .catch()    to achieve the same end?	what is "the same end"
+and in the express ecosystem how is that going to work - is that middleware?	don't see an immediate reason for that
+molework: why?	i have no idea what kind of download you're even thinking of tbh
+well i sort of just learned how to do the client side build process with gulp and whatnot over the last few weeks, but it seems like server side there is no build process, right?	when publishing to npm you should convert it to es5 first; but for applications babel/register is fine
+but do i actually have to write app.get('api/v1/model', ......) a hundred times?	currently knex + bookshelf yes
+that depends. what value is it representing?	yeah but what about the try? bluebird says it should the first thing! that is how it easily handles rejections. i feel like if i don't put in a try first i might run into issues with handling rejecting/errors.
+bajix: because it tries to implement behaviour that mongodb specifically was not built to provide?	did you actually read the thing i linked?
+myndzi: so what specifically are you trying to fix here?	i'd just send a json with the data then do all the things that needs to be done with that data in js
+carolin: why do you want to write that in js?	like why not use c++ for this?
+have someone a idea: how can i import a mysql sql file?	it just queues those queries
+vague guess; missing 'error' event handler?	i am handling the 'error' event on the connection object but that dosn't get called. should i also bind on the process ?
+also, am i wrong in thinking that if, say, each module in module dependencies tree needs "log4js", i end up with gajillion of instances of log4js in my app?	yes you could (probably will) end up with multiple instances of a package - but i think that’s a solution in the making.
+_x_c_v_b_, per 1tb or just the initial offering?	https//www.digitalocean.com/pricing/
+does it make sense to check the environment in the .ejs template and either include the style directly (node) or just link to the stylesheet (browser) ?	why?
+which i think is the general idea?	not at all - the person who adds the commit has to decide.
+are promises even smart to use for flow control? don't they wrap everything in try catch and then v8 can't optimize it cause of the catch?	generally no
+is it unreasonable to expect request.post to work with a 50mb file as string?	use a stream
+zlepper: yes, with sessions, but it's not foolproof. are you using express?	yes
+if anyone is familiar with bluebird, a try starts a chain of promises, right?	yes.
+joepie91, what do you recommend in terms of hosting that can compete with aws?	define "compete with" - what are you looking for?
+rantanen: no. when you run a stepping debugger, do you want to see the text, or how the data flows between the parts of your program?	if i want to generate a diagram i don't think i could care less how the data flows - unless it breaks and i need to go debugging it. )
+p15x, why not use mocha + chai for this?	x thats true
+is there a web service where i can drop a packages.json file and have description for each?	ljharb no i have a package with sha1 in it
+[1,2, 3].values() is gone?	array#values returns an iterator
+... xml character?	for help ask your question. be patient. code samples should be pasted in a paste service (see !paste). tell us 1) what you want to happen 2) what is actually happening and 3) any error messages you find (see !describe and !debug).
+is there a "trial run" flag for npm stuff?	thx
+a release of what?	use either style which is just an if/else
+tejasmanohar: did you try pulling out just that query and running it in a terminal to check out the objects?	findbyidandupdate isnt a mongo method
+oh yeh?	in other words.. dokku is for single webserver deployments.. not good for when you need more than 1 box
+p15x, so how do you test all the routes are functioning as expected? have you written tests for all of them?	x how much time does it take you to write these tests?
+why do you say that?	i agree but that still leaves it limited in its capabilities when it comes to encoding "how to consume this" info with your data payload
+is there any resilliance in having each thread make it's own connection?	forked thread
+do i use createreadstream?	put the path to your node bin directory first in your path
+and have it inside my global.js, what do i need?	in a typical implementation you don't need cheerio /at all/
+need to iterate on the array or is there something built iin / native i can use?	_.remove(array function(text) { text.slice(03) === '123' }
+molework: aha. so there's a specific agent for keep-alive stuff?	i will bookmark that and have a play with it later thanks )
+tejasmanohar: soa?	service oriented architecture
+@aria: so you say mvc make little sense since the flow of actions is unidirectional?	that's part of it but it's just stealing a gui paradigm and wedging the names into a request-response cycle.
+sorella: isn't it enough to just parse static text and output the picture?	no. when you run a stepping debugger do you want to see the text or how the data flows between the parts of your program?
+aria: i see. probably a bit early for me to use any load balancing. if you dont use nginx for static file serving, it is only used a proxy then?	yeah. and a few security redirect rules.
+hey guys. is it expected behavior that when a process exits, any data in a write stream that hasn't been drained misses the opportunity to write?	you're relying on undocumented behaviour more or less
+or hipsters-lap-fight?	germans do too understand jokes don't give your fellow countrymen such a bad rep p
+vohof: ?	i suppose everything which is not an interface which browsers then use? i want to know which essential skills a node developer has to have and optionally what skills would be beneficial on top of that.
+molework: why would you care what kind of code the compiler generates?	why? you shouldn't be looking at the generated js code (unless you're trying to find a bug in the compiler which should be the rare case)
+when using clustering, should each forked thread connect to mongodb, or should the parent thread in the cluster connect to mongodb?	forked thread
+or... should i set a different key on the app like 'models' or something to use at the api routes?	i actually want to execute common lisp natively
+greves: are you able to do load-balancing on a software level? ie. implement some logic to pick a particular server	i didn't mention mounting it in foo.js )
+sorella: but you need a web server which runs the nodejs daemon right?	no. you write your own server in node.
+it's now introducing "scopes" i think?	who created mocha? gulp? express? grunt?
+greves, voice of soprano or voice of donkey?	so assuming 50k clients that'd be a bit over 3gbps correct?
+jaawerth: what if it is not an error, just the consumer doesn't need/care about the result anymore?	i would agree if it did not map 1-1 with catch when promise executor is being invoked / async/await used them for that
+do you know generally what you want to do?	don't worry it'll be considered terrible in 6 months -)
+jaawerth: elaborate on "pretty it up"?	heh. i wasn't sure how to say vocabulary without saying vocabulary
+is there a "hibernate" ? for javascript	you can find out by running "nvm which current". typically it's ~/home/you/.nvm/versions/node/vx.y.z/bin/node
+reproducible environments? no need for worrying about cross-platform stuff? yes please.	vagrant docs are pretty awful heh
+devster31, do you know what front-end framework, if any, you want to work with?	well node is a pretty complicated beast. you want to use it as a server yes?
+greves: so, assuming 50k clients, that'd be a bit over 3gbps, correct?	i had a question up there as well.. you are free to come back to it when you get a break from greves .. just informing othrwise you'll have to scroll/search too much or i'll have to repeat ;)
+rla: in relation to what?	right
+it’s almost a defacto standard. afaik it’s been discussed to bring it into node.js (or was it io.js?).	ok thanks a lot
+you sure 64 is sufficient?	right and i suppose if i were going with the idea of greves where filepath was indicative of the mountpoint i would have foo=require('./routes/foo'); app.use('/foo' foo); bar=require('./routes/foo/bar'); app.use('/foo/bar' bar);  with routes/foo/index.js and routes/foo/bar.js  right?
+i want to create an application that listens for webhooks and does something with the information in that webhook. what node modules do you recommend?	yes.
+when using pm2, if i have started my application with some environment variables, are those preserved if i run `pm2 restart`, or do i need to provide those again?	is there a library for replacing vbles in strings or a dead-easy way to implement it?
+what about writing a script to pull the repo and move the files over for you?	looks like there is no way around that
+bendem: what version?	that has strict mode in it
+what counts for/against having express run on the same node as the database?	put the path to your node bin directory first in your path
+hi, i recently started exploring node and i'm quite overwhelmed by the sheer amount of options there are, for example i'm still trying to waddle through the ocean of express.js, ember.js, meteor.js, backbone.js and the likes, is there any starter guide i can reference to?	i wish there was but this seems to be the way of the node ecosystem
+why is npm 1.4 the default version then?	it's not anymore. you're also running an old node.
+echo "let a = 'a'; console.log(a);" | node --use_strict       is that what you tried?	i tried that and the same with 'use strict';
+greves: debugger statement?	i think node-debug automatically breaks upon run?
+ljharb:  which packages are those?	nvm (0.0.3) - install and managing different versions of node and installing local versions into repos. -> https//npmjs.org/package/nvm
+what's the deal with npm 2? should i use it or should i use the default version 1.4.28?	i'd upgrade
+mstram_: the site that has frames is? in that case you're fine	seems so.
+ljharb: how can i use them? do u have any reference?	look into babel
+eh? mongodb is insanely easy to do that	you're effectively dumping json received via the api directly into your db
+some kind of launcher with a testing environment?	u wot m8?
+okay, how do i determine what's causing it?	open command prompt
+joepie91: does it complain if not given a promise?	that works but i realize a space is too much p
+breakingthings: or maybe i should use cheerio to build a dom on the server side?	haha thats a joke right haha that doesn't exist you're so funny
+joepie91 / greenjello this is sort of where i'm heading at the moment, any feedback? https://bpaste.net/show/7afb0c105c0e	what's "scripts" for?
+what if they ask how much node experience i have?	were they the ones who approached you in the first place?
+joepie91, have you seen this? https://github.com/tulios/mappersmith	bajix api ideas so far https//gist.github.com//9d82f707127f30535a13
+joepie91, nothing already exists that you know of that does this?	example hooks here for a relatively complex api https//github.com/knightswarm/envoy/blob/2db58b74b1c97dbd0336db5f5fdd6d86efcb71f3/src/api/public_html/rewrite.php
+jaawerth, joepie91 do you mean 0.0.1 or 0.1.0?	yeah that's what i was feeling.. my module isn't quite ready for production use
+right? :)	glittery success or we still crashing into the mountain?
+i.e. ?full=bleh&thisiscrap=sflkjsf&iloveyou=true  would end up giving the exact same output as ?full	that's fine
+umm.. i've created an express app for simple crud.. how do i make npm deploy code changes automatically?	usually i use something like nodemon to restart my app whenever there are local code changes
+are there any other distributions besides xubuntu that use xfce?	opensuse!
+so for server side react rendering with webpack, how do i incorporate sass?	why?
+right.. but when a request comes, i need to determine whether to create a session or not, right?	express-session does that for you
+ian_mac what's not to like about asynchronous javascript always exact ?	well i can certainly understand and reciprocate the feeling that you are sharing with us.
+elnerdo: pastebin your error?	i never said anything about not having a schema or validation
+bajix: ... postgres odm?	django? d
+does it make any sense to transpile es6 code to es5 for developing a node app with express?	if you want the es6 features sure p
+joepie91: i guess i’m missing something, why bundled? is that just to prevent it from being registered with npm? would private: true be equivalent?	ah
+interesting. using current versions?	incidentally the use of wrappers/reserved sections is pretty much how they got a working spec for cmis over json
+hi people. kind of a broad question, but is it possible to get the currently active/focused application? i want the webpage to display the name of the current application being used by the local computer, ie firefox, or command prompt etc	i tried that and the same with 'use strict';
+tejasmanohar: does it happen if you pull the other calls out of the chain?	thanks. i just noticed your message. and i am comfortably using nodemon now )
+drama: what resources did you use to learn it?	for resources if you're not comfortable with js see eloquentjavascript which also covers some node.js stuff and then look at expressjs which is the base for most web servers in node
+ljharb: "scraping is illegal in many countries"?	it is in the us.
+jaawerth, if i use vagrant + dokku as a development environment, how do i get my stuff from that virtual machine onto the real heroku?	deployment isn't trivial but i'd start with making it git-based and go from there (but in the real world you'd want to for example package your dependencies into a production build rather than install from npm)
+tjfontaine: who should i direct this breaking change in 0.12.3 to? https://twitter.com/ljharb/status/598917863433342976	your issue is correct though i suspect that's from the lateral v8 upgrade (in so far as fixing something that went wrong with the 0.12.0 release)
+for any "i started this thing and i want to see what happens when it's done?"	for retrieving data from an http call sure for sending a post and forgetting... ehhhh
+molework: why? you shouldn't be looking at the generated js code (unless you're trying to find a bug in the compiler, which should be the rare case)	isn't it enough to just parse static text and output the picture?
+should the new es6 class `set` work in node.js 0.12 ? because i can	b> var s = new set([1 2]); print(s.has(1) s.has(3)); s.add(3); s.add(1); s.delete(1); print(s.has(1) s.has(3)); // @
+devster31, well node is a pretty complicated beast. you want to use it as a server, yes?	you could try out sails.js it seems it gets a lot of attention lately
+jfhbrook: what's a static file server?	unless you're conflating node.js code and browser code  which has been known to happen
+hi, do questions on npm packages go to a different channel?	probably depends on the package...
+it doesn't allocate for each instance? ram doesn't go up linear?	if you have 30 different versions of foo that are required your app *can never work* without all 30.
+p15x: is it perhaps possible to define the downtime self, so define it in the night knowing no one need it?	x how big is your application? how many developers working on it?
+you use gulp & webpack together?	hold let me gist a gulpfile
+is rails more like nodejs ?	use expressjs it's like to use silex when you start to write php app
+hi. hopefully a quick question. what would be the best way to keep client specific data (lets say an array)?	thanks )
+i guess it's /search?q=	y u not no evrything
+is a node_modules created with node 0.10 and npm 1.4 compatible/the same as one created with node 0.12 and npm 2.7.4?	some things might need to recompile but mostly yes
+oh yeah - what about migrations?	just use commandline knex with a knexfile - the docs are a bit sparse but it works
+mafintosh:  i really like the api and the overall functionality and the code size, but i'm having to dance around zalgo a lot - would you be open to a pull request that added process.nexttick or asap here? https://github.com/mafintosh/mutexify/blob/master/index.js#l8	whats zalgo?
+so as a beginner i should just forget this tutorial and find an express.js tutorial?	express is a library for writing web applications. you can write your own library but that doesn't help you with writing actual web applications )
+isn't mangodb the one that just throws the data down dev/null?	bah!
+anything i'm missing?	sounds good if you're targeting intermediate/advanced node/js developers; but i think the main area where this is a problem is people that are somewhat new to js and are just grasping async to start and they hear that promises are good for some reason but have a lot of difficult wrapping their heads around them.  if there's a way you could include pictures or
+is it just an api?	true fair point. i usually try to set a public example but at some point it's probably better to take it to pm
+and against?	put the path to your node bin directory first in your path
+symbolic link on windows? are you talking about shortcuts? because they're very much not the same thing	mklink is the command i believe for windows it's basically a ic link
+is that the import {foo} from bar business?	mainly css and the way changes propagate to children/leaf nodes
+bangdollar: and orthogonally extensible? or just reasonably sensible to a human reading it?	yeah that's the conundrum that brought this up ;-)
+or maybe pass in an object with all of our models on it or something?	i actually want to execute common lisp natively
+jaawerth: tbh why not just make it a string object?	like object('foo')
+jr3: the docs seemed reasonably complete to me from a quick glance?	i've got the rudimentary crud app with postgres kinda working for (the crd u not done yet). now how do i make sure it is not open to everyone to delete randomly?
+e.g. request(..., function (error, res, body) { ... } ); how does the 'request' module handle passing in the 'res' and 'body' parameters to the callback if there is no error?	i do a patch release
+from a security point of view, is it really beneficial to require new users to have a password with special characters and/or a number?  i would think that that would just tell potential hackers more information about the password scheme	it increases the base of the permutations per character you do give some info out but it is minor compared to increasing a base size
+you will handle this situation, right?	well that's why the system needs to be scalable now isn't it? )
+like php is embedded, with <?php ?> delimters	what do you mean by replace the whole web server
+tristanp: that's not really a node thing is it? phantom is its own runtime.	yeah i wouldn't have expected it to be a node thing just relaying the fact that all the discussion in 2013 seemed to agree that backgrading node sort of fixed it. but this is 2 years later and my node npm and karma are all much advanced from that time
+what that a release?	not sure haven't explicitly tested it
+so you need to be logged in as root?	germans do too understand jokes don't give your fellow countrymen such a bad rep p
+?	there's no equivilent mysql_fetch_row for example
+node8js401: can you gist the relevant pieces of code?	
+ljharb: how to use them?	yeah this is just for whipping together quick code examples not for production or anything
+anyone run nodejs on elastic beanstalk?	x only with the others heroku and aws if it helps
+dodobrain: what's 'funny' about it to you?	how about joyent's triton stuff? (ie docker as containers on metal)
+i am trying to constructing a json object after several asynchronous calls. i am currently chaining promises. like, each asynchronous call is going to give a piece of this json object. is there a better way to to do this than storing each piece as a variable? or passing an additional argument to the next async function in the chain?	yes.
+what makes a package manager package manager?	version management an explicit registry publishing i dunno. bower/component aren't it.
+not too crowded in the lift aka localhost?	put the path to your node bin directory first in your path
+jaawerth, not trivial eh? that sounds hard. :p	i'd start here https//strongloop.com/strongblog/node-js-deploy-production-best-practice/
+bajix, what are the pros of mongo over e.g. postgres?	it does. you're trying to use the exact functionality that it doesn't provide and doesn't intend to provide
+carolin: like, why not use c++ for this?	double
+this script is not right? https://deb.nodesource.com/setup_0.12	https//www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server
+do you think its a bad idea to do cms type stuff in a frontend framework? i want like real-time dashboard and that kind of thing for our admins	for an admin panel it's probably fine
+some of the ecma 6 stuff was added in 0.12 wasn't it?	some io is way ahead still
+so that must mean js somehow understands ints properly for int math, no?	as long as you don't do any math on them )... it's referring to indexes on arrays as integers vs a sparse array with random keys
+maybe i should try to write a simple application first that does nothing but present a login page and only does login and shows a single resource and nothing else. any help with this? :)	that's a good idea - you can probably use the memory store for that so you won;'t need to set up redis yet
+btw, is there a symlink solution to package duplication in node_modules?	npm dedupe
+rantanen: aliases?	nothing really technically prevents that
+any idea about how to approach the problem? foreach with lodash inside?	sounds like a case for .map
+why is nginx (or some other application) almost always used in front of a node http server?	because it's good at static files and also good at routing requests through the server to where they need to go
+then..?	open command prompt
+could you point me out to the right direction ?	personally i use postgres with `knex` to build queries and scaffold and `bookshelf` if i need an orm
+joepie91, i've got the rudimentary crud app with postgres kinda working for (the crd, u not done yet). now how do i make sure it is not open to everyone to delete randomly?	right so access control basically?
+as in, the body on the client is constantly being updated like a buffer?	not sure what you're describing but probably not
+well, its not just about scalability now is it?	well its a paid service so presumably we would pick a price point that could cover those costs )
+greves, you mean by looking at the current working dir (or basically path of the current file)?	if you've got a router that does .get('/my/long/route/to/here' function (req res) {...}); then the whole route is stuck in that router
+sorella: so you'd be going for functionality as well? 'codec/theora', 'codec/vorbis', etc?	they could be organised in any way people think makes the most sense.
+bajix: what about it?	functionality such as?
+is that different from my public ip?	open command prompt
+yknow how in php, there's nothing running after the request? and starting each is a blank slate?	jasmine test framework.
+do i need to modify something to allow external access to it?	what does your app.listen look like? you should just call app.listen(process.env.port || 3000) alternatively you can app.listen(process.env.port || 3000 '0.0.0.0')
+sorella: how did you learn node.js?	the core docs are a good place to start
+do they offer like a downloadable version of their environment i could use with vagrant or something?	in other words.. dokku is for single webserver deployments.. not good for when you need more than 1 box
+is there a way to prevent people from spamming a submit button in express.js?	just use source maps (or have your language implement a decent compiler for itself by generating debugging s in the js — which is the approach i'm taking with mermaid)
+gottox: germany?	they even increased to 30tb.
+what does this bit of code do?	that's written very strangely.
+joepie91, right and i suppose if i were going with the idea of greves where filepath was indicative of the mountpoint, i would have foo=require('./routes/foo'); app.use('/foo', foo); bar=require('./routes/foo/bar'); app.use('/foo/bar', bar);  with routes/foo/index.js and routes/foo/bar.js  right?	also we will be serving text from the database on a pretty continual basis too along with the audio
+by whom?	different set of people
+node is not procedural?	you can write procedural code in js but that's a bad idea in node.
+darkelement: why are you specifying a remote websockets url? you're creating a server	i'm trying to connect to and console.log the info from the server
+@joepie91: would you like a link to my gist?	that would be helpful yes )
+joepie91, my routes/index.js is getting quite big and i want to split it up now. how would you recommend i do this? i see in the default express generated app, it creates a routes/users.js as well to handle /users, but it it setup in a funny way	what's 'funny' about it to you?
+maybe it just passes callback(false, res, body) ?	i do a patch release
+can anyone good with webpack please help? i've been at it all day	if it's spinning then it's not done
+why?	wasn’t there a discussion some time ago about making the dependencies flat but with semver added to the directory name? like node_modules/<dependency><delimiter>x.y.z?
+node8js401: full code and full error message?	(+rantanen) please gist all relevant parts )
+dataset/abcd?full	that's fine
+hi guys, does anyone know if async is still being maintained? it looks like a number of prs have been hanging around for a long time and the last release was dec 2014	hey s this is #node.js not #cerealbrands
+does it go through webpack?	https//gist.github.com//7f531cc7fa7245e68cc8 / https//gist.github.com//9b1ca2392a72e82b44fb
+dodobrain: does that exist?	oh i missed your question actually
+wow just took a lunch break and we're still talking about databases? :d	apparently so
+does it have to be ++ or will c be ok?	c++ compilers can generate more efficient code than c compilers for c++ code in some cases. some features of c++ might have more overhead.
+i guess i need to configure it manually? just surprised that it doesn't work that way by default...	thanks @
+jaawerth: any of those use cases not "we've got legacy baggage to deal with"?	well the cmis example isn't just legacy baggage it's "so you can write software that interacts with any cms/document store or so we can plug one store into the other" in the case of xmp it's "we need a universal messaging framework that can deliver any sort of payload"
+but you could equally well be like http://google.com?q=ubuntu+node+0.12	y u not no evrything
+'commonly accepted'?	ummm.. ok. but i still don't understand how express-session is to be used for access-control
+_rgn: why would you need one?	i don't specifically need just curious
+greves: got node running?	i suppose everything which is not an interface which browsers then use? i want to know which essential skills a node developer has to have and optionally what skills would be beneficial on top of that.
+anyone from lithuania here?	hey s is there any way of viewing documentation in the terminal without needing the website (like with python)? thanks
+if all i am doing is commiting changes to my readme.md, what is the best way to version my npm module?	i do a patch release
+metadata on how to parse the payload?	more "this is a listing of repositories and what htey can do" "okay here is a list of nodes/folders/files in a given node/folder of the repository here are the features enabled for them here are the actions you can take with them with your acls" and the acls themselves come from payload info about the repository "here are the acls and how custom ones map to the built-in ones"
+adv_: how much do you like learning?	jasmine test framework.
+greves:  lodash? is that a loop over the array, do you even know?	basically
+http://www.wolframalpha.com/input/?i=3125+gbps+in+petabytes+per+month	ah no this is not continual
+what?	okay so mostly just high-bandwidth - what kind of audio? teamspeak-level internet-radio-level ...?
+carolin, http://www.html5rocks.com/en/tutorials/speed/v8/ i think this is probably still true, as well as this: https://www.youtube.com/watch?v=hwhmkaleicy&feature=share	or ints and floats) is that they're all represented in double-point floating point 64-bit format so you can't use absolute values greater than 2^53
+is global.js in the client or in node?	ive used socket.io to send my objects and strings to and from the global.js and server.js before
+hipsterslapfight, what exactly do you mean by passing the db through to the functions that need them?	then i do not use the package
+i bet it's >= 2.0 huh? :p	y u not no evrything
+am i on the right track?  http://pastebin.com/zbs9i87w	if you're dealing with callbacks it helps if you treat them like this `function add(a b return){ return(null /* no error */ a + b) }` since that's all they're about )
+how do i read a file async?	put the path to your node bin directory first in your path
+if you specify a version number like "1.2.3" that means it will only use "1.2.3" right?	x aaaah that feels better thanks
+hi! can, i ask, how can i run example  (http://matt-harrison.com/using-hapi-js-with-socket-io/) on heroku  ? or where find simple example with hapi and socket.io, that can run on heroku? [10:01] <qwebirc80022> this is my code https://github.com/idriuk/jsp/blob/master/index.js https://github.com/idriuk/jsp/blob/master/templates/index.ejs. it work well on localhost, but on heroku nothing happend? what is wrong?	heroku docs are a good place to start
+what would be such secondary storage used for?	mappersmith you mean?
+how good is oracle performance at all?	mappersmith you mean?
+joepie91, how much do you want to come in on this project? :p	"we own all of our us network and server hardware as well as our multiple 10g uplinks and ip addresses. "
+i.e., angular or react or something lighter like jquery?	don't worry it'll be considered terrible in 6 months -)
+is there a way i can use fat arrow functions in node repl ?	npm i -g babel; and run babel-node instead of node
+greves: similarly, api/main.js and api/other.js? :)	https//gist.github.com//7f531cc7fa7245e68cc8 / https//gist.github.com//9b1ca2392a72e82b44fb
+which version of node are you running?	they have separate reps for 10 and 12
+greves: as in, hosting provider control panel, then?	the typical vps provider just has a username/password combo for the panel
+why's that not good?	ok cool. thanks joepie91 and  .. i'll just check existence of foo with 'in' )
+joepie91: how about joyent's triton stuff? (ie: docker as containers on metal)	never heard of it
+apparaat: what would you like to do?	you will want to learn the internals of javascript and then how to use some of the more popular node libs + frameworks that your app will need
+greves: define "compete with" - what are you looking for?	security & scalability
+rla: mappersmith you mean?	getter/setters/defaults extendable schemas event emitters aggregate pipelines streaming capabilities validation hooks query object validation etc
+xml? what lol	(string) 'a'
+mchelen: why does the binary name matter for your module?	no that should be fine
+joepie91, can think of any others?	meh my mixxx is broken can't test
+shims are a common pattern for client-side javascript (e.g. es5-shim). does this sort of pattern ever get used for server-side? for example, if i import a module and then overwrite some stuff in its namespace prior to using it.	it can be used yes but it's pretty risky
+ql is it ok to use json.stringify(obj) if i need to send serialized json back to a client? or it's better to use json5, or maybe something else?	it's all
+let me rephrase that. is there a way to call an app.get() from within an app.post callback function ?	probably not.
+anything i'm missing? :d	sounds good
+mstram_: what's the entirety of the response?	right but i mean can you gist the entirety of the response text
+greves: right, but it's possible from a technical pov? ie. you have control over what the client is	what do you mean control over what the client is?
+myndzi: "they"?	and if by escape you mean like sanitizing html then yes you can do that.
+is it js convention to use camel case in the db?	afaik there is no one js convention
+anybody here? i need some basic help with nodejs ..	number of reasons to why that might occur. usually you’re behind a firewall (internal in a router) and it blocks all connections in.
+wait, wouldn't it just give the same cached value, rather than rerunning it?	i'd use the string-object and strict equality. you could change out the actual value later.
+does anybody have resources to get started hacking on the core? i can't even get "make test" to work consistently across different oses.	what is happening when you `make test`
+10 lines!? what kind of monstrous app are you writing!? require('express')().listen(3000); <--- an express app	i meant a production-ready hello world
+p15x, how much time does it take you to write these tests?	x why not use mocha + chai for this?
+but i'm curious, which ones?	i need that repeatable because i have to do that on a lot of servers and there are different packages installed globally on every server.
+how do i set up nginx for something scalable on my own?	oh wait is that their load balancer?
+and you probably want to upgrade anyway, but i can't think of any reason it's necessary past that(?)	y u not no evrything
+only problem is it seems that you would have to have the packages installed first?	heh what  said.
+tristanp: is it with a `watch` like scenario where you want the server to restart when file changes are detected?	tried increasing the interval?
+performance wise on the server , do they have differences?	the v8 javascript engine in node is really kinda scarily fast.
+greenjello_: what do you use for mysql connections ?	you use console.log ?
+do i really need to wrap my node code inside of self called function? this yields "syntaxerror: unexpected strict mode reserved word"	never use the repl/pipe to ever test how behavior works
+ljharb: ok, just one more question (hopefully) - nvm is shell-based, so when i start up many many shells automatically at once with different projects and node version requirements, all in their own ttys, there shouldn't be some sort of race-condition-like issues with nvm?	also you can make a `.nvmrc` file for each project that has the node version you want and `nvm use` will read it.
+.. why do i have this bookmarked? http://hamlet.coffee/	please do note that you also like coffeescript so you should expect your aesthetics to not be widely appreciated
+greves: why use node on ubuntu when there is illumos?	thanks @
+greves: hmm? :p	i think he is offering you some money to work/consult on this! unless i'm unable to read thats what he means
+hi there. i'm learning node.js using learnyounode but got trouble figuring out what to to at excercise 6/13 "make it modular" could anyone explain it to me please?	could you try and explain the exercise a bit? you could also open a ticket at https//github.com/nodeschool/discussions
+ljharb: wasn't that renamed?	ah i see
+eval?	turning strings into code. that's bad news bears.
+ska-fan: solution in what way?	are you running out of disk space?
+complex routes?	greves cleaned up version of the gulpfile i use for https//pdf.yt/ https//gist.github.com//b7879160f1794ceafad7
+greves: what's "scripts" for?	to differentiate from sass
+oh?	right now it will try to grab the fds at start time prior to any request for the data of a fd
+molework: "initiating a download"?	why?
+so you would wrap all of your routes in a function and pass the db object in like that from app.js ?	i actually want to execute common lisp natively
+j0rd__ newrelic?	under load?
+frd: did you run "npm dedupe"?	if you don't the default will be to always use individual dependencies i think
+aria: got any suggestions for a better way to get ctag support for js in vim?	oh goodness . this seems really poorly maintained.
+joepie91: why? i love heroku	because heroku is a business not a charity
+why the ban?	don't. worry. about it.
+do you want the value of an input box when someone types in it in a browser?	ive used socket.io to send my objects and strings to and from the global.js and server.js before
+favorite templating engines? anything with better support for blocks and layouts than ejs, but without the weird nested syntax of jade?	what's lacking in ejs?
+p15x, how many routes?	x so how do you test all the routes are functioning as expected? have you written tests for all of them?
+joepie91: how widely adopted is it though?	that strikes me as pretty dead ;(
+well with request, for example, i can do: request({method: 'post', body: {foo: 'bar'}, json: true, url: 'http://blah.com/'}).  how do i express that using bhttp?	bhttp.request("http//blah.com/" {method "post" formfields {foo "bar} encodejson true})
+chilion: ok, did you `npm install`?	http//pastebin.com/18nqf4k2
+joepie91: it uses mongo by default?	seems so.
+p15x, how big is your application? how many developers working on it?	x how many routes?
+what would cause a <noframes> section to be triggered from http.get() ?	nothing's triggered. that's just the html that's always returned.
+myndzi: xmpp you mean?	true enough
+are all three of those things involved in your problem?	use either style which is just an if/else
+anyway, nobody have any feedback to my new blog post? :p	nice
+hi, i would like to use jshint in my sublime text, i'm using ubuntu 14.04, and used nvm to install nodejs... where is the location of the installed node??	you can find out by running "nvm which current". typically it's ~/home/you/.nvm/versions/node/vx.y.z/bin/node

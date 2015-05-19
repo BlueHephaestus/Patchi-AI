@@ -1,0 +1,53 @@
+<silverspace> dan
+<silverspace> nakon pola dana zajebancije bez interneta tv i telefona danas sve radi
+<silverspace> doduse jos uvijek sporo 3.912211 mbit/s
+<mmike> silverspace, a, kaj si reko, zash se nemres prebacit nekom drugom?
+<silverspace> kome?
+<silverspace>  4.4128056 mbit/s
+<silverspace> oo pa nesto ubrzalo :)
+<mmike> silverspace, kak kome? pa imas tcom, za pocetak. imaju ti i optiku!
+<mmike> imas amis, dsl im radi izvrsno
+<silverspace> mmike: nema optike kod mene
+<silverspace> ovo drugo je isti kujac ko i ovi moji
+<silverspace> samo jos vise kuna platiti
+<mmike> silverspace nije bas, amis ce ti dat 12 mb downloada sam tak
+<mmike> bez ikakvih bedova
+<silverspace> da i samo jedan tv
+<silverspace> bas gledam amis sad i to mi je nepovoljno
+<silverspace> 80kn vise nego sad za 3u1
+<silverspace> samo optika dolazi u obzir
+<silverspace> onda bi platio vise
+<silverspace> ovo sve drugo mi je nepovoljno
+<mmike> may 17 09:59:09 enchilada kernel: [  371.193458] ata7.00: exception emask 0x10 sact 0x800 serr 0x400000 action 0x6 frozen
+<mmike> may 17 09:59:09 enchilada kernel: [  371.193641] ata7.00: irq_stat 0x08000000, interface fatal error
+<mmike> may 17 09:59:09 enchilada kernel: [  371.193769] ata7: serror: { handshk }
+<mmike> sugavi kontroler
+<mmike> silverspace, optika tcom ti je oko 310 kuna za firmu ak uzmes na 2 godine ugovor
+<mmike> za privatno je jeftinije
+<silverspace> radimo na proširenju optičke mreže i rado ćemo vas obavijestiti kad ultra max usluge postanu dostupne na vašoj lokaciji.
+<silverspace> tcom :)
+<silverspace> frend zgrada do mene ima uredno brzinu 7-8
+<silverspace> isto kabel ko i ja ista firma btnet
+<silverspace> kvaka 22
+<jelly> preseli se?
+<silverspace> kak u mamuticu tam je tek frka :)
+<silverspace> u biti ja sam zadovoljan sa btnetom (bio) sad u zadnje vrijeme nesto seruckaju
+<silverspace> kvarovi nisu bili cesti ni pucanje interneta
+<silverspace> http://www.speedtest.net/result/4365756543.png
+<silverspace> kao da sam na 4mbitas
+<silverspace> Čelnici khl-a potvrdili da medveščak ostaje u ligi
+<silverspace> http://www.index.hr/vijesti/clanak/tragedija-kod-labina-u-smrskanom-meganeu-zivot-izgubila-dva-mlada-nogometasa/820404.aspx
+<silverspace> alkohol
+<silverspace> ligi ili lizi
+<silverspace> moto gp
+<infy-> silverspace: vdsl na t-com ništa?
+<silverspace> moto gp odlican ove godine
+<silverspace> infy-: preskupi su
+<silverspace> rade se patim i tu lovu zapijem i zajedem nego njima dati
+<markosejic> d dan
+<markosejic> d vecer
+<nicols> jutro!
+<mmike> broj preostalih rata:	45
+<dodobas> pozdrav iz nodebo, danska...
+<mmike> dodobas, jel zima? )
+<dodobas> pa ... 7 stepeni i kisa, sta mislis ... hebate

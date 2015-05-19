@@ -1,0 +1,38 @@
+=== idafyaid is now known as peskypokemon
+[01:59] <hallyn_> tedg: lxcguest is a remnant from maverick timeframe.  please open a bug showing how you tried to create that container, the templtae must be completely out of date
+[02:08] <tedg> hallyn_, I don't think you meant me?
+[10:56] <hallyn_> tedg: d'oh, youre right, that was dobey
+[10:56] <hallyn_> dobey: lxcguest is a remnant from maverick timeframe.  please open a bug showing how you tried to create that container, the templtae must be completely out of date
+[10:57] <hallyn_> tedg: sorry :)
+=== Elimin8r is now known as Elimin8er
+[13:31] <Bert_2> Not 100% sure whether this is meant for the channel, but I noticed trusty's munin smart plugin is on the old 2.1 version, this would normally not be a problemen, except that it is missing the key feature to ignore non-problematic status codes introduced in version 2.2 of the code (which is a very minor patch, not even 20 lines of code), I was wondering whether I could get that into trusty and if so how?
+[13:38] <lifeless> prepare a patch for trusty, put in tthe bugtracker, and follow the stablereleaseupdate process on the wiki
+[13:39] <Bert_2> lifeless: so I just create the patch file and file a bugreport, then follow the wiki procedure?
+[13:41] <teward> Bert_2: the wiki page of StableReleaseUpdate details the procedures for an SRU.  Create a patch file, file a bug, attach the patch to the bug, and wait for the process to work out.
+[13:42] <lifeless> Bert_2: in short, yes.
+[13:42] <teward> that's the short summary of the process anyways
+[13:43] <Bert_2> teward lifeless: ok, thx, I'm reading through it as we speak and afterwards I'll file the bug ;)
+[13:44] <teward> Bert_2: my only thought on this is that you introduce a new feature, so you'd have to do really thorough tests and have a thorough test case to test the functionality
+[13:44] <teward> if not multiple test cases
+[13:45] <teward> To quote you: "...it is missing the key feature to ignore non-problematic status codes introduced in version 2.2 of the code (which is a very minor patch, not even 20 lines of code)"
+[13:45] <teward> and SRUs typically don't 'add' features, but that's also not my call, just an observation of the most literal interpretation of SRU stuff :)
+[13:46] <Bert_2> teward: yeah, that's why I came to ask, whether there was any chance I could
+[13:46] <teward> Bert_2: the worst that can happen is they say "no" in which case the SRU goes away
+[13:46] <Bert_2> the thing is, I'm pretty sure I'm not the only sysadmin getting swamped with warning about disks that had an error in the past but are actually fine
+[13:46] <Bert_2> teward: true ;)
+[13:47] <teward> Bert_2: one observation suggestion though:
+[13:47] <teward> check currently existing bugs against hte package in that release
+[13:47] <teward> and make sure a bug for this doesn't already exist
+[13:47] <teward> (dupe bugs are dupes and having five bugs for the same thing is... ehh)
+[13:47] <Bert_2> teward: I already checked, there are no bugs for munin on launchpad that mention SMART
+[13:50] <teward> then you're good, just create the bug :)
+[13:50] <Bert_2> :D
+[13:52] <teward> but again the worst case is that they say "We can't add this functionality" or such
+[13:53] <Bert_2> teward: the hard part seems to be explaining a test case, cause you sorta need the right kind of SMART-erroring drive, which I think you can't emulate easily
+[13:54]  * teward shrugs, and returns to poking the nginx init scripts
+[13:54] <Bert_2> teward: enjoy ;)
+[13:54] <teward> blah
+=== ValicekB_ is now known as ValicekB
+[20:46] <teward> has anyone ran bug-closing scripts to close Lucid targeted bugs?
+[20:48] <teward> and if not should we
+=== JanC_ is now known as JanC

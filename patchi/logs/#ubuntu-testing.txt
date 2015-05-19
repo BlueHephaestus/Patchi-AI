@@ -1,0 +1,5 @@
+[16:37] <lamont> .
+[17:23] <stgraber> ogasawara: cool, thanks
+[17:37] <stgraber> !!! This channel is now logged by ubuntulog. Everything you say will be recorded (as in most #ubuntu-* channels) and available on the IRC log website. !!!
+[17:38] <stgraber> hmm, looks like I actually triggered some edit function of ubottu by saying that ...
+=== asac_ is now known as asac

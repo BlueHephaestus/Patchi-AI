@@ -1,0 +1,18 @@
+[09:27]  * PaulW2U counts summaries - 8 to go
+[11:23] <PaulW2U> Added MX4 announcement to prep .doc and written summary
+[12:11] <pleia2> :D
+[12:20] <pleia2> I'm going to start copying things over to the wiki, in flight again today so I might be getting to some things later than usual
+[12:20] <pleia2> (and some things earlier, woo 5:20AM)
+[12:30] <PaulW2U> pleia2: have a good flight, I'm off out now, no doubt ahoneybun will be here later to finish off the summaries :)
+[12:30] <pleia2> thanks :) have a good one!
+[12:34] <pleia2> boo, askubuntu script has gone sideways
+[12:35] <pleia2> or the api it connects to has
+[12:43] <pleia2> yeah, api timeout
+[12:43]  * pleia2 will try again later
+[15:07]  * ahoneybun works on his 3rd summaries
+[15:07] <ahoneybun> *summary
+=== aaron__ is now known as ahoneybun
+[17:04] <PaulW2U> Planet, Blogosphere and In the Press now done. Just three Canonical summaries to do.
+=== aaron__ is now known as ahoneybun
+[19:47] <PaulW2U> Summaries completed
+[19:48] <PaulW2U> pleia2: Sarcastic suggestion - please can we bullet point IoT articles? :)

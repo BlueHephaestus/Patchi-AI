@@ -1,0 +1,15 @@
+<painwithin> hello, i was wondering if this is where i could ask a question about this strange driver issue im having
+<painwithin> im trying to figure out how to get info a safe mode type thing in ubuntu 10.04
+<ianto> painwithin: you can ask and i'll try to help but i can't guarantee a good answer ;)
+<painwithin> ok so basicly what happend was, sometime this morning the pc randomly froze, and now it freezes during boot
+<ianto> painwithin: what would you like done?
+<painwithin> but after some research i discovered its a driver issue
+<painwithin> im wonder, how can i fix the driver problem if i cant get into ubuntu?
+<ianto> painwithin: https://help.ubuntu.com/community/grub2#command%20line%20and%20rescue%20mode
+<ianto> that will help you boot into command line / rescue mode
+<ianto> do you have any additional information for what you want to do afterwards?
+<painwithin> um, nope i think i'll be good after this point
+<painwithin> thank a bunch
+<painwithin> i couldnt find anything, probly using the wrong keywords when im searching
+<ianto> best of luck with it then, any additional problems just feel free to ask
+<painwithin> ok, thanks again

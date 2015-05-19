@@ -1,0 +1,26 @@
+<sturmflut_> http://www.meizu.com/products/ubuntu.html it's official!
+<ahoneybun> \o/
+<cliftonts> morning all
+<cliftonts> ....or not.
+<danchapman> :-d morning cliftonts
+<cliftonts> aah! there is life.
+<cliftonts> a bit of a weird question, i'm accessing through the sdk and when i loaded today it did a wine configuration before it loaded up. why on earth is ubuntu specific software even touching wine?
+<bzoltan> cliftonts: the ubuntu sdk has nothing to do with wine
+<bzoltan> cliftonts:  what ubuntu are you on?
+<cliftonts> 15.04
+<cliftonts> trust me, i clicked the icon and configuring wine popped up for 10 seconds before the sdk loaded. baffled me.
+<bzoltan> cliftonts:  it is not about trust :) i am the one who is responsible for most of the sdk packaging and package architecture ... trust me, there is no wine related bit in th sdk
+<cliftonts> i don't doubt it bzoltan, but that is what happened. coincidence perhaps? something else going on at the same time.
+<bzoltan> cliftonts:  i have not used wine inthe last 7 years.. so i do not know what wine uses on the system
+<cliftonts> anyway, my reason for coming here is to find out if anyone can tell me what the average wait is for getting an application reviewed in the developer portal is.
+<cliftonts> i've been waiting for 10 days so far and the portal gives away no clues.
+<bzoltan> cliftonts:  i think it was a coincidence :)
+<bzoltan> cliftonts:  i do not know much about the developer portal' s intake process mhall119 might do.
+<cliftonts> there does not seem to be any way to get help or feedback on there. just submit and twiddle your thumbs hoping it might eventually do something.
+<cliftonts> there is no wait longer than one where you can't tell your place in the queue!
+<cliftonts> i would use the sdk to create my app but it baffles me. i've all but given up trying to figure it out as nobody seems willing to tell me anything about it.
+<bzoltan> cliftonts:  about the store intake process mhall119 will help you.
+<bzoltan> cliftonts:  do you have any functional problem with the sdk?
+<cliftonts> my problem is that, like quickly or any of these systems that pre-build an empty frame for you, it throws several windows of code at you without actually telling you which ones you edit, which ones you shouldn't.
+<cliftonts> or what each is for.
+<cliftonts> i have to dash out now anyway but i'm sure i'll crack it one day.

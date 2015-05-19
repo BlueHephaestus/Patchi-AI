@@ -1,0 +1,82 @@
+[14:15] <elfy> hi hannie
+[14:16] <hannie> hey there, elfy
+[14:17] <elfy> we are official now then I guess - the log bot is here :)
+[14:20] <hannie> ok, that is good news
+[14:20] <elfy> yep - we'll have to be serious now :)
+[14:20] <hannie> I am just reading the ubuntu-manual meeting logs (I did not attend)
+[14:21] <elfy> I might start hanging around in the channel soon - just to get a feel for people
+[14:22] <hannie> Here is a useful link: https://wiki.ubuntu.com/meetingology
+[14:23] <hannie> I am not sure if ubuntulog2 and meetingology use the same code
+[14:24] <elfy> I have no idea - as far as I know the log bots are just for getting channels onto here - http://irclogs.ubuntu.com
+[14:24] <hannie> http://irclogs.ubuntu.com/2012/05/19/%23ubuntu-manual.html#t19:05
+[14:25] <hannie> This is the log I am just reading
+[14:25] <hannie> And we use meetingology
+[14:26] <hannie> The chair can use commands like # startmeeting, #topic, #vote etc.
+[14:26] <elfy> I realise that - I'd assume that meetingology was there for meeting use - the channel also has ubuntulog in it I see
+[14:27] <hannie> You are right. Here we only have ubuntulog2 (thusfar)
+[14:28] <elfy> yep
+[14:31] <elfy> will check to see if it is logging to the irclogs.ubuntu.com later
+[14:32] <hannie> ok, so far I am happy the way we communicate (IRC and m/list)
+[14:33] <elfy> yea me too - it's just that as this is 'offifical' we thought there should be logs available - it would make it easier for us too - we can check if we've been away for a while
+[14:33] <elfy> alan bell I think is the one to ask about meetingology - might be good to have it here for meetings
+[14:33]  * elfy thinks aloud
+[14:34] <hannie> I was just going to ask: can we have meetingology here? Are you going to ask alan Bell?
+[14:34] <elfy> I can do that
+[14:34] <hannie> great!
+[14:35] <hannie> I also see manualbot at #ubuntu-manual. No idea what this bot does
+[14:35] <elfy> have to now - it's on the blueprint to remind me :)
+[14:36] <hannie> ah, good old blueprint
+[14:36] <elfy> :)
+[14:37] <elfy> do you remember offhand if we decided to have a page to list done wiki's - I can't remember - if you can't don't worry - I will dig it out from my logs
+[14:39] <hannie> I think not
+[14:39] <elfy> okey doke
+[14:40] <hannie> With all these separate pages, is it possible to have them together at some place or other?
+[14:40] <elfy> the 3 list pages?
+[14:40] <hannie> Like you put something in a folder?
+[14:41] <hannie> yes, 3 and perhaps one coming
+[14:41] <elfy> no idea to be honest - question can be asked - I'd have thought not - but they are all linked from one place in 'our wiki world'
+[14:41] <hannie> I have the links in my Favorites, but I was just thinking if they can be gathered somewhere
+[14:42] <hannie> no big deal. Just a thought
+[14:42] <elfy> we can think about it and ask someone - no problem with that
+[14:43] <elfy> and what's the 'perhaps one coming' ... :)
+[14:43] <hannie> the wiki's done page
+[14:43] <elfy> ok - you think there is a need?
+[14:43] <hannie> not yet, but maybe in the future
+[14:44] <elfy> mmm - if we have a need - better to have one now - or someone will have a long list to add in one go
+[14:44] <hannie> Like I said before, when we have less work to do for the manual I will spend more time on ubforums2wiki
+[14:44] <elfy> yea - I understand :)
+[14:45] <elfy> I'll add it to blueprint as a thought
+[14:45] <hannie> good idea, so we won't forget
+[14:45] <elfy> yep
+[14:46] <hannie> you know what I think of when you use the name elfy? LOTR
+[14:46] <elfy> :)
+[14:46] <elfy> you'd like my urukhai nick then lol
+[14:46] <hannie> or Harry Potter
+[14:46] <elfy> oh dear :(
+[14:46] <elfy> :p
+[14:46] <hannie> urukhai is from starwars?
+[14:47] <elfy> urukhai are from LOTR
+[14:47] <elfy> the bigger nastier goblins lol
+[14:47] <hannie> argggg. stupid me
+[14:47] <elfy> :)
+[14:47] <hannie> I just listened to my cd LOTR
+[14:47] <hannie> great music
+[14:47] <hannie> especially Enya
+[14:47] <elfy> I like enya
+[14:48] <hannie> me too, and Clannad
+[14:48] <elfy> blast from the past that is
+[14:48] <hannie> but still good music (I find at least)
+[14:48] <elfy> yep
+[14:49] <elfy> back in a while - daughter home now
+[14:50] <hannie> ok, back to work for me. cya
+[14:50] <elfy> cya
+[17:59] <elfy> wildmanne39: hi and notice the log bot finally
+[18:42] <MGandTL> Is there a way to mark the pages on the import page as "in progress" or "bagged by x"? Don't want to start and then have someone else do it. :)
+[18:50] <wildmanne39> Hi elfy
+[18:50] <elfy> MGandTL: not at the moment
+[18:51] <elfy> not been a problem as yet - start a m/list thread perhaps to get views on it
+[18:51] <MGandTL> We have a mailing list?
+[18:51] <elfy> it seems at the moment that people who started the ball rolling with a thread are doing the wiki
+[18:52] <elfy> MGandTL: yes - at https://launchpad.net/~ubforums2ubwiki
+[18:52] <elfy> and a blueprint
+[18:52] <MGandTL> Ah. Okay, I'll go join that.

@@ -1,0 +1,7 @@
+<sethj> is there a process for requesting a package be added to the livecd/default install? how does that work?
+<fantu> https://bugs.launchpad.net/ubuntu/+source/gvfs/+bug/517021 still not pushed to trusty, why?
+<ubottu> ubuntu bug 517021 in gvfs (ubuntu utopic) "gvfsd-metadata causes 100% cpu usage" [undecided,fix committed]
+<mitya57> fantu: according to http://people.canonical.com/~ubuntu-archive/pending-sru.html the fix breaks some autopkgtests
+<mitya57> that may be a false positive, but someone needs to double-check that
+<fantu> thanks for reply
+<fantu> i not tested the official proposed packages but another i did with the same patch before and is ok

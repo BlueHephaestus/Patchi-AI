@@ -1,0 +1,217 @@
+=== MrTuxHdb is now known as Tux|AFK
+=== BlanketCrab is now known as CoconutCrab
+=== Tux|AFK is now known as MrTuxHdb
+[07:11] <vubuntor814> có ai bị như mình ko nhỉ
+[07:11] <vubuntor814> gửi cái email vs đính kèm .rar là báo lỗi
+[07:11] <vubuntor814> đẩy ngược về ??
+[07:18] <MrTuxHdb> đấy là do server nó reject
+[07:20] <vubuntor814> dạo này gmail khó thế nhỉ
+[07:20] <vubuntor814> mới đọc article xong
+[07:20] <MrTuxHdb> vubuntor814: lên Google mà phàn nàn
+[07:20] <MrTuxHdb> =))
+[07:20] <MrTuxHdb> phàn nàn ở đây tác dụng gì :D
+[07:20] <vubuntor814> cấm gần như tất cả định dạng nén
+[07:20] <vubuntor814> =.=
+[07:21] <MrTuxHdb> tại vì bạn nén file exe vào nó thế
+[07:21] <MrTuxHdb> :v
+[07:21] <vubuntor814> gửi bằng cái gì :v
+[07:21] <vubuntor814> nén exe + đặt pass dc ko nhỉ
+[07:21] <MrTuxHdb> đếu ai gửi đống exec, src, script qua mail làm gì
+[07:21] <MrTuxHdb> toàn đồ bậy bạ
+[07:21] <vubuntor814> gửi cho con bạn cái trail reset ấy mà :p
+[07:21] <MrTuxHdb> nén 7z là nó không scan nữa
+[07:21] <MrTuxHdb> vubuntor814: đấy là crack
+[07:21]  * MrTuxHdb vote ban
+[07:22] <MrTuxHdb> CoconutCrab: ban vubuntor814 đi kìa
+[07:22] <MrTuxHdb> phát tán hàng lậu
+[07:22] <vubuntor814> trước xài win sưu tầm được cái đó giowf chuyển qua đây ko xài nữa nên tajngwj cho nó
+[07:22] <vubuntor814> để nén thành 7z rồi gửi nó. thanks ông nhá
+[07:26] <vubuntor814> 7z cũng bay nhé :))
+[07:26] <vubuntor814> An error occurred while sending mail. The mail server responded:  5.7.0 This message was blocked because its content presents a potential 5.7.0 security issue. Please visit 5.7.0 http://support.google.com/mail/bin/answer.py?answer=6590 to review our 5.7.0 message content and attachment content guidelines. u8sm6472439pdj.46 - gsmtp. Please check the message and try again.
+[07:26] <SuperLuserv3> [ Some file types are blocked - Gmail Help ] - support.google.com
+[09:01] <lewtds> lol heckơ
+=== MrTuxHdb is now known as Tux|AFK
+[10:17] <vubuntor703> không dùng wine có cách nào chạy autocad hay mấy chương trình viết trên foxpro ko ?
+[10:18] <vubuntor703> ko nói dùng máy ảo gỉa lập nha
+=== Tux|AFK is now known as MrTuxHdb
+[10:22] <MrTuxHdb> vubuntor703: quá dễ cmnl
+[10:22] <MrTuxHdb> cài máy ảo + remote máy ảo nơi khác
+[10:22] <MrTuxHdb> vẫn làm việc bình thường :D
+[10:23] <vubuntor703> đang làm đề án chuyển đổi hệ thống ở cơ quan sang ubuntu mà còn bị cái soft lập trình bằng foxpro vs autocad
+[10:24] <vubuntor703> nếu cài máy ảo hoặc remote máy server thì tính khách quan e là không đủ :(
+[10:25] <MrTuxHdb> vubuntor703: mình nói thật nhá
+[10:25] <MrTuxHdb> cty bạn không nên chuyển nên phải động đến một số phần mềm chuyên dụng
+[10:25] <MrTuxHdb> end story :D
+[10:26] <vubuntor703> không biết vì 1 lí do thần bí nào đó
+[10:26] <vubuntor703> ms nó gửi bảng kê xuống y/c kê khai toàn bộ máy tính vs office
+[10:26] <vubuntor703> toàn hàng crack nên ớn :)) sếp bắt viết đề án chuyển đổi nên bị bí
+[10:27] <MrTuxHdb> nhà nước?
+[10:27] <vubuntor703> VNPT
+[10:28] <MrTuxHdb> VNPT nhiều người xịn thế cơ mà
+[10:28] <MrTuxHdb> vubuntor703: office thì ok
+[10:28] <vubuntor703> office thì có libre rồi
+[10:28] <MrTuxHdb> còn những khu vực sử dụng phần mềm chuyên dụng thì vẫn phải đầu tư tiền
+[10:28] <MrTuxHdb> AutoCAD giá cao khủng khiếp cmnl =]]
+[10:28] <MrTuxHdb> bớt tí AB lại mua windows
+[10:28] <MrTuxHdb> windows rẻ bèo
+[10:28] <vubuntor703> kẹt chỗ phần chương trình thu nợ cước, quản lý cước thì lập trình trên foxpro
+[10:29] <vubuntor703> thiết kế hạ tầng thì vẽ bằng autocad
+[10:29] <MrTuxHdb> chạy trên wine mà nó suốt ngày xịt thì cũng bằng nhau :D
+[10:29] <MrTuxHdb> kiểu gì cũng phải mất một phần tiền dành cho chỗ đó
+[10:29] <MrTuxHdb> chuyển đổi là rất tốt theo quan điểm của mình
+[10:29] <MrTuxHdb> nhưng không thể đùng cái chuyển 100% được là cái đầu tiên
+[10:30] <MrTuxHdb> chưa kể còn iấn chia sẻ file
+[10:30] <vubuntor703> đề án chuyển đổi quốc gia ban hành hơn 3 năm nay mà tỉ lệ mới dc có <10%
+[10:30] <MrTuxHdb> thêm vào đó nếu hệ thống đang đi kèm AD nữa thì chuyển đổi lại khác
+[10:30] <MrTuxHdb> vubuntor703: nhà nước trì trệ lắm mà lại nhiều *tiền* nên đương nhiên việc chuyển đổi không thành công
+[10:31] <vubuntor703> tiền vào túi mấy lão sếp hết
+[10:31] <MrTuxHdb> hơn nữa người làm cái đó lại không có tâm
+[10:31] <MrTuxHdb> nên rất khó
+[10:31] <vubuntor703> nv quenf thì bị hành
+[10:31] <MrTuxHdb> mình là người ở dưới thì cũng chả làm gì được đâu
+[10:31] <vubuntor703> tui là sale mà có kiến thức IT nên bị bắt làm
+[10:31] <vubuntor703> =.=
+[10:31] <MrTuxHdb> hơn nữa phải xác định cái gì chuyển được, cái gì đáng chuyển
+[10:31] <vubuntor703> gio` khóc ko dc cười ko xong nè
+[10:32] <MrTuxHdb> chuyện viết đề án thì cứ viết
+[10:32] <MrTuxHdb> đúng trách nhiệm thì thôi
+[10:32] <MrTuxHdb> phân tích tình thực tế cho nó đúng
+[10:33] <MrTuxHdb> còn muốn tiêu tiền thuế thì ... gọi mềnh :v
+[10:33] <MrTuxHdb> vubuntor703: bạn ở VNPT tỉnh nào?
+[10:33] <vubuntor703> đồng nai
+[10:33] <vubuntor703> mấy ổng ăn thấy sợ
+[10:33] <MrTuxHdb> vubuntor703: =]]
+[10:33] <vubuntor703> phần qùa tết trị gía mua lẻ có 300k
+[10:34] <vubuntor703> lên thành 600
+[10:34] <vubuntor703> vl
+[10:34] <vubuntor703> =.=
+[10:34] <vubuntor703> mua lẻ mà gía 300 thì mấy ổng mua 1 lần cả ngàn phần nó còn bao nhiêu nữa =.=
+[10:34] <MrTuxHdb> hết sức bình thường :D
+[10:35] <vubuntor703> chỉ có mấy thằng lính là khổ
+[10:35] <MrTuxHdb> vubuntor703: anyway, quay lại vấn đề chính
+[10:35] <vubuntor703> chạy như con chó mà bị chửi đủ kiểu
+[10:35] <MrTuxHdb> cơ quan bạn định chuyển đổi như thế nào?
+[10:35] <MrTuxHdb> định đầu tư hay kế hoạch làm như thế nào?
+[10:35] <vubuntor703> chuyển sang linux theo đề án của chính phủ
+[10:36] <vubuntor703> mới kêu mình viết thôi chưa biết làm sao
+[10:36] <MrTuxHdb> có cần công ty nào tư vấn không
+[10:36] <MrTuxHdb> mình nói thật :D
+[10:36] <vubuntor703> cái phần đó chờ mấy sếp duyệt
+[10:36] <vubuntor703> mình ko đủ thẩm quyền :(
+[10:36] <MrTuxHdb> hiểu mà :D
+[10:36] <vubuntor703> chỉ là thằng gõ phím thuê thôi
+[10:37] <MrTuxHdb> đề án chính phủ chỉ đạo sao?
+[10:37] <vubuntor703> gio` mình nghĩ cách ntn
+[10:37] <MrTuxHdb> có link hơm
+[10:37] <MrTuxHdb> để xem các cụ ở trên chỉ đạo như nào
+[10:37] <vubuntor703> công văn ở cơ quan có dc mang về đâu
+[10:37] <MrTuxHdb> còn tinh thần thực tế
+[10:37] <MrTuxHdb> là sẽ phải chuyển từ từ
+[10:37] <MrTuxHdb> theo từng giai đoạn
+[10:38] <MrTuxHdb> chỗ nào chỉ có đánh văn bản
+[10:38] <MrTuxHdb> email
+[10:38] <MrTuxHdb> chat
+[10:38] <MrTuxHdb> tra cứu thông tin
+[10:38] <MrTuxHdb> làm công việc hành chính trên webapp
+[10:38] <MrTuxHdb> chuyển trước
+[10:38] <MrTuxHdb> các bộ phận chuyên ngành/kĩ thuật chuyển sau
+[10:38] <MrTuxHdb> tùy bộ phận
+[10:39] <MrTuxHdb> cái nào không chuyển được thì phải tính toán phương án mua sắm bản quyền
+[10:39] <vubuntor703> các bộ phận sử dụng phần mềm chuyên ngành chắc dùng win
+[10:39] <MrTuxHdb> yup
+[10:39] <vubuntor703> cái bộ autocad nó 5000$
+[10:39] <vubuntor703> ^^!
+[10:39] <MrTuxHdb> mua nhiều
+[10:39] <MrTuxHdb> lại gov
+[10:39] <MrTuxHdb> giá khác mà
+[10:39] <MrTuxHdb> với cả deal được
+[10:40] <MrTuxHdb> tìm thằng distribution mà deal
+[10:40] <vubuntor703> “Xây dựng chính quyền điện tử trên nền tảng phần mềm nguồn mở”
+[10:40] <vubuntor703> linux lên ngôn
+[10:40] <MrTuxHdb> no no
+[10:40] <MrTuxHdb> "nền tảng phần mềm nguồn mở"
+[10:40] <MrTuxHdb> không chỉ có linux
+[10:40] <MrTuxHdb> :D
+[10:40] <vubuntor703> core thì chắc mấy ổng chạy redhat
+[10:40] <MrTuxHdb> nó là cả một ecosys bao gồm cả ứng dụng server lẫn client
+[10:40] <vubuntor703> mà redhat éo free
+[10:41] <MrTuxHdb> RHEL subscription không rẻ lắm
+[10:41] <MrTuxHdb> nếu muốn tiết kiệm thì không nên xài
+[10:41] <MrTuxHdb> cứ CentOS mà đập
+[10:41] <MrTuxHdb> nhưng phải có chuyên viên quản trị đủ năng lực
+[10:41] <vubuntor703> vấn đề quan trọng là ko biết có đủ nhân lực có trình độ để quản trị hay ko
+[10:41] <MrTuxHdb> mà RHEL cũng thế thôi
+[10:41] <vubuntor703> chứ nói thật
+[10:41] <MrTuxHdb> CentOS/Ubuntu
+[10:41] <vubuntor703> tui làm đây thấy mấy má mà thấy nản
+[10:41] <MrTuxHdb> Debian
+[10:41] <MrTuxHdb> vubuntor703: mỗi người một việc
+[10:42] <MrTuxHdb> cũng như thằng IT đếu làm kế toán được
+[10:42] <MrTuxHdb> nên đừng chê trách người ta :D
+[10:43] <vubuntor703> để mình viết luận cương căn bản trình sếp rồi nếu sếp duyệt thì mới bắt đầu xin ng tư vấn
+[10:43] <MrTuxHdb> cái đề án phải có điều tra/ thống kê tình hình thực tế nữa
+[10:57] <lewtds> nói một hồi vẫn k hiểu point của bác 703 kia là gì nữa :-?
+=== MrTuxHdb is now known as Tux|AFK
+=== Tux|AFK is now known as MrTuxHdb
+[11:21] <MrTuxHdb> lewtds: bị sếp đì
+[11:22] <MrTuxHdb> vào hỏi ấy mà
+[11:22] <MrTuxHdb> =]]
+=== khanhpt|Zzz is now known as khanhpt
+[14:22] <vubuntor097> hỏi ngu: sao lúc sudo apt-get update nó đòi password mà lúc nhập pass lại ko bị thành ***** nhỉ
+[14:22] <vubuntor097> ví duj đây
+[14:22] <vubuntor097> http://pik.vn/20155b107f23-503d-4470-9ffd-ce75ad07bedf.png
+[14:23] <vubuntor097> screenshot ko hiện
+[14:23] <MrTuxHdb> vubuntor097: vì nó thế
+[14:24] <MrTuxHdb> :D
+[14:24] <vubuntor097> mà trên màn hình thì thấy -.-'''
+[14:24] <MrTuxHdb> nó không hiện lên
+[14:24] <MrTuxHdb> cứ gõ tự nhiên rồi enter
+[14:24] <vubuntor097> gõ thì nó vẫn lên đầy đủ password như gõ code bt luôn
+=== khanhpt is now known as khanhpt|Zzz
+=== CoconutCrab is now known as BlanketCrab
+[16:46] <vubuntor039> Chào các bác, em mới dùng 14.04 mà vọc nhiều cài lung tung cứ bị lỗi phải cài lại máy mấy lần mệt quá :( em hỏi có cách gì như system restore bên win để vọc cho dễ ko ạ
+[16:46] <quydo> cài máy ảo nhá
+[16:46] <vubuntor039> :(
+[16:47] <quydo> sao bịlooix mà phải cài lại
+[16:48] <vubuntor039> báo 1 loạt vậy em biết lỗi chính xác đâu, như lần gần đây nhất thì em cài driver amd, rồi steam, rồi mấy thứ linh tinh nữa, xong upgrade lên 14.10 thì đen màn hình :(
+[16:48] <MrTuxHdb> quá bình thường luôn
+[16:48] <MrTuxHdb> vubuntor039: dùng card AMD?
+[16:48] <vubuntor039> ko có cách nào backup system để khi nào lỗi quay lại cho dễ à bác
+[16:48] <vubuntor039> Vâng :3 em biết thằng AMD này khó chơi
+[16:49] <MrTuxHdb> cách xử lý vô cùng đơn giản
+[16:49] <MrTuxHdb> gỡ bỏ cái fglrx
+[16:50] <MrTuxHdb> reinstall unity
+[16:50] <MrTuxHdb> done
+[16:50] <MrTuxHdb> cùng lắm reset unity nữa là perfect
+[16:51] <vubuntor039> em cài thêm desktop lubuntu nữa, khi đấy ko vào dc unity luôn :3 cũng ko tắt dc máy, sau đó em cài lại rồi :(
+[16:52] <vubuntor039> Ko có driver chơi dota2 bị nháy hình bác ạ
+[16:52] <MrTuxHdb> vubuntor039: thế kể ra làm đếu gì nữa
+[16:52] <MrTuxHdb> mất công support
+[16:53] <vubuntor039> Thì bác quydo bảo sao phải cài lại nên em kể :D
+[16:53] <vubuntor039> Em hỏi có cách nào tuơng tự system restore bên win cho dễ vọc ko
+[16:54] <MrTuxHdb> có
+[16:54] <MrTuxHdb> mà quên đi
+[16:54] <vubuntor039> ọc
+[16:54] <MrTuxHdb> tìm cách sửa thay vì cài lại
+[16:54] <MrTuxHdb> đấy mới là cách làm việc của linux user
+[16:54] <MrTuxHdb> tìm nguyên nhân
+[16:54] <MrTuxHdb> khắc phục
+[16:54] <MrTuxHdb> nó mới tăng skills
+[16:54] <MrTuxHdb> còn dùng đồ chơi thì xài windows là được rồi
+[16:55] <vubuntor039> em bỏ win rồi ạ, giờ trước mắt kiếm 1 cái ổn định đã
+[16:55] <vubuntor039> :D
+[16:55] <vubuntor039> có thể cài thêm 1 cái linux nữa
+[16:56] <MrTuxHdb> để làm cái đếu gì?
+[16:57] <vubuntor039> thì nghịch cái linux kia :d chứ cái này phá hỏng nữa thì lấy gì dùng
+[16:58] <MrTuxHdb> nhảm sh!t
+[16:58] <MrTuxHdb> vubuntor039: thế là trò mèo
+[16:58] <MrTuxHdb> có giỏi hơn đâu ngoài vụ "tao xài nhiều hơn"
+[16:58] <MrTuxHdb> :))
+[16:58] <quydo> Mrtux rảnh thế
+[17:00] <MrTuxHdb> quydo: rảnh mô?
+[17:00] <vubuntor039> tóm lại vẫn phải dùng song song win à
+[17:01] <vubuntor039> MrTux người miền trung ợ?
+[17:01] <MrTuxHdb> người miền Bắc, sống ở miền Nam nói giọng miền Trung
+[17:01] <MrTuxHdb> =]]
+[17:02] <vubuntor039> vãi
+[17:10] <quydo> voãi

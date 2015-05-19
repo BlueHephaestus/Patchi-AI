@@ -1,0 +1,4 @@
+[18:36] <swiftynb> is there some reason exec /home/ubuntu/test/myexecutable 
+[18:36] <swiftynb> would not keep running?
+[18:36] <swiftynb> with upstart
+=== JanC_ is now known as JanC

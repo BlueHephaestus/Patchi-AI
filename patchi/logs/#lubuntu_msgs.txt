@@ -1,0 +1,44 @@
+<gefiltefish> can someone help me fix this "boot device not found 3f0" error? what i did was delete my efi partition now i'm stuck with a bricked laptop with xubuntu installed, but inaccessible. all the linux distros i've tried on a liveusb won't boot. super grub2 disk is the only exception but it's kind of useless. i can use it to get to xubuntu's terminal though.
+<pandji> hi guess, my audacious wont work
+<pandji> it say alsa error: no suitable mixer element found.  alsa error: snd_mixer_find_selem failed.
+<ianorlyn> pandji: does any soudn work
+<pandji> no
+<pandji> but my gnome player work well
+<holstein> !audio
+<ubottu> if you're having problems with sound, click the volume applet, then sound preferences, and check your volume, hardware, input, and output settings.  if that fails, see https://help.ubuntu.com/community/sound - https://help.ubuntu.com/community/soundtroubleshooting - http://alsa.opensrc.org/dmixplugin - for playing audio files,  see !players and !mp3.
+<holstein> pandji: so, *does* sound play in gnome player? yes or no?
+<pandji> yes
+<holstein> pandji: what os are you using? lubuntu? 14.04? 15.04? any ppa's? what are you trying to play? an mp3? what type of file?
+<pandji> mp3
+<pandji> i am newbie here :)
+<holstein> i would personally remove codec support from the equation, and test with a simple ogg
+<pandji> i just intall lubuntu 14.04 just a minute ago :p
+<pandji>  thx ubottu i.ll check alsa.opensrc ...
+<holstein> ubottu is a bot
+<ubottu> yes, i can confirm that i am a bot. http://wiki.ubuntu.com/irc/bots for all information.
+<pandji> holstein : any manual / howto to do that, tthx
+<holstein> how to do what?
+<pandji> u say to remove codec support from ...
+<pandji> :p
+<holstein> pandji: i say, theres no need to test with an mp3
+<holstein> pandji: i said, remove mp3 support from your equation by not using an mp3 to test if you audio is working or not
+<holstein> use soemthing that is known supported, an ogg, for example, or an audio test
+<pandji> oh i see, so got to convert all my mp3 into ogg first ya :p
+<holstein> pandji: i did *not* say that
+<holstein> pandji: i dont want, or think you should convert all your mp3's
+<ianorlyn> i usually buy cds and rip to flac or ogg
+<holstein> pandji: i say, you could have a codec issue that you are percieving as audio playback issue
+<holstein> pandji: you say, audio isnt working, and i say, your mp3's are not workling, so, try a simple, known-good ogg
+<holstein> if the ogg plays, then, you no audio plays in audacious.. and you can add mp3 support
+<pandji> okay, ill try to download some ogg files first
+<lubuntu274> if i use lubuntu 64bit is any software on lubuntu 64 bit ?
+<teward> lubuntu274: i don't understand your question?
+<lubuntu274> strange.
+<lubuntu274> some os can be 64bit and sometimes the programs on it can be 32bit.
+<teward> lubuntu274: most programs in the ubuntu repositories exist on both
+<teward> lubuntu274: some are 32bit only but you can set up multiarch support and that solves that
+<lubuntu274> if i use 64 bit is it installs 64 bits programs automatic ?
+<teward> lubuntu274: typically yes.
+<teward> lubuntu274: at least, when installing from the repositories
+<badluckryan> hello, can someone walk me through how to recreate my efi partition? i deleted it by accident but found a way to make one with gparted. i have a workaround to get to xubuntu desktop but when my laptop boots normally i get "boot device not found 3f0".   basically, i need to repopulate the /boot/efi/ path
+<lubuntu274> what linux i mostly used on a netbook ? i have 64bit cpu and 1gb ram.

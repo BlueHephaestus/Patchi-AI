@@ -1,0 +1,275 @@
+<rafaelsoaresbr_> robfisico, desativou secure boot? se funcionava antes ou vc resetou/atualizou a bios
+<rafaelsoaresbr_> robfisico, tenta se lembrar o que vc fez.
+<robfisico> rafaelsoaresbr_: o meu note n tem a opcao (positivo premium s5005)
+<robfisico> rafaelsoaresbr_: vou tentar sim
+<rafaelsoaresbr_> robfisico, vc reinstalou o windows recentemente? deveria ter instalado em partição mbr comum
+<robfisico> rafaelsoaresbr_: reinstalei sim
+<rafaelsoaresbr_> robfisico, na bios está setado ahci ou ide?
+<rafaelsoaresbr_> robfisico, se bem que se você mudar essa opção o windows vai dar tela azul
+<robfisico> rafaelsoaresbr_: ahci
+<shallwe> boa noite galera
+<astroo-> ola
+<shallwe> alguem assim por acaso usando drive ati no ubuntu? estou usando o 14.04 e tenho uma radeon 6290 , é onboard
+<shallwe> mas esta dando erro na hora de instalar o drive proprietário simplesmente nao vai!
+<shallwe> alguém com placa de vídeo da amd com drive proprietário?
+<astroo-> da uns 15 minutos pela possivel resposta de alguem
+<shallwe> sabadao a noite eu não espero muito não :)
+<astroo-> pior em geral e sexta
+<shallwe> kkk
+<astroo-> ve o privado
+<ary> opa. alguém sabe me dizer como instalo o flashplugin no opera?
+<ary> opa. alguém sabe me dizer como instalo o flashplugin no opera?
+<astroo-> ola
+<astroo-> ciao pessoal
+<guest78587> alguém online?
+<chadus> fala povo, bom dia
+<chadus> alguém pode me dar uma força para fazer dual boot com w8?
+<rafaelsoaresbr_> bom dia moçada.
+<augustot1> olá
+<augustot1> olá
+<marcelomauro> bom dia. alguém teria uma indicação de literatura sobre as especificações do sistema de arquivo ext (do 1 ao 4). estou precisando estudar sobre o assunto para apresentar um seminário e tenho encontrado apenas artigos de blogs. precisando de algo mais completo.
+<rafaelsoaresbr> marcelomauro, infelizmente é difícil encontrar material em pt-br
+<marcelomauro> pode ser ingles
+<marcelomauro> sem problema
+<mirqui> boa tarde :)
+<elfon_> marcelomauro: www.vivaolinux.com.br/artigo/sistemas-de-arquivos-para-gnu-linux
+<marcelomauro> elfon_, cara eu até já li este. acontece que a maioria das fontes que ele usa é a wikipedia, ou seja, fontes secundária. estou precisando de indicação de fontes primárias, com a própria documentação do sistema de arquivo ou coisa do tipo.
+<marcelomauro> mas obrigado por ajudar
+<elfon_> ah sim. se você quer um artigo científico aí  tem que procurar em algum periodoco
+<elfon_> só  que não conheço nenhum
+<marcelomauro> pronto, é isso que eu preciso. trabalho de faculdade e já coletando dados pro tcc
+<marcelomauro> valeu mano
+<mirqui> marcelo , olha isto
+<mirqui> https://www.ecosia.org/search?q=gnu%2flinux+atuais%2c+tais+como+ext3%2c+ext4%2c+xfs%2c+jfs+e+reiserfs+%2b+fontes+primarias&addon=opensearch
+<mirqui> vê se ajuda
+<mirqui> http://pt.slideshare.net/michaelnickolas/apostila-so
+<marcelomauro> este ultimo é o que mais sse aproxima. mas o cara apenas parafrasea o tanembaum (usa até figuras do livro dele, rsrs)
+<mirqui> sinto muito , nem sei do que se trata , só lancei no buscador
+<marcelomauro> agradeço irmão
+<marcelomauro> eu preciso dar uma palestra sobre sistema de arquivo com log (e consequentemente journaling). foram divididas as tarefas e cada mebro falará de um tipo distinto (reserfs, hfs, ntfs...) a mim coube a familia ext ( ext, ext2, ext3, ext4).
+<marcelomauro> já encontrei inumeros artigos em blogs e portais da net, mas preciso de livros, ou especificações técnicas para dar mais credibilidade
+<mirqui> no ecosia tem pouca coisa , mas no google tem bastante
+<mirqui> https://www.google.com.br/?gws_rd=ssl#q=+distribui%c3%a7%c3%b5es+gnu%2flinux+atuais%2c+tais+como+ext3%2c+ext4%2c+xfs%2c+jfs+e+reiserfs+%2b+fontes+prim%c3%a1rias
+<marcelomauro> enfim...
+<marcelomauro> livros são dificeis... então pensei que alguém por aqui com mais experiencia já conhecesse algum.
+<mirqui> o elfon é avançado , o rudolf
+<mirqui> o hggdh
+<mirqui> faz um quais quais quais no ouvido deles , pode ser que te indiquem algo
+<marcelomauro> blz
+<rafaelsoaresbr> https://scholar.google.com.br/
+<rafaelsoaresbr> http://www.scielo.br/?lng=pt
+<fabianin> pessoal, já tentei de tudo na internet mas nada funciona, meu notebook tem aquelas placas hibridas, uma intel e outra ati hd 7730m e eu não consigo fazer de jeito nenhum fazer a radaeon funcionar... alguém ai provavelmente já teve problema parecido, como faço?
+<rafaelsoaresbr> tenho um amigo que um problema parecido em outra distro. nunca tive notes com esse sistema dual
+<rafaelsoaresbr> fabianin, você instalou os drivers proprietários?
+<rafaelsoaresbr> fabianin, se instalou, tenta instalar uma versão mais recente
+<fabianin> eu já tentei basicamente de tudo
+<fabianin> segui váriios tutoriais rafaelsoaresbr
+<mirqui> fabianin vê se vc pesquisou isto
+<mirqui> https://www.google.com.br/?gws_rd=ssl#q=+meu+notebook+tem+aquelas+placas+hibridas%2c+uma+intel+e+outra+ati+hd+7730m+e+eu+n%c3%a3o+consigo+fazer+de+jeito+nenhum+fazer+a+radaeon+funcionar+%2c+o+que+fazer
+<fabianin> ....
+<mirqui> ahaha isto é sim ou não ?
+<fabianin> não...
+<fabianin> eu já disse, já to a 3 dias tentando instalar isso
+<fabianin> pra eu apelar pro irc é pq a coisa tá feia
+<mirqui> tenta drivers proprietários
+<fabianin> já tentei...
+<mirqui> xii
+<fabianin> já tentei desativar a placa da intel
+<mirqui> pq vc usa duas placas de vídeo ?
+<mirqui> a intel é mais compativel
+<fabianin> pq meu notebook veio assim uai
+<fabianin> é mais compativel só que com muito menos desempenho que uma dedicada
+<mirqui> vc é gamer ou usa o pc para o trabalho ?
+<fabianin> trabalho
+<mirqui> e o desempenho da placa de deixa muito abaixo do que vc precisa para o dia a dia ?
+<rafaelsoaresbr__> fabianin, já instalou drivers do site da amd?
+<fabianin> já rafaelsoaresbr__ , mirqui bastante
+<mirqui> não sei o que dizer cara ,
+<mirqui> vc usa linux ou windows ?
+<fabianin> mirqui: uso linux
+<fabianin> mirqui: mas to vendo que vou ter de usar o windows
+<mirqui> olha isto
+<mirqui> https://www.google.com.br/?gws_rd=ssl#q=ati+hd+7730m+driver+linux
+<mirqui> e as placas intel
+<mirqui> https://www.google.com.br/?gws_rd=ssl#q=placas+de+v%c3%addeo+intel+%2b+drivers
+<mirqui> se vc não achar nada , meu caro , está com um bruto azar ahaha
+<mirqui> e em último caso faz dual boot
+<android_> alguem ai
+<mirqui> falaaaa :)
+<android_> to tendo dificuldade com o comando airmon-ng start wlan0
+<android_> ta pedindo pra instala alguma coisa
+<mirqui> xii tenta o elfon ou o rudolf
+<mirqui> ou alguém mais avançado
+<android_> tao offs ?
+<mirqui> espera
+<mirqui> opa vc está tentando descobrir senhas ?
+<android_> sim
+<android_> to testando vunerabilidade da rede da empresa que trabalhor
+<android_> com meu celular
+<mirqui> sou novo no linux cara
+<android_> mais vc ja falo com alguem aq que sabe alguma coisa
+<mirqui> de senhas para celular só sei senha do wifi
+<mirqui> não , só pesquisei no google
+<android_> fico emprecionado com que vc pode fazer com um celular hj em dia
+<mirqui> tipo ?
+<android_> to rodando debian no meu celular agora
+<android_> to falando por ele
+<mirqui> eu estou querendo baixar o ubuntu touch
+<mirqui> quando chegar
+<mirqui> ou seja , uma derivação debian :)
+<ukinami> boas
+<mirqui> blza :)
+<ukinami> ppl eu tentei actualizar o ubuntu 14.04  para o 15 por favor ja tentei não consegui obrigado
+<mirqui> me parece que o 15 ainda está bruto
+<mirqui> o 14.10 tem atualizações por9 meses
+<mirqui> por 9 meses
+<mirqui> qual erro dá ?
+<ukinami> eu tentei pelo actualizador no ubuntu diz que não tem actualizações
+<ukinami> eu li no google instalei coisas no terminal alterei no updater
+<ukinami> e continua a dizer que não tem actualizações
+<mirqui> então não existem , acho que o 15 é para testes ainda
+<ukinami> e para o 14.10 tambem, não actualiza
+<mirqui> você é desenvolvedor ?
+<ukinami> não mas gostava mas nao sou
+<mirqui> o 14.10 é estável
+<ukinami> como actualizo para p 14.10 ?
+<mirqui> qual verção você tem ?
+<ukinami> 14.04
+<mirqui> eu atualizei para a14.04.02 tem suporte para 5 anos
+<mirqui> a 14.10 é só por 9 meses
+<ukinami> então amntenho me com o 14.04 ?
+<mirqui> não sei para o que você quer o ubuntu
+<mirqui> não posso te dizer
+<mirqui> o lógico é :
+<ukinami> para utilizaão normal
+<ukinami> utilização normal
+<mirqui> 14.04 porque tem suporte por 5 anos
+<ukinami> ok
+<cyber> ola
+<mirqui> oi :)
+<cyber> sou novo
+<cyber> no irc
+<ukinami> ok obrigado
+<mirqui> ukinami , para que você quer o ubuntu?
+<cyber> como isso fuciona?
+<mirqui> se você tem uma dúvida
+<mirqui> ou problema , tem os participantes do chat para ajudar
+<cyber> ???
+<mirqui> ahaha que foi ?
+<cyber> nada
+<mario__> ola pessoal estou com problemas no meu ubuntu....
+<mirqui> fala ,
+<mario__> sou novo no linux.
+<manokara_> seja bem vindo :)
+<mirqui> ahaha tbm , se der te ajudo
+<mario__> dai o seguinte como faço para reinstalar a versão 64 bits por cima de uma 32 bits
+<mirqui> lado a lado
+<manokara_> hmmm, bom, você que fazer exatamente isso
+<mario__> há tenho um note velho
+<mirqui> dualboot
+<mario__> tipo só tenho 2 gb de ram
+<manokara_> nunca tentei algo do gênero mas, deveria substituir o sistema de base e deixar só os teus dados da pasta /home
+<mario__> bom hoje tenho dois sistema "ruindows" e linux
+<mirqui> que tem 2gb , se fizer dual boot vai usar um sistema de ccada vez
+<mirqui> eu já fiz trial boot
+<mirqui> windows , mint e ubuntu
+<mario__> eu já estou estou usando dual boot..
+<mirqui> eu agora estou só usando o ubuntu
+<mirqui> tanto no note como no desk
+<mario__> mas será que há possibilidade de atualizar a versão de 32 para 64?
+<manokara> tive uma má experiência com dual boot, sempre bixava ou o windows ou o linux depois de um tempo
+<mirqui> isso não sei te dizer mario
+<v1n4x> esperando os adm freenode me dar invisibilidade : https://xumacao.files.wordpress.com/2009/12/caveirainternauta.jpg
+<cyber> axo que nao
+<mirqui> usava 32 bits no note
+<mirqui> agora uso 64
+<manokara> mario, você quer manter os programas instalados, fazendo um upgrade ou isso não é muita preocupação?
+<mario__> bom então só me resta forma matar novamente o hd e reinstalar a versão 64
+<mirqui> faz backup
+<mirqui> tem muitos dados no hd ?
+<mario__> manokara .... não tenho nada salvo ainda na versão 32
+<mario__> então não tenho nada a perder
+<manokara> então, não tem com o que se preocupar, é só reinstalar mesmo
+<manokara> mas seria bom deixar a partição /home separada do resto, assim se você quisesse formatar a distro em um momento futuro, não ia perder seus arquivos pessoais
+<mario__> eu ja fiz isso meu hd é pequeno mas deixei um espaço pra isso.
+<manokara> hmm, legal
+<mirqui> eu baixei o ubuntu 64 bits do superdownloads
+<manokara> to juntando umas economias pra comprar um ssd pra distro (boot na velocidade da luz! rsrs), e um hd de 4tb pra minha /home
+<mirqui> o ssd tem ciclos
+<mario__> num hd de 160gb deixei um espaço para" ruindows" 80gb e mais 40gb para linux e 35 gb para arquivos....e 3 gb para fashe
+<mario__> cara meu note é velho estou usando para teste.
+<mario__> tipo é de 2008....kkkk
+<manokara> kkk
+<manokara> normal
+<manokara> linux é o sistema amigo dos pcs velhos que aquele seu tio dá
+<mario__> por isso estou migrando para o linux.... tem outros motivos também...kkk
+<mario__> quero que meu filho aprenda sobre a plataforma linux
+<mirqui> qual a idade dele ?
+<mario__> tipo o muleque tem 7 anos e fuça em tudo..kkk
+<mirqui> olha isto
+<mirqui> http://www.guiafoca.org/
+<mirqui> tem um belo início :)
+<mario__> mas deixa comigo.... vou tentar fazer funfar a distro
+<mario__> vlw..... muito obrigado
+<magnific> boa tarde pessoal, os botoes do mouse no meu laptop estao completamente doidos, estou sem o botao primario.. ele funciona como o secundario alguem ai ja resolveu algo parecido, vlw
+<mirqui> xii não te entendi
+<mirqui> destro e canhoto , é isso ?
+<magnific> isso
+<cyber> va em configuracoes de tochpad e mouse
+<magnific> ja tentei isso e nao funfou, atualizei pra ultima versao do ubuntu e tb nao funfou
+<mirqui> qual versão ?
+<magnific> a ultima, 15
+<mirqui> xii estou na 14
+<magnific> na 14 estava com o mesmo problema, atualizei e continua igual
+<manokara> hmm, diz aí, qual o modelo do teu note?
+<mirqui> opa
+<mirqui> vc viu os drivers ?
+<manokara> mesmo mudando nas opções e nao adiantado, talvez o driver de touchpads não tá de bem com teu hardware
+<mirqui> ou pacotes
+<magnific> é um dell
+<magnific> manokara isso eu percebi tb
+<mirqui> drivers proprietários
+<magnific> eu tava com a versao 12 e funcionava tudo normal, na 14 comecou esse bug
+<mirqui> ou no site vê se tem para linux
+<mirqui> faz downgrade
+<magnific> putz downgrade nem vira cara
+<mirqui> os programas são atualizados normalmente
+<mirqui> é só o kernel que muda
+<mirqui> por que ?
+<magnific> muito trampo
+<mirqui> não tens a iso ?
+<manokara> né.. rsrs
+<manokara> é um del 5537?
+<manokara> dell*
+<manokara> dando uma pesquisada, achei isto: http://askubuntu.com/questions/483229/dell-5537-touchpad-not-working-ubuntu-14-04
+<manokara> vê se você tem os pacotes xserver-xorg-input-synaptics e gpointing-device-settings instalados
+<magnific> manokara: olhei esse topic tb estao instalados
+<magnific> deixa eu ver a qual eh a versao desse laptop guentae
+<manokara> hmm, blz
+<mirqui> boa sorte , fui :)
+<magnific> acho que é um dell inspiron 14r no site deles nao tem mais o modelo pra checar vish
+<manokara> é tenso isso :/
+<manokara> tem embaixo dele não?
+<magnific> eh perae
+<magnific> manokara dell inspiron 14 (3421, early 2013)
+<magnific> eh vou ter que voltar pra versao 12 mesmo, as outras tem alguns componentes que nao vao funcionar =/
+<manokara> hmmm, não consegui achar nada de bom por aqui :/
+<manokara> deve ter alguma gambiarra sinistra pra trocar os botões
+<manokara> hehe
+<magnific> deve ter mas, por enquanto ninguem postou sobre isso aonde
+<magnific> http://www.ubuntu.com/certification/hardware/201209-11718/
+<magnific> eles recomendam a 12 mesmo
+<magnific> putz
+<manokara> https://wiki.archlinux.org/index.php/touchpad_synaptics - dá uma olhada boa nisso aqui, quem sabe haja uma luz
+<manokara> tem todo um guia pra testar o funcionamento, editar o .conf do synaptics manualmente..
+<astroo-> ola pessoal
+<manokara> olá
+<magnific> ahn sei la
+<magnific> mto trampo
+<astroo-> ola
+<magnific> astroo-: olá
+<manokara> ^^
+<astroo-> ola
+<manokara> astro, já passou por algum problema desse tipo? botoes do touchpad trocados, e não resolvem nas confs...
+<magnific> vlw ai galera, vou fazer backup e voltar pra versao 12 mesmo
+<magnific> obrigado

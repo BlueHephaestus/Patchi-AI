@@ -1,0 +1,7 @@
+=== ChanServ changed the topic of #Ubuntu-nl-mwanzo-klas to: Onderwerp voor #Ubuntu-nl-mwanzo-klas is:  zat 15 jan om 19.30  workshop python voor beginners  #Ubuntu-nl-mwanzo-klas. Leiding: commandoline. logs op http://irclogs.ubuntu.com.
+[07:53] <leoquant> Workshops: http://wiki.ubuntu-nl.org/community/mwanzo/Workshop
+[07:53] <leoquant> Workshops: http://wiki.ubuntu-nl.org/community/mwanzo/Workshop
+[07:54] <leoquant> Workshops: http://wiki.ubuntu-nl.org/community/mwanzo/Workshop
+[07:56] <leoquant> Workshops: http://wiki.ubuntu-nl.org/community/mwanzo/Workshops
+=== ChanServ changed the topic of #Ubuntu-nl-mwanzo-klas to: zat 15 jan om 19.30  workshop python voor beginners  #Ubuntu-nl-mwanzo-klas. Leiding: commandoline. logs op http://irclogs.ubuntu.com.
+[07:57] <leoquant> Workshops: http://wiki.ubuntu-nl.org/community/mwanzo/Workshop

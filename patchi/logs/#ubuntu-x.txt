@@ -1,0 +1,5 @@
+=== tomreyn_ is now known as tomreyn
+[10:32] <karolherbst> small question: why does a "service ligthdm start" forces everything to my nvidia card allthough I have bumblebee installed and set the alternatives through update-alternatives to mesa (which gets set to nvidia through the service start again) in 15.04?
+[10:32] <karolherbst> it worked with 14.04 and 14.10 without problems
+=== karolherbst1 is now known as karolherbst
+=== JanC_ is now known as JanC

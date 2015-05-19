@@ -1,0 +1,1 @@
+=== ChanServ changed the topic of #ubuntu-dc to: We have moved to #ubuntu-us-dc, please type /join #ubuntu-us-dc to get to us

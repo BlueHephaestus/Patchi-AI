@@ -1,0 +1,4 @@
+[16:40] <meeting> * Translation has started for English on #ubuntu-us-dc-en
+[16:41] <meeting> <kjcole_> Odd... I'm not sure why this was offered as a SugarLabs channel... Musta been something I did. ;-)
+[16:41] <meeting> <kjcole_> And this amazing product translates English to... English. ;-)
+[16:42] <meeting> * kjcole_ on #ubuntu-us-dc-en has left

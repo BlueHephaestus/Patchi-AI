@@ -1,0 +1,792 @@
+apr 28 23:00:12 <deltab>	raw tcp/ip would likely only be available to browser extensions or packaged web apps
+apr 28 23:00:13 <localred>	is that something that the websockets works around, or does it suffer from the same limitations? and would most (or any) major browsers allow such a tcpip connection?
+apr 28 23:00:37 <hello_kitty>	websockets work around it.. they're basically a flavor of tcp/ip made for browsers
+apr 28 23:01:05 <deltab>	ws is a protocol that runs over tcp/ip
+apr 28 23:01:14 <hello_kitty>	as opposed to like.. browser-specific udp magicks, which i assume exist but havent touched
+apr 28 23:01:41 <deltab>	browsers don't allow web pages to access tcp because of the likelihood of abuse
+apr 28 23:04:33 <localred>	to what degree is websockets sandboxed on the local machines then?
+apr 28 23:05:00 <localred>	is it completely possible to interact with both the server back on the web and the local program on the client (all through the javascript intermediary)?
+apr 28 23:05:44 <hello_kitty>	i don't know anything about sandboxing, but i can connect to a variety of ws servers locally and on the internet at the same time
+apr 28 23:06:03 <hello_kitty>	i'm not sure if i've set some sort of developer flag, i can't remember... i think it just works
+apr 28 23:06:51 <hello_kitty>	i'm pretty sure multiple connections can even be opened from one conventional webpage
+apr 28 23:08:19 <localred>	because i was reading that websockets begins from an upgrade of an http protocol connection, but i think you are right and i think this is all possible. on to an attempt at an implementation
+apr 28 23:15:59 <aucklab>	having an issue with $.each() -- i'm sure it's probably a variable scope problem. essentially, i am doing an $.each() on a json element array, and then i am trying to store the values via .push into another array.having an issue with $.each() -- i'm sure it's probably a variable scope problem. essentially, i am doing an $.each() on a json element array, and then i am trying to store the values via .push into
+apr 28 23:16:00 <aucklab>	 another array.
+apr 28 23:16:01 <aucklab>	when my $.each() loop ends, i no longer apparently have access to the variable.
+apr 28 23:16:05 <aucklab>	here is my code: http://pastebin.com/tnxs1ddx
+apr 28 23:16:43 <ljharb>	aucklab: a) #jquery for jquery questions, b) never use $.each on arrays, use array.prototype.foreach and friends for that.
+apr 28 23:17:00 <ljharb>	aucklab: ie, `data.businesses.foreach(function (business) { })`
+apr 28 23:17:06 <aucklab>	#jquery is dead, unfortunately.
+apr 28 23:17:11 <ljharb>	and since you're using "push", you'd want a map instead of a foreach.
+apr 28 23:17:18 <aucklab>	okay :)
+apr 28 23:17:28 <aucklab>	is there a better way to store it? i'm a python guy, not js, trying to learn.
+apr 28 23:19:17 <aucklab>	i changed it to data.businesses.foreach -- working very well, thank you. my variable scope is still off.
+apr 28 23:19:27 <aucklab>	line 27 results in 0.
+apr 28 23:19:38 <ljharb>	wait
+apr 28 23:19:42 <aucklab>	(i assume because the scope is wrong) -- line 22 works, line 27 does not.
+apr 28 23:19:42 <aucklab>	sure :)
+apr 28 23:19:44 <ljharb>	is data.businesses an array, or an object
+apr 28 23:19:51 <ljharb>	note that "associative arrays" in php are not arrays.
+apr 28 23:20:04 <aucklab>	ah, it's an object.
+apr 28 23:20:17 <aucklab>	it comes from the json get,
+apr 28 23:20:50 <ljharb>	aucklab: ok then `var businesses = object.keys(data.businesses).map(function (key) { return "key: " + key + " = val: " + data.businesses[key].name + "<br />"; });`
+apr 28 23:21:12 <aucklab>	data.businesses i an object, but businesses is an array (ideally)
+apr 28 23:21:27 <aucklab>	instead of my foreach. gotcha.
+apr 28 23:21:27 <ljharb>	yup ^&
+apr 28 23:22:39 <aucklab>	here's the new code: http://pastebin.com/q9svq4eg
+apr 28 23:23:58 <aucklab>	in this case, 20 alerts 0
+apr 28 23:24:34 <ljharb>	aucklab: ok now the problem is that you don't understand async :-)
+apr 28 23:24:42 <ljharb>	aucklab: the data is only *ever* available inside the getjson callback.
+apr 28 23:24:46 <aucklab>	okay, great -- we're making progress! ;)
+apr 28 23:24:51 <ljharb>	aucklab: once you go async, it's async forever, and your program continues forever inside callbacks.
+apr 28 23:25:00 <aucklab>	i can't store it outside of that scope?
+apr 28 23:25:01 <aucklab>	interesting.
+apr 28 23:25:02 <ljharb>	no
+apr 28 23:25:12 <ljharb>	aucklab: one way to think about it is that line 17 executes many thousands of seconds after line 20 runs.
+apr 28 23:25:32 <aucklab>	that makes total sense now.
+apr 28 23:26:21 <aucklab>	so, it does store in businesses, it's just not there when my next line runs.
+apr 28 23:26:41 <aucklab>	so, if i had a button, and i ran that onclick(), then i referenced the businesses var .. data would exist.
+apr 28 23:26:42 <ljharb>	(also, don't use "alert", use console.log)
+apr 28 23:26:47 <aucklab>	okay :)
+apr 28 23:26:53 <ljharb>	potentially yes
+apr 28 23:26:54 <aucklab>	thank you for all of this, as you can tell, i am brand new to js.
+apr 28 23:27:00 <ljharb>	np, got to start somewhere
+apr 28 23:27:09 <aucklab>	instead, i should do all of my updates inside of the async process.
+apr 28 23:27:22 <aucklab>	so, the data i am retrieving in the async, i may need later.
+apr 28 23:27:31 <aucklab>	meaning, i will reference it based on button presses.
+apr 28 23:28:15 <aucklab>	use case example: i want to retrieve a list of restaurants near me using the yelp api (i am using a nodejs middleware for this, which is returning the json) ... then i want to populate buttons with those yelp results, and allow the buttons to be pressed.
+apr 28 23:28:36 <aucklab>	so, i can store the names with append() and then retrieve them with val(), as a "poor man's proof of concept" solution.
+apr 28 23:28:44 <aucklab>	using the buttons themselves as vars, in essence .. lol.
+apr 28 23:29:12 <aucklab>	or, alternatively, i can push the data to the mongodb, and then read it from mongo using a separate async call when needed.
+apr 28 23:29:17 <aucklab>	which sounds less convoluted.
+apr 28 23:33:36 <ljharb>	less convoluted is usually better :-)
+apr 28 23:37:59 <aucklab>	hehe.
+apr 28 23:38:16 <aucklab>	thanks so much for your help -- it's storing beautifully in the mongodb, and this will prevent a further query to the node middleware.
+apr 28 23:38:21 <jrich523>	anyone work with xslt and javascript?
+apr 28 23:38:24 <aucklab>	freeing it up to do orchestration, like it should.
+apr 28 23:38:42 <jrich523>	i ask, becuase im looking to do a master/detail layout, and that doesnt seem to be supported by xslt alone
+apr 28 23:41:51 <javascript522>	whats faster in a loop? accessing arrays via array[i].dosomething
+apr 28 23:42:13 <javascript522>	or going var entry = array[i]; entry.dosomething
+apr 28 23:42:40 <javascript522>	assume that there's a large amount of entry or entry[i].dosoemthings
+apr 28 23:42:45 <havvy>	javascript522:  they're equivalent.
+apr 28 23:43:13 <javascript522>	even after large amounts of accessing?
+apr 28 23:43:19 <havvy>	yes.
+apr 28 23:43:27 <javascript522>	how's that work?
+apr 28 23:43:43 <falafel>	or just use `map`
+apr 28 23:43:46 <javascript522>	wouldn't js have to look up array[i] every time while var value = array[i] would store that certain value?
+apr 28 23:44:25 <havvy>	but yes, if you use .map() or .filter() or whatever is appropriate, it shouldn't matter.
+apr 28 23:44:37 <javascript522>	talking performance wise, gotta choose the best possible
+apr 28 23:44:43 <falafel>	nah
+apr 28 23:44:49 <javascript522>	i'm fairly sure .map and .filter is slightly sloewr
+apr 28 23:45:03 <falafel>	it won't make a difference 99% of the time
+apr 28 23:45:20 <falafel>	chose what's most readable first
+apr 28 23:45:39 <javascript522>	going through some legacy code, it isn't readable
+apr 28 23:47:13 <havvy>	then make the parts that you do modify readable. ;)
+apr 28 23:48:32 <ljharb>	javascript522: "faster" doesn't matter.
+apr 28 23:48:58 <ljharb>	javascript522: choose the cleanest possible. then test it and make sure it works. then profile it. and only *then* should you concern yourself with speed, and only on the slowest parts.
+apr 28 23:49:20 <ljharb>	javascript522: and loops are rarely more readable than an iteration.
+apr 28 23:54:12 <falafel>	all that you are doing with loops already have abstractions built-in
+apr 28 23:54:12 <falafel>	xs.map(dot('prop'))
+apr 28 23:54:12 <falafel>	dot=x=>xs=>xs[x]
+apr 28 23:54:43 <guest99207>	wtf is that lol
+<falafel>	guest99207, what>
+<falafel>	?
+<guest99207>	dot=x=>xs=>xs[x]
+<falafel>	guest99207, a function that takes `x` and returns a function that takes `xs`, and returns `xs[x]`
+<guest99207>	that's a weird type signiture
+<falafel>	type signature?
+<falafel>	guest99207, it is short arrow functions
+<agro>	es6 ftw
+<falafel>	well, sort of
+<agro>	oh i didnt know it binded, thats cool
+<agro>	can get rid of a lot of those
+<guest99207>	what is xs[x]
+<agro>	the xth element in the array xs
+<agro>	or maybe its map
+<agro>	a map*
+<falafel>	the property `x` of the object `xs`
+<falafel>	`xs` can be an object, or array, or some other object
+<ljharb>	instead of "xs"
+<ljharb>	call it "pluck".
+<ljharb>	it's a function that takes a property, that returns a function that takes an object and returns object[property]
+<ljharb>	overly short identifier names make things confusing :-)
+<falafel>	ljharb, sometimes they read better to me if you have a convention
+<falafel>	`k` for "key", `xs, ys, zs` for arrays, `x, y, z` for values, `a, b, c` for arguments, and so on
+<falafel>	when in doubt, then name it, if it is generic, then `xs` and `x` reads fine to me, or `obj` and `k`
+<havvy>	falafel:  i always use `obj/array/key/value/arg`
+<ljharb>	falafel: yes but that's a weird convention that i've never seen anyone but haskellers use
+<torkable>	which is why xs[x] looks horrific
+<falafel>	lol
+<torkable>	its like a weird bastardized haskell syntax
+<ljharb>	letters are free, "key" is better than "k" :-)
+<cyberbrai>	how to dynamically append the onclick event in td
+<ljharb>	cyberbrai: the event is called "click", not "onclick"
+<ljharb>	!onfoo @ cyberbrai
+<ljharb>	um, wtf?
+<havvy>	!onevent
+<havvy>	!onx
+<havvy>	:s
+<cyberbrai>	ooo sorry for that but there is on click
+<ljharb>	>> 3
+<ljharb>	ecmabot is broken :-(
+<cyberbrai>	http://stackoverflow.com/questions/19470532/onclick-dynamically-added-with-javascript-to-td-element-doesnt-work
+<cyberbrai>	how can i make it working
+<ljharb>	cyberbrai: using ".onclick", ".onchange", or "on" anything is bad practice and results in poorly factored, hard-to-manage code; as well as limiting you to one event listener per event. consider attaching your events with addeventlistener, instead, eg: https://developer.mozilla.org/en/dom/element.addeventlistener
+<havvy>	!learn onfoo = using ".onclick", ".onchange", or "on" anything is bad practice and results in poorly factored, hard-to-manage code; as well as limiting you to one event listener per event. consider attaching your events with addeventlistener, instead, eg: https://developer.mozilla.org/en/dom/element.addeventlistener
+<torkable>	lol i saw onfoo work earlier today
+<ljharb>	havvy: i think ecmabot is frozen.
+<ecmabot>	cyberbrai: using ".onclick", ".onchange", or "on" anything is bad practice and results in poorly factored, hard-to-manage code; as well as limiting you to one event listener per event. consider attaching your events with addeventlistener, instead, eg: https://developer.mozilla.org/en/dom/element.addeventlistener
+<ecmabot>	havvy: you should prefer using the dom 2 addeventlistener & removeeventlistener methods to using the on<event name> property. see https://developer.mozilla.org/en/dom/element.addeventlistener#why_use_addeventlistener.3f
+<ecmabot>	havvy: learned `onfoo`.
+<ecmabot>	ljharb: (number) 3
+<ljharb>	the factoid already exists.
+<ljharb>	aha
+<ljharb>	there we go
+<ljharb>	ok, who's screwing with ecmabot in pm
+<falafel>	b>"i work"
+<babelbot>	falafel: i work
+<ljharb>	omg, `man splain` is a thing on the command line
+<cyberbrai>	<table id="t" onclick="modifytext();">  ljharb
+<ljharb>	cyberbrai: right. don't use onclick ever.
+<ljharb>	cyberbrai: your js should go in a .js file, not inside your html
+<cyberbrai>	yes you are right
+<cyberbrai>	so what i use the document you give me  https://developer.mozilla.org/en/dom/element.addeventlistener#why_use_addeventlistener.3f  no event listener
+<cyberbrai>	so what i use in .js file
+<ljharb>	cyberbrai: document.getelementbyid('t').addeventlistener('click', function (e) { })
+<cyberbrai>	wait
+<cyberbrai>	http://jsfiddle.net/q301p7af/  that's my fiddle not complete actally there is reverse function who give me username and user id
+<cyberbrai>	how can i add the it
+<falafel>	you seem to be mixing all kinds of stuff there...
+<falafel>	strings are no good for building dom
+<falafel>	at least, not like that
+<falafel>	in angular you'd use a directive
+<cyberbrai>	sorry but still i am not using the directive so is there any alternative then plz it's great for me
+<cyberbrai>	i think it's great to use the onclick event as a attribute for td
+<cyberbrai>	falafel
+<falafel>	cyberbrai, yes, ou can build that <a> with jquery, and add an event to it, then append it to the <td>
+<falafel>	$('<a>', click: reverse).appendto(tdelement)
+<falafel>	$('<a>', {click: reverse}).appendto(tdelement)
+<falafel>	something like that
+<falafel>	maybe `click: reverse.bind(null, username, id)`
+<cyberbrai>	'<td onclick=reverse()><a style="cursor:pointer" ><i class="fa fa-trash-o large"></i></a></td>' +  line where i want to append my inclick event
+<falafel>	cyberbrai, using strings isn't great, it is quite error prone
+<falafel>	$(
+<cyberbrai>	ok delete it
+<cyberbrai>	but just tell me how can i append my `click: reverse.bind(null, username, id)` to td
+<falafel>	$('<td>', {click: reverse.bind(null, username, id)})
+<falafel>	that creates an element and adds an event
+<falafel>	now you got js code, instead of strings
+<falafel>	then use .append, or .appendto to build your structure
+<cyberbrai>	yup wait i delete my string code
+<bambanx>	how i can do for when i delete a div, it update the code too?
+<cyberbrai>	falafel http://jsfiddle.net/q301p7af/ little confuse
+<falafel>	cyberbrai, try asking in #jquery as this is jquery specific
+<cyberbrai>	falafel i take append value in var
+<falafel>	cyberbrai, try $(newrowcontent).find('td a').on('click', reverse.bind(null, username, id))
+<falafel>	if you build it as a string, you'll have to query the element to add the event
+<js-newbie2>	!help
+<ecmabot>	js-newbie2: for help, ask your question. be patient. code samples should be pasted in a paste service (see !paste). tell us 1) what you want to happen, 2) what is actually happening, and 3) any error messages you find (see !describe and !debug).
+<js-newbie2>	i need to creating a working function that opens users' native map app on their device when they click a div w/"showmap," id.
+<js-newbie2>	i have the following code https://bpaste.net/show/e2380e2fc2be
+<js-newbie2>	wondering where i've gone wrong?
+<ljharb>	js-newbie2: you're just returning a url from the click handler.
+<ljharb>	js-newbie2: that doesn't do anything
+<ljharb>	js-newbie2: perhaps you want `window.location.assign(mapurl)`?
+<havvy>	ljharb:  there's an assign method on window.location?
+<cojabo>	..wat
+<ljharb>	havvy: yep
+<havvy>	bananaphone:  yes?
+<ljharb>	window.location.assign(url) is the same as window.location.href = url, but it will fail with a better error message if something is typoed.
+<havvy>	ljharb:  cool.
+<ashnur>	i just do `window.location = anything`
+<ashnur>	no error ever
+<ljharb>	eh
+<ljharb>	window.location.href = is more explicit.
+<ljharb>	in order of most to least magical, it's `window.location = `, `window.location.href = `, `window.location.assign()`, and i always prefer least magical ¯\_(ツ)_/¯
+<xecycle>	you can be more magical by `location = `
+<seikho_>	ljharb: and that's why you'll never get into hogwarts
+<xecycle>	which looks like the terrifying `open(url)`
+<cyberbrai>	http://jsfiddle.net/976pt/
+<cyberbrai>	how can i add the click event in append td
+<ljharb>	xecycle: ah yes, you're right.
+<ljharb>	seikho_: i'm ok with that, hogwarts wizards are really stupid
+<javascript265>	hey guys i need help in js, i've got multiple functions and assigned various variables as "document.getelementbyid('box').value;"
+<javascript265>	i've got multiple page and when i load into a html page that uses the javascript but not a specific function i get variable null error and i think it just breaks the js
+<steelbrain>	javascript265: your question was very confusing
+<shyam>	_rgn: rmmbr the eslint thing i had asked yesterday? so its not the spread thing when you use it in conjection with a fat arrow. i had to put `restparams: 1` to get the error to subside. it was mentioned in one of the issues on github.
+<javascript265>	steelbrain: i've got multiple html files with external js embedded (single file). in the js i've got multiple variables to getelementbyid, and since some other pages don't have that element
+<javascript265>	steelbrain: i get typeerror. document.getelementbyid(...) is null error
+<javascript265>	steelbrain: and i think it just breaks the code and doesn't execute after that function is called.
+<deriiifranz>	hey guys! i have a function to be passed to a listener like: $(window).on('resize', this.resizewflist);  is it possible to pass parameters to resizewflist?
+<steelbrain>	javascript265: i would love to see it in a jsfiddle or something
+<ljharb>	deriiifranz: yes, use .bind
+<steelbrain>	deriiifranz: `$(document).on('resize', this.resizewflist.bind(null, 'myfirstarg'))`
+<ljharb>	altho in this case you want .bind(this, 'myfirstarg')
+<deriiifranz>	thx a lot!
+<javascript265>	steelbrain: kk sec
+<cyberbrai>	cf
+<ashnur>	dunno. i am a wizard. i like magic. more magic the better. you want example code?
+<deriiifranz>	ok, so i register my listener like: $(window).on('resize', this.resizewflist.bind(this, selector));
+<deriiifranz>	how to unregister the listener? $(window).off('resize', this.resizewflist.bind(this, selector));  <-- doesn't work
+<falafel>	deriiifranz, `bind` returns a new function, assign it to a variable
+<xecycle>	ashnur: magic?  you may find y-combinator interesting.
+<ashnur>	xecycle: i am kiddings. it just takes ljharb soo much hints to realize it :)
+<falafel>	var f = this.resizewflist.bind(this, selector); .on('resize', f); .off('resize', f)
+<falafel>	deriiifranz, ^^
+<xecycle>	:)
+<deriiifranz>	falafel: thx!
+<ljharb>	ashnur: :-p
+<hotcoder>	hello ljharb
+<hotcoder>	how are you today?
+<ljharb>	?
+<hotcoder>	ah the grumpy days
+<hotcoder>	its okay. just push through you'll make it through :)
+<ljharb>	no idea what you're talking about
+<hotcoder>	ljharb, how are you?
+<hotcoder>	like how are you feeling today?
+<ljharb>	that's not relevant to the room's topic
+<hotcoder>	can i pm you then?
+<ashnur>	magic is probably the worst thing in programming because unlike many other enemies of good code, it's not obviously bad at first sight. junior developers often think they are being "clever" using less (more concise) code to do complicated sideeffects. which is the sideeffect of properly done "don't repeat yourself",  however in itself shouldn't ever be aimed for unless in some code golfing challenge :d
+<ljharb>	hotcoder: that's a better venue than the channel for idle chatter, sure
+<falafel>	b>var y=(f,g)=>g=f((...a)=>g(...a));var fact=y(f=>n=>n>1?n*f(n-1):1); fact(5)
+<babelbot>	falafel: 120
+<maxdamantus>	everything began as magic in the sense you seem to be using it.
+<js-newbie2>	@ljharb thnx that did it :)
+<ljharb>	np
+<maxdamantus>	i'd rather have less code to do complicated sideeffects than more code to do complicated sideeffects.
+<xecycle>	maxdamantus: makes sense; like that, it looks magical that pendulums of the same length always swing at the same frequency.
+<falafel>	i'd rather have less code in general as long as it remains readable
+<ljharb>	maxdamantus: ideally there'd be no complicated side effects :-) but imo the goal isn't "less" or "more" code, it's "more explicit code"
+<maxdamantus>	i'd go with clearer rather than explicit.
+<rakm>	i'm building a little prototype for a demo tomorrow and want to write a function that logs the result of several async functions that are applied one after another. so basically i want 5 log messages to show up on the screen one after the other, with a delay of 1s between them. how do i do this?
+<rakm>	do i need to have 5 nested settimeouts?
+<maxdamantus>	abstractions can make things more clear and less explicit.
+<rakm>	or is there another way
+<rakm>	(ps, reason i said it's a prototype demo is that i don't care how good the code is or how slow it is or that i load all of jquery to do it. just want to make it work)
+<falafel>	rakm, that, or use promises, or generators
+<falafel>	generators can do "do notation" in some way\
+<maxdamantus>	noone bothers trying to reason about the logic expressed by a monadic action.
+<maxdamantus>	at least not by the monadicity of it.
+<maxdamantus>	because that's difficult. you just know that it behaves well because you know the fundamental few operations are implemented correctly.
+<rakm>	falafel: what should i google to learn more about how to do this?
+<falafel>	rakm, learn about promises, that's a way to unnest the code
+<comingsoontm>	rakm, you can use setinterval, and count in variable the time it runs, the use clearinterval() to stop it, this is dirty but it´ll do the work
+<comingsoontm>	rakm, the number of times it runs*
+<ljharb>	!setinterval
+<ecmabot>	ljharb: avoid setinterval; use settimeout instead. http://zetafleet.com/blog/why-i-consider-setinterval-harmful
+<ljharb>	not setinterval.
+<rakm>	i should probably use promises so i can chain them. that's effectively what i want
+<comingsoontm>	lol i´m a dirty developer, second time i get grounded on 2 two times i provide a solution :p
+<rakm>	i've always used promises constructed by 3rd party libs, never used the native api
+<rakm>	i'll google around for that
+<rakm>	thanks
+<_rgn>	falafel: is it a coincidence that generators and yield can achieve something very similar haskell's do
+<falafel>	_rgn, dda
+<falafel>	oops
+<falafel>	yeah, it works nicely though
+<airdem>	can you help me with this vertical text? i cant make it align into the card http://jsfiddle.net/c2l8z52y/2/
+<greenjello>	airdem, try ##css
+<rakm>	ok, i played around with promises for a little bit, but i am doing something wrong. can someone tell me what i'm doing wrong? https://jsfiddle.net/mehulkar/u8p6ykw1/2/
+<falafel>	rakm, it is already in scope, you pass the arugment and capture it in a closure
+<ljharb>	rakm: it's "resolve", not "fulfill", btw
+<falafel>	logsomething(texttolog)
+<falafel>	then just use `texttolog`
+<ljharb>	rakm: but logsomething should take an argumnet
+<ljharb>	*argument
+<ljharb>	rakm: https://jsfiddle.net/u8p6ykw1/3/
+<rakm>	ljharb: ok, so passing in the arg like that works. but how do i make it wait 1 second before logging each thing?
+<rakm>	it looks like it logs all of them after the first 1s
+<ljharb>	rakm: because you're calling all 4 logsomethings immediately.
+<rakm>	i guess, then .then() is what i was trying to use to have it wait one second, fulfill the promise, then call the next one
+<ljharb>	rakm: you want https://jsfiddle.net/u8p6ykw1/4/ if you want to have them run in order.
+<rakm>	oh hmm, i see the difference, not sure i understand how it's wired up though.
+<rakm>	very cool, that works though
+<ronrichie>	hey there!:)
+<ljharb>	rakm: the way you had it before, it called all 4 logsomething functions immediately
+<ljharb>	rakm: by wrapping it like that, it only calls it when the previous promise is resolved.
+<ronrichie>	could you guys help me out with this simple code? i wonder what im doing wrong with my simple callback function that it doesn't work? http://jsbin.com/sezekigeza/1/edit
+<ljharb>	ronrichie: you're not passing console.log in
+<ljharb>	ronrichie: you're passing the *return value* of console.log in. because "()" invokes the function.
+<slut>
+<slut>
+<slut>
+<ronrichie>	ljharb ahh:) now it works, thanks
+<slut>	!
+<devt204>	is it possible to develop a web music player with audio filter (equalizer) capabilities with html 5 / js ?
+<slut>	devt204: sure
+<slut>	using web audio
+<ljharb>	!mdn audio @ devt204
+<ecmabot>	devt204: &lt;audio&gt; - html (hypertext markup language) | mdn <https://developer.mozilla.org/en-us/docs/web/html/element/audio>
+<slut>	not just raw html5 audio
+<slut>	!caniuse webaudio
+<ecmabot>	slut: error: can i use `webaudio` was not found.
+<slut>	or whatever its called
+<slut>	lol
+<ronrichie>	ljharb, how can i make it work this way? http://jsbin.com/sezekigeza/1/edit
+<slut>	by not having a blank post
+<slut>	would probably help
+<slut>	!mdn bind @ ronrichie
+<ecmabot>	ronrichie: function.prototype.bind() - javascript | mdn <https://developer.mozilla.org/en-us/docs/web/javascript/reference/global_objects/function/bind>
+<ljharb>	ok, tone it down
+<ljharb>	ronrichie: `console.log;` is a noop.
+<ronrichie>	ops, http://jsbin.com/sezekigeza/1/edit?js,output
+<ljharb>	ronrichie: if you want `logit` to take an argument, you need to make it take one.
+<ljharb>	ronrichie: also, `console.log;` does nothing. if you want to invoke the method, use parens.
+<slut>	or you can do like
+<ronrichie>	ljharb, i want to pass logit as an argument to a `test` function, and i want logit it to execute console.log on my test function
+<slut>	logit = console.log.bind(console);
+<slut>	logit('lol');
+<devt204>	slut it won't be just visual equalizer, there doesn't seem to be any open source / similar player that i can found around
+<ljharb>	ronrichie: ok so then logit needs to have an argument.
+<ljharb>	ronrichie: and console.log needs to be executed. not just mentioned.
+<slut>	devt204: you can do pretty much anything really.
+<comingsoontm>	ronrichie: your first code would work if you only remove the () from console.log, because you are passing the function not execeting it
+<comingsoontm>	executing*
+<slut>	devt204: take a look at this
+<slut>	https://developer.mozilla.org/en-us/docs/web/api/web_audio_api
+<ronrichie>	would you please correct this on this sample so i can get better feel of what's happening? please? http://jsbin.com/sezekigeza/1/edit?js,output
+<devt204>	slut yup thank you looking at it :)
+<slut>	slightly off topic
+<slut>	but very cool
+<slut>	anyone with a laptop that does multitouch
+<slut>	on the trackpad
+<slut>	http://www.synaptics.com/en/utilities.php
+<slut>	have a play with these lol
+<ronrichie>	ljharb could you fix that for me please? i just wanna see how that would work
+<slut>	ronrichie: ill fix it for you
+<slut>	for $600
+<ronrichie>	lol sure
+<slut>	and then ill kiss you on the cheek
+<comingsoontm>	ronrichie: http://jsbin.com/dunololiki/2/edit
+<ljharb>	slut: not sure what you're trying to do, but please tone it down.
+<ljharb>	ronrichie: have you read eloquent yet?
+<slut>	ljharb: i'm just bored. i'm kiiind of helping. :3
+<ronrichie>	comingsoontm thanks:)
+<ljharb>	slut: can you just do the helping here, and do the bored somewhere else, perhaps? :-)
+<comingsoontm>	lol
+<slut>	sure, any suggestions?
+<ronrichie>	ljharb couldn't finish it:-/ read as far as higher-order functions, it's just a really hard for me even though i do really wanna be able to read it entirely :-/
+<ljharb>	i'm sure freenode has other rooms for chatting. also there's reddit or hn.
+<slut>	reddit really sucks
+<slut>	it's the worst.
+<slut>	worse than twitter.
+<slut>	and i don't say that lightly
+<ljharb>	twitter's great. and yes, reddit and hn are cesspools.
+<chanced>	anyone know of a text editor / plugin / site that allows for javascript/jquery selectors to edit text?
+<comingsoontm>	you need 1 more negative sentence and you´ll win 2 internets fore free !!
+<chanced>	$('a').addclass('whatever') for example
+<comingsoontm>	for*
+<ljharb>	chanced: ask in #jquery for the jquery part.
+<chanced>	it doesnt need to be jquery
+<ljharb>	chanced: but jquery has .text() and .html()
+<chanced>	was just faster for me to type
+<slut>	comingsoontm: your face looks like.. things that faces shouldn't look like
+<slut>	!!
+<ecmabot>	slut: !! is a convenient shorthand for converting a truthy/falsy value to true/false, similar to the more verbose `boolean` function.
+<chanced>	i'm more interested in a text editor
+<slut>	lol shut up ecmabot
+<ronrichie>	i've found out a way of learning that really works for me:) when i write a code i try to explain it to myself the way it works and how it works by also reasoning the steps i took to write it, it in fact really helps lol :)
+<chanced>	i have a bunch of html in a few files i need to update
+<chanced>	it'd be easier if i could select it based on dom
+<yolandabcool>	ronrichie: i learn the same way, but you still need to know the basics
+<ronrichie>	yolandabcool well, i do actually know quite some of the basics and then some actually:) im more interested in hard stuff at this point, hoisting, higher order function, call backs, apply bind and call and such :)
+<chanced>	hmm, i wonder if i could do it with chrome
+<ronrichie>	closures as well
+<yolandabcool>	ronrichie: none of that in that example is complex.
+<yolandabcool>	so maybe you just think you're smart.
+<yolandabcool>	it happens.
+<yolandabcool>	i recommend whiskey
+<ronrichie>	yolandabcool lol trying to sound bitter buddy? knock it off, won't cut it;)
+<yolandabcool>	not bitter, just pointing out.. that you're probably dumb.
+<yolandabcool>	and should feel dumb.
+<yolandabcool>	lol jk that wasnt really my point
+<yolandabcool>	but now it is
+<dragonpunch>	anyone got a function in javascript/jquery that will add text to end of whatever i type inside of a textbox
+<yolandabcool>	so, here we are.
+<yolandabcool>	dragonpunch: you just need to add a blur event handler
+<ronrichie>	haha yolandabcool ok, you just enjoyed 2 mins of fame, not gtfo:) thanks
+<yolandabcool>	done/done
+<ronrichie>	now*
+<dragonpunch>	yolandabcool: links?
+<yolandabcool>	typo'ing a 3 letter word
+<yolandabcool>	you're the best.
+<yolandabcool>	move on to the advanced stuff.
+<yolandabcool>	!mdn blur event @ dragonpunch
+<ecmabot>	dragonpunch: blur (event) - event reference | mdn <https://developer.mozilla.org/en-us/docs/web/events/blur>
+<yolandabcool>	:>
+<ronrichie>	how cute it is:) i just wrote it from the scratch and it works! lol http://jsbin.com/vuxoxedenu/1/edit?html,js,output
+<comingsoontm>	do you open the browser console to see the result ?
+<comingsoontm>	ronrichie:
+<falafel>	ronrichie, you probably don't need to check `callback`, the `typeof` check will cover the undefined case
+<ronrichie>	comingsoontm i do this locally and then put it on jsbin, i do my testings in firebug
+<falafel>	ronrichie, also note that `typeof` is a keyword, not a function
+<falafel>	that should do
+<comingsoontm>	ronrichie: ah okay that's why, because i see your links to jsbin open html, js and output but not console
+<comingsoontm>	ronrichie: you can do everything in jsbin
+<yolandabcool>	ronrichie is too busy being advanced to worry about stuff like sharing links that are useful.
+<ronrichie>	falafel aha, that makes sense, so the way i use typeof won't work?
+<falafel>	ronrichie, it will, the parens are just not necessary
+<ronrichie>	comingsoontm yeap, you are right:) its just doing it locally kind of make it a little easier
+<falafel>	same thing
+<comingsoontm>	ronrichie: whatever makes you happy :d
+<ronrichie>	comingsoontm :d
+<ronrichie>	falafel :) fair enough
+<ronrichie>	yolandabcool lol you must have some serious self-establishment issues dude:) get some used pair of life and stop being a bitter, this is what i do to practice and learn, don't like it, just keep your mouth shut, aint got time for you, thanks :)
+<mackan90096>	hm
+<yolandabcool>	self.. establishment?
+<yolandabcool>	are you high?
+<yolandabcool>	used pair of life?
+<yolandabcool>	lol what is wrong with your braiin
+<ronrichie>	that's what i said:)
+<yolandabcool>	right, it just makes no sense.
+<yolandabcool>	thus why i'm mocking you.
+<ronrichie>	:)
+<ronrichie>	ok, brb
+<ronrichie>	falafel  comingsoontm could you guys confirm this for me? http://jsbin.com/dojefetite/1/edit?html,js,output is this out closures work right? i know its quite a simple sample but broadly put this is what a closure does right? thanks :)
+<yolandabcool>	'i know the basics' 'wait how does typeof work?'
+<ljharb>	let's not mock people.
+<ankr>	ronrichie i guess you can say yes, but what you have there probably falls in under the term "currying".
+<ronrichie>	ankr ugh, gotta look up that one, never heard of that, thanks for clarifying though.
+<ankr>	ronrichie currying requires closures
+<_rgn>	is it currying if you can't satisfy all arguments with single call?
+<yolandabcool>	there will always be another argument
+<yolandabcool>	its impossible to satisfy all arguments with merely one telephone call
+<ankr>	_rgn currying is taking a single function with multiple arguments and and turn it into multiple functions, each with a single argument.
+<johnade>	hi everyone
+<comingsoontm>	hello
+<greves>	oh no its another 'this' binding question! >.< hahaha
+<xecycle>	ankr: not multiple functions.  still one function, that takes one argument and returns a function taking one argument and returns ...
+<johnade>	hi i have a question --> when we using backbone or ember, people can read source code to see how it's working no ?
+<comingsoontm>	yes they can
+<ankr>	johnade when using javascript people can read the source code.
+<xecycle>	_rgn: "if you can't satisfy all arguments with single call" looks more like partial application.
+<johnade>	ankr: thanks ankr, your right, it can be disturbing ...
+<comingsoontm>	johnade: i ran into this a while ago, i don´t think so, unless you have some private algorithm that you can hide on the server, you have (almost) nothing to fear of
+<comingsoontm>	johnade: also when you build the server side : never trust the front end. that was for the security part
+<johnade>	comingsoontm: thanks for you tips :)
+<comingsoontm>	johnade: also, try to go see the source code of something like gmail.com :d
+<johnade>	i'm making of craiglist kind of website, and for paiement and stuff i was wondering if i use backbone if it can disturb me for informations
+<johnade>	:p
+<comingsoontm>	you gonna make your own payment platform ? that for it´s own needs another level of architecture
+<johnade>	no no, use paypal i guess
+<johnade>	i'm not so crazy :p
+<comingsoontm>	then paypal will handle it i guess :) ?
+<comingsoontm>	because you just click the pay button or whatever then the user go to a paypal page
+<johnade>	yes
+<johnade>	do you think that nodejs mongodb and backbone for the gront is a good solution for this website ?
+<xecycle>	i downvote mongodb before it gets full fledged transaction support.
+<ankr>	sql ftw
+<comingsoontm_>	johnade: hmm did you say something ? i got disconnected
+<johnade>	xec:  ankr : so sql ?
+<comingsoontm_>	sql for what ?
+<johnade>	comingsoontm: i was just asking if nodejs/mongodb and bacbone for client side was a good solution
+<comingsoontm_>	ah
+<johnade>	ankr and xecycle downvote mongodb
+<comingsoontm_>	it could be, i don´t have enough infromation
+<johnade>	comingsoontm: it for a craiglist kind of website
+<ankr>	johnade i like to have everything in sql and the denormalize into elasticsearch(nosql) for the frontend.
+<ankr>	then*
+<comingsoontm_>	for starter, with nothing in mind, it´s whatever you find easy
+<xecycle>	i upvote postgres.
+<comingsoontm_>	if you will have normalized stuff ill go with sql
+<johnade>	what do you mean for "normalized"
+<johnade>	the thing it's that i will use a restful api, and data will be json
+<xecycle>	relational db for relational data --- data that relates to each other in some well-defined way.
+<comingsoontm>	johnade: im sorry i keep getting disconnected, can´t always trust powerline and isps...
+<johnade>	comingsoontm: okay np :) , i said -> what do you mean for "normalized" ? the thing it's that i will use a restful api and -->json
+<comingsoontm>	yeah but restful api and json output doesnt matter here
+<comingsoontm>	let´s say you will have different product that are on the website, about 250 kind of products, and each one have it´s own attributes
+<johnade>	yes
+<comingsoontm>	i think it´s easier to put that in mongodb, than to create a table with thousands of columns, and have product with null everywhere
+<comingsoontm>	or have a lot of tables relating to each product idk
+<comingsoontm>	maybe xecycle can answer that
+<johnade>	okay i see, i will just have people that create their own ads with posting some photos , and paid for premium service that's all
+<johnade>	upload of files (photo) , paiement with paypal, and store just ads from people
+<xecycle>	ok continue with that example.  do you want something stored with a "kind"?  so that each product point to one (or more) "kind", and related data automatically comes related.
+<xecycle>	this is relational data.
+<johnade>	each ads will have a description, and people will add his phone number and mail adress
+<comingsoontm>	xecycle:  i have a little lazy bias, like i get lazy for the machine... but having a product table, then a 250 tables for each type of products, isn´t that a lot ?
+<xecycle>	but if you store "kind" together with each product, ignoring any relations of the "kind"s, these are flat out unrelated.
+<comingsoontm>	xecycle: yeah if he neas to store some data that doens´t need to be searched or sorted by, he can json it and put it in one column right ?
+<xecycle>	comingsoontm: then you have to encode "kind" information in code.  code may bloat, to some unknown degree.
+<xecycle>	searching/sorting does not matter that much.
+<xecycle>	relational is more about logical data model.
+<comingsoontm>	yeah but if you want to search the product with color:red, if the color:red is in json as a stirng in column, you can´t easly search it, unless you do in text search and that´s heavy
+<xecycle>	say, a forum, storing users and posts --- you naturally point to the posting user in each post.  this is a relation.
+<comingsoontm>	in a* column
+<johnade>	yes but in my case
+<johnade>	i think it's really simple
+<comingsoontm>	yes i get you but that´s simple
+<xecycle>	well, above "relation" not same as the "relation" in rdbms theory
+<xecycle>	it's about pieces of data relating to each other, logically.
+<comingsoontm>	i don´t understand your point because yes i agree with what you are saying it´s correct
+<sky_symbol>	hi guys, i have a javascript file with content really compressed. all is in one line without spaces, how can i make the file more readable? thanks
+<kattkunskap>	sky_symbol: http://jsbeautifier.org/
+<xecycle>	working with relational data, you must take care to keep integrity of relations; and this problem has been studied for decades in rdbms.  going nosql you must solve them manually; if the relations are weak or very easy to follow, you may feel better with nosql, but otherwise you're unlikely to beat those mature rdbms.
+<michaelis>	hi. please take a look at http://pastebin.com/nl4jhvtf . in the "mousemove" event on s.node the .top and .left props of getboundingclientrect() shows the right value every second move. otherwise it jumps 100-200 pixels giving a really strange result. any ideas?
+<comingsoontm_>	yes true, i had this problem with mongodb, and you have to keep going relation by relation and populating each relation of data
+<sky_symbol>	works perfectly. thanks!
+<comingsoontm_>	but xecycle when i was talking it was about sql, if you want to have many kinds of product, are you gonna store them in 1 table and have many columns null for a lot of products ?
+<comingsoontm_>	like if you have cars and computers, ghz is irrelevent for a car
+<comingsoontm_>	xecycle:
+<xecycle>	comingsoontm_: table product (products), table kind (kinds), table product_kind(product-kind relation)
+<comingsoontm_>	yes i did that in a website, is it fine to have a lot of tables ? vs nosql :p ?
+<shyam>	is there an irc channel for mocha?
+<shyam>	or may i ask mocha related questions here?
+<_rgn>	go ahead
+<xecycle>	comingsoontm_: only in a few cases is horizontal splitting worth a try.
+<zap0>	why aren't you able to ask the people that make it?
+<naschine>	comingsoontm_: http://databases.about.com/od/specificproducts/a/normalization.htm
+<naschine>	;p
+<comingsoontm_>	naschine: thanks, what did i say that was off :d ?
+<huleo>	hi
+<huleo>	canvas beginnings, tbh never played with it before - http://jsfiddle.net/o1d8xta2/
+<huleo>	problem is: we have <img> scaled by css-es
+<huleo>	(this can be a bit of css question as well, i guess...)
+<huleo>	and we want to draw it onto the canvas, draw on the canvas as if it was /original/ size, yet display it basically as copy of the /scaled/ image
+<huleo>	(with some other goodies on top - overlays etc.)
+<shyam>	_rgn: so i'm getting an assertion error in mocha... but i can't seem to find what the difference b/w the two (output and expected) is. how would i debug the same?
+<steelbrain>	shyam: if it's something like 1 vs 1 then you could debug their types, as '1' !== 1
+<shyam>	steelbrain: they are both string
+<shyam>	`assertionerror: 'react.createelement("ul", null, react.createelement("li", null, dummyvar, " is ", react.createelement("span", null, dummyvar2)) == 'react.createelement("ul", null, react.createelement("li", null, dummyvar, " is ", react.createelement("span", null, dummyvar2))` is the error message
+<shyam>	i was just playing with the `react-tools` package.
+<shyam>	maybe actually typing out the second part may help. lemme check that
+<shyam>	i had originally copied the second portion from the terminal itself
+<shyam>	hidden chars possible?
+<shyam>	damn it... i copied one bracket less :(
+<shyam>	although now that i think about it... that error message is also wrong
+<shyam>	is there a limit to the number of chars displayed in the mocha output?
+<michaelis>	hi. please take a look at http://pastebin.com/nl4jhvtf . in the "mousemove" event on s.node the .top and .left props of getboundingclientrect() shows the right value every second move. otherwise it jumps 100-200 pixels giving a really strange result. any ideas?
+<shyam>	hey is there something that flattens out arrays on build? say i have `[1,2,3].map(function(val){return val+1;});` and i would like to convert that to `234`. maybe a gulp task or someting? i'm not exactly sure what the terminology for what i want is, cos google doesn't seem to be helping me. again i'm thinking this from a react-ish point of view.
+<inimino>	shyam: what you want is code generation
+<inimino>	shyam: but why do you want that?
+<rainb>	can you find a value on the array for the n time
+<elirips>	hello. i am preloading images using something like 'var img = new image; img.onload = function(event) { // do something }; img.src = "myimg.jpg"; - what is the best way to copy the image in the onload() handler to an actual html <img> tag?
+<elirips>	with best i mean: a way that ensures that the browser does not send another request
+<shyam>	inimino: dynamic react page. everything is determined from json. so each component may have sub-components(again dynamic) and so on. so the higher ups asked if it was possible to convert all the `.map` functions into their corresponding output before serving to the user. less functions more performant.. i guess thats what they were ultimately going for
+<moep>	hi
+<inimino>	shyam: ah... you can render the whole thing on the server, sure
+<shyam>	that would output the entire thing as a string of react components.
+<inimino>	shyam: react.rendertohtml(...)
+<inimino>	hm
+<inimino>	elirips: isn't the point of preloading that the browser caches it?
+<shyam>	inimino: yes html. but i just want the js versions of these
+<inimino>	elirips: in any case, of course that *is* an image element, that's why it works, so you can just insert it into the document
+<inimino>	shyam: it's not possible in general in javascript because it's quite dynamic
+<inimino>	shyam: you could replace array.prototype.map() before calling that, for example
+<shyam>	:d so my thinking was right.
+<inimino>	shyam: so anything you do would have to be written for yourself, and the idea that unrolling .map() calls is going to save performance sounds ridiculous anyway
+<shyam>	uhm... but is that a recommended way? replacing a native function?
+<inimino>	i'm not suggesting you do that
+<ankr>	i would say it's discouraged.
+<shyam>	inimino: uhm... no... i think you misunderstand. i would parse the file. convert the map into the flat versions and serve that rather than go crazy :p
+<inimino>	if you have a problem with page load time there's almost certainly a better solution
+<inimino>	yeah, i got that
+<shyam>	ah k
+<inimino>	i'm just explaining why there can never be a general-purpose tool that does what you want
+<_rgn>	shyam: do you have a performance issue?
+<inimino>	since in general it's impossible to what what [].map will be until runtime
+<inimino>	to know what [].map will be
+<rainb>	you can know the type right
+<shyam>	_rgn: haven't implemented anything yet... still sorta info gathering phase
+<inimino>	why do you think that sending a bigger file to the browser will improve your page load time?
+<inimino>	did you do some profiling on this idea?
+<inimino>	shyam: find out how much time your code spends in array.prototype.map compared to dom rendering and network overhead
+<shyam>	inimino: you can do that? how? i've never actually understood the chrome profiler so i don't know how it works. or is there other profilers that you suggest
+<shyam>	*are
+<inimino>	sure, you can see the network calls measured in milliseconds
+<inimino>	and in a profile, you just start the profiler, load your page, and look at the profile
+<inimino>	you can see all the functions and the total time spent in them
+<inimino>	probably more easily measured in microseconds
+<inimino>	shyam: if that doesn't work for you you can also just put date.now() calls around your .map() lines and subtract
+<inimino>	and if that still doesn't work you can manually run your .map() in the console and paste the result back into your file and then compare
+<shyam>	console.time? is that similar? i had heard about somewhere
+<sonthonax>	in es6 does ‘…’ before a variable mean anything?
+<inimino>	shyam: there's performance.now
+<inimino>	sonthonax: no, it's just decorative
+<falafel>	sonthonax, rest and spread
+<inimino>	shyam: i don't know about console.time
+<sonthonax>	well a cursory google search explains it.
+<shyam>	falafel: i was informed yesterday that its part of the es7 specs not es6. no?
+<falafel>	rest and spread are es6
+<shotokanzh>	hi guys
+<inimino>	yes it's in es6
+<elirips>	inimino: is there any difference for the browser wheter i replace an existing <img> with the image(), or if i just update the src attribute of the existing <img> element with the value from the just loaded image?
+<inimino>	elirips: no difference
+<elirips>	inimino: i'm not 100% sure if the browser really caches the image in all cases. what would happen if the header containts things like 'no-cache, expire-time: 0', etc. when the image gets loaded? will the browser still cache it?
+<inimino>	it can't not cache the image data because there's an image object on the page that it might have to display
+<inimino>	it may not cache it in the disk cache
+<elirips>	inimino: ah okay, thank you. makes sense and matches what i see in wireshark
+<inimino>	sure
+<fodd>	hey guys. i've got a js if statement problem.
+<fodd>	http://pastebin.com/p9mvyt9v - my php returns either red or green
+<fodd>	if i make it return green, i still dont get an alert
+<fodd>	however, the else works and the font-weight is normal.
+<havvy>	1. prefer `console.log()` over `alert()`.
+<fodd>	however, if i run an alert(); on the else statement. it says green
+<havvy>	2. `console.log(typeof data);` before the `if`.
+<havvy>	if that doesn't log "string", that's your issue.
+<fodd>	thank you havvy for helping
+<saltypancakes>	don't forget console.dir
+<havvy>	ctrl+shift+j (or k) to open up the dev console.
+<fodd>	it says string
+<fodd>	im using chrome console if that helps
+<fodd>	this is my first project with javascript/ajax :)
+<havvy>	fodd:  now what about `console.log("'" + data + "'");`?
+<fodd>	'
+<fodd>	green'
+<fodd>	seems like theres a return in there
+<havvy>	any whitespace outside of a <?php ?> tag is placed into the output document.
+<fodd>	the data being sent from php is `return 'green';` so there shouldn't be a extra line
+<fodd>	nope, no white space
+<havvy>	there's no echo?
+<havvy>	or is it <?= return 'green' ?>
+<fodd>	i echo out a class i've made
+<fodd>	echo thefunction();
+<casw>	hey guys, if i do childclass = {}; childclass.prototype = new superclass(); can i then use the constructor from superclass to create a childclass object by invoking new childclass()? or how should i do that, since it doesn't seem to work
+<havvy>	casw:  no. you'd do `superclass.call(this)` as the first line in childclass  (and childclass must be a function for the pattern you are thinking of.)
+<falafel>	unction childclass(){}; childclass.prototype=object.create(superclass.prototype)
+<falafel>	*f
+<falafel>	don't use `new superclass` as that can have unintended side-effects, use object.create
+<casw>	hmm, unintended side-effects? could you give me a link to an article or something about that?
+<nazral>	can a method have the same name as a field in an object ?
+<falafel>	casw, just imagine if `superclass` has side-effects, for example changing a variable outside of it's scope
+<falafel>	*its
+<nazral>	like can i have function obj(t) { this.t = t }; obj.prototype.t = function(t) { this.t = t; }
+<falafel>	object.create won't execute the constructor function casw
+<casw>	aah, okay, i can see that. thanks! :) i learned something today. it still doesn't work, though; does superclass.call(this) invoke the constructor of superclass, and does it do so with some parameters?
+<falafel>	!oop @ casw
+<ecmabot>	casw: http://robotlolita.me/2011/10/09/understanding-javascript-oop.html summarizes object oriented programming in javascript, using concepts from ecmascript 5, and relating them back to older paradigms from ecmascript 3
+<inimino>	nazral: no
+<falafel>	casw, that's a good read, it covers everything you want to know about prototypes and inheritance and such
+<casw>	ah, nice, thanks! i'll read it through
+<nazral>	inimino: ok thanks :)
+<inimino>	nazral: and we call them properties, not fields
+<inimino>	a method is just a property that is a function
+<falafel>	constructors and methods are just regular functions, and `this` depends on the caller, that's all there is to it, why it causes so much confusion i'm not sure...
+<kartagis>	how should i read a js file? i mean, how can i find out what the trigger and the methods are?
+<falafel>	kartagis, in the browser?
+<kartagis>	falafel: i tried that, typing nameofscript didn't produce anything
+<falafel>	i mean, in the browser or node?
+<falafel>	kartagis, and what do you mean by "read"?
+<kartagis>	oh, as a text file
+<kartagis>	read as in read the code
+<inimino>	what falafel wants to know is what the file is for
+<inimino>	where will it be run?
+<falafel>	yes, and why as a text file
+<inimino>	is it a browser script? a commonjs module?
+<inimino>	something else?
+<kartagis>	falafel: i just want to find out its methods
+<falafel>	so static analysis?
+<kartagis>	this is lightbox.js
+<inimino>	ok, so it's a library for use in the browser
+<falafel>	we are getting somewhere now...
+<nazral>	inimino: my bad
+<falafel>	find out what methods?
+<kartagis>	like initiate, and close, and use prev and next
+<falafel>	kartagis, if you want to read as text you can use ajax
+<falafel>	or the fileapi
+<inimino>	not that kind of reading
+<inimino>	reading as in reading a book
+<kartagis>	falafel: no you got it wrong (or i wasn't clear). i want to read the code to find out the methods
+<falafel>	ah
+<falafel>	kartagis, open devtools, go to sources
+<inimino>	kartagis: just start at the top, read all the function names, and then read the important functions
+<falafel>	is that what you mean?
+<falafel>	debugging code?
+<inimino>	no...
+<kartagis>	okay. how are methods specified in a js file?
+<inimino>	kartagis: if you just want to know how to use it, the docs are a better choice
+<inimino>	a file doesn't have methods
+<kartagis>	lightbox is an object, no?
+<inimino>	probably
+<inimino>	it's probably a single object with various properties
+<falafel>	https://github.com/lokesh/lightbox2/blob/master/js/lightbox.js
+<falafel>	ligthbox.prototype.method
+<inimino>	mmm
+<greensky>	i  will pay $30 for what i believe is literally 3 minutes work.  i want to wrap 3 includes into modules using either requirejs or commonjs. i have the simple code on github.  can someone pm please asap.
+<greensky>	is ugh anyone here?
+<greensky>	vegetables
+<greensky>	pornocopia
+<greensky>	green tomato salad monster
+<michaelis>	hi. please take a look at http://pastebin.com/nl4jhvtf . in the "mousemove" event on s.node the .top and .left props of getboundingclientrect() shows the right value every second move. otherwise it jumps 100-200 pixels giving a really strange result. any ideas?
+<michaelis>	and the next move shows thousands of pixels wrong.
+<inimino>	greensky: (a) it's not three minutes work, and (b) you can probably do it yourself
+<inimino>	michaelis: make a jsfiddle and cut it down to 20-30 lines and people will be more likely to help
+<greensky>	inimino i know but i spent a day on it bro
+<greensky>	im 99% there
+<greensky>	but i need to be 100% there
+<xec>	i estimate a 99% chance that your percentages are made up ;)
+<hellyeah>	hey
+<hellyeah>	do i have to know javascript with deep knowledghe to write client side validation?
+<hooloovoo1>	hellyeah: not really.
+<inimino>	greensky: i'm sure someone can finish up that remaining 1% in three minutes then *rolls eyes*
+<greensky>	i estimate xec is correct with 61% certainty
+<hellyeah>	hooloovoo1: how so? can you explain or gie me some tutorial?
+<hooloovoo1>	hellyeah: do you know javascript at all?
+<hellyeah>	not much
+<ankr>	i'm 90% sure i just saw jake gyllenhaal on the subway.
+<casw>	"this parent chain is defined by a hidden slot in every object, called [⁣[prototype]⁣]. you can't change this slot directly4, so the only way of setting it is when you're creating a fresh object. " hmm, falafel, in that link you sent they say this, but isn't the [[prototype]] object just located at obj.prototype? the way i do inheritance now, is just by setting obj.prototype to a new instance of the super class...
+<hooloovoo1>	hellyeah: you could just use a library for it. jquery has jquery-validate, and there's lots others. just google and see which fits you.
+<sorella>	casw: no, obj.prototype is just a regular property that contains an object. and it's only used in a special way when you use `new constructor`
+<falafel>	casw, [[prototype]] is the internal property, exposed in some environments as __proto__. the `prototype` property of a function is a just a regular object, that acts as a blueprint for the __proto__ of new objects
+<casw>	aah, so obj.prototype is actually only used if you call new obj?
+<falafel>	yes
+<casw>	okay, that explains it, thanks :)
+<michaelis>	inimino, ok. i have done that that.
+<kartagis>	it's surprising that console doesn't offer $.lightbox or $.lightbox
+<michaelis>	hi. please take a look at https://jsfiddle.net/c4rnc6p2/1/ . in the "mousemove" event on s.node the .top and .left props of getboundingclientrect() shows the right value every second move. otherwise it jumps 100-200 pixels giving a really strange result. any ideas?
+<ankr>	michaelis your example is not complete
+<michaelis>	ankr, no it isn't because i was told to shorten it to 20-30 lines.
+<inimino>	michaelis: sorry for not being clear, i meant that you should shorten while still demonstrating the problem
+<ankr>	michaelis you need to reproduce the problem with as little code as possible
+<inimino>	the point in using jsfiddle is that people can actually see the issue
+<inimino>	!testcase
+<michaelis>	inimino, sorry for me not understanding.
+<ecmabot>	inimino: show some code, but don't paste it on the channel. sites like http://gist.github.com/ and http://bpaste.net/ are cool. you can also use http://jsbin.com , http://requirebin.com or http://jsfiddle.net/ to provide a test case we can run and help you with your problem.
+<inimino>	that's not the botfact i wanted
+<inimino>	!minimal
+<ecmabot>	inimino: a minimal test case should contain precisely the html and javascript necessary to demonstrate the problem, no more and no less. if the javascript is more than 42 lines, it is probably not a minimal test case.
+<ankr>	michaelis at least you try ;) opposite to certain others
+<inimino>	that one ^
+<inimino>	michaelis: put some elements in your html, get rid of the dependencies on that snap thing, and attach the event listener and produce some output, then people can load the jsfiddle and see the problem directly
+<michaelis>	inimino, but what if the problem is related to snap?
+<inimino>	michaelis: then that's the most useful information you could possibly get out of this exercise
+<inimino>	then you either don't use snap, use it differently, or send your testcase to them as a bug report
+<michaelis>	inimino, i will do what you have suggested.
+<alphaatom>	what is considered best practice for binding a click event with jquery?
+<michaelis>	inimino, the funny thing is that getboundingclientrect is producing such a strange result and i don't really now how to reproduce it without snap. i don't know if the bug belongs to snap och mozilla.
+<michaelis>	s/och/or
+<mrcuteo2>	i want to load 2 id field on a onload event but only one work this is my script:
+<mrcuteo2>	$(document).ready(function(){     $('#sub_item').change(), $('#item_warranty').change(); });
+<inimino>	michaelis: well assuming that s.node is just a dom element, you can probably literally replace it with document.getelementbyid() and make your test case
+<mrcuteo2>	only su_item works on change
+<mrcuteo2>	anyone knows how can i make both function work at the same time?
+<inimino>	good luck :)
+<michaelis>	inimino, i think i understand. i will try it out.
+<yansanmo>	mrcuteo2, i don't see a problem: http://jsfiddle.net/g561xx5w/
+<mrcuteo2>	yansanmo: only sub_item will load but not item_warranty
+<yansanmo>	i got "changed!" in both
+<karasu>	if i use if(!mystring){ code;} it will excecute when mystring is either undefined/null and when it's an empty string '', right?
+<ilhami>	doug16k, ? :p
+<saltypancakes>	falsy values in js just remember f u n n 0 "", false undefined, null, nan, "", 0
+<zivc>	f u ilhami
+<ilhami>	zivc, what?
+<inimino>	!truthy
+<ecmabot>	inimino: the 'falsy' values in javascript are undefined, null, 0, -0, nan, '', and false. the 'truthy' values are all other values. all objects are truthy. there is nothing both truthy and falsy, or neither truthy nor falsy.
+<michaelis>	ankr, inimino ok, so i removed the snap library and i cannot reproduce the problem. this suggests that the problem is with the snap library. thank you for your help.
+<ankr>	karasu and to complete the confusion https://gist.github.com/ankr/5190960 ;)
+<karasu>	wat
+<ankr>	my favorite
+<ankr>	>> false     ==   '0'
+<ecmabot>	ankr: (boolean) true
+<bberry>	>> [] == "" @ ankr
+<ecmabot>	ankr: (boolean) true
+<ankr>	>> {} + []
+<ecmabot>	ankr: (number) 0
+<ankr>	>> [] + {}
+<ecmabot>	ankr: (string) '[object object]'
+<buu>	false being 0 always made sense to me
+<ankr>	@bberry ;)
+<bberry>	haha yep
+being 0 makes less sense

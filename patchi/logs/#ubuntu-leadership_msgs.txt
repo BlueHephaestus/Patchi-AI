@@ -1,0 +1,57 @@
+<darkwingduck> thank you
+<head_victim> darkwingduck: back again if you're still chasing me
+<akgraner> darkwingduck, do we have a mailing list yet?
+<akgraner> i want to send out a doodle pool
+<akgraner> so we can come with a date for our first meeting
+<akgraner> you’re invited to join the ubuntu leadership team - http://akgraner.com/?p=1028 #ubuntu #locoteams #canonical #community #leadership
+<darkwingduck> akgraner: we don't have a ml yes but, we have logging.
+<akgraner> ok :-)
+<akgraner> well i'll update the post to refect that
+<darkwingduck> yes/yet
+<akgraner> reflect even
+<darkwingduck> akgraner: know anyone looking for a powerhouse laptop?
+<akgraner> i just wanted more people to know what was happening, where we are and the direction we are heading in
+<akgraner> darkwingduck, can't say that i do
+<darkwingduck> da, now that planet is fixed :)
+<pleia2> akgraner: you didn't tag your post with uplanet :)
+<pleia2> er, categorize
+<akgraner> fixed
+<akgraner> :-)
+<akgraner> pleia2, thanks for pointing that out....
+<pleia2> sure thing, and added to uwn doc now
+<akgraner> i'll jump in there on sunday and write up some summaries
+<nrwlion> hi there!
+<darkwingduck> afternoon :)
+<nrwlion> hey darkwingduck  ;) just coming around because i read a post of akgraner inviting me into the leadership team ;)
+<valorie> me too -- i'm glad to see this finally happening
+<darkwingduck> yes, it's still a work in progress. but, we are making headway :)
+<nrwlion> darkwingduck: could you give me a short intro ?
+<darkwingduck> sure.
+<darkwingduck> our goal/aim is to be a help center and training people in leadership.
+<nrwlion> cool. what is the status ?
+<darkwingduck> just off the ground :)
+<darkwingduck> we have a doc that is a work in progress for loco leadership. https://docs.google.com/doc?docid=0adkzelxu8y2lzgnrchrkymhfnzhmnnnmm2rjda&hl=en_us
+<darkwingduck> i'll be pouring more work into it now that the doc freeze is over.
+<nrwlion> loco? i thought of general ubuntu-leadership
+<nrwlion> because i am from germany ;)
+<darkwingduck> nrwlion: awesome.
+<darkwingduck> we are still building training guides and getting everything setup. this is def a communnity effort.
+<nrwlion> leadership was a part of my studies
+<nrwlion> ;)
+<darkwingduck> awesome.
+<nrwlion> just tell me what i can do ;)
+<darkwingduck> https://wiki.ubuntu.com/ubuntuleadership/sandbox is where i will be placing ideas. there will be more coming very soon.
+<darkwingduck> within 24 hours there will be more coming.
+<nrwlion> if you see me online just poke me or give me a note for a skype call ;)
+<nrwlion> would be happy to get into the team as i have had a rough time around here
+<darkwingduck> awesome.
+<darkwingduck> i will let you know.
+<darkwingduck> either akgraner (akgraner.com)or myself (wonderly.com) will be blogging updates.
+<nrwlion> darkwingduck: if i am not online here you will get me on facebook chat
+<nrwlion> ;)
+<darkwingduck> awesome.
+<ashams> darkwingduck: hi
+<ashams> will this be hosted on lp?
+<ashams> maybe it should be converted to a book
+<nrwlion> bye every1
+<nrwlion> darkwingduck: we are clear, arent we?

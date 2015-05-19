@@ -1,0 +1,10 @@
+<dholbach> good morning
+<stevenk> happycamp_laptop: https://wiki.ubuntu.com/packagingguide
+<happycamp_laptop> stevenk: thanks!
+<smagoun> hi all, i'm looking for a sponsor to get an update to the moblin-applets package into universe: https://bugs.edge.launchpad.net/ubuntu/+source/moblin-applets/+bug/187181
+<ubotu> launchpad bug 187181 in moblin-applets "upgrade to moblin-applets 0.27" [undecided,in progress]
+<sabotage> kylen_:  apt-get install gtk-theme-switch
+<kylen_> sabotage: excellent. thx
+<sabotage> its a start (someone elses) and does not yet handle icons that i can see yet...still looking at the source
+<sabotage> but it does what you wanted
+<kylen_> sabotage_afk:  that's a big leg up for us. much appreciated

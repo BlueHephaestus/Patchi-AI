@@ -1,0 +1,6 @@
+<erichammond> i am told that this channel is now being logged on http://irclogs.ubuntu.com (by the "ubuntulog" bot).
+<erichammond> could somebody with admin rights update the topic to reflect this so that folks entering the channel are less likely to be surprised that their messages to a public channel are public?
+<erichammond> hm, perhaps it isn't done in the topic.  i get a separate message when i enter channels like #ubuntu which includes "this channel is officially logged at http://irclogs.ubuntu.com/"
+<lyrichartley> question: what are you guys doing for smtp? i see some recommendations in the forum for fastmail.fm and authsmtp ...any thoughts
+<erichammond> lyrichartley: we run a leased server with a clean ip address at a separate isp and relay outbound email through it.
+<erichammond> the best depends on a number of factors including the volume of email sent, and the amount of effort you want to put into maintaining the solution.

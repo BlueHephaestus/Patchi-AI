@@ -1,0 +1,1395 @@
+cronos: why expected 0? the queryrow didn't return anything to scan?	ah i got it... he thinks it will be an update
+guybrush: where are these version dependencies coming from?	gb won't allow you to do *anything* because it's dangerous
+so how would you write a go program where horses and dogs share mamal characteristics. pitbulls and dobermans share dog characteristcs ?	no one writes those programs
+skelterjohn, any way around that?	i am suggesting that if it is restful then reading the body is likely already what it expects you to do
+what does any of that have to do with go?	go ides.
+how do you store that data?	do you have other function that can return a db?
+tjscanlon: the return key? :)	you might not have had a comma at the end of the line
+if the request was successful it'd be a very large response, might that cause it?	how long does it take with curl? and how are you reading the response body?
+anybody?	some of your dependencies doesn't have a .git directory in its path
+remeh: isn't it for generating help?	the go authors and community mostly prefer natural language documentation over one that is optimized for machine readability
+i thought the ... expanded?	https//golang.org/ref/spec#passing_arguments_to_..._parameters
+say i don't have wgo installed, but i'm trying to go get a repo that was developed by a wgo user. what happens?	there is just too much ambiguity in what you're asking
+oh is it actually non-linear fitting?	you've tried debugging with gdb i take it..
+bnagy: where online? not here: http://golang.org/pkg/sys/	syscall has been deprecated as of go 1.4
+is it possible to get access a key with a name like 5000/tcp using go templates?	i think the keys have to be valid go identifiers
+thought that'd decode the element to the object it's being called against?	at first glance it seems like it
+even using readall?	you are my favourite person switching to ioutil.readall sorted me nice
+harikb, so what is http.request.formvalue() reading, exactly?	read what? http.request.form?
+djx: can you show your code?	https//github.com/jinzhu/gorm
+tyndyll: did you mean readall and response.body ?	yep - sorry. caffeine hasn’t kicked in yet
+iant: do you have an opinion about https://go-review.googlesource.com/#/c/8685/ ?	it's sort of an unsupported use case
+tv`: okay. and the rest is okay?	plenty better than many of the things this channel sees ;)
+alexrussell-saw: how long does the post in go take?	and did you try ioutil.readall
+i'm distributing jobs across ec2. i rsync data to an ec2 instance, run a command that takes ~1hr, rsync the output and then terminate the instance. any best practices on checking the status of the job while it's running, and knowing when to terminate? i was thinking using the sqs (simple queue service) would be a good-enough thing to use.	time.after manual says it works the way i set it up... http//golang.org/pkg/time/#exae_after or at least that's what that exae indicates (
+say im using a 3rd party library that uses some form of chaining. and i want to build on top of the lib to add more methods to chain, what would be the proper way to implement that in go?	am probably missing something but multiple interfaces won't solve it. in classical oop the drink milk method would apply to all mammals but in go i would have to iement a drink milk method for dogs and another for horses
+i wonder if i’m missing something obvious - or is it a bug? ...	what are the potential cause of getting an error back from io.ioutil while reading a http.response? trying to be diligent and keeping 100% coverage in tests but can’t c up with a way of hitting it
+vyrus001: type-assertion?	that sounds like how i did it
+tucnak: um.. http://golang.org/pkg/net/http/#notfoundhandler ?	on reddit?
+hmm that may not be correct but you get the idea? :p	that doesn't really change the insane amount of code - also it makes the output unreadable because of all the whitespace
+henesy: i'm not the most seasoned guy here.  please let me know - isn't your need for more precision?  or both a larger value and more precision?	hope the above helps )
+rogpeppe/godef · github vs buaazp/godef · github ?	im wondering why you arent installing with package control
+what are the potential cause of getting an error back from io.ioutil while reading a http.response? trying to be diligent and keeping 100% coverage in tests but can’t come up with a way of hitting it	did you mean readall and response.body ?
+cronos: am i right that recover() can catch errors exposed from the functions on the stack?	recover catches panics
+is using slashes in template names silly or error prone?	e.g. {{teate "sub/test" .}}
+i am trying to use gdb in my emacs to debug my executable main , i am getting no such file or directoary gdb, any one run in this problem..? (sorry it s not a pure go question)	ah i want os/ec's "lookpath"
+is there a standard, like -1 ?	typically the zero value for the type (there are exceptions)
+what am i doing wrong?	how did you import it?
+danmace: what do you mean by 'inline'?	http//play.golang.org/p/t5rl_7qtty
+any clues why net.dial() would give "no such host" with a valid host?	my first guess is that it's not actually a valid host
+just a quick question, is it possible to declare a variable without a type?	strongly typed. ie no.
+did i mention i have been parsing pdf all day?	that sounds terrible
+for-loop? :) or write a function?	that's what i'm doing here
+djx: what does the error say?	error "sql expected 0 destination arguments in scan not 1"
+how does one read from a io.reader without flushing the buffer? kind of like read but leave it in place, like copy the data read	you cannot what you read from an io.reader is consumed. you have to keep a copy yourself
+is there a function that lets me choose what the base of the number is?	but also think about unifing your code to not need the conversion though sometimes this isn't possible of course
+lupine: the cert should be pinned to the hostname?	the cert has a cn but it's not very important
+hfaafb: are nested pkgs going to work?	a package is the closest thing to c++ namespace
+wow, it's that small?	is that small?
+henesy: http://godoc.org/golang.org/x/crypto/ssh/terminal perhaps?	thank you i have been looking for this for ages
+right?	and i was referring to the format button on the playground but what  and maruel said
+does that make sense to you?	still trying to understand your explanation sorry if it’s taking some time
+vaskrate: pass a pointer to it as an argument?	could you provide sample code?
+what should be done with that clash, revert to hungarian notation ?	by hrian notation i mean  use namebytes = somethingthatreturnsarrayofbytesanderr    and then  return string(namebytes)
+i assume its better to use a absolute path here, correct?	config file is good
+^((?!jpg|gif).)*$ ( i think )	perfect ty
+daved: why do you believe that?	if you have something that boils down to a macro expansion you could pre-process your templates i suppose.
+anyone think that a go interpreter would be feasible? compilation tends to be pretty fast	it makes no sense
+oh, including the cap?	yeah that’s why i’m considering changing title string to title *string so i can leverage omitempty
+hotcockdotcom: any particular reason you need to use that nick?	thanks i'll check it out now )
+quiznilo, how do you mean?	i avoided using that
+who, me?	yes -p
+andlabs: ?	i don't care haha it's offtopic anywya )
+cespare: i see the golang-dev thread, is there a bug too?	i hadn't looked at it for some reason
+iant: did you see the comments at https://go-review.googlesource.com/#/c/9888/2/src/cmd/internal/ld/data.go@a1120 ?	your last comment ends in mid-stream
+is there some tool that can work with that?	heroku buildpacks iirc
+so why do you need them in your ide?	if you think sublime should have sthing go talk to them
+functor then?	instead of looping on s.nodes + s.sel(i)?
+esarl: invoke python with os/exec? :)	fivetwentysix also for other languages how big would the install be to get hello world running? if you put that hello world ecutable on another machine it would work as expected w/o installing anything else
+http://play.golang.org/p/dxk4w66sv7 - good first ever test script?	https//golang.org/ref/spec#passing_arguments_to_..._parameters
+normally those are treated as strings. should that be quoted?	yes it’s the zipcde
+something about c stuff perhaps?	if i build sthing on a arm device would the binary run on a x86_64 machine?
+jkbbwr: you mean the asm-written crypto/tls re-write that cloudflare did?	was it that?
+on the server side, isn't the http.request just for you? data goes back to the client via the http.responsewriter	sorry-- i'm confused too ;)
+dani2981: is there supposed to be as much data as you ask it for sent?	huh you are not supposed to be able to get an eof from readfull...
+has anyone done serializing / restoring of web app data and then had their data blow up or corrupt yet?	ok thanks so you regarding my question you'd take the convenience of the helper function (with the increase memory of the map) rather than parsing the url manually each time?
+hyphenated: why not?	i get what you're saying.  i wasn't passing back all of my values completely
+i'm currently on go-effective, is https://github.com/astaxie/build-web-application-with-golang/ a good resource to begin with?	i'm repeating myself but tour.golang.org https//golang.org/ref/spec and https//golang.org/doc/effective_go.html
+i see multiple git repos for godef. which one should i be useing?	im wondering why you arent installing with package control
+cespare, can i use the 64-bit msvc compiler somehow?	i'm about 75% sure the answer is no but i really don't know much about windows
+why mmap or any other magic?	do you have other function that can return a db?
+does anyone have a clue while i might be getting this when running ./all.bash on linux ?	if the c links against shared libraries the binary will need those shared libraries
+c-keen: why did you have a int* ?	that sounds like how i did it
+what's the recommended way to do this?	is it field[n] or field[]? golang doesn't automatically consolidate fieldname[] like php does
+is anyone here using notepad++ for go?	i used to use notepad++ for all my code. that was ~10 years ago though
+suprat: how does it know which to use?	your routes simply conflict
+me or _cb ?	with composition
+is that your gut feeling or do you have any evidence that rust is more community-centric?	just look at the pr logs of go and rust
+entire text is "anything coming up soon? i'd be happy to talk for 15-30."	bummer if you get a response offer to organize etc. or offer to fork the group temporarily (which is usually a bad/sad event for most projects)
+hm, i get a c int* fd and i need to create a os.file struct with that, how can i do so? os.newfile expects a uintptr and i don't know whether that really means a pointer to the c fd or some other internal structure	yh i'd probably do sthine like foob err = getfoo(); // check err; foo = string(foob)
+what could be the best way of doing it ?	how do you think fmt works..
+somebody could tell me whether my program is okay writte like that? https://github.com/jubalh/tongue	given `type request interface{}` i want to write `func decode(r io.reader ???) (request error)` such that users can define their own `type myrequest struct {...}` and pass <sthing> where it says ??? so that the returned request interface is of concrete type myrequest
+deldotbat: ok, thanks, so you regarding my question, you'd take the convenience of the helper function (with the increase memory of the map) rather than parsing the url manually each time?	yea definitely
+guys, can anyone help me take a look at this (http://play.golang.org/p/s3wkcjcjxi) and tell me what i'm doing wrong? thanks!	it's an interface{} not an interface
+hey golang, slightly confused here, i've got a web server i wrote up, just one api that uploads data to s3, i create a buffered channel, then pass that buffered channel to a go routine that loops through messages and does the upload to s3... i set the buffer to 300 but still see like 2000 go routines in the performance profiling... am i maybe missing something obvious?	channel buffers are related to channels not goroutine restriction.
+can you get gdb working on any executable inside of emacs?  try /usr/bin/lsof or something crazy	s rare cases (complex recursion) can use panic-recover as control flow but it's likely not what you want
+how do i turn a net.conn into a net.tcpconn ?	type-assertion?
+docker?  rly?	just look at the pr logs of go and rust
+how do i use go on windows properly? the getting started guide doesn't say how to setup up workspace etc. on non unix platforms	yes it does
+hm why do i get "too many open files" from tls.listen.accept after only 2 connections?	ulimit?
+smw, if i put time.now before client.do() and time.since would it be good?	that sounds fair to me. it won't include the read of the body but you may not want that
+mohae: http://golang.org/src/builtin/builtin.go?s=7091:7129#l172 only 2 parameters, not 3 :)	right make parms depend on what you are making i used slice because of 's prior
+could you run this same command using pure go? mysql -h host -u user_name -ppassword database < file.sql > output.log	you would use https//golang.org/pkg/os/exec/#cmd and set its stdin/stdout
+noahz: so it's a slice of pointers to arrays of bytes? wow	something like this http//play.golang.org/p/pdgtw1dnrv
+has go built in package system like pip in python?	go get
+would someone mind sanity checking this map setting method ? http://play.golang.org/p/4v7fneyzsy	what are you wondering about? the map zero value is nil so it panics when you assign to it.
+kim^j: is there a verbose output switch? it's not returning anything	go build -n is worth a try
+use gcc?	i know php enough to know how to do what i want to do
+feliwir: did you try the official installation instructions?	http//www.mingw.org/wiki/getting_started
+codingrogue: is it literally foo_bar.go?	sure it isn't foo_test.go? )
+who writes their own code?? we have computers, its 2015 people	thanks! looking into it
+djx: the point of interfaces is that you don't care what "underlying" type it is, isn't it?	correct but this is only a workaround until a bug is fixed -)
+mohae: as far as i can see the function fails because it got an error rather than html. i guess that must mean that it was unable to connect to my s3 bucket maybe? i guess i just expected an error more specific such as "object not found".	well actually the error is it *got* html when in fact it expected an error which makes less sense to me
+and feel okay with and all the mental tax it takes to maintain all calls with `if err != nil`?	[1230] <> and you pass them aaaaall the way up to stack?
+but how would the cap be used there?	a client requests 5mb you send it a 5mb slice of your memory and know they won't modify memory sent to other clients
+aguilbau, there isn't any doc - but maybe this? https://golang.org/pkg/syscall/#umask	and this is a good example that you could combine with syscall.umask -> https//gobyexample.com/execing-processes
+skelterjohn: ok, so imagine that i create a wgo workspace and put it on github. does that make it impossible to use with go get? that's all i'm trying to determine.	you would not want to 'go get' something that is a complete wgo workspace in github. in the wgo workspace if something is in w/src/x it is imported as "x". but put w into github.com/foo/w and now you'd need to import "github.com/foo/w/src/x"
+okay... should i use odf or djvu?	odf gives you possibility to edit your output documents djvu doesn't have it functionality afaik
+hi, if i issue os.exit(1) form a function that runs asynchronously - will it close the whole application or just the function itself?	it'll exit everything immediately
+the way it is in the documentation? that's a lot of work :d	why so much struct?
+is it dumping a core you can open in gdb?	for the record it's documented at http//golang.org/pkg/runtime/ under "environment variables"
+how to reverse a slice of bytes?	google "reverse an array"
+if the value comes from an env variable, how can it be a compile time constant?	hyphenated that github project that i'm working from is it really bad or should i work on it and try to improve?
+does make(map[string]string, 100) create 100 empty strings?	"create ... empty string" is confusing words
+'golang is from google and docker.'?	just look at the pr logs of go and rust
+is there internal way to measure http request? or time.now time.since are enough? "internal" i mean may be http already measures it itself?	http doesn't do it itself but you can easily profile how long the handlers take by making a wrapper.
+if the text is called a "foo", would you use foobytes and foo as names?	i might just name them b and s if the scope is short enough that long names add no value
+is there a number type that can hold more than a float64?	try float∞
+)then .... wtf is that ?	yea there's no "then" in his code...
+petero_: no? packages under /x/ are packages maintained by the go project, but not in stdlib	http//play.golang.org/p/nlvcydjp7d on line 6 i'm getting "err declared and not used"
+so.. when should i be worrying about floating point accuracy if ever?	huh you're right
+if i have very large chunk of json data and unmarshall runs for like 2 sec, are newly incoming requests blocked for that duration of time?	no
+this is just a little example. the code in main() *is* working, being from official google docs. code here: http://pastebin.com/raw.php?i=rxguu9iv	works for me
+cronos: do you know any other orm around there?	no i don't use orms precisely to avoid these kinds of issues
+hyphenated, -d does this right display diffs instead of rewriting files ??	for example to scan a large number of hosts and find go binaries compiled with go version less than 1.x
+is the question of whether or not it was coined with go? certainly not	night
+daved: you test revel?	a long while ago yes
+tv`: got one with better go support? :/	is never happy.
+sunny day real estate?  foo fighters?  just about anyone in the "emo" scene was influence by enigk (the singer)	i got the document ) thk u very much
+can you have multiple interfaces for a struct? that would solve the problem (i think)	all structs implement many interfaces (infinate really)
+just curious, can i know the current size of a buffered channel?	cap for the buffer capacity len for how many in the channel
+mohae: what is useful information?	you’ll have to populate r.url.host yourself probably with the “host” header but that’s not exactly entirely safe
+question: if i have several different routes that have duplicate code (for example, to get url params) what options do i have to reduce duplication?	go is functional just make some helper functions
+esarl: does numb ever need to be a rational?	cant u just do numa.exp(numa numb nil)*numa.exp(numa -denb nil) / dena.exp(dena numb nil)*dena.exp(numa -denb nil) (with the proper / and * functions)
+is that best practice for go ?  or does go prefer larger & less methods?	heavorse that doesn't work unfortunately
+frostcandy: len() ?	len(b)
+you asked about syscall, right?	syscall has been deprecated as of go 1.4
+should we prefer if x = n; x < lim { over x = n if x < lim { ?	i'd prefer if x = n; x < lim {
+jmoiron: underneath his shirt, there is a very colorful uniform with the "gb" logo?	ok thank you. i'm not going to have the same number of params in each route. what would you return from the parseurlparams func?
+what version of go?	calling any member returns something like i.e. “undefined pcap.openlive”
+_cb that'd be equivalent to: type x []map[string][][][][]string yeah?	or at least i hope that was a joke
+did you try building without godep?	same results '(
+gofmt, govet, goimports, anything else?	goimports also does what gofmt does
+is it purely for convenience?	there's no such function
+segfalt: if the function takes interface{} what type should that be?	good point.  what happens when a function returns interface{} and you do val = func()?
+what tools can i use to run tests when files have changed?	good question i'd like to know that too
+ptrb: why not? how else do you handle switching masters?	thanks to take it a bit further if i have a struct with nested structs and i marshal json into it and the json is missing one of the fields that contains nested structs is there a way to tell that?
+is anyone use html/template in a recursive fashion?	pmezard it returns an err so i cannot siy string() it at assign time
+again, i see the point of minimizing excessive improvements, but at this particular case, don't you think that custom 404 response is somewhat being customized like in every single app?	it would need also 403 logging permissions etc typically
+anyone know of an example in go using the flag package to implement cli subcommands?	isk i'm not sure if this applies but it might - http//dave.cheney.net/2013/11/07/subcommand-handling-in-go
+i don't suppose there's any super easy way to throttle/buffer that?	skelterjohn  right i'll look into it deeper than thanks.
+bnagy: argh.. it costs more doing a multiplication per cycle or a float(stuff)?	i missed moving the increment to the loop d'oh!
+knowing they are the same?	what does the error say?
+edrocks: also this code as written doesn't makes sense (no need for a goroutine). what's different about your real code?	even if they are expensive you should write code that does things sensibly
+is that repo a wgo workspace?	this my gin server log on console
+how do i concatenate / interpolate with go templates? i've got a function that takes a string argument and i can do {{ fun "foo" }} but how do i do something like {{ fun "foo" {{ .name }} }} ?	just {{ fun "foo" .name }} works
+do any of you have ideas ?	doesn't https//golang.org/src/net/ip.go do that already
+rite?	but i bet it's not depressing
+integralist: how many of those 40 lines of code do you understand?	pretty much most of it i think
+what's the advantage of proxying through nginx?	defence against resource starving attacks i would imagine
+cronos: alright, just to clarify, am i right that in case of my web application, suppose it couldn't connect to database somewhere on the stack, should i panic and catch it in the recover call of root function?	no you should bubble up errors
+mohae: are you saying go i have to manually include all files of the same package?	no. use go build.
+does it say im from oregon?	thanks for the clarity
+can i share pointer to package?	where do you call the testdb ;o
+is it at all possible to create a pointer to an array?	'arr' in your example is a slice
+i compiled my first hello world program with go. it created 1.3mb file. i was expecting a tiny output. complex go programs are going huge when compiled?	go makes static executables which can run standalone on any system
+aep, what?	it sounds like you are overloading your server's ability to accept connections...
+cronos : in fact i close the connection just after i send my file. should i expect a server answer before close it ?	i don't know depends on what your protocol is
+what do you use for scraping web pages?	python -)
+furao: isn't that a loop, not a range?	from this file https//github.com/golang/go/blob/master/doc/go_spec.html
+yeah but i was finding for some suggestions on where to begin?	hello golang newbie alert question about to c through! hoping sone can help...
+why is what max-low?	yeah ok i am getting it now. thx )
+mohae: what would you replace it with? just check is a substring in present?	yes
+hyphenated: but why have this odd constraint to begin with is what i am wondering?	the go tool uses it for basically everything
+skelterjohn: how was it a step down?	it lots workspaces and forced you to manage gopath yourself
+can other packages do anything with your package before your packages init() is finished? i have a map which will be read only after init() and i'm wondering if i need a lock or something similar	does anyone know of a pkg that will give a dev-tools(chr) like console to my own app
+anyone know how the gc works?	setgcpercent to negative
+mousetrap like what? and is go one of them	it wouldn't work really like with php no
+a concrete example: calculater@1 has api for +,-; calculator@2 adds *,/; pkga depends on calculator@1; pkgb depends on calculator@2; .... now when i install pkga and pkgb, its my responsibility to fix dependency-hell?	yes the only way that differs from most dependency management tools is that libraries don't specify dependency versions
+i have a buffered chan bool of length 1. i want to insert a bool, but only if it is empty, otherwise continue execution and not halt on waiting for it to empty. is there a way to do this with select{case} instead of "if len(chan) < 1 { //dostuff }" ?	use a select with a default case
+smw: huh? for example, i have a type []string{"foo", "bar", "baz"} and the function is foobar(names ...string)	n1cky exactly what  said
+displease: could you paste output of tree command ran from $gopath?	what is "tree command"
+alectaylor: what project? you should learn go, so you can judge the quality yourself	i think you need to write a lot of your own code do the go tour and read effective go before you say someone elses code is bad...
+how to do that?	http//play.golang.org/p/bp1xl1g5oy
+harikb, so do i want to set rawquery?	in my usage i have set rawquery to a url-encoded format i have created myself  (a=b&c=d ) etc. this goes to server as a query_string of course. i am not saying there isn't any wrapper to help you create it but the form field is not it.
+i get a string containing marshalled data from a service, how do i get this data into a []byte so that i can unmarshall it?	nothing's expensive until it's in your cal path and comes up in benchmarking
+interesting so i have to use os.stat(path) and check using os.isnotexist(err) ?	yes but why?
+how is it going to build gl source without a c compiler?	what i am doing is something like netstring but in a binary way.
+..? not in go	https//gist.github.com/film42/430d125242a5cc1aac07
+what gets old?	the code is much farther from working than that....
+pollute your env vars with... one or two vars?	i've been wary of googling for solutions to things when i did that week i ended up reading a garbage book that gave me a ton of bad habits
+i have code for a program in gopath/src/foo ("package main"). how can i get godoc for this?	osx?
+there was a tool/method to see where my code is using the most cpu cycles/time in, can someone give me a hint where to find this ?	pprof ..
+ptrb: any reasoning? do you use something else? i'm mainly worried that redis is available not that my data is 100% up2date	you should handle all that (sharding failover) in your application
+when i call my stored procdedure i am getting an error error 1312: procedure can't return a result set in the given context , is this coming from the procedure itself or go , any idea?	seems like it comes from the db
+smw, what if instead of integers i want to use structs?	map[string]interface{}{"1" t{1}}
+how can i start a server and close it, or start 2 servers rather? http.listenandserve(...) blocks...	please define gracefully
+golang nightly builds?	gaganot http//golang.org/doc/install/source
+your project is open source or close?	still on?
+heydabop: so something more like this? - https://gist.github.com/alectaylor/06d07e485fa1bca2f740	im just gonna introduce you to this https//play.golang.org/p/dewfaqpp0h
+for http you mean?	yes.. testing
+hi all.. here's an odd question. i have a type from a package (goji web.c) and i'd like to make a variable pointing to it in a different package, and use it in it's place (like a pointer for a type i guess?) so that i'm not getting vendor-lock-in'd	you could create a type that goji web.c implements
+is there a list of it somewhere?	http//golang.org/pkg/#other
+is it worth it to factor out a json encoder to be a middleware in the form func(http.handler) http.handler?	yeah gzip wrapping is bytes->bytes
+context: is it also true when len([]byte) > atomic read?	that i dont know.
+are there any decent ides with go support including interactive debugging?	liteide
+should it be inside src? i haven't installed it	the code link provided earlier explains this...
+why not some good ol' bitwise arithmetics?	so that would let me do if bit 4 is a 1 and bit 5 is a 1 then do x ?
+double marshall?	ok  i got it.  thanks
+k0nserv-: you sure you didn't write value.([]bytes)?	pastebin the file or the piece of the file with the problem
+so what's the type of these anonymous structures?	the type of these anonymouss tructures is the structure type
+is there golang based webserver with ssl support?	hyphenated not sure how you reference the data inside that struct though? it looks like you can't access data via indes
+guybrush: what's the right way?	but that's import rewriting isn't it
+furball365: you can tab the nicks of people when you speak, did you know that?	i didn't -( skelterjohn taught me
+i'm sorry, i don't know bitwise ops, but will the solution to '1<<63-1' ever change?	1. who said 63  2. why should i repeat that
+if i have a pointer inside a struct pointing to the struct itself, it will never get gc'ed?	to make it able to edit itself i’m guessing
+the question is "why are i and prevrune different types?"	yeah i'm thinking about it.
+[:]?	yeah that’s why i’m considering changing title string to title *string so i can leverage omitempty
+whats the difference between net/http.request's form and postform? are they the same if your making a post or do you have to use postform for post's?	postform contains only the post or put form data.
+wait, what???	thanks! looking into it
+skelterjohn: what will happen if a user who doesn't have wgo tries to go get a wgo repo?	does that make sense?
+hey gophers, what do you guys use to read a socket, let's say a tls conn', do you loop through it with read waiting it to return an eof, or is there any higher level / more optimized existing method/function to do that ? thanks in advance :)	all of those depend on the circumstances and the data the conn receives..
+hi. my github username is 'tomnomnom'; is there consensus on whether i should use github.com/tomnomnom/<package> (i.e. camel cased username) or github.com/tomnomnom/<package> (i.e. lowercased) for my go packages? both work.	lower case
+i'm new and thick headed, but am trying to pass a *bufio.writer in to a function that uses *io.writer -- what obvious way of handling this am i missing?	you're using a pointer to an interface use io.writer
+thun_: just how do you expect go to use the python file?	oh
+how does d say "i depend on a@1"?	sorry i meant global in the project
+quiznilo: haha. is that directed at me?	http//play.golang.org/p/3lwychesrx this is how i thought it worked
+fergusl: where does this data come from? which encoding is it in? which encoding is it expected to be in?	does it end up looking like e.g. Ã©
+djx: so why are you calling scan?	it's not me it's the driver
+aep, if this is production, do you have a load balancer or anything?	10000 connections with tls on a small machine is not going to work out well no matter what you are using. go's tls is also not nearly as fast as openssl
+sztanpet: how?	that was quite rude. is that the image you want the community to project?
+so you're expecting millions of connections?	schmichael ty
+and in that case it will block, untill it can recive (i.e. never) or when done is cloesed. right pmezard ?	awsome!
+is it possible to use the gocode emacs plugin without having to copy a file from the repo?	grpc
+are you just trying to pass around values between goroutines?	do you have other function that can return a db?
+what's nice about it?	btw python requests might be worth looking into for testing if you haven't already
+aside from the general net/rpc package, what other rpc frameworks are there for go?	grpc
+cronos: the client disconnects just after it send all the file. on line 10 of the gist file. https://gist.github.com/anonymous/6ea66caac79d61332590 this is a problem ?	also slightly ot but check eg netstrings
+ncs_one: isn't angular mostly client side?	https//prerender.io/js-seo/angularjs-seo-get-your-site-indexed-and-to-the-top-of-the-search-results/
+what tool would you recommend for vendoring depenedncies in a way that works well with external tools, like goimports, or others?	good question let me know if you find something ;)
+and did you do the web crawler?	ever feel futile?
+jmoiron: you around?	i've never used mysql w/ ssl from go
+what's an absolute url vs. a relative url? give an example.	http//api.github.com/gists <- absolute /gists <- relative
+you're trying to discard the data, yeah?	thanks  so the const vars are available from os.
+is rsc's http://research.swtch.com/interfaces still valid in 2015?	yes
+nucular_: where?	net/http expects you to have learned go first.. including use of io.reader. http//jmoiron.net/blog/crossing-streams-a-love-letter-to-ioreader/ might help.
+if i build something on a arm device, would the binary run on a x86_64 machine?	it includes *all* of fmt package and it's deps plus all of runtime gc scheduler etc
+any more ways that you guys use?	what does the error say?
+is it forbidden to use the same name for a variable as an existing method?	use errors.new()
+do i have to have go rebuild services.go or something somehow?	how did you import it?
+quiznilo: os.isnotexist ?	use os.isnotexist(err)
+pmezard, may i ask what your workflow is when writing go apps? do you always build then run the executable a-la c++ ?	do you have more than one .go file where file.go is?
+if using any cwd, where will installed binaries go?	i can manage where my own binaries deploy myself e.g. ~/bin or /usr/local/bin ... i am not sure where/how go thinks they should live
+guys, am i right that golang uses mark&sweep gc?	that's not really a question with an answer )
+anyone know of anything that will let me combine a disk & built in file system?	https//golang.org/ref/spec#passing_arguments_to_..._parameters
+when creating an email queue, should i use a queue like redis and a second go instance to poll and send the mails? or would you recommend to send the mail directly from the main program but in a goroutine?	how many emails do you expect to send?
+is there a standard error struct to use?	use errors.new()
+hmm, i'm trying to open a tls connection while verifying that a specific certificate is used. i don't care about hostname or ip san validations. anyone done this?	the cert should be pinned to the hostname?
+dont use what?	https//golang.org/doc/code.html
+slacktd, just stick with it? you already know it plus why add more dependencies	true that i already use rabbit and would not need net/rpc but am i missing something? in my thoughts it feels like doing a net/rpc call is faster but i don't know how it works when there gets alot of requets if it buffers them somehow how to scale it etc. with rabbit i can just add more workers to the que and know i will answer back faster don't know how i would do that with net/rpc. probably
+well mousetrap in comparison to java or scala, go is the "better" choice?	mousetrap's answer is what i would expect from a chuch actually...
+veegee: don't what?	disagree
+codingrogue: sure it isn't foo_test.go? :)	actually it's event_category.go .. but eventcategory.go works
+sztanpet: that was quite rude. is that the image you want the community to project?	for rtfm questions?
+pnsrc: i'm not a go expert but can't you put the num % i that is on line 12, on line 13?	uh.. does it work?
+what else is out there?	probably there is at least one emacs vet around. i'm fine with vim and there is probably at least one sublime user around. you can also run 'go vet' but it's easier if it's integrated into the editor hotkeys
+but is there a way to still access the vars from the outer scope?	no. they are shadowed.
+at that point, would it be better to go with c/c++?	probably just wants people to stop saying audio sequencing can't be done with go
+is it a best practice to always use the paramless return, and assign to the named return values first ?	trying to ascertain when i should use ps for return and when i shouldn't
+hey there, how do i access the const items listed here? http://golang.org/src/os/types.go?s=1044:1064#l20	fi.mode() & os.modedevice != 0
+can you guys help me out? i am creating a simple cli program that is based on https://github.com/jeanmertz/consulctl and https://github.com/ashcrow/consuloretcd to communicate with the consul/etcd kv store. i am having trouble on making it work in both "consul" and "etcd" mode. it works if it just operate in one mode.	you are declaring the client variable inside of conditionals -- they won't be available outside
+what other languages do you do that in?	yea there's no "then" in his code...
+is there any way to "reuse" a file handle?	could've just linked to the github the author is in here )
+why does ruby code always mean c code?	oh maybe.
+hyphenated: was that what you were looking for?	that should be socket.(*net.tcpconn)
+dmac: ok, thanks. so i would have to install and use gcc and link against mingw on windows?	what are you wanting to do?
+does deleting a map entry shrink the storage?	what storage?
+mwhudson: or do you mean precise?	it's precise
+so just `ls` then?	i asked for tree
+*textual representation ? english is not my mother lang..	probably itoa
+has anyone used go-redis? i'm currently using redigo but i'm thinking about switching.	the better driver is redigo
+surely your lb has some way to specify ‘only so many connections per host at a time”?	the go community is largely anti-framework. instead use composable pieces to stitch together sthing useful.
+perhaps use a map instead of a slice?  i dunno	i avoided using that
+hello everybody. freebsd provides golang 1.4.2 package, however it seems that vet tool is not installed by default, is that normal ?	it is included with go's binary distribution. as for how it's packaged in freebsd that's probably a question for the package maintainer.
+is the ':' in "%f: default width, default precision" at http://golang.org/pkg/fmt/ a typo?	looks like it
+mb0: are you sure? i think it doesnt sort the github ones below the rest. i think gofmt organized it alphabetically?	it does
+does goquery also execute the javascript from the webpage?	tius are you doing a type assertion on it?
+what makes you think you dont have to?	how?
+__john_doe__: channel?	yes sorry
+like parse time evaluation?	yes
+i.e os/exec?	however i asked because of your comment about not sure about efficiency
+guys, is this valid? data [][]string[]map[string][][]fee	ok posers can you answer  question?
+but will other gorouties carry on execution?	and then all other goroutines get killed when your program exits
+maybe it would be a good idea to change that on the go tour?	file an issue ) https//github.com/golang/go/issues
+is there something in golang to allow the use of sse or avx vector instructions?	mohae i lied for simplicity of the testcase. it's actually int32 to int16. i just wanted <abcd> to bec <cd> so i did int16(num & 0x0000ffff) and it appears to work fine
+smw: care to elaborate?	fuzzing input is cool but i disagree with modifying the code.
+does it compile for osx?	sorry i made a mistake. for osx it compiles. compiling for arm is not working
+mark_43: what thing?	yep - sorry. caffeine hasn’t kicked in yet
+*blah = &zerovalue maybe?	var blah *t; blah = new(t) ... *blah = &t{}
+apparantly my listen/accept routine is busy at 100% cpu. can i have two accept threads somehow?	i only accept gofmt'd code in play.golang.org
+why?	pauses here and there to mess up your audio acquisition
+i'm trying to listen on 2 different ports in my go program. but, if i use go startsocket1() it dosnt seem to even run it. anybody got an idea as to how i can listen on multiple ports ?	show code
+hyphenated: not sure how you reference the data inside that struct though? it looks like you can't access data via indexes	it's boggling
+how is it not consistent???	please read the provided link.
+sunnypsyop: ahh.. i haven't seen that, how does that work?	have you looked at alice or interpose? they're basically middleware chainers.
+but wessie if it has an actual import path of github.com/golang/net/context does that mean that particular library was integrated into the stdlib?	no? packages under /x/ are packages maintained by the go project but not in stdlib
+__john_doe__: chains?	waitgroup
+mohae: i can just return original twice and then store it in line 9, right?	no then you will have the problem i pointed out in http//play.golang.org/p/jw1kgmdy-_ both variables will point to the same slice
+xetius: are you doing a type assertion on it?	https//play.golang.org/p/jiuqektkaa
+koda, interesting. is the use of cgo instead of plain c stopping you from debugging c code?	not right now it did in the past
+anyone may have a hint what could cause go get github.com/vimeo/statsdaemon to not compile/instrall binaries?	that’s not a command package
+jkbbwr: what for?	just a really really really nice syntaxic sugar for what im doing atm
+mohae: https://github.com/mitchellh/packer this packer?	best bet is probably rpc
+so?	thanks i'll check it out now )
+so you're giving us code that works?	no man. it does not. it sould work being from official docs. but it doesn’t.
+ebonics: true that i already use rabbit and would not need net/rpc but am i missing something? in my thoughts it feels like doing a net/rpc call is faster but i don't know how it works when there gets alot of requets, if it buffers them somehow, how to scale it etc. with rabbit i can just add more workers to the que and know i will answer back faster, don't know how i would do that with net/rpc. probably	hfaafb okay i thought that i might be missing sthing
+how did you come to the conclusion it is doing that last part?	https//gist.github.com/film42/430d125242a5cc1aac07
+a non-pointed receiver will get copied to the func upon calling?	all arguments are always copied even if pointers; it's just that it's the *pointer* being copied
+now, how about slices?	make
+parseandconnect? :p	doesn't seem shorter than jmoiron's suggestion
+well when i depend on d which depnds on a@1 and e which depends on a@2 ?	if you depend on a@1 and a@2 you're doing it wrong
+aep, have you tried without ssl?	i think you are sending way too many connections
+is there a particular practice when both (sensibly) clash ?	use errors.new()
+so using net/http without anything like nginx would be perfectly fine in your opinion?	please dont
+firevolt: what do you think line 26 is doing?	putting that code on the play.golang.org would help in helping you work through that
+are you sure win32 api does not let you do that?	thanks
+smw: is it even possible to sleep accurately less than ms?	kim^j depends on the os usually not
+what is the encoding problem?	well as soon as there are accents like é or è it's mangled
+displease: any reason you leave server.go outside of gopath?	i dont know your problem but you can see how they have multiple packages in 1 repo and how they import stuff
+i'm new.. was that a mass extinction?	what does that mean? panics have stack traces
+how do i prevent my accept thread from starving the handler thread? http://npaste.de/p/6m1	i only accept gofmt'd code in play.golang.org
+http://golang.org/pkg/net/http/#server.listenandservetls ?	yep - sorry. caffeine hasn’t kicked in yet
+how do i get the absolute url on a request for an http handler?	that means the components of the url that you are expecting url.string() to provide are empty.
+vaskrate: could you provide sample code?	http//pastebin.com/ejx4txnp
+thun_: oh, we're in #python?	https//play.golang.org/p/iyegzewhbb
+any value ???11???	ok thanks. i never dealt with bitwize before. || is the or i'm used to.
+given a random binary file, is there a way to find out if it's a go program?	i suspect it's easy to tell try inspecting the first few k of a binary
+esarl: more time? it could probably have been written in the amount of time you've fiddled with the call out to python,	i forgot to mention my cs background is limited to high school cs playing with java so everything takes time p
+what i am missing? thanks	you can't os.open a directory
+jules_: you post the new code that causes that error?	exactly you are declaring `client` again
+is it possible to have a default case for a switch statement?	yeah the default tag should do it
+mohae, hyphenated: that github project that i'm working from, is it really bad, or should i work on it and try to improve?	given your questions and posted code i'd work on learning go first
+pnsrc: what was in the last chapter?	what do you want to make?
+is there a way to detect when gc kicks in (if ever)?	you mena programatically? or debugging?
+skelterjohn: what i'm asking is: will a non-wgo using person still be able to use my repo with go get, or will that break?	there is just too much ambiguity in what you're asking
+ptrb for rtfm questions?	for any earnest question.
+sauerbraten: isn't it top n ?	but what exactly? my os is 64bit and the go installation aswell
+how can i get reflect.type of a specific interface?	cast nil
+pmezard:  can you list all modules with that?	excellent thank you
+skelterjohn: what is the standard?	to not have it print the method )
+edayo: do you have more than one .go file where file.go is?	yes  thats why i cant do go run *.go
+reifcode: hmm, does "goos=linux goarch=arm goarm=6 go install github.com/google/gopacket/pcap" work at all?	yes it works
+what's insane? i don't really understand. subtemplates? try defining some template func helpers?	can sone link to my tutorial? because i can't opne a web browser iright now
+what is the best type in go to hold data as “int, string, nil, ….”  (and it should be dynamic, i dont know what it could be the order or the number of the variables) ?	map or slice of interface{} ?
+what is runtime.goexit?	would you like us to link you the manual instead of looking it up yourself?
+muchoz: it.. does.. ?	it doesn't. you cannot create custom windows/view etc.
+djx: but what about the go stuff? i'm not sure i understood your question about var log	djx aha! found it https//github.com//debugtags
+os?	doesn't emacs do that? p
+why does your backend give a crap about the frontend ?	my api does not.
+albertito, ah, so p must have a value to return before the program may continue on?	yes exactly. that goroutine will block until someone puts a value in p
+therainingmonkey: i guess you found the issue? :)	no i just finished with github https//github.com//gopher
+dmac, why is that ?	i don’t think “named” return values is a universal suggestion - whatever makes it more readable.  if for example a function is simple and it’s clear what is being returned without the names i would not give the name
+hello all, my friend has a question that i thought will be useful to be asked here.. "anyone knows how to output 1 if x != 0 and 0 if x == 0 without using compare statements?"	[[ "$x" == 0 ]] && 0 || 1
+dmac: certainly didn't run it but why?	-o isn't a flag to go install
+how am i breaking convention?	note the import path of your imported martini package which btw it's generally recommended that you don't use.
+harikb, so are you saying there's no way to do what i want while using http.client.do?	i have used http.client.do and set the rawquery and body myself - but i have never used any handy function to create the url-encoding - did it myself
+probably somewhere else with golang.org/x/crypto being a vanity import since it's redirected to godoc.org/golang.org/x/crypto, but for our use, does it really matter?	i have a little question… can sbody help me?
+so the libs still use godep?	godep is also only for binaries ;)
+is the support in yet for verifying that the hash code of the shared library matches at link time and runtime?	i don't know maybe it's the fault of my change or something odd about my syste
+edayo: why? there's only one main function in the main package	i also had this problem when trying to run one file i have to go run on all of them in the main package
+for example, if i just parsed the urls manually in each route without the helper, i'd never have to create the map that i do in parseurlparams. is it silly to worry about that stuff? (this is my first go program)	wtf
+furball365, were you trying to compile gcc?	http//gcc.gnu.org/pr46986
+mohae: ah yeh, i guess i should rephrase my question - is golang.org a thin proxy pointing directly to those git repos on github? or is it behind ?	i just took a look at the checksums and they are the same but yeh it does matter if you don't know what you are importing
+hey, does anything implement brad’s suggested vendoring scheme for dependencies?  https://groups.google.com/forum/m/#!topic/golang-dev/nmwoeag55v8	is there a way to have a teate function process during parsing?
+1.) what is the easiest way to check if a given absolute path as string is a existing directory?	you can't os.open a directory
+jmoiron: instead of looping on s.nodes + s.sel(i)?	looking into it thanks for that. i was mistaken in a few things here pointer use as well
+are you expecting hundreds of thousands of overlapping connections?  or millions?	you use http between your own backend services?
+hfaafb: okay so i have to iterate over all form values because they are not gathered in a map?	okay i thought that i might be missing something
+freman: wait, didnt you say you had 3 get functions?	i recommend this http//play.golang.org/p/dxkevaguqg
+is there a chance it'll be accepted on reddit?	on reddit?
+if it's producing a core, pick it apart in gdb; if it's not, can you run your  app via gdb and set a watchpoint/breakpoint for the function in question?	for the record it's documented at http//golang.org/pkg/runtime/ under "environment variables"
+what is full slicing?	yeah ok i am getting it now. thx )
+beyond web browsers and curl? well at my workplace our data analysis software is third party and has http features, which is really convenient for us.	i don't know. is that on a space ship?
+mohae: is that small?	it includes *all* of fmt package and it's deps plus all of runtime gc scheduler etc
+if i want a global variable url, how to do that?	http//play.golang.org/p/bp1xl1g5oy
+should i response.body.close() ?	yes you need to read it (io.copy(ioutil.discard resp.body)) and then close it (resp.body.close())
+is there a way to create a range from an int in template/html template? i have 5 and i would like to {{ range $x := something(5) }}{{ $x }}{{ end }} ?	isn't that a loop not a range?
+how "expensive" are function calls in go?	create a micro benchmark using http//golang.org/pkg/testing/
+in go func() {}() <-p , what is happening to p?	go func() {...}()  is one thing; the  <- p  is another
+finisherr: or are you asking how to run tests in all subpackages? "go test ./..."	why?
+or maybe there's an openssl error hidden somewhere? where would i get more info?	go's tls is slower than openssl
+does anyone know of a good article for non-programmers that concisely explains the importance and need of testing in software development?	just regurgitate https//www.reddit.com/r/jokes/comments/2m1b9b/a_code_tester_walks_into_a_bar_orders_a_beer/ to your client
+has anyone messed around with https://github.com/smartystreets/goconvey?	how do you mean?
+could you elaborate please ?	what _protocol_ does the connection use? what kind of data gets sent?
+i think i will, would you agree that it jumps into mentioning packages without explicitly saying that everything is a package?	sadly it's just a book written by a random person who thinks he knows go.
+what is a good strategy to save credentials in and use them in go ? environment, configuration files, .. ?	config file is good
+trying to outsmart the scheduler?	schmichael ty
+how the interface support the nil value?	can you explain
+aep: ulimit?	too many files is an os error. what is your ulimit? what is opening files?
+can a godeps project have dependencies that have their own godeps? :o oo	if the c links against shared libraries the binary will need those shared libraries
+so.. is it always the first stack trace which indicates point of failure?	yes
+daved: so you have some stuff that is static for the lifetime of the process i guess? you could produce a template with text/template and then further specialize it for each request.	so a teate teate.
+what are you really trying to implement?	a form is a collection of fields. all forms need to be populated and validated. in classical oop i would have an object that has a slice of fields and a populate and validate abstract methods. each form would iement those methods.
+uh, plugins?	not plugins for go but a particular piece of software that has the possibility to have plugins
+btw why does the service return json encoded to base64? :)	/
+in oop i could inherit horse and dog from mammal (both drink milk) but dog eats meat and horse eats grass and i could inherit hound beagle from dog. how would i accomplish that functionality in go?	<skelterjohn> https//github.com/op/go-logging/blob/master/exaes/exae.go
+daved: okay, that should be straightforward, no?	okay thank you
+hello can anyone help me ?? the os.stat() function returns nil and no error even when the folder exists ...pls help   ( http://play.golang.org/p/iqnqzcn2e- )  i compiled and ran it in my computer	file represents an open file descriptor. according to http//golang.org/pkg/os/#file
+its easy to say "yeah use etcd for discovery" but is it 'that easy; ?	skelterjohn presumably it should work for pretty much any process that gets spin off from a go-mode buffer’s variable  if i’m understanding this lisp stuff right
+in the tour of go it is described how go decides on the type of variable when you do not declare it. when i write the following code: http://hastebin.com/feramumano.go it gives me an error stating 'i' is declared but not used. as you see it is used when declaring 'v'. is this because go knows it's redundant?	inspect the expression `0.5i` -- what do you think it's doing and what is it *actually* doing?
+hi folks, is there a way to use testing.b benchmarks with tests that take long time (like 1-2 seconds)? mine gets executed only once. i want it to be executed certain number of times at least	-benchtime
+what is the value of the string?	""
+what's wrong there?	osx?
+is the fact that range returns copies surprising to anyone else? http://play.golang.org/p/jrgijj2lyw	assignment caused a copy of the value... that always happens
+is it possible to assign to an *int64 inline? for example, this doesn't work (assume `var foo *int64`): foo = &int64(1)	how would i iement http patch in go? if i pass only one field (to patch) all others are going to have set their default value after decoding and i won't be able to distinguish if the fields were ommited or set to default on purpose
+i am currently trying to port the bazil.org/fuse package to openbsd. to get the mount information from openbsd i need to use a syscall that's not exposed by the syscall package. what's the best way to approach this? add it to syscall_openbsd.go or some other way?	and it's not in e.g. sys/x/unix?
+skelterjohn: yep, exactly so i don't know if there's a pattern to put that var log on which of the files?	or if i should create a log.go on every package
+which ones? i is a common var name for ints in the i := 42	go ides.
+http://play.golang.org/p/5gsecm9nsa this works?	yeah
+hi, is it correct, that i can compile go to c source code instead of compiling and linking a binary?	no
+using composition instead of inhertance any thoughts on  struct mammal{} struct dog{ m mammal } vs struct dog{} struct mammal {d dog} ?	2355 < > np am a go newbie
+albertito, ah. so what does <-p mean on its own?	basically it's saying "run this function in another goroutine" and then it's saying "get a value out of p [and discard it]"
+ guys, i know that this might irritate you, but is there a way to handle errors from nested function call in the stack without tons of `if` statements?	"tons of if statements" is the idiomatic approach
+deniska thanks. that executable can run, on linux or windows? (i've compiled on mac)	if you compiled on mac it can run on mac but it is easy to cross compile
+deniska: so that would let me do if bit 4 is a 1 and bit 5 is a 1 then do x ?	you could make that yourself if you want. or you can use big.int
+kirkmcdonald: so i would just infinite loop and listen for connections then go routine each one, then within there i try to detect disconnects and such?	pretty much
+quiznilo: what would you want --help to do?	glad you like it )
+are you coming from c/c++?	oic
+`json:"-"` ?	unfortunately the struct is in a 3rd party library i don't want to modify >_>
+alexrussell-saw: how long does it take with curl? and how are you reading the response body?	how long does the post in go take?
+you dont use any packages that use godep?	nope
+<skelterjohn> you see the "var log" on line 9? if i have multiple files for the same package i can only have one "log"	in general you address people as i address you to avoid confusion )
+skelterjohn: what's your personal taste?	ok i would logically group declarations
+does go support structs of structs? would referencing just be struct1.struct2.element?	you should try it
+what's the convention for a function that returns (string, error) when there is an error?	""
+lord4163: have you tried eclipse and goclipse?	heavorse haven't really tried that one.
+uuhm, what?	well the certificate sounds like it's incorrectly encoded
+tv`: you mean the close() whch i call with defer can have a error?	yes
+mohae: iteratively solve a non-linear eq?	"services"
+tv`: how did you make it not do that? :p	http//a.ddna.cc/image/2x0g1j2s0g3o
+what situation?	when you forget your towel
+hyphenated: taruti: alright, i'll start an issue on github (is it the right place to do so?)	hyphenated  anyway thanks for your help!
+how should i handle null values from db?	sql.null<t>
+what is the equivalant of *ptr++ in go ?	you don't and if you have a slice or array use that
+in runtime, isn't it?	oh yes i remember
+oh okay. so if i modify queue later on, it would also modify original?	a slice is a fat pointer containing a pointer to the backing array the slice len and slice cap. when you assign a slice to another var without doing a copy() you are just copying that. the slice link i provided describes the data structure
+mohae: you can't say what??	as i said your package naming isn't consistent with go's and i can't provide any additional info as i haven't tried importing packages named in such a way. sorry i can't help in this siutation.
+do i want to question why such an abbomination was required in the go ecosystem? (gohper)	oh shit.  is it that bad?
+sorry for dumb question. https://dpaste.de/q1xq this code leads to panic. how can i create a variable to assign some value inside the block and access to it outside?	declare the variable before the block
+hyphenated, the same applies to converting byte arrays to strings and strings to byte arrays all the time right ?	until i modify queue then i have one of each again right?
+when you say 'stored procedure' to you mean a prepared statement, or a procedure stored on the db server side?	is a procedure in the server side
+tv`: how do you save the output of printf to a variable?	just like any other value
+so you'd have an experiment type, and an experimenter interface with a fitness method?	there are a few existing ga things on godoc
+frostcandy: why do you need a bitfield in the first place?	if i remember it will print out 1010101010 or whatever.  i'm not sure how to get it back to binary though
+more like that ? http://golang.org/pkg/go/ast/	hm. so like parse own .go files during say build phase?
+daved: how do brands and themes relate?	but it seems like for a given url you have a template that is executed with subtemplates determined by the brand/theme?
+so if you guys were building a modern rest api, would you simply stick to stdlib + a router of some description?	stdlib is all you need really.
+feliwir: and you have mingw etc?	i have a mingw installation but i don't see how it is related to go^^
+cronos: is that what the /x/ is? is there an index of the official subrepositories?	https//github.com/golang
+xetius: how sure are you that you have a memory leak?	eg most unis are pretty lax about chewing memory nobody else wants when there's no actual pressure
+i need to figure out a good way to manipulate bits in a byte. how can i put the 1's and 0's in to a slice, then after doing some if statements and changeing the 1's and 0's, change the slice back in to a byte?	why not s good ol' bitwise arithmetics?
+doesn't the go cmd itself have lots of inits?	subcommand registration is a good example of what i was talking about
+which tools should one run to check ones go code?	in what way?
+cronos: ah, you think it's the orm?	can you show your code?
+nilium: alright, since i am a go newbie, what are the docs i should read on the syscall wrapping in go?	thanks i will look into that!
+robot-beethoven: for i := 0; i < len(f)/2; i++ { f[i], f[len(f)-i-1] = f[len(f)-i-1], f[i] }     ?	tv`  i know trying to simplify code so i can share it
+furball365, what does that mean? panics have stack traces	yes
+bnagy, but how does go cast it? does it lop off the most or least significant bits?	doomrobo ya i wasn't paying attention but 's suggestion is better as usua
+about to blast github.com/skelterjohn/wgo all over the place (reddit, golang-nuts, hn, etc). anyone available for some last-second feedback?	from the description nice tool
+heavyhorse: that's just eclipse with a plugin i suppose?	heavorse okay i'll try that too )
+muchoz: inspect the expression `0.5i` -- what do you think it's doing, and what is it *actually* doing?	well it adds half of the value of 'i' to 0.6 and gives that value do 'v'... i'm not new to programming i'm just new to go.
+for some reason i'm having trouble understanding when i should pass variables into an anonymous function as args versus when i should just call them from within the function.  would someone, please, help me understand the when and why here?	cronos alright just to clarify am i right that in case of my web application suppose it couldn't connect to database swhere on the stack should i panic and catch it in the recover call of root function?
+what do you guys think of gb (dependency management) ? just read this: http://go-talks.appspot.com/github.com/davecheney/presentations/reproducible-builds.slide#1	config file is good
+yes and melpa-stable is supposed to auto-pick from git tags, right? maybe it has the wrong repo	the "normal" rpc or that is a go project?
+i'm not even sure what you're saying about importing martini? that's how they do it on the link you just sent me	as i said your package naming isn't consistent with go's and i can't provide any additional info as i haven't tried importing packages named in such a way. sorry i can't help in this siutation.
+oh. what's the alternative?	original queue = loadballs(ball_count original queue) would fix it
+how it's works?	you'll need to be more specific
+should i use chains or sync?	chains?
+hello all, i'm wondering how to handle a error loading a config file. the app can get it's config from a file and/or environment variables, the environment variable override the config file values. if the config file loads but then fails to unmarshal should i return an error or allow the environment variables to be read?	that's just like my opinion though
+tv`: if i want to do a setup+teardown for each test function i could use maintest but what if this setup/teardown is specific to each go file in the package?	func testfoo(t *testing.t) { x = myfixture(); defer x.close(); foo(x) }
+iant: reasonable to file a ticket asking that supported os/arch be added to the gccgo installation page?	it would quickly go out of date
+mwhudson: i mean, theoratically, is it possible?	or do you mean precise?
+jkbbwr: for example?	that sounds like how i did it
+carbocation: right, that much i get.. problem is httprouter takes httprouter.handle instead of http.handler... so i need to somehow convert the latter into the former?	are you using the httprouter.params in your custom handlers?
+i use the reflect value.methodbyname(name) to try and call a specific method on a struct that returns a map... but how do i extract the map value?	d a call returns a slice of reflect.value you can call and type assert vals[0].interface().(map[k]v)
+quick little question about declaring and assigning a *int64 inline... is like 13 possible somehow? http://play.golang.org/p/t5rl_7qtty	i promise you wont start ww3 no matter what the outc is.
+but how to properly parse/set the pad_value ?	docs help.. http//play.golang.org/p/nxcj0wrr9c
+is there a way to view logs if i lose connection?	http//botbot.me/5/log
+edrocks: english? with proper nouns and stuff?	yes
+ahhh.  so a variable will be "private" if it begins with a lower case and public if it begins with a capital?	http//tour.golang.org/
+echblebek: hmm running -> cmd := exec.command("python", `-c "import numpy; numpy.rate(10,-100,15000,0,0)"`) gives me this error: indentationerror: unexpected indent, any idea why?	cmd = exec.command("python" "-c" "import numpy; numpy.rate(10-1001500000)")
+deldotbat ok that's what i was just going to ask. i'm ok to do it without middleware then or do you recommend putting these helper funcs into middleware?	im nuts so i return map[string]interface{}{...data...} p
+you think a native ruby webserver is an option?	ruby code basically always means c code too
+finisherr: do you just want "package foo_test" as opposed to "package foo" in your *_test.go, or something else?	or are you asking how to run tests in all subpackages? "go test ./..."
+dmarlow: oh. i wanted it global because it gets initialized in one function and is used in other functions. is there a better way of doing that?	i guess i should be passing it around instead of using global then?
+pnsrc: in what way is the number encoded into the string?	decimal digits in ascii?
+poga: but does that mean, that i should have my src folder under git revision? my project is in $gopath/src/github.com/myname/myproject/<my file>	i run godeb save inside myproject folder
+digitalyari: strange… are you sure?  is it go 1.4.2 ?	hyphenated check this out https//play.golang.org/p/j-in6ixfcw
+pnsrc: uh.. does it work?	i just saw that too =\ yeah it doesn't sound good
+moahe it is a joke. want to guess on who?	what  said
+film4242422: are you perhaps not using the go tool bare? because it certainly isn't the go tool doing this	no man. it does not. it sould work being from official docs. but it doesn’t.
+dmac: awesome, that's good to know.  btw, is there a particular place i should have found that out from?  ("teach a man to fish" :)	mousetrap why s random date in it?
+how can i use uintptr?	imo #1 is good unless you have >2 options. with 3 options #2 is better already
+hello. are maps thread-safe?	https//blog.golang.org/go-maps-in-action
+chepra: try "go build github.com/vimeo/statsdaemon" then?	kim^j is there a verbose output switch? it's not returning anything
+anyone have success with github.com/kardianos/vendor ?	yes
+v0idcat: the "normal" rpc or that is a go project?	yes normal rpc. load and unload "plugins" by spawning processes of your go programs and communicate between them and your "main" by rpc
+is the reason for using the := operator to avoid people accidentally using = instead of ==?	no not at all
+what should i prefer? http://ix.io/iiv	i always do option 2. i find it cleaner to look at
+funnylookinhat: is that the good way to do that sort of things in go ?	you could write your own interface that implements just the few methods you need
+what is the best way to store a log history ?	write logs to file
+bnagy: but what exactly? my os is 64bit and the go installation aswell	top10 gives the same
+"a naive http app will have unbounded goroutine creation, right?" ive wondered about that going thru examples an articles	and when coeted requiring cleanup and having a hit on the garbage collector
+bnagy: can we make a bench test in goplay just to be clear? :-)	i don't know if play can run package testing?
+t4nkd - how many concurrently?	45 per second for 10 minutes only totals 27k goroutines. there is a problem with your code not net/http
+damn.. now, which part? lol	can you show your code?
+so if i want to change something in a slice, i have to store pointers in the slice?	slices are effectively http//golang.org/pkg/reflect/#sliceheader and thus include a pointer to the actual data already
+quiznilo: out of idle curiousity, what is this thing that you know?	ah.. i just logged in and it seemed like you might be the go oracle i've been seeking. my client does not scroll very high.
+djx: can you show the piece of code that returns that error?	ah you think it's the orm?
+skelterjohn: why? costs too much?	oh okay ;-)
+any idea why my linux machine is trying to build `file_bsd.go`?	i think it does
+that was the most confusing thing, why would where server.go is have any effect on importing from services.go? i'm already importing and using webservice stuff without issue	could you perhaps show a tree of your gopath and the related code that has the error?
+finished it?	oic
+where can i found a good example of a c union like datatype implemented in golang?	i don't know how to answer you but found this - http//stackoverflow.com/questions/14581063/golang-cgo-converting-union-field-to-go-type
+hey, how can i make this working? http://play.golang.org/p/r0jeb4_mul	foo isn't type bar
+since they seem to have different meanings. does the &interfacename{} variant initialize the struct fields with default values?	yes
+how would i define a regexp type slice\array in the main function?	there are package scoped vars but not inter-package scoped vars
+off topic: anyone using angularjs? how do you handle search engines crawlers?	isn't angular mostly client side?
+or that, proxy is kind slow and irritating, no?	i challenge you to make a thing slower than cgi
+zuz: coreos/fleet?	packer uses plugins
+the strange case of two different structs with the same address: http://play.golang.org/p/b7k1xq8tqu i'm sure i'm missing something obvious but what?	asking the question again won't change the answer
+speaking of lint, why does it require documentation to start with the function name?	kim^j because some tools print assuming that.
+is that good practice?	you don't need to return a pointer there
+freman: yes. what are you actually hoping to do?	subcommands basically
+skelterjohn: would it be more consistent and idiomatic to default third party packages to pkg/?	no?
+c-keen: and it's not in e.g., sys/x/unix?	i could not find any mention of it in my golang source tree
+desktop notifications?	you are smarter than i
+jmoiron: rm -rf $gopath/pkg  ?	fixed. thanks
+include comment?	thanks  its working
+guybrush: how so?	you know that gb is only intended for applications (ie package main) not libraries right?
+bnagy : i understands you concerns. but i can close the connection if i see a too big size without problems, right ? and as i say before to read the full content i will not read the full content on memory with readfull.	ok. well i guess that’s my problem in a nutshell
+skelterjohn: lol oops. does that mean you can reproduce it on the actual mac?	haven't tried yet
+tv` you don't use nginx or anything?	http//botbot.me/5/log
+is there a well known pattern for it?	mostly good for memory allocation from a slab
+echlebek: how would i ever update the sites?	you blow it away and make it fresh each time
+ok i get it. so in the 'map' case, i should store pointers to the object?	http//play.golang.org/p/hlvvt5roag
+well, what's the function called that returns a config?	there's no such function
+andreas_kushner: wrong channel?	no he's not
+guybrush: you know that gb is only intended for applications (ie package main), not libraries, right?	i don't see what gb has to do with big packages
+why not call parse() in main?	yeah i don't know... i just follow the docs of the flag package )
+can you pastebin a failing example?	is a nil slice a slice where the pointer to the underlying array is nil?
+do you know how to fix that?	you might have a bad hard drive there.. removing everything under $gopath/pkg is safe and might force it to recreate that file
+cassyblanca: you mean like this? https://github.com/cloudflare/golz4	yeah definitely.
+freman: http://www.amazon.com/introduction-programming-go-caleb-doxsey/dp/1478355824/ref=sr_1_4?ie=utf8&qid=1430373501&sr=8-4&keywords=golang	http//www.amazon.com/go-programming-blueprints-mat-ryer/dp/1783988029/ref=sr_1_1?ie=utf8&qid=1430373501&sr=8-1&keywords=golang
+andy_england: no. what are you trying to accomplish?	https//gist.github.com/jkbbwr/4bcc72798998856eeeb3
+how would i implement http patch in go? if i pass only one field (to patch) all others are going to have set their default value after decoding and i won't be able to distinguish if the fields were ommited or set to default on purpose	some rare cases (coex recursion) can use panic-recover as control flow but it's likely not what you want
+the server sent all of its data before you were ready?	eof
+put the somethingxxx function returned values in local variable and convert the result to string while assigning to name?	by hungarian notation i mean  use namebytes = sthingthatreturnsarrayofbytesanderr    and then  return string(namebytes)
+the_last: with a specific purpose or goal?	that seems a bit more sane  ;)
+pmezard how to move the pointer?	you don't and if you have a slice or array use that
+so if it's a get is _must_ be url params?	np
+hey. does anyone know of any libraries that works with financial calculations? particular finding the interest rate given a series of payments and the present value	invoke python with os/exec? )
+so i presume you import no packages?	combinedoutput runs the command and returns stdin and stderr
+not struct, or not bicycle?	http//play.golang.org/p/8vw42buglv
+this works because their.type is a struct also and declaring fields without a name makes foo inherit all the fields? (and i guess methods too)	http//play.golang.org/p/8ejlh6qmdq
+http.request has a host field? seems to work for me	there is but its empty when i check it in my handler
+is there an efficient way to zero a structure in go without alloc'ing a new one?	var blah *t; blah = new(t) ... *blah = &t{}
+how to call stored procedure, i tried rows, err := db.query("call get_zip(00761,"","", "","","","","", "","","","","", "","","","","", "")") i am getting error syntax error: unexpected string literal, expecting ) , any idea?	you have a bunch of "" inside your ""
+reifcode: is that package the only cgo thing in your project?	i tried with cgo_enabled=1 and it gives me “clang error argument unused during compilation '-mno-thumb’” that i could disable having direct access to clang. no idea about how to do it via go build d
+cronos: is that bad?	do you know any other orm around there?
+is there absolutely no structure that you could come up with, such that you have to use interface{} and do runtime type checking every time?	sthing like
+mwhudson: so it's now copying/moving?	i mean theoratically is it possible?
+daved: but it seems like for a given url, you have a template that is executed, with subtemplates determined by the brand/theme?	thx
+daved: how many different combinations of templates can be chosen by the user?	depends on the settings and created teates.  so one brand may or may not have the embedded teate.  and if it does it may not override the default.
+does anybody know of any good examples of oauth2 being used in a rest api? i'm having trouble understanding how all the parts work together.	oauth2 is a general authentication scheme nothing to do with rest
+so structs are for templating data and interfaces are  for templating functions?	in your exae i would just remove the
+eatingthenight: i don't see you starting the process anywhere?	combinedoutput runs the command and returns stdin and stderr
+hasn't tried to append to one yet? :p	i don't mind gdb.. but just when you need it. the emacs interface wasn't bad last time i used it.
+how can i share struct instance to other packages? (e.g db instance?)	pass a pointer to it as an argument?
+morning! q: i'm trying to read the body of an http.get *and* parse it (html.parse). can i do this without rereading the body?	req.body is an io.reader; html.parse takes an io.reader; why do you think it would need to be re-read
+how would i require client x509 authentication in an ssl server?	add two more zeroes before the z
+cronos: are there other connect* functions?	there's func connect(conf config) (db error)
+hyphenated: by any chance, are you familiar with type assertions?	yeah. that makes sense /
+st33med: are you using go in one of your classes?	yep for a project that the professor said i could do. it's either his assignment or one of my own
+can anyone recommend good and efficient library for converting html to pdf?	chains?
+so you can do: export goroot=/usr/lib/golang; go env goroot; unset goroot; go env goroot; and get the same answer both times?	thanks
+1168 nicks means 1168 people in this room at once?	yes
+you want the 2 lines on 1 line only?	yeah... i want to make foo point to the value "1" without having to declare a variable elsewhere
+just teasing, but a fair few c++ people coming to go are like "wow, you got rid of all the crap of c++, but what about all my favorite c++ features? how could you miss those?"	c++ ftw
+jam1: yes, but why?	yes but what will you do with that information
+dont have a 300 buffer for the channel?	is right
+having trouble getting the *entire file* to write from stdin to local storage:  https://gist.github.com/jackdesert/a109b0549f19997eda9b . it stops writing when it gets a few lines from the end. am i missing something?	that's bufio still holding your outgoing last chunk
+so if name = 'bar' it would call fun with "foobar"?	{{ fun (printf "foo%s" .name )}}
+jasondockers: do you have an example?	struct {
+so what would it have anything to do with how search engines crawl your server?	https//prerender.io/js-seo/angularjs-seo-get-your-site-indexed-and-to-the-top-of-the-search-results/
+is there a way to pass additional flags to clang calls during a 'go get'?	the same options you'd need to make it work when doing a go build should also work with go get
+muchoz there were some talks about one... what os are you developing on?	there is liteide but it's weird and bad (imo). the best dev experience is vim+vim-go or sublime text + gosublime
+chris_s: what's the issue?	others thanks for the explanation. it makes sense now. i was just confused by the specification saying the syntax was "a[low  high  max]"
+as awesome as using visual studio for ios apps?	nathanleclaire usually i just wrap copy struct into sthing simpler and serialise that
+raboof: hmm it's doing the same thing for me, are you sure it's not just loading?	google code is being shut down. i'd check to see if that repo has been moved.
+so i went to look that up, and i can either implement using a loop, or find a log ?	huh you're right
+heavyhorse: nifty, supports breakpoints and stuff too? (not very familiar with eclipse)	heavorse eh goroot is going to be my project folder right?
+did you try it?	so in this example https//blog.golang.org/pipelines/bounded.go
+srs?	you are smarter than i
+displease: was your code not in a folder?	it was in a directory was it not?
+alectaylor: how so?	doesn't cross compile
+http://play.golang.org/p/tnm4alepgh <— why does this actually write out “\n” instead of giving me a new line?	that's what `` strings are for
+i'm seeing this "ism" for checking for file existance. if _, err := os.stat(path); err == nil { ... }. how can i do that in a for loop? e.g. (pseudo) while exists(path) { ... ; path = "..";}	why are you doing this?
+hfaafb: what's the type.(stuff) called?	yes
+hi, how could i set a uint64's value to the number which is a string?	in what way is the number encoded into the string?
+are the things stated in this thread still true? https://groups.google.com/forum/#!topic/golang-nuts/ywggxtiooqu	windows is certainly a first class platform in go. other than that i don't know much about windows development though.
+cronos: do you have other function that can return a db?	are there other connect* functions?
+djx: what do you expect to happen?	is it possible to conver foo in bar?
+what's the best way to define an interface that has functions, but also variables? say i wanted to let someone implement something that had a drive() method but separately wanted to let them set a maxspeed parameter	interfaces have nothing but methods
+hi, i’m pretty new to go, but wondering why go couldn’t have type inference on complex argument literals like maps.  here’s what i mean: http://play.golang.org/p/nbgjjdffsj.  is there a technical limitation preventing this from working?	just seems inconsistent and unnecessary to me.
+bro do u even np-complete?	i understood that reference
+well the /x/ pkgs don't right ?	check https//github.com/golang
+should we wait?	sorry -> gist'ing as the context was too long for irc https//gist.github.com/integralist/357e2e554b14890c6c87
+well i havent tried but imagine possibly a lot slower than just os/exec python? but then i guess numpy is using floats	you said that you weren't sure if it was done the most efficient way i was curious how it compared to the numpy one
+can u give me a simple example of what it would change hyphenated  ?	interestingly in http//play.golang.org/p/f9xcum7zrs - if you put the curly bracket after “type foo struct” on the next line gofmt does put it back - but not after functions either “main()” or “mee()”…
+skelterjohn: how would you suggest building the chains?  you're suggesting to overshoot the need, right?	of course there are things i'm not clarifying - i'm using a front "switch" function which will test for the type of request it seems like it is.  so tmpl/html requests are send to a template handler function requests with "_ar" or "_ap" are sent off to be handled by an asset handler (public is easy to serve obviously but private assets are managed) etc.
+chance: what if it's scoped to a function and not main?	also just googled your name.  go ducks.
+cronos: one more thing, i already tried to send like 12 emails with smtp.sendmail at once and it took ~8seconds .. i'm afraid it's because of reopening new smtp connections for each mail, can i send them in one connection?	i'm fairly sure smtp as a protocol allows this. you'll have to manually use smtp.client though
+secrettriangle: a string?	a struct
+crashes? then you have a bug	echlebek  ty
+tomaz_b: maybe this is related? https://github.com/tools/godep/issues/63	ok thanks... i added just "git init" in $gopath/src ... and the command did finished without error... but inside godep folder which was created... godeps.json have "desp" key empty??
+what are you importing?	calling any member returns something like i.e. “undefined pcap.openlive”
+quantalrabbit: why a map?	to sieve with.
+because you can control access to them?	how?
+iant: good morning.  am i right to think that there is no point putting .dynsym/.plt/.got/.dynamic sections into the .o file produced for external linking?	that is correct
+someone dared to use our lovely mascot as a name for their library?!	tv` well sone felt it was sthing we should have )
+can someone link to my tutorial? because i can't opne a web browser iright now	http//.lostsig.com/blog/2014/05/26/8/the-go-templates-post
+kevinburke: so, that fitness function would come in via an interface?	yes  that's what i had in mind )
+if you were hosting a go rest service, would you hide it behind a proxy or expose it directly to the web?	i have never heard of it
+vim?	i've tried vim and use it now and then but i wouldn't be able to use it as an ide/daily text editor.
+hey, does anyone have a repo with some sort of plugins implemented in go?	moter8 nothing in particular i can't figure it out the best way to solve a problem that i have in my hands i'm "studying" what's out there to see if there's anything that cs to my head
+lemmi: like this? https://play.golang.org/p/5hz6nizq6m	not quite. you might miss some of the printlns that way
+have anyone used intellij idea with go for debugging? is it possible somehow?	i use idea all day but i don't use any debugging tools sorry.
+ah, but that's go vet isn't it?	thanks  its working
+aep, what is creating those connections?	what?
+is there a way to map a function to an integer like map[int]func? trying to do something like this https://play.golang.org/p/da_ghl7gp-  not sure how to get it to work	make the function a type
+alectaylor: what exactly is your goal?	do the go tour
+is it possible to post a map to a handler like in php? i mean like for example <input type="hidden" name="product-qty[1]" value="2">	is it field[n] or field[]? golang doesn't automatically consolidate fieldname[] like php does
+how do you like coreos?	i'm still not getting a parsed response /
+benchmarkgenerateid	https//golang.org/ref/spec#passing_arguments_to_..._parameters
+is init a reserved word?	sort of it's a reserved function
+when returning value, err -- and there is an error, what should value be set to?	typically the zero value for the type (there are exceptions)
+i want to redirect the log package's output to a goncurses window, but the goncurses window doesn't implement io.writer... can i create a buffer or channel and execute log.setoutput(new thing) and then write some code that in a separate go routine reads from the buffer/channel and uses the goncurses window's print() function ?	you can use an io.pipe to get log output as io.reader and then use bufio.scanner to get separate lines
+what's the difference between making a := *new(a); a = a{} and a := a{}?	it's like the difference between    a = 12345 * 234 - 35145; a = 3     and     a = 3
+second?	i think that  is confused why you’re funneling 10000s of machines into a single 2-core machine
+djx, isn't it on line 13?	sorry the on line 12 can't be on line 11
+i can't find any here http://www.google-melange.com/gsoc/projects/list/google/gsoc2015?pagespeed=noscript	i avoided using that
+steamwells: how would you do it not in go?	you can use one of the winapi libraries *or* wrap it by yourself.
+run echo | tail | cat ?	right and it's common to use other tools in conjunction with docker because complexity is complex
+qis: you probably know to start with the tour? tour.golang.org	go doesn't have implicit tuples or destructuring
+did you try rewriting it in php7?	https//i.imgur.com/02pcb8t.jpg
+like rewind?	thanks! looking into it
+when i depend on a project that is maintained with godep?	you shouldn't depend (in a library way) on any package that uses gb or godep
+i think? i'm actually not sure	insulting someone's ability to program is definitely elitest and toxic
+btw, is there an ide for go yet that's specifically made for go? i've looked around and all i've found are plugins/extensions for existing ides.  the one that comes closest is the go plugin for intellij as for as i see.	muchoz there were s talks about one... what os are you developing on?
+pascal case? heh, never heard that one	bnagy and  just implemented the ack on client and server. it is working fine now. thanks for the help.
+pmezard: yes, but what if it's open?	right right. now i get it
+06:45 < tucnak> is there a chance it'll be accepted on reddit?	you can just use a custom mux handler in your http.server and do whatever you like there.
+for example, is it possible to get an equivalent of https://godoc.org/golang.org/x/text/internal/triegen#gen on the command-line?	is there a way to create a range from an int in teate/html teate? i have 5 and i would like to {{ range $x = something(5) }}{{ $x }}{{ end }} ?
+are you sure the stack trace is from the same program that you have the source of?	thanks for this helpful insight
+amandac: in the host on the request?	it’s in r.host as hfaafb said. if it’s not set then it’s whatever’s making the http request’s fault because it has to be populated by the client sending the request.
+why can't it just work with the cwd? what other features do `go tool` provide since it has a defined $gopath?	i knew i felt weird saying "install 'binaries'"
+btw did you switch to copyn or limitreader at the server?	why ? i think keep it simple is the best. and in fact as i say i will make some improvements on it. but what is your idea ? use something like protobuf ?
+reifcode: have any code to share?	sure
+mousetrap: why some random date in it?	what do you mean its not random 4
+hfaafb: how does one go about this? at least syntactically?	'arr' in your example is a slice
+in two gorouties tv` ?	i wonder if something like 's becky can be done but for making plugins
+displease: could you perhaps show a tree of your gopath and the related code that has the error?	server should be able to import "services"
+that is pointless, right?	yes exactly. that goroutine will block until someone puts a value in p
+is it going to get caught?	no you should bubble up errors
+skripted: how many emails do you expect to send?	tons i'm using mandrill for that but still it's about the splitting
+how can i specify pad ?	docs help.. http//play.golang.org/p/nxcj0wrr9c
+it does not auto include all files with same package name?	use go build
+gohpers, i seem not be able to understand go docs. in which order are select case exectuted ?	see f.ex https//gist.github.com/giulioretti/3592272d8f8960aeb4d7
+ok posers can you answer the_last question?	no but even if it were it'd be a sign of insanity
+gosublime only adds a commandline to sublime? :d	hm when i execute build in sublime text it wants to do this command go run go install github.com//gogame
+skelterjohn, what about nested packages that also use wgo?	github.com//tmplcute is an example
+any know about any documentation about runtime.memstats beside https://golang.org/pkg/runtime/#memstats? this one is pretty scarce.. for instance how do heapalloc relate to heapidle / heapinuse? i hoped idle + in-use == alloc but that isn't the case	they're gauges; they go up and down...
+are there examples of when not to use reflection where it is usually used? e.g. map-to-struct and so on	that question is backwards. reflection should be used only if absolutely necessary
+yeah, it makes sense for packages. what doesn't make sense is why you'd want to break up your inits within a package?	it allows you to have one per file
+unless you're trying to make a framework for experiment running implementations?	yes  that's what i had in mind )
+hey folks is time.rfc3339 broken? http://play.golang.org/p/nnlwxw3q3e	-benchtime
+displease: i'm guessing you're having trouble with the main and lib package in same repo style?	take a look at goconvey and how they did it
+is the explicit cast a coding style issue?	the answer to your question might have to do with the definition of io.seeker and diff between 32bit and 64bit archs
+is there an easy way to throttle cpu usage of a go program? every minute i'm doing some calculations which brings the cpu to 99% for 8 seconds, and then it chills. i'd like to make sure it doesn't surpass maybe.. 50%?	kettlework cpulimit cs to mind
+soo... i have func dothing() {} in main, is is it fair to reflect.value(main).methodbyname("dothing") and expect to get it?	yes. what are you actually hoping to do?
+if the user passed in data in the wrong format, that's the user's fault, no?	i'm writing a library it the programmer who uses it passes in an invalid default value it a programming problem i'd typically handle that different in c that if the user passed in a different value
+tucnak: on reddit?	just a really really really nice syntaxic sugar for what im doing atm
+is there a list of all the golang.org short urls other than, inurl:golang.org/s/ ? basically i'm looking for a list of all the design docs	there's a wiki page
+hfaafb, it most certainly isn't. ever tried assigning to a slice passed in that way? :-	go tends to want you to do expensive operations explicitly
+ok so please guys then help me undestand better go, 1. it doesn't metter how much imports i do, the thing that metters more is to use the propper tool either if that concist of importing n packates ?	fmt imports strconv anyway you using fmt but not strconv is not really a win
+is there a way to implement some sort of "namespace" functionality from c++?	i don't know anything about c++ though so i don't know if that's what you mean
+therainingmonkey: so, you want us to figure out what file we should be looking at and where?	look at your arg parsing
+saffro: have you looked at alice or interpose? they're basically middleware chainers.	i've looked at them but i haven't figured out how handlerfunc plays into the whole thing
+you want all the fields of a struct as a collection…?	heavorse haven't really tried that one.
+in the example there is u, err := url.parse("http://bing.com/search?q=dotnet")	http//play.golang.org/p/bp1xl1g5oy
+i know, right? tdd? yuck. testing methodologies and the thinfs people do these days is just ridiculous.	sent it earlier forgot to now apos
+what is the point of having bytes.buffer *and* buf.bytes()?	one is a type the other is a method on that type?
+deniska: would printf("%b", byte) help me convert it to a slice?	why do you need a bitfield in the first place?
+tv`: so start with some arbitrary ascii char and go from there?	i would recommend ʕ◔ϖ◔ʔ
+or where should i clone the code for go from?	gaganot http//golang.org/doc/install/source
+guyinbananasuit, why don't you set breakpoints and such?	some languages are more amenable to interactive experiences like that
+oh?	http//ircindexer.net/network/freenode/channel/botters
+eatingthenight: out of interest why not a database driver?	mysql may be checking if stdin is a tty and falling out if not
+nowfunc().format("2006-01-02 15:04:05") <- why is this a thing?	for example?
+in cgo, is it at all possible to use a *[]c.char with c.scanf() ?	arrays in c expect to have the address of the first index passed in.
+i am new to go from python. i am looking to create a socket server. in python, ive always used the twisted framework as it's just beautiful. event driven instead of the infinite loop and listen. i have been looking everywhere for a decent go library to handle sockets like this. i cnat find anything, can anybody point me in the right direction?	you wouldn't use an event loop in this way in go. it would be redundant.
+hey, where can i find docs for the go 1.4 syscalls package?	online or you can (and probably should) run godoc locally
+if im doing amortization schedules, i can’t see why i would, just int is fine.. but in general?	yeah i think you could just do that as long as numb is not rational. doing it in general requires newton's method i guess.
+what is flycheck?	go-fmt then go-vet then it does go-build if i’m understanding their code right
+skelterjohn: start one up?	i don’t host in my building
+cespare: so i am told. do you know whether the docker team uses gdb? at that level i would think they might get some paradigm leaks.	no idea
+http://play.golang.org/p/zysa4askqp <- why is size3 not calling bytesize.unmarshalxml?	why so much struct?
+good day, can somebody give me some pointers how to efficiently base36 encode a big.int?	use bi.bytes() and encode that
+is there a way to optimize this? play.golang.org/p/bt0ookpn6s the handlerfunc is so bloated but i don't know how to inject the render object besides using the closure	how many emails do you expect to send?
+hi, how does one read a bytes.buffer twice?	assignment caused a copy of the value... that always happens
+what do you mean? it's there	i dont know your problem but you can see how they have multiple packages in 1 repo and how they import stuff
+go 1.4 or a specific mingw?	i have a mingw installation but i don't see how it is related to go^^
+or foo_windows.go?	actually it's event_category.go .. but eventcategory.go works
+and i can have it return my database records in json format?	it wouldn't work really like with php no
+wait, so you *are* passing it between goroutines in the same process?	do you have other function that can return a db?
+they came from the certificate somewhere?	there was a tool/method to see where my code is using the most cpu cycles/time in can sone give me a hint where to find this ?
+skelterjohn, ^^ any idea?	it's a post or put request?
+would it be a for the learning experience?	they all miss the point *just* slightly
+freman: do you use any automation tools?	ya rkt is more recent the intent is good but who knows what will happen there
+http://play.golang.org/p/l4st9lplri so um, i'm clerarly dumb, i can't modify s.z in a range?	at first glance it seems like it
+graded for a class?	https//github.com/jkbbwr/iron
+aep, eh?	i think that  is confused why you’re funneling 10000s of machines into a single 2-core machine
+what’s the gomaxprocs set to?	thanks! this works. was this recently changed?
+skelterjohn, i am using mysql when i execute the procedure directly in sql , it s working , the parametrs in sp is waiting value or null , in my call i am sendig (“”) , could this be the error ?	is a procedure in the server side
+quiznilo, ?	yes i understand that just don't see the point of it
+nbari: if a is built using b, and you only need the functionality of b, what should you use?	just b
+is it possible to read from two channels simultaneously in a for loop? something like for v1, v2 := range ch1, ch2 {}	aspire depends a bit on how you want to go about this.  do you already know php?  if so mabye you just want to use that to get this relatively simple task done.  if you want to learn sthing new go would be an efficient choice
+good day to you all - quick question: i've never sent emails before with go, but can i send multiple emails with one smtp connection in go?	how many emails do you expect to send?
+if i want to add a method to someone else's type, what's the next best thing? make my own type equal to theirs and add the method to my type?	type foo struct {their.type}; func (f foo) newmethod() {}
+clojures are basically anonymous functions?	ones you define inline with other code that can (potentially) use things that are in the surrounding code's scope
+or is that out of your control?	lol i think that's beyond his control
+like, math has all the required calculation but w/ float.. but is that sufficient?	well if you were using numpy.rate before it must be since that's using floats
+which function did you call to get the error?  how is that return value generated?  etc.	hey how are you
+iant: there are a lot of macs out there. is it safe to say that gccgo isn't as widely used? i was interested in its 'native' debugger support	it is safe to say that gccgo is not as widely used yes
+but srsly how much do we want to bikeshed a naive isprime?	=| sqrt has a low performance
+kyrofa: it's a post or put request?	i've tried both get and post
+so i can test it?	any particular reason you need to use that nick?
+gayak: how will that help? i just found that go get allows me to send build tags, that fixes part of the problem for me	you define the git commit versions you want the project to be built with
+v0idcat: i’ve disabled the straight-from-git version of melba, because it was causing problems with some packages. is it regularly tagged into melba-stable?	i don't know about melpa-stable. this one is from melpa
+ptrb: thanks, to take it a bit further if i have a struct with nested structs and i marshal json into it and the json is missing one of the fields that contains nested structs, is there a way to tell that?	yes
+skripted: have you previously sent out lots of emails?	one big sending would probably cause you delivery lag which is fine
+hyphenated: isn't notfoundhandler a read-only method?	can't see point in limiting such functionality
+ebonics you mean making your own library?	no i mean to find the most full featured library you need to do research
+any reason why go doesn't warn about unreachable code?	interfaces have nothing but methods
+is it about nested packages? my project is a web application	i don't know anything about c++ though so i don't know if that's what you mean
+nilium: i was joking, but what kind of idiot plagiarizes code in that situation?	that is really odd
+hey quick question, i have a package that declares a struct called c (goji/web), and i copy and paste the struct into my main package, why would the goji package not recognize it as the same type if it's the same?	you could create a type that goji web.c implements
+so i'm in a place where if i get an error back from a function it means that the code is wrong. ex my code requires a comma seperated list but someone using my code passed in a dash seperated list. i'd probably use an assert() in c, to make it blindingly clear it wasn't the user's fault and be able to get a clean backtrace/coredump.  in golang, best i can do is just propogate up an error, huh?	this is not sthing the user of the code has any control over.
+https://golang.org/src/syscall/syscall_windows.go?s=555:620#l12	you can use one of the winapi libraries *or* wrap it by yourself.
+mygreenpickle: perhaps sqlite would be a better fit for this application?	one thing is not hard to do is actually dump json to a text file and load it back up
+yeah, read it. you could do that?	do i need to set it each time?...
+smw: oh it will? haven't noticed it creating binaries. :s	kim^j it places it in gobin or gopath/bin
+heydabop: not bad for a poser, huh? ;)	btw i realize you weren't calling me that it's just more fun to joke with you about that instead
+closed reader?	nope ubuntu 14.04.2
+try it ?	(you're lucky no one is here right now to start ww3 for you)
+mohae: like?	yep i'm aware
+firevolt: did you explain what you're actually trying to do? i might have missed it	and so on*
+uh how do you not know?	you've tried debugging with gdb i take it..
+aep, have you thought of entering a debug state so you can figure out what is going on? :-)	well in this case i would enter a for {time.sleep(1e12)} loop
+hi is there a way to self host slides created with go present tool?	yes
+manual testing / automatic testing / unit testing? :)	doesn't cross compile
+hold up, i can't simplify my code like so?: `fmt.println("foo:", os.getenv("foo")) || "hello")`	you have mismatched parens in that and everything
+well, this is the one i sent a few minutes ago https://secure.meetup.com/messages/?convo_id=175178374426161152	nope
+i'm asking since the function run's in it's own 'thread', anyone knows the answer?	it'll exit everything immediately
+cespare: would you close r in dosomething() if i send an error to my error channel? http://play.golang.org/p/ngdrbkmdhf from what you said i don't think i should close it but i'm wondering if you ever used/seen this pattern before	i would not close r. rule of thumb is that if a channel is closed it should be done by the same goroutine that created it (there are probably exceptions to that)
+hfaafb: i was thinking of reflect.type(interface) == ?	possibly relect
+at the end if i import it or not, after compiled the speed/perfomance i think is not influenced because of this right ?	fmt is way more complex than strconv
+https://play.golang.org/p/udkyr0z6ro this has been puzzling me for a while. why does io.copy not actually pipe the string to stdin? the connection is made fine but then it just prints out the --help command for mysql.	out of interest why not a database driver?
+anybody have an idea why this is happening? "(type io.readcloser has no field or method reader)". reader is in the readcloser interface	it makes no sense
+hfaafb: so what would i do? compile each and every one of them in runtime??	i want to "store" the compiled regex(unless it will not make a difference \ )
+in the example demonstrated in http://go-tour-de.appspot.com/concurrency/2, would it be possible that the second goroutine finishes earlier than the first? is it garuanteed, that the first always finished first?	hyphenated haha nah all good. part of the reason i came to go was because as much as i love c++ the coexity made starting projects feel like a burden
+aep: what if you add a print tot he beginning of handleconnection?	thanks! this works. was this recently changed?
+anyone else any suggestion on this matter? https://play.golang.org/p/nbkbmr4ztw	your channel is never closed use a waitgroupt
+does client.do still allow you to construct http.request{} object however you want?	good question. i figured it would but when i write directly to http.request.form it doesn't seem to make it across
+how long are your requests running?	schmichael ty
+it creates a new blog, and then sets my var *blog to the address of the newly created blog?	http//play.golang.org/p/ginllelpzg if that makes it clearer
+you've retired the old one? a sad day	thanks!
+edayo_: are you trying to modify that element and save the changes?	maybe this would help clarify?  http//play.golang.org/p/v-0sfx3ulo
+freman: http://www.amazon.com/go-programming-blueprints-mat-ryer/dp/1783988029/ref=sr_1_1?ie=utf8&qid=1430373501&sr=8-1&keywords=golang	wait didnt you say you had 3 get functions?
+cespare: what should i see?	i dunno just saying i suspect ;)
+how is sort() not working?  we had a working example last night	yes my eoyer's home-grown rpc infrastructure is http-based.
+the db.query take as argument string , and interface…, i want to create this interface it should be dynamic , i will loop on a map that have the column_name in the database and its value , i want to have something like this : db.query(querystring, nil, value, nil, nil), any idea?	map or slice of interface{} ?
+didn't you say you use os.stat this way ?	share code
+why some project contains .godir?	is there s tool that can work with that?
+lord4163: did you get debugging working correctly?	heavorse that doesn't work unfortunately
+does anyone actually enjoy working with text/template? am i just totally not getting it?	jacobat i like using html/teate
+dmitris: are you compiling the binaries? or are they not yours?	hyphenated  nope it does not in my case it simply prints to stdout the file is as before no changes
+smw: the only way i know to make it myself would be to say if byte = 1 then slice = "0001" and so on. how does big.int help me?	if a & 0x18 {
+bnagy, how does that reduce the size of the int32? doesn't a right shift just fill in the left with 0s?	sorry for ruby output it's just handy p
+line 27?	what do you think line 26 is doing?
+i'm seeing a build failure for the current git master that i believe is not being spotted on the buildbots. is there a good place to report this? here?	no; file an issue
+if i'm reading bytes from a file, when would it not read len([]byte)?	when there are not len([]byte) to read
+or anyone else, experience using mysql + ssl cert + go client?	i've never used mysql w/ ssl from go
+reifcode: sorry, i missed that. what is your import statement?	also. make sure sources in $gopath/src/github.com/google/gopacket/pcap/ exist and contain those functions
+heydabop: how do i define constants that have value from an environment variable, or if that isn't set, then use a default?	you also might find https//golang.org/ref/spec and https//golang.org/doc/effective_go.html helpful
+carbocation: well i have them in my handler functions that i'm trying to pass.. haven't got any custom handlers yet, i don't think?	currently not used. if i could get away with moving them into r *http.request that would make things a whole lot more compatible i assume
+heavyhorse: eh goroot is going to be my project folder right?	heavorse just getting errors building workspace has encountered a problem errors occurred during the build.
+isn't it easier to just say what you're actually seeing and what you want to see?	agreed on the lack of coffee
+guybrush: also what if two packages depend on a package with two versions?	if you depend on a@1 and a@2 you're doing it wrong
+what's a use case for a buffered channel?	queue
+displease: how did you compile your program?	go build
+quiznilo: what on earth are you doing?	i don't follow
+xetius would you like us to link you the manual instead of looking it up yourself?	that was quite rude. is that the image you want the community to project?
+is there a way to have a template function process during parsing?	iirc you can add your own functions + there are several built in ones for text/teate and the html version
+how much init() do you really need anyway?	it allows you to have one per file
+why do people not use the time constants and instead give "magic" numbers to sleep?	i just picked a big number...
+skelterjohn: https://github.com/skelterjohn/wgo/blob/master/copy.go#l62 isn't this an error?	i was assuming that re-closing wouldn't be harmful
+why would i get a "bad map state" panic accessing a mutex guarded map?	sample code?
+cespare: so what texteditor are people using for go? i'd  like syntax hightlighting :d	i use vim. maybe check out sublime text + gosublime?
+is there a way to somehow annotate (document?) function and then programmatically take that annotation/documentation and return to user? some kind of a self-building help	godoc ?
+saffro: will your middleware apply to all endpoints?	i can't really change the template engine i'm using a product that has picked it for me )
+hfaafb: like this: http://play.golang.org/p/jwinjjpgpz ?	it is almost...
+hi all, is it possible to make a map such as this: map[string]interface ?	the type is "interface{}" so map[string]interface{} so map[string]interface{}{"1" 2}
+saml, that is a different level entirely. phantomjs? :-)	i have never used it. i have orchestrated chrome though
+yeah, so you are thinking you will get zero downtime by updating only the frontend?	how would i ever update the sites?
+fivetwentysix: no, do you know something i don't?	what  said
+mohae who are you and what did you do with the poser?	the code is much farther from working than that....
+bnagy: do i need to set it each time?...	doesn't say anything windows specific apart from that https//golang.org/doc/code.html
+where in mn?	well then you should definitely go!
+what will happen if a user who *does* have wgo tries to go get a wgo repo?	what i'm asking is will a non-wgo using person still be able to use my repo with go get or will that break?
+skelterjohn: "so if you lose your godep config, now that code can't be built at all" huh?	if it's not copied in just in vendor.json or whatever then 'go get' doesn't know how to fetch
+skelterjohn: but *int means a pointer to an int right?	certainly
+is revel p much the web framework you all would recommend to get started building webapps to go?	no i don't think anyone here would recommend revel
+hyphenated: but the goal here is that i didn't create a new slice until i needed to, which should be faster/cheaper, no?	oh!
+what could be wrong if "go get github.com/vimeo/statsdaemon" does not create a binary?	nothing.
+anyone know a good free vps or secure cheap vps? non-us?	https//i.imgur.com/02pcb8t.jpg
+now if we wanted to take advantage of something like http2, can i still proxy behind nginx?	i think it's better to decouple it. if your web service goes down your application state doesn't vanish with it. similarly a crashing app doesn't bec an unresponsive endpoint.
+feliwir: i use vim. maybe check out sublime text + gosublime?	hm when i execute build in sublime text it wants to do this command go run go install github.com//gogame
+kirkmcdonald how to send null, an empty string ?	you might use null.
+hi guys, does anyone have any idea if it's possible to set windows ntfs file permissions on files with go?	how would you do it not in go?
+skelterjohn: why do i even need a uintptr then?	if you are doing fancy things with pointers like arithmetic
+what, did you think you could just say struct? =p	?
+[12:30] <tucnak> and you pass them aaaaall the way up to stack?	http//.lostsig.com/blog/2014/05/26/8/the-go-templates-post
+hi, i am using io.readfull and i got a eof error. my reader is a network connection. this error happens in, lets say 20% of the connections. anyone has a idea of what is the problem ?	you are getting disconnected?
+what's the error?	you da real mvp
+in order to make changes it?	http//play.golang.org/p/hlvvt5roag
+why is it called #go-nuts?	i don't know anything about c++ though so i don't know if that's what you mean
+gra1: map or slice of interface{} ?	do you have any example ?
+shit how do i write a regex to find anything not ending in .jpg|gif?	several including myself
+mortdeus: &e[0] ? i'm not entirely sure what to pursue here.	hobbs  type error still wtih that
+is there any way to convert int to uint?	uint64(you_int)
+mohae: ever feel futile?	nah it amuses me that people work so hard at banging their head against the wall instead of reading the docs
+tv`: i keep getting the last ip in every spot, do you see what i might be doing wrong?	there must be a bug in inc()
+wat?	that's up to the package managers not go
+what examples?	"the only limit is yourself"
+https://gist.github.com/jkbbwr/84522fcfcc87fb8721da really?	your last concern should be the overhead of calling a function
+are they in your function definitions but not used, or are they actually used?	currently not used. if i could get away with moving them into r *http.request that would make things a whole lot more compatible i assume
+what's your system?	sorry i made a mistake. for osx it compiles. compiling for arm is not working
+cespare:so one should avoid using recursion in go?	one should avoid using excessive recursion where a loop would normally be used
+st33med: do you know a lot about go yet?	python is bad at concurrency it's true
+is it the way big go apps separate their code?	honestly you probably should and can keep them to one package. there's nothing wrong with that
+jkbbwr do you have any example ?	ihanks i will try ..
+many thumbnails, one person waiting?	you mean i can return response and go can continue execution in the background?
+lemmi: how can i implement waitgroup in this case?	sync package
+gra1: why do you want to do this?	because i am constructing a dynamic call to stored procedure (in multi database) and the call (string interface…)
+tv` the http docs seem to recommend io.readall for this kinda thing..?	where?
+amandac: thanks! this works. was this recently changed?	their commit log mentions re-structuring the code
+i have a little question… can somebody help me?	don't ask to ask. ask.
+anybody here use the golang.org/x/net/context library?	unfortunately the struct is in a 3rd party library i don't want to modify >_>
+mohae: hmm, why?	good question i haven't looked at the append code
+ejames, a pointer is an address to some memory. what would it point to when not initialized?	nil
+about http://tour.golang.org/basics/7 why is it not possible to assign the returned values of split to a single variable using implicit type deduction with ":="?	qis go doesn't have iicit tuples or destructuring
+which is strange, cos length must expand, mustn't it?	you must be working on a copy
+bnagy: https://docs.google.com/document/d/1qxzi9i1pofzpujqzxhyry6eehytqitkkjhfpq0zpxzs/edit?pli=1	maybe https//godoc.org/golang.org/x/sys/unix
+skelterjohn, may i bring my bot in here just to test it? it only logs and has two commands (one alarm and another response to hello)	http//ircindexer.net/network/freenode/channel/botters
+https://play.golang.org/p/5lesb5fe7r this is my prime number finder in go, horrible compared to gosieve, how is it for a beginner?	i'm not a go expert but can't you put the num % i that is on line 12 on line 13?
+https://www.youtube.com/watch?v=y6120qolsfu	that's not really a question with an answer )
+my friend suggested that i should use go to write my server - is this wise?	yes )
+anyone here tried to use gccgo lately?	gdb doesn't understand go's concurrency model
+anyone played with template rendering in strings to be sent to a browser client ?	fergusl are you using html/teate?
+which style do you prefer? http://ix.io/ii5	imo #1 is good unless you have >2 options. with 3 options #2 is better already
+dfelix: isn't host a field in http.request?	it is just not populated into the r.url field
+dani2981, you are getting disconnected?	you are getting eof or unexpectedeof?
+dmitris, i've heard that using "named" return values is always good practice, but i see a few popular projects not following this, why is that so ?	interestingly in http//play.golang.org/p/f9xcum7zrs - if you put the curly bracket after “type foo struct” on the next line gofmt does put it back - but not after functions either “main()” or “mee()”…
+can someone explain why i can't build or `go get` outside the gopath which seems to be, by default $home/go ?	stimes i just want to work from /tmp or sthing
+ejames, what is b? could demonstrate with a working (or not) snippet on play.golang.org	b isn't defined in your example
+hyphenated: damn, looks like pprof is bugged on osx?	diealienscum i've been using the wrong type as it is url.url!
+drop a breakpoint?	sorry just of type configuration you mean is better?
+why would there need to be?	night
+amandac: 'go build'?	go-fmt then go-vet then it does go-build if i’m understanding their code right
+is there a magical fmt format operand that turns 1000f into 1,000.00?	no
+so you are making someone wait 5-10 seconds for a page to respond? i already left your site.	nope
+[]interface{} or map[string]interface{} ?	ihanks i will try ..
+what's wrong with aws's free tier?	depending on what you need though there are other options. for example if you're just trying to host a simple blog website you might be able to get away with a free tier of heroku or as  mentioned aws.
+anyone using a testing lib like gingko+gomega or do you guys prefer stdlib testing?	i bet it does s tomfoolery to preserve the semantic meaning )
+firevolt: does that all make sense?	parsing through that hold please.
+so folks, when i actually use httptest.server() i'm still hitting the os' tcp stack right?	yes httptest uses a tcp listening socket
+reifcode: can you past the exact error?	the one i wrote before
+jmoiron: ooh are we ranting about semver? it ignores bug fixes.	a lot of dep management systems seem to be based on it or at least its philosophy
+vzp: sample code?	sounds like you didn't guard it with a mutex
+good morning people. does anyone here use the taipei project? i have some doubts	tyndyll where does the "response" c from? if you want it to error out you need to control the response.body your function gets and make that thing return an error
+cassyblanca: separate how?	you mean like this? https//github.com/cloudflare/golz4
+pmezard: exceptions to what?	unknown subcommand "doc"
+enum?	http//ircindexer.net/network/freenode/channel/botters
+carbocation: do you have any example about hte interface with run time check?	for values of "work" that may iy your computer is toast
+edayo_: maybe this would help clarify?  http://play.golang.org/p/v-0sfx3ulo	...basically what  just posted. p
+when i use goquery, i do stuff like: doc.find("a").each(func(i int, s* goquery.selection) { <- which uses an anonymouse function, right?	yes
+daved: you mean i can return response, and go can continue execution in the background?	if you don't care to wait until all things are done then no waitgroup is needed.
+is there at least an environ.get("foo", "hello") type command? - or am i going to have to start maintaining a "utils.go"?	you have mismatched parens in that and everything
+finisherr: why?	if i want to do a setup+teardown for each test function i could use maintest but what if this setup/teardown is specific to each go file in the package?
+guys, is it okay to use responserecorder for middleware or it's not mean to be used production servers and must be used for testing only?	of course  thanks
+qis: what are you wanting to do?	i was thinking about writing an win32 gdi or c++/cli winforms frontend for lime (text editor similar to sublime text currently in development)
+if a channel is filled and no one is around to receive it, does it make a sound?	a non-drained channel has a bunch of live objects which arent being gced
+did the request url not provide it?	it seems not. i tried r.url.string() r.url.host etc
+should we align types in structs?	whatever gofmt does
+quiznilo: so these should be in conf files? http://golang.org/src/text/template/parse/node.go	you still haven't addressed why const usage in stdlib should be in conf files instead
+ebonics what do you mean by project structures?	flat directories and stuff
+ebonics: scapy? i don't know much beyond what google is telling me..	i use that for more low level stuff like 802.11 fuzzing
+harikb, am i missing something else?	it's a post or put request?
+skelterjohn: sometimes there is other code that can throw an error between a valid open and your return. how would you capture an error on the deferred close that way?	you wouldn't. but you're already handling the other problem and just deferring the close in case
+is it going to work?	ive used the following structure $gopath/src/lib/module1  $gopath/src/lib/module2
+_jesse_: is a nil slice a slice where the pointer to the underlying array is nil?	yes
+compared to what?	thanks  its working
+mb0: so there is not difference at all?	goimports and gofmt do the same ordering for imports
+i've confused myself. can i write a `func allocate(reflect.type) interface{}` such that `v, ok := allocate(reflect.typeof(foo{})).(foo)` works?	http//golang.org/pkg/reflect/#new
+echlebek: sound sane?	so you have some stuff that is static for the lifetime of the process i guess? you could produce a template with text/template and then further specialize it for each request.
+if i parse two template files on one template var ( eg. t.parse("stuff"); t.parse("more stuff") ), is there a way to inspect the contents of the "compiled" data?	(sorry incoete line but that works) )
+given `type request interface{}`, i want to write `func decode(r io.reader, ???) (request, error)` such that users can define their own `type myrequest struct {...}` and pass <something> where it says ??? so that the returned request interface is of concrete type myrequest	ie you are circumventing what the language provides to do sthing not to its strengths..
+as for wharfie, should that 'layer' be a volume?	right and it's common to use other tools in conjunction with docker because complexity is complex
+daved: what? you consider killing of goroutines a clean shutdown? yes at the moment http-server can not easily be shut down cleanly, so whats the point you might ask. for one, hopefully it will be implemented in 1.5, he might have to sync on something later we/he don't know about yet. he probably can use the practice	especially then he should think about limiting that number
+and why reassign x to primenum?	your code sux i would have done it way differently
+how to do something like mystructure.key (key coming from looping on the list of parameter (string))?	a better question is what can you do to prevent that from being necessary
+hfaafb: doesn't emacs do that? :p	thank you i have been looking for this for ages
+i have aquestion about contributing - are comments on issues a good way to ask questions? what is the canonical way to ask those in the know about a specific issue	do you have a question about a specific open issue on github? or something more general or for which there isn't yet an open issue?
+is there a way to use 'not equal' in switch, for example.. `switch s ! { case "str":` or `switch s  { case ! "str":`?	andy_england no. what are you trying to accoish?
+is there a clean command i should be running between builds or something?	must have been s timestamp fuckery
+are you sure that you're thinking through whether it should be asynchronous or not?	well it should be async
+harikb, yeah i saw those comments, but i didn't know what they meant for my case. so you edited the query in the request.url? let me give that a shot	as per the doc formvalue() (in the receiver side does read both body and url query string values. so you could use either body or  request.url.rawquery i think
+can you tell me why the time.sleep() ist required here? http://go-tour-de.appspot.com/concurrency/1	program finishes as soon as it exits main
+jkbbwr: sorry, just of type configuration you mean is better?	in this case either pointer or not pointer seems fine to me
+cespare: any reason for just using a single type? in my app the string would really be a decent sized slice of structs if that makes any difference	just seems clearer
+i am following this pattern in the use of defer lately http://play.golang.org/p/aorht_zira - this is a good style? overkill ?	not overkill it's good to check for errors there
+what are the options for a global array of regular expressions?	there are package scoped vars but not inter-package scoped vars
+how do i run godoc on a single file that’s not in my $gopath or $goroot?	godoc only works with packages
+dumb question - but where are golang.org pkgs actually hosted? re: code.google.com ?	https//github.com/golang/go
+would anyone mind explaining to me what is going on in this code snippet: http://pastie.org/10119811 ? it seems to be starting a goroutine which prints values generated by fib until it's printed 10 times. then it sends 0 to the fib function which causes select to go into the quit case. is that it?	go func() {...}()  is one thing; the  <- p  is another
+aep, too many files is an os error. what is your ulimit? what is opening files?	lsof is useful in situations like this -)
+poga: ok?... but does this means... that my initial try running godep save inside project folder was correct one? my gopath is way down in folder structure... i have one gopath for all projects	but does that mean that i should have my src folder under git revision? my project is in $gopath/src/github.com/myname/myproject/<my file>
+bnagy: but i*i is one multiplication per cycle, right? so i would do sqrt(x)+1	that would work in another language
+hello gophers. question: i am creating a generic query function to a database, in order to do so i have two implementation options, one using reflection and another one using an interface. the problem is, using reflection i get faster response time (2x) than using the interface method. although less idiomatic. my gut instinct tells me that interface pointers should be faster, so i am conflicted, any suggestions?	exae https//gist.github.com/anonymous/05e602f628408dd7f403
+any ideas why i would get a "fatal error: bad map state" panic when accessing a mutex guarded map?	sample code?
+is there any way that you know of to include it into the binary tv`?	don't use shared libraries
+hi all! could you suggest some go projects in github for a golang newbie?	i wonder if i’m missing sthing obvious - or is it a bug? ...
+tuna?!  http://abc7news.com/news/tuna-company-2-employees-charged-in-death-of-worker-in-oven/684362/	jmoiron true but it was just a small exae
+pnsrc: what do you want to make?	i want to learn go i had some c++ background but i wanted to relearn programming
+daved: how do you check.. things? :-)	depends on the thing.
+ah, finally some response: "package code.google.com/p/jamslam-freetype-go/freetype: https://code.google.com/p/jamslam-freetype-go/source/checkout?repo=: 502 bad gateway"	google code is being shut down. i'd check to see if that repo has been moved.
+compiles and runs correctly?	so i would have to build binaries for every distrubution i intend to ship for
+freman: so you have 3600 servers in 3600 different data centers?	i lied for simplicity of the testcase. it's actually int32 to int16. i just wanted <abcd> to become <cd> so i did int16(num & 0x0000ffff) and it appears to work fine
+pnsrc: decimal digits in ascii?	strconv.atoi()
+drodahl: in what way?	goimports also does what gofmt does
+dorotaq: does it use cgo, or any shared libaries?	i think it does use cgo not sure how about shared libraries - perhaps winpcap? i'm pretty new to golang
+quiznilo: no?	pkg is where compiled artifacts go
+for example?	but i just want something very sie for running a few commands in response to events
+anyone have any ideas on how to get around that?	you sure you didn't write value.([]bytes)?
+dani2981: wait, so you attempt to read up to 4gb into memory?	you are right. 4 bytes is too much. but no the files are  200k or 300k max. pictures send from a android application. no need to 4 bytes to encode the size.
+how dare you?	i have
+tv` ok thank you. i'm not going to have the same number of params in each route. what would you return from the parseurlparams func?	i suppose the only option is a slice of strings
+smw: whut? so how should documentation be written according to the linter?	is it even possible to sleep accurately less than ms?
+what is wrong with -tags exactly? i don't believe i had any issues with it	my guess it coordinating with -installsuffix
+might someone be available to help me with this article?  https://joeshaw.org/net-context-and-http-handler/	what's to help?
+are they using ruby?	i will definitely need to send 1email/user because of extra tokens
+interesting.. is it forbidden to name a file foo_bar.go? i have a factory function that is only found when the file is called foobar.go	is it literally foo_bar.go?
+darius93: you mena programatically? or debugging?	so i can have like http//mysite.com/path/to/get.go
+from what i can tell, you have a queue of n ints, in order, and you want to remove an element from the queue in your processing. is this correct?	okay awesome. thanks
+yes but if the request comes from browser, not sure that request will be done before main exits? or maybe i can send something back to the browser?	if main exits the server dies.
+nbari: why would importing strconv be a thing to avoid?	fmt is way more complex than strconv
+dorotaq: what is gopacket/pcap?	https//github.com/google/gopacket/tree/master/pcap
+why avoid importing strconv? it’s going to be tree-shaken away and inlined, anyway, for the most part.	<> edem for doesn’t make a new variable and allocation for every element it iterates
+fergusl: and the result has mangled text?	well as soon as there are accents like é or è it's mangled
+how would i use declare it?	the type is "interface{}" so map[string]interface{} so map[string]interface{}{"1" 2}
+oozyslug: what are you getting? just throwing up code and saying explain why it doesn't work without saying what you problem you are having/what you are expecting won't yield helpful results	i pasted my snippet. that's literally it. curl http//localhost8080/ results in no string that contains localhost 8080 or http
+on a *string?	minor change to the omitempty http//play.golang.org/p/pdvjygsxcm
+hmm i looked at  the source code, and i think that it would be a quite better solution to implement it in syscall rather than writing an interface. do you think it is worth a feature request?	a sie "nice" solved my situation thanks
+are there any good packages for converting between two units of measurement?	https//github.com/dustin/go-humanize
+do you send over port 80?	apologies for interrupting your flow ..
+amandac: cool! want to pr it into the wgo repo?	not entirely sure i should. apparently using the advice-add thing is heavily frowned upon in the emacs circles given when i was googling how to hook into when the buffer is made pretty much everyone was like “you can’t… welll you kinda can using advice but you shouldn’t use advice” or similar.
+hi can someone point out why my code doesnt work ?? consider the folder exists     http://play.golang.org/p/iqnqzcn2e-        ofcourse i compiled and ran it in my computer	file represents an open file descriptor. according to http//golang.org/pkg/os/#file
+tucnak: can't you make your own and call it?	thanks for replying! in fact i can't
+what is the problem encountered when assigning vars to url params?	i'd call parseurlps inside the handler just because then you can assign the parsed data into a variable nicely
+go language or go game ?	in case of statistics maybe r nice option in case of large set of data due to high performance go can be a really good option @
+i need an io.writer that only remembers the last n bytes (using a fixed size buffer). does such a thing already exist?	when i do a cmd.run() i get an non-nil error when having this for cmd  cmd = ec.command("mysql" "-u" "sqluser" "test" "<" "data/test.sql") .  the file data/test.sql does exist and sqluser does not require a password.
+hello all. i'm trying to use github.com/kr/githubauth but don't understand how to initialize the http session keys, keys []*[32]byte. any pointers?	so it's a slice of pointers to arrays of bytes? wow
+does closing a channel have any performance benefits or is it just used to signal you wont be sending more stuff?	the latter; it's also a convenient broadcast signal
+anyone know of any mutation testing libraries for go? similar to http://pitest.org/?	i am not a fan
+not an element of an array, but the array itself? currently trying: http://play.golang.org/p/agqfvifh5f	'arr' in your example is a slice
+daved: what exactly do you mean?	why do you believe that?
+is dave cheney here? i would like to talk about gb, i dont understand why it is good to allow only 1 version of a package	that's just smart in general; regardless of gb
+dome.run() ?	you can't
+ya i can just rewrite that in go. i was just worried about accuracy that’s all.. for some reason i had though python magically had a more accurate implementation of float ??	i was planning to. then i realized it had no iementation for x ^ n
+why are you using unsafe?	http//play.golang.org/p/igdqwpdktk
+i’m trying to work with pcap library here: http://github.com/google/gopacket/pcap, but when i try to import it and use it it gets a weird error, basically the package pcap is not recognized at all. hints?	and what's the error?
+should it error out with unreachable code?	i avoided using that
+how can i organize a project to run tests as a sub-package?	do you just want "package foo_test" as opposed to "package foo" in your *_test.go or something else?
+anyone ever have go get prefer connecting over http vs. connecting over ssh to github.com? anyone know what settins control that??	i believe it uses https by default
+jkyle, why are you doing this?	checking for existence is generally a race-condition. not to mention the fact that if you don't have permission to stat that path you are going to be in for a long wait
+how can i do this?	https//github.com/samcf/hnefatafld/blob/master/main.go#l257 something i wrote
+amandac: anyway to debug that or work around it that you know of?	i don't see you starting the process anywhere?
+bijan_: is it field[n] or field[]? golang doesn't automatically consolidate fieldname[] like php does	field[n] where n is the product id
+like this? https://github.com/karan/projects	then it's a good time to pick something you would like to do and write it.
+lemmi: so i can't close channel without waitgroup here? or i can use for loop instead of range	the actual problem is you don't know which goroutine will be the last to stop working
+how can i convert int to uint64?	uint64(you_int)
+hi guys.  how might i unmarshall/decode json into a nested map ?	you have to do x y = foo(); string(x)
+saffro: are you using the httprouter.params in your custom handlers?	well i have them in my handler functions that i'm trying to pass.. haven't got any custom handlers yet i don't think?
+why would i only update my sites in development?	static files should be updated explicitly
+how weak are golang's constants? - https://gist.github.com/anonymous/abba85587e518ba59a29	that code has so many compilation errors
+aep, anyways, first thing, why are you continuing the for loop?	what is creating those connections?
+ok, person i was speaking to yesterday doesn't appear to be here (or declined to answer :), anyone else agree or disagree with opinion  in this blog post http://www.mikeperham.com/2015/01/05/cgi-rubys-bare-metal/ which basically  recommended using apache and cgi to create a more stable ecommerce setup?	my response is "lol cgi"
+how can i implement static method for golang struct ?	you can't
+whats the actual problem you are seeing?	is right
+well, how many users do you have?	one more thing i already tried to send like 12 emails with smtp.sendmail at once and it took ~8seconds .. i'm afraid it's because of reopening new smtp connections for each mail can i send them in one connection?
+have i mentioned how much i love sqlx?	i avoided using that
+is this a compiler bug? if you try to type assert an interface{}{&anytype{}} to an interface declared in a different package than struct anytype, you will get a "missing method" panic. https://play.golang.org/p/tltwob4pba	not a bug; unmarshaltext is defined on *time.time
+currently i am using flag.usage = func() { my_custom_msg flag.printdefaults() } just to change de defaults but how to do it for the printdefaults() ? does flag.usage per arg ?	docs help.. http//play.golang.org/p/nxcj0wrr9c
+what are your reasons?	do you have other function that can return a db?
+ok, but how is it better than sending them chunk[:5001] ?	as i said memory allocation -)
+what does install have to do with it?	there will be this book in a few months.. until then 's suggestion is the best one. http//www.amazon.com/programming-language-addison-wesley-professional-computing/dp/0134190440/
+hello! how do i write -inf as a value in my code? e.g. checkfloat(-inf)  it currently gives me an error undefined: inf	math.inf(-1)
+something about your gopath perhaps?	if it compiles is enough. so it must be sthing nasty here. i was worried about sthing broken with the lib itself
+even if only the sending is the culprit i should copy the whole application including the api?	have you previously sent out lots of emails?
+fivetwentysix: also, for other languages, how big would the install be to get hello world running? if you put that hello world executable on another machine, it would work as expected w/o installing anything else	provided the same arch yes
+better than sublime? what feature do you want? it already does autocompletion, jump to definition...	ptrb well something that actually understands what i'm writing. most of these extensions are just lexical analysis and some do understand but sublime doesn't provide enough tools for it do be coetely useful.
+cronos: so how should i check if it's 'nil'?	structs can never be nil pointers can although they can also be typed nil
+is there any video tutorials available for this??	it shouldn't be. but you should learn to read things
+does anyone here use the taipei project? i have some doubts	edayo (and in practice i really rebuild all my workspace all the time more like go install pmezard/... && sthing)
+gra1: interface{} ?	why do you want to do this?
+dmac: could you put make in the struct ?	yes
+hi! i am trying to do a "go get github.com/vimeo/statsdaemon", but it's not downloading the files and not giving any output. what could cause this?	nothing.
+daved: then you want the bridge to just pass the context thru right?	thanks to take it a bit further if i have a struct with nested structs and i marshal json into it and the json is missing one of the fields that contains nested structs is there a way to tell that?
+is there any case where a := myarray[:num:num] is not the exact same as a := mayarray[:num] ?	yes when cap(myarray) != num
+muchoz: why?	- oh okay sorry for the misunderstanding
+can you be at all more specific?	haha i'm not afraid of writing code i just don' tlike writing the same code more than once if it makes sense. seems like it doesn't make sense in this case and trying to do it another way will be way too confusing
+quiznilo: well.. is a *bytes.buffer a []byte ?	buf.bytes()
+aep, have you tried profiling it?	i mean pprof
+echlebek: i don't know. is that on a space ship?	maybe on a space ship with an infinite improbability drive
+also, how does that work? you echo "get .." | .......	right and it's common to use other tools in conjunction with docker because complexity is complex
+xetius: what storage?	my understanding is that map capacity is mostly implementation defined. if you make a map without a capacity a big enough capacity is given such that the map is not need to be resized often.
+rxaxm: do you have a question about a specific open issue on github? or something more general or for which there isn't yet an open issue?	a specific issue
+when someone defines a struct and then after the type they put `json:fieldname1` this is key-name for the js obj after marshalling and unmarshalling right?	i think it's just meta data which can be used via reflection in any way you want
+deldotbat: so like a parseurlparams function? is that the same as middleware?	what is the problem encountered when assigning vars to url ps?
+hi can someone point out why my code doesnt work ?? consider the folder exists . i am getting no output    http://play.golang.org/p/iqnqzcn2e-        ofcourse i compiled and ran it in my computer	you're going to have to be more specific as in what doesn't work what error are you getting etc.
+skelterjohn: can you clarify what you mean w.r.t. github repositories that are made to work with go get not working with wgo? won't wgo repositories work with go get too?	no because the wgo workspace wants to be a gopath entry
+reifcode: and what's the error?	calling any member returns something like i.e. “undefined pcap.openlive”
+what's its point then? :)	it's useful as a building block for the "real app"
+it was marshalled once before and is being returned as a string. will that marshall that string again?	nothing's expensive until it's in your cal path and comes up in benchmarking
+furball365, got any more info on what you did?	gccgo does not work on darwin
+cespare: are you sure i need mingw? couldn't i just get gcc.exe	no i'm not sure of anything to do with windows
+http://play.golang.org/p/fpvudwekht - trying to unmarshal the id's to an array of "id"... but can't figure out how, am i just going to have to []map[string]string and iterate it?	you're looking at a []map[string]string so yeah if you want something else you're going to have to transform it
+anyone using nats (queue)?	how so?
+services is package main, right?	you da real mvp
+does this thing ever assume bash?	echlebek fu input is cool but i disagree with modifying the code.
+i'm dealing with a json which a part of could be one of the structs i have defined. i know which struct it should be by looking at a different key (type). would there be a way to automate this, without a large if/else statement?	i've had to deal with this problem before i was recommended to defer decoding with *json.rawmessage and switch on the deciding key
+alternately;  does a channel which is never drained cause some sort of overhead that i should be concerned about?	a non-drained channel has a bunch of live objects which arent being gced
+ttke, you use http between your own backend services?	we have some legacy mpi code... oof.
+is a []string efficient enough to use for an in memory storing of large text ? (log history)	write logs to file
+is there a way to do that on one line, or is the whole thing very bad practice and i should do this differently in go?	yes
+but does it == nil?	any particular reason you need to use that nick?
+also, what does go env output?	go build
+muchoz: is it? see https://golang.org/ref/spec#complex_numbers	if you uncomment your fmt.printf line you'll see a hint 'v '(0.6+0.5i)' is of type coex128'
+ggerman: still on?	hey how are you
+what's an absolute url other than url.string()?	http//api.github.com/gists <- absolute /gists <- relative
+when you do: s := "hi"; s2 := s;   i know s2 is a copy of s, but is the underlying byte array the same?	git clone mypackage.git mypackage && cd mypackage && go get ./...
+hello, how can i compare one interface to see if it is a respective structure or not?	the point of interfaces is that you don't care what "underlying" type it is isn't it?
+bnagy: flags?	yeah i don't know... i just follow the docs of the flag package )
+henesy: what do you mean "more"?	look at the math lib
+hfaafb: is it a bad practice in go to make use of "nested" packages in common web application?	naming things is hard but spreading handlers out between packages is a misuse
+guybrush: what makes you say that?	some packages have initialization; maybe they register themselves with database/sql or something like that
+tv` tv` leaving aside the "bare metal" issue, he makes a point that with his setup he's only got one piece of tech running24/7 (apache) which he says results in increased stability - you don't agree with that?	_ ruby apps are famous for having memory leaks an other issues
+what needs to be changed there? it clearly labels that complex	if that wasn't on the go tour you wouldn't have learned about coex literals )
+how could i combine those? could do a maxspeed() function which just returns a constant but that doesn't seem great	i find it easier to address questions like that if we drop the car metaphors )
+hfaafb, would you mind suggesting a couple for me to try?	i'm too and what i described works in case of my app with many subpackages
+hyphenated: because the launch of a goroutine is more time consuming than the rest of the program right?	no not at all
+github?	gaganot http//golang.org/doc/install/source
+hey guys, one general question, regarding go and restfull apis. providing multilingual feedback is unnecessary complexity or something that should be implemented?	both
+tv`: https://golang.org/src/fmt/print.go?s=6663:6699#l237 i got it that far	if a is built using b and you only need the functionality of b what should you use?
+amandac: was it that?	i recall seeing someone post it to the g+ community for go at least.
+hey - did any of you guys try to cross compile code using gopacket/pcap to windows (host system is linux)?	what is gopacket/pcap?
+what's a good way to revese a (non-sorted) []float32?	for i = 0; i < len(f)/2; i++ { f[i] f[len(f)-i-1] = f[len(f)-i-1] f[i] }     ?
+you mean in the struct definition?	yes
+hi, can i access to function in main package from another package?	pass a pointer to it as an argument?
+get <-> get <-> get <-> get <-> get <-> get <-> get ???	apologies for interrupting your flow ..
+if i want to accept a string or an object i have to set the param to interface and switch later right?	you could probably take the err approach
+st33med: wtf?	sure but the point is decreasing garbage until that stops mattering
+hyphenated: do you really think that custom 404 page is a rare case nowadays?	yes it does. you write yourfancymuxdoingwhateveryouwant.
+jacobat: what's the signature of your func fun?	exactly - i want to concatenate "foo" with the value of .name
+pnsrc: as in, a reduce function?	if you know which it would be myint64[i]
+cronos: connect() can't fail?	i suspect it's easy to tell try inspecting the first few k of a binary
+and that default case can just be empty, basically?	you can always visit the spec for authoritative information http//golang.org/ref/spec#select_statements
+cgt: will that double marshall though?	nothing's expensive until it's in your cal path and comes up in benchmarking
+is there a go equivalent to fabric? - /me is currently reading: http://kukuruku.co/hub/golang/ssh-commands-execution-on-hundreds-of-servers-via-go	in my experience with go (limited) i've found that finding your own library is the best option
+ a global slice of regular expressions?	maybe it's what i need.
+if i have a named return value that is a slice, does go automatically allocate it?	define "allocate"
+hmm then you simply need to update?	ahh it's an exae
+how can i serve files inside an imported package?	nothing says the source tree is available where the binary is run
+whats the best way to do something similar to enum in go?	yes that's what i thought too
+no, they aren't laughing at me.... .... are they?	one is a type the other is a method on that type?
+does the channel go out of scope/get closed?	also just googled your name.  go ducks.
+do cgo dependencies get included into the compiled binary?	if the c links against shared libraries the binary will need those shared libraries
+may i take a seat?	no it's your turn to stand and present.
+binary.putvariant(buf[9:13], int64(97351345)) <- sets bytes[9 - 13] maybe yes?	it might set fewer bytes than the slice holds.
+hello. is there any command line tool to, given an interface, show me which types implement this interface in a given package?	igors https//github.com/dominikh/iements
+tyndyll: where does the "response" come from? if you want it to error out, you need to control the response.body your function gets, and make that thing return an error	no problem =)
+how can i fix this?	remove the stuff in your $gopath/pkg/
+aep, why does it die?	have you thought of entering a debug state so you can figure out what is going on? -)
+hmm, so what does unmarshal do in my snippet?	http//play.golang.org/p/ginllelpzg if that makes it clearer
+is switching two cases without a default case better than if-else if?	whatever gofmt does
+extremely new to go, how can i set file permissions?	package os
+does anyone have guidance on when it makes sense to call http.transport.cancelrequest?	small reproducible examples still appreciated ;)
+rundome() ?	i want static methods assigned to struct
+skelterjohn: have a moment?	lol oops. does that mean you can reproduce it on the actual mac?
+is bytes.buffer the best way to concat long strings?	out of interest why not a database driver?
+or an existing technology?	apologies for interrupting your flow ..
+golang newbie question: i'm trying to populate a struct with the content of a webpage and a map of html tags and their counts. i've gone through the tour io.reader exercises and some blog posts. my solution seems like the wrong way. can you take a look? http://pastebin.com/y1zzgwwv	but go as a language has enough support tools that i've never even c close to breaking out a debugger
+as in why is it scary?	pauses here and there to mess up your audio acquisition
+should cancelrequest not be used with keep-alives?	small reproducible examples still appreciated ;)
+nomad111: does your api actually use data in the options struct, or just pass it around to something else that uses it?	i do nothing with these options but pass them on to the underlying db driver
+aspire: depends a bit on how you want to go about this.  do you already know php?  if so, mabye you just want to use that to get this relatively simple task done.  if you want to learn something new, go would be an efficient choice	i know php enough to know how to do what i want to do
+hello, i was reading https://golang.org/src/bytes/reader.go#l13 and noticed that the "current index" is int64 while the "previous index" is only int.  does anyone know the reason behind this design choice?	array indices are defined to be int
+heavyhorse: how can i choose that before it has been created?	heavorse yeah well these environment variables make 0 sense to me. that's the biggest annoyance when working with go.
+cool. so why are you worried about or even changing only the js in production?	the back-end is separate from the front-end
+oh did big.rat have it? i must have missed it	huh you're right
+what's the motivation of using pointer receiver in `func (t *time) gobdecode(data []byte) error` while most other methods of time don't use pointer receiver?	to make it able to edit itself i’m guessing
+displease: it was in a directory, was it not?	look at your tree output the code was in a folder
+does parsing repeatedly simply create one long template?	t1a = parse(1).parse(a)
+http://play.golang.org/p/r0xrmzpru2  why i can’t use reflect like that to get the type name of the child struct?	embedding doesn't work like that really
+ get context at point of failure. is there some way to do this, perhaps by hooking panic in some manner?	i don't care haha it's offtopic anywya )
+mohae: seriously. "hey anyone have any advice? oh you do, great, because i have my own advice and it's better"	even better i don't have time for the tour so let me waste the rest of the day/week trying random things from the web
+how do i begin with this thing?	what thing?
+something like that?	elico right so do what  said. personally i'd question if you really need regexp's but that's me
+jules_: i'm assuming you coming fom php/js something like that?	you need to parse the string have a look at the fmt or strconv package
+iant, you happen to know if there is a way to coredump when a cgo code segfaults?	try setting the environment variable gotraceback=crash
+dome, who doesn't?	why?
+is there a way to tell if a bool variable is false or was never assigned a value?	those two situations are equivalent no way to distinguish between them if you need to use a *bool
+??	try printing out the whole fileinfo struct and see what;s in it
+the function digester may return instead of sending the result if both channels are opened?	lro http//play.golang.org/p/_4kx-tnsmo
+rest documentation on server? sublime *needs* this to make me happy? seems more like personal things	just - an - example -
+i gotta ask. what is a paradigm leak and how do they occur?	i don't know. is that on a space ship?
+no memory leaks, waits for requests to finish?	if you're running linux use xdotool
+hfaafb: is it possible to conver foo in bar?	what's the type.(stuff) called?
+so it should be a function that returns a function?	i don't know if you're on-the-level but if you check into it a decent editor will catch your errors asap. try looking at vim-go and the like. don't use a vanilla text editor if you want to be productive.
+hmm... can i switch() on a method signature?	odf gives you possibility to edit your output documents djvu doesn't have it functionality afaik
+should it assume, after you've gone outside of convention, that you will be ok with convention for installed binaries?	i can manage where my own binaries deploy myself e.g. ~/bin or /usr/local/bin ... i am not sure where/how go thinks they should live
+in this example, why do they do `p=new(int)`? https://gist.github.com/insanity54/c99921bebde702557b8f	pmezard so in this exae https//blog.golang.org/pipelines/bounded.go
+sigh what is services then?	hi again. according to the golang page gccgo has native support for gdb. it seems like an exercise though.
+deniska: in other words 10011000 wouldn't match right?	it would
+and why?	ah yeh i guess i should rephrase my question - is golang.org a thin proxy pointing directly to those git repos on github? or is it behind ?
+http://play.golang.org/p/atr0_3kffe <- that's what you want, right?	i avoided using that
+jmpf: golang.org packages? you mean things in golang.org/pkg/foo?	check https//github.com/golang
+heydabop: wait, so go isn't reflective?	heydabop so something more like this? - https//gist.github.com//06d07e485fa1bca2f740
+why use ftp when we have had ssh since the 20th century?	it's a fucking example people!
+is there anything wrong with it?	what is b? could demonstrate with a working (or not) snippet on play.golang.org
+any experience with c code compiled for arm with go?	so i would have to build binaries for every distrubution i intend to ship for
+skelterjohn: https://www.youtube.com/watch?v=xgenxtn2hzk	adding to my problem here is that i'm using unrolled/render.
+oh wait, what was that bot chan for testing?  #botters or something	that works  thanks
+is there a good way to define methods on non-local types? i realize you can't, but i mean, are there any patterns that tend to solve this issue in another way?	embedding..?
+any good suggestions on getting a user's homedir that works after cross-compiling?	ptrb but it's still completely unclear how they related to each other. for example i would assume that s gauges are sums of others but documented it's only for sys
+someone using gompd around? can't get the search functions to work !	just s language stuff
+glenda: what are you referring to?	i didnt make her respond yet to messages directed at her but i should.
+or what you are trying to accomplish. what is the difference between original and queue?	okay awesome. thanks
+hey everyone, just started learning golang literally like 5 minutes ago... and this is going to bug me until i figure it out. what is fmt an abbreviation for?	don't you dare ask for generics or operator overloading ;-)
+but the other stuff seems pretty fine to me?	you mean making your own library?
+hey guys, what am i doing wrong here? http://play.golang.org/p/r1orcshj8z	strconv.atoi() returns two values you need to handle the second (the error). https//play.golang.org/p/fxnnfhbdjr
+in oop inheritance i could say mamals drink milk, dog(mammal), hound(dog) great sense of smell,   horse(mammal) eats grass can i do that in go? how, interfaces?	go is not strictly speaking oop language. there's no inheritance.
+secrettriangle: what's s?	a string?
+i'm running a rest server that has a slow startup process (open a big leveldb) and i want it to serve up 503s until its finished. is this a reasonable approach? http://play.golang.org/p/9g6ijgplgz	that looks racy
+harikb, read what? http.request.form?	so are you saying there's no way to do what i want while using http.client.do?
+skelterjohn, but what if you really want to use nano-seconds? :-)	whut? so how should documentation be written according to the linter?
+hfaafb: there is no concept of nested package, but there are nested pkgs, right?	ive used the following structure $gopath/src/lib/module1  $gopath/src/lib/module2
+why are you using a different "ide" for every language?	https//gist.github.com/film42/430d125242a5cc1aac07
+remeh: hm. so like parse own .go files during, say, build phase?	that's getting crazier that i thought d maybe describing it manually isn't such a bad idea after all
+sauerbraten: osx?	nope ubuntu 14.04.2
+hi all; what's the best way to handle errors from a deferred function?	you can change named return values inside a defer
+anyone know of a pkg or snippet to fix sentence capitalization?	english? with proper nouns and stuff?
+no you haven't?	how did you compile your program?
+say i have 2 packages s and t. in package s i have a container s storing instances of type t.t. but t.t would also like to query s about other t.t's. that makes cycle imports. moving them to same package is an option. what are other viable options?	to make it able to edit itself i’m guessing
+dmac: how should i be doing it ?	you'll need to initialize the map first with make()
+okay, so create a go routine? how would i close the server gracefully...	please define gracefully
+smw: are pointers to slices not allowed?	http//golang.org/pkg/reflect/#sliceheader thats what a slice is behind the scenes you only need a pointer to a slice if you need to append to it
+aep, you are asking go to do an impossible task and are upset it is failing in a different way than node failed?	limit the number of open connections
+anyone have any luck building gccgo from source recently?	reconsider your life choices imho
+digitalyatri: -d, isn't it?	-d does this right display diffs instead of rewriting files ??
+hi!  if you have a binary compiled with go, can you find out from the executable itself what was the go compiler version it was compiled with?	you can have the go linker set compile-time strings in your binary
+can't?	perfect thanks )
+and now why is it max - low ?	because 0 is now 5000
+and how long does it stall for?	calling any member returns something like i.e. “undefined pcap.openlive”
+poga: ok, thanks... i added just "git init" in $gopath/src ... and the command did finished without error... but inside godep folder which was created... godeps.json have "desp" key empty??	this is probably not the right behavior right?
+i see. what's your database?	that feels more complicated than necessary.  now he has to worry about cache invalidation too potentially
+why "have to"?	https//gist.github.com/sneakyness/6eb759b36011853b6ad9#file-gistfile1-txt
+are json arrays unmarshalled to a slice left in the order defined in the json?	yes
+dsx: godoc ?	isn't it for generating help?
+hillatio: ever written pl/sql?	the general lack of statements being expressions prevents that misuse
+bnagy : why ? i think keep it simple is the best. and in fact as i say i will make some improvements on it. but what is your idea ? use something like protobuf ?	i understands you concerns. but i can close the connection if i see a too big size without problems right ? and as i say before to read the full content i will not read the full content on memory with readfull.
+can someone tell me why when i call connect and close from another package it seems that close gets called first? it's something to do with goroutines i'm sure but i don't understand where they came from https://dpaste.de/xkom	ebonics true that i already use rabbit and would not need net/rpc but am i missing sthing? in my thoughts it feels like doing a net/rpc call is faster but i don't know how it works when there gets alot of requets if it buffers them show how to scale it etc. with rabbit i can just add more workers to the que and know i will answer back faster don't know how i would do that with net/rpc. probably
+j0n17: what _protocol_ does the connection use? what kind of data gets sent?	because the launch of a goroutine is more time consuming than the rest of the program right?
+harikb, i'm successfully setting body, but http.request.formvalue doesn't read from body, correct?	so do i want to set rawquery?
+i understand what anonymous types in interfaces provide (extending the requirements from the "imported" anonymous type), but what exactly do anonymous fields in structs do?	do you have an example?
+hi, do anyone has any example for api testing ?	i currently have some code to load my teate like this http//play.golang.org/p/udgzxqhxua
+so is anyone doing ios dev in golang yet?	no do you know something i don't?
+was i wrong about mohae?	who are you and what did you do with the poser?
+edayo, is it gopm?	are you asking me to use the default package manager for my linux dist?
+tv`, ?	ebonics the example can be reduced to what  said though if you want actual suggestions actual code would be better to share
+did you hire him?	there will be this book in a few months.. until then 's suggestion is the best one. http//www.amazon.com/programming-language-addison-wesley-professional-computing/dp/0134190440/
+i have a package that depends on a package that needs to be built with a specific build tag, how can i specify this in my package?	godep
+daved: in this case, where should i close channel? https://play.golang.org/p/nbkbmr4ztw	i'm not sure how to approach that.  maybe someone else can see how to help.  i will provide some examples based on the suggestions i made before.  after that try to have me see it more from your need/perspective.
+thun_: you specified the file, why would it use files other than what you tell it to?	are you saying go i have to manually include all files of the same package?
+when 'go get' simply stalls without output, what's the way to troubleshoot?	hmm it's doing the same thing for me are you sure it's not just loading?
+xetius: minimal example?	oohh
+panics are always caught and reported by the runtime right?	if by reported you mean 'it crashes' then yeah
+guybrush: what?	i think you still may be confused.
+maybe a different go-mode version?	it seems you set gofmt-show-errors to nil at some point.
+joushou: yesterday you mentioned that go excels at the type of thing i was using apache for. i meant to ask if you agreed with the opinion in this blog post http://www.mikeperham.com/2015/01/05/cgi-rubys-bare-metal/ which basically  recommended using apache and cgi to create a more stable ecommerce setup?	my response is "lol cgi"
+freman, why so much struct?	if there is a heap or priority queue you can use one of size 5 to effiently collect the top 5. you could also use the expected linear time quick select algorithm for anything that you can comparison sort (could use the same interfaces)
+hyphenated: on reddit?	0645 < > is there a chance it'll be accepted on reddit?
+harikb, i saw that... but i _do_ have a body... and formvalue() doesn't seem to be pulling it out. i'm just putting json in there... do i need to be doing something else special?	i don;t know. may be it is not properly url-encoded. body still needs to have foobar=urlencoded(json_string)
+what would be a good way to nil out a pointer so its reference is removed completely when its destroyed by a function? eg thisfunc.destroy() makes it so any data in "thisfunc" is not available in memory	i don't know but i'd like to )
+is this the correct way? http://play.golang.org/p/uy4c6ypvek	no i mean to find the most full featured library you need to do research
+isn't that just arithmetic?	what  said
+if you compile a go binary on a mac, do all mac boxes that will execute need the go lib installed or will it just run?	it will just run
+hi everyone, reading through go style guidelines: should struct members be in pascal case? (e.g. variablename instead of variablename)	no it all depends on whether you want them exported or no
+aep, you mean handleconnection?	have you tried profiling it?
+djx: i don't know if play can run package testing?	write it in your local so you can ensure you run the bench long enough to stabilize
+does it _have_ to connect also, or could it just initialize a config object that you call connect() on to get db ?	there's func connect(conf config) (db error)
+so you're saying that you shouldn't treat everything as a nail just because you got a new hammer?	edayo_ see the line that  just re-pasted
+btw quiznilo have you checked out gorm?	os.isnotexist ?
+skelterjohn: that sounds strange.  so my angular partials (which none have embeds at this time) will also have a sibling which has been parsed along with every possibly inherited file available?	you test revel?
+bnagy: so the after is not correct go code? why does go allow you to do an array of anonymous structs?	the type of these anonymouss tructures is the structure type
+feliwir: are you using all the things glfw says you need to use?	and you have mingw etc?
+why better than env?	pprof ..
+regarding gsoc?	i avoided using that
+if numb is not a rational?	does numb ever need to be a rational?
+fergusl: put another way, is it utf-8 data being interpreted as latin-1, or the reverse?	my suspicion based on the total absence of any details is that either the web browser is sending latin-1-encoded data and the go code is treating it as utf-8 or your application is not setting a content-type and the browser is interpreting the utf-8 data sent by your go code as latin-1.
+and is an integer?	does numb ever need to be a rational?
+tv`: how so? if the connection terminates?	and if you got the mysql invocation right it'd probably sit there waiting for more input afterward; you never close its stdin
+docker, maybe fig?	right and it's common to use other tools in conjunction with docker because complexity is complex
+func connectusing(fname string) (db, error) ?	do you have other function that can return a db?
+just of type?	in this case either pointer or not pointer seems fine to me
+does it change the source for you, i mean using go fmt ?	gofmt -w does
+something around setfilesecurity?	thanks
+esarl: how does that compare to the python implemenation?	however i asked because of your comment about not sure about efficiency
+a:=[]a{} makes sense?	slices are basically a section of an array
+tv`: did you just add that "reverse" section to the wiki?	cespare   i know trying to simplify code so i can share it
+how to 'break' a doc.find("a").each(....) loop btw?	yes
+i'm trying to `go get mypackage.git` but i don't want it to install the binary as mypackage.git, just mypackage; any advice?	git clone mypackage.git mypackage && cd mypackage && go get ./...
+is there a good book instead? - like maybe a textbook?	do the go tour
+wait, no i can’t create a for loop like that in template right?	i can’t find any usage of keyword “for” or “loop” that might be doing this in http//golang.org/pkg/html/teate/
+displease: how did you import it?	"services"
+hyphenated: thanks, that gave me data back that looks like `&{[] <nil> [] [] <nil> 0xc2080c9010 [] <nil> <nil> [] {false}}` but i'm not sure what that data structure actually is? it seems like it's their attributevalue struct type	http//godoc.org/github.com/awslabs/aws-sdk-go/service/dynamodb#attributevalue
+hi, is there a global way to recover from panics?	nope
+suppose i have a uint32 f = <abcd> where a,b,c,d are bytes in order of significance. how would i make a unit16 g = <bc> where b and c are the bytes from f?	mask then shift i guess
+fivetwentysix: e.g. that hello world includes a lot more than just "hello world". how big is "hello world" in java if you include the jvm?	yeah makes sense
+how many devs are at ookla?	i avoided using that
+any way to set a terminal emulator into raw mode from cooked mode in go other than resorting to writing some c and playing the dance with termios.h and cfmakeraw(), etc?	http//godoc.org/golang.org/x/crypto/ssh/terminal perhaps?
+digitalyari: does “gofmt -l <filename.go>” shows the name of the file?	hyphenated check this out https//play.golang.org/p/j-in6ixfcw
+anything about my issue?	something is 32 bit when it should be 64
+why what?	why some random date in it?
+hyphenated: until i modify queue, then i have one of each again, right?	then you append to queue and because len < cap for that slice it didn't allocate a new one. it modified queue to put a new value in it
+or maybe the index funciton does that? i'll check	thanks i'll check it out now )
+which code?	i provided you with the information necessary to resolve your problem. you were importing a folder which is clearly stated to be a package.
+eatingthenight: how long was it taking before?	good job
+djx: i would imagine some large go project might support plugins, maybe fleet?	looking at it
+only at the time of assignment, right?	notice the output of the fmt.printf("%p") for original and queue see that in the modified version they point to different addresses
+mwhudson: is there a chance it'd be as fast as java's?	that's not really a question with an answer )
+hi all, i'm reading this post about errors http://blog.golang.org/error-handling-and-go and i came to this line: "the fmt package formats an error value by calling its error() string method. " my doubt is, how does println knows the variable is an error instance?	type assertion
+skelterjohn: i think it does use cgo, not sure how about shared libraries - perhaps winpcap? i'm pretty new to golang	this is in the source code of pcap from gopacket
+lemmi: how? i'm waiting for 100 routines to finish before i exit?	no. your loop is in another goroutine and you don't care if it's finished or not
+does docker have a hand in go? i thought it was all google	docker is built with go
+wessie: darn :( any way around this?	i was looking at the sql package but it doesn't have any methods that would let me write a few hundred mb without reading it into memory
+means that if they both are good to go, one of the many possible cases will be selected randomly ?	lro http//play.golang.org/p/_4kx-tnsmo
+gopkg.in assumes that code is always hosted in github.com ?	ok thanks. i never dealt with bitwize before. || is the or i'm used to.
+one more question, is "copy(myslice, myfunc(num))" a good way to to make a slice identical to output of an external function?	i installed vim-go via vundle. but it throws an error saying godef is missing.
+i am trying to decide between 'wgo' and dave cheney's 'gb' - i understand wgo is by skelterjohn and both are highly regarded gophers. but i would like your opinion (not asking to take sides). if i listen to dave's video https://www.youtube.com/watch?v=c3dw80eo88i - i see he mentions that go team is against any configuration files for vendoring. doesn't the .gocfg/vendor.json break that rule?  i do like the fact that vendo	go team is against it but he's not part of the go team and gb is not their tool ;)
+no it just means hes iincluding it from the github instead of local or the released branch, right?	http//golang.org/pkg/#other
+skelterjohn: in wgo, have you replaced '--set-primary' with '--go-get'?	i have
+not the object pointed to?	try float∞
+hfaafb: yeah?  seems inline with the benefits of the := operator	though i do have a ruby background so “inconsistent and unnecesary” runs in my veins.
+well actually godep does?	just because you can doesn't mean you should
+how would i go about making my mouse click with golang?	if you're running linux use xdotool
+does anyone who uses gin or martini know how i can serve a site and routes at the same time? i have a r.static("/","./static") and routes defined and i get this error: conflicts with existing wildcard '/*filepath', because it thinks i 'm hiding my routes i guess.	how does it know which to use?
+hi is this go ?	yup!
+deniska: ok im trying to follow if a & 0x18 -- 18 being a hex value 00011000 , would a have to be 00011000?	in other words 10011000 wouldn't match right?
+eatingthenight: why not bash?	i am using go because i wrote a program that splits up the dump table by table and then imports 10 at a time
+is there not a concat function or something?	{{ fun (printf "foo%s" .name )}}
+dani2981, you are getting eof or unexpectedeof?	eof
+daved: how many brand/theme/url combinations are there?	during startup i cache the directory contents.  when a request comes it will execute the correct template based on the theme/fall-back rules.
+what is the difference between uintptr and *uint?	uintptr doesn't mean a ptr to a uint
+or have i completely failed reflection?	yes. what are you actually hoping to do?
+do go support the sleep(0) thingie in windows? (it'll tell the kernel to let this thread do something else, but give back access when that other work is done, prevents utilizing the cpu at 100% in wait loop.s)	kim^j as for documentation. tools assume that it can print just the description
+you are... measuring, right?	schmichael ty
+what is the difference between exported and unexported? its like scope (public, protected, public) ?	it's just nudging you towards best practices; the godoc tool can generate documentation from comments
+which is mn?	start one up?
+fergusl: are you using html/template?	augmented by revel's teate funcs
+is it possible to implement the 'ok' feature? ie: foo, ok := amap["string"] && foo := amap["string"] (ie: make the second response value optional?)	you could probably take the err approach
+cronos: is there a reason this isn't on golang.org's official packages?	it's in a crypto subrepository. golang.org/pkg only lists stdlib packages
+maybe that readline is non blocking?	go's tls is slower than openssl
+scientes__: why's that?	cause you don't have to change that line to add another at the bottom
+what's the proper approach?  i see you're not meant to capitalize errors - should foo return fmt.errorf("couldn't find username - %s", err) ?  (err being returned from foo)	something like this http//golang.org/pkg/os/#patherror
+feliwir: isn't this a binding lib?	it's a c binding yea but the repository says i don't have to compile the binding myself
+hi guys, i'm trying to establish a pipe between an incoming net.conn and a net.conn i obtain from net.dial, what do i exactly use?	that's not what pipe means and you want io.copy
+cronos: and pass them aaaaall the way up to stack?	sounds like a dirty solution
+i have done python too, but really is "go install && theapp" so inconvenient you need to find another solution?	not really its a really a question of habits
+whats so funny?	mousetrap we forgot brainfuck!
+9,000?  over 9,000?	i avoided using that
+[12:08] <carbocation> is there absolutely no structure that you could come up with, such that you have to use interface{} and do runtime type checking every time?	do you have any example about hte interface with run time check?
+hi, is there a workaround to convert a []uint64 value to uint64?	as in a reduce function?
+quiznilo: one is a type, the other is a method on that type?	to convert between them
+hey peeps. is there any way in go for me to create a database on the fly before doing a sql.open?	i'd think that would be up to whichever db you're using.
+should i do that for childchild aswell then or?	yes
+does it have to be "file_{free,net,open}bsd.go"?	i think it does
+i mean, why nuts?	i don't know anything about c++ though so i don't know if that's what you mean
+why is that not what you want?	minor change to the omitempty http//play.golang.org/p/pdvjygsxcm
+dmac: why not?  seems to be more maintainable	because it's unnecessary. fmt.sprintf is literally errors.new(sprintf(format a...))
+should one be able to plug "var e *[50]c.char" into c.scanf() via c.scanf(&e) ? i'm getting a type error	arrays in c expect to have the address of the first index passed in.
+but it is very confusing when mixed with multiple assignments, isn't it?	a multiple declaration like that will declare all of the names which are not declared in the current scope.
+which "log" libs do you guys usually use? i need one that prints the method here the log message was created	that's not the standard but it is possible to do
+is there a better way to do this?	write code that does it sensibly. then if it actually operates too slowly make it less sensible
+hi go.  i want to stream cmd.output stream to standard out in a go program as characters are being written.  any thoughts on the simplest way to do this?	0 cmd.stdout = os.stdout
+therainingmonkey: show code?	i feel there's likely an issue with input processing
+proteneer: or do you mean you want to use go/* packages from stdlib to parse and extract them?	if i can use the ast to directly read a file that works too
+does go optimize tail recursion sufficiently to use it as a method of keeping state?	no
+echlebek: does that make sense?	what i'm asking is will a non-wgo using person still be able to use my repo with go get or will that break?
+edayo, are you asking me to use the default package manager for my linux dist?	_ i am not using sublimetext. i am using vim.
+convention question: do you prefer x, y := 1, 2 over x := 1 \n y := 2?	it really depends on what's going on
+djx: do you mean that in your client 'tab' lets you autocomplete?	yep
+no nice, simple way to do that?	the &s there looks bad
+hey, is their a way to set the umask of a process launched with the os/exec package ? or will i have to reimplement it using syscall	there isn't any doc - but maybe this? https//golang.org/pkg/syscall/#umask
+?	do you have a question about a specific open issue on github? or something more general or for which there isn't yet an open issue?
+ebonics rust over go?	i like the goroutine scheduler as well.. it's erlang's model but you don't have to drop out of the environment for tasks which require performance.
+djx: what does your query look like?	hmm that's odd because it's an insert
+thanks:) i'm reading it, btw, i'm using emacs with go, i've been advised to use liteide, should i do that?	https//play.golang.org/p/mz0ei13uyp
+it's probably not, though. original only exists in the scope of that for loop, right?	putting that code on the play.golang.org would help in helping you work through that
+is 'callback' a go term?	how do you mean?
+im attempting to profile my go application, and when i run web it attempts to open in illustrator (running on a mac).  any idea how to get this to work?	would you like us to link you the manual instead of looking it up yourself?
+any idea where their datacenters r?	ok thanks so you regarding my question you'd take the convenience of the helper function (with the increase memory of the map) rather than parsing the url manually each time?
+freman: have you looked at the go tour?	it'll probably start out more basic than youll want
+no source?	you've tried debugging with gdb i take it..
+and you pass them aaaaall the way up to stack?	[1230] <> and you pass them aaaaall the way up to stack?
+http://play.golang.org/p/nldzeeyhpi - shouldn't that exit after 1 second?	at first glance it seems like it
+"rollign release"?	not plugins for go but a particular piece of software that has the possibility to have plugins
+eg a single recover() function in main() or in handler() ratehr than in each go routine?	nope
+wessie: oh shit.  is it that bad?	who said anything about required
+how do you generate rss or atom?	probably http//www.gorillatoolkit.org/pkg/feeds
+like, generally, how does community accept such changes?	on reddit?
+well, is discovery really that easy?	i'm still not getting a parsed response /
+ok quick question (idk much about go) can i use go as an alternative to php?	go's suitability compared to java and scala depends entirely on you and your project.
+net.conn is duplex so how exactly it is supposed to work in this case?	sounds like you want two io.copys then
+any ideas on how i could optimize this? https://github.com/michaeljs1990/split-mysql-dump/blob/master/split-mysql-dump.go it takes a long time when trying to split large files.	yes
+dmitris: what are you hoping to achieve?	for example to scan a large number of hosts and find go binaries compiled with go version less than 1.x
+what are you trying to accomplish?	no joke i just suck d
+jmoiron: so the pointer to the slice requires the extra '*' because a slice is already a pointer, thus specifying to descend another level into the pointer?	a slice is not a pointer its like a struct with 3 fields
+djx, do you mean i should lose the if?	bangy  thanks
+and did you go get that package?	calling any member returns something like i.e. “undefined pcap.openlive”
+wait a sec, is it just an ideological thing?	"tons of if statements" is the idiomatic approach
+hfaafb: graphql is a web server embedded in a database?	ive tried liteide i cant just wrap my head around it kinda like how i react to eclipse
+hi, if you where to choose between doing rpc calls with the standard library net/rpc or using rabbitmq with the reply-back pattern (https://www.rabbitmq.com/tutorials/tutorial-six-python.html). which one would you chose and why? for requests that don't need a response (such as sending an email) i already use rabbitmq but for requests that need i response i am not quite sure to use net/rpc or rabbit.	just stick with it? you already know it plus why add more dependencies
+mohae: http://play.golang.org/p/aqc4rm5gdg so what's happening here?	you returned originaloriginal and assigned it to originalqueue.. so they basically reference the same slice
+does anyone know if godef is supposed to work with gopath with multiple entries?	so i can have like http//mysite.com/path/to/get.go
+pnsrc: why not give exercism a try?	then it's a good time to pick something you would like to do and write it.
+joncalhoun: embedding..?	haha i'm not afraid of writing code i just don' tlike writing the same code more than once if it makes sense. seems like it doesn't make sense in this case and trying to do it another way will be way too confusing
+1000 seconds?	that's not a bad idea at all.
+lemmi: did the program exit?  or just the calling function?  the calling function can exit without killing the goroutines.	of course it is. if main exits the rest is killed
+no?	i think it is.  now i have to decide if i want to use it
+you... debug in production? :o	sure.. sometimes it's necessary. you should try it.
+the hell?  jul 16, 1972?	what on earth are you doing?
+distorce: what are you wondering about? the map zero value is nil, so it panics when you assign to it.	how should i be doing it ?
+daved: more specifically?	hi )
+what then is the alternative? i was thinkin more along the lines of putting the connections in a queue	yes
+daved: what's to help?	sounds like a good approach to me..
+cronos: i'm a noob at queues/jobs/load balancing, right now i have a rest api and on a few routes i'm sending invitation mails per user.. so you suggest to use a queue and job when i have many requests at once but use a simple goroutine within the api when they are steady?	tv` btw i find this suggestion to be an excellent one! https//github.com/boltdb/bolt/issues/360. i eagerly anticipate your iementation ;)
+is the use of new(structtype) prefered?	i prefer &structtype{}
+hi, do you know any tool/example on how to write a golang wrapper to a python program? i have simple python cli app which i'd love to wrap and distribute with go as a single binary	can i accoish this using go or is php really my only option
+with a ga?	i understood that reference
+anyone have any positive experiences using gdb? i hear docker uses it with some success, but so far i can't get the latest gccgo to configure with go support	give s feedback
+andlabs i want to create a dynamic interface that could support any type and nil value, and i dont know how to do this?	interface{} ?
+using composition how would i make it so that horses and dogs share the drink milk function but horses  eatgrass  and  dogs  eatmeat? understand how i can use interfaces to the one or the other but not both.	no i mean to find the most full featured library you need to do research
+or is it upset that i've put quotes around it?	https//golang.org/ref/spec#passing_arguments_to_..._parameters

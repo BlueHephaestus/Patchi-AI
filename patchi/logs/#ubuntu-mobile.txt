@@ -1,0 +1,14 @@
+=== asac_ is now known as asac
+[08:03] <dholbach> good morning
+=== robr_ is now known as robr
+[17:54] <StevenK> HappyCamp_laptop: https://wiki.ubuntu.com/PackagingGuide
+[17:55] <HappyCamp_laptop> StevenK: Thanks!
+[19:56] <smagoun> Hi all, I'm looking for a sponsor to get an update to the moblin-applets package into universe: https://bugs.edge.launchpad.net/ubuntu/+source/moblin-applets/+bug/187181
+[19:56] <ubotu> Launchpad bug 187181 in moblin-applets "Upgrade to moblin-applets 0.27" [Undecided,In progress] 
+[21:42] <sabotage> kyleN_:  apt-get install gtk-theme-switch
+[21:43] <kyleN_> sabotage: excellent. thx
+[21:43] <sabotage> Its a start (someone elses) and does not yet handle icons that I can see yet...still looking at the source
+[21:43] <sabotage> but it does what you wanted
+=== sabotage is now known as sabotage_afk
+[21:44] <kyleN_> sabotage_afk:  that's a big leg up for us. much appreciated
+=== sabotage_afk is now known as sabotage

@@ -1,0 +1,203 @@
+<jabuk> m 1.1 > 7.km  v od litije @16/05/2015 19:08:21  https://maps.google.com/?q=46.07+n,+14.92+e
+<zdobbie> guten morgen gchq
+<seniorita>  [ubuntu.si] dragan75: re: airplay icybox  https://www.ubuntu.si/forum/discussion/comment/42940#comment_42940
+<msev> oj učer sem neki sprašvov glede rpi za wireless printer server, a je kdo vidu vprašanje? :)
+<dz0ny> cups
+<dz0ny> and you are done
+<idioterna> mislm da je ta stavek trademarked
+<dz0ny> arnie?
+<dz0ny> kdo je zdej new presidente of lugos?
+<idioterna> http://www.wired.com/images_blogs/business/2011/07/amazon-and-youre-done.jpg
+<idioterna> dz0ny: volitve so vsako drugo leto
+<idioterna> letos jih ni blo
+<idioterna> smo se pa zmenil da bomo se naprej velik in dobr delal za druzbeno dobro!
+<idioterna> pol so pa zacel pit pa jest
+<idioterna> in sm su rajs domov
+<idioterna> you know how i am
+<idioterna> http://www.quickmeme.com/img/7d/7d5548e3803d9636edf6702c9bc6a527d85a78abd62e65161e590510153d19c6.jpg
+<yang> ena moja sodelavka se je zadnjic zagiftala na pikniku
+<yang> nekej je blo narobe z mesom
+<zdobbie> sem mislu, da je prevec daril razdevala
+<yang> :)
+<idioterna> tale je za yanga
+<idioterna> http://smbc-comics.com/comics/1431788841-20150516after.png
+<yang> jst sam v numerologijo verjamem v horoskop pa ne kej dost
+<zdobbie> :>
+<idioterna> sploh se mi ne da te vprasat na podlagi cesa verjames v take neumnosti
+<yang> k igram loto
+<zdobbie> sej te ni vprasu
+<yang> pa sem ze parkrat zadel petico
+<idioterna> na podlagi numerologije si zadel petico?
+<yang> tut 5+1 sem ze zadel
+<yang> zgleda
+<idioterna> kako pa to ves?
+<idioterna> ker od suni fotr tut spila, pa nobene numerologije ne uporablja, pa je tut ze veckrat zadel petico
+<zdobbie> on ma pa sam sreco
+<idioterna> mozno
+<idioterna> ampak dost mal verjetno
+<yang> vsacga cloveka se drzijo dolocene stevilke, mors si jih zracunat
+<idioterna> kko loh kej tok absurdnega trdis?
+<idioterna> "vsak clovk ma svojo srecno zvezdo in ce ji sledi mu gre zmeri vse po planu"
+<idioterna> "kje pa raketo dobim?"
+<yang> mal te provociram
+<zdobbie> a to v ksp
+<idioterna> vidm ja
+<idioterna> ves kaj, ne vem
+<idioterna> https://www.youtube.com/watch?v=j9gtkamowna
+<seniorita> vesoljci v Žalcu - youtube
+<seniorita> »zadeva je resna!«
+<yang> a so ze izzrebali miljonski loto
+<crazylemon> že večkrat!
+<idioterna> statisticno je nepomembno
+<yang> niso se
+<yang> 3.8 m
+<idioterna> https://www.youtube.com/watch?v=j9gtkamowna#t=1m36
+<seniorita> vesoljci v Žalcu - youtube
+<seniorita> »zadeva je resna!«
+<yang> 90 m pa je v euro jackpotu odslo na cesko
+<yang> s tem pa bi se dal kej bitcinov kupt
+<yang> idioterna: cesa bi se lotil, ce bi zadel 90 maljonov
+<idioterna> zaprtja obmocja znotraj obvoznce za motorni promet
+<yang> hehe
+<yang> to lahko ze sedaj lobiras pri zupanu
+<yang> nardis fb skupino
+<yang> ziher bi hitro dobil 5000 clanov
+<yang> tm okol konzorcija so zdej kr lepo zrihtali vse
+<msev> dz0ny, vem da je cups, sam a bo dobr delal tut v navezi z windows mašinami
+<yang> ja
+<msev> lepo
+<msev> a bo dost navadn b+ a rajš 2-ko
+<msev> a naj bo za tako aplikacijo headless al full fledged desktop
+<dz0ny> headless ce bos na rpi
+<dz0ny> lol
+<crazylemon> a kdo ve kako se imenuje zadeva ko čebula začne klobuke delat oz. tisti krogi s semeni :d
+<idioterna> yang: okol konzorcija je crap
+<idioterna> ljudje sploh ne vejo kako se ureja mestna sredisca
+<idioterna> vec ko je cest, bolj se basejo z avtomobili
+<idioterna> kr sapo mu je vzel.
+<seniorita>  [omg! ubuntu!] joey-elijah sneddon: meizu mx4 with ubuntu launched in china, coming to europe ‘soon’  http://feedproxy.google.com/~r/d0od/~3/vwfatsjufkg/meizu-mx4-with-ubuntu-launched-in-china-coming-to-europe-soon
+<msev> a je dost rpi 1 za wireless printer
+<bigwhale> printer bos se rabu.
+<dz0ny> haha
+<dz0ny> joj
+<crazylemon> am.. kako odprem port na routerju da je dostopam do naprave? torej želim z lana dostopan na določen port na routerju.. tako kot recimo sedaj dostopam do web interfacea ?
+<crazylemon> sam v iptables ni videt nikjer porta 80
+<crazylemon> hm.. očitno ni firewall
+<idioterna> iptables -i input -p tcp --dport 80 -j accept
+<crazylemon> ker se lahko telnetam gor
+<crazylemon> sam pagea pa ne pokaže
+<crazylemon> ko je v debugging mode pa lepo pokaže da se gor poveže browser
+<crazylemon> sam page pa pokaže v konzoli in ne v browserju
+<crazylemon> meeeeeeeh!
+<crazylemon> v chromeu ne dela
+<crazylemon> v firefoxu pa dela
+<crazylemon> :)
+<zdobbie> wat en meh
+<zdobbie> tf2?
+<crazylemon> sorry i dont speak dutch
+<crazylemon> tale iptv mi počasi gre na jetra
+<zdobbie> zadeva je resna!
+<zdobbie> je?
+<crazylemon> je!
+<crazylemon> vsem dela sam meni ne!
+<crazylemon> pa vse kar je potrebno narest je zalaufat udpxy pa par vrstic v firewall
+<zdobbie> pebkac, as always
+<msevph_> a je kdo probov visual studio code
+<msevph_> lol microsoft napisu program za linux hehe
+<crazylemon> zdobbie vem! zato mi gre na jetra!
+<zdobbie> msevph_: repackaged atom
+<msevph_> jp lol
+<crazylemon> torej.. če se direkt priklopim na modem lepo predvaja - no surprise there
+<zdobbie> http://gfycat.com/singleuntriedbudgie
+<seniorita> soccer - jiffier gifs through html5 video conversion.
+<seniorita> »jiffier gifs«
+<crazylemon> zdobbie
+<crazylemon> no more pebkac!
+<crazylemon> biatch!
+<zdobbie> did you move to the sofa?
+<crazylemon> zdobbie nope!
+<crazylemon> ampak ne uporabljam udpxy!
+<crazylemon> ampak igmpproxy (i think) :d
+<crazylemon> zdobbie https://dl.dropboxusercontent.com/u/17510489/suck_it_zdobbie.png
+<zdobbie> kk
+<zdobbie> crazylemon: kaj je to, komisar rex?
+<crazylemon> zdobbie dnevnik
+<crazylemon> zdaj pa me samo zanima
+<crazylemon> r33d3m33r kako maš ti urejeno? a imaš naročena dva tvja?
+<r33d3m33r> ja, mislim da ja
+<crazylemon> r33d3m33r a dodatno plačaš drugi tv?
+<r33d3m33r> a nista v paketu avtomatsko dva boxa?
+<r33d3m33r> paket je iz prazgodovine, tako da mogoče ne ustreza trenutnemu stanju :)
+<crazylemon> nope
+<crazylemon> eno je storitev drugo so boxi
+<dz0ny> 2 tv mas default
+<crazylemon> dz0ny nimaš.. ker če gledam na desktopu
+<crazylemon> potem ni mogoče gledat prek boxa
+<crazylemon> ker ni odprta pipa
+<dz0ny> bumpni mac
+<dz0ny> za eno cifro
+<crazylemon> sej se mi zdi da je drug tv brezplačno
+<dz0ny> fyi to je multicast
+<crazylemon> itak se plača samo box
+<dz0ny> there is no pipe
+<crazylemon> dz0ny torej tudi hd programi delajo?
+<dz0ny> da
+<dz0ny> sam drug ip je
+<crazylemon> no.. ne delajo :)
+<dz0ny> oz kr subnet
+<crazylemon> ker pipa ne dovoli! :)
+<dz0ny> hm
+<dz0ny> včasih je delal
+<dz0ny> k si lahko plačjive gledal
+<dz0ny> hbo and other stuff
+<crazylemon> no.. plačljivo je sedaj kodirano
+<dz0ny> naah
+<dz0ny> how so
+<zdobbie> so so
+<dz0ny> dobiš bitsream sam ne predvaja
+<dz0ny> ?
+<dz0ny> al ga sploh ne dobiš
+<crazylemon> dz0ny ne vem.. na forumu sem prebral
+<dz0ny> lol :)
+<crazylemon> pravijo da bigbrother in podobni kanali so kodirani
+<crazylemon> ip je..sam ne pomaga dosti
+<crazylemon> čaki da najdem ip pa ti povem kaj se zgodi
+<dz0ny> men se zdi da so sam subneti
+<dz0ny> vsak določen paket je svoj subnet
+<dz0ny> in ti pol dovoljo dostop do njega al pa ne
+<dz0ny> kodiran zihr ni
+<crazylemon> drm
+<crazylemon> utripa pri vlcju
+<crazylemon> in piše
+<crazylemon> "kodirano: da"
+<crazylemon> neki se sliši ..sam vidi se pa ne
+<crazylemon> dz0ny https://dl.dropboxusercontent.com/u/17510489/bigbrother.png
+<crazylemon> spodaj pod založnik
+<crazylemon> je utripalo kodirano
+<r33d3m33r> crazylemon: a na modemu pa imaš nastavljeno vse ok?
+<crazylemon> r33d3m33r hm?
+<r33d3m33r> ja, daj 2 porta na video 2 pa na data ane?
+<crazylemon> r33d3m33r sej sta že?
+<r33d3m33r> a v telekomovem računu imaš vsaj 2 boxa dodana?
+<crazylemon> r33d3m33r ne
+<crazylemon> bom jutri prašal telekom da mi omogočijo drugi tv
+<zdobbie> no, prasej
+<dz0ny> http://temple.io/king-james-bible/james/5/1
+<seniorita> james 5:1 | temple
+<dz0ny> ^^
+<zdobbie> goto statement considered harmful
+<zdobbie> fyfi
+<yang> http://www.rtvslo.si/kultura/razstave/novoveska-okrutna-umetnost-zadajanja-muk/365308
+<seniorita> novoveška okrutna umetnost zadajanja muk :: prvi interaktivni multimedijski portal, mmc rtv slovenija
+<seniorita> »za novi vek velja, da je to še vedno obdobje govorice nasilja nad telesom, saj je sodna praksa še zmeraj okrutno posegala v človekovo telo in tako je od 16. pa do zadnje četrtine 18. stoletja ...«
+<zdobbie> danes namesto tega hodimo na kolo
+<yang> :)
+<zdobbie> ful ni smesno
+<crazylemon> seveda je
+<zdobbie> nic bolj kokr tole http://arstechnica.co.uk/tech-policy/2015/05/ttip-explained-the-secretive-us-eu-treaty-that-undermines-democracy/
+<seniorita> ttip explained: the secretive us-eu treaty that undermines democracy | ars technica uk
+<seniorita> »a boost for national economies, or a trojan horse for corporations?«
+<seniorita>  [ubuntu.si] dere5: re: airplay icybox  https://www.ubuntu.si/forum/discussion/comment/42941#comment_42941
+<miha> party.  http://cirilica.si/http%3a%2f%2fwww.novatv.mk%2findex.php%3fnavig%3d8%26cat%3d2%26vest%3d22469
+<seniorita> nova (galeriЈa) gragjanitе kampuvaat prеd vlada:nе si odimе duri nе zaminе ovaa vlast
+<seniorita> »so shatori, hrana i piјalotsi nеophodni da sе pominе nokjta,...«

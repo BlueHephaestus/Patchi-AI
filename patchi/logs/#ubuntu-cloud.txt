@@ -1,0 +1,55 @@
+=== zul_ is now known as zul
+=== SpamapS_ is now known as SpamapS
+[17:24] <patrickw> Hi, I have a question about hostnames for nodes in 10.04.  My nodes are getting hostnames like "ip-172-19-1-2" but /etc/hosts doesn't list this name.  Do I need to enable (or rather, NOT disable) the cloud dns to work around this?
+[17:38] <smoser> patrickw, you're seeing bug https://bugs.launchpad.net/ubuntu/+source/eucalyptus/+bug/475354
+[17:38] <uvirtbot> Launchpad bug 475354 in eucalyptus "Hostname not set correctly on UEC cloud due to IP address in local-hostname manifest data (DNS)" [Undecided,Fix committed]
+[17:38] <_mup_> Bug #475354: Hostname not set correctly on UEC cloud due to IP address in local-hostname manifest data (DNS) <amd64> <apport-bug> <verification-done> <Eucalyptus:Fix Committed by chris-grze> <cloud-init (Ubuntu):Fix Released by smoser> <ec2-init (Ubuntu):Fix Released> <eucalyptus (Ubuntu):Fix Released> <cloud-init (Ubuntu Lucid):Fix Released by smoser> <ec2-init (Ubuntu Lucid):Fix Released> <eucalyptus (Ubuntu Lucid):Fix Released> <cloud-init (
+[17:38] <_mup_> Bug #475354: Hostname not set correctly on UEC cloud due to IP address in local-hostname manifest data (DNS) <amd64> <apport-bug> <verification-done> <Eucalyptus:Fix Committed by chris-grze> <cloud-init (Ubuntu):Fix Released by smoser> <ec2-init (Ubuntu):Fix Released> <eucalyptus (Ubuntu):Fix Released> <cloud-init (Ubuntu Lucid):Fix Released by smoser> <ec2-init (Ubuntu Lucid):Fix Released> <eucalyptus (Ubuntu Lucid):Fix Released> <cloud-init (
+[17:38] <uvirtbot> Launchpad bug 475354 in eucalyptus "Hostname not set correctly on UEC cloud due to IP address in local-hostname manifest data (DNS)" [Undecided,Fix committed] https://launchpad.net/bugs/475354
+[17:39] <_mup_> Bug #475354: Hostname not set correctly on UEC cloud due to IP address in local-hostname manifest data (DNS) <amd64> <apport-bug> <verification-done> <Eucalyptus:Fix Committed by chris-grze> <cloud-init (Ubuntu):Fix Released by smoser> <ec2-init (Ubuntu):Fix Released> <eucalyptus (Ubuntu):Fix Released> <cloud-init (Ubuntu Lucid):Fix Released by smoser> <ec2-init (Ubuntu Lucid):Fix Released> <eucalyptus (Ubuntu Lucid):Fix Released> <cloud-init (
+[17:39] <_mup_> Bug #475354: Hostname not set correctly on UEC cloud due to IP address in local-hostname manifest data (DNS) <amd64> <apport-bug> <verification-done> <Eucalyptus:Fix Committed by chris-grze> <cloud-init (Ubuntu):Fix Released by smoser> <ec2-init (Ubuntu):Fix Released> <eucalyptus (Ubuntu):Fix Released> <cloud-init (Ubuntu Lucid):Fix Released by smoser> <ec2-init (Ubuntu Lucid):Fix Released> <eucalyptus (Ubuntu Lucid):Fix Released> <cloud-init (
+[17:39] <smoser> wow, _mup_ that was a bit excessive, don't you think ?
+[17:55] <patrickw> I had researched that bug, but it seemed different, though related.  I'm not getting a hostname in the form of an dotted IP, but rather "ip-W-X-Y-Z", which was I guess the resolution of the bug.  But my machine doesn't resolve that name to an IP...  I guess I have to enable cloud DNS and reconfigure my CC to use it for dns?
+[17:56] <patrickw> Actually, I seem to be getting "euca-W-X-Y-Z" now that I enabled cloud DNS
+[18:49] <smoser> patrickw, and euca-W-X-Y-Z should be reverse resolvealbe, right ?
+[19:39] <MatthewM> I'm attempting to build a private cloud for testing. Haven't had success in starting virtual server instances yet.
+[19:41] <MatthewM> Should eucalyptus-nc-publication be installed and running on the frontend controller? It is not currently.
+[19:47] <patrickw> smoser, W.X.Y.Z does not reverse resolve.  At any rate, I don't have control of our DNS servers and doing all this DNS stuff just so a machine knows it's own IP seems kind of nuts... shouldn't something just stick the name into /etc/hosts automatically?
+[19:48] <smoser> patrickw, there are reasons that we dont do that in the instance.
+[19:48] <smoser> i have to dig to come up with what that is, but it caused issues.
+[19:50] <patrickw> smoser, at any rate, I may be able to work around my problem by specifying "localhost" as the host name to my application.  I've been messing with the euca DNS but my instances don't get a domainname and I don't need to open any *more* cans of worms at this point.  :)
+[19:50] <smoser> yeah, dns is scary to poke at.
+[19:50] <smoser> patrickw, you can very easily modify /etc/hosts on your own in a user-data script or something
+[19:52] <patrickw> smoser, I was thinking about that, but avoiding scripting that up and just massaging the app I'm trying to run seems a simpler option for the short run
+[19:53] <patrickw> though I have been shaking the rust off of my bash skills while working on this project.  :)
+[19:59] <smoser> patrickw, well, it might look something like this:
+[19:59] <smoser> ip=$(wget -qO - "${md}/local-ipv4") ; hn=$(wget -qO - "${md}/local-hostname"); echo "ip=${ip} hn=${hn}"; echo "${ip} ${hn}" | sudo tee -a /etc/hosts
+[19:59] <smoser> you pass that into user-data with a header of '#!/bin/sh' and it will probably work (or be close to it, i didn't test)
+[20:00] <smoser> oops
+[20:00] <smoser> md=http://169.254.169.254/latest/meta-data
+[20:00] <smoser> forgot that part
+[20:17] <patrickw> smoser, damn, thanks, I'll save that for later...  I may add plain old $(hostname) to the final echo also, as what you did apparently is picking up "eucalyptus.internal" as the domain.
+[20:18] <smoser> fwiw, you can dump all metadata with this nice one-liner:
+[20:18] <smoser> python -c 'import boto.utils, pprint; pprint.pprint(boto.utils.get_instance_metadata())'
+[20:20] <MatthewM> I think my problem is that I don't have any storage volumes configured. I'll be following https://help.ubuntu.com/community/UEC/StorageController to see if I can get this working.
+[20:28] <patrickw> smoser, awesome, that will come in very handy.  I probably would have tried poking around in /proc or trying to hack the address out of ifconfig...  brand new to euca, that web interface will be useful
+[20:41] <patrickw> Matthew, you don't need to use a storage controller just to get VMs running
+[20:52] <MatthewM> patrickw: I wonder what I'm doing wrong, then. What log files would I look at to determine why VMs are terminating?
+[21:05] <patrickw> MatthewM: there is some info on this page http://open.eucalyptus.com/wiki/EucalyptusTroubleshooting_v1.6
+[21:05] <MatthewM> patrickw: thanks
+=== ]oestewart is now known as joestewart|afk
+=== A-Tuin_ is now known as A-Tuin
+[23:02] <MatthewM> getting frustrated. I'm following the documentation to the letter, but instances still terminate. Got one to actually show "running" for about 20 seconds. I got excited, but then it termintated too.
+[23:02] <MatthewM> I'm not sure what to try next.
+[23:03] <MatthewM> Did anyone else have this problem when starting out?
+[23:37] <hazmat> MatthewM, i did
+[23:38] <hazmat> MatthewM, i did eventually solve, but i ended up tailing the log files on the compute node and cluster controller, some copious output results.. i think in one case i had a bad image, and in the other my networking wasn't correct
+[23:39] <MatthewM> hazmat: Thanks. I appreciate that.
+[23:39] <MatthewM> hazmat: Do you remember what the networking problem was? The installer should communicate and set up everything automatically, right?
+[23:41] <hazmat> MatthewM, i didn't have my networking setup properly, and then i tried to switch it from bridge to system, but i didn't realize the cluster controller was keeping cached state, so i needed to perform some command to clear out its instance state and reload them from its config files, this was about 9 months ago, i think the installer has gotten better.. but i haven't really done much with uec/euca since i got it setup to te
+[23:41] <hazmat> st out.
+[23:42] <hazmat> the log file output is a bit copious but it did have some pointers
+[23:42] <hazmat> but i had to tail from both the node controller and the cc to get an idea of the interaction
+[23:43] <hazmat> MatthewM, you might be able to use ec2-get-console-output to see things from the perspective of inside the instance, if it was successfully running
+[23:44] <MatthewM> hazmat: I only got it to be "running" for a few seconds. Thanks for your suggestions. I'll give it a try again soon.
+[23:59] <niemeyer> Hey cloudy people

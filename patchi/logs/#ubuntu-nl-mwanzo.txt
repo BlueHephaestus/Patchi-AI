@@ -1,0 +1,82 @@
+[15:03] <leoquant> Wazzzaaa, prima.
+[15:06] <Wazzzaaa> Ow, het is op de zondag
+[15:06] <Wazzzaaa> Ik dacht maandag
+[15:06] <Wazzzaaa> Als ik dan kan, kan het helemaal
+[15:06] <Wazzzaaa> :)
+[15:08] <Wazzzaaa> Vind je het goed als ik wat aanpassingen doe aan de wiki (dingen verplaatsen)
+[15:08] <Wazzzaaa> leoquant:
+[15:14] <leoquant> goed
+[15:15] <Wazzzaaa> Oke
+[15:16] <leoquant> Wazzzaaa, je wilt de meeting omhoog halen in de wiki? Ik ben trouwens heeel slecht met wiki stuff...brrr
+[15:16] <leoquant> Ik snak naar een masterclass op dat gebied
+[15:24] <Wazzzaaa> Ik zal je het zo laten zien, ben bijna klaar
+[15:24] <Wazzzaaa> Ah, ik zie gelijk een mooi idee voor een workshop -:D
+[15:32] <leoquant> :P
+[15:33] <Wazzzaaa> Oke, check http://wiki.ubuntu-nl.org/community/mwanzo
+[15:33] <Wazzzaaa> Je kunt nu doorklikken naar vergaderingen
+[15:34] <leoquant> moment Wazzzaaa
+[15:35] <leoquant> dank!
+[15:36] <Wazzzaaa> Ik heb het ongeveeer standaardformat gepakt dat bij andere teams ook wordt gebruikt
+[15:38] <leoquant> yep, dat is ook mooi/beter vind ik. En over een teamwiki moet ik nog nadenken. Ik wil een duidelijk andere nadruk leggen dan bij ubuntu-beginners
+[15:39] <leoquant> Geen overdrijving met dubgroepen etc.
+[15:39] <leoquant> Daar zijn we te klein voor als loCo
+[15:39] <Wazzzaaa> Ja, misschien heb je de wiki alleen maar nodig om vergaderingen vast te leggen (agenda + log)
+[15:40] <Wazzzaaa> Ik moet er nu ff vandoor. Later
+[15:40] <leoquant> later
+=== leoquant is now known as Bloodbuzz
+=== Bloodbuzz is now known as leoquant
+[18:31] <testcees> agendapunt 5 gaat over een persoonlijke wiki. http://wiki.ubuntu-nl.org/community/mwanzo/Agenda/2010-11-28, voor de duidelijkheid dat is op wiki.ubuntu.com of wiki.ubuntu-nl.org (of beide ;))
+[18:31]  * testcees ziet dat ubuntulog is binnengekomen bij #ubuntu-nl-mwanzo :)
+[18:32] <Gotiniens> ah ik zie dat de eerste meeting is geplanned, komt niet helemaal tof uit, kan niks beloven over mijn aanwezigheid
+[19:23] <leoquant> testcees tis een lief log/bot
+[19:23] <leoquant> nu nog ff je vraag
+[19:23] <leoquant> moment
+[19:24] <leoquant> ja ik refereer aan/naar een persoonlijke wiki en een launchpad account
+[19:26] <leoquant> ik heb het idee dat veel leden de weg daar naar toe nog niet hebben gevonden, dat hoeft uiteraard ook niet. Maar wil je een net account en wiki plus code of conduct kunnen we misschien helpen?
+[19:27] <leoquant> (je= een willekeurig lid)
+[19:28] <leoquant> dus een Engelstalige wiki
+[19:28] <testcees> duidelijk leoquant
+[19:28] <leoquant> oki
+[19:29] <testcees> leoquant, waar komen de logs? Kan ik een verwijzing maken op http://wiki.ubuntu-nl.org/community/mwanzo
+[19:30] <leoquant> Gotiniens, zie maar, als je zin hebt/tijd hebt van harte welkom
+[19:30] <leoquant> testcees, nog geen idee hierover
+[19:32] <leoquant> testcees ik neus eerst even rond/vraag na hoe teams dit aanmaken
+[19:32] <leoquant> aanpakken
+[19:33] <leoquant> ubuntu-beginners hebben idd een logpagina die op de meeting pagina staat. logische ook.
+[19:33] <leoquant> -e
+[19:43] <leoquant> onze log bot/logs  vinden we hier terug: http://irclogs.ubuntu.com/
+[19:45] <leoquant> dus vergaderen we liever hier....
+[19:47] <leoquant> latersz
+[20:28] <leoquant> : http://forum.ubuntu-nl.org/ubuntu-nl/vacatures-nieuwe-teamleden/msg675345/#new
+[20:28] <leoquant> serieus he...echt.
+[20:30] <DarkEra> ?
+[20:30] <DarkEra> even checken
+[20:31] <DarkEra> dus hij stopt ermee....?
+[20:32] <leoquant> misschien he...
+[20:33] <leoquant> vanaf het eerste begin actief
+[20:33] <DarkEra> als dat zo is vind ik dat jammer, ik mag 'm wel die Ron
+[20:33] <leoquant> precies
+[20:33] <DarkEra> Hij zit er inderdaad al heel lang bij
+[20:33] <leoquant> 4 jaar denk ik
+[20:33] <leoquant> zoiets
+[20:34] <DarkEra> 0_o dat is lang ja
+[20:34] <leoquant> dit kan niet eindigen met: bedankt he ron
+[20:34] <leoquant> doeg
+[20:36] <DarkEra> dacht het toch ook niet.... Speciale VIP behandeling op een release party eventueel?
+[20:36] <leoquant> het is een idee, of iets naar hem opsturen
+[20:37] <leoquant> dat is wel eens eerder gebeurd
+[20:37] <DarkEra> een soort van Ubuntu NL/Ubuntu trofee erbij
+[20:37] <leoquant> het is aan het  team uiteraard
+[20:38] <DarkEra> Hmmmm..... zal ik Nunslaughter eens aanspreken daarover?
+[20:38] <leoquant> of even afwachten?
+[20:39] <leoquant> moeilijk
+[20:39] <leoquant> ff thee hier sorry
+[20:39] <leoquant> ツ
+[20:39] <DarkEra> geen probleem, doe lekker rustig aan ;)
+[20:39] <Wazzzaaa> leoquant, wie is "het team" ?
+[20:39] <Wazzzaaa> Het forumteam?
+[20:40] <DarkEra> ik zal Nun eens aan de mouw trekken
+[20:40] <Wazzzaaa> :)
+[20:40] <DarkEra> hallo Wazzzaaa :)
+[20:41] <Wazzzaaa> Dag DarkEra
+[21:07] <leoquant> tot morgen allen

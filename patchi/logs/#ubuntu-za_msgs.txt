@@ -1,0 +1,309 @@
+<magespawn> good morning
+<kilos> morning all and sundry
+<kilos> hi private_user  hows things
+<private_user> hi kilos
+<private_user> ag things are ok not too bad
+<kilos> hi vince-0  hows things
+<kilos> you rather scarce hey
+<vince-0> hi
+<vince-0> yes indeed. new job and epic flu now
+<kilos> get well soon
+<mopkop> good day everyone!
+<kilos> hi mopkop  gaanit?
+<mopkop> baie om voor dankbaar te wees! en self?
+<kilos> goed dankie seun
+<mopkop> any news?
+<kilos> no everyone is so busy it hasnt been very busy here
+<mopkop> the bad thing about finishing exams early is that all your friends are still writing and you have to sit at home with nothing to do until they are done :-(.
+<kilos> hahaha
+<kilos> wen jy met dominee oorkry na ubuntu?
+<mopkop> o yes, i got my borther to use ubuntu. he first tried to use elementary, but did not like it, so he insisted on using the same one as me :)
+<kilos> hi suiram
+<mopkop> hello pathfinder!
+<kilos> haha
+<mopkop> oh and suiram!
+<suiram> hello tweede rekenaar opgestel en aan due gang
+<kilos> mooi
+<mopkop> kilos: nope, dominees are very resitant to change. that and they do not have time to learn new things.
+<kilos> mopkop  daai oom wat net hier weg is is 76 en nuut op ubuntu
+<mopkop> o, ek wou nog vra. goed dat ons groei.
+<kilos> mopkop  ons groei stadig maar seker hele tyd
+<kilos> jy kan mense groet ook in #ubuntu-africa , ek is nie altyd beskikbaar nie
+<pathfinder> mopkop: hello.....early confession...from nairobi kenya.....don't understand what the hell u guys are saying ...lol!!! ..guess i should leave this channel
+<kilos> oh sorry pathfinder
+<kilos> we just sometimes chat in afrikaans
+<pathfinder> kilos: hahaha...i noticed
+<pathfinder> no worries though
+<mopkop> lol sorry pathfinder, we'll stick to english then :)
+<kilos> pathfinder  he helped with content on http://ubuntu-africa.info
+<pathfinder> mopkop: okay...this cannel is pretty active though..should start a similar dedicated ubuntu community in kenya
+<kilos> no man thats what #ubuntu-africa is for
+<pathfinder> *channel
+<kilos> ive been trying to upgrade stickyboy  to ubuntu but so far he is stuck on his os
+<pathfinder> kilos: hahahaha..many have tried and failed ..lol!!!!!
+<kilos> yeah he is thick skinned
+<pathfinder> is there a php similar robust server like unicorn for ruby?
+<mopkop> i do not know about this. maybe the fly will know. we'll wait for him to come on.
+<inetpro> good mornings
+<kilos> hi inetpro  skelm
+<inetpro> hrm...
+<kilos> lol
+<inetpro> s/hrm/hmm/
+<kilos> lol some more
+<cantide> good morning
+<kilos> hi cantide
+<cantide> hello~
+<inetpro> something funny about my looks today?
+<kilos> inetpro  himself
+<kilos> skelm looks
+<inetpro> ai!
+<kilos> what was the message you left me after our long discussion
+<magespawn> good evening
+<kilos> hi magespawn
+<magespawn> how you doing kilos?
+<kilos> good ty magespawn  and you
+<magespawn> good thanks, bit of load shedding earlier, did some outside family time and gardening
+<kilos> we had from 8 till 10.30 am
+<magespawn> looks like it is over for today
+<kilos> ai!
+<kilos> same time?
+<inetpro> kilos: at 7:00 this morning
+<inetpro> luckily we had made breakfast already
+<kilos> wow
+<magespawn> hi inetpro
+<inetpro> oh hi magespawn
+<magespawn> inetpro: can i ask you a somewhat personal question?
+<kilos> hahaha
+<inetpro> uh
+<kilos> very old
+<magespawn> no that one i know
+<magespawn> job related
+<inetpro> don't ask to ask, just ask
+<magespawn> mmm some people get offended/upset
+<magespawn> what do you do?
+<kilos> na if i cant offend him no one can
+<inetpro> hah, magespawn i'm a jack of all trades and master of none
+<kilos> the pro is a very human and understanding guy
+<magespawn> that is the way it always appeared here too
+<inetpro> magespawn: generally in the line of sysadmin but i get involved in way to many things on a daily basis
+<inetpro> sometimes very frustrating but most of the time pure fun and games
+<inetpro> too many*
+<inetpro> sorry oom kilos
+<magespawn> mmmm, that seems to be the job discription of a few people in here
+<kilos> lol my pro
+<kilos> without the pro id be on win today
+<inetpro> magespawn: i prefer working on open source systems and know very little about windows
+<magespawn> i do  not have much choice at the moment when it comes to os, i prefer linux for my own
+<inetpro> hmm... but having said that, i guess the definition of open source has changed somewhat as well
+<inetpro> especially lately
+<inetpro> still not sure what t make of this but i guess that is where we're headed... open source has to be more than linux http://opensource.com/life/15/5/open-source-has-be-more-linux
+<inetpro> what to make*
+<inetpro> magespawn: somehow i just hope that we can keep the freedom in all of this
+<inetpro> these big corporates like to take over completely and typically want the whole cake
+<magespawn> they have tried before, there is still  open source, but vigilance is needed
+<inetpro> not only do they want the whole cake but they even want to eat it as well
+<magespawn> that is the nature of business, try to get everything
+<magespawn> inetpro: i have always thought/believed the foss is all about choice
+<kilos> magespawn  you are leaning lots and still have the linux servers. the knowlege you are gaining is worth it i think
+<kilos> lol and you getting good at windows too
+<inetpro> magespawn: windows is not a good choice :-)
+<inetpro> end of story
+<inetpro> stickyboy: welcome back
+<inetpro> kilos: why you fail to do your job?
+<inetpro> kenju254: hi
+<kilos> some times i sits and thinks, other times i just sits
+<kilos> oh inetpro  you know an answer for pathfinder
+<inetpro> kilos: no
+<kilos> https://launchpad.net/~popeyhttps://launchpad.net/~popey
+<kilos> ai!
+<inetpro> hmmm....
+<kilos> pathfinder> is there a php similar robust server like unicorn for ruby?
+<inetpro> kilos has popeye on the brain?
+<kilos> not me my pc
+<inetpro> popeye the sailor man ?
+<kilos> stickyboy  and his guys arent answering today
+<magespawn> inetpro neither is crack cocaine, but people must be free to make those choices themselves
+<inetpro> magespawn: sadly
+<magespawn> now that is an entirely different discussion
+<inetpro> i see our g+ page has become quite popular lately
+<inetpro> kilos: 155 followers | 36,508 views
+<kilos> wow
+<inetpro> sadly they seem to be of a different kind these days
+<kilos> the za page?
+<inetpro> kilos: yes
+<kilos> well they cant spam it
+<kilos> who knows it might pull more peeps to ubuntu
+<inetpro> well the latest lot of followers seem like spammy accounts to me
+<kilos> we should actually use it to advertise
+<inetpro> some pretty ladies there...
+<kilos> get ubuntu, the free alternative that will change the way you see the internet
+<kilos> hehe
+<kilos> lemme go see
+<magespawn> and almost completely empty accounts?
+<kilos> magespawn  ?
+<inetpro> question, should i keep them or ban them?
+<kilos> let them follow we dont accept posts there
+<magespawn> if it is a spam account, there is usually nothing behind it, like photos of cats, history etc.
+<magespawn> it would not be a good thing for people to associate being spammed with our page
+<kilos> za also follows no one, so its safe imo
+<inetpro> just becomes very difficult to manage if we had to get rid of them
+<kilos> no one else can post so is it worth worrying about
+<inetpro> well i tried putting the known one in a separate circle for some time but it's getting tough now
+<inetpro> the known ones*
+<kilos> inetpro  i see 86 followers
+<inetpro> kilos: where?
+<kilos> https://twitter.com/
+<kilos> oh thats the tweet place
+<kilos> ya thats what we talking about isnt it?
+<magespawn> er, no, i thought g+
+<kilos> oh
+<kilos> i dont g+ often, thats mainly pro domain
+<inetpro> kilos: g+
+<kilos> inetpro  link?
+<kilos> dont make me work it out the hard way
+<inetpro> kilos: https://plus.google.com/+ubuntu-zaorg
+<kilos> hmm... all those meetings and no ticked me as attended
+<kilos> no one
+<kilos> sigh
+<inetpro> kilos: you tick yourself
+<kilos> sigh
+<gremble> o/
+<inetpro> wb gremble
+<gremble> how are you inetpro?
+<kilos> gremble  dont grum
+<kilos> ai!
+<kilos> grumble
+<gremble> good evening kilos
+<kilos> how are you sir?
+<gremble> i am well thanks and yourself?
+<inetpro> gremble: good good thank you
+<kilos> inetpro  where it asks if i attended say well duh! of course he attended
+<kilos> good ty just being pro bashed lately
+<inetpro> gremble: i see you and kule[tab] were quite busy last night
+<gremble> we chatted a bit, yes
+<inetpro> hmm...
+<gremble> no one here knows of paid internships in the pretoria area?
+<gremble> relating to software dev or system administration
+<inetpro> gremble: not me, unfortunately
+<gremble> getting a nice student job is difficult
+<gremble> haha
+<kilos> ai!
+<magespawn> not me either
+<magespawn> something i have been keeping an eye out for though
+<magespawn> you might have more luck in cape town
+<gremble> the commute would be shit :p
+<inetpro> oh goodness
+<inetpro> we still need to decide about the chairman
+<inetpro> of the next meeting
+<kilos> oh my
+<inetpro> i'll write up an email quickly
+<stickyboy> i want a paid internship in systems administration in pretoria.
+<stickyboy> i have read the gpl v2 three times today, from start to finish.
+<inetpro> haha :-)
+<inetpro> wb stickyboy
+<inetpro> kilos: how do we vote on the mailing list?
+<gremble> we should fight for it stickyboy. like idols, but durban style
+<kilos> vote for what?
+<inetpro> kilos: for chairperson
+<kilos> lol
+<inetpro> kilos: or how do we go about electing the next chair?
+<kilos> you said you would do it till one of the new guys gets to know how
+<kilos> ill contact nuvolari  and hear what his sittuation is like
+<kilos> still 10 days
+<inetpro> kilos: the minutes say, "[19:32:55] <maaz> agreed: next chair to be decided via mailing list"
+<kilos> ok then you just mail the list and say you will do it
+<kilos> methinks fly will help you
+<inetpro> mail sent
+<stickyboy> gremble: i'm not much of a fighter. :p
+<gremble> welp.
+<gremble> such is life ;p
+<inetpro> wb kulelu88
+<inetpro> kilos: it's too early to sleep now
+<kilos> lol
+<kilos> whats with the voting process?
+<kilos> you are the chair then um
+<kilos> who was it
+<kilos> oh
+<kilos> the neology man
+<kilos> he said he would like to once showed the ropes
+<kilos> cuttingedge
+<inetpro> where is he?
+<inetpro> kilos: captine also wants to try
+<gremble> what kind of ropes? hemp or nylon?
+<kilos> lol
+<kulelu88> wb?
+<kulelu88> hello
+<inetpro> kulelu88: wb = welcome back
+<inetpro> kilos: [19:33:53] <cuttingedge> kilos: i'm all for volunteering, but give me one or two meetings first, just to get into how things operate ;)
+<kilos> there you have it inetpro  you chair 2 meetings and he will go from there
+<inetpro> haha... no man
+<kilos> hee hee
+<kilos> yes man
+<kilos> prepair yourself
+<inetpro> 05/17 20:51:23 <inetpro> kilos: captine also wants to try
+<inetpro> rtfs
+<kilos> ok lets remind him
+<kilos> but he will also need guidance
+<inetpro> is he on the mailing list?
+<kulelu88> i don't know why you guys are scared of chairing the meetings. it's not difficult
+<kilos> kulelu88  you want to?
+<inetpro> kulelu88: are you on the mailing list?
+<kulelu88> no, i'm incapable of it
+<kilos> incapable?
+<kilos> why?
+<gremble> he is disabled. he doesn't have a bum
+<gremble> so he cannot chair
+<kilos> lol
+<kulelu88> grembles wisdom has spoken +d
+<gremble> if i chair a meeting to table a proposal that i bed the bride. i would have floored the groom
+<gremble> and my gr6 teacher said that i cannot make a sentence without verbs
+<gremble> there i have two
+<stickyboy> useful skill, that.
+<inetpro> ai!
+<inetpro> kilos: we need to try and get people to arrange ubuntu hour events
+<inetpro> or installfests
+<kilos> sjoe
+<inetpro> but maybe we first need to try get marketing material
+<inetpro> superfly: ping
+<inetpro> superfly: are you not supposed to arrange stuff for us? :-)
+<kilos> lol
+<superfly> eh, what?
+<inetpro> superfly: are you not our official contact person these days?
+<superfly> i'm the secondary contact
+<inetpro> ai!
+<inetpro> kilos: please talk to maia
+<inetpro> she's slacking
+<kilos> she is very busy inetpro  and is first contact mainly for verification and contact with the council i think
+<inetpro> everyone is busy, that is not a good excuse
+<kilos> ok what must i ask her?
+<gremble> in gnu coreutils, ls is 5k lines of code.
+<kulelu88> kilos: become the marketing man
+<kulelu88> gremble: there must be a ton of --options, that is why
+<gremble> well, i found out that i can read c reasonably well, given reasonably well written source code haha
+<kulelu88> until you start seeing pointers gremble
+<gremble> nah. i've done pointers
+<gremble> the trick to pointers is figuring out how to not use them
+<kulelu88> i'm going to try a new language today i think
+<gremble> ocaml :p
+<gremble> or racket
+<magespawn> gremble: then you are pretty stuffed 98% of the time
+<gremble> magespawn: not really. pointers lead to really shitty bugs to diagnose. so if you can figure out how to either circumvent using them or using wrappers for the like smart pointers, its good
+<gremble> but i am not saying that you should pass a massive object by value just because passing it by reference "might" cause shit
+<kulelu88> or you could just use a language that has gc gremble
+<gremble> i guess
+<gremble> nothing prevents you from doing whatever you want except the constraints of your implementation
+<magespawn> i was refering to this 'given reasonably well written source code'
+<gremble> oh
+<gremble> hahahaha
+<gremble> yes
+<gremble> my bad
+<kulelu88> gremble writes haskell code ...
+<gremble> i certainly try to
+<gremble> i haven't written anything significant yet
+<gremble> may do a templating engine to use with a cms
+<inetpro> lol
+<kulelu88> fml fml
+<kilos> inetpro  you mean banners and the logos and stuff
+<kilos> ?
+<kilos> night all. sleep tight
+<magespawn> bed time for me too, good night all

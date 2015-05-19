@@ -1,0 +1,123 @@
+<_groo_> in the meantime , im using blueman, it works so... but i would rather have the entire kf5 bluetooth stack working
+<etriaph> _groo_: in time
+<_groo_> etriaph: kde gives kde takes away
+<etriaph> _groo_: i think the kf5 structure will likely continue as a staple in later versions.  it's progress, and sometimes progress is messy.
+<etriaph> _groo_: i've been working on an open letter related to topics like this, hope to put it out there in the next few weeks.
+<_groo_> etriaph: well its not kubuntu fault anyway, ubuntu touch team screwed up on this one
+<_groo_> etriaph: i hope things dont get worse once kf5 fully migrates to wayland
+<etriaph> _groo_: right now app stability and migration, along with any bugs in kf5, are likely where the focus is.  it's hard migrating between major versions, just the reality of it.
+<vip> hi ho
+<blueskaj> hiyas all
+<ahoneybun> something is wrong with this damn thing
+<kdda> what is wrong ahoneybun
+<ahoneybun> kdda: i installed the nonfree nvidia driver, rebooted - fine
+<ahoneybun> turned one a setting about font in system setting, reboot - fine
+<ahoneybun> anti-aliaing - enabled, reboot -fine
+<ahoneybun> anti-aliaing -enabled and forced dpi on caused nothing but a black screen for like 3 or 4 reboots
+<ahoneybun> no login, i saw the systemd version but nothing after that
+<ahoneybun> just got back in a few mins ago
+<kdda> i have a nvidia card too
+<kdda> hate it
+<ahoneybun> it could be that i need that special setup
+<ahoneybun> i have intel and nvidia
+<ahoneybun> bumblee bee
+<ahoneybun> rather have it over amd some days though
+<kdda> although the nvidia driver with kubuntu seems to be working ok
+<ahoneybun> i was so close to installing ubuntu to see if the problem is just kubuntu
+<kdda> these video meetings you guys do, are they a regular thing?
+<kdda> unity??!?  nooooo
+<yofel> if you don't see sddm, you should look in your /var/log/xorg.0.log really
+<ahoneybun> kdda: talk to ovidiu-florin about that, we usually do it when he is avaiable but i'm sure you would be very welcomed to join
+<ahoneybun> also unity is not that bad once 14.04 was released
+<yofel> kdda: we usually only do such a meeting once shortly after release to talk about the next one
+<kdda> just wondering what time it usually is
+<yofel> either part of vuds, or around it
+<ahoneybun> seems kwallet thinks my password is wrong
+<ahoneybun> yet i just put it in for my wifi password
+<kdda> yofel are you a dev?
+<yofel> yes
+<yofel> in kde4 it at least didn't *repeatedly* asked you to open the same damn wallet
+<kdda> what do you use kwallet for?
+<yofel> whatever asks for it, ie. kded, owncloud, chromium, ...
+<ahoneybun> storing passwords
+<kdda> oh
+<yofel> right ^
+<ahoneybun> yofel: is it normal that kdepasswd to not be installed?
+<yofel> not sure
+<yofel> ahoneybun: yes
+<yofel> now whether that's good i don't know
+<ahoneybun> so we provide no gui way to change the user password then
+<ahoneybun> i would think that is not good
+<yofel> doesn't user-manager do that?
+<ahoneybun> from the system settings
+<kdda> i never used it, mostly lastpass
+<yofel> yeah it does, that kaccount has a useless button is bad though :/
+<yofel> i do remember someone talking about that a while ago though...
+<ahoneybun> yea im talking about "password and user account"
+<ahoneybun> then there is user manager that has a password option
+<ahoneybun> ovidiu-florin: riddell valorie https://github.com/ahoneybun/kubuntu-manual
+<blaze> are there users of wily?
+<kdda> im on 15.10
+<ahoneybun> what is the default username and pass on a live cd/dvd?
+<ahoneybun> got it
+<etriaph> http://askubuntu.com/questions/103896/live-cd-asks-for-a-username-and-password
+<etriaph> :d
+<ahoneybun> thanks
+<etriaph> np
+<ahoneybun> etriaph: i'm trying to find out why the right click does not work on ubuntu
+<ahoneybun> and kubunt
+<etriaph> on your mouse?
+<ahoneybun> laptop
+<ahoneybun> trackpad/touchpad
+<etriaph> ah, ya, i'm mostly desktop only.
+<ahoneybun> so it would be synaptics i thiink
+<etriaph> i think my laptop is running 12.04 or something
+<ahoneybun> just need to know where the conf file is and stiff
+<ahoneybun> *stuff
+<ahoneybun> so
+<ahoneybun> 'xinput list' says cannot connect to x server
+<etriaph> and you're connected?
+<etriaph> your user session i mean?
+<ahoneybun> well
+<ahoneybun> with the right click not working i had to jump into a tty
+<yofel> try "export display=:0", then xinput might work
+<ahoneybun> that did it yofel thanks
+<ahoneybun> i see the touchpad on there
+<ahoneybun> so reading from this https://wiki.archlinux.org/index.php/touchpad_synaptics#configuration_on_the_fly : the device shows a left and right button
+<ahoneybun> yofel: etriaph http://askubuntu.com/questions/579645/right-click-on-synaptic-touchpad-not-working-on-ubuntu-14-10 : this worked in the live iso so i'm going to try it in the installed version now
+<etriaph> interesting.
+<etriaph> ahoneybun: did you have to manually configure it?
+<ahoneybun> etriaph: what might be causing this is this laptop has 2 right and 2 left button
+<ahoneybun> etriaph: as in?
+<ahoneybun> wtf now the right click works fine
+<etriaph> ahoneybun: did you have to add anything to xorg.conf?
+<etriaph> or synaptics config file?
+<ahoneybun> etriaph: yea what the guide said
+<etriaph> *nods*
+<ahoneybun> now the right click is gone
+<ahoneybun> works when you boot, then it goes away
+<etriaph> kcm-touchpad was replaced with what?
+<ahoneybun> no clue
+<etriaph> oh it's *still* in it
+<etriaph> vivid i mean
+<etriaph> arch has a package we don't
+<etriaph> kcm-touchpad-frameworks
+<etriaph> i would imagine kcm-touchpad is legacy for v4 apps
+<yofel> we have kde-config-touchpad which is part of plasma(5)-desktop
+<ahoneybun> opps i mean left click
+<etriaph> yofel: and is that just for the cursor pad, or does that include the buttons?
+<yofel> no idea, i never had to configure the *buttons*
+<etriaph> i try to gather solutions for problems so i can help folks in #kubuntu from time to time.
+<yofel> well, i had on my work thinkpad, but that requires xorg.conf meddling to properly work
+<etriaph> ah.  i'm a desktop person mostly.
+<etriaph> i should try 15.04 on my laptop and see how it goes.
+<yofel> that t440 has all buttons emulated on one huge touchpad, which is a pita
+<etriaph> it's probably failure prone depending on the wiring in there :d
+<etriaph> bbiab, more coffee required
+<ahoneybun> etriaph: it seems if i switch to a tty, then back to the deskop the left and right buttons work
+<etriaph> ahoneybun: maybe they are reinitialized when returning to the x.org display server.
+<etriaph> ahoneybun: if that were true, either they hang while in memory or they get put to sleep.  are you actively typing/working with the laptop when they stop working?
+<etriaph> i'm burning a disk with k3b and ksysguard doesn't report any io on the device.
+<etriaph> broken sensor for sr0?
+<ahoneybun> not that i know of etriaph
+<ahoneybun> bbl

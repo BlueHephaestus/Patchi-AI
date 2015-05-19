@@ -1,0 +1,138 @@
+**** BEGIN LOGGING AT Sun May 10 20:49:02 2015
+
+<DarkCthulhu>	You around?
+*	Disconnected (Connection reset by peer)
+<DarkElement>	sorry
+*	DarkCthulhu :No such nick/channel
+<DarkElement>	DarkElement75
+*	DarkCthulhu :No such nick/channel
+<DarkElement>	DarkElement75, however i have not used github much yet, so it's only got one thing on it
+<DarkCthulhu>	That's cool
+<DarkCthulhu>	Are you a student?
+<DarkElement>	Of college? No.
+<DarkCthulhu>	Hm.. okay. I was just curious. As long as you think you can contribute, it's cool :)
+<DarkElement>	Yea, I usually let people think im in college
+<DarkElement>	:P
+<DarkElement>	But I think I cancontribute
+<DarkCthulhu>	Okay. I'll add you as a collaborator after your first pull request. There is a lot of work on the webcrawler side (which could be the training set for the AI). I got a voice test working on a new branch but that's not very relevant for now.
+<DarkCthulhu>	What aspect would you like to work on first?
+<DarkElement>	Alright. What do you plan on using text to speech for/
+<DarkElement>	?
+<DarkCthulhu>	DarkElement, at a much later stage, to facilitate a real conversation. But that's like a stretch goal. Not immediately relevant. I was just curious.
+<DarkCthulhu>	The normal workflow is that you fork the repository off, and then create a separate branch with a feature you want to add, alongside tests and then we merge that back in
+<DarkCthulhu>	That sound ok?
+<DarkCthulhu>	But first, I do want to ask you how familiar you are with these processes.
+<DarkElement>	sounds good to me, i'll get used to it im sure
+<DarkCthulhu>	Cool. Which feature would you like to work on?
+<DarkCthulhu>	From a quick glance, there needs to be a sentiment analyzer and some markov chain based approach of building responses. The intricacies will require a lot of thought though.
+<DarkCthulhu>	It is usually helpful if you explain about your level of familiarity with projects like this, and Python itself. I can estimate then, what parts would be reasonable as separate chunks.
+<DarkElement>	Indeed. I'm not sure what I would like to work on, perhaps we could work together on some stuff.
+<DarkCthulhu>	Sure..
+<DarkCthulhu>	I have a report to get to at the moment. I
+<DarkElement>	I have worked on my own IRC bot as you are aware, however that is the most recent AI I have worked on, and I have worked a lot in python, but I am happy to learn new things to work on stuff I enjoy, like AI
+<DarkCthulhu>	Cool :)
+<DarkCthulhu>	I'll be on here in a couple of days and we can discuss more. I'll try to get some of the theoretical aspects wrapped up by then as well.
+<DarkCthulhu>	I'll see you soon DarkElement. It should be fun working together :)
+<DarkElement>	If there's anything I can read up on or work on in that time let me know. Otherwise, I'll see you soon and I look forward to it!
+**** BEGIN LOGGING AT Tue May 12 16:43:33 2015
+
+<DarkElement>	as
+*	DarkCthulhu :No such nick/channel
+*	Disconnected (Connection reset by peer)
+<DarkElement>	test
+*	DarkCthulhu :No such nick/channel
+*	DarkCthulhu :No such server
+*	Disconnected (No such device or address)
+>nickserv<	identify ****
+-NickServ-	You are now identified for DarkElement.
+<DarkElement>	test
+*	DarkCthulhu :No such nick/channel
+*	Disconnected (No such device or address)
+*	Disconnected (Remote host closed socket)
+*	Disconnected (Remote host closed socket)
+*	Disconnected (Remote host closed socket)
+*	Disconnected (Remote host closed socket)
+*	Disconnected (Connection reset by peer)
+<DarkElement>	test
+*	DarkCthulhu :No such nick/channel
+*	Disconnected (No such device or address)
+*	Disconnected (No such device or address)
+*	Disconnected (Connection reset by peer)
+>nickserv<	identify ****
+-NickServ-	You are now identified for DarkElement.
+<DarkElement>	test
+*	DarkCthulhu :No such nick/channel
+<DarkElement>	test
+*	DarkCthulhu :No such nick/channel
+<DarkElement>	test
+*	DarkCthulhu :No such nick/channel
+*	Disconnected (Connection reset by peer)
+*	DarkElement is already in use. Retrying with ...
+*	Disconnected (Remote host closed socket)
+*	DarkElement is already in use. Retrying with ...
+*	Disconnected (Remote host closed socket)
+*	DarkElement is already in use. Retrying with ...
+*	Disconnected (Remote host closed socket)
+*	DarkElement is already in use. Retrying with ...
+*	Disconnected (Remote host closed socket)
+*	DarkElement sets mode +i on DarkElement
+-NickServ-	This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+*	Disconnected (Connection reset by peer)
+*	DarkElement sets mode +i on DarkElement
+-NickServ-	This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+*	Disconnected (Connection reset by peer)
+*	DarkElement sets mode +Z on DarkElement
+*	DarkElement sets mode +i on DarkElement
+-NickServ-	This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+>nickserv<	identify ****
+-NickServ-	You are now identified for DarkElement.
+*	Disconnected (No such device or address)
+*	Disconnected (No such device or address)
+*	Disconnected (No such device or address)
+**** BEGIN LOGGING AT Thu May 14 20:35:59 2015
+
+<DarkElement>	test
+*	DarkCthulhu :No such nick/channel
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Thu May 14 22:54:33 2015
+
+**** BEGIN LOGGING AT Fri May 15 15:02:10 2015
+
+<DarkElement>	test
+*	DarkCthulhu :No such nick/channel
+*	Disconnected (Connection reset by peer)
+*	Disconnected (No such device or address)
+*	Disconnected (Remote host closed socket)
+*	Disconnected (Remote host closed socket)
+*	Disconnected (Connection reset by peer)
+*	Disconnected (Connection reset by peer)
+*	Disconnected (Remote host closed socket)
+*	Disconnected (No such device or address)
+*	Disconnected (Remote host closed socket)
+*	Disconnected (Remote host closed socket)
+*	Disconnected (No such device or address)
+*	Disconnected (Connection reset by peer)
+*	Disconnected (Remote host closed socket)
+*	Disconnected (Remote host closed socket)
+*	Disconnected (Remote host closed socket)
+*	Disconnected (Remote host closed socket)
+*	Disconnected (Remote host closed socket)
+*	Disconnected (No such device or address)
+<DarkElement>	test
+*	DarkCthulhu :No such nick/channel
+*	Disconnected (Connection reset by peer)
+*	Disconnected (Connection reset by peer)
+*	Disconnected (Connection reset by peer)
+*	Disconnected (Connection reset by peer)
+*	Disconnected (Connection reset by peer)
+*	Disconnected (Connection reset by peer)
+*	Disconnected (Connection reset by peer)
+**** BEGIN LOGGING AT Sun May 17 13:27:02 2015
+
+<DarkElement>	hello
+*	DarkCthulhu :No such nick/channel
+*	Disconnected (No such device or address)
+*	Disconnected (No such device or address)
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Sun May 17 20:05:06 2015
+

@@ -1,0 +1,45 @@
+<lotuspsychje> good morning
+<ablest1980> hello
+<blueskaj> hiyas all
+<lotuspsychje> blueskaj: hello
+<blueskaj> hey lotuspsychje, how's things ?
+<lotuspsychje> fine tnx
+<lotuspsychje> they posted this in touch https://insights.ubuntu.com/2015/05/17/meizu-launches-the-ubuntu-mx4-for-developers-in-china/
+<ablest1980> hello
+<lotuspsychje> ablest1980: hi mate
+<ablest1980> lotuspsychje, hello
+<ablest1980> whats new lotuspsychje
+<ablest1980> 3am there?
+<ablest1980> pm*
+<lotuspsychje> ablest1980: http://www.omgubuntu.co.uk/2015/05/meizu-mx4-with-ubuntu-launched-in-china-coming-to-europe-soon
+<lotuspsychje> yep 15h here
+<ablest1980> canonical has previously said that the usa will get its own exclusive ubuntu phone (from an as-yet-unnamed oem), details of which are expected in june, 2015.
+<ablest1980> !!
+<lotuspsychje> : )
+<ablest1980> xd
+<lotuspsychje> good news for ubuntu
+<ablest1980> yes
+<ablest1980> gold and silver
+<lotuspsychje> gold for the ladies :p
+<ablest1980> xp
+<ablest1980> does hp make phones?
+<lotuspsychje> they used to for sure
+<lotuspsychje> not sure if they do now
+<ablest1980> k
+<ablest1980> my hp pavilion g6 has 8gb ram says 7.3gb though
+<ablest1980> i use to have 4gb
+<blueskaj> hi ablest1980 , yes my old pc here supposedly has 6g ram , but system monitor shows it as 5.8
+<ablest1980> hi blueskaj
+<ablest1980> shows me 7.3gb
+<ablest1980> oh your pc
+<ablest1980> i thought you was saying mine
+<ablest1980> xp
+<ablest1980> going to play cs bbl
+<ablest1980> xd
+<daftykins> ablest1980: causing trouble again i see
+<daftykins> ;)
+<ablest1980> no
+<ablest1980> xd
+<ablest1980> i was having connection trouble and notice the of mac address from the usb wireless netzero stick but the hardware address was the same as before change of the mac address
+<daftykins> so the label on the device ends in one number, but somewhere else on your ubuntu machine it states that your dongle has another address?
+<daftykins> where is this other place? :)

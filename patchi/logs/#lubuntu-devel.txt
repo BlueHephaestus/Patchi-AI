@@ -1,0 +1,5 @@
+=== tahr193531 is now known as stevend4le
+=== aaron__ is now known as ahoneybun
+=== aaron__ is now known as ahoneybun
+[19:47] <ianorlyn> um is the openbox window manager context menu supposed to be there when slecting install in ubiquity?
+[19:48] <ianorlyn> cause I have used it in the past to launch a terminal so I didn't have to switch tty to export display to run ubuntu-bug

@@ -1,0 +1,319 @@
+[05:16] <magespawn> good morning
+[05:54] <Kilos> morning all and sundry
+[08:53] <Kilos> hi Private_User  hows things
+[08:54] <Private_User> hi Kilos
+[08:55] <Private_User> ag things are ok not too bad
+[09:36] <Kilos> hi Vince-0  hows things
+[09:36] <Kilos> you rather scarce hey
+[09:38] <Vince-0> hi
+[09:38] <Vince-0> yes indeed. new job and epic flu now
+[09:38] <Kilos> get well soon
+[10:57] <Mopkop> Good day everyone!
+[10:57] <Kilos> hi Mopkop  gaanit?
+[10:57] <Mopkop> Baie om voor dankbaar te wees! En self?
+[10:57] <Kilos> goed dankie seun
+[11:15] <Mopkop> Any News?
+[11:16] <Kilos> no everyone is so busy it hasnt been very busy here
+[11:23] <Mopkop> The bad thing about finishing exams early is that all your friends are still writing and you have to sit at home with nothing to do until they are done :-(.
+[11:23] <Kilos> hahaha
+[11:24] <Kilos> wen jy met dominee oorkry na ubuntu?
+[11:25] <Mopkop> O yes, I got my borther to use Ubuntu. He first tried to use Elementary, but did not like it, so he insisted on using the same one as me :)
+[11:25] <Kilos> hi suiram  
+[11:25] <Mopkop> Hello Pathfinder!
+[11:25] <Kilos> haha
+[11:25] <Mopkop> Oh and suiram!
+[11:25] <suiram> Hello tweede rekenaar opgestel en aan due gang
+[11:26] <Kilos> mooi
+[11:26] <Mopkop> Kilos: Nope, dominees are very resitant to change. That and they do not have time to learn new things.
+[11:29] <Kilos> Mopkop  daai oom wat net hier weg is is 76 en nuut op ubuntu
+[11:30] <Mopkop> O, ek wou nog vra. Goed dat ons groei.
+[11:31] <Kilos> Mopkop  ons groei stadig maar seker hele tyd
+[11:31] <Kilos> jy kan mense groet ook in #ubuntu-africa , ek is nie altyd beskikbaar nie
+[11:33] <Pathfinder> Mopkop: Hello.....Early Confession...from Nairobi Kenya.....Don't understand what the hell u guys are saying ...lol!!! ..Guess I should leave this channel
+[11:33] <Kilos> oh sorry Pathfinder  
+[11:33] <Kilos> we just sometimes chat in afrikaans
+[11:34] <Pathfinder> Kilos: Hahaha...I noticed
+[11:34] <Pathfinder> No worries though
+[11:35] <Mopkop> Lol sorry Pathfinder, we'll stick to English then :)
+[11:37] <Kilos> Pathfinder  he helped with content on http://ubuntu-africa.info
+[11:37] <Pathfinder> Mopkop: Okay...this cannel is pretty active though..should start a similar dedicated ubuntu community in Kenya
+[11:38] <Kilos> no man thats what #ubuntu-africa is for
+[11:38] <Pathfinder> *channel
+[11:39] <Kilos> ive been trying to upgrade stickyboy  to ubuntu but so far he is stuck on his OS
+[11:40] <Pathfinder> Kilos: hahahaha..many have tried and failed ..lol!!!!!
+[11:40] <Kilos> yeah he is thick skinned
+[11:41]  * Kilos waits for a comment from stickygeek
+[11:45] <Pathfinder> is there a php similar robust server like unicorn for ruby?
+[11:48] <Mopkop> I do not know about this. Maybe the Fly will know. We'll wait for him to come on.
+[15:15] <inetpro> good mornings
+[15:16] <Kilos> hi inetpro  skelm
+[15:16] <inetpro> hrm...
+[15:16] <Kilos> lol
+[15:17] <inetpro> s/hrm/hmm/
+[15:17] <Kilos> lol some more
+[15:18]  * inetpro looks at his self
+[15:18] <Cantide> good morning
+[15:18] <Kilos> hi Cantide  
+[15:18] <Cantide> hello~
+[15:18] <inetpro> something funny about my looks today?
+[15:18] <Kilos> inetpro  himself
+[15:19] <Kilos> skelm looks
+[15:19] <inetpro> ai!
+[15:19] <Kilos> what was the message you left me after our long discussion
+[15:24] <magespawn> good evening
+[15:24] <Kilos> hi magespawn  
+[15:25] <magespawn> how you doing Kilos?
+[15:25] <Kilos> good ty magespawn  and you
+[15:26] <magespawn> good thanks, bit of load shedding earlier, did some outside family time and gardening
+[15:26] <Kilos> we had from 8 till 10.30 am
+[15:28] <magespawn> looks like it is over for today
+[15:31]  * inetpro also started the day with loadshedding
+[15:31] <Kilos> ai!
+[15:31] <Kilos> same time?
+[15:32] <inetpro> Kilos: at 7:00 this morning 
+[15:32] <inetpro> luckily we had made breakfast already
+[15:33] <Kilos> wow
+[15:36] <magespawn> hi inetpro 
+[15:36] <inetpro> oh hi magespawn
+[15:36] <magespawn> inetpro: can i ask you a somewhat personal question?
+[15:36] <Kilos> hahaha
+[15:36] <inetpro> uh
+[15:37] <Kilos> very old
+[15:37] <magespawn> no that one i know
+[15:37] <magespawn> job related
+[15:37] <inetpro> don't ask to ask, just ask 
+[15:37]  * inetpro will decide to answer or not
+[15:38] <magespawn> mmm some people get offended/upset
+[15:38] <magespawn> what do you do?
+[15:38] <Kilos> na if i cant offend him no one can
+[15:39] <inetpro> hah, magespawn I'm a jack of all trades and master of none
+[15:39] <Kilos> the pro is a very human and understanding guy
+[15:39] <magespawn> that is the way it always appeared here too
+[15:40] <inetpro> magespawn: generally in the line of sysadmin but I get involved in way to many things on a daily basis
+[15:40] <inetpro> sometimes very frustrating but most of the time pure fun and games
+[15:40] <inetpro> too many*
+[15:41]  * Kilos agrees he can be very frustrating
+[15:41] <inetpro> sorry oom Kilos
+[15:41] <magespawn> mmmm, that seems to be the job discription of a few people in here
+[15:41] <Kilos> lol my pro
+[15:42] <Kilos> without the pro id be on win today
+[15:43] <inetpro> magespawn: I prefer working on open source systems and know very little about Windows
+[15:43] <magespawn> i do  not have much choice at the moment when it comes to os, i prefer linux for my own
+[15:45] <inetpro> hmm... but having said that, I guess the definition of open source has changed somewhat as well
+[15:45] <inetpro> especially lately
+[15:49] <inetpro> still not sure what t make of this but I guess that is where we're headed... Open source has to be more than Linux http://opensource.com/life/15/5/open-source-has-be-more-linux
+[15:49] <inetpro> what to make*
+[15:52] <inetpro> magespawn: somehow I just hope that we can keep the freedom in all of this
+[15:52] <inetpro> these big corporates like to take over completely and typically want the whole cake
+[15:54] <magespawn> they have tried before, there is still  open source, but vigilance is needed
+[15:57] <inetpro> not only do they want the whole cake but they even want to eat it as well
+[16:02] <magespawn> that is the nature of business, try to get everything
+[16:19] <magespawn> inetpro: i have always thought/believed the FOSS is all about choice
+[16:38] <Kilos> magespawn  you are leaning lots and still have the linux servers. the knowlege you are gaining is worth it i think
+[16:38] <Kilos> lol and you getting good at windows too
+[17:05] <inetpro> magespawn: windows is not a good choice :-)
+[17:06] <inetpro> end of story
+[17:06] <inetpro> stickyboy: welcome back
+[17:06] <inetpro> Kilos: why you fail to do your job?
+[17:07] <inetpro> kenju254: hi
+[17:07] <Kilos> some times i sits and thinks, other times i just sits
+[17:07] <Kilos> oh inetpro  you know an answer for Pathfinder  
+[17:08] <inetpro> Kilos: no
+[17:08] <Kilos> https://launchpad.net/~popeyhttps://launchpad.net/~popey
+[17:09] <Kilos> ai!
+[17:09] <inetpro> hmmm....
+[17:09] <Kilos> Pathfinder> is there a php similar robust server like unicorn for ruby?
+[17:09] <inetpro> Kilos has popeye on the brain?
+[17:09] <Kilos> not me my pc
+[17:10] <inetpro> Popeye the Sailor Man ?
+[17:10] <Kilos> stickyboy  and his guys arent answering today
+[17:10] <magespawn> inetpro neither is crack cocaine, but people must be free to make those choices themselves
+[17:11] <inetpro> magespawn: sadly
+[17:11] <magespawn> now that is an entirely different discussion
+[17:15] <inetpro> I see our G+ page has become quite popular lately
+[17:15] <inetpro> Kilos: 155 followers | 36,508 views
+[17:15] <Kilos> wow
+[17:16] <inetpro> sadly they seem to be of a different kind these days
+[17:16] <Kilos> the za page?
+[17:16] <inetpro> Kilos: yes
+[17:16] <Kilos> well they cant spam it
+[17:16] <Kilos> who knows it might pull more peeps to ubuntu
+[17:17] <inetpro> well the latest lot of followers seem like spammy accounts to me
+[17:17] <Kilos> we should actually use it to advertise
+[17:17] <inetpro> some pretty ladies there... 
+[17:18] <Kilos> get ubuntu, the free alternative that will change the way you see the internet
+[17:18] <Kilos> hehe
+[17:18] <Kilos> lemme go see
+[17:18] <magespawn> and almost completely empty accounts?
+[17:18] <Kilos> magespawn  ?
+[17:18] <inetpro> question, should I keep them or ban them?
+[17:19] <Kilos> let them follow we dont accept posts there
+[17:19] <magespawn> if it is a spam account, there is usually nothing behind it, like photos of cats, history etc.
+[17:20] <magespawn> it would not be a good thing for people to associate being spammed with our page
+[17:20] <Kilos> za also follows no one, so its safe imo
+[17:20] <inetpro> just becomes very difficult to manage if we had to get rid of them
+[17:21] <Kilos> no one else can post so is it worth worrying about
+[17:22] <inetpro> well I tried putting the known one in a separate circle for some time but it's getting tough now
+[17:23] <inetpro> the known ones*
+[17:24] <Kilos> inetpro  i see 86 followers
+[17:25] <inetpro> Kilos: where?
+[17:26] <Kilos> https://twitter.com/
+[17:26] <Kilos> oh thats the tweet place
+[17:26] <Kilos> ya thats what we talking about isnt it?
+[17:27] <magespawn> er, no, i thought g+
+[17:27] <Kilos> oh
+[17:28] <Kilos> i dont g+ often, thats mainly pro domain
+[17:28] <inetpro> Kilos: g+
+[17:28] <Kilos> inetpro  link?
+[17:28] <Kilos> dont make me work it out the hard way
+[17:29] <inetpro> Kilos: https://plus.google.com/+Ubuntu-zaOrg
+[17:36] <Kilos> hmm... all those meetings and no ticked me as attended
+[17:36] <Kilos> no one
+[17:36] <Kilos> sigh
+[17:38] <inetpro> Kilos: you tick yourself
+[17:38] <Kilos> sigh
+[17:40] <gremble> o/
+[17:40] <inetpro> wb gremble
+[17:41] <gremble> How are you inetpro?
+[17:41] <Kilos> gremble  dont grum
+[17:41] <Kilos> ai!
+[17:41] <Kilos> grumble
+[17:41] <gremble> Good evening Kilos 
+[17:41] <Kilos> how are you sir?
+[17:41] <gremble> I am well thanks and yourself?
+[17:41] <inetpro> gremble: good good thank you 
+[17:42] <Kilos> inetpro  where it asks if i attended say well duh! of course he attended
+[17:42] <Kilos> good ty just being pro bashed lately
+[17:42] <inetpro> gremble: I see you and kule[tab] were quite busy last night
+[17:51] <gremble> we chatted a bit, yes
+[18:00] <inetpro> hmm...
+[18:00]  * Kilos getting cold
+[18:00] <gremble> No one here knows of paid internships in the Pretoria area?
+[18:01] <gremble> relating to software dev or system administration
+[18:03] <inetpro> gremble: not me, unfortunately
+[18:04] <gremble> Getting a nice student job is difficult
+[18:04] <gremble> haha
+[18:04] <Kilos> ai!
+[18:05] <magespawn> not me either
+[18:05] <magespawn> something i have been keeping an eye out for though
+[18:05] <magespawn> you might have more luck in cape town
+[18:06] <gremble> The commute would be shit :P
+[18:09] <inetpro> oh goodness
+[18:09] <inetpro> we still need to decide about the chairman
+[18:09] <inetpro> of the next meeting
+[18:10] <Kilos> oh my
+[18:12] <inetpro> I'll write up an email quickly
+[18:18] <stickyboy> I want a paid internship in systems administration in Pretoria.
+[18:18] <stickyboy> I have read the GPL v2 three times today, from start to finish.
+[18:20] <inetpro> haha :-)
+[18:20] <inetpro> wb stickyboy
+[18:20] <inetpro> Kilos: how do we vote on the mailing list?
+[18:20] <gremble> We should fight for it stickyboy. Like idols, but Durban style
+[18:21] <Kilos> vote for what?
+[18:21] <inetpro> Kilos: for chairperson
+[18:22] <Kilos> lol
+[18:22] <inetpro> Kilos: or how do we go about electing the next chair?
+[18:22]  * Kilos votes inetpro
+[18:23] <Kilos> you said you would do it till one of the new guys gets to know how
+[18:23] <Kilos> ill contact nuvolari  and hear what his sittuation is like
+[18:23] <Kilos> still 10 days
+[18:24] <inetpro> Kilos: the minutes say, "[19:32:55] <Maaz> Agreed: Next chair to be decided via mailing list"
+[18:25] <Kilos> ok then you just mail the list and say you will do it
+[18:25] <Kilos> methinks fly will help you
+[18:29] <inetpro> mail sent
+[18:37] <stickyboy> gremble: I'm not much of a fighter. :P
+[18:40] <gremble> Welp.
+[18:40] <gremble> Such is life ;P
+[18:44] <inetpro> wb kulelu88
+[18:46] <inetpro> Kilos: it's too early to sleep now
+[18:46] <Kilos> lol
+[18:47] <Kilos> whats with the voting process?
+[18:47] <Kilos> you are the chair then um
+[18:47] <Kilos> who was it
+[18:47] <Kilos> oh
+[18:48] <Kilos> the neology man
+[18:48] <Kilos> he said he would like to once showed the ropes
+[18:48] <Kilos> cuttingedge
+[18:49] <inetpro> where is he?
+[18:51] <inetpro> Kilos: captine also wants to try
+[18:51] <gremble> What kind of ropes? Hemp or Nylon?
+[18:51] <Kilos> lol
+[18:57] <kulelu88> wb?
+[18:57] <kulelu88> hello
+[18:58] <inetpro> kulelu88: wb = welcome back
+[19:00] <inetpro> Kilos: [19:33:53] <CuttingEdge> Kilos: i'm all for volunteering, but give me one or two meetings first, just to get into how things operate ;)
+[19:01] <Kilos> there you have it inetpro  you chair 2 meetings and he will go from there
+[19:01] <inetpro> haha... no man
+[19:01] <Kilos> hee hee
+[19:01] <Kilos> yes man
+[19:01] <Kilos> prepair yourself
+[19:01] <inetpro> 05/17 20:51:23 <inetpro> Kilos: captine also wants to try
+[19:02] <inetpro> RTFS
+[19:02] <Kilos> ok lets remind him 
+[19:02] <Kilos> but he will also need guidance
+[19:02] <inetpro> is he on the mailing list?
+[19:02] <kulelu88> I don't know why you guys are scared of chairing the meetings. It's not difficult
+[19:02] <Kilos> kulelu88  you want to?
+[19:03] <inetpro> kulelu88: are you on the mailing list?
+[19:05]  * inetpro is willing to do it if anyone else doesn't want to do it
+[19:05] <kulelu88> no, I'm incapable of it
+[19:05] <Kilos> incapable?
+[19:05] <Kilos> why?
+[19:09] <gremble> He is disabled. He doesn't have a bum
+[19:09] <gremble> So he cannot chair
+[19:09] <Kilos> lol
+[19:10] <kulelu88> grembles wisdom has spoken +D
+[19:11] <gremble> If I chair a meeting to table a proposal that I bed the bride. I would have floored the groom
+[19:11] <gremble> And my gr6 teacher said that I cannot make a sentence without verbs
+[19:11] <gremble> There I have two
+[19:13] <stickyboy> Useful skill, that.
+[19:14]  * gremble puts it on his CV.
+[19:14] <inetpro> ai!
+[19:18] <inetpro> Kilos: we need to try and get people to arrange Ubuntu Hour events
+[19:19] <inetpro> or installfests
+[19:19] <Kilos> sjoe
+[19:19] <inetpro> but maybe we first need to try get marketing material
+[19:19] <inetpro> superfly: ping
+[19:20] <inetpro> superfly: are you not supposed to arrange stuff for us? :-)
+[19:20] <Kilos> lol
+[19:20] <superfly> eh, what?
+[19:20]  * Kilos ducks. pro has found another target
+[19:20] <inetpro> superfly: are you not our official contact person these days?
+[19:21] <superfly> I'm the secondary contact
+[19:21] <inetpro> ai!
+[19:21] <inetpro> Kilos: please talk to maia
+[19:21] <inetpro> she's slacking
+[19:22] <Kilos> she is very busy inetpro  and is first contact mainly for verification and contact with the council i think
+[19:23] <inetpro> everyone is busy, that is not a good excuse
+[19:24] <Kilos> ok what must i ask her?
+[19:30] <gremble> in gnu coreutils, ls is 5k lines of code.
+[19:32] <kulelu88> Kilos: become the marketing man
+[19:32] <kulelu88> gremble: there must be a ton of --options, that is why
+[19:36] <gremble> Well, I found out that I can read C reasonably well, given reasonably well written source code haha
+[19:36] <kulelu88> Until you start seeing pointers gremble 
+[19:37] <gremble> Nah. I've done pointers
+[19:37] <gremble> The trick to pointers is figuring out how to not use them
+[19:38] <kulelu88> I'm going to try a new language today I think
+[19:38] <gremble> OCaml :P
+[19:38] <gremble> or Racket
+[19:40] <magespawn> gremble: then you are pretty stuffed 98% of the time
+[19:41] <gremble> magespawn: Not really. Pointers lead to really shitty bugs to diagnose. So if you can figure out how to either circumvent using them or using wrappers for the like smart pointers, its good
+[19:41] <gremble> But I am not saying that you should pass a massive object by value just because passing it by reference "might" cause shit
+[19:42] <kulelu88> or you could just use a language that has GC gremble 
+[19:43] <gremble> I guess
+[19:43] <gremble> Nothing prevents you from doing whatever you want except the constraints of your implementation
+[19:47] <magespawn> i was refering to this 'given reasonably well written source code'
+[19:47] <gremble> Oh
+[19:47] <gremble> Hahahaha
+[19:47] <gremble> yes
+[19:47] <gremble> my bad
+[19:55] <kulelu88> gremble writes Haskell code ... 
+[19:57] <gremble> I certainly try to
+[19:57] <gremble> I haven't written anything significant yet
+[19:58] <gremble> May do a templating engine to use with a CMS
+[20:00] <inetpro> lol
+[20:05] <kulelu88> FML FML
+[20:09] <Kilos> inetpro  you mean banners and the logos and stuff
+[20:09] <Kilos> ?
+[20:11] <Kilos> night all. sleep tight
+[20:21] <magespawn> bed time for me too, good night all

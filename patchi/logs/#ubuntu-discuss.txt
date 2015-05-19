@@ -1,0 +1,48 @@
+[05:19] <lotuspsychje> good morning
+[10:58] <ablest1980> hello
+[11:04] <BluesKaj> Hiyas all
+[12:39] <lotuspsychje> BluesKaj: hello
+[12:40] <BluesKaj> hey lotuspsychje, how's things ?
+[12:41] <lotuspsychje> fine tnx
+[12:41] <lotuspsychje> they posted this in touch https://insights.ubuntu.com/2015/05/17/meizu-launches-the-ubuntu-mx4-for-developers-in-china/
+[12:54] <ablest1980> hello
+[12:57] <lotuspsychje> ablest1980: hi mate
+[12:58] <ablest1980> lotuspsychje, hello
+[13:01] <ablest1980> whats new lotuspsychje
+[13:01] <ablest1980> 3am there?
+[13:02] <ablest1980> pm*
+[13:02] <lotuspsychje> ablest1980: http://www.omgubuntu.co.uk/2015/05/meizu-mx4-with-ubuntu-launched-in-china-coming-to-europe-soon
+[13:02] <lotuspsychje> yep 15h here
+[13:03] <ablest1980> Canonical has previously said that the USA will get its own exclusive Ubuntu Phone (from an as-yet-unnamed OEM), details of which are expected in June, 2015.
+[13:03] <ablest1980> !!
+[13:04] <lotuspsychje> : )
+[13:04] <ablest1980> XD
+[13:04] <lotuspsychje> good news for ubuntu
+[13:04] <ablest1980> yes
+[13:06] <ablest1980> gold and silver
+[13:07] <lotuspsychje> gold for the ladies :p
+[13:07] <ablest1980> XP
+[13:09] <ablest1980> does hp make phones?
+[13:10] <lotuspsychje> they used to for sure
+[13:10] <lotuspsychje> not sure if they do now
+[13:11] <ablest1980> k
+[13:12] <ablest1980> my hp pavilion g6 has 8gb ram says 7.3gb though
+[13:13] <ablest1980> i use to have 4gb
+[13:20] <BluesKaj> hi ablest1980 , yes my old pc here supposedly has 6G RAM , but system monitor shows it as 5.8
+[13:20] <ablest1980> hi BluesKaj
+[13:20] <ablest1980> shows me 7.3gb
+[13:22] <ablest1980> oh your pc
+[13:22] <ablest1980> i thought you was saying mine
+[13:22] <ablest1980> XP
+[13:25] <ablest1980> going to play cs bbl
+[13:25] <ablest1980> XD
+=== EriC^^ is now known as bigheel
+=== bigheel is now known as EriC^^
+[19:41] <daftykins> ablest1980: causing trouble again i see
+[19:41] <daftykins> ;)
+[19:42] <ablest1980> no
+[19:42] <ablest1980> XD
+[19:44] <ablest1980> i was having connection trouble and notice the of mac address from the usb wireless netzero stick but the hardware address was the same as before change of the mac address
+[19:45] <daftykins> so the label on the device ends in one number, but somewhere else on your ubuntu machine it states that your dongle has another address?
+[19:45] <daftykins> where is this other place? :)
+=== JanC_ is now known as JanC

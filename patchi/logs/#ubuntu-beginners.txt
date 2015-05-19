@@ -1,0 +1,128 @@
+[00:53] <pedro3005> jdeloach, nvidia plays nicer with linux
+[00:54] <Phrea> hmm, my gf has a pc that uses Karmic, it used to be able to go online via the onboard NIC, but all the sudden it doesnt anymore...
+[00:55] <pedro3005> Phrea, oh noes!
+[00:55] <Phrea> I told her to reboot the system while the UTP is connected
+[00:55] <jdeloach> yeah. too bad i didn't know that two years ago when i bought my computer :( would have gotten Nvidia
+[00:55] <Phrea> both NIC and UTP cable are fully working
+[00:57] <pedro3005> Phrea, the card is detected?
+[00:57] <Phrea> yes
+[00:57] <Phrea> more news later ;)
+[00:58] <nhandler> As a heads up, ubuntulog is now in this channel. Public logs will be available on irclogs.ubuntu.com now
+=== nhandler changed the topic of #ubuntu-beginners to: Please do not wait to ask questions, simply ask! If anyone knows the answer, they will most likely reply. || Welcome to the Ubuntu Beginners Team support channel. || Please note, public logs of this channel are available on irclogs.ubuntu.com
+[00:58] <Phrea> oh no..
+[00:58] <pedro3005> I guess I can't plot my murders here now
+[00:58] <Phrea> I HATE IRC logs...
+[00:59] <Phrea> pedro3005: we now have to be careful indeed
+[00:59] <Phrea> ;)
+[01:01] <pedro3005> lukjad86, i'm still out to get you, know that
+[01:03] <Phrea> dude, shhht, that just got posted on the irclogs man !
+[01:04] <Phrea> oh, I just clicked, and it seems that everything ever posted here has already been logged...
+[01:04] <Phrea> Excuse me if I sign off.
+[01:05] <pedro3005> oh cool
+[01:05] <pedro3005> i can track myself down
+[01:05] <pedro3005> let's see, 2008
+[01:06] <pedro3005> wait, no
+[01:06] <pedro3005> Phrea, it's general ubuntu logs, not this channel
+[01:07] <Phrea> I noticed :)
+[01:07] <Phrea> that's why I stfu'ed
+[01:07] <pedro3005> you made me believe for a second I could re-live a part of my life!
+[01:07] <pedro3005> :P
+[01:07] <Phrea> well, you can
+[01:07] <pedro3005> Phrea, shit, http://irclogs.ubuntu.com/2010/03/04/%23ubuntu-beginners.txt
+[01:08] <Phrea> indeed, sir
+[01:08] <Phrea> it seems a bit chaotic
+[01:08] <Phrea> I'd devise them in channels, rather than year/month/date
+[01:08] <Phrea> but that's just me
+[01:09] <pedro3005> yeah
+[01:09] <pedro3005> truth is
+[01:09] <pedro3005> you gotta reach a whole new level of boredom to go through that stuff
+[01:09] <pedro3005> so probably it'll go unread
+[01:09] <Phrea> indeed
+[01:09] <Phrea> that's why I would devise them via channels
+[01:10] <Phrea> to save some boredom time
+[01:20] <coldfire> Ive rebooted several times and gnome is still locking up. The only thing i did before this happened is install some AV programs. What should i do? Reinstall ubuntu?
+[01:21] <pedro3005> coldfire, with programs exactly?
+[01:22] <coldfire> clamav, bitdeffender and avg
+[01:24] <pedro3005> coldfire, try uninstalling?
+[01:24] <coldfire> i cant it locks up on boot
+[01:25] <pedro3005> coldfire, try pressing CTRL ALT F1 as it's locked up
+[01:25] <coldfire> ok it started terminal..what do to remove them from here?
+[01:25] <pedro3005> coldfire, how did you install them?
+[01:26] <coldfire> .deb packages and in synaptic
+[01:26] <pedro3005> coldfire, 'sudo apt-get purge packagenames'
+[01:28] <coldfire> couldnt find package names
+[01:29] <coldfire> oh nm
+[01:29] <coldfire> i get it
+[01:29] <pedro3005> yeah
+[01:30] <coldfire> rebooting now
+[01:32] <coldfire> thanks
+[02:19] <Quickard> I can not log in to ubuntu because I can not see nor enter anything into the user accounts window
+=== jamalta-afk is now known as jamalta
+[02:32] <mathay> Quickard: kind of that your keyboard isn't responding?
+[02:32] <mathay> *kind of like
+[02:33] <mathay> IE, you can still move your mouse around and what not, right?
+[02:34] <Quickard> yes
+[02:34] <Quickard> I can move the mouse, I can see the accessability window
+[02:35] <Quickard> and when I hit the power button the shutdown window pops up, then it tells me that the desktop is not responding
+[02:39] <Quickard> when I go to shutdown it says that the gnome desktop is not responding
+=== jamalta is now known as jamalta-afk
+[07:07] <wojox> Do I just register my nickname here with: /msg nickserv register
+[07:09] <elfy> and a e-mail address
+[07:09] <elfy> eg /msg NickServ REGISTER bar foo@bar.com
+[07:09] <wojox> what about the password?
+[07:10] <elfy> Syntax: REGISTER <password> <email-address>
+[07:10] <wojox> Will it be seen or is it not ipportant
+[07:10] <elfy> it would be seen if you made a mistake and it was read as text - I usually do stuff like that in the server window xchat gives me
+[07:12] <wojox> Thanks elfy
+[07:12] <elfy> welcome :)
+[08:48] <Akos> hi team
+[08:48] <Akos> would anyone know why this would happen: lsattr: Operation not supported While reading flags on/usr/sbin/addgroup
+[08:48] <Akos> ?
+[11:36] <mongoosedog> hey guys i downloaded a movie, i'm left with files with boxes with rar on them, i can't seem to extract them? anyone know how to make the files into the movie file?
+[11:57] <nigelb> Is this a legal download?
+[11:59] <nigelb> If its not, we won't be able to help you
+=== jamalta-afk is now known as jamalta
+[14:28] <leoquant> hi elfy
+[14:28] <elfy> hi leoquant
+[14:28] <leoquant> how are you?
+[14:28]  * nigelb reminds that we are now logged :)
+[14:29] <nigelb> hello there elfy :)
+[14:29] <nigelb> and hey leoquant
+[14:30] <leoquant> good to be logged
+[14:30] <leoquant> and coc-ed
+=== mohi_away is now known as mohi1
+[14:30] <leoquant> damn good
+[14:30] <elfy> hi nigelb
+[14:31] <elfy> and I don't need reminding ;)
+[14:31] <nigelb> hehe
+[14:31] <leoquant> mohil your cloak is fine now
+[14:31] <leoquant> :P
+[14:31] <mohi1> O_o
+[15:59] <tdn> I have a machine with two network adapters: an ethernet adapter and a wireless adapter. How can I turn the wireless adapter into an access point?
+[16:05] <nigelb> tdn: you're looking for internet connection sharing?
+[16:06] <tdn> nigelb, I want to use this machine as access point to set up wireless connection.
+[16:06] <nigelb> tdn: does this help you? http://doctormo.ubuntu-ma.us/2009/12/06/ubuntus-internet-connection-sharing/
+[16:06] <tdn> nigelb, rt73usb/Qcom <- This is my wlan card.
+[16:07] <tdn> nigelb, no. I only have ssh access to the box.
+[16:07] <tdn> At the moment.
+[16:07] <nigelb> oh
+[16:07] <tdn> If I write iwconfig wlan0 mode Master, I get an error: Error for wireless request "Set Mode" (8B06) :     SET failed on device wlan0 ; Invalid argument.
+[16:08] <nigelb> tdn: try this forum post then http://ubuntuforums.org/showthread.php?t=91370
+[16:08] <nigelb> my knowledge of networking is kind of minimal, so I'm not sure how much debugging I can do
+[17:27] <CatchItBaby1> hi
+[17:30] <Silver_Fox_> o/
+=== jamalta is now known as jamalta-afk
+=== jamalta-afk is now known as jamalta
+[18:32] <DarkX> hello, i was wondering if someone could help me set up a VNC server on ubuntu with a mirror driver :) (i read that using a mirror driver gives better performance)
+=== compiledkernel is now known as Guest58803
+[19:07] <youknoweddavis> hey everybody, i was wondering if any one had experience with karmic and kodak cameras?
+[19:08] <youknoweddavis> ive tries f-spot, with crazy "unable to lock" errors, and Camera who doesnt seem to be able to coonect to it.
+=== jgoguen is now known as Guest44085
+=== jgoguen__ is now known as jgoguen_
+=== steelsteve is now known as Steelsteve_away
+[20:14] <elfy> hi Bodsda
+[21:36] <bodhi_zazen> Boo !!!
+[21:41] <pedro3005> bodhi_zazen, what?
+[21:42] <paultag> hai bodhi_zazen :)
+[21:42] <paultag> bodhi_zazen, may I PM?
+=== jamalta is now known as jamalta-afk

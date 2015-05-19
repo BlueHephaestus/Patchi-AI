@@ -1,0 +1,163 @@
+=== vitus_ is now known as vitus
+=== haddel_ is now known as haddel
+[07:40] <dreamon> Würde gerne Verzeichnisse vergleichen wollen /home/xyz mit /backup/xyz am besten Recursiv so das ich sehe ob es Identisch ist. Gibt es ein tool für solche Problematik?
+=== cup`ocoffie is now known as cup`ocoffee
+[09:24] <randolf> Hat jemand eine Idee wo ich "systemctl" bekomme?
+[09:24] <Frickelpit> wie meinen?
+[09:24] <randolf> Will einen Service starten und finde systemctl nicht
+[09:25] <Frickelpit> randolf: welche ubuntuvesion?
+[09:25] <Frickelpit> *version
+[09:25] <randolf> Moment. Schauen muss
+[09:26] <randolf> Ahh. Ubuntu 14.04
+[09:26] <mrkramps> systemd ist erst ab 15.04 an bord
+[09:26] <Frickelpit> dann hast du deine antwort
+[09:26] <Frickelpit> ;)
+[09:26] <randolf> Sag das doch gleich. Danke Dir ;-9
+[09:26] <randolf> sorry sollte ;-)
+[09:26] <stevieh> systemctl ist bei meinem 14.10 auch dabei.
+[09:27] <mrkramps> stevieh, sry … stimmt natürlich
+[09:29] <randolf> Dann mal wieder weg ist. Merci.
+[10:32] <dreamon> Beim zurück kopieren von meinem /home frägt er mich ob er symbolic link folgen soll. Was meint er damit.?
+=== wt is now known as Guest56040
+=== nils__2 is now known as nils_2
+[12:18] <reqq456> dann haste wohl nen symlink drin, sozusagen wie eine verknuefpung unter windows
+[12:19] <reqq456> @dreamon
+[12:34] <sirusdev> gute tag. system: lubuntu 15.04; kernel: 3.19.0-16-generic; problem: während dem booten wechselt systemd in den emergency mode. wenn ich dann eingebe: systemctl default (wie vorgeschlagen) kommt noch eine fehlermeldung aber das system bootet im nachhinein richtig und funktioniert auch ohne probleme. jemand eine idee woran es liegen könnte?
+[12:34] <ppq> schau dir mal die logs an, sirusdev 
+[12:36] <sirusdev> ich hatte jetzt auch einmal mal systemctl --failed eingegeben; dabei kommt folgendes heraus: http://pastebin.com/7VGSf6HZ
+[12:42] <brainwash> sirusdev: und systemctl status systemd-fsck-root.service ?
+[12:44] <sirusdev> der befehl gibt folgendes aus: http://pastebin.com/YiFqSBCp (hatte noch ein -l hinzugefügt)
+[12:45] <sirusdev> ich seh grad, dass dort dabei besteht "fsck" selbst ausführen. einfach nur fsck im terminal oder mit irgendwelchen optionen dazu?
+[12:47] <sirusdev> ok, wenn ich fsck /dev/sda1 eingebe, dann kommt, dass mein dateisystem eingehängt ist und ich die überprüfung machen soll, wenn das dateisystem nicht eingehängt ist. aber wie bewerkstellige ich das am besten?
+[12:47] <Frickelpit> boot per live-cd
+[12:48] <sirusdev> oder könnte ich auch wie im ubuntuusers-wiki beschrieben wird dies verwenden: sudo touch /forcefsck  ?
+[12:48] <sirusdev> das soll beim systemstart eine manuelle prüfung anwerfen und dann erst danach das system booten
+[12:49] <ppq> ist einen versuch wert
+[13:02] <dreamon> reqq456, mag sein, die Frage ist ob der Folgen soll oder nicht.. ich verstehe nicht wie er das meint.
+[13:05] <reqq456> je nachdem was es fuer symlinks sind :/
+[13:05] <reqq456> weisst du das zufaellig?
+[13:05] <dreamon> reqq456, Ich habe mit rsync kopiert -> rsync -avc --progress --delete /home/xy /media/Backup/ -> Jetzt will ich alles Retour kopieren und da frägt mich doublecmd danach.
+[13:05] <reqq456> sonst mach einfach ja, wenn die symlinks kaputt sind gehts halt nicht
+[13:06] <dreamon> Bisher hab ich noch keinen Gefunden. Ich werde mal Verzeichnisweise durchschauen. warum kann ich den nicht einfach kopieren? 
+[13:06] <dreamon> Ich kopiers ja wieder an den alten Platz zurück
+[13:06] <reqq456> wozu das ganze dann ueberhaupt?
+[13:07] <kcalB> Hi Leutz,  ich benutze gerade ubuntu 14.04 mit dem kernel 3.16.0-37-generic bei kernel.org gibt's den 3.18.13 lts. Kann mir jemand sagen warum da ubuntu hinterher hinkt ? O.o
+[13:07] <ppq> kcalB, ubuntu legt beim release einer version die kernelversion fest
+[13:07] <ppq> kcalB, danach gibts nur noch bugfixes und fixes für sicherheitslücken, die werden zurückportiert
+[13:08] <Frickelpit> und es gibt zudem während der entwicklung einen feature freeze
+[13:08] <ppq> kcalB, wenn du nen neuen kernel willst: http://wiki.ubuntuusers.de/LTS_Enablement_Stacks
+[13:08] <Frickelpit> da ist der 3.16 schon aktuell
+[13:09] <dreamon> reqq456, Ich habe mein altes Ubuntu komplett gelöscht. Xubuntu installiert und nun will ich alles zurückspielen.
+[13:09] <dreamon> reqq456, Auch die Festplatten anderst aufteilen.
+[13:09] <ppq> achso, gibts noch nicht die vivid sachen?
+[13:09] <Frickelpit> dreamon: woher soll denn dein neues system wissen, wasn in deinem alten system verlinkt war? ;-)
+[13:09] <Frickelpit> -n
+[13:10] <kcalB> ppq, Frickelpit, verwendet ihr eigentlich auch ubuntu oder ne ander distri "wenn ich fragen darf" ???
+[13:10] <Frickelpit> kcalB: eine andere
+[13:10] <ppq> unter anderem auch ubuntu, ja
+[13:10] <dreamon> Frickelpit, Ich selbst jabe meines Wissens keine Links im /home bereich erzeugt. Machen das die Programme eventuell selber?
+[13:10] <Frickelpit> dreamon: durchaus möglich
+[13:10] <koegs> dreamon: warum benutzt du nicht wieder rsync?
+[13:11] <kcalB> hmmm... lässt mal drauf schließen das ihr nicht sooo zufrieden deid mit ubuntu nicht wahr ? *lach*
+[13:11] <dreamon> koegs, Weil er dann alles zurück spielt.. eventuell auch alte configs, die ich nicht mehr haben will. Um nicht nochmal einen Fehler vom alten System einzufangen.
+[13:11] <dreamon> Darum hätte ich gerne selektiv kopiert. 
+[13:11] <kcalB> +s
+[13:11] <Frickelpit> kcalB: verschiedene gründe, die eher nach #ubuntu-de-offtopic gehören ;-)
+[13:13] <koegs> dreamon: cp --preserve=links
+[13:16] <dreamon> Frickelpit, reqq456 Die eigentliche Frage die sich mir stellt, was er meint wenn er beim Kopieren frägt ob er dem Link folgen soll. (aber ich such mal weiter)
+[13:16] <koegs> keine schlechte idee
+[13:20] <dreamon> Meldung : Sym-Link "libVx.so" folgen? Ja/Alle/Nein/übersringen
+[13:27] <dreamon> Ist mir unbegreiflich. Sobald ich ins Verzeichnis wechsele und dort Datei und Ordner für Ordner kopiere geht es. Kein Fehler. Nur wenn den Ordnerselbst in der höhreren Ebene kommt diese Meldung. 
+[13:36] <dreamon> Ah jetzt hab ich einen. In thunderbird z.B. ist in den Profilen eine Datei "lock" - Lrwxrwxrwx drin
+[13:39] <dreamon> koegs, Frickelpit. Wie bekomm ich raus wo der hinzeigt.
+[13:39] <koegs> ls -la
+[13:39] <Frickelpit> genau
+[13:39] <Guest56040>  hallo leute, gibt es youtube für die unity dash?
+[13:40] <dreamon> ls -la lock → lrwxrwxrwx 1 dreamon dreamon 15 Mai 16 14:14 lock -> 127.0.1.1:+2226
+[13:40] <dreamon> Das ja interessant.
+[13:42] <Guest56040> habe was ueber yavol scope-youtube gelesen aber das funzt iwie nicht
+[13:42] <dreamon> koegs, Frickelpit, Würde mir gerne sämtliche von den Symbolic Links anzeigen lassen, wo die sich Verstecken. Gibts da auch einen Trick?
+[13:42] <koegs> find . -type l
+[13:44] <dreamon> Puh die Lieste ist länger als mein Klopapier :)
+[13:50] <dreamon> koegs, Frickelpit Ich habe nun beides Probiert, Link folgen oder nicht folgen. Das Ergebnis scheint identisch zu sein. 
+[13:51] <koegs> ich würde das ergebnis kontrollieren, in dem einen fall wird der link kopiert und in dem anderen fall wird die datei an die stelle des links kopiert
+[14:00] <dreamon> Ich habe beidesmal die Datei drin mit lrwxrwxrwx Rechten und beidemal mit eigenschaften den Link anzeigen lassen, Selbe stelle. Aber ich halte es im Auge. 
+[14:00] <dreamon> Sind auf jedenfall nicht meine Links
+[14:21] <dreamon> VERDAMMT.. jetzt hab ich ein 32Bit OS installiert.. Heul.. 
+[14:23] <sash_> :D
+[14:27] <dreamon> Moment AMD64 ist doch 64bit oder?
+[14:27] <jokrebel> ja
+[14:28] <dreamon> uname -a → Linux dreamon 3.13.0-52-generic #86-Ubuntu SMP Mon May 4 04:32:59 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+[14:28] <dreamon> Ähm.. 64bit?
+[14:31] <Frickelpit> ja
+[14:31] <dreamon> Ist das nun ein 64Bit oder nicht? Ich wunder mich wenn ich Teamviewer 64bit installiere, geht es nicht die 32/64Bit version geht.
+[14:31] <koegs> normal
+[14:32] <dreamon> Frickelpit, Danke, dann hab ich nochmal mächtig "Schwein" gehabt.
+[14:32] <dreamon> normal ? warum
+[14:33] <koegs> https://www.teamviewer.com/de/help/363-Wie-installiere-ich-TeamViewer-auf-meiner-Linux-Distribution.aspx dort lesen
+[14:36] <dreamon> koegs, Danke, deswegen bin ich jetzt zu Tode erschrocken. :)
+[14:48] <jokrebel> na toll! Mit anderen gapps installiert stürzt nun YouTube nicht mehr ab. Abspielen tuts trotzdem nicht. Meldung: Keine Serververbindung - zum wiederholen tippen. 
+=== nils__2 is now known as nils_2
+[14:58] <jokrebel> zu früh gefreut. Abstürze wie eh und je
+[14:59] <jokrebel> oups - sorry falscher Kanal
+[15:05] <TingelTangelTom> jokrebel: passiert ;-)
+[15:45] <mrkramps> dreamon, hast du mal bei den tastenkürzeln für den fenstermanager geschaut?
+[15:46] <mrkramps> oder ist super bei dir zufällig die taste zum einfachen verschieben von fenstern?
+[15:49] <dreamon> mrkramps, Danke für die Idee.. leider steht da kein Super + Space drin.
+[15:49] <dreamon> mrkramps, Super ist die Windows Taste links vom ALT
+[15:50] <mrkramps> dreamon, wird die überhaupt als super erkannt?
+[15:51] <mrkramps> bei mir ist super_l immer multi_key
+[15:51] <dreamon> Ja beim festlegen der Tasten super und space wird es auch so angezeigt, ich hab das früher schon immer verwendet. Super+Space.. 
+[15:52] <mrkramps> check das mal mit xev an und propiere alternativ super_r, also die rechts von atl gr
+=== nils__2 is now known as nils_2
+[15:54] <mrkramps> falls du den compose key auf lwin liegen hast, würde sich das übrigens auch beißen
+[15:55] <dreamon> Ist eine neuinstallation von XUbuntu.. wo finde ich compose key?
+[15:56] <mrkramps> dreamon, tastatureinstellungen
+[15:56] <mrkramps> → layout
+[15:56] <dreamon> habs nun mal in der Konsole gespeicher → (Do:15958): libdo-WARNING **: Binding '<Super>space' failed! → [Error 17:56:11.651] [AbstractKeyBindingService] Key "" is already mapped.
+[15:57] <dreamon> gespeicher = gestartet
+[15:58] <mrkramps> ich schätze mal, dass gnome-do eher gconf verwendet …
+[15:59] <dreamon> mrkramps, Tastenabkürzungen für Anwendung? -> da hab ich keinen Eintrag gefunden.
+[16:00] <mrkramps> das tastenkürzel muss ja gar nicht in Xfce vergeben sein
+[16:00] <dreamon> Ich habe kein gnome installiert.. läuft nur xubuntu
+[16:00] <dreamon> auch kein kde oder sonstiges
+[16:01] <mrkramps> vielleicht ist das tastenkürzel auch einfach in gnome-do vergeben
+[16:01] <mrkramps> z.B. für "Switch to next source"
+[16:01] <mrkramps> All Settings > Keyboard > Typing
+[16:04] <brainwash> ibus verwendet super + space, wird jedoch nicht mehr von xubuntu installiert
+[16:09] <dreamon> ah hab was gefunden -> switch-input-source Super-space → keybindings → dconf zeigt das an
+[16:10] <dreamon> Was meint man unter Eingangsquellen Wechsel? welche Quellen?
+[16:11] <mrkramps> ich denke, das ist das, was eben mit ibus gemeint war
+[16:13] <dreamon> Ich reboote mal, um zu sehen ob es das war
+[16:17] <dreamon> mrkramps, brainwash_ !Nun gehts!! Danke
+[16:18] <mrkramps> \o/
+[18:29] <ub_umstieg> Guten Abend bekks  ? Danke
+[18:34] <dreamon> Nautilus, Caja, Thunar usw. die verwenden eine Art Lesezeichenliste, der häufigst benützten Verzeichnisse. Wo ist die eigentlich abgelegt?
+[18:36] <jokrebel> dreamon: Ist vermutlich abhängig von dem Programm. Vielleicht zu finden in den jeweiligen Config-Files
+[18:36] <dreamon> .config/nautilus/ ist nichts drin. Hab ich geschaut.
+[18:37] <jokrebel> dreamon: Muss jetzt nicht unbedingt menschenlesbar sein; je nach Tool
+[18:37] <dreamon> Mir ist aufgefallen, das sich die Dateimanager diese Lesezeichen irgendwie teilen, weil diese in mehreren auftauchten, obwohl ich diese Dateimanager nicht verwendet habe.
+[18:42] <Frickelpit> dreamon: guck mal nach .gtk-bookmarks
+[19:00] <dreamon> Frickelpit, Danke!
+[19:08] <Benno-007> dreamon: Vieles steht auch in dconf und gconf: http://wiki.ubuntuusers.de/GNOME_Konfiguration
+[19:10] <dreamon> Benno-007, Das kann ich nicht so einfach reinkopieren..(die alten lesezeichen meine ich nun in diesem Fall)
+[19:11] <Benno-007> hab dir nur einen Hinweis geben wollen, wo gnome-progs ihr zeug (zumindest einstellungen) ablegen.
+[19:12] <dreamon> Benno-007, Dieses gconf/dconf Zeug erinnert mich an die Registry bei M$ .. find ich nicht gut. 
+[19:13] <Benno-007> Ja. Gconf sind noch XML-Dateien, dconf binär. Dafür schneller. Hat alles Vor- und Nachteile.
+[20:30] <dreamon> Was ist das? doublecmd-0.6.2.gtk2.x86_64.tar.xz xz? 
+[20:31] <dreamon> http://sourceforge.net/p/doublecmd/wiki/Download/
+[20:31] <bekks> Was ist was genau?
+[20:32] <dreamon> Portable packages (most modern distro) 
+[20:32] <dreamon> Wollte es entpacken.. aber xz hab ich noch nicht gehört
+[20:32] <bekks> Und was ist deine genaue Frage?
+[20:32] <dreamon> Ich wollte es entpacken und installieren
+[20:33] <dreamon> bei 14.04 ist eine alte version von doublecmd und die hängt sich hier ständig auf
+[20:33] <dreamon> 0.5.8 beta → neu wäre 0.62
+[20:33] <bekks> Und was ist deine genaue Frage?
+[20:34] <dreamon> Wie entpack ich das. um was handelt es sich bei der Dateiendung .xz
+[20:34] <dreamon> Dachte immer das hieße tar.gz
+[20:34] <bekks> Die Dateiendung .xz ist ein Zeichen dafür, dass "xz" zum Packen den tarballs verwendet wurde.
+[20:36] <dreamon> oh. doublecmd kennt das selbst das format nicht.. dann nehm ich einen anderen Archivierer. Danke
+[20:36] <dreamon> Dachte das sei ein schreibfehler
+[20:37] <bekks> "xz" würde sich anbieten.
+=== bongleger_ is now known as bongleger

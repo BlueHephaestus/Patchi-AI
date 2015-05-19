@@ -1,0 +1,268 @@
+<darkelement>	hey guys where would i go to get logs of the top programming channels?
+<nenica>	hi :)
+<kindone>	darkelement, if they have public logging, should be in the channel's /topic or entrymsg
+<darkelement>	know any big channels that do? i've looked through a few but nothing
+<kindone>	i don't know of any
+<ethoscience>	hi.
+<rotcetorptekcop>	metanova, i think ping is disabled anyway, i am helping someone with experience in a few years ago
+<`hypermist`>	hmm
+<`hypermist`>	i can talk again
+<aldem>	you can talk but i don't hear you.
+<mystica555>	how would one find out the owner of a channel?
+<ishanyx>	/msg chanserv info #channel
+<mystica555>	so there's a rather abusive person in ##networking; the channel info is outdated and the url is dead, the founder is not online.. next steps?
+<ser_berry>	 /msg chanserv ##networking list
+<ser_berry>	see if other ops are available
+<mystica555>	ah
+<mystica555>	perhaps reverse the order; ##networking is an invalid command chimes chanserv ;)
+<mystica555>	im not authorized
+<mystica555>	yay
+<ilbelkyr>	/msg chanserv access list ##networking
+<ser_berry>	oops
+<rotcetorptekcop>	metanova, in the email address you used if you open network connection connection has been happening since i know
+<thomas>	looks like he might have stopped mystica555
+<mystica555>	one can hope
+<aldem>	hi thomas
+<thomas>	hi hi
+<aldem>	mystica555: did you have connexion problems earlier ?
+<aldem>	##networking bans people for 24 hours i beleive if any
+<mystica555>	no, im attempting to contact an op that might be able to restrain an abusive chatter
+<chasedspade>	hey thomas, can i bug you about an i-line ticket again? :p
+<thomas>	chasedspade: same one?
+<chasedspade>	thomas: different one. #157735
+<thomas>	alright
+<skyroverr>	what's an i-line ticket?
+<ser_berry>	skyroverr: i-lines handle things like concurrent connection limits for certain ip ranges. sometimes they need to be adjusted if there are a lot of people at a conference, for example
+<skyroverr>	ser_berry: so it's all handled on the irc server or the client does that?
+<ser_berry>	it's a server setting
+<mekolat_>	can i get a cloak please?
+<cyanoticaxolotl>	how do i get an affiliated cloak?
+<cyanoticaxolotl>	i'm the maintainer of the i5 window manager project
+<cyanoticaxolotl>	oh
+<cyanoticaxolotl>	affiliated cloaks are currently suspended
+<janicez>	i must now sleep
+<pussypunt>	wehhhhhhhhhhhhhhheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+<pussypunt>	eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+<pussypunt>	eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeawehhhhhhhhhhhhhhhee
+<pussypunt>	eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+<pussypunt>	eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+<pussypunt>	eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeawehhhhhhhhhhhhhhheeeeeeeeeeeeeeeeeeeee
+<legsfordays>	yo
+<legsfordays>	who is pussypunt
+<pragma->	legsfordays: who cares?
+<metanova>	^
+<legsfordays>	the salt is strong here
+<legsfordays>	yo
+<mezen>	any ircop here ?
+<legsfordays>	#opers
+<mezen>	thanks
+<nzw1>	mezen irc ops are called staff on freenode they are indicated with the + symbol
+<metanova>	mezen: that channel isn't available to you
+<mezen>	it redirects me to ##unavailable
+<equinoxdawg>	mezen: the voiced users here are the opers/staff.
+<metanova>	mezen: the staff members are in this channel
+<equinoxdawg>	^
+<mezen>	ah ok, thanks equinoxdawg and metanova
+<nzw1>	:(
+<mezen>	nzw1, as well, thank you
+<mezen>	sorry
+<nzw1>	don't metion
+<ppfc12>	can i have a cloak?
+<kindone>	just wait around for staff to see the request, do note that it will not work while you are using a gateway like irccloud
+<sammii>	how do i register?
+<metanova>	sammii: /msg nickserv help register
+<sammii>	i accidentally typed in the wrong email address. how do i remove that and start over?
+<sammii>	sammi.bruhh
+<sammii>	oops
+<kal-el>	type /msg nickserv help
+<metanova>	sammiluv: step 1: /msg nickserv help drop
+<metanova>	sammiluv: step 2: register again
+<sammiluv>	okay.
+<sammii>	i reregistered it. and it's telling me i have to many registered under my email address. and i have never registered anything on here.
+<sorlag>	how can i be invited to the /help channel? anyone know?
+<black_power>	##security
+<equinoxdawg>	sorlag: you can just ask your question here.
+<black_power>	equinoxdawg freenode racist cuz dey been banned ppl do the color of they skin
+<black_power>	stfu bitch u stupid af i was banned from lotsa channels nd they is banned me cuz i'm black yu punk ass crackkka
+<sorlag>	racism is just a stupid minority thing now. we have a black president
+<black_power>	sorlag bitch yu stupid ignant ass crakkka yu kno dat ain't tru cuz yu is gotta be wyte to be racist since racism is the oppression of a group of people and black ppl is the ones who is oppressed yu stupid batch ass crakkker
+<sorlag>	can i please have a cloak? thanks!
+<dtscode>	* rumpledelf idly wonders when user skin colour was included in the irc rfc
+<dtscode>	it's supposed to come out in the next one.
+<rumpledelf>	sweet!
+<sorlag>	can i please have a cloak? thanks!
+<sorlag>	any staffers around?
+<nzw1>	sorlag looks like there is no staff around
+<coca_koala>	auror
+<_2_logynl>	hi
+<equinoxdawg>	hello
+<coca_koala>	wow
+<poutine>	is pandora down for anyone else? the website works, just it doesn't play music
+<pr0t0n>	good morning. is there any admin on?
+<vortex>	good morning, sara. enjoying your lunch, or are you off on the weekends?
+<mr-irc>	hey freenode op
+<mr-irc>	what's up
+<mr-irc>	:)
+<sorlag>	are any ops here?
+<mvk>	.. ok.. playing with powermanagement got me disconnected... > this rtl8192ee breaks when something tries to control its powermanagement
+<mvk>	i wish i had the oppertunity to say f** you to realtek, like linus did to nvidia ;-)
+<mvk>	their support /quality is horrible
+<mvk>	oem's like dell/hp/lenovo shouldnt do business with them
+<mvk>	> ow, wrong channel :x
+<j4janicej>	http://users.skyside.tk/~janicez/2015-05-17-02-46-52.ogg
+<joldy>	sounds good
+<j4janicej>	joldy: :>
+<paulski>	can someone hook me up with an unaffiliated cloak?
+<joldy>	i am the only person in #scam, can i be an op there?
+<joldy>	oh, i am.
+<krakakanok>	xd joldy
+<onionuser_a23>	verärgert über : ich frage mich weshalb man die offiziellen onion zugänge immer wieder dicht macht. obwohl man  onion user welche sich ohnehin über sasl authentifizieren ausdrücklich willkommen heisst !  ja klickt nur schnell auf den wohis button um die ip zu spammen
+<computer-ass-hol>	hi fuckers
+<computer-ass-hol>	i dont like you
+<joldy>	sounds like a scam
+<krakakanok>	xd
+<joldy>	computer-ass-hol: whatever you're selling my answer is no
+<denki>	hey, could i get a hostname cloak please?
+<mjjf>	dear staff, thank you for providing me with an 'unaffiliated' cloak. i would like to know if i could get a cloak with a specific name (the name of my company).
+<mrelendig>	mjjf: somewhat troublesome since group registration is still not working
+<mjjf>	mrelendig: because of the gms?
+<mjjf>	(somebody told me yesterday that it was down. i do not know what the acronym stands for)
+<kindone>	gms == group management system
+<mrelendig>	it has never been up
+<mrelendig>	:p
+<mjjf>	kindone: that's very kind of you.
+<mjjf>	mrelendig: :(
+<mrelendig>	short story: get permission from your boss to set up a group on freenode, then get a group cloak
+<mjjf>	mrelendig: i am the ceo.
+<mrelendig>	ask yourself then1
+<mrelendig>	!
+<blonddress>	i have lots of dresses and love how the look on me brushing on my stockings
+<mrelendig>	just like in ck2
+<mrelendig>	where you can have your chanselor improve relations with himself
+<mrelendig>	:d
+<asturcom>	hola alguien me ayuda
+<mrelendig>	asturcom: english only
+<asturcom>	where are ip play conquerors?
+<blonddress>	i do love older men and would be a good girl for you
+<rumpledelf>	blonddress: you might be on the wrong network
+<mrelendig>	doesn't sound like something freenode related though
+<asturcom>	help
+<mrelendig>	asturcom: with what?
+<blonddress>	o sorry i think i am
+<asturcom>	ip for play the conquerors
+<mrelendig>	what are "the conquerors"
+<mrelendig>	and how is it related to freenode?
+<asturcom>	???
+<mrelendig>	are you talking about age of empire 2?
+<asturcom>	conquerors is a game
+<asturcom>	yes
+<rumpledelf>	this is a free and open source software network, rather than a gaming network
+<asturcom>	empires
+<mrelendig>	asturcom: that is not related to freenode at all
+<rumpledelf>	don't think freenode has many gaming channels
+<mrelendig>	asturcom: try google if you want to find some game servers for it, or try some gaming forums
+<asturcom>	thanks
+<mjjf>	mrelendig: ofcourse i could allow myself anything i wish, but where do i register the group name? i thought i required to do so here.
+<mrelendig>	mjjf: you can't really register it, you just have to talk to freenode staff to get them to set it up temporary until the grs is up
+<mrelendig>	which will probably take another 10 years :p
+<mrelendig>	or the thermal death of the universe
+<mjjf>	lol! so, if i provide a staffmember with my company name i will be temporarily cloaked with that name, but without the ability to set it up for others, unless i request it for each of them individually. is that correct?
+<equinoxdawg>	mjjf: https://freenode.net/group_registration.shtml read that.
+<mjjf>	equinoxdawg: thanks. in that case, can i just have a single, named cloak? is that even possible without the gms?
+<equinoxdawg>	mjjf: i'm not sure, to be honest. i know vanity cloaks aren't possible, so whether it comes under that or not: i'm not sure. sorry.
+<mjjf>	equinoxdawg: it's for my company, while communicating with clients and collaborators (i'm a dev). i'm not sure vanity comes into play here.
+<the>	what happened to tor official chatroom?
+<nkuttler>	the: they are on oftc
+<the>	oh, its been awhile lol
+<the>	thx
+<_2_chopi4453>	hi
+<equinoxdawg>	hello
+<_2_chopi4453>	what's your name
+<_2_chopi4453>	?
+<v>	i understand dropping hold nicks is at staff's discression. i hereby request dropping this on
+<v>	one*
+<v>	it's expired, but on hold
+<ludvig_>	anyone from sweden?
+<_2_chopi4453>	me
+<ludvig_>	ok, cool. sthlm?
+<_2_chopi4453>	no
+<v>	_2_chopi4453pill the beans
+<v>	_2_chopi4453: spill the beans
+<ludvig_>	ok, im from norrköping
+<equinoxdawg>	v: people have tried before, and failed.
+<flherne>	uk here
+<v>	equinoxdawg: i'm just asking, that's all
+<v>	equinoxdawg: i'm fine with a no, but i wouldn't know until i asked
+<equinoxdawg>	v: that's completely fine, just know staff haven't been around recently, so it's probably going to be quite a wait.
+<_2_chopi4453>	okay but don't be so rude
+<v>	equinoxdawg: i'm always logged in, so not a problem
+<_2_chopi4453>	creep
+<v>	_2_chopi4453: who?
+<flherne>	v: you, obviously
+<v>	why?
+<_2_chopi4453>	i am only joking
+<v>	my tmux shell is creepy i guess
+<_2_chopi4453>	obviously
+<_2_chopi4453>	??
+<misz_eisya>	hello
+<misz_eisya>	hello?
+<misz_eisya>	anybody here?
+<misz_eisya>	🐙
+<circ-user-re5sx>	hi
+<circ-user-re5sx>	i am not able to join the django channel for some reason :/
+<ser_berry>	circ-user-re5sx: did you try again after initially connecting?
+<ser_berry>	this channel requires that you are identified to join
+<circ-user-re5sx>	yeah did again..
+<circ-user-re5sx>	first i had to resgister myself with nickserver and after i got the confirmation... it just says 'cannot send to channel'
+<dtscode>	circ-user-re5sx: you need to login to nickserv
+<circ-user-re5sx>	oh
+<jashank_>	hello!  i've got a peculiar situation: i've lost my password, and my old vps, which i no longer have access to, is still running my irc bouncer, so i can't /ns sendpass.
+<jashank_>	may i request assistance in manually recovering my nickserv password?
+<ser_berry>	is there any way you can prove you own that account?
+<circ-user-re5sx>	okay... this is a noob question... but whats the command to login to nickserv?
+<jashank_>	ser_berry: i still have access to the email account associated with it.
+<ser_berry>	circ-user-re5sx: /msg nickserv identify
+<circ-user-re5sx>	thanks
+<ser_berry>	jashank_: ah, perhaps a staff member can force a forgotten password request
+<colbyftp>	hi, can i get an unaffiliated cloak
+<v4e>	how do u play and join
+<mrelendig>	v4e: you just lost the game
+<sorlag>	what time of day do the staffers come on?
+<ibrar>	hmm okay i did the nickserv identify thing.. and its says im now logged in.. but still cant send any messages to #django
+<dtscode>	maybe they quieted you?
+<ibrar>	maybe, but its the first time ive joined the channel.... and just tried to send initial 'hi' for a few times. but it said cant send..
+<nighttrain>	no, you're not logged in.
+<nighttrain>	(not from this connection)
+<nighttrain>	err, yes you are.
+<dtscode>	i was going to say... my laptop thinks he is.
+<dtscode>	sorry ibrar i have no other ideas.
+<nighttrain>	sorry, yeah, he is logged in.
+<ibrar>	okies.
+<maxburgiv>	ho-ly cow
+<maxburgiv>	so many users
+<usr_>	who can help with file encryption?
+<teward>	usr_: depends on the goals, and the os you're using, so maybe you need to start in a channel specific for your os
+<flherne>	maxburgiv: as usual for irc, most people idle most of the time in most channels ;-)
+<maxburgiv>	that's true
+<maxburgiv>	a lot of times i just log into a channel and go afk for an eternity
+<cxki>	good morning! may i please have an unaffiliated vhost please, thanks :)
+<john8>	hi
+<john8>	can anyone see this message
+<grawity>	nope
+<john8>	then please reply
+<john8>	grawity
+<grawity>	what?
+<john8>	how are you
+<grawity>	do you have an irc tech support question
+<john8>	no i have a iphone question , but i joined this channel to see if you guys can see my question or what i am typing
+<john8>	is there any iphone or random chat room here..
+<john8>	because i need to talk to someone about my iphone...
+<john8>	grawity what do you think about it ?
+<valentinovd__>	http://valentinovd.github.io yes you can translate words :d
+<john8>	huh?
+<john8>	hmm
+<flherne>	john8: there are ##iphone, #iphonedev and ##apple
+<flherne>	if you've dropped the thing, maybe ##hardware
+<john8>	yeah oh well , i'll join these channels later to see if i can do something
+<john8>	thanks flherne
+<john8>	see ya later

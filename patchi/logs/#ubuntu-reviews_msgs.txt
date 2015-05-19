@@ -1,0 +1,109 @@
+<nigelb> yofel: thanks for correcting
+<nigelb> oh, good, we're now logged :)
+<nhandler> yep. "logs will start to show up not more than one hour after someone speaks in the channel": http://irclogs.ubuntu.com/2010/03/25/%23ubuntu-reviews.html
+<dholbach> good morning
+<akos> hi dholbach
+<dholbach> hi akos
+<yofel> morning
+<yofel> dholbach: reading the wiki page nigelb was working on yesterday the only requirenment to join atm is being part of bug control?
+<dholbach> yofel: persia can maybe answer that
+<yofel> ok, thx
+<persia> i'm not any better qualified to answer than anyone else.  i'd rather say that not being a member of bug control indicates one cannot join the team, but i don't know of positive requirements.
+<yofel> any team meeting planned yet to discuss this?
+<persia> ask nigelb or nhandler
+<dholbach> or bdmurray
+<persia> yeah.
+<persia> my personal sense is that the team is not that formal yet, so mostly anyone who wants to join can join, assuming that other folks think they have the qualifications.
+<persia> most of the new members i've seen have come because some member ha s asked an admin "hey, can you add <nick> to the team?"
+<yofel> mind if i apply then? i'm interested.
+<persia> i don't have any objections, but i'm not even a very active member of the team (i've maybe reviewed 30 patches in the past few weeks).
+<nigelb> i'm going through the process of creating a knowledge base for the reviewers team.  let me know if there is something specific that needs to be there
+<nigelb> nhandler: around to bounce some ideas off?
+<nigelb> i fail at writing wikis
+<nhandler> nigelb: sort of (if it is really fast). if not, send me an email and i'll reply later today
+<nigelb> nhandler: carry on then.  i'll just keep writing and you can review later :)
+<nhandler> :)
+<yofel> hey, i asked in the morning already? what are the requirenments to joing atm? anything else from the wiki page? i would be interested
+<yofel> s/already?/already/
+<nigelb> yofel: you can apply and ask d_holbach to approve
+<yofel> today's my typo day, meh...
+<yofel> that's true too
+<yofel> anyway, should bug 546220 be synced from debian with an ffe, or should the lucid package be patched?
+<ubot3> malone bug 546220 in nginx "include geoip support in nginx" [wishlist,triaged] https://launchpad.net/bugs/546220
+<yofel> not synced but merged
+<ibuclaw> yofel, thanks for reminding me :)
+<nigel_nb> yofel: we have far too less devs here, ask in -motu?
+<yofel> will do
+<ibuclaw> does lucid still allow login as root via gdm?
+<nigelb> dholbach: ping
+<dholbach> nigelb: pong
+<nigelb> what would be the process for new member to join reviewers?
+<nigelb> writing new wiki pages
+<nigelb> dholbach: ^ (i've currently put as ping you here)
+<dholbach> i have no idea
+<nigelb> no n
+<dholbach> maybe we should talk to bdmurray and other ubuntu qa people
+<nigelb> ah
+<dholbach> who have experience with the bug control thing
+<dholbach> and judge membership
+<dholbach> i dunno if we should make it open and free for all
+<nigelb> requirements are currently members of bug control
+<nigelb> but my question is, how should they apply and get accepted
+<nigelb> pinging you would be fine?
+<dholbach> no
+<dholbach> they can just apply in lp
+<dholbach> and any of the team admins can accept
+<nigelb> aha, okay :)
+<dholbach> i'm busy enough as it is right now and wouldn't want to be a blocker :)
+<nigelb> hehe
+<nigelb> dholbach: thoughts on having a "patch day" where we get all the reviewers together to work on bugs with patches attached?  thinking of having something after lucid release when a large part of motu would be free for some time.
+<dholbach> definitely
+<dholbach> maybe part of ubuntu open week
+<dholbach> to have a session there to explain everything
+<dholbach> and then do a patch day afterwards
+<nigelb> +1 for that
+<nigelb> i was thinking of doing a standalone session this week some time
+<nigelb> s/week/month
+<dholbach> sure
+<dholbach> might be worth talking to http://launchpad.net/~packaging-training-coordinators
+<nigelb> sure, i'll talk to nhandler :)
+<nigelb> before that, are you okay with the workflow now?
+<dholbach> i think we can improve it incrementally, my gut feeling is that we have too many tags
+<dholbach> and that those tags don't equate to tasks that we can ask people to perform
+<nigelb> got time?
+<dholbach> no, unfortunately not
+<nigelb> i can get you the use case for them
+<dholbach> i think we can roll with it now
+<dholbach> and revisit after lucid
+<nigelb> we'll roll and improvise later?
+<dholbach> that gives us some experience with how it works now
+<nigelb> i'm getting this in shape now https://wiki.ubuntu.com/reviewersteam
+<dholbach> i'm sorry, but i'm maxed out right now
+<dholbach> thanks a bunch for looking into this
+<nigelb> i'll work on a class later this month and patch day after lucid release
+<nigelb> no problem.  happy to help :)
+<dholbach> awesome!
+<ibuclaw> quick question, does lucid still allow login as root via gdm?
+<nigelb> no clue. :(
+<ibuclaw> i'm not near a machine atm
+<ibuclaw> well... a lucid machine
+<ibuclaw> nigelb, https://bugs.launchpad.net/ubuntu/+source/gdm/+bug/484317
+<ubot3> malone bug 484317 in gdm "gdm allows root logins" [medium,triaged]
+<nigelb> i'm still running karmic, so i can't test either
+<ibuclaw> a bug i raised a while back w/ patch attached
+<nigelb> hold on, lemme ask someone who might know
+<ibuclaw> i've just updated the tags (some were irrelevant)
+<nigelb> good news folks, the number of patches down has gone up from 6636 to 6697 :)
+<nigelb> sorry, about the /topic spam, made a mistake earlier, corrected now :)
+<iulian> so people who do not have access can still change the topic.
+<nhandler> iulian: any ubuntu member can change the topic: /msg chanserv help topic
+<nigelb> iulian: all ubuntu members can change the topic :)
+<nigelb> persia: byrce did some editing on the wiki to have https://wiki.ubuntu.com/reviewersteam/gettinginvolved
+<nigelb> a bit of copy editing and now it looks pretty good :)
+<persia> i saw that earlier.  it's much nicer now.
+<persia> although the "repeat step 3" doesn't make sense anymore :)
+<nigelb> ah, lemme see what it was supposed to do :)
+<nigelb> so, everyone is +1 for a patch day (bryce and bdmurray), and we might actually have it :)
+<nigelb> i need to work on finishing the wiki pages by then
+<nigelb> anything more you'd like me to add?
+<nigelb> persia: which is the page that gives information about making simple patches?

@@ -1,0 +1,92 @@
+<angelspy> hello adiroiban are you there?
+<adiroiban> hi
+<angelspy> i m dilara if you remember
+<angelspy> :)
+<adiroiban> sure
+<angelspy> you add a comment to appointing team question
+<angelspy> remember or i should remind?
+<angelspy> https://answers.launchpad.net/rosetta/+question/110895
+<adiroiban> yes. i have commented regarding my concerns
+<adiroiban> for the current lp-l10n-tr team
+<angelspy> so i have a bit troubles with team members
+<angelspy> either i have to make it open team to be with them
+<angelspy> or i got to make it moderated n got to wait people to jpin some how
+<adiroiban> making it open is just like having no transalation team
+<angelspy> got so many discussion about it, i tried to explain why it should be moderated, at the end i made it open so they joins
+<adiroiban> you make it moderated to protect the team agains people like me
+<adiroiban> who don't know turkish
+<adiroiban> but by joining the team
+<adiroiban> thei will be able to add bad turkish translations
+<angelspy> i know, they know. but they say, let me give some quotes
+<angelspy> - why should moderated by few people (which mentioned any body can be a moderator from team by decision of team),
+<adiroiban> if the team is open
+<angelspy> - it will give negative impression to independent translators, (which explained how bad translations are already around so we need filtering, they need to be choosen by their translations),
+<adiroiban> is like having no team
+<adiroiban> so there is no need for lp-l10n-tr
+<angelspy> yes. so i need an advise/
+<angelspy> i want it to open moderated but probably there will be no team member for a while because they will be pissed off :)
+<adiroiban> why are the pissed off?
+<adiroiban> they don't care about quality?
+<angelspy> as i wrote up, its not fair to other translators etc
+<adiroiban> why is not fair?
+<angelspy> nope. because they do changes somehow anyway
+<adiroiban> if the other translators are good
+<adiroiban> you will add them to the team
+<adiroiban> this is the way other teams work
+<angelspy> i did that by mistake , i though i m going to invite them but i add
+<adiroiban> and there are about 250 ubuntu teams doing the same
+<angelspy> and came up with -without permission add- discussion :(
+<angelspy> i know. so if i open this team ubuntu translators will not support me.
+<adiroiban> in the past we had open ubuntu translation teams
+<adiroiban> and this only create a lot of problems
+<adiroiban> and a bad fame for the ubuntu and launchpad translations
+<adiroiban> users and developers were no longer trusting the translations done in launchpad
+<adiroiban> due to those open teams
+<adiroiban> where everyone could add good or bad translations
+<adiroiban> if you don't want to make the team moderated
+<adiroiban> and make sure that all team members are good translators
+<angelspy> yea i gave them many examples and believing how stupid translation can be done :)
+<adiroiban> we will have to consider if we are going to approve the lp-l10n-tr team
+<adiroiban> i am not the only one to decide regarding this exception
+<adiroiban> and i will prefer that lp-l10n-tr team will be just like all other teams
+<adiroiban> and that it will implement a translation quality assurance process
+<angelspy> but as i sad, they are not going to join if it not open. so i have to do it myself for sometime, which i have no problem with that
+<adiroiban> from the point of view of launchpad developers/coordinators
+<adiroiban> you, as an owner for the team
+<adiroiban> are resposible for all the good and bad things that happen to the turkish translations
+<angelspy> hmm
+<adiroiban> it is you decision how you want to run the team
+<angelspy> when its open i cant take that responsibility of course
+<adiroiban> and what process to use for making sure the turkish translatios are right
+<angelspy> btw can you tell me if i open this team, i can get every turkish translatable projects open to team or not?
+<adiroiban> ther are more than 150 projects in launchpad, who have trusted their translations to launchpad translation group
+<angelspy> asking this because if i ll translate only normal things which open to ubuntu or so, than no need for a team
+<adiroiban> and as coordinator for the group, we are responsible for the bad and good things that happen for all the languages
+<adiroiban> each project chose to use a translation group
+<adiroiban> you can check the status here https://translations.edge.launchpad.net/+groups
+<adiroiban> there are 155 project for launchpad translators
+<adiroiban> and 193 for ubuntu translators
+<angelspy> because there are various teams, open or not. got some translations. and close teams sometimes dont give permissions and they can be having really bad translations thou. this is the only reason i want to open team
+<angelspy> so i want to have a good translation team to translate everything on launchpad
+<adiroiban> can you please explain the previous statement
+<adiroiban> with examples
+<angelspy> like there is a team acik kaynak or something
+<adiroiban> you can not have a translations team for translationg „everthing” in launchpad
+<angelspy> or limewire
+<adiroiban> yes
+<adiroiban> limewire are managing their translations
+<angelspy> i know not everything meant translatables :)
+<adiroiban> and are not using ubuntu or launchpad translators
+<angelspy> like edb. really having horrible tranlations
+<adiroiban> we have discussed with limewire and was their choise to have bad translations
+<adiroiban> edb ?
+<adiroiban> link?
+<angelspy> hmm then nothing to do for a while
+<angelspy> let me try to find
+<adiroiban> so for limewire we have talk with the developers of limewire
+<adiroiban> and informed them about these problems
+<adiroiban> but they chose to manage their own translations
+<adiroiban> without relying on launchpad or ubuntu translators
+<angelspy> can we give some break for a while/ sorry about it but i got to go somewhere :(
+<angelspy> thanks , nice to chat with you.. gonna give some headache later again :)
+<adiroiban> :)

@@ -1,0 +1,11 @@
+<sirex> labas rytas.
+<sirex> ar pastebėjot, kad nuo šiol šis kanalas loginamas?
+<kulverstukas> ta prasme loginamas? :p
+<kulverstukas> jis visada loginamas, visi isijungia loginima :p
+<sirex> viskas, kas čia rašoma, keliauja į irclogs.ubuntu.com
+<kulverstukas> mmm
+<sirex> Štai pvz.: http://irclogs.ubuntu.com/2011/03/09/%23ubuntu-lt.html
+<shookees> įdomu, įdomu
+<shookees> o chanserv šita funcija pagal prašymą neužsiimdavo? :s
+<sirex> shookees, nežinau.
+<shookees> ai ne, freenode taip nedaro

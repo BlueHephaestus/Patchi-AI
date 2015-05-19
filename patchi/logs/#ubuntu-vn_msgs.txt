@@ -1,0 +1,206 @@
+<vubuntor814> có ai bị như mình ko nhỉ
+<vubuntor814> gửi cái email vs đính kèm .rar là báo lỗi
+<vubuntor814> đẩy ngược về ??
+<mrtuxhdb> đấy là do server nó reject
+<vubuntor814> dạo này gmail khó thế nhỉ
+<vubuntor814> mới đọc article xong
+<mrtuxhdb> vubuntor814: lên google mà phàn nàn
+<mrtuxhdb> =))
+<mrtuxhdb> phàn nàn ở đây tác dụng gì :d
+<vubuntor814> cấm gần như tất cả định dạng nén
+<vubuntor814> =.=
+<mrtuxhdb> tại vì bạn nén file exe vào nó thế
+<mrtuxhdb> :v
+<vubuntor814> gửi bằng cái gì :v
+<vubuntor814> nén exe + đặt pass dc ko nhỉ
+<mrtuxhdb> đếu ai gửi đống exec, src, script qua mail làm gì
+<mrtuxhdb> toàn đồ bậy bạ
+<vubuntor814> gửi cho con bạn cái trail reset ấy mà :p
+<mrtuxhdb> nén 7z là nó không scan nữa
+<mrtuxhdb> vubuntor814: đấy là crack
+<mrtuxhdb> coconutcrab: ban vubuntor814 đi kìa
+<mrtuxhdb> phát tán hàng lậu
+<vubuntor814> trước xài win sưu tầm được cái đó giowf chuyển qua đây ko xài nữa nên tajngwj cho nó
+<vubuntor814> để nén thành 7z rồi gửi nó. thanks ông nhá
+<vubuntor814> 7z cũng bay nhé :))
+<vubuntor814> an error occurred while sending mail. the mail server responded:  5.7.0 this message was blocked because its content presents a potential 5.7.0 security issue. please visit 5.7.0 http://support.google.com/mail/bin/answer.py?answer=6590 to review our 5.7.0 message content and attachment content guidelines. u8sm6472439pdj.46 - gsmtp. please check the message and try again.
+<superluserv3> [ some file types are blocked - gmail help ] - support.google.com
+<lewtds> lol heckơ
+<vubuntor703> không dùng wine có cách nào chạy autocad hay mấy chương trình viết trên foxpro ko ?
+<vubuntor703> ko nói dùng máy ảo gỉa lập nha
+<mrtuxhdb> vubuntor703: quá dễ cmnl
+<mrtuxhdb> cài máy ảo + remote máy ảo nơi khác
+<mrtuxhdb> vẫn làm việc bình thường :d
+<vubuntor703> đang làm đề án chuyển đổi hệ thống ở cơ quan sang ubuntu mà còn bị cái soft lập trình bằng foxpro vs autocad
+<vubuntor703> nếu cài máy ảo hoặc remote máy server thì tính khách quan e là không đủ :(
+<mrtuxhdb> vubuntor703: mình nói thật nhá
+<mrtuxhdb> cty bạn không nên chuyển nên phải động đến một số phần mềm chuyên dụng
+<mrtuxhdb> end story :d
+<vubuntor703> không biết vì 1 lí do thần bí nào đó
+<vubuntor703> ms nó gửi bảng kê xuống y/c kê khai toàn bộ máy tính vs office
+<vubuntor703> toàn hàng crack nên ớn :)) sếp bắt viết đề án chuyển đổi nên bị bí
+<mrtuxhdb> nhà nước?
+<vubuntor703> vnpt
+<mrtuxhdb> vnpt nhiều người xịn thế cơ mà
+<mrtuxhdb> vubuntor703: office thì ok
+<vubuntor703> office thì có libre rồi
+<mrtuxhdb> còn những khu vực sử dụng phần mềm chuyên dụng thì vẫn phải đầu tư tiền
+<mrtuxhdb> autocad giá cao khủng khiếp cmnl =]]
+<mrtuxhdb> bớt tí ab lại mua windows
+<mrtuxhdb> windows rẻ bèo
+<vubuntor703> kẹt chỗ phần chương trình thu nợ cước, quản lý cước thì lập trình trên foxpro
+<vubuntor703> thiết kế hạ tầng thì vẽ bằng autocad
+<mrtuxhdb> chạy trên wine mà nó suốt ngày xịt thì cũng bằng nhau :d
+<mrtuxhdb> kiểu gì cũng phải mất một phần tiền dành cho chỗ đó
+<mrtuxhdb> chuyển đổi là rất tốt theo quan điểm của mình
+<mrtuxhdb> nhưng không thể đùng cái chuyển 100% được là cái đầu tiên
+<mrtuxhdb> chưa kể còn iấn chia sẻ file
+<vubuntor703> đề án chuyển đổi quốc gia ban hành hơn 3 năm nay mà tỉ lệ mới dc có <10%
+<mrtuxhdb> thêm vào đó nếu hệ thống đang đi kèm ad nữa thì chuyển đổi lại khác
+<mrtuxhdb> vubuntor703: nhà nước trì trệ lắm mà lại nhiều *tiền* nên đương nhiên việc chuyển đổi không thành công
+<vubuntor703> tiền vào túi mấy lão sếp hết
+<mrtuxhdb> hơn nữa người làm cái đó lại không có tâm
+<mrtuxhdb> nên rất khó
+<vubuntor703> nv quenf thì bị hành
+<mrtuxhdb> mình là người ở dưới thì cũng chả làm gì được đâu
+<vubuntor703> tui là sale mà có kiến thức it nên bị bắt làm
+<vubuntor703> =.=
+<mrtuxhdb> hơn nữa phải xác định cái gì chuyển được, cái gì đáng chuyển
+<vubuntor703> gio` khóc ko dc cười ko xong nè
+<mrtuxhdb> chuyện viết đề án thì cứ viết
+<mrtuxhdb> đúng trách nhiệm thì thôi
+<mrtuxhdb> phân tích tình thực tế cho nó đúng
+<mrtuxhdb> còn muốn tiêu tiền thuế thì ... gọi mềnh :v
+<mrtuxhdb> vubuntor703: bạn ở vnpt tỉnh nào?
+<vubuntor703> đồng nai
+<vubuntor703> mấy ổng ăn thấy sợ
+<mrtuxhdb> vubuntor703: =]]
+<vubuntor703> phần qùa tết trị gía mua lẻ có 300k
+<vubuntor703> lên thành 600
+<vubuntor703> vl
+<vubuntor703> =.=
+<vubuntor703> mua lẻ mà gía 300 thì mấy ổng mua 1 lần cả ngàn phần nó còn bao nhiêu nữa =.=
+<mrtuxhdb> hết sức bình thường :d
+<vubuntor703> chỉ có mấy thằng lính là khổ
+<mrtuxhdb> vubuntor703: anyway, quay lại vấn đề chính
+<vubuntor703> chạy như con chó mà bị chửi đủ kiểu
+<mrtuxhdb> cơ quan bạn định chuyển đổi như thế nào?
+<mrtuxhdb> định đầu tư hay kế hoạch làm như thế nào?
+<vubuntor703> chuyển sang linux theo đề án của chính phủ
+<vubuntor703> mới kêu mình viết thôi chưa biết làm sao
+<mrtuxhdb> có cần công ty nào tư vấn không
+<mrtuxhdb> mình nói thật :d
+<vubuntor703> cái phần đó chờ mấy sếp duyệt
+<vubuntor703> mình ko đủ thẩm quyền :(
+<mrtuxhdb> hiểu mà :d
+<vubuntor703> chỉ là thằng gõ phím thuê thôi
+<mrtuxhdb> đề án chính phủ chỉ đạo sao?
+<vubuntor703> gio` mình nghĩ cách ntn
+<mrtuxhdb> có link hơm
+<mrtuxhdb> để xem các cụ ở trên chỉ đạo như nào
+<vubuntor703> công văn ở cơ quan có dc mang về đâu
+<mrtuxhdb> còn tinh thần thực tế
+<mrtuxhdb> là sẽ phải chuyển từ từ
+<mrtuxhdb> theo từng giai đoạn
+<mrtuxhdb> chỗ nào chỉ có đánh văn bản
+<mrtuxhdb> email
+<mrtuxhdb> chat
+<mrtuxhdb> tra cứu thông tin
+<mrtuxhdb> làm công việc hành chính trên webapp
+<mrtuxhdb> chuyển trước
+<mrtuxhdb> các bộ phận chuyên ngành/kĩ thuật chuyển sau
+<mrtuxhdb> tùy bộ phận
+<mrtuxhdb> cái nào không chuyển được thì phải tính toán phương án mua sắm bản quyền
+<vubuntor703> các bộ phận sử dụng phần mềm chuyên ngành chắc dùng win
+<mrtuxhdb> yup
+<vubuntor703> cái bộ autocad nó 5000$
+<vubuntor703> ^^!
+<mrtuxhdb> mua nhiều
+<mrtuxhdb> lại gov
+<mrtuxhdb> giá khác mà
+<mrtuxhdb> với cả deal được
+<mrtuxhdb> tìm thằng distribution mà deal
+<vubuntor703> “xây dựng chính quyền điện tử trên nền tảng phần mềm nguồn mở”
+<vubuntor703> linux lên ngôn
+<mrtuxhdb> no no
+<mrtuxhdb> "nền tảng phần mềm nguồn mở"
+<mrtuxhdb> không chỉ có linux
+<mrtuxhdb> :d
+<vubuntor703> core thì chắc mấy ổng chạy redhat
+<mrtuxhdb> nó là cả một ecosys bao gồm cả ứng dụng server lẫn client
+<vubuntor703> mà redhat éo free
+<mrtuxhdb> rhel subscription không rẻ lắm
+<mrtuxhdb> nếu muốn tiết kiệm thì không nên xài
+<mrtuxhdb> cứ centos mà đập
+<mrtuxhdb> nhưng phải có chuyên viên quản trị đủ năng lực
+<vubuntor703> vấn đề quan trọng là ko biết có đủ nhân lực có trình độ để quản trị hay ko
+<mrtuxhdb> mà rhel cũng thế thôi
+<vubuntor703> chứ nói thật
+<mrtuxhdb> centos/ubuntu
+<vubuntor703> tui làm đây thấy mấy má mà thấy nản
+<mrtuxhdb> debian
+<mrtuxhdb> vubuntor703: mỗi người một việc
+<mrtuxhdb> cũng như thằng it đếu làm kế toán được
+<mrtuxhdb> nên đừng chê trách người ta :d
+<vubuntor703> để mình viết luận cương căn bản trình sếp rồi nếu sếp duyệt thì mới bắt đầu xin ng tư vấn
+<mrtuxhdb> cái đề án phải có điều tra/ thống kê tình hình thực tế nữa
+<lewtds> nói một hồi vẫn k hiểu point của bác 703 kia là gì nữa :-?
+<mrtuxhdb> lewtds: bị sếp đì
+<mrtuxhdb> vào hỏi ấy mà
+<mrtuxhdb> =]]
+<vubuntor097> hỏi ngu: sao lúc sudo apt-get update nó đòi password mà lúc nhập pass lại ko bị thành ***** nhỉ
+<vubuntor097> ví duj đây
+<vubuntor097> http://pik.vn/20155b107f23-503d-4470-9ffd-ce75ad07bedf.png
+<vubuntor097> screenshot ko hiện
+<mrtuxhdb> vubuntor097: vì nó thế
+<mrtuxhdb> :d
+<vubuntor097> mà trên màn hình thì thấy -.-'''
+<mrtuxhdb> nó không hiện lên
+<mrtuxhdb> cứ gõ tự nhiên rồi enter
+<vubuntor097> gõ thì nó vẫn lên đầy đủ password như gõ code bt luôn
+<vubuntor039> chào các bác, em mới dùng 14.04 mà vọc nhiều cài lung tung cứ bị lỗi phải cài lại máy mấy lần mệt quá :( em hỏi có cách gì như system restore bên win để vọc cho dễ ko ạ
+<quydo> cài máy ảo nhá
+<vubuntor039> :(
+<quydo> sao bịlooix mà phải cài lại
+<vubuntor039> báo 1 loạt vậy em biết lỗi chính xác đâu, như lần gần đây nhất thì em cài driver amd, rồi steam, rồi mấy thứ linh tinh nữa, xong upgrade lên 14.10 thì đen màn hình :(
+<mrtuxhdb> quá bình thường luôn
+<mrtuxhdb> vubuntor039: dùng card amd?
+<vubuntor039> ko có cách nào backup system để khi nào lỗi quay lại cho dễ à bác
+<vubuntor039> vâng :3 em biết thằng amd này khó chơi
+<mrtuxhdb> cách xử lý vô cùng đơn giản
+<mrtuxhdb> gỡ bỏ cái fglrx
+<mrtuxhdb> reinstall unity
+<mrtuxhdb> done
+<mrtuxhdb> cùng lắm reset unity nữa là perfect
+<vubuntor039> em cài thêm desktop lubuntu nữa, khi đấy ko vào dc unity luôn :3 cũng ko tắt dc máy, sau đó em cài lại rồi :(
+<vubuntor039> ko có driver chơi dota2 bị nháy hình bác ạ
+<mrtuxhdb> vubuntor039: thế kể ra làm đếu gì nữa
+<mrtuxhdb> mất công support
+<vubuntor039> thì bác quydo bảo sao phải cài lại nên em kể :d
+<vubuntor039> em hỏi có cách nào tuơng tự system restore bên win cho dễ vọc ko
+<mrtuxhdb> có
+<mrtuxhdb> mà quên đi
+<vubuntor039> ọc
+<mrtuxhdb> tìm cách sửa thay vì cài lại
+<mrtuxhdb> đấy mới là cách làm việc của linux user
+<mrtuxhdb> tìm nguyên nhân
+<mrtuxhdb> khắc phục
+<mrtuxhdb> nó mới tăng skills
+<mrtuxhdb> còn dùng đồ chơi thì xài windows là được rồi
+<vubuntor039> em bỏ win rồi ạ, giờ trước mắt kiếm 1 cái ổn định đã
+<vubuntor039> :d
+<vubuntor039> có thể cài thêm 1 cái linux nữa
+<mrtuxhdb> để làm cái đếu gì?
+<vubuntor039> thì nghịch cái linux kia :d chứ cái này phá hỏng nữa thì lấy gì dùng
+<mrtuxhdb> nhảm sh!t
+<mrtuxhdb> vubuntor039: thế là trò mèo
+<mrtuxhdb> có giỏi hơn đâu ngoài vụ "tao xài nhiều hơn"
+<mrtuxhdb> :))
+<quydo> mrtux rảnh thế
+<mrtuxhdb> quydo: rảnh mô?
+<vubuntor039> tóm lại vẫn phải dùng song song win à
+<vubuntor039> mrtux người miền trung ợ?
+<mrtuxhdb> người miền bắc, sống ở miền nam nói giọng miền trung
+<mrtuxhdb> =]]
+<vubuntor039> vãi
+<quydo> voãi

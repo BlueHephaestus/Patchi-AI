@@ -1,0 +1,52 @@
+[00:02] <GefilteFish> Can someone help me fix this "boot device not found 3f0" error? What I did was delete my EFI partition now I'm stuck with a bricked laptop with Xubuntu installed, but inaccessible. All the Linux distros I've tried on a LiveUSB won't boot. Super Grub2 Disk is the only exception but it's kind of useless. I can use it to get to Xubuntu's terminal though.
+[02:55] <pandji> hi guess, my Audacious wont work
+[02:55] <pandji> it say ALSA error: No suitable mixer element found.  ALSA error: snd_mixer_find_selem failed.
+[02:55] <ianorlyn> pandji: does any soudn work
+[02:56] <pandji> no
+[02:56] <pandji> but my GNOME player work well
+[02:56] <holstein> !audio
+[02:56] <ubottu> If you're having problems with sound, click the Volume applet, then Sound Preferences, and check your Volume, Hardware, Input, and Output settings.  If that fails, see https://help.ubuntu.com/community/Sound - https://help.ubuntu.com/community/SoundTroubleshooting - http://alsa.opensrc.org/DmixPlugin - For playing audio files,  see !players and !mp3.
+[02:56] <holstein> pandji: so, *does* sound play in gnome player? yes or no?
+[02:57] <pandji> yes
+[02:57] <holstein> pandji: what OS are you using? lubuntu? 14.04? 15.04? any ppa's? what are you trying to play? an mp3? what type of file?
+[02:58] <pandji> mp3
+[02:58] <pandji> i am newbie here :)
+[02:59] <holstein> i would personally remove codec support from the equation, and test with a simple ogg
+[02:59] <pandji> i just intall Lubuntu 14.04 just a minute ago :p
+[03:01] <pandji>  thx ubottu I.ll check alsa.opensrc ...
+[03:01] <holstein> ubottu is a bot
+[03:01] <ubottu> Yes, I can confirm that I am a bot. http://wiki.ubuntu.com/IRC/Bots for all information.
+[03:01] <pandji> holstein : any manual / howto to do that, tthx
+[03:01] <holstein> how to do what?
+[03:02] <pandji> u say to remove codec support from ...
+[03:02] <pandji> :p
+[03:03] <holstein> pandji: i say, theres no need to test with an mp3
+[03:03] <holstein> pandji: i said, remove mp3 support from your equation by not using an mp3 to test if you audio is working or not
+[03:03] <holstein> use soemthing that is known supported, an ogg, for example, or an audio test
+[03:04] <pandji> oh i see, so got to convert all my mp3 into ogg first ya :p
+[03:04] <holstein> pandji: i did *not* say that
+[03:04] <holstein> pandji: i dont want, or think you should convert all your mp3's
+[03:04] <ianorlyn> I usually buy cds and rip to flac or ogg
+[03:05] <holstein> pandji: i say, you could have a codec issue that you are percieving as audio playback issue
+[03:05] <holstein> pandji: you say, audio isnt working, and i say, your mp3's are not workling, so, try a simple, known-good ogg
+[03:05] <holstein> if the ogg plays, then, you no audio plays in audacious.. and you can add mp3 support
+[03:06] <pandji> okay, ill try to download some ogg files first
+=== tahr193531 is now known as stevend4le
+=== SonikkuAmerica is now known as littlebunnyfufu
+=== littlebunnyfufu is now known as S-USA
+=== S-USA is now known as S-USA|Werehog
+=== S-USA|Werehog is now known as Shadow4000
+=== Shadow4000 is now known as HedgehogUSA
+=== HedgehogUSA is now known as He_Who_Is_Nuts
+=== He_Who_Is_Nuts is now known as SonikkuUSA|N
+[15:01] <lubuntu274> If i use lubuntu 64bit Is any software on Lubuntu 64 bit ?
+[15:10] <teward> lubuntu274: i don't understand your question?
+[15:10] <lubuntu274> Strange.
+[15:16] <lubuntu274> Some OS can be 64bit and sometimes the programs on it can be 32bit.
+[15:17] <teward> lubuntu274: most programs in the Ubuntu repositories exist on both
+[15:17] <teward> lubuntu274: some are 32bit only but you can set up multiarch support and that solves that
+[15:18] <lubuntu274> If i use 64 bit is it installs 64 bits programs automatic ?
+[15:18] <teward> lubuntu274: typically yes.
+[15:18] <teward> lubuntu274: at least, when installing from the repositories
+[15:21] <BadLuckRyan> Hello, can someone walk me through how to recreate my EFI partition? I deleted it by accident but found a way to make one with GParted. I have a workaround to get to Xubuntu desktop but when my laptop boots normally I get "boot device not found 3f0".   Basically, i need to repopulate the /boot/efi/ path
+[15:28] <lubuntu274> What linux i mostly used on a netbook ? I have 64bit cpu and 1GB ram.

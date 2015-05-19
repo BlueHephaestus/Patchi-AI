@@ -1,0 +1,6 @@
+[14:25] <OvenWerks> zequence: Bug #1455920 I have a private branch I would like to merge to fix this...
+[14:25] <ubottu> bug 1455920 in qmidiroute (Ubuntu) "settings from saved config files are not loaded correctly" [Undecided,New] https://launchpad.net/bugs/1455920
+[14:42] <OvenWerks> I don't seem to be able to put a merge request in, but have added a patch diff to the bug.
+[15:18]  * OvenWerks is still working at trying to contact the maintainer.
+[20:49] <zequence> OvenWerks: Did you try create a patch ticket for the sourceforge project?
+[20:51] <zequence> Might be better to first create a bug ticket tho

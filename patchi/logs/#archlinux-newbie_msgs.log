@@ -1,0 +1,445 @@
+<darkelement>	how can i connect to the internet with my arch linux on vmware
+<darkelement>	i have checked ip link and lspci and i know that i have a wireless card ready
+<halosghost>	what are you using to connect to the wifi?
+<darkelement>	i'm not able to connect to the wifi
+<darkelement>	as far as i can tell
+<darkelement>	i was unable to use pacman to install programs,however
+<mrelendig>	what card?
+<darkelement>	ip link returns (1)lo and (2) eno16777736
+<darkelement>	however none of the iwconfig, ipconfig commands are installed
+<mrelendig>	ipconfig is not a gnu/linux thing
+<darkelement>	ifconfig
+<halosghost>	ifconfig is deprecated
+<mrelendig>	ifconfig was deprecated over a decade ago
+<darkelement>	ok what do i do then
+<mrelendig>	connect the wired network since you forgot to install the wifi tools
+<mrelendig>	or boot the install image again, set up network, chroot in, install what you need
+<darkelement>	how can i connect to the wired network?
+<darkelement>	with ethernet, or commands you mean
+<darkelement>	gonna assume ethernet, in which case i will connect when home
+<mrelendig>	dhcpcd eno1
+<halosghost>	<tab>
+>nickserv<	identify ****
+<darkelement>	mrelendig, back at home, however even with a wired connection im not able to install with pacman because of connection failure
+<fsckd>	darkelement: does host work?
+<darkelement>	command not found
+<darkelement>	for "host"
+<fsckd>	i mean in the host
+<fsckd>	does the host's network work?
+<darkelement>	yea
+<fsckd>	so just in vmware?
+<darkelement>	yep, just with archlinux as well, i am able to connect with my ubuntu vm
+<fsckd>	ok, i have never used vmware with linux
+<fsckd>	from arch can you ping 8.8.8.8 ?
+<kyusaki_>	good morning everyone
+<sniper338>	gud afternoon :)
+<gehidore>	ya
+<colbyftp>	i want to install yaurt, but need to install package-query 1st
+<colbyftp>	use wget not installed
+<colbyftp>	sudo pacman -s wget databse for wget does not exist
+<colbyftp>	is there another way from base to download wget
+<colbyftp>	everytime i think i resolve an issue another presents itself :)...am i understading this right, to use makepkg. i hould set up a tmp folder somewnere for my builds, and cp then modify the pkdest variable to point the new temp dir i set up
+<namarrgon>	what are you trying to do? just build an aur/abs package?
+<colbyftp>	install package-query, i just did a fresh install and added basic xfce and sound now i want to install yauoart
+<colbyftp>	plus i want to do most through termianl so i will learn more
+<namarrgon>	get the tarball from the aur, extract it to a build-directory. then look through the pkgbuild and .install to make sure they aren't doing anything stupid.
+<namarrgon>	then build/install with makepkg.
+<colbyftp>	makepkg returns ==> error: pkgbuild does not exist.
+<namarrgon>	you have to run makepkg in the directory with the pkgbuild.
+<namarrgon>	go through the makepkg page on the wiki, just in case i forgot to mention something.
+<colbyftp>	i think i may have resolved, i found a install in the tar:-
+<colbyftp>	 briefly, the shell commands `./configure; make; make install' should
+<colbyftp>	configure, build, and install this package.
+<namarrgon>	yup
+<colbyftp>	sry:)
+<namarrgon>	also look for source=, it should download from a legitimate source.
+<colbyftp>	np thanks
+<colbyftp>	so now to download and install octopi, see if i have learnt anything :)
+<colbyftp>	ya ever stare at the makepkg text and try to make pictures
+<nawarch>	buenos dias tengo una pregunta
+<nawarch>	resulta que al actualizar mi arch quedo con el ultimo kernel pero ahora no tengo conexion a wifi, nisiquiera me aparece la interface he usado iwconfig para ver las interfaces
+<namarrgon>	tsk, no patience
+<colbyftp>	anyone know how i could app spotify to xfce systray
+<fsckd>	this perhaps? https://community.spotify.com/t5/help-desktop-linux-mac-and/what-happened-to-quot-minimize-to-tray-quot-option/td-p/1042139
+<phrik>	title: what happened to "minimize to tray" option ?? - the spotify community (at community.spotify.com)
+<colbyftp>	ah that explains it. thanks
+<colbyftp>	well that means i will install https://aur.archlinux.org/packages/mopidy-spotify/
+<phrik>	title: aur (en) - mopidy-spotify (at aur.archlinux.org)
+<colbyftp>	sry guys, decided to use yaourt, but i keep getting unable to open file: /usr/local/etc/pacman.conf
+<colbyftp>	on the net it say to edit /etc/profile and put /usr/bin 1st in the path line but still no dif
+<namarrgon>	how did you install yaourt?
+<colbyftp>	i can't remember tbh
+<colbyftp>	should i remove and reinstall
+<colbyftp>	r create a syslink ...
+<fsckd>	create a symlink? why?
+<fsckd>	if i had to guess, you installed something outside of pacman. that's a no no.
+<colbyftp>	so when it goes looking in the wrong dir it will link over to the right file?? noob here just guessing
+<colbyftp>	anything i have installed has been either pacman or direct from aur using makepkg
+<fsckd>	yaourt shouldn't be looking in /usr/local
+<colbyftp>	except the 'query' dependant for yaourt which i insalled using .config/make/make install
+<fsckd>	ahh there you go
+<fsckd>	that's why you're have that problem. you installed package-query outside of pacman
+<colbyftp>	ahh ok
+<fsckd>	not using pacman makes things harder as you have to do things by hand. :/
+<colbyftp>	brand new so was trying to do everything manually oops any idea how i shoud correct
+<fsckd>	you have to find the files, remove them, then install package-query with makepkg+pacman
+<colbyftp>	this is what i do now, let me know if i am doing it right
+<colbyftp>	wget file from aur
+<colbyftp>	extract cd into dir   makepkg -si
+<colbyftp>	thts it
+<fsckd>	that's the correct way
+<colbyftp>	ok just fecked up right at the start
+<fsckd>	hehe, no worries. better to learn this lesson on something simple. i once installed xen outside the package manager. never again. ><
+<colbyftp>	lol i can imagine
+<fsckd>	most likely the files are dumped under /usr/local. so shouldn't be hard to find its stuff.
+<fsckd>	don't remove everything from /usr/local. only remove the package-query stuff
+<colbyftp>	../usr/local/bin has package-query, no where esle in local does
+<fsckd>	one moment
+<colbyftp>	reinstall package-query using empty --prefix ./configure --prefix=
+<fsckd>	don't
+<colbyftp>	somwone has shared that
+<colbyftp>	i wont
+<fsckd>	ahh ok
+<fsckd>	ok i have a list of files
+<colbyftp>	cool thank you for helping me
+<fsckd>	(i built and "installed" it, to under /tmp like i was packaging)
+<fsckd>	only two files i think
+<colbyftp>	lets hope so
+<fsckd>	/usr/local/bin/package-query
+<fsckd>	/usr/local/share/man/man8/package-query.8
+<darkelement>	so guys when you install arch on vmware using an iso, do you need to download any network stuff? i can't connect.
+<colbyftp>	try changing virtual box settings to bridged
+<namarrgon>	darkelement: no, 'base' has all you need for dhcp/static
+<fsckd>	colbyftp: also if you can, please share the output of `tree /usr/local` in a pastebin service
+<colbyftp>	in order bin etc games lib man sbin share src
+<colbyftp>	ah ok
+<colbyftp>	tree a command
+<darkelement>	namarrgon, i can't download anything with pacman, and i believe i installed base. it is giving unable to connect errors, any ideas?
+<colbyftp>	darkelement: change vb settings to bridged under network
+<namarrgon>	darkelement: what gives your errors?
+<namarrgon>	pacstrap?
+<colbyftp>	fsckd: http://pastebin.com/rdgmwcvy
+<phrik>	title: [colbyf@localhost local]$ tree /usr/local /usr/local |-- bin |-- etc |-- gam - pastebin.com (at pastebin.com)
+<darkelement>	colbyftp: ahh, thats right
+<darkelement>	namarrgon: one sec
+<fsckd>	colbyftp: looks like it is all gone :)
+<fsckd>	colbyftp: install package-query like normal
+<colbyftp>	fsckd: i changed /etc/profile around, shoudl i change it back 1st
+<fsckd>	what changes did you make?
+<colbyftp>	just the path, changed the order thats all
+<colbyftp>	path="/usr/bin:/usr/local/sbin:/usr/local/bin"
+<fsckd>	it might not matter. you can change it back if you'd like, or keep it
+<colbyftp>	i think sbin was 1st and /usr/vin was last
+<fsckd>	yeah, mine has /usr/bin last
+<fsckd>	and sbin first
+<colbyftp>	cool, changed back to normal then
+<fsckd>	probably should have stuff under local first
+<colbyftp>	ok installed again just have to remember what i was doing lol
+<fsckd>	hehe
+<colbyftp>	wooohoooo thankyou :) its make it past that error :)
+<fsckd>	yay, congrats. and you are welcome. :)
+<colbyftp>	what does enter no of packages to be installed mean?
+<colbyftp>	options 1 2 3
+<colbyftp>	got it, it was difficult to make sense of when only 1 package appeared
+<swift110_>	hey
+<meskarune>	hai
+<darkelement>	back guys, and making it a bridge network did not solve the issue
+<darkelement>	i still cannot resolve host.
+<fsckd>	darkelement: can you ping 8.8.8.8?
+<darkelement>	unreachable
+<namarrgon>	have you set up your network?
+<gehidore>	doh bad up arrow
+<gehidore>	fsckd: are you on 8.8.8.8 for your dns?
+<angrysteve>	8.8.8.8 is evil!
+<darkelement>	friend remote connected and it's working alright now, ty!
+<namarrgon>	were you told what to do?
+<darkelement>	just needed to do dhcpcd
+<namarrgon>	just 'dhcpcd'?
+<darkelement>	yep :p
+<namarrgon>	https://wiki.archlinux.org/index.php/beginners%27_guide#wired
+<phrik>	title: beginners' guide - archwiki (at wiki.archlinux.org)
+<namarrgon>	do it properly
+<darkelement>	yea, ill download wireless :d
+<namarrgon>	what?
+<darkelement>	stuff for wireless connections
+<namarrgon>	you have to enable the service to make it persist across reboots
+<darkelement>	ok
+<namarrgon>	wifi in a vm?
+<darkelement>	thought thats what you meant, but i realize my mistake
+<darkelement>	:|
+<fsckd>	gehidore: nope
+<fsckd>	gehidore: i think i use this on my desktop https://wiki.archlinux.org/index.php/dnscrypt
+<phrik>	title: dnscrypt - archwiki (at wiki.archlinux.org)
+>nickserv<	identify ****
+usage: join <channel>, joins the channel
+<manish>	hi
+<manish>	i'm having trouble running gnome terminal, can anybody help me out ?
+<manish>	the error i get is - > error constructing proxy for org.gnome.terminal:/org/gnome/terminal/factory0: error calling startservicebyname for org.gnome.terminal: gdbus.error:org.freedesktop.dbus.error.spawn.childexited: process org.gnome.terminal exited with status 8
+<manish>	ty to help
+<mrelendig>	!give manish_afk away-ng
+<phrik>	manish_afk: we will murder you for using away nicks: http://bisqwit.iki.fi/jutut/away.html
+<manish>	hi, any tips ?
+<namarrgon>	is your locale set up?
+<f87ahsdfo>	hello, can someone help me stup offlineimap for my university account?
+<darkelement>	how can i log into the guest os on my vmware arch linux?
+<darkelement>	i want to install vmware tools.
+<namarrgon>	you boot it?
+<spechter>	is there a way to force a command to split his output to several lines ?
+<spechter>	i'm trying to startx, but it fails and he puts all error in just one line which doen't fit my screen
+<spechter>	i've already read the log, but fixing errors with missing fonts didn't help
+<cheese>	did it give you an error number?
+<spechter>	i don't think so
+<spechter>	i will check after a quick restart
+<spechter>	no, it didn't give me a error number
+<spechter>	and running mkfontdir in the given directory fixed it so far
+<spechter>	there is one warning left about opening acpi failed for a missing directory
+<cheese>	well sounds like you know more than me.
+<cheese>	i just had a problem with xorg giving me error 1
+<cheese>	reinstalled the video driver and it worked
+<spechter>	ok, i will try that
+<cheese>	not sure i would listen to me. i dont even know if is working. i run startx and i get a black screen. i run startx 'openbox sessions' and get a black screen
+<cheese>	having trouble finding the file
+<fsckd>	probably you didn't make it. don't worry, you can make it now. :)
+<fsckd>	there is this https://wiki.archlinux.org/index.php/xinitrc
+<phrik>	title: xinitrc - archwiki (at wiki.archlinux.org)
+<tigrmesh>	ls -l .*rc*
+<cheese>	thanks. let me give it shot
+<cheese>	not sure if im doing this right. startx run /etc/x11/xinit/xinitrc,  gives me a black screen
+<fsckd>	the default xinitrc starts twm and xterm. you need the packages for both of those installed
+<cheese>	ahhh...  i see....
+<cheese>	so if i decide to skip those andn
+<fsckd>	make your own ~/.xinitrc
+<cheese>	and just run open box would there be problem
+<fsckd>	no problem. but you have to make your own xinitrc
+<fsckd>	https://wiki.archlinux.org/index.php/openbox#standalone
+<phrik>	title: openbox - archwiki (at wiki.archlinux.org)
+<spechter>	when running startx  now i get no errors shown in terminal
+<spechter>	and when reading the logs in /var/log/xorg.0.log it say adding pc speaker and next line is closing several evdev
+<fsckd>	spechter: share the full log please
+<blahdodo>	anybody have any ideas how to stop dropped packets in kvm guest - tried "sudo ethtool -k eth0 tx off sg off tso off ufo off gso off gro off" no joy
+<tigrmesh>	cheese, the other thing pacman will do for you is show you what's installed.  as much as possible, package everything and install it with your package manager
+<tigrmesh>	so when you find something awesome that depends on a certain version of a package, you can see whether it's installed
+<spechter>	http://fpaste.org/220289
+<phrik>	title: #220289 • fedora project pastebin (at fpaste.org)
+<spechter>	there is my most recent log
+<fsckd>	spechter: no errors, how are you starting it?
+<cheese>	so (+ti pacman -ss openbox
+<cheese>	pacman -ss openbox doesnt seem to work
+<cheese>	something about config file ..... mirriorlist..... core not recognized
+<fsckd>	cheese: sorry, not ss as that searches, just s by itself
+<fsckd>	see: https://wiki.archlinux.org/index.php/pacman#installing_packages
+<phrik>	title: pacman - archwiki (at wiki.archlinux.org)
+<cheese>	ok that makes more sense. ive done that. i thought it was another command or something. i have like 0 experience in the command line. its taken me a week to get this to boot up.
+<fsckd>	ahh, if i may ask, what did you use before?
+<cheese>	osx and windows
+<fsckd>	oh i see. osx is technically unix but one can go without ever using the command line
+<cheese>	yea... that was. me just point and click
+<fsckd>	what made you chose arch?
+<fsckd>	choose*
+<cheese>	after upgrading to yosemite my computer got even slower. im over all the crap they bundle with the os. i like the idea of arch keeping it simple and that you only install what you want. plus i thought building it from the ground up would be a good learning experience
+<fsckd>	yeah, it can be a good learning experience. you've dived in. :)
+<fsckd>	arch isn't hard if one perseveres and tried to learn. it isn't intended for beginners but it isn't impossible for beginners.
+<cheese>	the more i play with it the more i'll understand and the easier it will get.
+<cheese>	plus there is so much info out there for it.
+<cheese>	and support
+<fsckd>	hehe, i'm told the wiki is the best. when i started using arch, gentoo's wiki was the best.
+<cheese>	the wiki is till pretty heavy right now but its definitely helpful
+<cheese>	i get an error during xorg-config. the log says i have a kernel claiming my video card. lsmod shows video i915, apple_gmux.... is this why im still getting a black screen?
+<cheese>	i followed the wiki and download the 340.xx when initially trying to set up xorg
+<manish>	hi! i'm having trouble running gnome terminal, can anybody help me out ?
+<manish>	the error i get is - > error constructing proxy for org.gnome.terminal:/org/gnome/terminal/factory0: error calling startservicebyname for org.gnome.terminal: gdbus.error:org.freedesktop.dbus.error.spawn.childexited: process org.gnome.terminal exited with status 8
+<manish>	hi, anyone ?
+<spechter>	fsckd are you there
+<spechter>	damn, he isn't
+<spechter>	is here someone who might help me with my broken xserver ?
+<tigrmesh>	spechter1, hi
+<tigrmesh>	spechter1, is it still broken?
+<colbyftp>	hey folks, have a combi bluetooth/wifi card on my hp laptop. the wifi works ok, but not bluetooth, when using ubuntu i was able to download drivers and kernel update for it. can i do this in arch...
+<colbyftp>	rtl8723be  <<<< is the name of the device
+<fsckd>	there might be something in the aur
+<fsckd>	there are other arch users with the same problem https://bbs.archlinux.org/viewtopic.php?id=194053
+<phrik>	title: bluetooth not working / newbie corner / arch linux forums (at bbs.archlinux.org)
+<tigrmesh>	what do you use the bluetooth for?
+<colbyftp>	i use it for my beats pill
+<spechter1>	tigrmesh yes, even if it seems like i come closer to a soultion
+<spechter1>	right now it looks like i'm just missing some fonts for a config file for bspwm i got from github
+<spechter1>	but i'm not sure how to read those lines
+<spechter1>	urxvt*font: -*-neep-medium-r-semicondensed-*-11-*-*-*-*-*-*-*
+<mrelendig>	use xft instead
+<mrelendig>	imo
+<mrelendig>	asuming it is a ttf/otf font
+<spechter1>	so replacing urxvt*font with urxvt*xft ?
+<fsckd>	example from mine: urxvt.font: xft:droid sans mono dotted:bold:size=9
+<fsckd>	you would keep urxvt*font and replace the right side
+<spechter1>	ok, i will try it
+<spechter1>	btw when i startx it doesn't crahs immediately but shows an xsessin
+<spechter1>	but the background i set with hsetroot in my .xinitrc is not shown
+<fsckd>	what de or wm?
+<spechter1>	and none of my sxhkd shortcuts is working
+<spechter1>	bspwm
+<spechter1>	both bspwm and sxhkd are installed from the official repository if i remember correctly
+<mrelendig>	post your xinitrc
+<spechter1>	one moment
+<mrelendig>	use bpaste.net or similar
+<mrelendig>	not pastebin.com
+<spechter1>	it's on fpaste.org
+<spechter1>	http://fpaste.org/220420
+<phrik>	title: #220420 • fedora project pastebin (at fpaste.org)
+<spechter1>	shall i upload my .xressources aswell ?
+<spechter1>	there are all those fonts for urxvt defined
+<spechter1>	in my panel config i found some declarations of fonts
+<spechter1>	and the comment above says xft is not supported yet
+<spechter1>	so how is this sytax i've posted before called ?
+<spechter1>	maybe it will work if i modify this or atleast understand it
+<mrelendig>	xfontsel
+<mrelendig>	but if your panel doesn't support xft then get a less crappy panel
+<mrelendig>	since it is not 1982 anymore
+<spechter>	well, for now i've loaded my saved config files
+<spechter>	i wlll give it a try in the upcoming week and add it module by module
+<tigrmesh>	mrelendig!  total extended memory: 1982 mb.  would you set the uma frame buffer size to 64 mb or 128 ?
+<tigrmesh>	mrelendig, you personally.  supports 32mb too, but that causes bad flicker
+<darkelement>	hey guys how can i access the guest os with my archlinux vm? i am trying to download vmware tools for it.
+<fsckd>	access how?
+<darkelement>	i accessed it.
+<darkelement>	anyone know how to install vmblock?
+<darkelement>	i can't run vmware-user without it.
+<mrelendig>	tigrmesh: as high as possible probably
+<tigrmesh>	ok
+<tigrmesh>	thanks
+<namarrgon>	darkelement: are you using the open-vm-tools package?
+<darkelement>	yea it shouldbe that
+<namarrgon>	why do you need vmblock then?
+<darkelement>	so i can run vmware-user
+<darkelement>	and i need to run that to change my resolution.
+<namarrgon>	no, vmblock has nothing to do with the resolution
+<mrelendig>	tigrmesh: if running x etc
+<darkelement>	well i can't run vmware-user without it.
+<namarrgon>	you only needed it for d&d support but it was replaced by a fuse module
+<darkelement>	how can i install vmblock
+<namarrgon>	you can't
+<darkelement>	what do i do instae
+<namarrgon>	what error do you get?
+<darkelement>	instead.
+<darkelement>	it's telling me that /proc/fs/vmblock/dev is unable to be accessed, and that is because it's not there
+<namarrgon>	how are you starting it?
+<darkelement>	test
+<darkelement>	./usr/bin/vmware-user and vmware-user both give this.
+<darkelement>	sorry
+<darkelement>	forgot about "/"
+<namarrgon>	where did you get 'vmware-user' from?
+<namarrgon>	open-vm-tools doesn't contain it
+<darkelement>	please just help me get over this problem
+<namarrgon>	that's what i'm trying to do
+<darkelement>	i'm trying to set up vmware tools, and i have to run that command in order to change resolution.
+<namarrgon>	have you enabled and started the service as the wiki said?
+<darkelement>	enabled and started vmware tools? yes i believe it is running
+<namarrgon>	and the one?
+<namarrgon>	*the other
+<darkelement>	the other what
+<namarrgon>	service
+<darkelement>	which service are you referrring to? vmware tools should be running, i just need to get vmware user working in order to do things i need to do
+<namarrgon>	https://wiki.archlinux.org/index.php/vmware/installing_arch_as_a_guest#graphical_target
+<phrik>	title: vmware/installing arch as a guest - archwiki (at wiki.archlinux.org)
+<darkelement>	alright, do you know the shortcut to open terminal in dwm
+<namarrgon>	mod+return or mod+shift+return, don't remember the default
+<namarrgon>	it should be in config.h and config.h.mk
+<darkelement>	mod being alt
+<darkelement>	right?
+<namarrgon>	was that a question?
+<namarrgon>	yes, alt
+<darkelement>	i ask because that doesnt' work, i've tried it.
+<darkelement>	:p
+<namarrgon>	do you have the terminal installed?
+<darkelement>	yea
+<darkelement>	friend opened it earlier, i just never asked shortcut
+<namarrgon>	{ modkey|shiftmask,             xk_return, spawn,          {.v = termcmd } },
+<namarrgon>	that's the default, i don't know which version you are using
+<namarrgon>	and the default terminal is 'st'
+<namarrgon>	you might want to switch to a wm with a more accessible config
+<halosghost>	lol
+<halosghost>	it's true dwm takes a bit of doing to understand the config
+<fsckd>	darkelement: just so you know, in arch service usually means a systemd service
+<darkelement>	fsckd:alright
+<darkelement>	why does "st" not work....:*(
+<namarrgon>	you are sure you have it installed?
+<namarrgon>	it's not in the official repos
+<darkelement>	it's good now
+<darkelement>	friend got on, just did alt+p and started up terminator
+<darkelement>	thanks for help anywho
+<fsckd>	did your friend configure it for you?
+<kyusaki>	do i really need to put my password in plaintext in the muttrc config file?
+<gehidore>	pretty sure there's documentation for setting it with a hash...
+<kyusaki>	hmm, i will see if i can find it.
+<gehidore>	!g use password hash with muttrc
+<phrik>	gehidore: mutt: how to safely store password? - unix & linux stack exchange: <http://unix.stackexchange.com/questions/20570/mutt-how-to-safely-store-password>
+<kyusaki>	thanks :)
+<gehidore>	not sure if it's relevant i just remember seeing stuff about it when i set it up, frankly didn't care as email is about as insecure as you get...
+<kyusaki>	true that, but email is still needed for so much.
+<gehidore>	aye which is why i use it
+<gehidore>	but i gave up caring about the password as if the machine gets compromised in that sense email is the last of my worries
+<kyusaki>	haha
+<kyusaki>	seems like the config of the multicolor theme for awesome is awesome :d
+<typh00nz>	hello
+<typh00nz>	i want to thank you  namarrgon - test fglrx driver works great, brings additional fps and finally ive up to date xserver
+<typh00nz>	i thought it
+<typh00nz>	ll bring issues
+<typh00nz>	but i havent noticed yet
+<namarrgon>	if at all it'll be smaller issues
+<typh00nz>	do you recommend using ssd for archlinux?
+<typh00nz>	wiki is near empty about this
+<namarrgon>	_i_ recommend an ssd for everything
+<typh00nz>	gives only info about reducing input output operations
+<typh00nz>	i am close to buy my first ssd
+<typh00nz>	but
+<typh00nz>	what about firmware
+<typh00nz>	and software given by them
+<typh00nz>	i dont remember exact models
+<typh00nz>	but some sort of them uses additional software
+<typh00nz>	distributed for [ofc] windows platform
+<namarrgon>	you won't need the software, see if they offer linux tools or isos for fw-updates
+<typh00nz>	fw = firmware?
+<namarrgon>	yeah
+<typh00nz>	what is isos?
+<namarrgon>	i mean bootable images in general
+<namarrgon>	so you don't need windows specifically
+<typh00nz>	aha
+<typh00nz>	which model do you use?
+<namarrgon>	iirc, a crucial c300 and a 830 from samsung
+<typh00nz>	intel models look safe and stable
+<typh00nz>	aha
+<typh00nz>	and last, more practical question
+<typh00nz>	is 128gb enough for system [i cant afford bigger atm] + hdd for media things
+<typh00nz>	or do would you recommend to wait, spare some more cash and buy bigger on
+<typh00nz>	one
+<namarrgon>	128 just for arch?
+<namarrgon>	http://ix.io/itp
+<namarrgon>	i don't think i ever ran out of space
+<typh00nz>	yeah, whole space is for arch
+<typh00nz>	8 months ago i made yolo action and changed os to only linux, especially arch
+<typh00nz>	what command did you use
+<typh00nz>	paths to filesystem look strange
+<typh00nz>	df?
+<namarrgon>	df -h / /home
+<typh00nz>	ah right u re using volumes
+<tak3r07>	hey there! i've got a little question regarding fonts in arch. i was using cinnamon the last past weeks and just gave plasma a try and installed kde-applications-meta and plasma-meta. after playing around with it for a few hours i came back to cinnamon and uninstalled the kde-packages. but now all my gtk-applications have changed its font and i cannot revert it via standard settings in cinnamon. it says i am using "sans regular
+<tak3r07>	9" but the font in chromium for example is definitly not sans.
+<kyusaki>	hello o/
+<sniper570>	hallo \o
+<kyusaki>	do you guise know from where my spotify notification comes from ? http://i.imgur.com/p1hcgzx.png (i have awesome wm but i haven't found anything with naughty).
+<kyusaki>	it's a little too big, the picture so i want to resize the picture :p
+<tigrmesh>	there may be a spotify or .spotify file or folder somewhere in your home directory
+<tigrmesh>	if you have locate/mlocate installed, and the db is up-to-date, you can run  locate spotify | grep home
+<tigrmesh>	which will find every file on your system that has the string "spotify" and then select the ones that also have the string "home" - which should pretty much be only your home directory
+<colbyftp>	hey folks is it possible to make package out of this http://pastebin.com/791dpkjj
+<phrik>	title: spam detection for paste id: 791dpkjj (at pastebin.com)
+<colbyftp>	ah i can't post the link
+<colbyftp>	791dpkjj
+<colbyftp>	put pastebin in fron tof it :)
+<sniper570>	xd
+<fsckd>	colbyftp: it should be doable. there are other drivers in the aur which can serve as reference.
+<colbyftp>	ok will have a look,
+<colbyftp>	i know people have been asking in forums about this wifi/bluetooth but no repsonse how to fix it, this does,
+<colbyftp>	i know i could just post it, that is what i am going to do
+<colbyftp>	but want to learn and all that :0
+<fsckd>	that is great. thank you. things in arch happen because people like you make it happen. :)
+<fsckd>	if you need help, you can ask here or on the forums. we'll be glad to assist you. :)

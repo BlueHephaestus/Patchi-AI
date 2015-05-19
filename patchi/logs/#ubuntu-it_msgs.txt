@@ -1,0 +1,981 @@
+<fab9> ciao a tutti, dopo che ho fatto il apt-get upgrade di ubuntu 14.04 l'unico gioco a cui gioco (su steam) non mi funziona più.. cosa consigliate di fare ? e' un gioco che usava optirun
+<fab9> se faccio optirun glxgears, la grafica delle rotelline appare
+<fab9> ma dopo aver chiuso la finestra di glxgears nella console appaiono messaggi che non mi tornano molto
+<carlin0> fab9, hai aggiunto ppa esterni ?
+<fab9> l
+<fab9> no, sto usando i repo puliti di ubuntu
+<fab9> dalla 14.04 bumblebee funzionava già bene di default
+<fab9> questo è quanto mi appare su "optirun glxgears"
+<fab9> http://pastebin.com/hy0kr9vz
+<fab9> comunque le rotelline partono e mi vengono visualizzate.. questo messaggio mi appare in console dopo che ho chiuso la finestra con le rotelline
+<fab9> volevo cominciare a assicurarmi / capire se optirun sta funzionando o meno
+<cristian_c> fab9, appaiono soltanto dopo aver chiuso la finestra?
+<fab9> esatto solo dopo che chiudo la finestra con la rotellina
+<cristian_c> uhm
+<lorenzon1> buongiorno sto cercando di installare ubuntu sul mac
+<cristian_c> fab9, in che senso non funziona più?
+<carlin0> !mac | lorenzon1
+<ubot-it> lorenzon1: ubuntu su macbook pro: https://help.ubuntu.com/community/macbookpro | installare ubuntu sui sistemi mac intel: http://wiki.ubuntu-it.org/installazione/ubuntumacintel | download di ubuntu per powerpc: http://wiki.ubuntu-it.org/immaginipowerpc
+<fab9> cristian_c:il gioco a cui giocavo (che lanciavo dal client steam, tramite optirun) prima di fare apt-get upgrade funzionava, dopo non funziona piu.
+<lorenzon1> ho creato le partizioni e ora sto leggendo la guida online in italiano per l installazione. ho aperto la finestra del terminale nella quale ho digitato il comando ma poi mi chiede la password io la inserisco e dice che e sbagliata ma non é possibile perché ho solo quella
+<cristian_c> fab9, non hai detto nulla di nuovo, non hai spiegato
+<cristian_c> ripeto
+<cristian_c> <cristian_c> fab9, in che senso non funziona più?
+<cristian_c> lorenzon1, 1) quale comando? 2) quale guida?
+<cristian_c> informazioni essenziali
+<lorenzon1> sudo gdisk /dev/diskx
+<carlin0> fab9, ma metti un po su paste → cat /etc/apt/sources.list && ls /etc/apt/sources.list.d/
+<fab9> cristian_c: con steam e' steam che lancia il gioco io riscontravo che il gioco semplicemente non partiva dopo che schiacciavo "play"
+<cristian_c> ok
+<cristian_c> già meglio
+<fab9> cristian_c:ho provato a ricostruire il comando per lanciarlo manualmente da terminale
+<lorenzon1> http://wiki.ubuntu-it.org/installazione/ubuntumacintel
+<cristian_c> fab9, play dall'interfaccia di steam?
+<fab9> cristian_c: si il play da interfaccia steam, avevo configurato il gioco dentro steam per lanciarlo tramite optirun
+<fab9> cristian_c:cmq poi sono andato in terminale e ho cercato di ricostruire il comando da riga di comando, e lanciarlo da solo da terminale
+<cristian_c> lorenzon1, la password di osx?
+<fab9> cristian_c: e ho visto un messaggio di errore riguardo libreria non trovata, e ho cercato di risolvere instllando "libtcmalloc-minimal4"
+<cristian_c> !steam
+<ubot-it> voce non trovata: 'steam'
+<cristian_c> fab9, e il messaggio è scomparso?
+<cristian_c> fab9, comunque, fai come ti ha detto carlin0
+<fab9> cristian_c:si ma me ne appariva uno generico che nn dava indizi... poi ho fatto pure la cazzata di disinstallare il gioco e ora sto aspettando di rescaricarlo... (sono 8gb .. :-(
+<cristian_c> fab9, utilizzi nvidia prime?
+<lorenzon1> la password ora la presa
+<cristian_c> lorenzon1, ottimo
+<cristian_c> sarà stato un errore di digitazione
+<fab9> cristian_c: c'e' in steam un'opzione per dire come deve eseguire un gioco. per eseguire il gioco (e aveva sempre funzionato..) usavo questo comando: optirun -b primus %command%
+<lorenzon1> poi devo dare un nome al file di backup. prima mettere la b e poi la q
+<fab9> cristian_c:dove immagino steam sostituisca %command% all'eseguibile del singolo gioco
+<cristian_c> fab9, utilizzi nvidia prime?
+<fab9> cristian_c: non so cosa sia.
+<cristian_c> fab9, cat /etc/apt/sources.list && ls /etc/apt/sources.list.d/
+<fab9> cristian_c:ai tempi avevo installato il pacchetto bumblebee
+<cristian_c> fab9, ai tempi?
+<fab9> si, quando avevo installato ubuntu 14.04
+<cristian_c> fab9, sudo ubuntu-drivers list
+<fab9> cristian_c:qui ecco il mio sources list http://pastebin.com/9bvaeli6
+<carlin0> meno male che non avevi ppa
+<fab9> e dove e' ppa?
+<carlin0> hai sia una riga aggiunta nel sources.list che parecchi ppa
+<fab9> questo è sudo ubuntu-drivers list
+<fab9> [sudo] password for spud:
+<fab9> nvidia-304
+<fab9> nvidia-331-updates
+<fab9> nvidia-331
+<fab9> nvidia-304-updates
+<lorenzon1> dice che l operazione é andata a buon fine ma nella home non trovo niente
+<lorenzon1> primo pezzo http://wiki.ubuntu-it.org/installazione/ubuntumacintel
+<lorenzon1> quando devo digitare il comando nella finestra
+<cristian_c> lorenzon1, che nome gli hai dato?
+<fab9> credoc he mi sono scollegato
+<fab9> scusate forse ho perso vostri messaggi
+<lorenzon1> sudo gdisk /dev/diskx
+<cristian_c> fab9, più che altro hai floodato
+<f843d0> fab9: 11:14:02 -!- fab9 [54df3ca7@gateway/web/cgi-irc/kiwiirc.com/ip.84.223.60.167] has left #ubuntu-it [requested by ubot-it ( don't flood : usa il pastebin per  incollare lunghi output)
+<carlin0> fab9, sei stato cacciato per flood
+<cristian_c> fab9, utilizza pastebin
+<cristian_c> !paste
+<ubot-it> http://paste.ubuntu.com/ servizio che permette di incollare lunghi output senza intasare il canale; incollare il testo, indicare il nick, premere paste e postare in canale l'indirizzo della pagina
+<fab9> qui il pastebin http://pastebin.com/qzttcup0
+<lorenzon1> mettendo 0 alla fine al posto della x
+<carlin0> fab9,  hai sia una riga aggiunta nel sources.list che parecchi ppa
+<cristian_c> !graficaibrida
+<ubot-it> http://wiki.ubuntu-it.org/hardware/video/graficaibrida
+<fab9> carlin0:per ppa intendevo questo https://github.com/bumblebee-project/bumblebee-ppa nel senso che una volta bumblebee non era nei repo ufficiali
+<cristian_c> fab9, dpkg -l | grep nvidia
+<cristian_c> !ppa | fab9
+<ubot-it> fab9: un personal package archive (ppa) è in grado di fornire il software alternativo non normalmente disponibile nei repository di ubuntu offical - alla ricerca di un ppa? vedi https://launchpad.net/ubuntu/+ppas - attenzione: ppa sono pacchetti di terze parti non supportati il cui utilizzo è a proprio rischio. vedi anche !addppa e !ppa-purge
+<carlin0> fab9, sono ppa anche tutti questi → dropbox.list  google-chrome.list  google-chrome.list.save  google-talkplugin.list  spotify.list  spotify.list.save  steam.list  steam.list.save
+<fab9> cristian_c:output di quanto hai chiesto http://pastebin.com/phf1qwfn
+<cristian_c> rc  nvidia-304                                            304.117-0ubuntu1                                    i386         nvidia legacy binary driver - version 304.117
+<cristian_c> eh, beh
+<cristian_c> e anche altri
+<cristian_c> fab9, hai dei pacchetti mezzi installati
+<cristian_c> e mezzi no
+<cristian_c> tra l'altro hai i 304 e i 319 installati in contemporanea
+<cristian_c> fab9, da dove li hai installati tutti questi driver?
+<cristian_c> e intendo tutti
+<fab9> cristian_c: non saprei .. ho installato ubuntu 14.04 un anno fa , poi ho subito installato bumblebee, steam e il gioco a cui gioco (dota2) e poi nn ho piu toccato niente.. a parte questo ultimo apt-get upgrade che mi ha inceppato tutto :-)
+<fab9> cristian_c:cmq ho la sensazione che anche steam vada a installare qualche driver grafico suo
+<cristian_c> fab9, ma io vedo driver proprietari
+<cristian_c> fab9, ah, sì?
+<lorenzon1> carlin0, posso chiederti una mano?
+<cristian_c> fab9, comunque, i 319 non ci sono in driver aggiuntivi a quanto pare
+<carlin0> lorenzon1, non sono pratico di mac , non ne ho mai visto uno in vita mia
+<cristian_c> fab9, il casino sembra originato dai conflitti tra i vari driver installati
+<lorenzon1> ok
+<cristian_c> e pacchetti non completamente installati
+<carlin0> lorenzon1, esponi il problema in canale e chi sa e ha voglia ...
+<lorenzon1> come si fa ad esporlo in canale?
+<lorenzon1> su chanserv?
+<cristian_c> scrivi in canale :d
+<fab9> cristian_c:ma quelli che vedo mi sembrano tutti pacchetti dai repo di ubuntu, no?
+<cristian_c> fab9, beh
+<fab9> intendo quelli usciti dal comando  dpkg -l | grep nvidia
+<cristian_c> fab9, apt-cache policy nvidia-319
+<lorenzon1> carlino perdonami ma non so come scrivere in canale.. se scrivo su chanserv mi dice invalid command
+<fab9> cristian_c:output qui http://pastebin.com/53eheqfq
+<cristian_c> lorenzon1, scrivi nel canale in cui stai già scrivendo ora
+<lorenzon1> ok
+<cristian_c> fab9, mmmm, escono i 331 come risultato
+<cristian_c> fab9, in ogni caso, disinstalla completamente i 304
+<lorenzon1> buongiorno, ho creato una partizione sul mio macbook per installare ubuntu poi mi sono bloccato in un passaggio qualcuno mi può aiutare?
+<cristian_c> fab9, e anche bumblebee-nvidia
+<cristian_c> fab9, infine installa nvidia-prime
+<cristian_c> fab9, riferimenti, qui: http://wiki.ubuntu-it.org/hardware/video/graficaibrida/nvidiaoptimus
+<cristian_c> !qualcuno | lorenzon1
+<ubot-it> lorenzon1: la maggior parte delle prime domande fatte in questo canale è del tipo «qualcuno puo' aiutarmi/qualcuno ha tempo/qualcuno usa...?». fate la vostra domanda tecnica e se qualcuno sa, rispondera'
+<fab9> fab9:la cosa strana è che se faccio " sudo apt-get remove nvidia-" mi propone i 319, i 331 ma non i 304
+<cristian_c> ti auto pinghi, ora? :d
+<fab9> passando da una finestra all'altra mi viene confusione hehe
+<lorenzon1> qualcuno sa usare mac? può aiutarmi a creare una partizione dove installare ubuntu?
+<cristian_c> fab9, rimuovi direttamente i pacchetti
+<fab9> ho eseguito questo per ora "sudo apt-get remove bumblebee-nvidia"
+<cristian_c> collegati a 304
+<cristian_c> fab9, gli asterischi sono caratteri jolly, in pratica sostituiscono qualunque carattere
+<cristian_c> lorenzon1, la guida wiki non va bene?
+<cristian_c> lorenzon1, non fai prima a fare la domanda?
+<lorenzon1> si mi sono bloccato però
+<fab9> scusa nn so il comando per togliere pacchetto senza apt-get, immagino sia qualcosa con dpkg
+<fab9> dpkg -r ?
+<lorenzon1> inserendo il comando   sudo gdisk /dev/diskx   nella finestra di sistema poi dovremmo trovare il file di backup nella home e non c'è
+<cristian_c> lorenzon1, sì, ma non hai risposto prima
+<cristian_c> lorenzon1, in ogni caso, la guida non dice di digitare soltanto quel comando
+<cristian_c> dice anche altro
+<cristian_c> fab9, apt-get remove --purge nomepacchetto
+<f843d0> fab9: perche` non dovresti impiegare sudo apt-get --purge remove [package]?
+<lorenzon1> si di mettere prima la lettera b e poi dare un nome al file e infine di uscire con la lettera q e ho fatto tutto
+<cristian_c> <cristian_c> lorenzon1, che nome gli hai dato?
+<fab9> cristian_c:sto facendo dpkg -r devi vari pacchetti relativi alla 304, anche se in realta per i primi due mi ha detto che avevo solo i file di config
+<f843d0> fab9: se il pacchetto compare nella lista dei pacchetti installati dpkg -l, allora deve poter essere oggetto del comando di rimozione
+<cristian_c> fab9, ?
+<lorenzon1> ho dato il nome giorgio
+<lorenzon1> ho cercato in tutto il pc ma non ce
+<cristian_c> lorenzon1, ma hai premuto q?
+<fab9> cristian_c:si era perche i pacchetti nn c'erano e apt-get remove non li trovava, a meno di non mettergli purge
+<fab9> quindi inizialmente stavo facendo con dpkg --purge
+<lorenzon1> si
+<lorenzon1> adesso rifaccio tutto
+<cristian_c> fab9, i pacchetti ci sono
+<cristian_c> fab9, ma aspetta, ho un comando apposito
+<fab9> cmq ho fatto
+<fab9> ecco il risultato, prima e dopo aver tolto i pacchetti  http://pastebin.com/peacwn7p
+<fab9> ho greppato su  304 per trovare tutti i paccheti invidia della version 304
+<fab9> e dovrei averli tolti tutti
+<cristian_c> rc  nvidia-libopencl1-331                                 331.38-0ubuntu7                                     i386         nvidia opencl driver and icd loader library
+<cristian_c> beh
+<lorenzon1> cristian_c dovevo andare a capo ogni volta
+<lorenzon1> ora del ho fatta grazie mille
+<lorenzon1> della disponibilità
+<cristian_c> lorenzon1, hai tolto nvidia-libopencl1-331 ?
+<cristian_c> lorenzon1, ora va il gioco?
+<cristian_c> <cristian_c> fab9, il casino sembra originato dai conflitti tra i vari driver installati
+<cristian_c> <cristian_c> e pacchetti non completamente installati
+<cristian_c> ecco, ora mi sono confuso io
+<cristian_c> lorenzon1, quindi hai trovato il file nella home?
+<cristian_c> fab9, rimuovi nvidia-libopencl1-331
+<fab9> cristian_c:questo è l'attuale $ dpkg -l | grep nvidia http://pastebin.com/fbemvwse
+<cristian_c> rc  bumblebee-nvidia                                      3.2.1-5                                             i386         nvidia optimus support using the proprietary nvidia driver
+<cristian_c> fab9, sudo apt-get remove --purge nvidia-libopencl1-331 bumblebee-nvidia
+<fab9> cristian_c:eseguito il tuo ultimo comando
+<cristian_c> fab9, dpkg -l | grep nvidia
+<fab9> cristian_c:output richiesto http://pastebin.com/k8a8igbu
+<fab9> il gioco sono a 4gb di 8gb.. lo stavo riscaricando sulla mia adsl lenta..
+<cristian_c> fab9, sudo apt-get install nvidia-prime
+<fab9> glxgears continua cmq a darmi quegli strani output
+<fab9> ok lo eseguo
+<fab9> ok nvidia-prime installato
+<cristian_c> fab9, dovresti riavviare
+<cristian_c> per applicare le modifiche
+<lorenzon1> cristian mi puoi
+<cristian_c> !chiedi | lorenzon1
+<ubot-it> lorenzon1: per cortesia non chiedere il permesso di chiedere, semplicemente formula la domanda (tutta su  una riga, in modo tale che gli altri possano leggerla e seguirla con facilità). se qualcuno conosce la risposta ti risponderà :-)
+<lorenzon1> ok
+<fab9> cristian_c:ok riavvio ma poi il modo corretto di lanciare un gioco con i driver nvidia è questo? optirun -b primus %command%
+<cristian_c> mmmm
+<cristian_c> con nvidia-prime?
+<cristian_c> fab9, http://askubuntu.com/questions/412452/getting-hybrid-graphics-to-work-nvidia-prime-gt650m
+<fab9> .ehm... boh :-p
+<cristian_c> fab9, apri il link
+<lorenzon1> per l'installazione del bootloader refit qualcuno sa di quale immagine si parla nel punto 2?http://wiki.ubuntu-it.org/installazione/ubuntumacintel
+<cristian_c> https://wiki.ubuntu.com/x/config/hybridgraphics
+<cristian_c> lorenzon1, sul sito di refit?
+<fab9> cristian_c:mi pare di capire che con nvidia-prime si usa la scheda nvidia sempre, e non sul singolo progamma, giusto?
+<lorenzon1> refit? cos'è?
+<cristian_c> 2013-03-29: as you may have noticed, refit is no longer actively maintained. please check out refind, a fork that is maintaned and under active development.
+<cristian_c> lorenzon1, allora di quale immagine parli?
+<cristian_c> fab9, nel primo link si parla di switch tra intel e nvidia dal pannello delle impostazioni di nvidia
+<cristian_c> fab9, hai aperto il secondo link?
+<cristian_c> lorenzon1, quale paragrafo stai consultando, precisamente?
+<fab9> cristian_c:il secondo no, ora leggo
+<lorenzon1> non so proprio di quale immagine parla la guida wiki. devo fare doppio clic su di essa ma non dice dove trovarla
+<fab9> cristian_c:quello che mi sembra che dicono i link e' che per passare da una scheda all'altra devo usare il pannello in nvidia-settings
+<cristian_c> ahhhh, ora ricordo
+<cristian_c> fab9, mi ricordo che invece di optirun c'era primusrun
+<cristian_c> ma non ricordo più in quale guida wiki era descritto
+<fab9> ma con quel pannello che hai linkato
+<cristian_c> lorenzon1, rispondi alla domanda
+<fab9> nn dovrebbe tutto gia' andare in grafica nvidia?
+<cristian_c> fab9, quello è il pannello di nvidia-settings
+<cristian_c> fab9, controlla
+<cristian_c> ma hai riavviato?
+<fab9> nn ancora
+<fab9> riavvio..
+<lorenzon1> sto consultando il paragrafo 3
+<lorenzon1> installazione del bootloader refit
+<cristian_c> ok
+<cristian_c> lorenzon1, al punto 1 c'è un link
+<cristian_c> 'sito ufficiale'
+<lorenzon1> non lo trovo
+<lorenzon1> di quale sito stiamo parlando?
+<cristian_c> scaricare dal sito ufficiale la versione mac disk image.
+<cristian_c> punto 1, paragrafo 3
+<cristian_c> fab9,
+<fab9> ho riavviato
+<cristian_c> the current version of nvidia-prime uses one graphics card for the complete desktop. you either login with nvidia or intel. with bumblebee, you can start individual programs with a specific graphics card, like it is the case on windows.
+<lorenzon1> l ho fatto cristian-c
+<fab9> cristian_c:si e' quello che avevo letto e che ti avevo scritto
+<cristian_c> fab9, in pratica, per fare quello che vuoi fare tu, ti serve per forza bumblebee
+<cristian_c> fab9, sempre con i 331 immagino
+<fab9> cristian_c: a me va anche bene che sia sempre in uso nvidia
+<cristian_c> fab9, ahhh, allora no
+<cristian_c> fab9, allora ti basta prime com'è ora
+<cristian_c> fab9, basta che scegli nvidia nel pannello, rifai il login e sei pronto
+<fab9> ma quel link che mi hai dato prima aveva una schermata di nvidia-settings dove c'erano due radio button, uno per scheda nvidia e uno per scheda intel
+<fab9> ma io nn mi trovo quei 2 radio button
+<cristian_c> fab9, sì, appunto, quello che sto dicendo adesso
+<cristian_c> fab9, cerca bene
+<cristian_c> apri il pannello
+<cristian_c> fab9, se puoi aprilo con sudo
+<cristian_c> che ti permette di salvare le modifiche
+<cristian_c> lorenzon1,
+<cristian_c> lorenzon1, cos'hai fatto?
+<lorenzon1> sono fermo a questo paragrafo
+<cristian_c> lorenzon1, bene, allora leggi quello che c'è scritto
+<fab9> cristian_c:questo è schermata, effettivamente nn ho aperto cn sudo http://picpaste.com/nvidia-settings-1qszjwal.png
+<fab9> anche con sudo nn mi appare quel radio button in piu
+<cristian_c> sudo ti serve soltanto per salvare
+<lorenzon1> montare l'immagine facendo doppio clic su di essa
+<cristian_c> ma non credo cambi le opzioni sull'interfaccia
+<cristian_c> fab9, ah, ok
+<cristian_c> fab9, dpkg -l | grep nvidia
+<lorenzon1> ma non so di che immagine stia parlando :(
+<cristian_c> lorenzon1, quello è il punto 2
+<cristian_c> lorenzon1, vai al punto 1
+<lorenzon1> l ho scaricato il programma
+<cristian_c> lorenzon1, ottimo
+<cristian_c> l'immagine, intendi
+<lorenzon1> si
+<cristian_c> ok, punto 2
+<lorenzon1> si
+<cristian_c> fai doppio clic sul file scaricato
+<fab9> cristian_c:output : http://pastebin.com/hb3ybgqd
+<cristian_c> e poi vai avanti con gli altri punti
+<lorenzon1> aaa ok
+<cristian_c> fab9, un attimo
+<fab9> cmq in pratica rispetto alal schermata del link che mi hai mostrato a me nel mio tool di configurazione il menu a sinistra ha solo 2 voci, quello ne ha 3.
+<cristian_c> fab9, sudo nvidia-settings
+<cristian_c> fab9, e pasta il contenuto del terminale
+<fab9> cristian_c: risultato qui http://pastebin.com/d6fhct8i
+<cristian_c> ** message: prime: no offloading required. abort
+<cristian_c> ** message: prime: is it supported? no
+<cristian_c> ottimo
+<cristian_c> puoi pure disinstallare prime :d
+<fab9> torno a bumblebee? :d
+<cristian_c> fab9, anzi , qui dice una cosa diversa:
+<cristian_c> fab9, http://askubuntu.com/questions/457446/ubuntu-14-04-nvidia-prime-is-it-supported-no
+<cristian_c> fab9, se guardi la risposta che gli danno
+<maxturbo93> ciao a tutti
+<cristian_c> dicono che bumblebee non funziona dalla 14.04, l'ho letto da altre parti
+<cristian_c> fab9, però dicono come risolvere con prime quel problema che hai postato
+<cristian_c> l'errore sul paste
+<cristian_c> fab9, leggi tutta la risposta con attenzione
+<fab9> si ho visto
+<fab9> dice pure di rimettere i nouveau
+<fab9> far un po di purge
+<cristian_c> fab9, esegui la procedura che hanno segnalato
+<fab9> mettere i driver proprietari
+<cristian_c> fab9, sì, ma poi ti fa reinstallare
+<cristian_c> i proprietari
+<fab9> ok
+<cristian_c> il tizio dice che funziona
+<fab9> faccio i passi della risposta piu votata
+<cristian_c> io non ho una scheda con optimus, quindi..
+<cristian_c> fab9, sì
+<cristian_c> quella marcata come risolutiva
+<fab9> (anche se io ho proprio la gt 540m che il tipo dice che gli ha dato instabilita... vediamo)
+<cristian_c> fab9, quando hai fatto , controlla anche di non avere casini con i pacchetti, tramite dpkg -l | grep nvidia
+<cristian_c> come controllo ulteriore
+<fab9> ok
+<maxturbo93> sto configurando la mia rete di casa, volevo dare ip statico ai miei dispositivi e lasciare il dhcp abilitato sul modem dsl per gli ospiti. tutto ok (o quasi), ho solo bisogno di una conferma. sul modem ho lasciato il dhcp abilitato e in più ho impostato gli ip statici associati ai rispettivi mac address (desktop, tablet, notebook, smartphone). su ubuntu ho impostato ip, netmask, getaway e i dns di google. tutto bene, naviga, s
+<maxturbo93> .....mi da come connesso ma non naviga, e devo disconnettere/riconnettere l'eth per navigare (lofa sopradicamente, 2-3 volte a settimana)
+<fab9> riavvio
+<cristian_c> maxturbo93, problemi wifi con ip statico?
+<maxturbo93> ho fatto una prova di questo tipo; ho lasciato tutto com'è sul modem dsl (dhcp abilitato e ip associati ai mac address) e nelle impostazioni di ubuntu ho messo [ottieni ip automaticamente] e dns manuali di google. con questa config non si blocca mai, e mi chiedo perchè. sono io che sbaglio configurazione? gli ip statici devono essere impostati solo lato modem dsl e il client ubuntu deve fare una richiesta dhcp?
+<cristian_c> maxturbo93, bisogna vedere come hai impostato l'ip statico
+<maxturbo93> cristian_c ubuntu è sul desktop via eth, via wifi c'è smartphone e tablet android e il notebook w8.1
+<cristian_c> !nm | maxturbo93
+<ubot-it> maxturbo93: http://wiki.ubuntu-it.org/internetrete/configurazionerete/networkmanager
+<cristian_c> maxturbo93, ultimo paragrafo
+<maxturbo93> cristian_c se specifico ip/gomaticamente no.etaway/netwask su ubuntu via cavo ogni tanto si impunta, se metto ottieni ip aut
+<cristian_c> maxturbo93, hai letto il paragrafo?
+<maxturbo93> cristian_c si, sono le solite cose che faccio da sempre
+<cristian_c> maxturbo93, inoltre, stai utilizzando ipv4 o ipv6?
+<cristian_c> maxturbo93, su quale ubuntu?
+<maxturbo93> cristian_c tutti e 2?
+<maxturbo93> 12.04
+<cristian_c> maxturbo93, non ho capito la domanda
+<cristian_c> maxturbo93, prima gli ip statici funzionavano sulla 12.04?
+<maxturbo93> si
+<cristian_c> da quando hanno smesso di funzionare?
+<maxturbo93> da quando ho inserito l'ip statico del notebook w8.1
+<cristian_c> mmmm
+<maxturbo93> cristian_c non mi soanto lo devo scollegare ricollegareno spiegato, funziona (5 volte su 7) solo che ogni tanto lo devo scollegare/collegare
+<cristian_c> maxturbo93, cioè da quando hai configurato il laptop win con ip statico?
+<cristian_c> maxturbo93, ehhhh?
+<maxturbo93> cristian_c si
+<cristian_c> puoi riscrivere?
+<maxturbo93> si scusa
+<cristian_c> (non si capisce niente)
+<maxturbo93> è sta cavolo di tastiera del notebook
+<cristian_c> <cristian_c> maxturbo93, inoltre, stai utilizzando ipv4 o ipv6?
+<maxturbo93> cristian_c non mi sono spiegato bene: funziona (5 volte su 7) solo che ogni tanto lo devo scollegare/collegare (sto parlando di ubuntu desktop via cavo), questa cosa la fa se specifico ip/netmask/getaway, se metto ip automatico (ma statico sul modem) non lo fa.
+<cristian_c> statico sul modem?
+<maxturbo93> cristian_c comincio ad avere sentori che sia il modem tiscali a sbarellare
+<cristian_c> ma non era dhcp abilitato?
+<cristian_c> sul modem
+<cristian_c> maxturbo93, può essere
+<maxturbo93> cristian_c sul modem tiscali si possono impostare degli ip statici associati a i mac address e lasciare il dhcp abilitato per i dispositivi ospiet.
+<maxturbo93> *ospiti
+<cristian_c> maxturbo93, allora può dipendere dalle impostazioni del modem
+<cristian_c> maxturbo93, in ogni caso controlla se usi ipv4 o ipv6
+<maxturbo93> cristian_c * sul modem tiscali si possono impostare degli ip statici associati ai mac address e lasciare il dhcp abilitato per i dispositivi ospiti. (almeno credo)
+<cristian_c> questo l'hai già detto
+<maxturbo93> cristian_c si, ho fatto correzioni
+<cristian_c> (e comunque, il modem ha un proprio log)
+<cristian_c> acn0w, ?
+<cristian_c> acn0w, scusa
+<cristian_c> maxturbo93, ?
+<maxturbo93> cristian_c dubbio: ma posso tenere il dhcp acceso e contemporaneamente avere ip fissi sul modem?
+<cristian_c> maxturbo93, qual è il problema di rispondere a una semplice domanda?
+<cristian_c> maxturbo93, non so, lo devi chiedere al produttore del modem
+<maxturbo93> cristian_c dipende dal modem o dipende dalle regole dello stack tcp/ip ?
+<cristian_c> maxturbo93, lo devi chiedere al produttore del modem se puoi riservare ip statici per alcuni client e usare dhcp per gli ospiti
+<cristian_c> maxturbo93, ma se imposti gli ip fissi sul modem, e su ubuntu imposti dhcp + dns
+<cristian_c> riscontri problemi
+<cristian_c> ma sopratutto, l'ip cambia?
+<maxturbo93> cristian_c no
+<maxturbo93> no
+<maxturbo93> no alla prima, no alla seconda
+<cristian_c> maxturbo93, allora usa quella configurazione
+<maxturbo93> cristian_c e volevo capire perchè......
+<cristian_c> probabilmente le impostazioni del modem scavalcano quelle di ubuntu, ma è solo un'ipotesi
+<maxturbo93> cristian_c visto che tutte le guide impostano il client ma non menzionano il modem
+<cristian_c> maxturbo93, controlla quali impostazioni hai su win 8
+<cristian_c> se sono le stesse che su ubuntu
+<cristian_c> maxturbo93, ma infatti le guide agiscono sul client con ubuntu, mica sul modem :d
+<maxturbo93> cristian_c fa lo stesso che ubuntu, se imposto ip ogni tanto si pianta la connessione, se metto automatico va come untreno
+<cristian_c> maxturbo93, allora non dipende da ubuntu
+<cristian_c> ergo, non capisco come mai lo chiedi qui
+<maxturbo93> cristian_c ps importante:
+<maxturbo93> cristian_c su w8.1 prima che la connessione si pianti il firewall rileva una nuova rete (169.254.xxx.xxx) invece della solita 192.168.xxx.xxx
+<maxturbo93> cristian_c 169.254 è il fallback del dhcp?
+<cristian_c> non saprei, ma non viene da 192, quindi...
+<maxturbo93> 169.254 è sempre un indirizzo interno (fonte wiki)
+<cristian_c> maxturbo93, qui si fa supporto a ubuntu, considera anche questo
+<cristian_c> se ti serve supporto alle reti , ci sono canali specifici
+<maxturbo93> cristian_c pensavo fosse un problema noto
+<cristian_c> maxturbo93, la tua mi sembra una configurazione particolare, per la verità
+<cristian_c> e non dipende dall'so, a quanto hai detto
+<cristian_c> il problema, visto che lo riscontri anche sul laptop
+<maxturbo93> cristian_c non ho? mica assemblato lo shuttle, ho semplicemente lasciato dhcp e ip fissi sul modem, che sarà mai...ci sarà qualche sistemista qui in giro sul channel che lo sa.....?
+<cristian_c> maxturbo93, appunto, non è che hai fatto chissà che di male
+<cristian_c> ma il problema non dipende dal sistema operativo
+<cristian_c> maxturbo93, /join #networking
+<maxturbo93> cristian_c però se cambio le impostazioni sull'os i risultati cambiano
+<cristian_c> maxturbo93, su qualunque os
+<cristian_c> e il motivo dipende dal tipo di impostazione, non dall'os
+<maxturbo93> cristian_c vero
+<maxturbo93> cristian_c se qualcuno lo sapeva qui al volo, mi risparmiavo 2 ore di google translate... :d
+<cristian_c> lol
+<cristian_c> maxturbo93, beh, per le reti, l'inglese è lingua che occorre conoscere
+<cristian_c> :p
+<maxturbo93> cristian_c che l'inglese lo so, ma scriverlo correttamente e tutto un altro affare
+<maxturbo93> cristian_c ok, vado su #networking, grazie per la pazienza :)
+<cristian_c> maxturbo93, sì sì, giusto, ma se conosci un canale dedicato alle reti...
+<cristian_c> in italiano, meglio ancora :p
+<cristian_c> maxturbo93, magari prova su azzurra
+<maxturbo93> cristian_c boh, ci saranno 2 gatti su azzurra....
+<maxturbo93> cristian_c comunque grazie, ciao buona giornata
+<cristian_c> maxturbo93, beh, è un server italiano, con canali in italiano
+<cristian_c> :)
+<maxturbo93> cristian_c fiuuuu....me la sono cavat in mezz'ora :d
+<maxturbo93> cristian_c di la dicono che è perfettamente ammissibile avere il dhcp abilitato insieme a indirizzi statici. sembra che sia il modem che ongi tanto sbarella. mi hanno consigliato di usare pcap per vedere cosa succede.
+<maxturbo93> uuups, cristian_c è disconnesso, come non detto.... :d
+<times> oggi dopo l'ennesimo bug di windows,decidetti di instalare xubuntu.
+<times> passo tutto sulla usb con linux usb creator avvio,e mi ritrovo dopo 2-3 minuti nel desktop di xubuntu nonostante io non l'abbia installato,con un messaggio=installazione non riuscita il programma di installazione ha incontrato un errore.verrà avviata etc etc..aiutatemi
+<cristian_c> times, in live?
+<times> in che senso in live?
+<cristian_c> times, 'nonostante io non l'abbia installato'
+<times> -ah si.
+<times> se hai bisogno ti mando gparted
+<cristian_c> times, manda pure
+<cristian_c> times, ma per quale motivo?
+<cristian_c> visto che non l'hai installato
+<enrry> ciao a tutti.
+<times> http://s12.postimg.org/rwca2g1pp/img_20150517_002141.jpg
+<cristian_c> times, compaq?
+<times> cosa è?
+<cristian_c> una marca di pc, ora brand di hp
+<enrry> ho un problema con una chiavetta usb avviabile: dopo avere eseguito l'installazione di ubuntu volevo formattarla per usarla come chiavetta normale, però continua a vedermi il file system come se ci fosse ubuntu avviabile...come si può fare?
+<enrry> bisogna eseguire altre operazioni per eliminare qualche settore particolare?
+<cristian_c> enrry, personalmente, ti consiglio di tenere una versione live
+<cristian_c> in caso di problemi
+<times> no.è un acer aspirr one ao751h.
+<cristian_c> ok
+<enrry> cristian_c: l'installazione è ok, ma potrebbe avere sminchiato la chiavetta
+<enrry> non riesco a rimuovere tutto
+<cristian_c> times, se è un vecchio netbook, ti consiglio di installare lubuntu
+<cristian_c> comunque
+<times> ennry moderati
+<cristian_c> enrry, sì sì ,ma intendo una live ti serve comunque
+<enrry> potrebbe avere reso parzialmente inutilizzabile la chiavetta
+<cristian_c> enrry, bah
+<times> xubuntu ho passato in chiavetta.
+<enrry> ok, ma come si può fare a ripristinarla?
+<cristian_c> enrry, controlla con gparted
+<enrry> cioè, usarla come storage?
+<enrry> fatto
+<cristian_c> enrry, anzi, posta schermata
+<cristian_c> !image
+<ubot-it> carica un'immagine su https://imgur.com/ | http://imageshack.us/ (richiede registrazione) e metti un collegamento ad essa in canale.
+<enrry> eliminato tutto, creato nuovo tabella partizioni
+<times> cristian...
+<times> ho passato xubuntu....
+<enrry> immagine di cosa?
+<cristian_c> times, ti trovi in modalità live
+<times> si..
+<cristian_c> enrry, di gparted
+<enrry> gparted vede tutto bene, come fosse andato tutto a posto
+<cristian_c> times, ok, ma è ancora presente quel messaggio?
+<cristian_c> enrry, cioè?
+<lalla> ciao  ho ancora questo problema http://pastebin.ubuntu.com/11186213/
+<cristian_c> lalla, hai fatto i controlli?
+<enrry> però se poi monto la chiavetta su un altro sistema continua a vedermela con nome ubuntu 14.04 ecc
+<cristian_c> lalla, sei ancora con i ppa?
+<times> scusate ma c'ero prima io..
+<cristian_c> enrry, ahh, beh, se è solo il nome
+<enrry> ok, aspetto...
+<cristian_c> enrry, è capitato anche a me
+<enrry> non è solo il nome
+<lalla> mmm ppa?
+<cristian_c> lalla, sì, c'è quello nel tuo paste
+<enrry> vede tutti i file come fossero ancora presenti, quelli di installazione
+<cristian_c> times, non esiste una precedenza
+<times> al mio paese è maleducazione
+<cristian_c> enrry, ah, allora è diverso
+<cristian_c> times, qui non c'è una fila
+<enrry> np non ho fretta, scusate
+<times> vabbene...cosa intendevi ler ancora è presente prima?
+<cristian_c> times, è un supporto orizzantale, nel senso che non è un'assistenza tecnica, ma un canale di volontari, in cui tutti possono dare una mano, se sono in grado
+<lalla> e si i comandi che mi hai dato non mi hanno risolto io problema
+<cristian_c> times, il messaggio di errore di cui parlavi all'inizio
+<cristian_c> lalla, ti ho dato comandi io? o.o
+<times> un attimo chelo scrivo
+<cristian_c> enrry, per quanto riguarda il nome, è capitato anche a me, se invece i file ci sono ancora...
+<cristian_c> enrry, io proverei a fare una cosa
+<enrry> cristian_c: secondo me vede solo l'elenco, come fossero dei puntatori
+<enrry> perché si riesce a scrivere e a leggere
+<lalla> mi sembra di si ... ieri sera..
+<enrry> dallo stesso pc da cui ho usato gparted funziona tutto
+<cristian_c> enrry, spiegati meglio
+<cristian_c> lalla, ieri sera non c'ero
+<cristian_c> lalla, invece ti dissi di provare con windows, ad esempio
+<enrry> su un altro pc vede la partizione vecchia con l'elenco di file vecchi
+<cristian_c> o con altri pc
+<cristian_c> sopratutto con windows
+<cristian_c> enrry, mmmmm
+<cristian_c> interessante
+<enrry> come ci fosse una partizione nascosta di boot non rimossa bene
+<lalla> scusami ... come co windows?
+<cristian_c> enrry, beh, allora con gparted la vedi
+<cristian_c> enrry, ti consiglio di fare una cosa
+<lalla> io sono una fedelissima di ubuntu
+<enrry> non vedo niente, è lì il bello
+<enrry> dimmi
+<cristian_c> lalla, ti dissi , in base alle tue informazioni, che forse il problema non è software, ma hardware
+<cristian_c> potrebbe essere la stampante che non funziona bene
+<cristian_c> per questo te l'ho detto
+<cristian_c> enrry, apri gparted, posta una schermata , prima di tutto
+<lalla> si ma questo è un altro tipo di errore che non mi permette di fare gli aggiornamenti..
+<times> cristian ho riavvito per vesere il messaggio e ci sta mettendo più tempo
+<times> ci sei?
+<cristian_c> lalla, beh, perché hai aggiunto un ppa
+<cristian_c> times, hai riavviato con la live?
+<cristian_c> times, allora, quando sei sul desktop, spiega cosa accade
+<times> no non ho mai riavviato con lice
+<times> ho sempre lasciato stare
+<lalla> sara qualche casino che ho fatto per scaricare alcuni driver per la stampante..
+<times> riavvio perché sì è bloccato su xubuntu che gira da 1 h?
+<cristian_c> times, allora , spiega cosa stai facendo
+<times> sono sulla schermata azzurra di xubuntu dove carica
+<cristian_c> lalla, ora riguardo il paste
+<enrry> goodbye all!
+<lalla> ok .
+<times> ho riavviato
+<times> È uscito una cosa
+<cristian_c> lalla, ok, ho visto
+<times> npn ho riavviato
+<cristian_c> enrry, fatto?
+<cristian_c> lol
+<cristian_c> lalla, in pratica, quei ppa non esistono per trusty
+<times> ho riavvito
+<cristian_c> lalla, prova a rimuoverli
+<lalla> dove li trovo?
+<times> ho avviato con live
+<cristian_c> lalla, apri software e aggiornamenti
+<cristian_c> <cristian_c> times, ok, ma è ancora presente quel messaggio?
+<lalla> e poi..
+<times> si esce ancora
+<cristian_c> lalla, poi vai in altro software
+<lalla> ok
+<cristian_c> lalla, e cerca il ppa
+<cristian_c> che ti dava errore
+<cristian_c> times, posta una schermata
+<times> si un attimo
+<cristian_c> 1image
+<cristian_c> !image
+<ubot-it> carica un'immagine su https://imgur.com/ | http://imageshack.us/ (richiede registrazione) e metti un collegamento ad essa in canale.
+<times> christian
+<times> mi e partita installazione!
+<lalla> come l'ho riconosco il ppa da eliminare?
+<times> ho avviato con live
+<cristian_c> !maiuscolo | times
+<ubot-it> times: non scrivere in maiuscolo nel canale, equivale ad urlare e non e' un comportamento gradito nel canale. grazie.
+<cristian_c> lalla, è lo stesso del paste che hai postato prima
+<cristian_c> se il nome coincide...
+<times> mi è abbia almeno 5.7 gb di spazio libero spuntato verde sia collegato alla corrente elettrica spuntato verde ma sia connesso a internet non è spuntato...come risolvozm
+<cristian_c> times, per esempio scrivendo meglio il tuo messaggio
+<cristian_c> che non si capisce niente :p
+<times> foto?
+<cristian_c> times, anche
+<cristian_c> finora non hai postato nulla
+<reddiz> ciao ragazzi, ho un problema, ho scaricato mo hexchat e non riesco a registrare l'account...
+<cristian_c> !register | reddiz
+<reddiz> il nick l'ho già fatto.. ma quando entro in altri server mi dice che mi devo autenticare
+<ubot-it> reddiz: per sapere come registrarti e in generale come comportarti in canale, leggi http://wiki.ubuntu-it.org/gruppoirc/lineeguida
+<reddiz> grazie ragazzi, scusate ma sono nuovo ahah :)
+<times> http://s12.postimg.org/rwca2g1pp/img_20150517_002141.jpg
+<times> sbagliato
+<cristian_c> eh
+<times> http://s10.postimg.org/ngke8huq1/1431869368790.jpg come risolvo quella cosa,sia connesso a internet?
+<cristian_c> times, ah, hai iniziato l'installazione
+<cristian_c> times, ma non hai provato la connessione in modalità live?
+<times> non so come attivarla
+<cristian_c> times, perché hai avviato l'installazione, allora?
+<times> no ho avviati con live
+<times> mi è uscita un cd con scritto installa xubuntu e ho avviato..
+<cristian_c> times, eh, ma prima devi testare bene l'hardware, come minimo
+<cristian_c> se è supportato, ecc..
+<times> come avvio connessione?
+<cristian_c> times, da live lo puoi fare
+<cristian_c> esci dall'installazione
+<times> sono da live
+<cristian_c> io vedo la schermata d'installazione
+<times> adesso sono in live
+<times> cosa faccio?
+<times> cosa faccio?
+<times> ce m
+<cristian_c> times, ok
+<cristian_c> !pazienza
+<ubot-it> la gente qui è volontaria, non pretendere che qualcuno ti risponda. le risposte non sono sempre disponibili. guarda http://wiki.ubuntu-it.org/gruppoirc/lineeguida
+<times> cosa faccio?
+<cristian_c> times, ora , guarda nell'area di notifica
+<times> si
+<cristian_c> se ci sono applet
+<cristian_c> in particolare quella di rete
+<times> cosa sono
+<times> si ce
+<cristian_c> eh
+<cristian_c> times, ok, guardaci un po'
+<cristian_c> che icona ha?
+<cristian_c> times, posta una schermata, al limite
+<times> una freccia su e una giu
+<lalla> grazie cristan_c ! problema risolto.
+<times> come la connessione dati del cellulare
+<times> ci ho cliccato ora?
+<cristian_c> times, ok, allora sei collegato via cavo ethernet?
+<cristian_c> lalla, ottimo
+<times> no.
+<cristian_c> times, ahhh, sei collegato via tethering usb?
+<times> lol
+<times> lol
+<cristian_c> ?
+<cristian_c> spiegati...
+<times> no
+<cristian_c> times, quelle due frecce di solito indicano la connessione via cavo
+<times> non sono connesso a nulla :d
+<cristian_c> times, allora cliccaci
+<times> fatto
+<times> allora?
+<times> ......
+<cristian_c> un attimo
+<cristian_c> cerca di essere un minimo paziente
+<reddiz> come posso mettermi su hexchat ? irc.ubuntu.com/ canale ubuntu-it ? che porta è ?
+<cristian_c> times, cosa ottieni una volta cliccato?
+<cristian_c> reddiz, hai letto la guida?
+<reddiz> sisi
+<cristian_c> reddiz, io cnosco xchat, che è simile
+<cristian_c> reddiz, apri la lista reti
+<reddiz> okay ci sono
+<times> ethernet neteork non cliccabile disconnectef neanche mobile broadban neanche not enable manco vpn connection si enable networking si enable mobile broadband si poi connection jnfo no e edit connection si
+<cristian_c> selezioni freenode, e poi modifica e imposti quello che devi impostare, compreso l'autenticazione
+<cristian_c> per quel server
+<cristian_c> times, ok, il pc ha una scheda wifi, giusto?
+<times> yes
+<cristian_c> times, apri un terminale
+<times> fatto
+<cristian_c> times, digita: lshw -c network
+<cristian_c> times, incolla il risultato su pastebin
+<cristian_c> !paste | times
+<ubot-it> times: http://paste.ubuntu.com/ servizio che permette di incollare lunghi output senza intasare il canale; incollare il testo, indicare il nick, premere paste e postare in canale l'indirizzo della pagina
+<times> mi esce no command ishw found did you mean lshw?
+<cristian_c> times, infatti avevo usato l, non i
+<cristian_c> leggi bene :p
+<times> ah lol
+<times> sono da cellulare
+<cristian_c> times, non puoi collegarti via cavo?
+<cristian_c> da quel pc
+<times> si certo
+<times> apro tethering
+<times> fatto
+<cristian_c> times, sei connesso da cavo?
+<times> si
+<cristian_c> times, clicca sull'applet di rete
+<cristian_c> !paste
+<ubot-it> http://paste.ubuntu.com/ servizio che permette di incollare lunghi output senza intasare il canale; incollare il testo, indicare il nick, premere paste e postare in canale l'indirizzo della pagina
+<times> fatto sono su ubuntu pastevin,cosa devo fare
+<cristian_c> times, incolla su pastebin il risultato del comando di prima
+<times> paste.ubuntu.com/11187002
+<cristian_c>        product: bcm4312 802.11b/g lp-phy
+<cristian_c> ok, la risposta è semplice
+<times> cosa devo fare?
+<cristian_c> times, le broadcom hanno generalmente bisogno di caricare il firmware
+<cristian_c> a mano
+<times> ok cosa faccio?
+<cristian_c> times, semplice, installi il sistema via cavo, poi una volta installato , segui la procedura sulla pagina wiki
+<cristian_c> !broadcom
+<ubot-it> dispositivo senza filo broadcom http://wiki.ubuntu-it.org/hardware/dispositivisenzafili/broadcom
+<times> ok
+<cristian_c> che ti spiega come fare ad attivare il wifi sulle broadcom
+<cristian_c> times, sono schede particolari
+<cristian_c> il produttore ha imposto di dover installare il firmware a parte
+<times> adesso ti immagini che non parte l installazione :d
+<cristian_c> times, parte parte
+<cristian_c> ma devi essere collegato via cavo
+<times> non parte...
+<cristian_c> ?
+<times> davvero non parte
+<times> ...
+<times> :-[
+<times> :/
+<cristian_c> !dettagli | times
+<ubot-it> times: per favore dacci dettagli completi. per esempio "ho un problema con..., sto usando ubuntu versione... con interfaccia.... quando provo a fare..., ottengo questo output: ..., ma mi sarei aspettato che facesse..."
+<times> prima partiva adesso no
+<cristian_c> leggi sopra
+<times> lo so...
+<cristian_c> times, allora spiega cosa accaded
+<cristian_c> -d
+<times> prima l installazione partiva adesso mon parte
+<cristian_c> times, finché ripeterai la stessa cosa, avrai sempre la stessa risposta
+<cristian_c> nob  hai aggiunto nulla di nuovo
+<cristian_c> *non
+<times> non devo aggiungere nulla...
+<cristian_c> times, bene, allora quando avrai voglia di farlo, torna a trovarci
+<times> bel supporto..nnn
+<times> *.....
+<carlin0> !veggenti | times
+<ubot-it> times: gli utenti di questo canale non sono in possesso di poteri magici, non possiedono sfere di cristallo e non sono nemmeno veggenti. canonical non può permettersi un corso di stregoneria per i suoi collaboratori. si chiede quindi, gentilmente, di esprimersi in maniera chiara e molto dettagliata.
+<cristian_c> times, il supporto richiede collaborazione
+<cristian_c> che tu non stai fornendo
+<times> allora prima ero in live ed ho fatto doppio click suinstalla xubuntu ed la installazione partiva ora no.
+<cristian_c> quindi fai doppio clic e non appare nessuna finestra?
+<times> no
+<cristian_c> oh, vedi che quando vuoi, i dettagli li fornisci?
+<carlin0> ma devi ancora installare xubuntu ?
+<times> yes
+<cristian_c> carlin0, sì, ma ha la scheda broadcom
+<cristian_c> e quindi non gli andava il wifi
+<carlin0> prima installa il so e dopo i driver
+<cristian_c> times, ma hai scelto prova ubuntu o installa ubuntu , dal menù iniziale?
+<cristian_c> carlin0, è quello che gli ho detto, con il cavo collegato
+<times> non mi è uscita quella schermata
+<cristian_c> times, mmmm
+<carlin0> so arrivato a metà , chiedo scusa
+<cristian_c> times, se è installa ubuntu, allora ti basta premere alt+tab per far apparire le finestre aperte
+<cristian_c> non essendoci il pannello
+<cristian_c> tra cui anche la finestra di installazione
+<times> non si apre
+<carlin0> times, prova a riavviare la live al massimo
+<times> ok
+<cristian_c> times, alt+tab non ha effetto?
+<times> ho riavviato
+<times> sta aprendo ka live
+<times> la*
+<cristian_c> !installazione | times
+<ubot-it> times: http://wiki.ubuntu-it.org/installazione | per installazione grafica http://wiki.ubuntu-it.org/installazione/grafica | si consiglia la visione della guida ufficiale in inglese http://www.ubuntu.com/desktop/get-ubuntu/download
+<times> cristian forse non hai capito
+<times> non si apre
+<cristian_c> times, neanche dopo un riavvio?
+<times> no...
+<cristian_c> mmmmmm
+<cristian_c> times, esattamente, quali schermate appaiono quando fai il boot da usb?
+<times> e da un ora che gioco a mines
+<cristian_c> ?
+<times> allora quando avvio in basso esce una cosa per avviare in live premere spazio etc se non tocco nulla mi porta lo stesso s liv
+<carlin0> times, ma tu riavii il pc o avvii l'installazione da win ?
+<times> riavvio pc
+<carlin0> e se invece tocchi e invece di scegliere prova etc etc scegli installa ?
+<cristian_c> times, ed è lì il punto
+<cristian_c> <times> allora quando avvio in basso esce una cosa per avviare in live premere spazio etc se non tocco nulla mi porta lo stesso s liv
+<cristian_c> times, devi premere un tasto a quel punto
+<cristian_c> times, se avessi letto la guida all'installazione, lo sapresti
+<times> p ho premuto
+<cristian_c> 'se non tocco nulla, mi porta lo stesso'
+<times> se no come avvio la liv
+<times> live
+<cristian_c> times, il punto è un altro
+<carlin0> times, forse non hai capito
+<cristian_c> devi entrare nella schermata
+<cristian_c> e invece di scegliere 'prova ubuntu' , scegli 'installa ubuntu'
+<cristian_c> così aggiri il problema della live
+<carlin0> per installare non è necessaria la live
+<carlin0> eh appunto
+<carlin0> che poi mi viene il dubbio che la iso sia a escort
+<times> carlino quel punto a me non esce prova p installa
+<carlin0> times, scegli installa
+<times> come vi mando un video?
+<carlin0> !image | times
+<ubot-it> times: carica un'immagine su https://imgur.com/ | http://imageshack.us/ (richiede registrazione) e metti un collegamento ad essa in canale.
+<carlin0> usa imgur
+<times> video
+<times> no foto
+<carlin0> allora times mi sa che il mio dubbio è lecito
+<carlin0> times, hai controllato il md5 della iso ?
+<times> si
+<f843d0> times: i video non sono cosi` facili da gestire... in termini di dimensioni...
+<times> ed è giusta
+<carlin0> video puoi usare il tubo
+<carlin0> non conosco altro
+<times> ho premuto lo spazio ed mi esce modalita persistente modalita live installa controllo integrita test memoria
+<times> cosa faccio
+<carlin0> scegli installa
+<times> fatto
+<times> ora?
+<times> mi porta al desktop
+<times> con errore installazione non riuscita
+<carlin0> che errore ?
+<times> installazione non riuscita,il programma d installazione ha incontrato un problema,verrà avviata etc etc
+<carlin0> aspe stai fermo li e fai na foto o salva una schermata
+<times> eh ormai ho fatto ok
+<carlin0> quindi ne sappiamo quanto prima
+<carlin0> ...
+<times> eh...
+<carlin0> times, nel msg di errore parlava per caso di pae ?
+<times> no
+<cristian_c> eccomi
+<cristian_c> <times> ho premuto lo spazio ed mi esce modalita persistente modalita live installa controllo integrita test memoria
+<cristian_c> modalità installa
+<cristian_c> è quella schermata di cui ti parlavo prima
+<times> fatto gia.
+<times> leggi su
+<cristian_c> sì, ora ho letto
+<carlin0> gli da errore lo stesso ...ma non sappiamo quale
+<cristian_c> times, md5 è a posto?
+<times> si
+<cristian_c> times, 15.04?
+<times> ragazzi fra 10 min rientro
+<times> rientrosi
+<times> si..
+<carlin0> non è che stai installando la 64 su un pc con procio a 32 ?
+<times> no
+<carlin0> e allora ci devi far vedere quell'errore che ti da
+<cristian_c> times, vediamo sto errore, finalmente
+<times> eccomi
+<times> carlino cristian..
+<carlin0> devi farci vedere l'errore times
+<times> no ho una buona notizia
+<ale> ciao a tutti. ho appena scaricato chrome sul mio ubuntu 14.04 lts a 64/bit e non riesco a sentire l-audio (inoltre da qualche tempo la tastiera impazzisce e usa il formato americano, poi riavvio e si sistema). potete aiutarmi? grazie
+<cristian_c> ale, l'audio su chrome?
+<cristian_c> o sull'intero sistema
+<ale> solo su chrome
+<ale> con versione 42.0.2311.152 (64-bit)
+<ale> su firefox va benissimo
+<cristian_c> ale, su ubuntu con unity?
+<ale> e a dirla tutta il video salta pure...
+<cristian_c> ale, su quale pc?
+<cristian_c> ale, e, quale video?
+<ale> ...che domanda difficile per me.. come posso fare per rispondere?
+<newubu> salve a tutti. sono nuovo di qui e di ubuntu
+<cristian_c> sove?
+<ale> portatile
+<cristian_c> ale, rispetto a quale domanda?
+<cristian_c> ale, che tipo di portatile?
+<mr_pan> !chide | newubu
+<ubot-it> voce non trovata: 'chide'
+<newubu> una domanda
+<mr_pan> !chiedi | newubu
+<ale> qualunque, tipo questo https://www.youtube.com/watch?v=uv2uebhnqow
+<ubot-it> newubu: per cortesia non chiedere il permesso di chiedere, semplicemente formula la domanda (tutta su  una riga, in modo tale che gli altri possano leggerla e seguirla con facilità). se qualcuno conosce la risposta ti risponderà :-)
+<mr_pan> !benvenuto | newubu
+<ubot-it> newubu: ciao! benvenuto in #ubuntu-it
+<cristian_c> ale, quindi youtube
+<ale> per es., ma anche altri video
+<newubu> ok. devo installare ubuntu per la prima volta. su un portatile. mi diverto con montaggi video e ritocchi foto, quindi ubuntu studio. ma devo usare anche fogli di calcolo e scrittura. va bene lo stesso?
+<ale> come faccio a sapere se uso unity?
+<cristian_c> ale, il video l'ho provato con chrome 42
+<cristian_c> <cristian_c> ale, su ubuntu con unity?
+<ale> non so cosa sia unity
+<cristian_c> newubu, sì, va bene lo stesso
+<newubu> grazie
+<cristian_c> newubu, non so se ubuntu studio ha una modalità live per provarlo prima di installarlo
+<cristian_c> !unity | ale
+<ubot-it> ale: unity è la ui di default da ubuntu 11.04.  unity è una shell per gnome. vedi http://wiki.ubuntu-it.org/ambientegrafico/unity guida uso e configurazione: https://help.ubuntu.com/13.10/ubuntu-help/index.html  per una esperienza simil-gnome 2, vedi !notunity
+<ale> ora leggo
+<ale> io ho installato ubuntu 14.04 e lo uso con i parametri di default... se mi dici dove andare a vedere ti posso dire se ho unity o no
+<cristian_c> ale, quello con il pannello laterale e lo sfondo color violaceo
+<cristian_c> se apri il link...
+<ale> ho aperto il link ambiente grafico unity (l altro da errore)
+<ale> si, pannello laterale e sfondo violace
+<cristian_c> ale, ah, è vero, il link è rotto
+<ale> perdona come scrivo ma la tastiera scrive come fosse americana
+<cristian_c> ale, la puoi impostare in italiano
+<cristian_c> ale, ok, allora sei su ubuntu
+<cristian_c> ale, intanto imposta la tastiera in italiano, in alto nel pannello vedi l'icona it?
+<cristian_c> o us?
+<ale> purtroppo e impostata in italiano!! ma salta e scrive a cavolo
+<ale> gia fatto... ma non funge.
+<cristian_c> ale, non ho capito il problema della tastiera quale sia
+<sam58> ciao mi puoi aiutare?
+<cristian_c> puoi spiegarti meglio?
+<cristian_c> !chiedi | sam58
+<ubot-it> sam58: per cortesia non chiedere il permesso di chiedere, semplicemente formula la domanda (tutta su  una riga, in modo tale che gli altri possano leggerla e seguirla con facilità). se qualcuno conosce la risposta ti risponderà :-)
+<sam58> ho fatto il download di xubuntu ma non riesco a farlo partire
+<ale> ecco...ora funge di nuovo!!!! salta con gli aggiornamenti. pur restando impostata su it, scrive come fosse su usa. poi vai su it, selezioni usa e rimetti it e magicamente funziona!!
+<ale> cmq ora la tastiera è a posto
+<sam58> non ho una grossa esperienza ma una volta fatta l'immagine non parte
+<ale> torniamo all'audio: non si sente su chrome, ma su firefox si. solo che per lavoro mi serve chrome
+<cristian_c> ale, capito
+<akis24> sam58: e come hai creato il disco di avvio o la usb ?
+<cristian_c> ale, devi riconfigurarla, credo
+<sam58> unità dvd
+<ale> cosa, la tastiera?
+<akis24> sam58: su quale sistema l'hai creato con quale programma e sopratutto come hai masterizzato come dati o immagine ?
+<cristian_c> ale, apri le impostazioni audio
+<ale> da dove? devi guidarmi passo a passo, perdonami
+<sam58> non lo so una volta scaricato il programma mi ha chiesto se lo volevo masterizzare
+<sam58> e lo ho masterizzato
+<sam58> ma non parte
+<cristian_c> ale, sempre dal pannello superiore
+<ale> si si ce l'ho fatta
+<akis24> sam58: riassumendo devi masterizzarlo come file immagine  poi impostare dal bios l'avvio come prima periferica del lettore dvd  e prima ancora verificare che il file scaricato sia corretto
+<ale> e aprendo le impostazioni audio ha funzionato... ma perchè?
+<akis24> !md5sum | sam58
+<ubot-it> sam58: http://wiki.ubuntu-it.org/md5sum. per una lista completa, si veda: https://help.ubuntu.com/community/ubuntuhashes
+<ale> cosa sbaglio?
+<sam58> scusami ma se vado in in download e gli clicco sopra mi dice "masterizzazre immagine disco?
+<gigirock> sudo service lirc restart non funziona + come si scrive adesso ?
+<akis24> sam58: su che sistema sei adesso ?
+<sam58> win7 ultimate
+<gigirock> se e' un file .img ............. sam58
+<sam58> è un .iso
+<akis24> sam58: che programma hai usato per masterizzare ?
+<sam58> forse dovreiscaricare un programma per masterizzare?
+<sam58> quello di sistema
+<sam58> non so come si chiama ma si propone in automatico
+<ale> boh.. cmq ora ho risolto. grazie e alla prox (scusate ma si è svegliata mia figlia e devo andare :) )
+<akis24> sam58: usane qualcun altro comunque verifica che il file scaricato sia corretto
+<sam58> come faccio a verificarlo?
+<akis24> !md5sum | sam58
+<sam58> io ho: xubuntu-15.04-desktop-amd64.iso
+<ubot-it> sam58: http://wiki.ubuntu-it.org/md5sum. per una lista completa, si veda: https://help.ubuntu.com/community/ubuntuhashes
+<akis24> sam58: leggi al link postato come fare
+<sam58> ho letto ma non ho capito
+<sam58> comunque non esiste nel programma un exe per lanciarlo?
+<akis24> sam58: non  sarebbe meglio leggere qualcosa prima ??
+<cristian_c> <ale> e aprendo le impostazioni audio ha funzionato... ma perchè?
+<akis24> !installazione | sam58
+<cristian_c> in che senso?
+<ubot-it> sam58: http://wiki.ubuntu-it.org/installazione | per installazione grafica http://wiki.ubuntu-it.org/installazione/grafica | si consiglia la visione della guida ufficiale in inglese http://www.ubuntu.com/desktop/get-ubuntu/download
+<sam58> scusate ma esiste un sito dove scaricare il programma che non sia un iso?
+<akis24> sam58: no
+<sam58> allora non ce la farò mai
+<gigirock> sam58, ma 6 in win7 ?
+<akis24> sam58: ovvio visto che non ti va' di leggere
+<sam58> si
+<gigirock> trova whet per widows e scarichi....dal link
+<gigirock> trova *wget per widows e scarichi....dal link
+<sam58> ho scaricato winmd5sum ma mi dice che il checcksum non èè coorretto
+<akis24> sam58: http://wiki.ubuntu-it.org/documentazione/indice
+<sam58> adesso leggero' il tutto
+<sam58> grazie del supporto
+<akis24> di nulla
+<times> carlino e cristian...
+<times> ho fatto partire l installazione, ma e da circa 15 min su ricerca dei file system
+<times> È normale?
+<times> ce nessuno?
+<times> heyla
+<akis24> !chi
+<ubot-it> se stai parlando con qualcuno in particolare, per rendere più leggibile il canale ti consiglio di inserire il suo nickname in quello che dici (puoi usare il completamento premendo il tasto tab)
+<times> con tutti.
+<akis24> times: installazione di che ? come ? dacci qualche dettaglio
+<times> xubuntu
+<akis24> times: hai provato da live a vedere se si avvaiprima ?
+<akis24> avvia*
+<akis24> times: suche pc caratteristiche ?
+<akis24> times: hai controllato il file .iso scaricato sia a posto ?
+<akis24> !md5sum | times
+<ubot-it> times: http://wiki.ubuntu-it.org/md5sum. per una lista completa, si veda: https://help.ubuntu.com/community/ubuntuhashes
+<times> acer aspire one ao75lh da live e partita apposto
+<akis24> times: funzionava regolarmente ?
+<times> non hai capito nulla secondo r
+<akis24> times: e parli a geroglifici secondo me ovvio
+<akis24> !installazione | times:
+<ubot-it> times:: http://wiki.ubuntu-it.org/installazione | per installazione grafica http://wiki.ubuntu-it.org/installazione/grafica | si consiglia la visione della guida ufficiale in inglese http://www.ubuntu.com/desktop/get-ubuntu/download
+<times> sono nell installazione,sono su file system da circa 20 min...
+<times> nell
+<bip> nel filesystem?
+<bip> in che senso?
+<bip> times: nel processo di partizionamento?
+<times> sono nell installazione,sono al momento ricerca dei file system..
+<times> nellda 20 min
+<bip> times: hai la possibilità di fare qualche foto con il cellulare, caricarli e metterli nel canale? lo scopo è quello di capire a che punto sei ;-)
+<bip> perso :p peccato.
+<times> http://s16.postimg.org/oxn3sg67p/img_20150517_191814.jpg
+<bip> times: non va avanti?
+<times> no è da 20 min circa
+<times> ....
+<times> allora?
+<times> !mah
+<ubot-it> voce non trovata: 'mah'
+<times> mah!
+<times> nientr quindi.vabene viao.
+<times> *niente ciao
+<reddiz> buonasera!
+<tiziano> sera ragazzi
+<tiziano> posso chiedere aiuto ?
+<tiziano> ce nessuno?
+<mr_pan> !chiedi | tiziano
+<ubot-it> tiziano: per cortesia non chiedere il permesso di chiedere, semplicemente formula la domanda (tutta su  una riga, in modo tale che gli altri possano leggerla e seguirla con facilità). se qualcuno conosce la risposta ti risponderà :-)
+<forum> ciao avrei bisogno di supporto per recovery di un hdd ext
+<forum> qualcuno può darmi indicazioni?
+<mr_pan> !qualcuno | forum
+<ubot-it> forum: la maggior parte delle prime domande fatte in questo canale è del tipo «qualcuno puo' aiutarmi/qualcuno ha tempo/qualcuno usa...?». fate la vostra domanda tecnica e se qualcuno sa, rispondera'
+<mr_pan> forum, scrivi qualcosa di più preciso ... recupero dati da hdd esterno ... che versione ubuntu utilizzi ...
+<forum> scusa...in realtà ho win 7 e da qualche giorno il mio hdd ext non viene più visto (chiede di formattarlo). ho provato con testdsk ma niente (non riesce a trovare un filesystem e nessuna partizione). leggevo che con ubuntu ci potrebbe essere possibilità di recuperare i file o ancora meglio riprisitinare la partizione....questa è la mia esigenza
+<mr_pan> forum potresti provare photorec per cerca di recuperare ifile (funziona anche con win)
+<mr_pan> di più non posso dirti
+<mr_pan> questo canale è espressamente per il supporto a ubuntu e derivate ufficiali
+<mr_pan> !photorec | forum
+<ubot-it> voce non trovata: 'photorec'

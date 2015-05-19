@@ -1,0 +1,21 @@
+<toabctl> i would like to have a ubuntu-cloak
+<toabctl> can somebody help, please!?
+<jussi01> toabctl: #ubuntu-irc for cloaks
+<jussi01> rww: please note the last join :)
+<toabctl> jussi01, thx
+<rww> jussi01: ta
+<akos> there are ubuntu-irc cloaks that are given out?
+<rww> akos: if you're an ubuntu member
+<akos> rww: aha, now i understand (:
+<akos> thank you
+<nhandler> jussi01: can you s/freenode/freenode/ in the /topic ;)
+<czajkowski> could you make it any longer :p
+<jussi01> czajkowski: go look at #ubuntu's topic :d
+<czajkowski> not_logging_in_there :)
+<nhandler> jussi01: might i also suggest adding *!*@freenode/staff/* to the access list?
+<jussi01> nhandler: feel free...
+<idleone> the wibbling and wobbling
+<idleone> ?
+<guntbert> idleone: yes :)
+<idleone> will if it is carnival related i want cotton candy
+<guntbert> sweet

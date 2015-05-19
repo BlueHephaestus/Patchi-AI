@@ -1,0 +1,33 @@
+<hallyn_> tedg: lxcguest is a remnant from maverick timeframe.  please open a bug showing how you tried to create that container, the templtae must be completely out of date
+<tedg> hallyn_, i don't think you meant me?
+<hallyn_> tedg: d'oh, youre right, that was dobey
+<hallyn_> dobey: lxcguest is a remnant from maverick timeframe.  please open a bug showing how you tried to create that container, the templtae must be completely out of date
+<hallyn_> tedg: sorry :)
+<bert_2> not 100% sure whether this is meant for the channel, but i noticed trusty's munin smart plugin is on the old 2.1 version, this would normally not be a problemen, except that it is missing the key feature to ignore non-problematic status codes introduced in version 2.2 of the code (which is a very minor patch, not even 20 lines of code), i was wondering whether i could get that into trusty and if so how?
+<lifeless> prepare a patch for trusty, put in tthe bugtracker, and follow the stablereleaseupdate process on the wiki
+<bert_2> lifeless: so i just create the patch file and file a bugreport, then follow the wiki procedure?
+<teward> bert_2: the wiki page of stablereleaseupdate details the procedures for an sru.  create a patch file, file a bug, attach the patch to the bug, and wait for the process to work out.
+<lifeless> bert_2: in short, yes.
+<teward> that's the short summary of the process anyways
+<bert_2> teward lifeless: ok, thx, i'm reading through it as we speak and afterwards i'll file the bug ;)
+<teward> bert_2: my only thought on this is that you introduce a new feature, so you'd have to do really thorough tests and have a thorough test case to test the functionality
+<teward> if not multiple test cases
+<teward> to quote you: "...it is missing the key feature to ignore non-problematic status codes introduced in version 2.2 of the code (which is a very minor patch, not even 20 lines of code)"
+<teward> and srus typically don't 'add' features, but that's also not my call, just an observation of the most literal interpretation of sru stuff :)
+<bert_2> teward: yeah, that's why i came to ask, whether there was any chance i could
+<teward> bert_2: the worst that can happen is they say "no" in which case the sru goes away
+<bert_2> the thing is, i'm pretty sure i'm not the only sysadmin getting swamped with warning about disks that had an error in the past but are actually fine
+<bert_2> teward: true ;)
+<teward> bert_2: one observation suggestion though:
+<teward> check currently existing bugs against hte package in that release
+<teward> and make sure a bug for this doesn't already exist
+<teward> (dupe bugs are dupes and having five bugs for the same thing is... ehh)
+<bert_2> teward: i already checked, there are no bugs for munin on launchpad that mention smart
+<teward> then you're good, just create the bug :)
+<bert_2> :d
+<teward> but again the worst case is that they say "we can't add this functionality" or such
+<bert_2> teward: the hard part seems to be explaining a test case, cause you sorta need the right kind of smart-erroring drive, which i think you can't emulate easily
+<bert_2> teward: enjoy ;)
+<teward> blah
+<teward> has anyone ran bug-closing scripts to close lucid targeted bugs?
+<teward> and if not should we

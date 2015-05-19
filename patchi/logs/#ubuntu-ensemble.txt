@@ -1,0 +1,219 @@
+[01:44] <niemeyer_dinner> Man..
+[01:44] <niemeyer_dinner> Several hours attempting to fill the US visa form..
+[01:44] <niemeyer_dinner> Worst system ever
+[01:45] <niemeyer_dinner> Hint: Needed a browser-debugger to finish the process
+=== niemeyer_dinner is now known as niemeyer
+[06:15] <SpamapS> niemeyer: thats just the way we make sure only the best web developers visit. :)
+[06:15] <niemeyer> SpamapS: Hehe :)
+[06:18] <SpamapS> niemeyer: about 90 legitimate hits on that presentation.pdf so far..
+[06:18] <SpamapS> grepping out bots.. :)
+[06:20] <niemeyer> SpamapS: Wow, quite impressive
+[06:27]  * niemeyer => bed for reals
+[06:27] <niemeyer> SpamapS: Night!
+[06:29] <_mup_> ensemble/relation-get-bythespec r171 committed by bcsaller@gmail.com
+[06:29] <_mup_> cleanup of tests to directly show invocation of [relation-* args] commands
+[06:29] <_mup_>     Because of repeated issues in the hooks being changed or out of sync with the tests I took the time to remove many of the hook scripts that existed only to capture the arguments or calling convention around a relation-get/set/list command. This makes the tests easier to read and verify.
+[08:05] <kim0> Morning everyone
+[12:05] <kapil> g'morning folks
+[12:35] <niemeyer> kapil: Morning
+[14:04] <_mup_> ensemble/environment-config--selected-ami r178 committed by kapil.thangavelu@canonical.com
+[14:04] <_mup_> document ec2 provider configuration options, allow image id/instance type to specified via config.
+[14:21] <kapil> niemeyer, what do you think about a preallocation option for some number of machines on bootstrap, as a cli/config option
+[14:22] <niemeyer> kapil: Sounds neat
+[14:22] <kapil> ie. a min machines in config
+[14:22] <kapil> niemeyer, i'm trying out tiny natty images atm, i think some preallocation might make initial service deploys a bit faster
+[14:22] <kapil> cool
+[14:23] <niemeyer> kapil: Yeah, definitely.. and there's no real issue with it that I can think of.  It's just increasing the pool
+[14:25] <_mup_> ensemble/relation-get-bythespec r172 committed by bcsaller@gmail.com
+[14:25] <_mup_> version of the invoker argument handling w/o attempt at argument parsing, using optional list
+[14:28] <kapil> yeah.. micro instances are working now
+[14:38] <SpamapS> I've had instance_type set to t1.micro for a while. :)
+[14:38] <SpamapS> they spin up about 2x as fast as m1.small
+[14:38] <SpamapS> and, given that they can be re-started as a bigger instance type.. they seem an ideal starting type. :)
+[14:41] <SpamapS> btw, it would be good to be able to specify a different ami for the bootsrap node and the others.. apparently LXC on lucid is fairly crackful.
+[14:42] <SpamapS> so the ability to say "bootstrap me on natty, but then run everything else on lucid" is desirable.
+[14:54] <niemeyer> OMGOMG
+[14:54] <niemeyer> Review Zero!
+[14:54] <niemeyer> (a new model based on Inbox Zero)
+[14:56] <niemeyer> SpamapS: We'll be moving to Natty after next week (beta FTW)
+[15:04] <kapil> SpamapS, yeah.. lxc was one the kicker for me on the move to natty.. i've been trying it out in maverick the last few days, via libvirt (the integration of which is broken even with openstack ppas).
+[15:05] <kapil> SpamapS, i'm in progress on making the ami configurable via environments.yaml
+[15:07] <SpamapS> I think its a common situation that bootstrap will have different machine providers and arguments..
+[15:07] <kapil> SpamapS, sure, the individual environments have configs.. although i think your suggesting bootstrap should only do one environment at a time?
+[15:08] <kapil> which all sounds good
+[15:09] <SpamapS> It would be good if it was easily overridable just for bootstrap is all.
+[15:09] <SpamapS> Like.. "bootstrap me in ec2, then use the lxc provider"
+[15:26]  * kapil lunches
+[15:34] <niemeyer> kapil: Enjoy
+[15:34] <niemeyer> I'm about to do the same
+=== deryck is now known as deryck[lunch]
+=== niemeyer is now known as niemeyer_lunch
+[15:50] <kim0> Hi folks .. Letting you know Ubuntu Cloud Days starting in 10mins in #ubuntu-classroom .. You can discuss in #ubuntu-classroom-chat .. Thanks
+[16:35] <_mup_> ensemble/environment-config--selected-ami r179 committed by kapil.thangavelu@canonical.com
+[16:35] <_mup_> update with right distro name for natty
+[16:37] <kapil> i'm going to switch the default instance type to t1.micro unless anyone has an objection? jimbaker, bcsaller, niemeyer_lunch, SpamapS ?
+[16:37] <jimbaker> kapil, sounds like a great idea to me
+[16:37] <bcsaller> sounds good to me 
+=== niemeyer_lunch is now known as niemeyer
+[16:40] <niemeyer> kapil: +1 on experimenting with it
+[16:40] <niemeyer> kapil: I wonder a bit if they'll be too slow for any meaningful usage, but SpamapS seems happy, so let's give that a try
+[16:41] <kapil> niemeyer, it seems to work well enough to for the wordpress/mysql examples.
+[16:42] <kapil> and lowers the cost by 2/3
+[16:42] <kapil> sounds good
+[16:44] <_mup_> ensemble/environment-config--selected-ami r180 committed by kapil.thangavelu@canonical.com
+[16:44] <_mup_> on the ec2 provider, switch the default instance type to t1.micro
+=== deryck[lunch] is now known as deryck
+[16:49] <_mup_> ensemble/relation-get-bythespec r173 committed by bcsaller@gmail.com
+[16:49] <_mup_> spelling of exception message
+[16:50] <kapil> on natty though some of the formulas look like they need fixing
+[16:52] <bcsaller> kapil: in what way? I'm curious what wasn't version generic
+[16:54] <kapil> niemeyer, on debug hook one problem i noted is that we can't easily set debug for install or service hooks, because we validate the unit name.. so we don't have much to get the debug setup before the hook executes, it probably should wait on the unit's existence with a few minutes for a timeout.
+[16:55] <kapil> bcsaller, not sure exactly.. i should try it in the debugger, the wordpress side didn't get a second db-relation-changed fired for the mysql modify was all i noticed. 
+[16:57] <niemeyer> kapil: Hmm.. how do we validate the name atm?
+[16:58] <kapil> niemeyer, we verify a the unit's service and unit name, so we can dereference to a machine
+[16:58] <niemeyer> kapil: Hmm
+[16:58] <niemeyer> kapil: But how do we debug a unit before we know its name?
+[16:58] <_mup_> Bug #741890 was filed: Better support for debugging install/start hooks <Ensemble:New> < https://launchpad.net/bugs/741890 >
+[16:59] <niemeyer> kapil: Or do I misunderstand what you mean?
+[16:59] <kapil> niemeyer, no.. i think you've got the underlying question here
+[17:00] <kapil> niemeyer, previously we had relatively determinstic ordering, with global ordering, its not predictable per se... well it is predictable but not nesc. obvious.
+[17:00] <kapil> er. global sequence on unit names
+[17:00] <niemeyer> kapil: I see
+[17:00] <kapil> so you do ensemble debug-hooks mysql/0  and ensemble deploy mysql
+[17:01] <niemeyer> kapil: But then, even if we were able to predict the unit name, it feels like a bad approach in general
+[17:01] <niemeyer> kapil: Like winning a typing race :)
+[17:01] <kapil> niemeyer, we can predict with fair certainty the next name of the unit internal to the api.
+[17:01] <kapil> so perhaps mysql/next 
+[17:01] <niemeyer> kapil: It feels like a much better approach would be to do that at deploy time
+[17:01] <niemeyer> kapil: ensemble deploy --debug-hooks ...
+[17:02] <kapil> as a unit name denoting debug the next unit of this service
+[17:02] <niemeyer> and then hook up
+[17:02] <niemeyer> "hook up" is an ideal term in that case, I guess ;-)
+[17:02] <kapil> niemeyer, hmm so deploy would drop into a debug shell after waiting for the machine startup?
+[17:02] <kapil> that sounds pretty nice
+[17:03] <niemeyer> kapil: No, it would only set a flag there
+[17:03] <niemeyer> kapil: We don't want to be copying everything over from debug-hooks I think
+[17:03] <kapil> niemeyer, i was just thinking calling out to some refactor in debug-hooks
+[17:03] <niemeyer> kapil: It'd put the unit in debug mode, and then we can run ensemble debug-hooks after the fact at our leisure
+[17:03] <kapil> well currently debug-hooks is ephemeral..
+[17:04] <niemeyer> kapil: Hmmm.. can we still an ephemeral node? :-)
+[17:04] <niemeyer> steal
+[17:04] <kapil> sort of
+[17:04] <kapil> we can steal the session id if we save it...
+[17:04] <niemeyer> Hmm.. that's full of edge cases IIRC
+[17:04] <kapil> and the time between the commands is less than session timeout
+[17:05] <kapil> niemeyer, yeah.. can of worms
+[17:05] <niemeyer> (from my gozk playing)
+[17:05] <kapil> much easier to call into a refactored debug-hooks from deploy
+[17:06] <kapil> hmmm
+[17:07] <kapil> although its gets a little messy when deploy could mean a whole suite of services and units... we should only debugthe top level one.. but then we start getting formula that specify min units >1 and get ambigious.
+[17:09] <niemeyer> Yeah
+[17:11] <kapil> niemeyer, the only alternative i can come up with is symbolic naming for units denoting a  temporal/state marker.. like mysql/next
+[17:11] <kapil> that could be consumed by debug-hooks
+[17:11] <kapil> but combining them sounds nice
+[17:12] <niemeyer> kapil: Hmmm!
+[17:12] <niemeyer> kapil: There may be an alternative
+[17:12] <niemeyer> kapil: We might make the node non-ephemeral in that specific case
+[17:13] <kapil> hmmm...
+[17:13] <niemeyer> kapil: So debug-hooks borrows ownership from it, and explicitly kills it when exiting
+[17:14] <kapil> niemeyer, perhaps.. i'm a little reluctant to give up the ephemeral safety blanket. that sort of change would work though. doesn't really get away from the ambiguity of doing it directly in deploy
+[17:15] <kapil> if we're going to set it in deploy, its not clear what we gain by not dropping the user directly into the debug shell they just requested when its ready
+[17:15] <niemeyer> kapil: Well, we're giving up on it purposefully.. the problem is precisely that we don't want to node to be removed when deploy exits
+[17:15] <niemeyer> kapil: and I don't see how there's any ambiguity in that case
+[17:16] <kapil> its a future ambiguity we can address latter.. but ignoring that for the moment, why not just drop them straight from deploy into the debug shell if they requested it.
+[17:17] <niemeyer> kapil: Because it's ambiguous would be one reason, but otherwise I can't think of any great reason not to either.
+[17:18] <kapil> niemeyer, i think i prefer that.. beyond the peristent debug node, we have to change debug-hooks to reconcile against existing state any new cli arguments
+[17:19] <kapil> hmm.. as a result of the perisstent
+[17:20] <niemeyer> kapil: Sounds good.  Just for curiosity sake, what do you mean regarding reconcile?
+[17:21] <kapil> niemeyer, the debug-hooks cli takes unit name hook-match-filter.. if the --debug-hooks  flag on deploy leaves a persistent node, then we have to reconcile current args vs. stored state.
+[17:21] <niemeyer> kapil: I see, ok
+[17:22] <kapil> probably just not accepting args in that case.. or just erroring out.. its syntax.. but its consistency too ;-)
+[17:23] <jimbaker> is something like this legal? relation-set port= 
+[17:25] <niemeyer> jimbaker: I have vague memories of defining that this would internally remove the variable
+[17:26] <kapil> jimbaker, i think so
+[17:26] <niemeyer> jimbaker: Either way, yeah, it sholud
+[17:26] <kapil> it won't kill the variable just an empty value for it
+[17:26] <kapil> i think we ended up loosing a good way to unset values atm
+[17:27] <niemeyer> kapil: This should probably remove the variable, at least as far as those command line tools are concerned
+[17:27] <kapil> there's a dictionary merge syntax on the hook context, but the api doesn't expose it
+[17:27] <niemeyer> kapil: Since "relation-get port" with it empty or unset is effectively equivalent
+[17:27] <kapil> niemeyer, what about  a magic unset variable?
+[17:27] <jimbaker> agreed on removing the variable, since that's the sh convention
+[17:27] <niemeyer> kapil: What about it? 8)
+[17:28] <kapil> either works.. i'm just wondering if there are cases where an empty but existant value is valid
+[17:28] <kapil> fair enough its simpler to do for now
+[17:30] <_mup_> Bug #741917 was filed: relation set with an empty value should delete the key from unit relation settings <Ensemble:New> < https://launchpad.net/bugs/741917 >
+[17:33] <_mup_> ensemble/environment-config--selected-ami r181 committed by kapil.thangavelu@canonical.com
+[17:33] <_mup_> remove some debugging in ensemble-make-image
+[17:41] <_mup_> ensemble/relation-set-empty-deletes r178 committed by kapil.thangavelu@canonical.com
+[17:41] <_mup_> relation-set with empty value deletes from the unit's relation settings.
+[18:09] <kapil> niemeyer, jimbaker, bcsaller standup?
+[18:09] <bcsaller> sure
+[18:09] <niemeyer> Yeah, let's do it
+[18:10] <jimbaker> sure
+[18:11] <niemeyer> I'm up
+[18:12] <SpamapS> sorry, in an interview
+[18:22] <niemeyer> bcsaller: self.create_hook("relation-get", "--format=json")
+[18:47] <_mup_> ensemble/relation-get-bythespec r174 committed by bcsaller@gmail.com
+[18:47] <_mup_> no args to invoker/create_hook call
+[18:52] <bcsaller> gustavo: pushed those changes
+[18:52] <niemeyer> bcsaller: Thanks!
+[18:53] <bcsaller> I have to go move the car (calls always run long on Thurs. when the street sweeper comes). 
+[19:16] <jimbaker> good insight on libvirt during standup - it prompted me to look at its firewall integration
+[19:16] <jimbaker> (via iptables)
+[19:46] <kapil> hmm.. it looks like there is already support for deleting if the value set is none, not clear if that's what's done though or if set to an empty string
+[19:48] <_mup_> ensemble/relation-set-empty-deletes r179 committed by kapil.thangavelu@canonical.com
+[19:48] <_mup_> add a new hook context state api delete, which sets the value to none for the context flush deletion detection.
+[20:00] <_mup_> ensemble/relation-set-empty-deletes r180 committed by kapil.thangavelu@canonical.com
+[20:00] <_mup_> test for the hook cli that set can delete if used with an empty value
+[20:07] <_mup_> ensemble/relation-set-empty-deletes r181 committed by kapil.thangavelu@canonical.com
+[20:07] <_mup_> simplify deletions, to just delegate to set_value with None, ensure that their only set for deletion if currently existing.
+[20:09] <kapil> bcsaller, fwiw re hook testing.. http://bazaar.launchpad.net/~hazmat/ensemble/relation-set-empty-deletes/revision/180
+[20:10] <bcsaller> kapil: thanks, already pushed a change 
+[20:10] <kapil> cool
+[20:21] <_mup_> ensemble/global-unit-name-uniqueness r180 committed by kapil.thangavelu@canonical.com
+[20:21] <_mup_> setup unit sequence topology key as per hyphenated convention.
+[20:21] <_mup_> ensemble/expose-services r182 committed by jim.baker@canonical.com
+[20:21] <_mup_> Edits in response to review
+[20:28] <_mup_> ensemble/trunk r179 committed by kapil.thangavelu@canonical.com
+[20:28] <_mup_> merge global-unit-name-uniqueness [r=niemeyer][f=731691]
+[20:28] <_mup_> Make unit names globally unique, even across incarnations
+[20:28] <_mup_> of a service with the same name.
+[20:28] <_mup_> This all tangentially addresses the deploying of units of a
+[20:28] <_mup_> reincarnated service onto a machine which previously held previously
+[20:28] <_mup_> held units of it.
+[20:34] <kapil> niemeyer, i had a question for you regarding https://code.launchpad.net/~hazmat/ensemble/formula-upgrades-spec/+merge/53898 #11
+[20:35] <kapil> so a service may have multiple relations and the formula not the name for all of them.. mysql for example, might have a dozen dbapp-relations.. 
+[20:35] <kapil> pointing to different services
+[20:35] <kapil> relation-list is designed to iterate over all units.. so relation-list dbapp-relation would list all units
+[20:36] <kapil> i'm just thinking it might make more sense to deal with those relations one by one, via iteration of the relations.
+[20:37] <_mup_> Bug #742046 was filed: Ensemble should sftp to/from units <Ensemble:New> < https://launchpad.net/bugs/742046 >
+[20:43] <niemeyer> kapil: Hmm
+[20:43] <niemeyer> kapil: I see.. that's a good point
+[20:43] <niemeyer> kapil: Not sure about a good interface to refer to these yet
+[20:45] <niemeyer> kapil: They are name-less ATM
+[20:46] <niemeyer> and are simply "buckets" of remote units
+[20:46] <niemeyer> We need to think about that some more.. we can probably postpone that entirely for the upgrade work, though
+[20:46] <_mup_> ensemble/expose-services r183 committed by jim.baker@canonical.com
+[20:46] <_mup_> Moved sections, plus edits
+[20:48] <kapil> niemeyer, sounds good re postponing relation inspection for upgrade
+[20:59] <_mup_> ensemble/expose-services r184 committed by jim.baker@canonical.com
+[20:59] <_mup_> Spell checked
+[21:08]  * niemeyer => nap!
+=== niemeyer is now known as niemeyer_away
+[21:42] <_mup_> ensemble/formula-upgrades-spec r180 committed by kapil.thangavelu@canonical.com
+[21:42] <_mup_> merge trunk
+[21:43] <_mup_> ensemble/formula-upgrades-spec r181 committed by kapil.thangavelu@canonical.com
+[21:43] <_mup_> post conflict resolve against trunk merge, remove empty specifications  directory.
+[22:40] <_mup_> ensemble/trunk r180 committed by bcsaller@gmail.com
+[22:40] <_mup_> [merge] Merge relation-get-args branch. [r=niemeyer] [f=719329]
+[22:40] <_mup_> * relation-get now follows the specification for argument ordering.
+[22:40] <_mup_>    The documented format is: 
+[22:40] <_mup_>   
+[22:40] <_mup_>     relation-get [setting_name] [unitname]
+[22:40] <_mup_>   
+[22:40] <_mup_>     '-' may be used for setting_name to indicate ALL relation settings.
+[22:40] <_mup_>     unitname may be ommited and now defaults to the remote unit of the relationship.
+[22:40] <_mup_> * many cleanups to the tests and removal of many testing hook files from the tree
+[22:55] <kapil> bcsaller, can you get multiple setting names in one line with that? or is it intended to just get all of them if  multiple are wanted?
+[23:33] <bcsaller> kapil: sorry missed that. I think currently its a case of getting them all 

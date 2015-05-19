@@ -1,0 +1,3 @@
+<swiftynb> is there some reason exec /home/ubuntu/test/myexecutable
+<swiftynb> would not keep running?
+<swiftynb> with upstart

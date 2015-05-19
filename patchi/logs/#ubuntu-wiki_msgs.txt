@@ -1,0 +1,81 @@
+<elfy> hi hannie
+<hannie> hey there, elfy
+<elfy> we are official now then i guess - the log bot is here :)
+<hannie> ok, that is good news
+<elfy> yep - we'll have to be serious now :)
+<hannie> i am just reading the ubuntu-manual meeting logs (i did not attend)
+<elfy> i might start hanging around in the channel soon - just to get a feel for people
+<hannie> here is a useful link: https://wiki.ubuntu.com/meetingology
+<hannie> i am not sure if ubuntulog2 and meetingology use the same code
+<elfy> i have no idea - as far as i know the log bots are just for getting channels onto here - http://irclogs.ubuntu.com
+<hannie> http://irclogs.ubuntu.com/2012/05/19/%23ubuntu-manual.html#t19:05
+<hannie> this is the log i am just reading
+<hannie> and we use meetingology
+<hannie> the chair can use commands like # startmeeting, #topic, #vote etc.
+<elfy> i realise that - i'd assume that meetingology was there for meeting use - the channel also has ubuntulog in it i see
+<hannie> you are right. here we only have ubuntulog2 (thusfar)
+<elfy> yep
+<elfy> will check to see if it is logging to the irclogs.ubuntu.com later
+<hannie> ok, so far i am happy the way we communicate (irc and m/list)
+<elfy> yea me too - it's just that as this is 'offifical' we thought there should be logs available - it would make it easier for us too - we can check if we've been away for a while
+<elfy> alan bell i think is the one to ask about meetingology - might be good to have it here for meetings
+<hannie> i was just going to ask: can we have meetingology here? are you going to ask alan bell?
+<elfy> i can do that
+<hannie> great!
+<hannie> i also see manualbot at #ubuntu-manual. no idea what this bot does
+<elfy> have to now - it's on the blueprint to remind me :)
+<hannie> ah, good old blueprint
+<elfy> :)
+<elfy> do you remember offhand if we decided to have a page to list done wiki's - i can't remember - if you can't don't worry - i will dig it out from my logs
+<hannie> i think not
+<elfy> okey doke
+<hannie> with all these separate pages, is it possible to have them together at some place or other?
+<elfy> the 3 list pages?
+<hannie> like you put something in a folder?
+<hannie> yes, 3 and perhaps one coming
+<elfy> no idea to be honest - question can be asked - i'd have thought not - but they are all linked from one place in 'our wiki world'
+<hannie> i have the links in my favorites, but i was just thinking if they can be gathered somewhere
+<hannie> no big deal. just a thought
+<elfy> we can think about it and ask someone - no problem with that
+<elfy> and what's the 'perhaps one coming' ... :)
+<hannie> the wiki's done page
+<elfy> ok - you think there is a need?
+<hannie> not yet, but maybe in the future
+<elfy> mmm - if we have a need - better to have one now - or someone will have a long list to add in one go
+<hannie> like i said before, when we have less work to do for the manual i will spend more time on ubforums2wiki
+<elfy> yea - i understand :)
+<elfy> i'll add it to blueprint as a thought
+<hannie> good idea, so we won't forget
+<elfy> yep
+<hannie> you know what i think of when you use the name elfy? lotr
+<elfy> :)
+<elfy> you'd like my urukhai nick then lol
+<hannie> or harry potter
+<elfy> oh dear :(
+<elfy> :p
+<hannie> urukhai is from starwars?
+<elfy> urukhai are from lotr
+<elfy> the bigger nastier goblins lol
+<hannie> argggg. stupid me
+<elfy> :)
+<hannie> i just listened to my cd lotr
+<hannie> great music
+<hannie> especially enya
+<elfy> i like enya
+<hannie> me too, and clannad
+<elfy> blast from the past that is
+<hannie> but still good music (i find at least)
+<elfy> yep
+<elfy> back in a while - daughter home now
+<hannie> ok, back to work for me. cya
+<elfy> cya
+<elfy> wildmanne39: hi and notice the log bot finally
+<mgandtl> is there a way to mark the pages on the import page as "in progress" or "bagged by x"? don't want to start and then have someone else do it. :)
+<wildmanne39> hi elfy
+<elfy> mgandtl: not at the moment
+<elfy> not been a problem as yet - start a m/list thread perhaps to get views on it
+<mgandtl> we have a mailing list?
+<elfy> it seems at the moment that people who started the ball rolling with a thread are doing the wiki
+<elfy> mgandtl: yes - at https://launchpad.net/~ubforums2ubwiki
+<elfy> and a blueprint
+<mgandtl> ah. okay, i'll go join that.

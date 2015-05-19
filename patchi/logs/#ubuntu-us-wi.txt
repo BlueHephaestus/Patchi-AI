@@ -1,0 +1,3 @@
+[19:37] <douglasawh-work> so, it looks like I should be able to update DNS without samba, but it doesn't appear to be working.  How do I do that?
+[19:37] <douglasawh-work> we have multiple DNS suffixes
+[19:38] <douglasawh-work> the one I am trying to us is dhcp.epic.com which did not exist before

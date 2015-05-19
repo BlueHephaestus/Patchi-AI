@@ -1,0 +1,108 @@
+[12:57] <highvoltage> how do I find an app again if it isn't listed on https://myapps.developer.ubuntu.com/dev/arb/ ?
+[13:33] <wendar> highvoltage: I have that problem too
+[13:34] <wendar> at the moment there is no way
+[13:34] <wendar> apparently BooruPy is a downloader for anime pr0n
+[13:34] <highvoltage> seems like all I can do is paste https://myapps.developer.ubuntu.com/dev/apps in my URL bar and then press down to check my browser history
+[13:34] <wendar> I'm giving it a "not appropriate for general audiences".
+[13:36] <highvoltage> sounds like the right response
+[13:49] <wendar> highvoltage: oh, dpm's wiki page has links to the proposals
+[13:49] <wendar> as much as I hate the idea of manually maintaining a queue outside the queue, it does have advantages
+[13:50] <wendar> I guess see how we do with simple email thread tracking
+[13:50] <wendar> an email folder is easy enough to search for previous entries
+[13:52] <dpm> note that the wiki page was intended as a one-off, first-pass review to the queue as a helper (also https://bugs.launchpad.net/developer-portal/+bug/915902)
+[15:47] <wendar> dpm: yeah, it's just tempting to maintain it, because it is helpful
+[15:47] <wendar> dpm: but, resisting the temptation for now :)
+[15:48] <dpm> wendar, no worries, happy if it's to be helpful in whichever way :)
+[16:35] <wendar> so, the SSHSearch Lens that's in the queue as "Pending QA", is that an update to the one that's published? or is it just the same one, and needs to be bumped to a manual "ARB Published" state?
+[16:37] <wendar> same question for the Utilities Lens and Ask Ubuntu Lens
+[17:08] <stgraber> wendar: don't touch them!
+[17:08] <stgraber> wendar: Pending QA == Published
+[17:08] <wendar> yah, but can we clear them from the queue?
+[17:08] <stgraber> wendar: we don't mark them as Published because of the Software Center bug
+[17:09] <stgraber> wendar: if we mark them as anything but Pending QA, they'll either vanish or be moved to the "For purchase" section
+[17:09] <wendar> last I cchatted with achuni, he said we could set up a special "ARB Published" state
+[17:09] <wendar> that wouldn't bump it into visible status in the Commercial Queue
+[17:09] <wendar> but, would clear it out of our queue
+[17:10] <wendar> we want it out of our queue, right?
+[17:10] <wendar> don't want to keep around all the past published apps?
+[17:10] <stgraber> I kind of like to see them in the queue until the SRU has been published to 11.10
+[17:11] <stgraber> otherwise we'll forget which need fixing once the bug is solved (we'll need to drop the manually added metadata)
+[17:11] <wendar> could we have them listed separately, then?
+[17:11] <wendar> or, put them in an actual launchpad bug in the ARB queue?
+[17:12] <stgraber> maybe, though the software-center SRU was supposed to be done 3 weeks ago, it's maybe just easier to push the SRU out and be done with the bug?
+[17:12] <wendar> yes, if it's that close
+[17:13] <stgraber> wendar: I just poked mvo
+[18:52] <ajmitch> morning
+[19:05] <stgraber> wendar: mvo says we should have the software-center SRU right after feature freeze
+[19:05] <wendar> sweet!
+[19:05] <wendar> ajmitch: good morning :)
+[19:19] <stgraber> hmm, what just happened to pdf studio 7? (received an e-mail saying it's been published from arb)
+[19:21] <ajmitch> was it in the commercial queue?
+[19:22] <ajmitch> since I haven't seen an app of that name in the ARB queue yet
+[19:26] <stgraber> well, it went to our mailing-list, so it should have been one of ours, though it might have been a bug in MyApps ;)
+[19:26]  * stgraber checks the commercial queue
+[19:26] <ajmitch> it wouldn't be the first bug :)
+[19:26] <stgraber> indeed :)
+[19:27] <stgraber> yeah, I see it as pending review in commercial ... so probably was some kind of glitch
+[19:27] <ajmitch> are magazines like the full circle magazine being bumped over to the commercial queue?
+[19:27] <ajmitch> I know they don't fall within our content guidelines, as they're solely content
+[19:28] <stgraber> yeah, these I usually send back to commercial when nobody from that team beats me to it
+[19:29] <ajmitch> ah nice
+[19:31] <ajmitch> I don't think regular ARB members have an option to change the queue, unless it's not obvious
+[19:39] <stgraber> apparently the "send back to myapps" option is supposed to do it (if you see it)
+[19:39] <stgraber> I usually just poke achuni on IRC :)
+[19:44]  * ajmitch can see a 'submit to myapps' button
+[19:45] <stgraber> yeah, I think that's the one. I never confirmed that it indeed does what they say it does ;)
+[19:46] <stgraber> and its name is just confusing...
+[19:46]  * ajmitch wonders if jono has heard any response on getting the source for myapps
+[19:47] <ajmitch> I'm not holding my breath, but it doesn't really seem like a critical thing to keep proprietary
+[21:19] <jono> ajmitch, talking with them now about it
+[21:19] <ajmitch> thanks jono :)
+[21:20] <jono> ajmitch, :-)
+[21:26] <jono> ajmitch, which is the best email address to use for you?
+[21:27] <jono> I want to copy you into a mail
+[21:32] <jono> ajmitch, found your email, np
+[21:37] <ajmitch> sorry for irc lag, am at work :)
+[22:04] <ajmitch> jono: thanks for starting that conversation, I'll follow it up with david
+[22:05] <jono> thanks ajmitch
+[22:23] <wendar> framingham calculator is ready for vote
+[22:23] <wendar> is anyone working on harmonyseq?
+[22:23] <wendar> that's an old one, IIRC, just recently freshly submitted
+[22:24] <ajmitch> wendar: yeah I've started on it again
+[22:24] <wendar> ajmitch: cool, will pick another one
+[22:25] <stgraber> wendar: is it in the staging PPA already?
+[22:25] <stgraber> wendar: (the calculator)
+[22:25] <wendar> stgraber: yes
+[22:25] <stgraber> k
+[22:25] <wendar> ready for vote
+[22:25] <ajmitch> I think it'd be useful to import these packages into a branch so we can share the ARB changes a bit easier
+[22:25] <ajmitch> mostly because it's simpler to see the revisions :)
+[22:25] <wendar> ajmitch: I'm about to push my changes to a branch
+[22:25] <ajmitch> great
+[22:26] <wendar> but, I'm not sure whether to use an app-review-board branch, or an allison branch
+[22:26] <wendar> any opinions?
+[22:26]  * ajmitch was just going to use a +junk branch under ~ajmitch
+[22:26] <wendar> app-review-board would mean any members could edit it
+[22:26] <wendar> but, just for viewing, ~allison is fine
+[22:27] <wendar> (and, anyone can always branch mine and push their own)
+[22:27] <ajmitch> yeah, I was thinking of it just for reviewing, it's easy enough to push to ~app-review-board later
+[22:27] <ajmitch> ok, back later, another meeting at work... :)
+[22:27] <wendar> later :)
+[22:29] <wendar> how about nsnake, anyone working on that one?
+[22:34] <stgraber> wendar: commented on the mailing list
+[22:34] <stgraber> so far I made a +junk branch under ~stgraber for each package I touched but it'd probably be interesting to move them under ~app-review-board
+[22:42] <wendar> stgraber: for some reason your first email about the icon didn't come through
+[22:42] <wendar> stgraber: but your second email referring to the first email did
+[22:42] <wendar> stgraber: maybe just server lag, give it a bit
+[22:48] <stgraber> wendar: I received my first e-mail back from the mailing-list, so something seems to be wrong on your end
+[22:48] <wendar> stgraber: got it now, just some weird lag
+[22:49] <wendar> stgraber: on dh_gencontrol, does have to be a png, or is an svg fine? The package currently only includes an svg, though the developer submitted pngs to MyApps.
+[22:50] <stgraber> wendar: you need a png
+[22:50] <wendar> stgraber: does resolution matter? go for the highest?
+[22:50] <stgraber> wendar: what I did for the others was include the .png from myapps (the 128x128) manually in the source package
+[22:51] <wendar> stgraber: in the debian directory? (I've been trying to limit changes to debian/ or debian/patches
+[22:51] <stgraber> it's the one displayed in the software-center, I don't know exactly what size it uses but it's pretty big, so go for the highest
+[22:52] <wendar> not really critical, I suppose, just inventing standards on the fly :)
+[22:52] <stgraber> the lenses were native packages, so I directly put it in there next to their .svg, I guess in your case as it's source format 3, you can put it in debian/arb-icon-blah.png or something like that
+[22:53] <stgraber> it doesn't really matter as long as it's copied outside the build environment at build time
+[22:54] <stgraber> (that's a part that wasn't necessarily clear in what I copy/pasted, the ../ in there it doesn't really matter puts it outside the build environment, right next to the generated binary packages)

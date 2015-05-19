@@ -1,0 +1,3 @@
+[00:59] <smoser> dbuechler, i suspect we need these: http://paste.ubuntu.com/11176334/
+[00:59] <smoser> right ?
+[00:59] <smoser> please just confirm and maybe pester me with an email or submit a merge proposal and well get that fixed.

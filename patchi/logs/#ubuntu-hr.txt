@@ -1,0 +1,57 @@
+[07:32] <SilverSpace> dan
+[07:33] <SilverSpace> nakon pola dana zajebancije bez interneta tv i telefona danas sve radi 
+[07:34] <SilverSpace> doduse jos uvijek sporo 3.912211 Mbit/s
+[07:37] <Mmike> SilverSpace, a, kaj si reko, zash se nemres prebacit nekom drugom?
+[07:38] <SilverSpace> kome?
+[07:39] <SilverSpace>  4.4128056 Mbit/s
+[07:40] <SilverSpace> oo pa nesto ubrzalo :)
+[07:43] <Mmike> SilverSpace, kak kome? pa imas tcom, za pocetak. Imaju ti i optiku!
+[07:43] <Mmike> imas amis, DSL im radi izvrsno 
+[07:48] <SilverSpace> Mmike: nema optike kod mene 
+[07:48] <SilverSpace> ovo drugo je isti kujac ko i ovi moji 
+[07:48] <SilverSpace> samo jos vise kuna platiti 
+[07:49] <Mmike> SilverSpace nije bas, amis ce ti dat 12 mb downloada sam tak
+[07:49] <Mmike> bez ikakvih bedova
+[07:50] <SilverSpace> da i samo jedan tv 
+[07:53] <SilverSpace> bas gledam amis sad i to mi je nepovoljno 
+[07:53] <SilverSpace> 80kn vise nego sad za 3u1
+[07:56] <SilverSpace> samo optika dolazi u obzir
+[07:56] <SilverSpace> onda bi platio vise
+[07:57] <SilverSpace> ovo sve drugo mi je nepovoljno 
+[07:59] <Mmike> May 17 09:59:09 enchilada kernel: [  371.193458] ata7.00: exception Emask 0x10 SAct 0x800 SErr 0x400000 action 0x6 frozen
+[07:59] <Mmike> May 17 09:59:09 enchilada kernel: [  371.193641] ata7.00: irq_stat 0x08000000, interface fatal error
+[07:59] <Mmike> May 17 09:59:09 enchilada kernel: [  371.193769] ata7: SError: { Handshk }
+[07:59] <Mmike> sugavi kontroler
+[08:00] <Mmike> SilverSpace, optika tcom ti je oko 310 kuna za firmu ak uzmes na 2 godine ugovor
+[08:00] <Mmike> za privatno je jeftinije
+[08:08] <SilverSpace> Radimo na proširenju optičke mreže i rado ćemo vas obavijestiti kad Ultra MAX usluge postanu dostupne na vašoj lokaciji.
+[08:09] <SilverSpace> tcom :)
+[08:09] <SilverSpace> frend zgrada do mene ima uredno brzinu 7-8
+[08:10] <SilverSpace> isto kabel ko i ja ista firma btnet
+[08:11] <SilverSpace> Kvaka 22
+[08:11] <jelly> preseli se?
+[08:12] <SilverSpace> kak u mamuticu tam je tek frka :)
+[08:13] <SilverSpace> u biti ja sam zadovoljan sa btnetom (bio) sad u zadnje vrijeme nesto seruckaju 
+[08:13] <SilverSpace> kvarovi nisu bili cesti ni pucanje interneta
+[08:18] <SilverSpace> http://www.speedtest.net/result/4365756543.png
+[08:18] <SilverSpace> kao da sam na 4Mbitas
+[08:22] <SilverSpace> Čelnici KHL-a potvrdili da Medveščak ostaje u ligi
+[08:32] <SilverSpace> http://www.index.hr/vijesti/clanak/tragedija-kod-labina-u-smrskanom-meganeu-zivot-izgubila-dva-mlada-nogometasa/820404.aspx
+[08:32] <SilverSpace> alkohol 
+[11:48] <SilverSpace> ligi ili lizi 
+[11:56] <SilverSpace> moto gp
+[12:01] <infy-> SilverSpace: VDSL na T-Com ništa?
+[12:48] <SilverSpace> moto gp odlican ove godine
+[12:49] <SilverSpace> infy-: preskupi su 
+[12:49] <SilverSpace> rade se patim i tu lovu zapijem i zajedem nego njima dati 
+=== chaky_ is now known as chaky
+=== spawn is now known as markosejic
+[17:01] <markosejic> d dan
+=== spawn is now known as Guest22547
+=== Guest22547 is now known as markosejic
+[19:16] <markosejic> d vecer
+[19:20] <nicols> jutro!
+[20:50] <Mmike> Broj preostalih rata:	45
+[21:04] <dodobas> pozdrav iz Nodebo, Danska...
+[21:04] <Mmike> dodobas, jel zima? )
+[21:05] <dodobas> pa ... 7 stepeni i kisa, sta mislis ... hebate

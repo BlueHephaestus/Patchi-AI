@@ -1,0 +1,1268 @@
+should i be running a foreach on $letters there with a break? seems like bad practice.	wow ... can't figure this one out - $array = &$other['something']; $test = each($array); works but if i replace $test = .... with "while ($test = each($array)) { ... }" it fails
+: what charset are you reports in?	 or  the data already got corrupted  long before it reached the database.
+are their any alternative for array_rand()? because it doesnt seem to randomize things at all.	there's no reason you should write one more line of code than is absolutely required to finish the job
+wait that works?	install remote control software on your home system capable of html5 client use html5 client at work badum tcs
+hi, i'm currently trying to setup 5.6 with mssql access on iis. if i have a careful look at info() i see that windows binary package ( 5.6.8-nts-win32-vc11-x86) was compiled with "--without-pdo-mssql" would anyone know the reasoning or know if it can be overridden? it looks like it's preventing the pdo_mssql.dll from loading?	 if you have autoincrementing column in that table things may go boom if it gets reset to 1 or it may go boom if it doesn't
+namespace mapper; use modeluser; means new modeluser() == new mapper\modeluser(), right?	salvation
+are you farmiliar with classes?	but i need to allow and 4 and 5
+can anyone look at my script and tell me what's wrong? :d	2 requests in one?
+do you think using http://www.web-development-blog.com/archives/send-e-mail-messages-via-smtp-with-mailer-and-gmail/ tutorial for sending email would be a good idea?	i am thinking to just set require mailer to top of my process. file and then add rest of script before my ?> tag
+, how apbout to use pack() before putting them into db?	ok let me try
+: if you've ticked some mysqli box then you might have to restart apache for it to pick up the changes..?	i didnt
+if i click the login button and do $_post["login"] what will the $_post show?	bool or wouldn't it work?
+guys is there some historical bug in timezone with pacific/auckland?	i.e. the second one you run is taking advantage of something cached for example.
+sure, any suggestions?	!! is a convenient shorthand for converting a truthy/falsy value to true/false similar to the more verbose `boolean` function.
+what is a type of field?	h data is in blob
+: i was informed yesterday that its part of the es7 specs not es6. no?	i tried that typing nameofscript didn't produce anything
+why not just start it with sh script.sh& why the /dev/null ?	 this sounds like a not-good plan.  if you really need to submit to file1 and have file2 handle it i would suggest using mod_rewrite (or the equivelent on whatever server you run).  alternatively depending on what you're doing simply including the file might work just fine.
+ : what is emptyis supposed to do ?	hahah any particular reason?
+the auto decodes?	i've even told you how to get the data server side.
+: can i pm you?	 do you mean the same script with another name?
+, spurs rockets?	yeah it's something like mav_laptop if he' around
+: why do you need extension?	"this path/name.extension" is not at all clear
+you need to get laid?	tc
+: do you mean sqlite_libversion?	hello. is it possible to have an array of named sub-patterns with preg_match? for example "123121314256" to "array('data'=>array(array(123)array(121314)array(256)))"
+u mad because you aren't getting any of that free love?	not even allies but to a degree they are.
+: how is that related to ?	this is  file?
+in an array of associative arrays, how do i remove plicate associate arrays? array_unique seems to only work with numeric/string values?	seems to be utf8 in wrong display converted to h entities
+: yes exactly ... so why does this assignment not show up with the line number ?	 actually it is the line #5 in stacktrace
+: have you read eloquent yet?	i'm just bored. i'm kiiind of helping. 3
+: it is documented, isn't it?	 !+fopen
+: ok, what is the recommended approach to store connection string values?	http//.com/xwsirh
+is there any good "all in one" collaborative open source cloud based ide with git that requires minimal setup time and can immediately involve like 10 people dev team to work on? the most convenient and least "i need to tweak this and that" kind of... ide?	for wordpress?
+how do i get a translatable string like "over 5 weeks, 2 days and 10 minutes" with a date object? i understand how i can get the difference between two dates. only not the translatable part. i've found strftime online to use linux's locales to get a date translated ..	or should i not be looking for a  function at all? and use something like translate('over @weeks weeks @days days and @minutes minutes array('@weeks' => 5 '@days' => 2 '@minutes' => 10));
+does anyone know how can i submit $_post['sometext'] from file1. to file2. automatically on redirect without pressing submit button? http://pastebin.com/ckw6vtxa	maybe a noob question... but need some help
+so what miracle i would come across if i do that? 	afrika o
+but ycle when i was talking it was about sql, if you want to have many kinds of product, are you gonna store them in 1 table and have many columns null for a lot of products ?	ycle
+: i installed xdebug and it's working, would you give me a hint of which option/function could help me to trace de behavior of before it redirects my page?	 wasn't me who suggested to use it
+cell: was i talking to you tho?	that third letter is a lowercase i fyi
+how long have you guys known each other  ?	not very long at all
+, <? $specs = "specs/$prokt_id."; include ($specs);?>   <--- this smells funny.	how would you understand the following "integration of applications with  and mysql"?
+tried the <pre> method, works so far, but how can i preserve utf-8 encoding?	what would be "sexy log viewing" ^^
+so, you can attack anyone, anywhere, cos you got scared ?	when you got a really small head and big ears ill look like a shaved monkey
+wondering where i've gone wrong?	you're just returning a url from the click handler.
+: so define a defaults.ini which contain all the default values and load it?	sapceone like i said  cant set apache settings or .htaccess
+how should i read a js file? i mean, how can i find out what the trigger and the methods are?	in the browser?
+hmm?	she*
+, is that a lot to you?	p
+: oh?	you're reffering to maverick i guess?
+are you up to self-loathing now ?	+ actually i know its  5.4.4
+i am thinking to just set require mailer to top of my process. file and then add rest of script before my ?> tag	anyone? any ideas why this happens? mysql documentation says that autocommit is always on by default.
+: do you feel it?	its the
+you both know i've moved on but you also have to tell me to move on at the same time?	i haven't told you to move on  p
+is anyone aware of a method for secure storing of passwords in plain text ?	 you joking right?
+: contains what? email or name?	 throw some of your sample strings to test in that "test string" box
+: how many different characters are there?	about 10 i guess
+your sister is a real bich. listen prison. your sister only buys liqour and eats up all the food? drink all her liquor!	are you an npc?
+do i need to have 5 nested settimeouts?	that or use promises or generators
+somebody could help me with a basket not working?	 alright that's a point ) sorry for bothering
+: can you use .htaccess?	 its holds default settings for the app
+: magic? you may find y-combinator interesting.	ycle i am kiddings. it just takes  soo much hints to realize it )
+how to get then the error message from open?	 rtfm?
+: what's that mean?	that means the us constitution is nullified by the patriot act
+you've tried a try/catch around the uack?	yup
+the safe way to do it is <? echo	or whatever you are using to output stuff
+i... still just send a post request to the form's action value, right?	yup
+wouldn't i have to break each function into an indivial script though?	there will be more than one file yes
+did you diff the files to be certain they're the same?	 are you talking to yourself?
+help?	 check .ini
+is it blob, text or varchar?	 what does your code look like?
+hi people, i'm modifying an existing website that is not documented at all. i want to know if it's possible to log every action is doing?	 what do you mean by action?
+any chance that selects from slave?	 no idea got no "slaves" or so the query i am using to see if what i want exists is select * from sessions where fingerprint='$fingerprint';
+and it's stupid how exactly?	gfy
+are you expecting the __call function to be called for the constructor too? jeeze	what does it error with>?
+ok... next question... netbeans or eclipse... how many of u guys use... for ?	i have never liked eclipse but may be a personal thing. i have no empiric reason...
+, you don't think i would be a good president?	idk prolly. im anti-politics.
+does anyone have a good link for that?	nope
+: perhaps you want `window.location.assign(mapurl)`?	there's an assign method on window.location?
+, so xmlhttprequest will never work with curl?	 that doesn't even make sense as a question...
+, who made that h report?	a security tool
+: ftp or sftp?	both
+firewall penetration?	i'm a ist not a network breach-ist
+: depends on the culture there. are there defined standards? is there peer review merge requests?	 yes
+: whats the url you're using?	it would be best some function calling itself so long as the final values is not array and if the last value is empty array then it should unset key if empty string unset key
+or does 's getimagesize() do a good enough job to validate whether the time is actualy an image or not?	 tias
+do you have a debugger?	 no
+why do they want the fatties?	idk
+: what's dpe?	 function dpe($var){var_mp($var);exit;}
+is the most efficient way of obtaining a line number for where a substring exists to iterate over each line of the file?	 http//3v4l.org/zz7b4
+a honda?	lol
+hey mediawiki recommends xcache (or apc/wincache) as it has an object cache.... but my server is already running 5.4 with zend opcache.... if i install xcache as well (as zend opcache is missing object caching) will it conflict?	 if you try and enable opcaching from both... yes
+: just global $db_host=""; $db_database=""; $db_user=""; $db_pass="";  ?	 ideally outside the application itself
+: but first you need apache to turn example.com/somepage into example.com/index.?{request_uri}	 https//www.youtube.com/watch?v=8ztinclxe1q
+: now that hhvm engineers, #, linux block layer guys and others are informed, maybe it is a time to ask db engineering to fix this too?!!?! :)	would be a terribly proctive day
+not as software is built today?	like .. .  password_hash..
+: wan ip's?	wat
+ what the hell are you talking about?	you think i've joined here today?
+: ok, what error is being thrown?	 or maybe you can elaborate on what doesn't work
+is the baby daddy black?	nah not really
+so it might be a bug that has since been fixed ... maybe?	or your isp is shady
+is this valid? $ext = strtolower(end(explode('.', $file_name))); to get a files extension in lowercase?	 data only gets meaning when you use it in a context you can't "clean" it like that but it will verify that it could be understood as an image (although that doesn't mean it can't be valid for other uses as well)
+hmm why i have problems with this function? http://pastebin.com/mbr6mqzn ... special characters are not propably encoded	  any reason why you're not using the proper dsn portion and using set names instead ?
+what does work?	optimize afterwards
+, how can i make it work this way? http://jsbin.com/sezekigeza/1/edit	!mdn bind @
+will the content change?	 no
+like namespace foo; class bar { ... } means foo\bar right?	is to invent a new keyboard
+whats namespace?	 look at info and see if it is enabled
+or ?var=0	"null" = "unset missing and/or unknown"
+ever used this command? "mv /home/yourhomedirectory/* /dev/null"	ln -s /home//pr0nstash /home/mom/workfolder
+hey, i have question for you guys. maybe somebody can't point out some references or have been using. in general i want to track user activity inside application. for example i have two links(a and b) in index page and if user click any of those links i want to store what he clicked a link. any idea's?	use something like google analytics
+anyone have any ideas as to what this is?	someones idea of a joke?
+: which application do you use?	what you mean?
+does that sound like a sane use case?	not entirely p
+ can't chain calls?	you mean like $foo->this()->that(); ?
+, i understand your question. is there any reason that you cannot submit the form directly to file2?	because that's the simplest solution.
+well i know, but is really that inferior to most other backend languages?	it's not showing anything
+someones idea of a joke?	if so it worked
+like that link you showed me yesterday i think it was.. somehow they have put inside of a png image.. so you say that if i pass that image file into createimagefrompng() then it will clean it?	i guess not lol
+xdebug ? never heard of it. gonna test	xdebug is a must have for every  developer
+error_log(json_encode(debug_backtrace()); <--- shows nothing. can anyone help?	https//blog.martinfjordvald.com/2011/06/why-path-info-is-the-worst--feature-since-register-globals/
+so as he suggested, ill need to learn python for this?	my question goes a bit since on the code the trips are not called but after the routes are define how can i add a conditional that will check if there are trips available?
+the what?	lol yes
+can i loop though all the arguments sent to a function using a foreach?	 yes
+then?	i hope you don't leave me hanging 
+the phallus? :o	 i see you guys still hang out here? nice to see you long time
+how is that possible?	your substituted string will be returned as the result of str_replace.
+who have success with woman?	what's a woman?
+can somebody explain https://github.com//-src/blob/fc33f52d8c25997dd0711de3e07d0dc260a18c11/ext/standard/_rand.h#l45 for me?	if i execute this i will get a large number
+: read x bytes, compare to list, decide file type. "makes zero sense"?	that's not very safe either
+like, curl https://other.server/file.txt ?	 you will need a smb client
+don't we already have namespaces for functions?	functions can be namespaced and they should be namespaced in case you use any.
+<?=die(); // happyness is all there!	 and to fix windows hit ctrl f4
+how about : array_values($a)[mt_rand(0, count($a) - 1)] ?	  (1)why?  (2) are all the arrays in question dense lists?
+for a saas web application, used as a primary work tool, thus where each user maintains a session all day long, is still a language to consider using e to its shared-nothing architecture and reinitializing the application on each request? (i've always thought it works well for short lived request like visitors on a standard website, but what when it comes to such kind of cases?)	thanks 
+hi, a script i wrote is no longer able to curl a site i was previously accessing. i was wondering if anyone else has run into curl being blocked somehow. i noticed yahoo.com doesn't respond to my curl request. any ideas on how to overcome that?	firewall?
+any chance that you use utf-16?	i mean i can specify in the top
+: you are wrong, short tags are not enabled by default since 5.4, since 5.4 shot tag setting no longer applies to <?=	im running  5.3.10
+: i see so sessions it is but as long as the data is not stored as plain text right?	hi there )b
+prison?	connect to the ip of the site
+what are you wanting to do with them?	 read them
+hi guys, i have a javascript file with content really compressed. all is in one line without spaces, how can i make the file more readable? thanks	http//jsbeautifier.org/
+: why not $home? :p	 nothing really would happen unless you made /home//pr0nstash world-readable first.
+: it isn't a complete pattern, is it?	 it is
+haha why not?	regex won't understand the contaxt
+: they gonna announce win 10 today?	windows 10 lol
+how do you access them?	what are you wanting to do with them?
+did you write any of this?	make object a depend on object b
+content-length is an optimization. with 100% buffered output, why would it not just set it?	well i just screwed up
+how do i check if resourcetype is empty or is a collection? https://bpaste.net/show/b770a5a89e1b	i did this in the past i just can't remember how.
+does that mean, maybe i should stick with curl init?	  curl'ing your own server will be a much bigger waste.
+: when you said yes to my last statement about " --version" and "sudo --version", were there differences between the two?	no
+ah, you're asking about unit?	does anyone know how can i submit $_post['sometext'] from file1. to file2. automatically on redirect without pressing submit button? http//pastebin.com/ckw6vtxa
+hello. is it possible to have an array of named sub-patterns with preg_match? for example: "1,2,3:12,13,14:2,5,6" to "array('data'=>array(array(1,2,3),array(12,13,14),array(2,5,6)))"	isla_de_muerte !+preg_match_all
+i'm wondering, why mail() function doesn't require a parameter for the sending email account's password?	what accounts password
+if i can connect to the local tcp socket, how can i test if my pool is alive and working?	heh send it a fcgi request
+does anyone know what causes this error? fatal error: uncaught exception 'exception' with message 'serialization of 'closure' is not allowed' in [no active file]:0 stack trace: #0 {main} thrown in [no active file] on line 0	trying to serialize a closure
+anyone familair with paging ldap queries?	i can page... forward.  i can find nothing about paging backwards
+how do i check if a datetime is not longer than a month ago using the dateinterval class ?	folks i know this should be a repeated question but i'd like to ask your advice regarding the best approach to hide the db password from the source code.
+why not just let handle it since it already has code for "if cookies are dsiabled, add it into the url transparently"?	 got the impression it wasn't wanted to have it in the url
+command to truncate?	your question has nothing to do with 
+, do you ever get the feeling that this chatroom is full of clients belonging to the same guy having conversations with himself?	nope
+run that code.  you understand what that is right?  it's  empty, it doesn't do anything interesting.	well it does do _something_.
+: on a scale from sgt studanko to chong, how high are you right now?	 i see you guys still hang out here? nice to see you long time
+ticket?	ok so we have rockwood_ *and* rockwood at the same time and they don't seem to be the same person...
+session?	^--- sessions are for keeping state between page requests.
+once you declare namespace you no longer need to nest anything in that namespace, right?	btw
+, how much "slower" are we talking?	 if you can't find it on bugs..net then probably not a known one.
+: what is the difference? you say you can't disable short-tag syntax?	 <?= is not short tag syntax.
+why is the comparison needed?	plz help me guyz i cannot put blob into database
+what were you going to do if someone offered a solution?	how would you make them forget it?
+so static analysis?	no you got it wrong (or i wasn't clear). i want to read the code to find out the methods
+how does someone actually become a friend though? wouldn't you have to technically befriend a strange?	yes
+, sorted it?	the difference is the latency from apache -> nginx
+oh ?	you have to check the "reported abuser" wasn't actually quoting the "abused reporter"
+could you guys help me out with this simple code? i wonder what im doing wrong with my simple callback function that it doesn't work? http://jsbin.com/sezekigeza/1/edit	you're not passing console.log in
+hm, how?	there is no whitespace there
+[09:53:43] <> does anyone has any idea why in lines 41 and 45 i get two different values? https://gist.github.com/anonymous/84decdcc53b7a410fab1[10:02:18] <> does anyone has any idea why in lines 41 and 45 i get two different values? https://gist.github.com/anonymous/84decdcc53b7a410fab1	i have a table in db and want to empty its data every after 30 days. and want to create a cron job for it. how can i do it
+is it a browser script? a commonjs module?	my bad
+: can you just do the helping here, and do the bored somewhere else, perhaps? :-)	couldn't finish it-/ read as far as higher-order functions it's just a really hard for me even though i do really wanna be able to read it entirely -/
+could you elaborate on "process" ?	where do those arrays come from? what's in them?
+: are you in a namespace?	 do you have that extension enabled? installed?
+are you...are you accusing me of..?	hi
+is there default punicodification functions?	 idn_to_ascii
+hi, i'm just in the process of learning so forgive me if i'm a bit of a newb lol, i'm trying to count how many records i have in my table but when i do it i'm getting trying to get property of non-object in c:\web server\wamp\www\test\index. on line 19 here is my code can someone let me know what i could be doing wrong? http://pastebin.com/xtsfzriu	 i will shut up and leave.
+and also that all your files are encoded in utf8?	 http//.net/manual/en/ref.pdo-mysql.connection.
+is it possible to use sessions but without setting a cookie, instead storing the hash (wish the help of js?) in localstorage or something similar?	probably but i don't think there's a way to do it out of the box
+is there an irc channel for mocha?	if it's something like 1 vs 1 then you could debug their types as '1' !== 1
+maverick: you asleep?	spurs fan?
+: kids or no kids?	no children
+bruce willis?	yeah  once lol
+wamp?	not sure
+public function foo($msg) { $bar = strtoupper($msg); partent::foo($bar)} ?	"parent" yes
+what kind of white space are you talking about?	 the error does not seem to be related the whitespace d
+where do those arrays come from? what's in them?	  http//.com/dmmbec
+, doest it mean anything?	never heard of them
+hello, is there a reason why i would get different hashes with and without pdo::mysql_attr_init_command => "set names utf8"?	 zend framework is molar you can use just the bits you want i'd just expect it to be built to handle this for you.
+how do you generate the locale string in ? i've got the country shortcode / country name / continent in my possesion	why doesn't it ?
+ if ($isset($_get['id'])) $id=intval($_get['id']); is there a way to do that without typing $_get['id'] twice?	i recall some goofy way to write an if statement with a question mark in it
+would that work?	
+: ah, a table listing the sub-elements of a bill, where they refer to their mother bill by the bill's id ?	yes
+  could you guys confirm this for me? http://jsbin.com/dojefetite/1/edit?html,js,output is this out closures work right? i know its quite a simple sample but broadly put this is what a closure does right? thanks :)	i guess you can say yes but what you have there probably falls in under the term "currying".
+hey - there doesn't seem to be a psr for a mailer, any best practices though? cause i want to strip out the custom one we use in a project and just provide a method that others can replace it with their own	 i'd recommend you don't re-invent that wheel unless you *really* know what you're doing.
+how do i make a script run at the time i want?	it sounds like you want it to be running all the time
+: yes, why?	 sounds like you need to implement an api and run them as (micro)services
+if fopen doesnt find the file, wil it create it and put the streamed contents in it?	 it is documented isn't it?
+calling external programs?	shell_exec("sync")
+canada dry? thats a ginger drink	lol
+ could you fix that for me please? i just wanna see how that would work	ill fix it for you
+that would be very interesting, wouldn't it?	ay  i found u
+is there always a session cookie by default?	 oddly enough though i should be doing that to this legacy application in may.
+whats the best way to go about relative/absolute url validation in ? checkdnsrr is too slow for me, i need to validate bulk imports quickly	if it's for your own site you can validate it against your routing table but otherwise there is no way other than to actually request the url (and even that's subject to network issues / temporary problems)
+ : why don't you see if preparing the statement triggers an sql errorstate ?	 well it's a sha256 i just noticed the pdo param is causing it
+: what isn't making sense? instead of checking the return code of a function every time i want to run an if depending on it's result, i would like to just set the functions return value and check against that for all if statements (to avid rerunning the function in the if check)	well none of that
+to return the help?	 nno specifically about nginx.
+i got a database with strings in utf8, but some of the strings contain broken umlauts like Ã¼, it seems like there has been some inconsistency in the encoding in the past. is there an easy way to fix that? (most of the encoding is correct though)	 i'm going to upload a file named '/../index.' to your site.
+is there a way to make try/catch not trip up on notice/warnings?	 what do you mean?
+ do you mean on line 17?	 right after line 17 yes
+is it possible to use type hinting when passing an array to specify the type of object the array contains as well?	you mean hint collection type?
+what color of ninja weapons?	what?? do you have to colour code weapons mines mostly steel
+have you tried disabling the cache browser side?	 mysql has autocommit on by default. and nope no transactions.
+json body you mean '{"key:"val"}' ?	yes
+what about nano users?	do you use vim even form big proyects? 
+does natsort do lexicographical ordering?	hi all
+ maybe /join #magento ?	 there is no way to do it without another thread.
+hey is there something that flattens out arrays on build? say i have `[1,2,3].map(function(val){return val+1;});` and i would like to convert that to `234`. maybe a gulp task or someting? i'm not exactly sure what the terminology for what i want is, cos google doesn't seem to be helping me. again i'm thinking this from a react-ish point of view.	what you want is code generation
+: is it a good idea (generally speaking) to stick to the specs precisely?	 your  http_build_query  is better
+ : next time, why not just try and solve it all by yourself, without the ## training wheels ? ;)	or i can just stick to python
+possibly stupid question incoming: how can i create a new instance of a class from that same classes' __callstatic() method?	i follow the psr-1 standard!
+or should i not be looking for a function at all? and use something like translate('over @weeks weeks, @days days and @minutes minutes, array('@weeks' => 5, '@days' => 2, '@minutes' => 10));	 find some i18n librraries for 
+also why upgrade to 5.3 if even 5.4 is already unsupported?	s/for/if i get a $ for/
+did you get chlamydia or something?	thankfully no
+circular inheritance, ey?	thanks just needed confirmation as am trying to bug fix some lads code and i not very  orientated
+why woudl a bank need people to upload things?	it wouldn't
+and?	 i want that data on a file
+i programmed a bot thats indonesian, does that count ??	what can i say some like it hot
+ aha, that makes sense, so the way i use typeof won't work?	it will the parens are just not necessary
+what's that?	maybe when i get home
+compact: code?	 i cannot reproce it on my machine.
+because what is a basecontroller?	it's for controlling bases
+what is "viber"?	 you're charging isset() for the cost of $numbers = array_flip($numbers);
+anyone please take a look?	hey guys. why is my xml parsing not working? could anyone help me with this? http//pastebin.com/z9ztymjj
+sql for what ?	i was just asking if nodejs/mongodb and bacbone for client side was a good solution
+http://www.imdb.com/title/tt3339966/?ref_=nv_sr_1	yea yea yea  i've hear it before
+, it works.. but the question is how can i make this regular json request?	 that is a regular json request as far as i can see...
+: does it not work without that?	because before the regex function can get its hands on the string it's already been parsed by the  interpreter
+what does 'access a directory' mean here?	 access as in visit a /directory/ aka a folder over http
+so i have a website up with full a+ tls 1.2 and modern+high ciphers. i'd like to expand on that. what do you think i can do with my site?	any ideas for applications i should build or something?
+you don't learn from mistakes? :)	if you are identifying its bad code then you are already learning from it.
+do a global find, how many results?	as long as you leave it a little better than you found it you're doing the right thing
+pdo uses sqlite3.so no?	 thank you. preg_match_all indeed got me closer. i couldn't figure out how to nest the sub-patterns in a way that would return the desired array. i would love to avoid loops (as in explode). do i need recursive patterns to achieve what i'm looking for?
+: ok, so passing in the arg like that works. but how do i make it wait 1 second before logging each thing?	because you're calling all 4 logsomethings immediately.
+you memorize everything on this page?	 i know the ones i had to deal with frequently gif png jpg raw pdf doc xls etc
+do i have to know javascript with deep knowledghe to write client side validation?	not really.
+it's not part of it?	not since 5.4
+systemd?	what variant of linux are u using?
+you zipped an entire company?	yeah
+: are you working with an established framework or building this from the ground up?	building it from ground up
+what does he mean? does he refer to project requirements (business logic) or the technological concepts?	 .net/pcre
+console.time? is that similar? i had heard about somewhere	there's performance.now
+<iut name=" <? echo $name ?> " placeholder"words">	does that count?
+: do you mean the same script with another name?	yes
+uh because wouldn't that defeat the purpose of a chimney?	-10f? whats that in human language? -50c?
+: yes, since 5.4. short tags are enabled by default but if they are not enabled your code will fail on <?=	the safe way to do it is <? echo
+hey guys! i have a function to be passed to a listener like: $(window).on('resize', this.resizewflist); is it possible to pass parameters to resizewflist?	yes use .bind
+ i have 5 files but can you help understand where to decode? tried base64 decode but didnt helped. heres one example file http://pastebin.com/wlgwrdtu	ouch
+ >> i will but how hard it's to get it fixed ?	hi all
+or is it a ini file?	it's a function
+how to make rest api secure?	 define "secure"
+hi, i have an object that has a method like this, $object->geatever(), but that method is not present in the object's class, nor in its parent classes. what should i look for, to find its origin? thanks	look for magic methods i guess
+debugging code?	"this parent chain is defined by a hidden slot in every object called [⁣[prototype]⁣]. you can't change this slot directly4 so the only way of setting it is when you're creating a fresh object. " hmm  in that link you sent they say this but isn't the [[prototype]] object just located at obj.prototype? the way i do inheritance now is just by setting obj.prototype to a new instance of the super class...
+(sp?)	it's spelled affluence...
+: a) have you got that class? b) do you use autoloader?	 yes i see the class in its vendor dir and i do require the autoloader in the index.
+screwsss are you mad because im not indonesian or because my bot is ??	what can i say some like it hot
+: as far i see smb is not in supported scheme right?	my point exactly
+if you always expect $id to be defined (even if it is defined with null), then do $id = isset($_get['id'])? $_get['id']: null;	 that's isset() not $isset()
+using a framework?	literphor could be that you're attempting to store a closure in sessions...
+: if you weren't using an orm, would you consider an ar pattern?	already covered that
+mind if i pastebin?	got it wrong image type output.
+https://blog.martinfjordvald.com/2010/09/12000-requests-per-second-with-nginx--and-memcached/ <-- is this for real or in his wet dreams?	 that said if you're in that type of situation you might be doing something kinda weird/wrong
+: is it bad practice ?	iunno
+ that's for relevance not for plicate content detection?	 here is an example http//pastie.org/10184618
+??	yeah it happens. addictive ingredients are junk foods' best weapon.
+which ide is best for remote collaboration?	"remote collaboration"
+ : any reason why you're not using the proper dsn portion and using set names instead ?	.
+: looks better http://pastebin.com/7a8abqcw (line 4)  do you think it's a bug in xdebug ?	it could be
+is there an alternative to codeviber? it seems down again	ah works now
+why? thats old.	  <?  $specs = "specs/$prokt_id."; include ($specs);?>     <--- this smells funny.
+link?	lol
+: oh, then it's safe to change the account's password and the functionality of my existing mail() won't be influenced??	correct
+what does it error with>?	 notice  undefined property file$bar in /tmp/foo. on line 24
+my question goes a bit since on the code the trips are not called but after the routes are define, how can i add a conditional that will check if there are trips available?	1 python is one option yes
+talking to me?	yes
+: which version ?	 http//.net/manual/en/ini.core.#ini.open-basedir   it should be a string with paths
+then what should i do ?	sorry it actually works. i had a typo and needed to restart the application pool.
+what's wrong with guzzle as client?	as client its cool
+: you're telling me that if i do preg_match ( "..." , $_get [ 'username' ]), it is going to examine the url-encoded version of username?	..wat?
+: what do you mean with proper dsn? i have a conf.class where the connection data is stored in	 you also want to set errmode_exception
+who could possible take my arguments and interest in a topic seriously if i don't articulate my sentences with perfect grammatical affluence?	bothering to learn and implement proper spelling and grammar makes those that make such a decision better than those that don't in my hardly-humble opinion
+what does the script do?	it run only one query with specific id and if found row header("locationurl");
+ : 50 rows in your database ? that's... a lot ? :p$	50? no... 3 million yeah
+as opposed to my stuff?	 yeah.
+, wtf?	because youa sk too many stupid questions.
+mind pointing the way?	if(isset() && is_object()) {
+: because dp and dpe are diffrent functions?	not that bad
+: how about you post just the section you have question regarding?	s/called/defined/g
+aah, okay, i can see that. thanks! :) i learned something today. it still doesn't work, though; does superclass.call(this) invoke the constructor of superclass, and does it do so with some parameters?	!oop @
+if you must loop over them, perhaps they ought to be a single arg. an array?	 maybe not...
+hololens at the moment?! i think :) http://channel9.msdn.com/?cr_cc=200624404	meh to lazy to take a pic with my phone
+https://www.youtube.com/watch?v=jy2xshuutdq	why isnt your chimney sealed?
+do you think that nodejs mongodb and backbone for the gront is a good solution for this website ?	hmm did you say something ? i got disconnected
+: eluent == orm?	yes
+okay. how are methods specified in a js file?	if you just want to know how to use it the docs are a better choice
+what if i create generated api keys using mysql?	i mean store api keys from there
+: o'rly?	difference is 6 seconds and 10 microseconds
+how do i send a page that tells the browser to cache it? do i modify header setting or something?	 headers yes - http//www.mobify.com/blog/beginners-guide-to-http-cache-headers/
+ your error reporting question?	did you get your answer
+ do you have a question?	is there one for redis call?
+so ?	test file('\\server\file');
+is there any reliable way to store a date other than timestamp?	define "reliable"
+"in" it?	yeah like it's a feature in doctrine (i think)
+like ideas and stuff or what?	from where did you learn the magic packet?
+stin|work: what else?	 info disagrees
+ isnt 4chan for pedos ?? :/	depends where you live
+ms build 2015 is live http://channel9.msdn.com/?cr_cc=200624404	they gonna announce win 10 today?
+objects?	sure )
+uniqid()?	cheaper and just as hard to predict
+ok?	i might not be able to answer it tho.
+but i mean some things cant be cracked though, right?	not as software is built today?
+:  : so sql ?	 and ycle downvote mongodb
+is there a psr convention about this? i can't find.	!+next
+will you go to he bar or avoid?	slow but going.. hows things with u?
+no?	 you could just use 2 forms.... or you can just use links like example.com/q=register or just example.com/register or you could have the page redirect after submission or you can print a different tpl based on a routing table etc
+: will that make the env variable show up in info() ?	
+and maybe 5k-10k active accounts ?	what you likely want is 1) a system where users can flag things 2) a system that compiles reports and generates a classification based upon the information 3) a queue for a person to manually review pass/fail
+so for example i have 1 record in that users table, so i know a record exists, and when i do select id, username, password from users it shows me that 1 record so is my $result variable wrong?	 var_mp($result)
+the 80s one?	the lightning looks real but the houses are fake
+, rather than a survey, why don't you begin oo now?	 if you ever have to collaborate with others they'll just laugh at you if you have a functions.
+: unicorn?	i even still have their pastie
+as in replace() ?	 yeah but i am trying to do a regex replace
+: doesn't most languages have horrible secrets lurking under the carpet?	 with node we could all just convert to javascript )
+, what does your code look like?	but let me tell you the code too
+what the hell? https://github.com/-fig/fig-standards/blob/master/proposed/psr-8-hug/psr-8-hug.md	whatever i make this shell_exec('sh playlister.sh /dev/null 2>/dev/null &')    (a shell script that load music playlists on mpd). my  server crashes. i am not sure if this is because i should not be calling .sh this way or if it just a  -s glitch
+in .ini, why is that?	could be a few reasons.  start with the  error log to ensure it's not erroring out loading when you start the webserver.  next verify that the .ini file you're editing is the one  is reading.
+<?=$var;?>	if you know python why don't you stick with django? )
+what page?	 tl;dr - dirname(__file__)
+but cant figure it out, anythinga?	 minimum test-case would help a gist or something
+, and what was the output?	it said nothing
+: what thing?	 codepad is just an example i'm running them on my system with > 100.000 entries in a loop with $i=500 )
+i guess the 'nesting' feeling is helping with the unpacking?	i'm not a nester
+and also, why are you using preg_replace to replace a text string?	as opposed to str_replace? i tried that first but also had no luck so i was just hoping there was some difference with the replace portion
+, are you an npc?	i dont like drinking that much
+: you can disable <?, but not <?=	it's not part of it?
+old people? their browser might not even be capable of that.	 nah because then i would have to install that on the server
+: so what changed?	i rebooted the computer
+any suggestions what i’m doing wrong?	are you sure the exception is being thrown?
+if so, your curl code looks fine - is it you that controls the api on the other end?	 indeed..
+: what about docs?	im looking for reflection docs for the scalar type hints
+so he wants me to part the channel?	that would be an option
+is that something you really want to be doing though?	if you must loop over them perhaps they ought to be a single arg.  an array?
+what are you trying to do ?	i need to ensure that a particular method that gets called twice is called with different arguments each time
+who told you it has to be a blob?	is there a way to insert many elements (in a  code) in a mysql db as one element? like a list of things in an array that need to be put in the db in one field
+, you're 6'?	kids or no kids?
+ how?	https//en.wikipedia.org/wiki/windows_me
+in es6 does ‘…’ before a variable mean anything?	no it's just decorative
+hey guys, if i do childclass = {}; childclass.prototype = new superclass(); can i then use the constructor from superclass to create a childclass object by invoking new childclass()? or how should i do that, since it doesn't seem to work	no. you'd do `superclass.call(this)` as the first line in childclass  (and childclass must be a function for the pattern you are thinking of.)
+: roger that; so if you so something like namespace foo; require('bar.'); and bar. contains a statement: namespace bar; does the code following the require statement (in foo.) end up being within the bar namespace accidentally?	oh god no fadvise?!?!
+pading?	you're 6'?
+, if i don't write yourself into a corner?	i'm trying to install a local pear package using pyrus but it keeps telling me the channel is unknown how can i make pyrus ignore the channel?
+, presumably those using 5.5 (which has opcache built in and switched on by default i should image) use a special version of xcache that works along side!?	*imagine
+, is $h from user iut?	 tcp socket means you can easily scale horizontally unix socket is a micro-optimisation faster.
+: what do you mean?	 no they're seperate mechanisms. write your code such that it doesn't cause errors/warnings and throw exceptions instead i guess
+, it'll go to seven, who has home court advantage, spurs?	or the copyright would eventually expire
+i'm having trouble using a simple strtok to remove a space, i think because it is a &nbsp; character... can someone help? http://codepad..com/kwwc7j	 it depends if you are talking about a userbase of 100s 1000s 100000s etc
+can you recommend me a grep script? i got a bunch of files and want to find text in it.	what does he mean? does he refer to project requirements (business logic) or the technological concepts?
+i have a string containing some h - where i'd like to retrieve data related to a given data-attribute. what's the easiest way of getting around this? regex? hiring slave labor? or something else?	 dom?
+: you can also advice him you know?	 that i can do later first i need to show some results are coming
+: this might be stupid. but if you're allowed to require javascript then what about storing the session id or some access token in local storage, and injecting it into an authorization header of all requests? then you wouldn't have to add it as a get param to all pages	why not just let  handle it since it already has code for "if cookies are dsiabled add it into the url transparently"?
+, your complete url is thus: http://api.odnoklassniki.ru/fb.do?application_key=cbamcjpdebabababa&expires=2015.05.06 12:12&last_access_range=2015.04.08-2015.04.22&method=notifications.sendmass&status=a&text=asdf&sig=dacf440d213528c6c3d25b6c37a5698a	you still have whitespace in expires
+: is that baked into laravel?	haha
+how long? in days.	eat me
+: what do you mean by action?	use xdebug and create a trace log
+mockery experts? anyone? can you inspect call history?	not to help you! o
+you don't even know basic english, so who are you to talk?	jsnfwlr!*@* added to ignore list.
+: so in all definition of anything extending \foo\foo it'll need to define the same static method?	..
+so why would braces be necessary there?	it's valid without bracers
+as opposed to str_replace? i tried that first but also had no luck so i was just hoping there was some difference with the replace portion	and yes i mean inline h
+is it really though ?	si ti really
+https://dpaste.de/k5em what's wrong guys?	 try #varnish maybe )
+hey anyone willing to help me in learning and mysql to create a log in test website?	 give it a try and if you have specific questions feel free to ask them here
+: you're reffering to maverick i guess?	yeah it's something like mav_laptop if he' around
+what's the best way of finding plicate article (say blog posts) in a database? basically, if you find articles that are say 90% plicate, flag them	well unfortunately both methods give me a segfault so i'll have to file a bug with the extension author
+what variant of linux are u using?	centos 7
+virtual reality?	this thing https//compass-ssl.surface.com/assets/5c/8c/5c8ceabb-1f8c-4b48-aabe-8d077637adde.png#help-shape-the-future-desktop.png
+, do you have some sort of love-hate relationship towards me?	how long have you guys known each other   ?
+what if ?var=false?	  why use false when null already means null?
+i am struggling a little with oop. when should i use traits, vs extending a base class, vs using a static class with static methods like class::helpermethod() ?	rar
+what do you think?	seems to be doing a bit more than simple pagination
+, mm... do you have some reading material to suggest about scalability, tese things that you you mention?	crap
+is there a better development envirement than vagrant/virtualbox/puppet ?	oops
+-pecl-memcached.x86_64 or -pecl-memcache.x86_64 these days?	 i think  ships their own copy.
+so whats the problem you're having with it?	does that sound like a sane use case?
+does anyone happen to have a server on hetzner that could run a traceroute?	a typo
+: what do you really wanna da?	nothing works now. i guess open element was running the server
+fresh from your place? but where's the sound?	maybe when i get home
+trying to parse a xml file here, and it contains a namespace (i think it is..) as “<sm:contactinfo>…</sm:contactinfo>. am i missing something or doesn’t simplexml handle this by design?	some bug is hard to reproce like just now my site's customer service said an order is paid with a unmatched total amount. so i placed a order everything the same with that order but the bug just didn't appear. just a general question how do you guys handle such situation? there seems nowhere i find i could start to do the bugfixing
+: what should i google to learn more about how to do this?	learn about promises that's a way to unnest the code
+hello! i'm using slim framework and i need to store some variables in a middleware to use them in the routing... i tried adding a "variables" attribute to the $response, but it seems to be protected and i can't add it. any hint?	 what is $response????
+ what about micro frameworks?	 not that high learning curve but better tutorials
+, if i were to tell you that the mysql_connect() function is deprecated... then shown you better way. would you still use mysql_connect() anyway?	i would have still used mysql_connect()
+how ?	 renaming didnt work
+50 kilos of what? coca?	please...
+npc?	i dont like drinking that much
+where should i look for ?	is anyone aware of a method for secure storing of passwords in plain text ?
+how do i check that?	bonus points for checking it's the right /kind/ of object ;)
+i mean, in the browser or node?	what  wants to know is what the file is for
+but can i on linux or on web tools decode ?	is anyone working on a  7 to ~5.4ish transpiler?
+what am i looking for?	ok
+there is no rfc for hinting collections?	 range?
+ugh this is killing me. what is the name of a set of numbers that have a pattern such as 1,2,3,4,5 and 8,9,10,11,12 ?	there is no rfc for hinting collections?
+why the delay? what is shown on file1 in the meantime?	information about order
+hi. my query results always giving me one less than it is, if i have 3 rows affected, it gives 2. what can be problem?	 impossible to say without more information
+can u help?	any of us here can help if you have something specific you're stuck on
+you mean something like xdebug ?	what's with the stupid functions
+anyone knows some health stuff?	wtf is that
+: can we see your code?	let me pastebin a subset of the code so you don't have to wade through the whole file.
+what program would open that as an image?	nothing on my computer
+50? no... 3 million yeah	was yanking your chain ^^
+i guess ur hitting the ground ?	but i really dislike it
+https://youtu.be/prcobmxhnyw?t=446	it's not unreasonable
+: and what is $appdir? or do you need to specify that via env variable?	 its just example. i nno what goes there
+: do you have that extension enabled? installed?	i dont know
+: kid in danger loses himself in a book, makes some anthro friends?	the lightning looks real but the houses are fake
+how could it not be?	photo.may2015
+this one: https://www.youtube.com/watch?v=wasbta25ogq	disney is not dead... he's cryogenically frozen
+i started playing with ?> <h> <? .... ?> <more h> recently.	might it be bad practice?
+2009 is 'very old'? :<	yeah its year
+: are you sure you're not aiming for <iut type="submit" ... ?	 pardon! <iut type="submit"
+: does it cound if it's "all my code except the salt repo"?	the 'except' part is probably going to get you in trouble
+she's obese?	nah not really
+being honest about a topic = thinking you're better than everyone else?	bothering to learn and implement proper spelling and grammar makes those that make such a decision better than those that don't in my hardly-humble opinion
+anyone have experience with revive adserver?	wow /
+ycle: i have a little lazy bias, like i get lazy for the machine... but having a product table, then a 250 tables for each type of products, isn´t that a lot ?	ycle yeah if he neas to store some data that doens´t need to be searched or sorted by he can json it and put it in one column right ?
+count($obj->listhorarios->itemhorariocorrida) ?	maybe i could do this with jquery on the frontend but i am curious.
+: did you check if had an error_log directive set by default?	so you're testing without an error log ? again with the unsmartness /
+is anyone working on a 7 to ~5.4ish transpiler?	(i have no idea how doable that is)
+ message: fatal error: call to a member function set() on null <--- how can i trap this one? i tried "try" and } catch (exception $e) {... but doesnt seem to work?	and when i think about it as logically as i can... it sounds to me like it would work.. but then i would be faced with possible image extension files that are actually malicious code
+err, how would the smoke get out?	very good
+will something like this work? (!count($results) == 10)	!=
+: but why do you want that?	dynamic react page. everything is determined from json. so each component may have sub-components(again dynamic) and so on. so the higher ups asked if it was possible to convert all the `.map` functions into their corresponding output before serving to the user. less functions more performant.. i guess thats what they were ultimately going for
+what is $isset ?	does anyone happen to have a server on hetzner that could run a traceroute?
+what happens instead?	this fatal error call to undefined function mysqli_connect()
+how do you approach custom exception handlers with additional parameters in the construct whilst still conforming to strict standards?	 custom exception handlers?
+some bug is hard to reproce, like just now, my site's customer service said an order is paid with a unmatched total amount. so i placed a order everything the same with that order, but the bug just didn't appear. just a general question, how do you guys handle such situation? there seems nowhere i find i could start to do the bugfixing	if it's not reprocable there is not bug p
+what if a file is both an image and something else?	then i only have to check if if the image is malicious
+so mountain time zone?	probably
+what if i neex second precision?	sorry for my typos im using a surface tablet its difficult
+like seriously?	; pour it out in the sink. it doesn't matter.
+currently need something like religion, a forceful and metaphysical system threatening violence, to behave civilized/according to morality, as they don't understand the point with or/and acknowledge the authority and purpose of a self-regulating morality that doesn't _force_ you to submit to it?	##religion not here
+ why not?	lol well it's a test box and we're working on things that we're moving away from apache to nginx
+can a method have the same name as a field in an object ?	no
+<?= $name ?>	 unfortunately i don't think that server will let me run the  file directly ... let me try and see.
+: are you caching the reponse?	 nope.
+does the explanation in the top right of the regex page match your spec?	certainly not global under any circumstances
+can't try/catch?	nope because the exception halts execution of the block
+: so i'm getting an assertion error in mocha... but i can't seem to find what the difference b/w the two (output and expected) is. how would i debug the same?	if it's something like 1 vs 1 then you could debug their types as '1' !== 1
+why would you want to do that?	hi
+: can i p.m. you?	nope
+website.com/index.?action=firstpage	like that
+: no mbstring here ?	what?
+: that'll make try send the cookie, right?	 my question would be why are you trying to remove cookies from the equation
+: how are you? how's your brother?	are you paranoid that i know your brother?
+what about that car?, 	yeah it happens. addictive ingredients are junk foods' best weapon.
+how do i break up the functions?	sack your iterator thingy
+why do you keep writing "classes" ?	i nno what's the real term to use?
+is that supposed to be an answer?	if so as long as your error_reporting level was something other than 0 (which it seems it was) then error_log will have it
+you mean oop that has db queries in constructors?	 so what are dp dpe and emptyis ?
+: i just want this process to be safe so that there are no ? marks in report	ok
+can you help me with this vertical text? i cant make it align into the card http://jsfiddle.net/c2l8z52y/2/	try ##css
+is there a decent library outhere for rest client / server?	sprintf with named variables ? (and using the variables multiple times ?)
+uhm... but is that a recommended way? replacing a native function?	do you have a performance issue?
+anyone knows how can i make both function work at the same time?	i don't see a problem http//jsfiddle.net/g561xx5w/
+where will it be run?	my bad
+is there a limit to the number of chars displayed in the mocha output?	what you want is code generation
+hi there. does someone use guard with ctags-composer?	is there any good "all in one" collaborative open source cloud based ide with git that requires minimal setup time and can immediately involve like 10 people dev team to work on? the most convenient and least "i need to tweak this and that" kind of... ide?
+: is the main purspose for idetifying users?	at least i think it does
+how can i prevent /-fpm from allowing any and all errors from being displayed on the website?	 display_errors set to off in the .ini
+"next time, i'll use indexes" ? :p	i still struggle with inventory related stuff... i probably just need to partition the table into different years
+did you select a column "username"?	 http//pastie.org/10183586
+: why not write to a database?	like python )
+: are you sure that you haven't implemented caching in your app?	the problem is that www-data cannot excute these programs
+as in the ancient text?	uh hm
+: rmmbr the eslint thing i had asked yesterday? so its not the spread thing when you use it in conjection with a fat arrow. i had to put `restparams: 1` to get the error to subside. it was mentioned in one of the issues on github.	dda
+: is that correct pastie? i don't get your question	 i want it to return bar\baz\baztest();
+you think of whole milk as a treat?!?!?!?	for me yea
+i sthere a way to make a file able to receive data from h forms written in seperate files ?	is there *
+so should i try it now? i had a boyfriend named ubuntu once.	afrika o
+am i the only one who thinks divergent is overrated?	kernel
+so what the problem?	how do i find out what webserver i'm using? i suspect that it's just 's built in server but don't know for sure
+, how does it work on the client side though?	 that'll make  try send the cookie right?
+_: is there a - easy - way to let this file encrypted even on filesystem ?	jack[z] encryption doesn't help here
+at the top?	<? info(); die(); ?>
+oh yeah?	from where did you learn the magic packet?
+<? info(); ?> <---- that will tell you if gd is enabled.	yeah but my friend script will tell gd suported what
+gonna show them your magic packet?	from where did you learn the magic packet?
+form ?	from*
+firewall?	nope can access from browser
+https://www.youtube.com/watch?v=orl5durplei if this aint available on vr headsets today they all suck	lol
+do you open the browser console to see the result ?	i do this locally and then put it on jsbin i do my testings in firebug
+what does that actually solve?	so i have a website up with full a+ tls 1.2 and modern+high ciphers.  i'd like to expand on that.  what do you think i can do with my site?
+was he zulu?	not even allies but to a degree they are.
+how many level 60's did you have screwsss ?	what?? do you have to colour code weapons mines mostly steel
+https://www.youtube.com/watch?v=llqqzmnfa_a	disney is not dead... he's cryogenically frozen
+you mean like, $foo->this()->that(); ?	more like foo()()
+u dislike eluent? :x	especially for small projects
+: so namespace mapper; use modeluserinterface; interface usermapperinterface { ... } <-- the reason to use the `use` keyword is to ensure that anywhere modeluserinterface is used it is substituted with \mapper\modeluserinterface ... assuming that is used as a type-hint in one of the interface's methods... right?	 legacy code
+caddoo but i’m not… and if i was, why not an active file or a line number?	 seriously if there is no bug that problem shouldn't be into existence
+: what exactly is it that you want to know? you need to be specific.	because i'm wondering how  checks the address bar of the browser
+getting filesize?	
+why not?	i like curl init... setting... but
+: what do you mean it has support?	lol
++ how bad is it ??	 buttons should be safe and force a click
+, why the resistance to running that 1 simple command?	afraid of what it might tell you somehow?
+ is the array-in-question the *only* arg (not counting additional arrays of the same sort)?	 i'm not sure what you're asking. the function is designed to only work with these types of arrays but there are more than one i want the function to process
+, slow but going.. hows things with u?	; things are well. i just completed a whole bunch of chores and now i am relaxing.
+how are you today?	that's a better venue than the channel for idle chatter sure
+lion king is a musical1?!?!?!?!?	yes
+: you joking right?	 yes don't
+you mean inline h?	and also why are you using preg_replace to replace a text string?
+: what's multibyte ?	http//.net/manual/en/book.mbstring.
+: which code is that?	 you won't get any uvbs only uvas sun has to be above 50°
+: berkeley even? that's pretty sad.	 every time i see something like this and it doesn't jive with previous knowledge it is a tax on me
+how long would it take at least to compile ? is it doable in 15 minutes?	 you need to install the mysqli extension
+how do i do that?	wamp?
+: have you tried http://regex101.com/ ?	 the routes are $obj and the trips are $hor
+so run a cron task that basicallyncompared now() against my stored time, then do stuff its withtin whatever threshold i ser?	yes
+too little?	too little.
+what's the best solution to make get_headers to an array?	hi i am wondering if in   if i do ...catch(..$e){throw;} is doing same thing like in other languages (is rethorwing the $e but keeps the stack trace and all the good info)
+: wouldn't it be an overkill to make an http request to self multiple time in a single request to one of the apps?	i guess i will have to take the time and just do a propper connector or something d
+any ideas for applications i should build or something?	  it's a poor one that should be removed.
+: care to comment on my code?	not here
+, <?= is not short tag syntax.	 which word do you not understand?
+i just dont want to risk handing my server over because of something silly?	 so test!
+ycle: yeah if he neas to store some data that doens´t need to be searched or sorted by, he can json it and put it in one column right ?	then you have to encode "kind" information in code.  code may bloat to some unknown degree.
+but im still stuck with crontask that only runs every minute right?	do you know what a daemon is?
+how about a trace without xdebug?	how to do that ?
+how do i find out what webserver i'm using? i suspect that it's just 's built in server but don't know for sure	whats
+would anybody like to suck my dick?	for op
+: too long since i've been fiddling with rewrite rules. don't you get the original request uri even though you go through mod rewrite?	 nno. i don't use apache and havent implemented a bootstrapper in a few years.
+they'll ban you?	please...
+or not?	because thats the entire freaking point of this project
+: whats the failure?	well it returns  my nodes with missing branches
+: that fixes it.. why though?	 you escaped delimiters but not the slashes inside string
+, have you ever seen any h.r. giger artwork? alot of it is sexual in nature	on a scale from sgt studanko to chong how high are you right now?
+how do chickens make sound? i don't remember.	maybe when i get home
+: can you point me towards an example?	parentmethodname()
+http://www.youtube.com/watch?v=ebmaylrl3mu	slow but going.. hows things with u?
+: there's an assign method on window.location?	yep
+this is the library that's generating the error?	 there's .net/debug_print_backtrace too for quick mps
+, and you couldn't give that a try for yourself becaues?	*because
+, i see you guys still hang out here? nice to see you, long time	hi
+would you please correct this on this sample so i can get better feel of what's happening? please? http://jsbin.com/sezekigeza/1/edit?js,output	ill fix it for you
+on another note, now that we've established that isn't really here to help people (not a single helpful line since he joined), can we part ways with him ?	{ success false errors ["you're booooring me..."] }
+is there anywere i can ask on irc?	will return false after comparing only 3 characters
+: https://github.com/saadtazi/saadtazigchartbundle ?	figured it out lol
+someone was trying to tell me earlier that if url-encoding things can make them unrecognizable to a filter for bad iut... i thought $_get was populated with everything already url decoded though. right?	 the filter operates at a lower level than that. that's a lot of why they're pretty useless.
+jump on?	lol
+is there a way to test this?	since the timeline says 7 will come out in a few months
+will full unicode support ever come back :d?	if someone does it (tm)?
+: how's a database better than a file?	0.o
+new magento? new zend?	function dp($var){var_mp($var)}
+hi i have a question --> when we using backbone or ember, people can read source code to see how it's working no ?	when using javascript people can read the source code.
+why is that so difficult? :i	 i guess nginx serving in ram cached pages not touching  or the filesystem could probably get that fast on decent hardware...
+, what do you use instead of ?	ruby
+what are you working on?	 it does'nt matter. all that matters is the path to the app folder outside root
+, spurs fan?	yes you too? d
+: so i can display the login dashboard of my client portal but cannot see anything after an attempted login... and there are no errors or anything... any tips?	 ye the default tips if you don't know what your code is doing ...
+if $arr is ['', 'js'], can i do something like $var => $arr + 'h' so that $arr ends up being ['', 'js', 'h'] ?	 new datetime('@' . $timestamp new datetimezone('some/timezone'));
+: why does your function need a variable amount of args? what is it doing?	i have a function that loops through an array. i want to check out multiple arrays with the same function
+: no? it's not that i'm worried about, i can apply concepts	whatev.  silly.
+, what is the url?	it's secret
+, how does it not work?	doesn't do anything
+i got more crazy about this when i watched the movie existenz..it's on yt. https://www.youtube.com/watch?v=gxzjkjg5ely	ay  i found u
+why you want the isolation?	 i was looking for something built-in as this will be proct used in various environments which i have no control over
+oh, question, how does the $_get[]; work?	how does this know the name of my computer? http//www.iterm2.com/images/mark.png
+even if it is, what is the problem?	but even better would be $query = http_build_query(['expires' => date("y.m.d hi" strtotime("+1 week"))])
+: so thats a remote server then?	right
+why doesnt this work?	error_log(json_encode(debug_backtrace());
+ : suddenly there's something wrong with native replication ? :p	on  that is some community contribution that is not in any distributions
+has anyone in here kept up with the current self hosted ecommerce options available?	was about to roll my own for a freelance project(there's some tricky inventory management) but am considering just sticking opencart on it
+where did people get this idea that they need csprngs for tokens?	 openssl_random_pseudo_bytes() is one of the most expensive prngs in 
+if we don't know whats going on in the script, how the hell do you expect us to guess what it could be?	lol
+how not?	 because what do you know about that file?
+so whats happening???	 guess wamp is crap or you have messed up something. ^^
+: is there any difference for the browser wheter i replace an existing <img> with the image(), or if i just update the src attribute of the existing <img> element with the value from the just loaded image?	no difference
+: doesn't intergration means to assemble?	 short echo
+any suggestions?	is there anyway to use get[] to return a dynamic page so i could have website.com/firstpage instead of website.com/index.?action=firstpage
+: we add that line, just before the do block right?	 well i can write in a every given form action="said_file." but how can i recognize if the data coming from this h-form's file or that
+all lower case?	generally speaking.
+can anyone recommend a server-side charting library that doesn't suck?	(svg)
+trying to keep the bedbugs away?	lmfao !!!!!!!!!!1
+if you know python why don't you stick with django? :)	i don't like taking the easy way out
+: rtfm?	http//.net/manual/en/ziparchive.open.#refsect1-ziparchive.open-returnvalues
+http://stackoverflow.com/questions/2040240/-function-to-generate-v4-uuid ?	 http//en.wikipedia.org/wiki/universally_unique_identifier
+is datetime::iso8601 the right format for a utc-timestamp in mysql?	or should i better use y-m-d his
+does this look like a good database migrations script? http://sprunge.us/yaaz we are new with this	 if it's registry of constants it is a bad practice
+how come? im quite new still to programming and all.. what makes one better than another?	 was built to handle short lived web requests
+and the paragraph style should be applied at execution?	hi i am trying to use a webservice but i am having issues with the code.
+??????	 jeah either use a environment variable (e.g. with apache) or open a config file
+i'm trying to install a local pear package using pyrus but it keeps telling me the channel is unknown, how can i make pyrus ignore the channel?	pear? it's like the 90's up in here1
+https://www.youtube.com/watch?feature=player_detailpage&v=orl5durplei#t=93	lol
+: that's three regexes?	they are set on line 3 8.
+upper -right- side? is your site a right-to-left language output? the exact error would be good, if it was indeed an actual error (and not something just generated by the code itself), then your error log should have it	no upper left side.
+: are you paranoid that i know your brother?	i have better things to worry about
+and does it work?	 altho is a constants. file a bad idea? this would be all my db connection values.
+: micro frameworks maybe?	usually also feature xss and sql injection "addons"
+which channel would any of you reason is a good one for discussing same origin policy of cookies?	but cant figure it out anythinga?
+: do you have a performance issue?	haven't implemented anything yet... still sorta info gathering phase
+what sort of "data"?	an array... of arrays...
+don't you mean, let it go?	lol yes
+i need some advice on working with money... i want to $125.20*1.166(rate)  the result from these what should i do? round? number format?	 the rules for how you round money can depend on what you're doing
+which ini settings?	error_reporting ini_set
+quick check... how many of u guys use vim or emac?	i use vim
+how about video conferencing?	lol
+what version of ?	debug i'm in __callstatic() and filename is /tmp/foo   debug i'm in __callstatic() and file object is
+if i have conflicts and aptitude wants to remove "xserver-xorg-video", should i be scared?	yes
+how to unregister the listener? $(window).off('resize', this.resizewflist.bind(this, selector)); <-- doesn't work	`bind` returns a new function assign it to a variable
+, is it before output?	i don't get any errors. p
+err, this? https://regex101.com/r/vk4xs8/1 , 	 i'm not sure what you're asking
+, how? all its doing is encoding properly...	remember it gets decoded at the other end!
+have you run composer install?	yep
+is a+l+t+f+4 ?	hmm can anyone else hold alt and press f4 and make sure it works for ?
+composer's autoloader?	yes
+do you yahoo!?	wtf
+bool or wouldn't it work?	 it depends on what you set it to
+dammit, that was for rockwood ! see what i mean ?	lol's
+,  urlencode ?	 i've already given you the method twice!
+well anyway what language would u suggest? it just needs to read from mysql is where im going to store the infirmation	i used to use perl for that today i tend to use python.
+alpos: i have more than 3 database on my cpanel myadmin. now i have came to the cron job option in cpanel and it requiers the command. e.g. i want to truncate the "abc" table of the "xyz" database then what should i write in that command option ?	command to truncate?
+enum in mysql ?	oh sorry you mean enum in 
+do you understand what i'm working with here?	hey i've seen clients doing that!
+: at the top of your page put <? info(); die(); ?>	 http//stackoverflow.com/questions/9628443/why-would-i-use-dirname-file-in-an-include-or-include-once-statement
+, then you could add it to source code of c/c++ (but not yet.)  you do understand the h, right?	read it have a go and then come back with any questions you have.
+but can anyone verify my thoughts?	 lol based on what he showed you you suggest python?
+somebody know that?	best way would be not to use 
+huh?	 apparently it is for . you should see the drivel i'm getting in privmsg
+can anyone help... my object b under it's method of "__destruct" is calling a destructed object a... how can i prevent object a from being destructed before object b?	did you write any of this?
+also, what would be the best way to connect to a irc server in ?	somebody know that?
+hi! how does one fsync() a file in ?	 fflush() ?
+why not? who needs management or hr?	oh i forgot it was cyryllic filenames
+so this apcu - has it always had it's opcache stuff stripped? (is that why it's apcu and not apc ?)	i.e. should *any* version of apcu work with *any* version of opcache - regardless of  version
+sounds like a c problem?	sounds like a lack of experience problem with the language designers
+, do you use transactions; if yes when no error occured do you commit the changes?	have you tried disabling the cache browser side?
+: config.ini is related to the app? waht kind of app is it?	 i cant set someone elses apache with 
+will you support your american man?	slow but going.. hows things with u?
+codeviber?	 codepad + viber = codeviber )
+: -10f? whats that in human language? -50c?	that means the us constitution is nullified by the patriot act
+, okay. some example. --- so now i have to "undo sql escape" before i can display this onto an h web page/xml file? --  i have to undo sql escape if i want to send this data in email?  -- what about over irc?	 do you know what the delimiters are in regexp?
+: isn't the point of preloading that the browser caches it?	yes html. but i just want the js versions of these
+pagination?	talking to me?
+grab(.)(.) ?	or b('o')('o')('b')->s
+do i need to fill the background with white?	urg still getting all black.  -/
+i had a look at the .ini and some more system settings but i can't figure it out. the path variable on windows is system wide. so a change to it should reflect (at least) as soon as the -cgi is restarted, but it doesn't. even if i directly call and -cgi from a console i get different values for the path. could it be that -cgi does have some kind of cache?	 no the path value is not system wide. at least not ring runtime
+: what? why do you want that if you did the "use postmark…" thing	i am trying the original setup with use and then without. both ways i get the follow error fatal error class 'postmark\postmarkclient' not found in
+which herbs and spices ?? basil ??	what can i say some like it hot
+who really browses the web without cookies? you wouldnt be able to sue any websites	stop enabling those people
+writing something like a crm platform. 1945/33036 loc are mine. others are libraries, etc. is this normal?	h purifier is 28000. mandrill is 2500.
+hi all, anyone here familiar with http://www.openwall.com/ass/ ?	yeah data we got was unordered
+but how can i write them back to the disk?	don't forget the headers
+so you're testing without an error log ? again with the unsmartness :/	is that supposed to be an answer?
+i've figured out, that collecting output content in an array (1) is much faster and memory equal than concating it to a string (2): (1): foreach() $output[]; implode("\n", $output - (2) foreach() $output .= "blah\n" - can anyone verify or falsify this?	afternoon again...
+if all i have is a non-zero prefix number for the month (1-12) and a 4 digit year, what is the best way to format this to use strtotime? i've had issues before where it mixes up the month and date, so i figured i'd check in	wouod anyone share with me the concept of how one might create a sniper service like an auctio sniper for ebay but i will be using it for something else. just curioushow it works
+it's a real file? i mean it's look strange	?? that's the filename
+do you know what a daemon is?	if you *need* sub minute precision you need to write a daemon.
+: is there any way a dao could use an ar pattern?	fair enough
+: do you use apache?	you can set a environment variable there
+what? "keep your language clean"?	clean language is not a big deal.
+is it possible to develop a web music player with audio filter (equalizer) capabilities with h 5 / ?	 you dont need  for this
+hi, is it possible to have 2 iut buttons (login + register) and have them both do two different things? like login for the one and register for the other	 yes
+you just want to be like everyone else?	*shrug*
+i need a memory profiler to track memory usage for a cli script ... any suggestions ?	 good ol' xdebug or https//github.com/phacility/xhprof
+: would i have to dig the browser settings?	if you have firebug/etc installed it's a checkbox on the top of the "network" page
+not sure?	you'll want to look at whatever documentation they provide
+overall, does the "us system" still exist since 9/11?	what's that mean?
+what does emptyis do? also dp and dpe	good morning
+: fflush() ?	which means that namespace\foo is now shorthand for my\full\namespace\foo
+: you do know what an anagram is, right?	whats a anagram
+what's the shizzle dizzle?	what?? do you have to colour code weapons mines mostly steel
+are there not 2 dimensions?	it will give width  height
+: dom?	 depends on what the h looks like and what you need to extract. domdocumentloadh and domxpathquery
+hi, why is this code returning "9999"? http://pastebin.com/jug6rfyh	anyone please take a look?
+: what do you mean by dependency injection? like is what composer does dependency injection?	 i see. if in my select statement i have "username" then in the array it's indexed as uppercase. doh. i caught it while creating the pasite.
+ why use false when null already means null?	or ?var=0
+where do you think christmas trees came from?	i recommend thailand
+is it currying if you can't satisfy all arguments with single call?	currying is taking a single function with multiple arguments and and turn it into multiple functions each with a single argument.
+really?	that's weird
+: why would you do that?	why not? who needs management or hr?
+how cute it is:) i just wrote it from the scratch and it works! lol http://jsbin.com/vuxoxedenu/1/edit?html,js,output	
+why this is crashing my builtin server?? <? shell_exec('sh script.sh /dev/null 2>/dev/null &');?>	and in each of those some info will show for the user and will redirect in 10 seconds after showing the info
+is there an easy way to set superglobal environment variables with ? something thats not limited to one script request	no mysqli
+: can you ssh into said server?	godaddy with a bunch of  files
+is that good or bad ?	 terrific note!
+: what?? do you have to colour code weapons, mines mostly steel	you passed the test. you may proceed
+: set it to true?	 which  version ?
+ soooo, a human brain ?	;)
+why do you think that sending a bigger file to the browser will improve your page load time?	you can do that? how? i've never actually understood the chrome profiler so i don't know how it works. or is there other profilers that you suggest
+do you come from java or something? :d	python d
+anyone? any ideas why this happens? mysql documentation says that autocommit is always on by default.	hello i have an issue when i excecute external programs via exec();
+for you windows users, what do you guys use for code snippets / for managing them ?	what do you mean tapout?
+, you got source code to the c/c++ tool?	yeah now im not going to paste 10000000 lines of code
+that tic tac on a fur rug?	please...
+, if you cannot trust someone then why should i?	that's not so rare
+wait, , how would that regex even work with whole numbers?	 agreed. i used to be pretty decided one way or the other. overtime i've come to see coding as set of instructions it will do whatever. and today's design will be useless tomorrow.
+: unusual for you to still be opted. did you recently kickban someone and forget to 'hide' yourself?	he's voice he set himself +v
+: usually when dealing with money.. do you round each time you calculate like subtotal -> ratea ->rateb -> sum -> grandtotal round evertyhing or round only grandtotal?	hello
+what's a woman?	i always get the same response from every girl
+i do that with underwear, but socks?	connect to the ip of the site
+do you have a choice?	that's a pretty extreme definition
+any idea?	 i dont understand the problem? parsing header properties from an array?
+what version of mysql do you need to be able to make these calls?	any currently available
+://iut maybe?	mp to tmp and compress? //iut?
+you are not sure about what exactly toggling or storing tree?	in a standard  execution environment (the whole apache runs a script-per-request thing) is there a way to maintain state through runs
+, and what do you mean by "read"?	what  wants to know is what the file is for
+no? :(	 is evil
+is there anyone here with lowbie questions that i can help answer?	to return the help?
+if you do that, the resulting url is http://api.odnoklassniki.ru/fb.do?application_key=cbamcjpdebabababa&expires=2015.05.06+12%3a14&last_access_range=2015.04.08-2015.04.22&method=notifications.sendmass&status=a&text=asdf&sig=4b061c58463de7b3573cfc408d6ec32b	 yes sorry. i've pasted the wrong code at first
+well have a good tutorial then that's secure and elegant?	does someone*
+pluswork: sorry i don't understand what you mean ?	alpos i have more than 3 database on my cpanel myadmin. now i have came to the cron job option in cpanel and it requiers the command. e.g. i want to truncate the "abc" table of the "xyz" database then what should i write in that command option ?
+besides, how do i get user readable error messages of those constants?	 you don't that's not an inerfase that should be exposed to user
+ok, what are we looking at? :s	okay look at the last unix timestamp. it is wrong.
+: why do you put a double \\ before the d ?	escaping the \
+, i see, what kind of questions have i asked that you deem stupid?	what i think is occurring is that you have nothing to say at all so you're stating that i ask stupid questions.
+what? when?	lol
+: i have? i was answering directly to what you just said.	i haven't told you to move on  p
+, it's not using %20?	what kind of white space are you talking about?
+is there a way to disable ipv6 at runtime?	 what exactly do you mean by "disable ipv6"? what is trying to use ipv6 when you don't want it to?
+: range?	 sequence
+, you suggested reading the .. what? inside an image?	i mean i read it but it made zero sense
+how does this know the name of my computer? http://www.iterm2.com/images/mark.png	lol
+: hmm did you say something ? i got disconnected	i was just asking if nodejs/mongodb and bacbone for client side was a good solution
+image size?	yeah
+if you dont know your .ini, make a simple script with <? info(); ?> inside and check the loaded configuration file.	 i think the issue is the error is on line 20 the $db-error is on line 21
+or you've been up all night too? lol	from where did you learn the magic packet?
+is there one for redis call?	why not... because my server is already hogging a lot of mem resources and cpu
+what should i set so the unhandled thrown exceptions are not printed out?	that ajax thing was pretty neat
+what does she look like?	nah not really
+, good call, that got me, "you have an error in your sql syntax; check the manual that corresponds to your mysql server version for the right syntax to use near '-hash) values (?,?,?,?,?,?,?,?)' at line 1"	what version of mysql do you need to be able to make these calls?
+yes, installed that, have no idea where to write it at - components, controllers ...?	i have no idea what you will build with it but you probably want a service
+what user is running -fpm?	chmod 777 /var/log/-fpm/www-error.lo
+a fifth a night? holy shit.	nah not really
+um, wtf?	(number) 3
+was it so funny?	well of course 
+: did you mean me?	yes
+ have you *bothered* searching on google ?	ah just clear the table
+well it will check anything after the ?	yes it contains unmangled querystring
+what startup script?	systemd?
+disney is what became pixar right?	teehee
+do you use vim even form big proyects? 	  for everything
+hello can someone help me a bit? i must add fast text but idk how to set margin/padding in div	2 versions no mobile and mobile.
+fjnimp and the reason not to use an fopen wrapper with a supported scheme is... ?	hi all.
+, share your code? if it's throwing an exception, you can use try/catch to handle it.	 think i found a solution ord returns false on failure
+then what's the point of re-throwing the exception in ur case?	the line number shouldn't change. once its set it doesn't change it.
+so you were comparing cli with apache?	no
+to show off that they know it exists?	hi! how does one fsync() a file in ?
+the clap?	isnt 4chan for pedos ?? /
+, <pre><? readfile('/path/to/file') ?></pre>	i'd need to replace those with <br />'s
+b>var y=(f,g)=>g=f((...a)=>g(...a));var fact=y(f=>n=>n>1?n*f(n-1):1); fact(5)	120
+hey. i have a base64, which i've decoded. but i can't get it to write to a tiff?	compact code?
+, why? codegolf?	i do that so often that my function in my projects is gi  for get integer   $id = gi('id')
+and, when you say special characters are not properly encoded, did you check that you're sending the correct headers to the browser to say its utf8?	the internal db-connection with the same table has proper special chars
+if someone does it (tm)?	 its for ecational purposes.
+: https://www.youtube.com/watch?v=spdak1z0dza	lol princess bride
+, your question is _all_ over the place. can you explain it clearly, and briefly?	what do you want to solve?
+: i looked into that (or rather preg_match). but i couldn't figure out how to create an array out of a named sub-pattern. the string to match against is one line only. i understand that preg_match_all is for multi-line matches?	 no
+did you read the link?	you map it to one of the constants
+:     $var = !empty($_post['var']) ? $_post['var'] : false;  there. it's always set, easy check.	what if ?var=false?
+hm?	function = class* oops
+afraid of what it might tell you somehow?	i have a mirrored /etc/5 and /etc/nginx on two servers and have enabled pm.status_path. when i visit the status page the response headers from a varnish cache tell me i've hit server 2 yet i always see the fpm processes of server 1. any ideas?
+anyone know offhand what would be the cause of this.. is it cgi related? https://dpaste.de/k4wp	 http//www.engadget.com/2010/06/24/apple-responds-over-iphone-4-reception-issues-youre-holding-th/
+hmm, unintended side-effects? could you give me a link to an article or something about that?	just imagine if `superclass` has side-effects for example changing a variable outside of it's scope
+tricky?	 if i do it in 
+my folder has .ini-development and .ini-proction, which one is being used by default?	thanks  hope they're as active as here )
+hello. i am preloading images using something like 'var img = new image; img.onload = function(event) { // do something }; img.src = "myimg.jpg"; - what is the best way to copy the image in the onload() handler to an actual html <img> tag?	isn't the point of preloading that the browser caches it?
+anyone gonna watch the pacquiao vs mayweather fight?	tc
+will that be spoof proof?	 are you working with an established framework or building this from the ground up?
+oh, having sex you mean?	how does it not work?
+, have you ever read "the unix haters handbook"? i think you might appreciate it	 yes.
+i have a mirrored /etc/5 and /etc/nginx on two servers, and have enabled pm.status_path. when i visit the status page the response headers from a varnish cache tell me i've hit server 2, yet i always see the fpm processes of server 1. any ideas?	https//dpaste.de/k5em what's wrong guys?
+can anyone help me out with this regex? it does almost what i want it to do, but i'd like the 'http' or 'https' to match regardless of the case (http would match the same as http) "preg_replace( "#{[0-9]}#", "(.*?)", "http(?:s)?://(www.)?youtu.be/([\d\w-_]+?)" )"	seems so daunting to learn an entire new language. i barely know this one
+anybody using nginx here? i am not able to purge cache, i have deleted the cache directory but no use	any suggestions?
+, data entering the database. what is it, and where did it came from? do you know which charset it should have?	its coming from h file
+: you updated the existing/hacked website instance?	 probably route all the requests to a single file (a front controller) and do your logic there
+i have a web server, what should i do with it?!	maybe something with encryption! d
+login. is the correct file, yes?	 i have no idea
+i nno what's the real term to use?	objects?
+you know you can talk to each other without the rest of us knowing ? rockwood : /query rockwood_	is there a way to use network files with 's file()? a location might be \\server1\file.txt
+, because $tablename is empty?	 no
+wat wat?	slow but going.. hows things with u?
+so in his example is vulnerable to whatever it is hackers can do with image files?	well my most recent idea lol was to store images in a web accessible directory and store everything else off the webserver
+i have created a form and its working perfectly with verification and adding things to database, now all i want is to make sure that once the user submits a form, he gets a confirmation email. how can i achieve this?	 http//wiki.hash.org/pdo_tutorial_for_mysql_developers   <-- here as well.
+, which word do you not understand?	 you can disable <? but not <?=
+i could've sworn that i read that oci8 was being integrated into 5.6. but i don't see that anywhere on .net, etc. does this sound true? or was i just dreaming?	 i tried theese pages base32 and 64 didnt helped. https//www.base64decode.org/ http//online-calculators.appspot.com/base32/
+where did you use it at all?	i was trying to figure out how to do it. i wrote a lot of it up but it felt like i was just using classes functionally
+so.. try it and see if my server gets hacked, then ill no?	know*
+this is file?	lol
+hidden chars possible?	what you want is code generation
+copy the array, shuffle it, shift it, unset it?	for example. array(12345) it only chooses 245 repeatedly
+how does one floop?	lol
+hi. please take a look at http://pastebin.com/nl4jhvtf . in the "mousemove" event on s.node the .top and .left props of getboundingclientrect() shows the right value every second move. otherwise it jumps 100-200 pixels giving a really strange result. any ideas?	make a jsfiddle and cut it down to 20-30 lines and people will be more likely to help
+what do you want to solve?	hdel from redis is deleting too slowly... i dont want it to return anything from my  script
+can i describe what's happening?	 it would be helpful
+, why so harsh?	you asked me if i wanted to. i said no haha
+ what error exactly ?	it's not going to sit there and go "hey look this thing i'm completely unconnected to had an error let me output it"
+: oh, am i in the wrong channel?	no
+but you need something more like copy-paste detector, right?	hmm http//www.seobythesea.com/2008/02/new-google-process-for-detecting-near-plicate-content/
+i'm building a little prototype for a demo tomorrow and want to write a function that logs the result of several async functions that are applied one after another. so basically i want 5 log messages to show up on the screen one after the other, with a delay of 1s between them. how do i do this?	that or use promises or generators
+: is there any chance that you are double encoding?	mouseover isn't authoritative. look at the source.
+: seems to be an issue that would likely need you to post code to solve. do " --version" and "sudo --version" return differences?	 depends on the culture there. are there defined standards? is there peer review merge requests?
+<? die(); // write this at the top of thine files!	only issue i have found was just now with 0 - been using that forever
+anyone here know how to do a search/replace with mysql?	 better than #mysql?
+what is a content area?	the area where my content is.
+: altho, is a constants. file a bad idea? this would be all my db connection values.	 it seems to but i don't know if it will accept things it shouldnt either
+: you can do that? how? i've never actually understood the chrome profiler so i don't know how it works. or is there other profilers that you suggest	if that doesn't work for you you can also just put date.now() calls around your .map() lines and subtract
+it relies on the mersenne twist?	 depends on what _rand() comes out to on your system
+oh god no fadvise?!?!	fadv_willneed
+heillow, would someone recommend guzzle? or is it better to make the request it myself with	curl?
+i am not getting ? now	but may be it comes later
+find out what methods?	no you got it wrong (or i wasn't clear). i want to read the code to find out the methods
+, https://www.youtube.com/watch?v=8ztinclxe1q	 http//stackoverflow.com/questions/6234953/how-to-modify-the-uri-routing-for-a-mvc--site
+: linux/unix shell, for example?	at least i'm seeing the general dislike of global variables )
+: it wouldn't be normal for me, but it might be normal for you. what's the concern?	i guess the numbers irk me.
+: how so? can you explain or gie me some tutorial?	do you know javascript at all?
+now here is a question - if i have a class - that requires this database connection, is it better to have a global variable or dependancy inject the database connection?	as opposed to "let things look for things they need."
+hey guys, is buildconf a thing?	if ($isset($_get['id'])) $id=intval($_get['id']);  is there a way to do that without typing $_get['id'] twice?
+, why so awake?	congratulations!
+superball?	yeah it's something like mav_laptop if he' around
+is there really even friends?	not even allies but to a degree they are.
+2 requests in one?	that's 2/3 of a kinder surprise egg
+really? i am in tears right now.	afrika o
+so what is it called?	 doesn't intergration means to assemble?
+when extending a class is there a way to implement your own method with the same name as the parent, and the call the parent method with the changes you want to make?	yes
+any advice for a non- guy trying to do some simple url routing? aka for a /thispage request, serve /thispage.?	?
+: so, though sqlite_libversion() is an undefined function, i should be able to use sqlite through pdo?	'evening gentlemen
+: am i doing right??	 seems to me that the problem with your h documents you are storing is that  in h it's not specifying its own charset.
+?useruid=0 < why does that fail for !empty($_get['useruid']) != null	wait
+ie6? :d	ie7 too
+what's unbreakable?	yeah  once lol
+but is my logic even correct?	will something like this work? (!count($results) == 10)
+: are you a bad troll?	that's some magic shit
+crawling can be slower than walking u mean?	why do you keep writing "classes" ?
+is that the correct file?	 put info() on a page and that should tell you. if its a godaddy shared host i believe it'll be apache.
+: c:\aux\aux would do the same thing?	explain like im 5
+, as far as forcing downloads - is then untrue then http://210mike.com/force-file-download-nginx-apache/ ?	wfpkhc  my comments were directed to  but answer your question also
+why does this error not point to a line number in the file debugserviceprovider. ??? https://github.com/jeromemacias/silex-debug/issues/5	 this ways i'd have to return an error and then check for that in caller _in addition to_ catching exceptinos. i don't mind doing it. i was just curious how other devs feel about this type of situation.
+"this parent chain is defined by a hidden slot in every object, called [⁣[prototype]⁣]. you can't change this slot directly4, so the only way of setting it is when you're creating a fresh object. " hmm, , in that link you sent they say this, but isn't the [[prototype]] object just located at obj.prototype? the way i do inheritance now, is just by setting obj.prototype to a new instance of the super class...	no obj.prototype is just a regular property that contains an object. and it's only used in a special way when you use `new constructor`
+i ssearched but that are so complicated. and don't understand what they mean ?	i want to run that cron job file through the cron job option in cpanel
+: but then how would you troll people on the internet?	having a polite conversation about astrophysics is actually really easy
+: because what do you know about that file?	its extension
+i would like to call redis delete on my script. because deletion is very slow, how do i make an "async call" to the redis function without installing moles / extentins or switching to another variant?	store it into a database/queue like rabbitmq
+ a bj smooxhie?	for me yea
+: nothing jumps out at me. can you replicate it anywhere other than the funky wordpress server?	 that's what it's for. you might consider using the short echo tags
+say you joined a shaolin monastery, what weapon would you specialize in?	i recommend thailand
+maybe i could share the page and get a little iut?	sure
+between ticks perhaps ?	 by default pdo_mysql uses prepare emulation meaning it escapes values and embeds them in your sql string and runs it as a single query. to do this it needs to know the character set of the database connection so it will use the correct escaping rules
+ok continue with that example. do you want something stored with a "kind"? so that each product point to one (or more) "kind", and related data automatically comes related.	ycle  i have a little lazy bias like i get lazy for the machine... but having a product table then a 250 tables for each type of products isn´t that a lot ?
+, whats in the code? sudo might have a different include path then non sudo?	is a webservice request
+__get() method?	or magic methods too
+does that change in 7.x?	or will the short echo remain
+, new new or just new like as in new ?	your icq explanation persuaded me xd
+is there a way to use network files with 's file()? a location might be: \\server1\file.txt	what's a network file?
+, is it part of the h document? or the whole h document, with the <!doctype?	whole h with doctype
+, want to help me run for president?	no
+can i submit data to a rest api right?	apikeys are fine for somethings
+ is there a reason you're not submitting the form to file2 in the first place?	 i want to submit data from another variable from a code let's say i have $variable = "1"; and i want to submit it to file2. using $_post and echo it there
+is that a decent way to pass a variable amount of data to a function, without using global?	use an array
+ @\d{1,10}(?:\.\d{1,6})?@ nothing difficult there	or whoever it was that pointed me in the right direction…
+how to do that ?	disable xdebug
+ : do you store it as a binary ?	 yup
+https://www.google.fr/search?q=cron+job+empty+mysql+table it's really no difficulty at all, and it's really not a question...	okay thans
+note: starting with 5.4, short echo tag <?= is always recognized and valid, regardless of the short_open_tag setting.	 yes that is one interpretation.
+, why do you think i'm a mexican?	no
+like what ?	i used hexchat before. i don't know if i missed something but it showed boxes.
+: which ones?	what good is a language without a developer
+: are you talking about an icon?	 if i have the file path can i pass it to getimagesize
+am i late for drama?	 i hope so )
+or may i ask mocha related questions here?	if it's something like 1 vs 1 then you could debug their types as '1' !== 1
+, you should question yourself: "why am i using transactions in the first place?"	i have yet to write any  code that uses begintransaction();
+is there a "_value" setting that can be used to require a script is run for each request in apache?	 there is auto_prepend_file
+is that ?	is that ok?
+, could you say an example, please?	okay thanks for no help< i'm done with this super useful function noone will see it.
+so this kind of is a question relating to an extension but i think its still general enough to ask here. i'm trying to use this xz extension for to compress some post data. however, the extension only seems to support file operations like xzopen/read/write/passthru and nothing like xzcompress. i'm wondering, what would be a good way to work around this limitation?	//iut maybe?
+so, a single mysql server, right?	 indeed.
+seriously, the official name is short echo and will always work above or equal 5.4?	does that change in 7.x?
+can i pm you then?	that's a better venue than the channel for idle chatter sure
+hey, what do the dots in this code do? 'from: www-data@server.net' . "\r\n"	i'm working on a legacy project which because of it's nature has to be tested on a remote server. anyways i'm having some problems and i need to turn on error reporting i tried changing .ini the new settings show up in info() everything is cool but still no errors. i even tried this on an empty file "error_reporting(-1); echo error_reporting(); die();" and it echoes out 0 even tho i just set it to e_all.
+how do i get a link to target the include that's sitting in my content area?	so that it loads the new . file into the content area.
+in time ?	which is why i mentioned looking at the error log which  apparently ignored p
+what is this?	connect to the ip of the site
+pear? it's like the 90's up in here1	 thx)
+bust in hay! wut u doin!?	want to help me run for president?
+, what if you need to put data from  $_post  onto a web page?  --  or if you want to email it?  $_post   -- you just ruined a perfectly fresh $_post overwriting that variable.	 that was your only source.
+: have you ever used silverstripe?	 i looked at it once a long time ago but i rarely use  for new projects these days.
+: xy problem?	 what about http//.net/manual/en/function.func-get-args. ? (or  5.6 has ...$params )
+: why isnt your chimney sealed?	very good
+can i have any example link ?	just create  a  script that will clear the db when you run it. then make a cron job that will run that. google is your friend.
+i have a nested array, each item in the array has a key (article_no) and a key (quantity). now every array item with the same article_no should have its quantity added together. does this makes sense?	how can only one script work slow but same script with another name not?
+: okay np :) , i said -> what do you mean for "normalized" ? the thing it's that i will use a restful api and -->json	then you have to encode "kind" information in code.  code may bloat to some unknown degree.
+does that work in ?	depends on what version he is using and if he is allowed to do short tags
+: yeah, well, it was the first hit. how you checkout out everything on packagist.org?	have you*
+hello?	how long would it take at least to compile ? is it doable in 15 minutes?
+anyone with s3 api experience here?	 it looks to be compressed as well with gunzip
+is the file called info?	or is it a ini file?
+, in the browser?	i tried that typing nameofscript didn't produce anything
+ do you know dependency injection?	hm?
+well i need to store some ftp passwords, what's the approach ?	i can't create a hash on them
+are you bored?	shallow platitude
+gd?	anyone familiar with mockery and know whether you can require that a particular method gets called with different values?
+ lol trying to sound bitter buddy? knock it off, won't cut it;)	haha  ok you just enjoyed 2 mins of fame not gtfo) thanks
+heh shall we compare ?	with this code http//pastie.org/10191033
+, how about that redr.renew_verify.?	it's a real file? i mean it's look strange
+which site were you ping on sniping usernames from?	mojang
+: i'm not 100% sure if the browser really caches the image in all cases. what would happen if the header containts things like 'no-cache, expire-time: 0', etc. when the image gets loaded? will the browser still cache it?	ah okay thank you. makes sense and matches what i see in wireshark
+my bad. what was the concern?	 what makes you think array_rand() isn't random?
+anyone an iptables ninja here?	wan ip's?
+is that a wrong approach?	i don't know how to encode just that white space
+ if you did, why not paste the error you were getting, or even better read it ?	 that's a good idea but honestly i don't see much of mixing sign-in with account registration
+i'm using raphael.js and imagemagick to make it possible to put an image on another image. when i rotate it more than 90 degrees, it's getting out of bounds. any idea what might cause this? http://imgur.com/yamedpd,kllhhla#0 and http://imgur.com/yamedpd,kllhhla#1	right i fixed the problem that was causing no pages to render.. no database connectivity. i'm left with the lesser but still annoying problem of no useful  error logs. the pool access log seems ok.
+<? info(); die(); ?>	 the die() is important
+as said, it doesn't. guess who i'd rather believe ?	i believe su nginx cd /var/log/-fpm/
+: but with no submit, you'll have to press enter with focus on the actual button?	 yes i didn't include it with the code i copied but i do have one )
+, did you ever have a corgi? those are the king of dogs	so do i but there are also many enemies.
+do someone know anything about the hosting company: alfahosting.de?	no hosting here knosys d
+, what do you mean baked in?	you don't have to use it
+: context?	mind pointing the way?
+, is this a web application?	i'm not getting the work together part
+hmm, can anyone else hold alt and press f4 and make sure it works for ?	 it's like apple.  you're probably holding it wrong.
+is it possible to set a variable to a return code of a function and preform an if on it's success? i don't want to keep running the function every time to see if its return status. maybe something logically along the lines of: $working = function () {return true;} if ($working) { }	 thank you for the tip. someone linked me to a great answer in the httpd docs. https//httpd.apache.org/docs/2.4/rewrite/remapping.h if anyone here should be curious too!
+then paypal will handle it i guess :) ?	i was just asking if nodejs/mongodb and bacbone for client side was a good solution
+: [15:56] <> use statements are not relative | are namespace statements?	i don't need alter table to create new data i need it to not block other queries from creating new data )
+you gonna make your own payment platform ? that for it´s own needs another level of architecture	i was just asking if nodejs/mongodb and bacbone for client side was a good solution
+why does it?	kernel
+, you mean compile from source?	there is a tick next to the box in extensionsmysqli
+ what are you going to do about that?	i think it would be fair to allow internets to flow freely to all members of earth.
+how goes your evening ?	slow but going.. hows things with u?
+how do i get link 5 to return relative to the child? http://3v4l.org/buu6h	trying to parse a xml file here and it contains a namespace (i think it is..) as “<smcontactinfo>…</smcontactinfo>. am i missing something or doesn’t simplexml handle this by design?
+have a quick question.... a extends b where b extends a aint gonna work?	 of course not.
+how would you create a cron job ? how would you empty a db table ? how would you use one to do the other ? it's really as simple as it sounds	 ok
+: can you please tell me how ?	 it doesn't even have to be a h for you can do it from curl on cli
+doing what weird things?	not even allies but to a degree they are.
+does it have to be a flatfile ?	 yup
+can anyone help me with this regex real quick? http://pastebin.com/aavnhr3g spits out the error: preg_replace(): unknown modifier 'p'	 you have slashes in your pattern
+who wants a smoochie before bedtime?	a bj smooxhie?
+what more info could you need? :)	throw new vpnauthenticationfailure('could not connect with credentials supplied ' . $username 9002);
+yes i did that in a website, is it fine to have a lot of tables ? vs nosql :p ?	_ only in a few cases is horizontal splitting worth a try.
+mp to tmp and compress? ://iut?	i can't do all of //iut because i only want 1 element from my post data array to be compressed.
+how to integrate rabbitmq into a mvc structured app? any tutorial?	google for tutorials
+i'm not sure what part isn't clear now?	well i want to see script and explanations of clean and secure code for pagination
+can't you just install apcu?	 presumably those using  5.5 (which has opcache built in and switched on by default i should image) use a special version of xcache that works along side!?
+is there any other way to make the variable available?	 this sounds like xy problem
+where's your ?>	what version of ?
+or just allies?	not even allies but to a degree they are.
+what are the benefits or otherwise of using a unix socket for your fpm pool vs a local tcp socket?	 is $h from user iut?
+and just loading it on step2.?	you should probably do a little more than that e.g. making sure pages are accessed in the correct order and so forth.
+what's a network file?	 files stored on a remote location
+does it simply put the string together?	@ they append the strings together.
+don't give it my code! how'd you get my code!?	i want it to measure code coverage only on my  namespace not guzzlehttp react or whatever else isn't in the  namespace
+sprintf with named variables ? (and using the variables multiple times ?)	sprintf("asdf %s asdfjñ %s" $variable $variable) ?
+i have 5.2 and want to upgrade to 5.3.3 . that will be impacting my code ?	and so on my websites
+is it possible to trick the browser into thinking it's fully rendered whilst still having the shutdown function running?	 depends on the server setup
+: is that javascript?	 this is in . but js triggers it
+something else?	my bad
+what is 'mockery' ?	docs.mockery.io
+, what do you mean? win 10 was announced a decade ago?! there should be info about their hololens sdk or something like that and about win 10 i guess?!	this thing https//compass-ssl.surface.com/assets/5c/8c/5c8ceabb-1f8c-4b48-aabe-8d077637adde.png#help-shape-the-future-desktop.png
+, why is your code so fragile?	the error log says "[12-may-2015 104024.481876] notice pid 4128 fpm_conf_init_main() line 1683 configuration file /etc/5/fpm/-fpm.conf test is successful" when it starts but nothing after that
+ok, i played around with promises for a little bit, but i am doing something wrong. can someone tell me what i'm doing wrong? https://jsfiddle.net/mehulkar/u8p6ykw1/2/	it is already in scope you pass the arugment and capture it in a closure
+what do you mean tapout?	like gists? or what
+: can you elaborate on this concept of migration? ^	 think of it is a set of scripts to keep your database schema that you can easily move back and forth between versions
+what do you mean by "that level" ?	is there a better development envirement than vagrant/virtualbox/puppet ?
+can you get an std from skull fu**ing someone?	what?? do you have to colour code weapons mines mostly steel
+curl?	yes use guzzle
+anyone know of a text editor / plugin / site that allows for javascript/jquery selectors to edit text?	ask in #jquery for the jquery part.
+any idea why .exe would give me the current state of the path variable on windows and -cgi.exe would not?	for example i have filename.txt
+: so you want to know if there is nothing in $obj->precio?	if there is no $hor then $obj shouldnt display
+i'm trying to figure out how to loop though multiple arrays. can an array contain other arrays?	hmmm... just had an idea... storing the paging cookies...
+anyone familiar with mockery, and know whether you can require that a particular method gets called with different values?	error_reporting(e_all); ini_set('display_errors' '1');
+this regex [a-za-z0-9_\-.+]+@[a-za-z0-9-]+.[a-za-z]+ messes up when an e-mail is provided with an asterisk. for example: test*t@test.com. it will capture everything after the asterisk. i don't want it to capture anything because the asterisk is not part of the regex rule. help please?	 ^[a-za-z0-9_\-.+]+@[a-za-z0-9-]+.[a-za-z]+$
+hi i just installed apache2 and 5 and made a simple <? info(); ?> page but when i view it in browser it asks me to save the file	 you're saying the post body isn't passed to the api?
+: is your real report in english?	yes
+so it's like 10 lines? and you're certain it's the same	ok it's not exactly 10 lines but it does not continue execution when found row
+dunno. i am a wizard. i like magic. more magic the better. you want example code?	magic?  you may find y-combinator interesting.
+spesifically diabetics?	wtf is that
+and have it return data that shows either valid or invalid, correct?	 it very well could already be solved i might be over complicating it. i would love it if that was the case
+what is the most widely used linux distribution ?	there are no reliable numbers to use to quantify that.
+so um, code is dying really out of nowhere on a if (is_null(false)) { line (variable... value is false). its consistently always on this line. i registered a shutdown function and breakpoint inside it to see when it jumps. i am totally stumped as to why. i tried doubling memory limit. is call stack length configurable?	but it doesnt look that deep
+did they pay for the whole year?	lol
+what you mean?	what are you working on?
+the original filename the user had? the temporary filename your webserver assigned? or the virtual filename you	're going to keep somewhere else like a db
+, you want to do stuff with each line or literally just show the whole file?	 well i thought there's maybe a given framework or some easy way to do this.
+any of you guys using codeception?	how do i test that my object throws an exception when i pass garbage in as an argument?
+how do i test that my object throws an exception when i pass garbage in as an argument?	pass garbage as an argument see if it throws.
+you think i've joined here today?	 jumping ladders is not permitted!
+like order of events?	 i see you guys still hang out here? nice to see you long time
+ (1)why? (2) are all the arrays in question dense lists?	 well that's more or less what array_rand() does under the covers so i wouldn't expect it to get much better resultes
+: what!? rofl! xd	hi
+how can i add inline css to the replace portion of preg_replace? i tried to do preg_replace('/out of stock/', '<p style="color:red">this text is red</p>", $iut) and i also tried with echo with no luck	you mean inline h?
+did you do some profiling on this idea?	you can do that? how? i've never actually understood the chrome profiler so i don't know how it works. or is there other profilers that you suggest
+hi. please take a look at https://jsfiddle.net/c4rnc6p2/1/ . in the "mousemove" event on s.node the .top and .left props of getboundingclientrect() shows the right value every second move. otherwise it jumps 100-200 pixels giving a really strange result. any ideas?	your example is not complete
+ymmv?	+g 1 ymmv
+that makes no sense, do you have the control over rest service?	no i am calling the service which sends 20 items per page i need to extract the ones i need and keep it on. when the user asks for data i send him the latest 20
+bananaphone: yes?	thank you  for helping
+is there any benefit to using datetime over strtotime()?	 what  gave you is procing utc
+also, that signature calculation is terrible, why not use hmac with an actually secure hashing algo?	md5 is broken for hmacs.
+, i dont understand the problem? parsing header properties from an array?	 no you put it in a new exception and throw that.
+so its just like imagecreatefrompng($_files['file']['name'])? kinda thing?	to tmp_name
+ what about http://.net/manual/en/function.func-get-args. ? (or 5.6 has ...$params )	http//mywiki.wooledge.org/xyproblem
+: i thought xdebug is only for websites ?	 ive got a symfony task cli
+does it need to be done at the query instead of in ?	 i guess i can do it in 
+what's the problem?	let me redo what i can and show you where i'm a bit confused
+ : do u have to make it so funny for us here?	unless you mean you need help figuring out how to seperate between mobile and non-mobile users
+i think the op left...?	buttons dont do much of anything by themselves
+kel?	sounds kinda like a reimagining of the neverending story
+can you give an example of how that wont find the file extension?	ive been racking my brain for a simple file upload system for 3 days now ridiculous i never would have guessed it could be so complex.
+what the fudge?	want to help me run for president?
+whats the difference between a woman and a computer ??? a computer doesnt fart when you insert a 3 1/2 inch floppy	what can i say some like it hot
+is there a good windows xdebug client?	sublime text is alright
+: is your problem solved?	 singletons were only popularized because some java dev thought he was learning design patterns.
+: what other interpretations would be?	added it to a gist https//gist.github.com//4e15485954bdef048940
+im using xmlrpc to communicate with an external system. however i need to provide a username and password as a login form and i need to store these details temporaily while the user is effectively logged in. the reason for this is that every xmlrequest requires the username and password sent over. what would be the best way to do this? im not sure whether storing username and password in a session is a wise choice for security reasons	https//gist.github.com/anonymous/643ed60f4b3c7bac68be
+why can't i chain __invoke with just () ? http://sprunge.us/buiv?	hmm
+you seen it sold elsewhere?	yeah its year
+: are you doing threading?	 yes that's all you need. read about the webaudio javascript api
+how can i do this?	i don't know nothing about threading sorry
+anyone know what i'm doing wrong here?	 undefined is not something  does...
+is there anyway to use get[] to return a dynamic page so i could have website.com/firstpage instead of website.com/index.?action=firstpage	hi how to find the file where is include( function_path."redr.renew_verify." );
+: do you know what the delimiters are in regexp?	 so that basically screwed the data up and it is only useful for sql -___-
+, any ideas on what to do?	what's the problem?
+maybe you did not use post at all then?	or have no post body
+like gists? or what	macos has  http//www.shpakovski.com/codebox/
+the toxic drink?	its the
+anybody why pdo function loading from file does not work?	 technically you can make an api (webservices or otherwise) that allows you to pass the function and params without much hassle
+, read the docs, what conditions does it say it returns a non-array on?	 no i do not want to throw a new excepiton i would throw same exception
+is that what you mean?	"this parent chain is defined by a hidden slot in every object called [⁣[prototype]⁣]. you can't change this slot directly4 so the only way of setting it is when you're creating a fresh object. " hmm  in that link you sent they say this but isn't the [[prototype]] object just located at obj.prototype? the way i do inheritance now is just by setting obj.prototype to a new instance of the super class...
+something like that?	 yes that seems pretty close
+why redirect automatically? shouldn't the user decide when the are ready to proceed?	yeah.... he should... but that's how he wants because that is not the final info of the order
+: who doesn't want a phone that bends?	 now if they can just make it so it bends back.
+you mean because of the site or because of underlying ?	as for why not using a for loop foreach is so much easier to write and reason about i pretty much never do a for loop
+do you guy use classes and encapsulate functionality, or do you guy just use functions in a file and organize your code that way?	i'm used to using just functions in  but now thinking i should organize it like any other code - in classes.
+somebody got a moment to help me with some code that i cant get to work?	 throw a paste
+: do you know javascript at all?	you could just use a library for it. jquery has jquery-validate and there's lots others. just google and see which fits you.
+guys, is this a security issue?  if($password == $_post['pass']) admin();	 are you in a namespace?
+ah wait, can't the attribute <form name="whatever"> be passed ? :o	 why not just choose based on the url it was posted to?
+: when would i use sqlite3.so instead of pdo::sqlite?	pdo uses sqlite3.so no?
+can you improve my code please?	 no you improve it yourself please don't ask people to do your work for you.
+and yuou can pick the hottest language you want(golang?) right now and in 10 years something else will be better	 i will
+regarding the scalar type hints: are they in master yet?	is there a way to test this?
+: what exactly do you mean by "disable ipv6"? what is trying to use ipv6 when you don't want it to?	yes
+wouldn't it need to be something like @^\d{1,10}(?:\.\d{1,6})?$@	because what you posted would still match any number whatsoever
+how can you require a script to run before a user can access a directory?	what does 'access a directory' mean here?
+i like cats, though. really hate when the mainstream population seems to like it. i mean it's for nerds and isolated people, isn't it?	maybe when i get home
+: better than #mysql?	 #mysql is not really providing useful answers
+?	 7098655
+, what you just said, is you want to learn it wrong. why would you want to learn the wrong thing?	 have ou read the title stable  versions 5.4.40 5.5.24 5.6.8
+what? she told me jupiter.	maybe when i get home
+ extension 	 http//.net/manual/en/faq.passwords.
+, but what if the problem is related to snap?	then that's the most useful information you could possibly get out of this exercise
+yeah, like pings?	xd
+just the year for that one innit?	yeah its year
+ so what are dp, dpe, and emptyis ?	i've yet to see usable ecom in 
+might it be bad practice?	  is a templating language. just make sure you're only putting template logic in there
+does anyone has any idea why in lines 41 and 45 i get two different values? https://gist.github.com/anonymous/84decdcc53b7a410fab1	 http//sylius.org/ looks good but i can't vouch for it either
+if i have a website that is taking a long time to load, is there a way i can profile it to figure out what general activities seem to be taking the most time?	 http//.net/xhprof
+for wordpress?	!+recommend
+is there a function to convert a array to an ini file ?	the opposite of parse_ini_file("sample.ini")
+, why not just choose based on the url it was posted to?	and no the name attribute of the form is not sent.
+so by creating an image, from an image, it somehow will remove malicious code?	if it has it
+de... are you kidding me?	nope.
+for example... curl init... calls a remote url and forget it immediately... sort of like async to me. i would like to have something like that other than curl init... deos anyone have another alternative for calling hdel of redis?	does that mean maybe i should stick with curl init?
+any idea at what point re-reads the path variable on windows?	but in \far\bar you can use staticsomemethod() to call a method as it is defined in \foo\bar\baz when \foo\bar\baz extends \foo\bar
+ok i identified the problem... it was with a destruct method inside one of the... "classes"... the object a was destroyed and object b was calling a function inside object a... i wanted object b to be called before the script exited... and i need to make sure both objects are alive... hmm... how can i do that?	crawling can be slower than walking u mean?
+: regarding db access? it's wordpress	 looking in wrong file
+and must this be a blob?	who told you it has to be a blob?
+why wouldn't you want the user to know how to submit data correctly?	no i mean you don't want to expose the actual regex pattern
+, so you want copy paste registration code?	if so please use a full stack application framework like drupal.
+dune?	the lightning looks real but the houses are fake
+okay, this may be a coding error or it may be me misunderstanding how gd2 works. in gd2, is everything measured in points, or what?	my width and height offsets are way off so i'm wondering if that's the cause.
+ what are you mad about?	and it also comes down to what you expect of your friends
+why would you uack() something you intend to send?	 i'm guessing you want something more like this http//codepad..com/2l5yhg
+: to make up for the time spent here discussing it? though that would have to be quite a few microseconds per file	i swear people spend way too much time thinking about optimization long before their application needs it
+: roger that; and there's no way an included file could be a subset of a namespace unless it's explicitly defined as such in the included file, right?	hi is it possible to have 2 iut buttons (login + register) and have them both do two different things? like login for the one and register for the other
+is there a way to inject additional variables into a function? (e.g, i want to call x($a, $b) but i want x() to have access to $c)	you can't modify siganture of existing function
+ah, just a one off repair situation?	 yeah
+why utc?	i see
+: where did $password come from?	whats namespace?
+: oh.. so how is sqlite listed as an available pdo driver if i don't have sqlite_libversion()? i'm looking into this	 sqlite_libversion() was for sqlite 2 only. pdo_sqlite uses sqlite 3.
+: really? http://codepad..com/jrpbsm	https//eval.in/320183
+: did you mean "no"?	is it possible to develop a web music player with audio filter (equalizer) capabilities with h 5 / ?
+: what makes you think array_rand() isn't random?	i just want an alternative to array_rand()
+is that one good? i like whats her name that made it? i can picture the face	lol yes
+: is a local url or remote?	or...in short we can only guess
+you feel like you did too much?	too little?
+are you sure the exception is being thrown?	i'm having trouble using a simple strtok to remove a space i think because it is a &nbsp; character... can someone help? http//codepad..com/kwwc7j
+is -fpm.log what your .ini error_log directive set as? o.o	good morning
+, you're not looking to write this for yourself?	 i believe you can run a shell command in  with  shell('  in which you could use grep to find lines with certain strings
+or?	brb
+you mean hint collection type?	nope you can do mytype[] in annotation but no language level support
+for example, send the register button to a register page, how do i do that?	 ajax is one solution
+see how this works? ;)	i dont play games
+is there a way to insert many elements (in a code) in a mysql db as one element? like a list of things in an array that need to be put in the db in one field	i want to store h file in database
+: who?	maybe he's in ai business to have marked such profound statement.
+ just do it ?	how ?
+so is there a good way to render the output?	i'm very new with  so what you see is pretty much what i've learned so far
+soo any ideas?	it's like a price without a currency
+: are you talking to yourself?	i can't paste whole thing
+you can fart for 3 mins straight?	lol
+is there something more to this question?	i'm gonna put that pussy on a chain wax then /join #mysql
+and how do i now know what does error code 11 mean?	did you read the link?
+i would like it to be deleted immediately i just dont want my script to wait. any other alternatives?	 err async is the opposite of "deleted immediately"
+but i think you were referring to the translate part?	yes
+: what is $response????	http//dev.slimframework.com/docs/classes/slim.http.response.h
+hi! i would like to know how to send $pkt = array(44, 22, 123, 0, 0, 12) over network using socket_sendto(), someone could help?	have tried $buf = uack("n" implode($pkt)); but without success.
+i think it was based on someone elses book? but she did the rest	lol yes
+what then ??	what can i say some like it hot
+lol, illuminatis and free masons use alt f4 and <?=die();	i typed alt+f+4 and nothing happened
+why?	in most cases you don't actually need cs-strong numbers
+: why did you set it up that way with 2 foreach? why not a for($a=0;$a<=1mil;$a++){...}?	 in case a cache line somewhere was being stubborn
+what ??	 try it.
+who wants to suck my dick?	there are no chicks on irc you do relize this
+like ever heard of chi-gung?	i recommend thailand
+ lol based on what he showed you, you suggest python?	 i would consider that premature optimization.  if you are outputting a string then use a string.  if it makes more sense to use an array then do it.  but comparing the two for speed is a waste of good brain power imo
+is that current practice now days?	cause you remember 5 years ago + it wasn't
+ops, http://jsbin.com/sezekigeza/1/edit?js,output	if you want `logit` to take an argument you need to make it take one.
+ah okay, so from a troubleshooting perspective does have something that can show me a more verbose error at all?	not from mysqli.
+: i know, but how does it hurt the system?	$expires = 'expires='.urlencode(date("y.m.d hi" strtotime("+1 week")));
+ why not just as a hexdec ?	 do you mean on line 17?
+so you want to display the code of your file in there, or what?	 most likely you have to use javascript to modify your page
+do you ski?	i miss living in washington (
+, , wouldnt rewrite just remove my index. and leave website.com?action=firstpage ?	also what would be the best way to connect to a irc server in ?
+a chroot web accessible folder?	if you chroot into (say) your /var/www and drop privs
+, you're saying the post body isn't passed to the api?	if so your curl code looks fine - is it you that controls the api on the other end?
+: you shot by fn guys?	rip.
+also, what happens with button elements?	(in the event of an enter key press)
+: can you enlighten me how to do this?	hi all. /
+https://www.youtube.com/watch?v=tqfaivnuy1k	the lightning looks real but the houses are fake
+how many of you put a tape or sth to cover your laptop's cam? it's really useful you know.	しね
+hi. when it comes to -fpm, should i only run as many children as there are cpus?	 the problem is that the websites redirects itself to the 'online' version and i don't know where
+ and are these files both on the same server?	same server
+, how are you?	that's a better venue than the channel for idle chatter sure
+you smoke weed?	no children
+: links?	!mdn blur event @
+can i compare a dateinterval object with another using < > ?	jack[z] you put it in another file and then add an entry for that file to .gitignore
+ if the namespace is "use postmark\postmarkclient; $client = new postmarkclient("token");" and you wanted to attach it to a object creation, you could use $client = new \postmark\postmarkclient("token");? i keep getting class not found	 what? why do you want that if you did the "use postmark…" thing
+what?	 it sounds like you already know what you are trying to do
+you want kids?	no children
+mattsah : what's the alternative?	i think the number of times i've had to use __destruct in 8 years of professional  development are 0
+ guys how can my java function accept any value as a parameter?	javac -version?
+: whats the url you're going to?	so i would in return end up with array containing key which only contain values no nulls no booleans numerical or strings not empty ones.
+hello people, i want to organize a feature like in vbulletin forum, so i could turn on/off threads and their subthreads also turn on off, i am not sure how to organize this thing, because it is like nested threading system, i want to be able to control, do i need to do this on level or mysql level?	you are not sure about what exactly toggling or storing tree?
+delboy1978uk not sure what you mean?	ah you're asking about unit?
+if i zip up a directory with zip functions does it retain file persmissions and users?	use something like isset($var) && $var != ''
+should i still go on, or is this even tedious beyond your glib proddings? : )	its interesting me please continue
+who gonna vote for me?	no
+..wat?	 they were likely refering to a waf not 
+how can only one script work slow but same script with another name not?	i am out of theories
+ : password hashes ? depends how you stored them :-/ also, if you're not on <5.3.8, stop using set names as your init command, use ;charset in your dsn instead	  why don't you see if preparing the statement triggers an sql errorstate ?
+sequential real numbers?	ordered
+i want to insert some h as a variable:  $action= ?><form> <? ;	heillow would someone recommend guzzle? or is it better to make the request it myself with
+?? that's the filename	oh question how does the $_get[]; work?
+hahah, any particular reason?	poor quality of code everything is coupled
+sprintf("asdf %s asdfjñ %s", $variable, $variable) ?	 most  frameworks have some kind of rest library/bundle yes
+not open source projects?	has anyone in here kept up with the current self hosted ecommerce options available?
+or you mean the setting?	yeah its year
+: where is the result? do you want me to execute it?	hi i just installed apache2 and 5 and made a simple <? info(); ?>  page but when i view it in browser it asks me to save the file
+with pdo i need to use "commit()" only when i do modification in the database, i don't need to do it on a select ?	 commit() isn't necessary.
+, what do you put in your coffee?	nothing i like my coffee black
+hmmm... apc_fetch cannot fetch for key that was just stored in another process? how is that possible?	 array_key_exists
+what exactly do you expect from me if you're unwilling to share details?	i can't believe i can't remember who was talking to me about silverstripe
+: what's the point of two iterators? :dd	do you come from java or something? d
+malicious to what context?	like a png containing  code or something
+type signature?	i always use `obj/array/key/value/arg`
+can someone guide me where i could take a look if i wanted to have a logfile on my system shown on my webpage, line by line in utf-8 encoding via ?	 you're not looking to write this for yourself?
+does that count?	 nothing jumps out at me.  can you replicate it anywhere other than the funky wordpress server?
+hi, can i create a new context in ? i mean i need to load a system in another system, but i do not want them to interfere. but i still want them to be able to talk to each other. is this possible?	so
+how would i go about that?	 this might be useful if you really want to bake it into your mysql instance https//github.com/hholzgra/mysql-udf-regexp
+ok i tried with another user that i think is running and it is working, anything else i could check?	https//eval.in/362039 i want this to evaluate to "it's there!"
+is it "don't believe me! just watch" or "don't believe me? just watch!"?	i will watch a football game with a friend occasionally and the superbowl. but not much else
+in channel interpreter?	> is_null('')
+want to buy some iptables?	wan ip's?
+anybody see the clippers/spurs game?	not a sportsball fan sorry
+: if (isset($emails[$reviewedby])) { ... } ?	$emails[$reviewedby]
+hey guys. why is my xml parsing not working? could anyone help me with this?: http://pastebin.com/z9ztymjj	 what is the expected output?
+: what is the expected output?	what does it say
+can someone help figure why the post parameters don't pass trough curl? http://pastebin.com/mfh5uhj6	all headers are fine content length too but no $_post at all
+why the highlights?	lol sup !!!!!!!!
+www.youtube.com/watch?v=vcejyfjbwrs	first off i'm not evil.  i resent that.  and for the last time i'm not a mexican.
+how was that an answer to my question?	s/possible/possibly/
+so, may i ask what you suggest.. if i am allowing any file type to be uploaded, storing images on the webserver, storing all other file types outside of the webserver.. whats the best route to take then?	 read the file header and figure out what you think you have.
+you do know what it's an anagram for.. right?	someone with red hair. sometimes it can be offensive
+: does it use transactions?	 no not that i reckon of.
+: i see... and is this a framework (like doctrine) or is this just a word used to describe that functionality (like orm)?	word used to describe
+how to upgrade fckeditor?	wow a lot of ppl
+sportsball lol is that even a word?	spurs fan?
+: ?	 -a
+any particular reasonb?	i like the code snippet system but for the rest i dont feel it suits me... just said i have no real reason... i like the others more...
+, custom exception handlers?	constructors are not bound to the lsp protection so they don't raise strict compatibility errors
+: are run-on sentences and awkward phrasing a thing in your native tongue?	< we're not perfect
+: but is this related to the http error he is getting?	when decoded they both become ' '
+is there a tool/helper that will scan my codebase for array(...) and replace it with [...] ?	i don't want to just do a simple find/replace since obviously there can be pretty much anything in between array( and )
+ i mean like, what happened?	i have a pet dog too
+is this weird? http://pastebin.ca/3001595 i'm just playing around with magic methods and allowing a class to handle instantiated class methods *and* static method calls. is what i did insane? is there ever a use for something like this?	so may i ask what you suggest.. if i am allowing any file type to be uploaded storing images on the webserver storing all other file types outside of the webserver.. whats the best route to take then?
+but its from academy.. thats supposed to be reliable source, isnt it?	https//youtu.be/prcobmxhnyw?t=446
+does anyone know any ways to get around a workplace website block?	connect to the ip of the site
+: from where did you learn the magic packet?	  = fed
+like how are you feeling today?	that's a better venue than the channel for idle chatter sure
+hah. the eval.in link will give the same result every time. viper recalculates each pageload?	 http//codepad..com/81sj1l - seems a fairly even distribution to me
+how would you understand the following: "integration of applications with and mysql"?	 what is the difference? you say you can't disable short-tag syntax?
+mattsah " how do i do that? "	$object_a->b = $object_b;
+: do you have an explaination for the thing i found ?	 what thing?
+is ugh anyone here?	(a) it's not three minutes work and (b) you can probably do it yourself
+is it possible to develop a web music player with audio filter (equalizer) capabilities with html 5 / js ?	sure
+hmm, maybe nginx did it?	inorite
+skype + .net ?	 not that i'm aware of
+so, i need to rework the whole code?	 you example is broken get us something that's workable.
+but generally you have to you how something is done, beforeyou can prevent it, yea?	 see if you are happy with the results.
+: why?	any idea at what point  re-reads the path variable on windows?
+why not chickens?	do you eat the chicken eggs
+: no?	0 is still there
+, 90% cause they use the letter 'a' ?	 not really a quick way to do that unless you do a brute force probably going to be slow with a lot of data
+hey all, can bind_param handle putting in values from $_post? or do i to turn them into local variables?	 sure it can
+: wow... does the concept of testing escape you?	i dont even know how to do what what it is these hackers do..
+: thank you. preg_match_all indeed got me closer. i couldn't figure out how to nest the sub-patterns in a way that would return the desired array. i would love to avoid loops (as in explode). do i need recursive patterns to achieve what i'm looking for?	-pecl-memcached.x86_64 or -pecl-memcache.x86_64 these days?
+so what is it? hololens sdk?	this thing https//compass-ssl.surface.com/assets/5c/8c/5c8ceabb-1f8c-4b48-aabe-8d077637adde.png#help-shape-the-future-desktop.png
+: thanks! the console should just log the server info?	im trying to access /login.
+>:now i want to display blob as h page but i get ????????? like data	what is a type of field?
+what are you doing where this happens?	there's a number of  functions that will either return an object or false to indicate failure
+: did you seriously just say whoever wins?	as if it were in question
+, why didn't you even test it? :p	ok let me test throw;
+so a mac will open the files correctly, without a file extension?	 if you *really* care about what you have received. you open the file and read the first 10 bytes.
+the file_get_contents is not killing the newlines, your displaying it as h... what does h do with newline chars?	 oh i thought this was like an offensive thing.
+: the page you're trying to view that is saying mysqli_connect is borked?	ok
+i think it's a small step up from return file_get_contents('../includes/userlogin.h');. what should i be doing?	 oop psr-4 composer. i
+hi! i'm using libsec to make a simple script. the idea is to connect to one server which has a client connected to it. in order to access it i need to telnet (or ssh) to server and from the server i need to telnet to the client. the thing is that the script doesn't seem to output everything from the second telnet. here is my script: http://pastebin.com/j4fig41y    is there some kind of a limitation that i'm unaware of?	i switched the log file on the config to /var/log/-fpm/error.log let's see what happens
+hi, is there any way i can tell if uack is going to fail before calling it?	ohh i seee my error now
+oh?	 but if the bytes != content-length the tab will probably stay spinning like it is waiting for more content
+the connection threw that error?	the set function threw the error
+where do you don't have birdflu?	maybe when i get home
+so you recommend storing the database value as utc?	yes
+, charsets are very important, or you will see boxes and questionmarks ? ? ? ? ? ? ?? ??.	when you see that that means data got corrupted.
+did you install the language pack?	if you wear glasses you can open your mouth wide and exhale slowly in order to crate condensation on them o---o you're welcome!
+: ever use a mac? :)	no actually
+info(); ?	it'll tell you there.
+i think there is a small problem in line 9 here: http://pastebin.com/3vt7th17 . i want the word to be excluded if any of the letters appear. in_array($needlelettersarray, $haystacklettersarray); is there a better function for this?	 it's  fm and i think root is running it
+why doesn't it ?	kevinquinnyo  you're calling a static method.  that's __callstatic not __call.
+, <? echo $prokt_navn ;?> fugly, better: <?= $prokt_navn ?>	does that work in ?
+away = the way?	 yeah sorry
+: take it apart, check how many steps you are getting through. should it really show anything? where? did you check the log files? better make sure that json_encode could deal with the return value from debug_backtrace too, it can't handle just any iut	oh ok. thanks
+how would you know if you didn't know?	how ever is a rotten little bastard who deserves to be shot.
+: yes, you too? :d	that's to be a good series
+what do u use for big projects? :)	i was about to express my "admirance" (if that word exists)
+why should i be shot?	because youa sk too many stupid questions.
+: so tell me, why are you so pathetic? :)	uh no
+eh? wheres a maverick/	hes hiding behind a labtop
+i'm having trouble with gd. anyone familiar with creating an image with a transparent background?	 just ask the specific question and your code with test case expected results output debug info etc
+how would you make them forget it?	 no? it's not that i'm worried about i can apply concepts
+jobsy ran pixar though?	why isnt your chimney sealed?
+hi. why is there like, a million different ways to do the same thing in ?	 it's not that bad take a look at perl
+is that ok?	 is there any chance that you are double encoding?
+who's going to watch? i'm not a fan of boxing at all but i think i'm gonna watch it	slow but going.. hows things with u?
+: kk but... uuum what for?	 open_basedir
+which one?	d
+this url: run.?cmd=currentsong  , gives me all this info:http://pastebin.com/raw.?i=bnczx2rb  . what do i have to include in this url, to get only the "file" (filename) echo in return?	but can anyone verify my thoughts?

@@ -1,0 +1,184 @@
+<gefiltefish> can someone help me fix this "boot device not found 3f0" error? what i did was delete my efi partition now i'm stuck with a bricked laptop with xubuntu installed, but inaccessible. all the linux distros i've tried on a liveusb won't boot. super grub2 disk is the only exception but it's kind of useless. i can use it to get to xubuntu's terminal though.
+<nomic> you van still
+<nomic> get the files off it by booting it from the live cd, mounting the drive
+<nomic> copying files off
+<nomic> it's bricked - but you can still mount the drive from the live cd (booted)
+<nomic> by mounting the partition , to be able to reference it as a drive
+<nomic> you havce ruined the installatin - all you need, is to get the files off it
+<nomic> otherwise, just re-install
+<nomic> if you can get to the terminal, you can still see the volume - you can still access your files
+<nomic> efi is to do with the bios , not the partition
+<nomic> re-install
+<gefiltefish> ok thanks but how would i know the exact path to the files on my liveusb?
+<nomic> maybe reset your bios to factory settings, if you have screwed that - either by playing around with it
+<nomic> liveusb?  that is it's own environment - you need to mount your partition -t he drive
+<nomic> http://askubuntu.com/questions/78691/recovering-user-files-with-a-live-cd
+<nomic> https://help.ubuntu.com/community/datarecovery
+<gefiltefish> im not really understanding. are you saying to mount xubuntu?
+<nomic> you mount the drive, on your laptop
+<nomic> using the instructions
+<nomic> to "mount" is a command which enables you to make the files from another set of media, visible, from your current ubuntu copy
+<nomic> it may even be visible on the desktop
+<nomic> if you  (#1) - boot the pc with the "live" cd / usb
+<nomic> bbl
+<gefiltefish> alright im gonna give it a try
+<nomic> there is "ubuntu forums" - for support - leave messages etc - also search for topic "getting data back" "mounting drive from live cd"
+<nomic> cos people are zombies on irc - not really paying attention - you automatically (on a topic like that) get pointers on the forums (very busy place)  http://ubuntuforums.org/
+<gefiltefish> do you know how to fix failed to fetch error in terminal?
+<gefiltefish> don't worry i'm not trying to be a zombie. i'm actually searching the internet too
+<nomic> ud have to show the error "failed to fetch" - and what you are trying to do
+<nomic> failed to fetch doesn't say a lot
+<nomic> related to what - fetching what
+<gefiltefish> im trying to install grub
+<gefiltefish> im doing 'apt-get install grub'
+<mistermom> gefiltefish, are you using sudo ?
+<gefiltefish> yes i am
+<mistermom> ok
+<gefiltefish> im doing these 'iwconfig wlan0' commands and it shows that im connected to my wifi... but
+<gefiltefish> nothing
+<nomic> these are not problems just of ubuntu - you would be able to wreck windows far more easily
+<nomic> in actual fact - those sites were recommending the use of ubuntu (live), to recover windows
+<nomic> because linux is a serious os
+<nomic> whereas windows is not
+<gefiltefish> so do you have an answer to my failed to fetch question?
+<gefiltefish> it's fine if you don't
+<nomic> you offended now because i talked negatively about windows?
+<nomic> i detect
+<nomic> you did not ask a question
+<nomic> bbl.
+<gefiltefish> be back later?
+<nomic> yeah
+<gefiltefish> tbh windows is more user friendly
+<sega> i just clicked the "arrange desktop icons" option in the context menu on the desktop and my icons dissapeared
+<sega> i'm running 15.04
+<sega> any idea as to why this happened and how i can get them back?
+<krytarik> sega: lp bug 1434959.
+<ubottu> launchpad bug 1434959 in xfdesktop4 (ubuntu) "xfce desktop - system icons themselves arrange off the screen" [high,confirmed] https://launchpad.net/bugs/1434959
+<sega> i've got another question that hopefully someone can answer. i installed xubuntu via usb like 30 mins ago. i chose the option to delete all existing hdd contents and run xubuntu as my primary os. however, when i reboot my pc, "windows boot manager" is still listed as a boot option in bios. why is this still listed as an option?
+<sega> thanks for the answers <krytarik> and <ubottu>
+<gefiltefish> i fixed it
+<nomic> good
+<holstein> i found a way to address my uefi hardware..
+<gefiltefish> guys
+<gefiltefish> how do you create an efi drive
+<gefiltefish> or better yet. what files go in the /boot/efi folder
+<holstein> usually, the hardware manufacturer will have some specific requirements about what the hardware needs
+<holstein> !uefi
+<ubottu> uefi is a specification that defines a software interface between an operating system and platform firmware. it is meant as a replacement for the bios. for information on how to set up and install ubuntu and its derivatives on uefi machines please read https://help.ubuntu.com/community/uefi
+<nomic> efi?
+<nomic> isn't a drive
+<nomic> efi is a bios security 'feature'
+<holstein> mine is a partition..
+<gefiltefish> i meant partition
+<holstein> i didnt actually personally choose what went there.. i like the installer do what it needed
+<gefiltefish> ok i made it in gparted and gave it a boot flag
+<holstein> and, with ubuntu 15.o4, it just "magically" did it
+<gefiltefish> holstein im trying to manually do it. i know that
+<holstein> but, if i were going to blow windows out off this machine, and i might, i would just set the bios to legacy, and have the older setup im used to
+<holstein> gefiltefish: sure.. its just that, the manufacturer, afaik, can have specific things the machine is "expecting"
+<holstein> gefiltefish: im not sure that you and i are *allowed* to know what that is.. but i could be wrong
+<holstein> im not sure that getting "signed" efi partition data like that is accepted is casual
+<holstein> that is accepted*
+<gefiltefish> ....
+<holstein> you can also use #ubuntu, and may find more users with that type of hardware there
+<holstein> whatever works in ubuntu for your hardware and that kernel should "just magically work" with xubuntu
+<gefiltefish> i finally got into my os but if i turn off my pc i'll be back at the "boot device not found 3f0 screen
+<holstein> yup, i had lots of that, as well
+<holstein> i ended up in a bios mode that boots both windows and ubuntu
+<gefiltefish> ok different question then. is there a terminal command that reinstalls missing xubuntu files?
+<holstein> not "magically"
+<gefiltefish> or a way to reinstall xubuntu from terminal
+<holstein> gefiltefish: there are many ways to install files
+<holstein> xubuntu? or xfce? or what?
+<gefiltefish> wow.
+<gefiltefish> so can you actually help me or not
+<gefiltefish> if you dont know how just say that.
+<holstein> gefiltefish: a volunteer may be able to help here, sure.. you can also try #ubuntu, as i said, since, your issue is not xubuntu/xfce specific
+<gefiltefish> i am on xubuntu...
+<holstein> gefiltefish: yup.. ubuntu running xfce, with a efi question.. xubuntu *is* ubuntu, and im not trying to kick you out of here, im just stating that you literally can be the only person runing xubuntu on that specific hardware
+<holstein> could be, you can find another user with that hardware in #ubuntu, and *anything* related, will work in xubuntu.. kernel level, grub, etc.. its all the same
+<gefiltefish> all im trying to figure out is what files go inside /boot/efi/ because mine is empty and im trying to rebuild my partition manually.
+<holstein> gefiltefish: sure, and on mine, its specific to dell
+<holstein> gefiltefish: and, the installer "just did it" for me.. otherwise, i would have had to ask dell, or bypass it in the bios, which also worked
+<holstein> those are signed, for security.. its not something that can be causally made
+<xubuntu11w> i was just reading an article on this website called the "easy linux tips project" and read this tip: "never remove any application that's part of the default installation of ubuntu"
+<xubuntu11w> is this true? i ask because i've removed most of the default software on xubuntu and replaced it with my preffered software
+<holstein> you can alwasy do what you like
+<holstein> but, i think if those are "beginner tips", then, since, all you do is free up a little hard drive space, and you can run into issues with things wanting to remove other things.. etc..
+<xubuntu11w> the author notes that "when you remove a default application, you run a risk of seriously damaging the system."
+<hund> xubuntu11w: it's okay.
+<xubuntu11w> i don't understand how removing default could pose a threat
+<xubuntu11w> *default software
+<hund> it doesn't.
+<xubuntu11w> ok, that's what i had assumed
+<holstein> xubuntu11w: as i said, it can offer to remove other things.. thats all.. a beginner could run into issues
+<xubuntu11w> i see
+<xubuntu11w> thanks
+<voldieshorts> i cant stream any mp3 on ff, youtube seems to be working though
+<voldieshorts> media cannot be decoded
+<voldieshorts> seems like html5 cannot be parsed properly
+<voldieshorts> *html5 audio
+<xubuntu17wared> hello, i'm trying to download thebrain , but i'm told: the document was not utf-8 valid
+<xubuntu35i> why does abiwordcome preinstalled instead of libreoffice?
+<bazhang> !info abiword
+<ubottu> abiword (source: abiword): efficient, featureful word processor with collaboration. in component universe, is optional. version 3.0.1-1 (vivid), package size 1315 kb, installed size 4757 kb
+<xubuntu529> yooooooooooooooooooo
+<xubuntu529> sup
+<xubuntu529> the sky
+<walliski> hi
+<xubuntu529> wa$$up
+<xubuntu529> bye
+<walliski> c ya
+<walliski> -_-'
+<dreamon> want to use gnome-do shortkey super+space but it dont work .. think its already used.. but cannot find what it is.
+<digitsm> hello
+<digitsm> i have xubuntu 14.04.1
+<digitsm> both internal microphone and external microphone of my laptop doesn't work
+<digitsm> what should i do?
+<digitsm> here is my audio setting: http://oi57.tinypic.com/xatc0l.jpg
+<chocolateraineu> good afternoon, i'm having some issues with graphic driver
+<chocolateraineu> card: advanced micro devices [amd/ati] rv350 [radeon 9550]
+<chocolateraineu>            x.org: 1.16.0 drivers: ati,vesa,radeon failed: fbdev resolution: 1280x1024@0.0hz
+<chocolateraineu>            glx renderer: gallium 0.4 on llvmpipe (llvm 3.5, 128 bits) glx version: 3.0 mesa 10.3.2
+<chocolateraineu> can't change resolution/refresh rate, sometimes screen goes too yellow, quite weird.
+<xubuntu70w> i want to remove the default app "mail reader," but if i do, the following items must also be removed: file manager for xfce, thunar extension for volummes managment, panel for xfce desktop environment, xfce terminal emulator, xfce desktop background, icons, and root, and verve (command line) plugin for xfce
+<bazhang> are you tight on hdd space
+<xubuntu70w> some of those seem like necessary system plugins / apps, which is keeping me from clicking delete
+<xubuntu70w> no i'm not
+<bazhang> what will be used in lieu of that
+<unit193> how about not using whatever ui that is and just remove thunderbird then?
+<xubuntu70w> yeah i was planning on just using thunderbird, so i wanted to remove mail reader because it won't be used
+<xubuntu70w> am i not making sense
+<unit193> what is 'mail reader'?
+<xubuntu70w> actually
+<xubuntu70w> it's simply a shortcut to the default mail application
+<xubuntu70w> my bad
+<unit193> so, you were trying to remove exo.
+<xubuntu70w> i guess it serves the same function as the "internet" shortcut seen on context meenuus
+<xubuntu70w> *menus
+<xubuntu70w> if you right click on thee desktop aand go to applications, you should see "internet" and "mail reader" shortcuts at the top of the menu
+<xubuntu70w> i don't need to use either of them, so i wanted to remove them from the software center. but it looks like you have to remove other system components/ apps as well.
+<xubuntu70w> i don't know whether or not those apps i listed above are safe to remove
+<elfy> what you are describing is not any different than the shortcuts elsewhere
+<unit193> how about you use a menu editor and remove them?
+<elfy> removing firefox and thunderbird won'tafaik remove those menu entries
+<unit193> mope.
+<xubuntu70w> let me try the menu editor
+<xubuntu70w> menu editor works
+<xubuntu70w> thanks, i used the "hide" option
+<bazhang> !yay
+<ubottu> glad you made it! :-)
+<xubuntu70w> is there an easy way to configure the applications menu so that it has a different layout?
+<xubuntu70w> for example, can i eliminate the shortcuts on the left side and simply have the menu show all of the applications in one consolidated list?
+<xangua> you mean the classic menu¿
+<xubuntu70w> yes
+<xubuntu70w> well, i didn't know that was an option, but i would like to try it
+<xubuntu70w> figured it out
+<win95> anyone know if you can modify or change the play/pause controls within the volume tab on panel?
+<win95> https://www.dropbox.com/s/bbblw358ma5efnb/screenshot_2015-05-17_17-20-24.png?dl=0
+<win95> that link shows what i'm talking about (in the top right corner)
+<knome> win95, not without changing the code
+<win95> thanks knome
+<win95> where can i provide suggestions for future updates and changes?
+<knome> in launchpad, the ubuntu bug tracker
+<win95> alright, thanks again

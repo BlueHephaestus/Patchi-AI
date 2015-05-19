@@ -1,0 +1,119 @@
+<gjm> ashiren: jaki kebab
+<mattti> kebab?
+<mattti> mam czuć się zaproszony?
+<dread> nie
+<dread> jak nie płacisz za wszystkich to nie
+<mattti> a jak tylko za siebi?
+<mattti> *siebie
+<dread> to nie
+<gjm> dokładnie, nie
+<m477> jacekowski: kojarzysz czy mplayer potrafi z klatek montowac film? albo czy jest cos, co nie jest ffmpeg'iem
+<dread> mplayer
+<dread> montować
+<dread> choose one
+<dread> i why not ffmpeg
+<ashiren> moze mencoder
+<m477> dread: bo jest cos zwalone w mintcie, zrodla nie dzialaja
+<dread> dokładniej coś?
+<gjm> womencoder
+<m477> dread: $ sudo add-apt-repository ppa:jon-severinsson/ffmpeg
+<gjm> no tak, bo w ubu jest libav xd
+<m477> a kto mowi ze mam ubu?
+<ashiren> pacman -s ffmpeg
+<dread> >ppa
+<thenumb> m477: mint to ubuntu
+<thenumb> jeden chuj
+<dread> m477: weź jak normalny murzyn skompiluj z oficjalnych źródeł, a nie jakieś szajsy sie bawisz
+<thenumb> w 15.04 już masz ffmpega jak człowiek
+<thenumb> a nie libav
+<thenumb> ...
+<thenumb> w sumie to obydwa są
+<thenumb> m477: albo zrób sobie gento z use="-libav ffmpeg"
+<thenumb> i wyjabene
+<m477> mam 17 i nie ma
+<m477> juz zainstalowalem
+<thenumb> mint 17 to ubuntu 14.04
+<thenumb> z czym do ludzi?
+<thenumb> ...
+<thenumb> w *15.04* jest ffmpeg
+<thenumb> kapiszi?
+<m477> nie ma minta 18, czaisz?
+<dread> no to zainstaluj system który wspiera porządne pakiety
+<dread> a nie jakieś szajsy
+<thenumb> m477: i nie będzie do 2016
+<m477> no wlasnie sie przymierzam do tego
+<thenumb> m477: w ogóle to z problemami z mintem out na #linuxmint-pl
+<thenumb> tutaj jest #ubuntu-pl
+<dread> tam ci powiedzą żebyś zainstlował co innego :d
+<m477> ale nie chce mi sie druygi raz wszystkiego instalowac :<
+<thenumb> dread: dokładnie.
+<m477> <thenumb> mint 17 to ubuntu 14.04
+<m477> jaki problem
+<thenumb> napiszą mu żeby zainstalował ubuntu :ddd
+<m477> wiec
+<thenumb> m477: widzisz różnicę między 15.04 a 14.04?
+<m477> >_>
+<thenumb> na dodatek mint nie jest wspierany na kanale #ubuntu
+<thenumb> a #ubuntu-pl to oficjalny polski kanał.
+<thenumb> tutaj obowiązują te same zasady.
+<m477> ojej
+<dread> m477: chcesz mieć ubuntu, to zmień repo i zrób sobie apt-get upgrade
+<dread> będziesz miał ubuntu ;d
+<m477> nie chce
+<dread> leń
+<m477> korzystalem z ubu z pińć lat
+<thenumb> i zacząłeś używać ubuntu z upośledzeniem
+<m477> o fak, chleb mi spadl z polki na klawe ;o
+<thenumb> ech
+<thenumb> co ci ludzie
+<m477> wut?
+<thenumb> lm to takie gorsze ubuntu.
+<thenumb> gdyby pojawiła się edycja ubuntu z cinnamonem to lm był by skończony.
+<thenumb> najlepiej by było gdyby cinnamon w ogóle nie powstał.
+<thenumb> to takie gorsze gnome 3.
+<thenumb> które i tak jest gnuwniane.
+<m477> imo takie bardziej gnome 2.5
+<thenumb> yyy
+<thenumb> nie
+<thenumb> gnome 2.5 to bardziej mate :p
+<m477> no moze
+<m477> nie wiem
+<m477> gnome3 jest w ogole unusable
+<thenumb> jest używalne
+<thenumb> ale z kilkoma rozszerzeniami
+<m477> w postaci innego srodowiska
+<m477> w 15.04 sa jeszcze xy?
+<thenumb> no tak
+<gjm> igreki
+<wizard> gimby nie znajo :(
+<mattti> heja
+<mattti> czy wy plus
+<gjm> nie, minus
+<mattti> minus gsm
+<thenumb> wizard: nie ziewaj bo ci karaluch wpadnie
+<wizard> nie ma tu karaluchów
+<wizard> co najwyżej papugi
+<wizard> wrzeszczo i srajo
+<gjm> ale ja jestem
+<ashiren> albo palec ci wloza http://img0.joyreactor.com/pics/post/cat-yawn-finger-gif-1697318.gif
+<gjm> ja tak zawsze robię
+<wizard> ja kotu
+<mattti> lepiej zaśliniony do ucha komuś
+<mattti> albo kotku
+<gjm> albo w dupę
+<ashiren> raz w dupe to nie pedal
+<gjm> no to dawaj
+<mattti> jak się nazywa aplet w tacce systemowej kde odpowiadający za dźwięk
+<jacekowski> kmix
+<mattti> a jak go dodać do tacki?
+<mattti> albo mam jakiś bląd
+<mattti> że to nie działa jak powinno
+<mattti> po usunięciu i reinstalacji kmix pojawia się w tacce systemowej
+<thenumb> nie trzeba usuwać
+<thenumb> wystarczy go uruchomić ,_,
+<thenumb> alt+f2 i wpisz kmix
+<mattti> już za późno
+<mattti> ale fakt można spróbować to zrobić w ten sposób
+<mattti> a jak przypisać skrót alt+f1 by wyświetlał się pasek z aktywatorami programów przycisk start
+<mattti> nie wiem jak w nazywa się to działanie w programie do skrótów
+<mattti> kiedyś sobie już to w jakiś sposób utworzyłem ale niestety już nie pamiętam

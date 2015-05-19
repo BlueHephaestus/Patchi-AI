@@ -1,0 +1,3 @@
+<shookees> labas rytas
+<tomask> kaip jums būsimos ubuntu ui? kažkas naujo :) pasileidau alpha 3 live cd, tai patiko. viršutinis meniu patapo visai panašus į os x.
+<tomask> ar unity pridės spartos ubuntu? iš live cd sunku spręsti.

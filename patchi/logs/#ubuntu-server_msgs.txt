@@ -1,0 +1,30 @@
+<kevindf> hello, i'm attempting to setup bind server and configuring the reverse zones now. i'd like to create a reverse zone for 192.168.50.0, if i'm correct the file name has to be "db.50.168.192" and zone "50.168.192.in-addr.arpa" { right?
+<cluelessperson> is a server's ssl key supposed to be in raw format in a permissioned directory?
+<rob__> should igb included in the default netboot moduels select in mkinitramfs?
+<dasjoe> jak2000: you can safely remove the "partner" line
+<nginus> is there a standard for where file paths should be on github-built apps? i had icecast2 installed gfrom the repo, but needed to install a new version for royalty payment automation. now i dunno where to put my config file or where to point the paths in it.
+<devster31> what's this line do in .profile erm=${term:-cons25}
+<devster31> ?
+<devster31> nginus no, no standard, but it's usually documented in the wiki or readme from the apps, also, you can try going through the makefile and see what operation the make install does, and revert them, sometimes there's a make uninstall too
+<nginus> devster31: thx
+<med_> utlemming, openstack summiting this week or just regular wfh week?
+<rob__> so my nfs timeout problems were solvedy moving my server closer, not sure how i feel about htat
+<root____1> hello?
+<rob__> yo
+<rob__> btw, irc as root = bad
+<root____1> noob. would you mind telling me how to change that?
+<rob__> you ircing from the terminal?
+<rob__> if so don't do it from inside your sudo session
+<root____1> yea
+<root____1> ok
+<root____1> exit
+<root____1> oops
+<jack_> ok
+<jack_> this is better
+<rob__> yup
+<jack_> now, my problem.
+<jack_> i have an old hp mediasmart server that corrupt. i took out and recovered the data and put ubuntu as a server back on the mediasmart server. it worked on a temporary machine, but now i'm getting squat.
+<jack_> would you know anything about that or where else i could ask?
+<rob__> your ognna need to be more specific
+<jack_> ex475 mediasmart server, ubuntu 14.04, on the temp machine, i was able to connect to a web server running on it through its local ip, but still didn't work on the mediasmart server. then i tried editing the network interfaces, adding auto eth0 didn't help either.
+<jack_> on the mediasmart server, both the power and internet lights are nice and blue, but the health light is blinking and the led that should indicate the hard drive is not on

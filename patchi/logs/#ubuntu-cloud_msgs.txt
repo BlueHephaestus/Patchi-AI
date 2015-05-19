@@ -1,0 +1,51 @@
+<patrickw> hi, i have a question about hostnames for nodes in 10.04.  my nodes are getting hostnames like "ip-172-19-1-2" but /etc/hosts doesn't list this name.  do i need to enable (or rather, not disable) the cloud dns to work around this?
+<smoser> patrickw, you're seeing bug https://bugs.launchpad.net/ubuntu/+source/eucalyptus/+bug/475354
+<uvirtbot> launchpad bug 475354 in eucalyptus "hostname not set correctly on uec cloud due to ip address in local-hostname manifest data (dns)" [undecided,fix committed]
+<_mup_> bug #475354: hostname not set correctly on uec cloud due to ip address in local-hostname manifest data (dns) <amd64> <apport-bug> <verification-done> <eucalyptus:fix committed by chris-grze> <cloud-init (ubuntu):fix released by smoser> <ec2-init (ubuntu):fix released> <eucalyptus (ubuntu):fix released> <cloud-init (ubuntu lucid):fix released by smoser> <ec2-init (ubuntu lucid):fix released> <eucalyptus (ubuntu lucid):fix released> <cloud-init (
+<_mup_> bug #475354: hostname not set correctly on uec cloud due to ip address in local-hostname manifest data (dns) <amd64> <apport-bug> <verification-done> <eucalyptus:fix committed by chris-grze> <cloud-init (ubuntu):fix released by smoser> <ec2-init (ubuntu):fix released> <eucalyptus (ubuntu):fix released> <cloud-init (ubuntu lucid):fix released by smoser> <ec2-init (ubuntu lucid):fix released> <eucalyptus (ubuntu lucid):fix released> <cloud-init (
+<uvirtbot> launchpad bug 475354 in eucalyptus "hostname not set correctly on uec cloud due to ip address in local-hostname manifest data (dns)" [undecided,fix committed] https://launchpad.net/bugs/475354
+<_mup_> bug #475354: hostname not set correctly on uec cloud due to ip address in local-hostname manifest data (dns) <amd64> <apport-bug> <verification-done> <eucalyptus:fix committed by chris-grze> <cloud-init (ubuntu):fix released by smoser> <ec2-init (ubuntu):fix released> <eucalyptus (ubuntu):fix released> <cloud-init (ubuntu lucid):fix released by smoser> <ec2-init (ubuntu lucid):fix released> <eucalyptus (ubuntu lucid):fix released> <cloud-init (
+<_mup_> bug #475354: hostname not set correctly on uec cloud due to ip address in local-hostname manifest data (dns) <amd64> <apport-bug> <verification-done> <eucalyptus:fix committed by chris-grze> <cloud-init (ubuntu):fix released by smoser> <ec2-init (ubuntu):fix released> <eucalyptus (ubuntu):fix released> <cloud-init (ubuntu lucid):fix released by smoser> <ec2-init (ubuntu lucid):fix released> <eucalyptus (ubuntu lucid):fix released> <cloud-init (
+<smoser> wow, _mup_ that was a bit excessive, don't you think ?
+<patrickw> i had researched that bug, but it seemed different, though related.  i'm not getting a hostname in the form of an dotted ip, but rather "ip-w-x-y-z", which was i guess the resolution of the bug.  but my machine doesn't resolve that name to an ip...  i guess i have to enable cloud dns and reconfigure my cc to use it for dns?
+<patrickw> actually, i seem to be getting "euca-w-x-y-z" now that i enabled cloud dns
+<smoser> patrickw, and euca-w-x-y-z should be reverse resolvealbe, right ?
+<matthewm> i'm attempting to build a private cloud for testing. haven't had success in starting virtual server instances yet.
+<matthewm> should eucalyptus-nc-publication be installed and running on the frontend controller? it is not currently.
+<patrickw> smoser, w.x.y.z does not reverse resolve.  at any rate, i don't have control of our dns servers and doing all this dns stuff just so a machine knows it's own ip seems kind of nuts... shouldn't something just stick the name into /etc/hosts automatically?
+<smoser> patrickw, there are reasons that we dont do that in the instance.
+<smoser> i have to dig to come up with what that is, but it caused issues.
+<patrickw> smoser, at any rate, i may be able to work around my problem by specifying "localhost" as the host name to my application.  i've been messing with the euca dns but my instances don't get a domainname and i don't need to open any *more* cans of worms at this point.  :)
+<smoser> yeah, dns is scary to poke at.
+<smoser> patrickw, you can very easily modify /etc/hosts on your own in a user-data script or something
+<patrickw> smoser, i was thinking about that, but avoiding scripting that up and just massaging the app i'm trying to run seems a simpler option for the short run
+<patrickw> though i have been shaking the rust off of my bash skills while working on this project.  :)
+<smoser> patrickw, well, it might look something like this:
+<smoser> ip=$(wget -qo - "${md}/local-ipv4") ; hn=$(wget -qo - "${md}/local-hostname"); echo "ip=${ip} hn=${hn}"; echo "${ip} ${hn}" | sudo tee -a /etc/hosts
+<smoser> you pass that into user-data with a header of '#!/bin/sh' and it will probably work (or be close to it, i didn't test)
+<smoser> oops
+<smoser> md=http://169.254.169.254/latest/meta-data
+<smoser> forgot that part
+<patrickw> smoser, damn, thanks, i'll save that for later...  i may add plain old $(hostname) to the final echo also, as what you did apparently is picking up "eucalyptus.internal" as the domain.
+<smoser> fwiw, you can dump all metadata with this nice one-liner:
+<smoser> python -c 'import boto.utils, pprint; pprint.pprint(boto.utils.get_instance_metadata())'
+<matthewm> i think my problem is that i don't have any storage volumes configured. i'll be following https://help.ubuntu.com/community/uec/storagecontroller to see if i can get this working.
+<patrickw> smoser, awesome, that will come in very handy.  i probably would have tried poking around in /proc or trying to hack the address out of ifconfig...  brand new to euca, that web interface will be useful
+<patrickw> matthew, you don't need to use a storage controller just to get vms running
+<matthewm> patrickw: i wonder what i'm doing wrong, then. what log files would i look at to determine why vms are terminating?
+<patrickw> matthewm: there is some info on this page http://open.eucalyptus.com/wiki/eucalyptustroubleshooting_v1.6
+<matthewm> patrickw: thanks
+<matthewm> getting frustrated. i'm following the documentation to the letter, but instances still terminate. got one to actually show "running" for about 20 seconds. i got excited, but then it termintated too.
+<matthewm> i'm not sure what to try next.
+<matthewm> did anyone else have this problem when starting out?
+<hazmat> matthewm, i did
+<hazmat> matthewm, i did eventually solve, but i ended up tailing the log files on the compute node and cluster controller, some copious output results.. i think in one case i had a bad image, and in the other my networking wasn't correct
+<matthewm> hazmat: thanks. i appreciate that.
+<matthewm> hazmat: do you remember what the networking problem was? the installer should communicate and set up everything automatically, right?
+<hazmat> matthewm, i didn't have my networking setup properly, and then i tried to switch it from bridge to system, but i didn't realize the cluster controller was keeping cached state, so i needed to perform some command to clear out its instance state and reload them from its config files, this was about 9 months ago, i think the installer has gotten better.. but i haven't really done much with uec/euca since i got it setup to te
+<hazmat> st out.
+<hazmat> the log file output is a bit copious but it did have some pointers
+<hazmat> but i had to tail from both the node controller and the cc to get an idea of the interaction
+<hazmat> matthewm, you might be able to use ec2-get-console-output to see things from the perspective of inside the instance, if it was successfully running
+<matthewm> hazmat: i only got it to be "running" for a few seconds. thanks for your suggestions. i'll give it a try again soon.
+<niemeyer> hey cloudy people

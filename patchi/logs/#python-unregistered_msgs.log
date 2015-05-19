@@ -1,0 +1,3 @@
+<darkelement>	hey guys if i have a 2d array i can do [1].append(element), correct?
+<darkelement>	hey guys what is some code that will send a given message to a channel on irc?
+>nickserv<	identify ****

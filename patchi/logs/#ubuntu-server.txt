@@ -1,0 +1,45 @@
+=== Lcawte is now known as Lcawte|Away
+=== zz_DenBeiren is now known as DenBeiren
+=== idafyaid is now known as peskypokemon
+=== zz_DenBeiren is now known as DenBeiren
+=== tahr193531 is now known as stevend4le
+=== markthomas_ is now known as markthomas
+=== Lcawte|Away is now known as Lcawte
+[09:09] <kevindf> Hello, I'm attempting to setup Bind server and configuring the reverse zones now. I'd like to create a reverse zone for 192.168.50.0, If i'm correct the file name has to be "db.50.168.192" and zone "50.168.192.in-addr.arpa" { right?
+=== markthomas is now known as markthomas|away
+[10:49] <cluelessperson> is a server's ssl key supposed to be in raw format in a permissioned directory?
+[11:59] <Rob__> should igb included in the default netboot moduels select in mkinitramfs?
+[13:54] <dasjoe> jak2000: you can safely remove the "partner" line
+=== cipi is now known as CiPi
+=== ideopathic_ is now known as ideopathic
+=== ValicekB_ is now known as ValicekB
+=== markthomas|away is now known as markthomas
+=== markthomas|away is now known as markthomas
+=== JexSys is now known as Faylite
+[17:01] <NginUS> Is there a standard for where file paths should be on github-built apps? I had Icecast2 installed gfrom the repo, but needed to install a new version for royalty payment automation. Now I dunno where to put my config file or where to point the paths in it.
+[17:07] <devster31> what's this line do in .profile ERM=${TERM:-cons25}
+[17:07] <devster31> ?
+[17:40] <devster31> NginUS no, no standard, but it's usually documented in the wiki or readme from the apps, also, you can try going through the Makefile and see what operation the make install does, and revert them, sometimes there's a make uninstall too
+[18:02] <NginUS> devster31: thx
+[18:57] <med_> utlemming, OpenStack Summiting this week or just regular wfh week?
+[19:07] <Rob__> so my nfs timeout problems were solvedy moving my server closer, not sure how I feel about htat
+[19:08] <root____1> hello?
+[19:08] <Rob__> yo
+[19:08] <Rob__> btw, irc as root = bad
+[19:08] <root____1> noob. Would you mind telling me how to change that?
+[19:09] <Rob__> you ircing from the terminal?
+[19:09] <Rob__> if so don't do it from inside your sudo session
+[19:09] <root____1> yea
+[19:09] <root____1> ok
+[19:09] <root____1> exit
+[19:09] <root____1> oops
+[19:10] <jack_> ok
+[19:10] <jack_> this is better
+[19:10] <Rob__> yup
+[19:10] <jack_> now, my problem.
+[19:12] <jack_> I have an old hp mediasmart server that corrupt. I took out and recovered the data and put ubuntu as a server back on the mediasmart server. It worked on a temporary machine, but now I'm getting squat.
+[19:12] <jack_> Would you know anything about that or where else I could ask?
+[19:13] <Rob__> your ognna need to be more specific
+[19:16] <jack_> ex475 mediasmart server, ubuntu 14.04, on the temp machine, I was able to connect to a web server running on it through its local ip, but still didn't work on the mediasmart server. Then I tried editing the network interfaces, adding auto eth0 didn't help either.
+[19:18] <jack_> on the mediasmart server, both the power and internet lights are nice and blue, but the health light is blinking and the led that should indicate the hard drive is not on
+=== JanC_ is now known as JanC

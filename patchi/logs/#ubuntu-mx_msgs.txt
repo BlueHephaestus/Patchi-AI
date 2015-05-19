@@ -1,0 +1,55 @@
+<jorgevazq> bon soir!
+<aacevedo> saludos a todos
+<aacevedo> ¿se terminó la sesión?
+<jamesjedimaster> hubo sesion?
+<monster_mexico> hola a todos....
+<monster_mexico> desde mich
+<monster_mexico> mexi
+<jamesjedimaster> que tal
+<monster_mexico> alguno con un conocimiento mejor que el mio en lo que quiero hacer,  y esto es, con una pc o algún otro hard dedicado, administrar un par de lineas adsl, para por lo menos 6 puntos de acceso
+<jamesjedimaster> balancear internet?
+<monster_mexico> si, osea repartir la velocidad para cada punto de acceso, y a la ves, que no se caiga la red si alguna linea falla, y que cada punto no rebase la velocidad para cada punto...
+<monster_mexico> esta una distro, como ubuntu server ya preparada para manejar esto???
+<jamesjedimaster> no recuerdo si hay una distro asi
+<jamesjedimaster> @google linux balanceo de carga
+<meetingology> jamesjedimaster: error: "google" is not a valid command.
+<groxy> jamesjedimaster: balance de carga entre servidores web - youtube: <http://www.youtube.com/watch?v=mrtkcdhg5qo>; configuracion del cluster de balanceo de carga 4/4 - youtube: <http://www.youtube.com/watch?v=nmkjctcu6my>; tecnologías de alta disponibilidad en linux: <http://www.slideshare.net/gnuowned/tecnologas-de-alta-disponibilidad-en-linux>; introducción a las tecnologías de clustering en gnu/linux: (2 more messages)
+<jamesjedimaster> @more
+<groxy> jamesjedimaster: <http://www.redes-linux.com/manuales/cluster/clustering.pdf>; blog elhacker.net: unir conexiones adsl-wifi para sumar el ancho ...: <http://blog.elhacker.net/2012/03/unir-conexiones-adsl-wifi-para-sumar-el.html>; null pointer dereference - filed under 'linux': <http://bureado.com/?tag=linux>; load balancing (computing) - wikipedia, the free encyclopedia: (1 more message)
+<meetingology> jamesjedimaster: error: you haven't asked me a command; perhaps you want to see someone else's more.  to do so, call this command with that person's nick.
+<jamesjedimaster> @more
+<meetingology> jamesjedimaster: error: you haven't asked me a command; perhaps you want to see someone else's more.  to do so, call this command with that person's nick.
+<groxy> jamesjedimaster: <http://en.wikipedia.org/wiki/load_balancing_(computing)>; configuración de canal bonding modo active-backup en ubuntu ...: <http://tuxjm.net/docs/configuracion_canal_linux_bonding_active-backup_en_ubuntu_server/>
+<jamesjedimaster> o en espaniol: http://bourneagainshell.blogspot.mx/2008/05/de-como-conectar-13-adsls-en-balanceo.html
+<monster_mexico> que fue eso,,, ok pero se llama a si, balanceo de carga? pero lo del balanceo, es solo para las lineas adsl, pero  y lo otro como se llama? el limitar el ancho por ip? y eso lo puedo hacer si la pc la conecto a un sw, o tengo que conectarlo a otra cosa?
+<jamesjedimaster> con tc puedes limitar el ancho de banda
+<monster_mexico> por ip?
+<monster_mexico> osea, me imagino que tc es un programa, ese lo instalo a mi ubuntu server y pongo reglas para que cada ip tenga tanta adsl, por decirlo a si...
+<jamesjedimaster> no recuerdo si lo hace por ip, sino basado en el trafico que pasa por el router
+<monster_mexico> deja busco el tc
+<testing> hola =)!
+<testing> ¿alguien es de querétaro?
+<monster_mexico> yooooooooooooooooo  nooooooooooooooooo     ñ.ñ
+<chilicuil> yo tampoco =(
+<testing> >___<!
+<testing> me siento solo t__t!
+<jamesjedimaster> ni yo
+<chilicuil> monster_mexico: mmm, se llama ethernet bonding, y el kernel lo soporta hace algunos años, cualquier kernel, eso sgnifica que el kernel de ubuntu tambien
+<monster_mexico> el ethernet bonding es para balancear las cargas de varios isp, o para administrar el adsl por cada ip independiente...? chilicuil...
+<jamesjedimaster> es para tener varios ethernet como si fueran uno, entonces la cantidad de isp es lo de menos
+<chilicuil> monster_mexico: para conexiones ethernet, tienes varios routers, sacas cables de la parte que dice lan y los conectas a la diferentes entradas del servidor (maquina con linux), balancea la conexion a internet
+<testing> también sirve para full tolerance
+<testing> ¿o me equivoco?
+<testing> por si una tarjeta falla, está la otra de contingencia
+<chilicuil> eso jamesjedimaster , realmente no importan los isp, importan las conexiones ethernet hacia los routers (que deben tener conexion a internet)
+<chilicuil> testing: si, es transparente
+<chilicuil> por cierto jamesjedimaster,  hay forma de recuperar los temas que se eliminan del foro?, creo que por ahi se elimino un msg que no se debio haber eliminado
+<jamesjedimaster> chilicuil: de la pagina? cual post?
+<chilicuil> jamesjedimaster: del foro, uno de los post de la asociacion civil.., habia hecho 2 temas, uno preguntando por instructores, y otro ofreciendo el curso a usuarios, se elimino el que iba enfocado a los usuarios
+<chilicuil> parecian iguales
+<monster_mexico> ok ok, osea, tengo dos lineas adsl, al servidor le pongo tres tarjetas ether,  la salida se la conecto a un conmutador, el las salidas del computador las conecto a puntos de acceso inalambrico y ya esta???
+<jamesjedimaster> chilicuil: yo los vi iguales, con diferente titulo
+<chilicuil> tienes dos lineas adsl, cada uno con su router monster_mexico , le pones 3 tarjetas ethernet al servidor, conectas 2 de los routers al servidor, y la otra la distribuyes con un switch o la conectas a un ap, o lo que sea
+<monster_mexico> y con eso, esta balanseada la carga y a la ves controladas las ip, para que ciertas ip no consuman todo el ancho...
+<monster_mexico> ok, aora dejo investigo lo que me dijiste...
+<chilicuil> monster_mexico: no, el balanceo de salida (hacia tu red interna) la tendras que hacer por tu cuenta, en la documentacion que encuentres sobre ese tema, vendran todos los detalles

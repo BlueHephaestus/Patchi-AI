@@ -1,0 +1,685 @@
+**** BEGIN LOGGING AT Thu May 07 20:22:13 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+<DarkElement>	how can I connect to the internet with my arch linux on vmware
+<DarkElement>	I have checked ip link and lspci and I know that I have a wireless card ready
+<halosghost>	what are you using to connect to the wifi?
+<DarkElement>	I'm not able to connect to the wifi
+<DarkElement>	as far as i can tell
+<DarkElement>	I was unable to use pacman to install programs,however
+<MrElendig>	what card?
+<DarkElement>	ip link returns (1)lo and (2) eno16777736
+<DarkElement>	however none of the iwconfig, ipconfig commands are installed
+<MrElendig>	ipconfig is not a gnu/linux thing
+<DarkElement>	ifconfig
+<halosghost>	ifconfig is deprecated
+<MrElendig>	ifconfig was deprecated over a decade ago
+<DarkElement>	ok what do i do then
+<MrElendig>	connect the wired network since you forgot to install the wifi tools
+<MrElendig>	or boot the install image again, set up network, chroot in, install what you need
+<DarkElement>	how can I connect to the wired network?
+<DarkElement>	with ethernet, or commands you mean
+<DarkElement>	gonna assume ethernet, in which case i will connect when home
+<MrElendig>	dhcpcd eno1
+<halosghost>	<tab>
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Thu May 07 20:53:12 2015
+
+**** BEGIN LOGGING AT Thu May 07 21:02:40 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+*	ChanServ gives voice to crankyop
+>nickserv<	identify ****
+-NickServ-	You are now identified for DarkElement.
+<DarkElement>	MrElendig, back at home, however even with a wired connection im not able to install with pacman because of connection failure
+<fsckd>	DarkElement: does host work?
+<DarkElement>	command not found 
+<DarkElement>	for "host"
+<fsckd>	i mean in the host
+<fsckd>	does the host's network work?
+<DarkElement>	yea
+<fsckd>	so just in vmware?
+<DarkElement>	yep, just with archlinux as well, I am able to connect with my ubuntu vm
+<fsckd>	ok, i have never used vmware with Linux
+<fsckd>	from arch can you ping 8.8.8.8 ?
+*	crankyop is now known as tigrmesh
+*	ChanServ gives voice to tigr
+*	ChanServ gives voice to crankyop
+*	ChanServ gives voice to tigr
+<kyusaki_>	Good morning everyone 
+*	gehidore pings fsckd.fsckd.fsckd.fsckd
+<sniper338>	Gud afternoon :)
+<gehidore>	ya
+<colbyftp>	I want to install yaurt, but need to install package-query 1st
+<colbyftp>	use wget not installed
+<colbyftp>	sudo pacman -S wget databse for wget does not exist
+<colbyftp>	is there another way from base to download wget
+*	ChanServ gives voice to crankyop
+<colbyftp>	everytime i think I resolve an issue another presents itself :)...am I understading this right, to use makepkg. I hould set up a tmp folder somewnere for my builds, and cp then modify the PKDEST variable to point the new temp dir I set up
+<Namarrgon>	what are you trying to do? just build an AUR/ABS package?
+*	ChanServ gives voice to tigr
+<colbyftp>	install package-query, I just did a fresh install and added basic XFCE and sound now I want to install yauoart
+<colbyftp>	Plus I want to do most through termianl so I will learn more
+<Namarrgon>	Get the tarball from the aur, extract it to a build-directory. Then look through the PKGBUILD and .install to make sure they aren't doing anything stupid.
+<Namarrgon>	Then build/install with makepkg.
+*	ChanServ gives voice to tigrmesh
+<colbyftp>	makepkg returns ==> ERROR: PKGBUILD does not exist.
+<Namarrgon>	You have to run makepkg in the directory with the PKGBUILD.
+<Namarrgon>	Go through the makepkg page on the wiki, just in case i forgot to mention something.
+<colbyftp>	I think I may have resolved, I found a install in the tar:-
+<colbyftp>	 Briefly, the shell commands `./configure; make; make install' should
+<colbyftp>	configure, build, and install this package.
+<Namarrgon>	yup
+<colbyftp>	sry:)
+<Namarrgon>	Also look for source=, it should download from a legitimate source.
+<colbyftp>	np thanks
+<colbyftp>	so now to download and install octopi, see if I have learnt anything :)
+*	ChanServ gives voice to fsckd
+*	fsckd is now known as anon42
+*	anon42 is now known as anon9001
+<colbyftp>	ya ever stare at the makepkg text and try to make pictures
+<nawarch>	buenos dias tengo una pregunta
+<nawarch>	resulta que al actualizar mi arch quedo con el ultimo kernel pero ahora no tengo conexion a wifi, nisiquiera me aparece la interface he usado iwconfig para ver las interfaces
+<Namarrgon>	tsk, no patience
+*	anon9001 is now known as fsckd
+*	fsckd is now known as anon9001
+*	anon9001 is now known as fsckd
+<colbyftp>	anyone know how I could app spotify to XFCE systray
+<fsckd>	this perhaps? https://community.spotify.com/t5/Help-Desktop-Linux-Mac-and/What-happened-to-quot-Minimize-to-tray-quot-option/td-p/1042139
+<phrik>	Title: What happened to "Minimize to tray" option ?? - The Spotify Community (at community.spotify.com)
+<colbyftp>	ah that explains it. Thanks
+<colbyftp>	well that means I will install https://aur.archlinux.org/packages/mopidy-spotify/
+<phrik>	Title: AUR (en) - mopidy-spotify (at aur.archlinux.org)
+<colbyftp>	sry guys, decided to use yaourt, but I keep getting Unable to open file: /usr/local/etc/pacman.conf
+<colbyftp>	on the net it say to edit /etc/profile and put /usr/bin 1st in the path line but still no dif
+<Namarrgon>	how did you install yaourt?
+<colbyftp>	i can't remember tbh
+<colbyftp>	should I remove and reinstall
+<colbyftp>	r create a syslink ...
+<fsckd>	create a symlink? why?
+<fsckd>	if i had to guess, you installed something outside of pacman. that's a no no.
+<colbyftp>	so when it goes looking in the wrong dir it will link over to the right file?? noob here just guessing
+<colbyftp>	anything I have installed has been either pacman or direct from AUR using makepkg
+<fsckd>	yaourt shouldn't be looking in /usr/local
+<colbyftp>	except the 'query' dependant for yaourt which i insalled using .config/make/make install
+<fsckd>	ahh there you go
+<fsckd>	that's why you're have that problem. you installed package-query outside of pacman
+<colbyftp>	ahh ok
+<fsckd>	not using pacman makes things harder as you have to do things by hand. :/
+<colbyftp>	brand new so was trying to do everything manually oops any idea how I shoud correct
+<fsckd>	you have to find the files, remove them, then install package-query with makepkg+pacman
+<colbyftp>	this is what I do now, let me know if I am doing it right
+<colbyftp>	wget file from AUR
+<colbyftp>	extract cd into dir   makepkg -si
+<colbyftp>	thts it
+<fsckd>	that's the correct way
+<colbyftp>	ok just fecked up right at the start
+<fsckd>	hehe, no worries. better to learn this lesson on something simple. i once installed xen outside the package manager. never again. ><
+<colbyftp>	lol I can imagine
+<fsckd>	most likely the files are dumped under /usr/local. so shouldn't be hard to find its stuff.
+<fsckd>	don't remove everything from /usr/local. only remove the package-query stuff
+<colbyftp>	../usr/local/bin has package-query, no where esle in local does
+<fsckd>	one moment
+<colbyftp>	Reinstall package-query using empty --prefix ./configure --prefix=
+<fsckd>	don't
+<colbyftp>	somwone has shared that
+<colbyftp>	I wont
+<fsckd>	ahh ok
+<fsckd>	ok i have a list of files
+<colbyftp>	cool thank you for helping me
+<fsckd>	(i built and "installed" it, to under /tmp like i was packaging)
+<fsckd>	only two files i think
+<colbyftp>	lets hope so
+<fsckd>	/usr/local/bin/package-query
+<fsckd>	/usr/local/share/man/man8/package-query.8
+<DarkElement>	so guys when you install arch on vmware using an iso, do you need to download any network stuff? I can't connect.
+<colbyftp>	try changing virtual box settings to bridged
+<Namarrgon>	DarkElement: no, 'base' has all you need for dhcp/static
+<fsckd>	colbyftp: also if you can, please share the output of `tree /usr/local` in a pastebin service
+<colbyftp>	in order bin etc games lib man sbin share src
+<colbyftp>	ah ok
+<colbyftp>	tree a command
+<DarkElement>	Namarrgon, I can't download anything with pacman, and I believe I installed base. It is giving unable to connect errors, any ideas?
+<colbyftp>	DarkElement: change VB settings to bridged under network
+<Namarrgon>	DarkElement: what gives your errors?
+<Namarrgon>	pacstrap?
+<colbyftp>	fsckd: http://pastebin.com/RDgmWcvY
+<phrik>	Title: [colbyf@localhost local]$ tree /usr/local /usr/local |-- bin |-- etc |-- gam - Pastebin.com (at pastebin.com)
+<DarkElement>	colbyftp: ahh, thats right
+<DarkElement>	Namarrgon: one sec
+<fsckd>	colbyftp: looks like it is all gone :)
+<fsckd>	colbyftp: install package-query like normal
+<colbyftp>	fsckd: I changed /etc/profile around, shoudl I change it back 1st
+<fsckd>	what changes did you make?
+<colbyftp>	just the path, changed the order thats all
+<colbyftp>	PATH="/usr/bin:/usr/local/sbin:/usr/local/bin"
+<fsckd>	it might not matter. you can change it back if you'd like, or keep it
+<colbyftp>	i think sbin was 1st and /usr/vin was last
+<fsckd>	yeah, mine has /usr/bin last
+<fsckd>	and sbin first
+<colbyftp>	cool, changed back to normal then 
+<fsckd>	probably should have stuff under local first
+<colbyftp>	ok installed again just have to remember what I was doing lol
+<fsckd>	hehe
+<colbyftp>	wooohoooo thankyou :) its make it past that error :)
+<fsckd>	yay, congrats. and you are welcome. :)
+<colbyftp>	what does enter no of packages to be installed mean?
+<colbyftp>	options 1 2 3
+<colbyftp>	got it, it was difficult to make sense of when only 1 package appeared
+<swift110_>	hey
+<meskarune>	hai
+<DarkElement>	back guys, and making it a bridge network did not solve the issue
+<DarkElement>	I still cannot resolve host.
+<fsckd>	DarkElement: can you ping 8.8.8.8?
+<DarkElement>	unreachable
+<Namarrgon>	have you set up your network?
+*	gehidore pings fsckd.fsckd.fsckd.fsckd
+<gehidore>	doh bad up arrow
+<gehidore>	fsckd: are you on 8.8.8.8 for your dns?
+<ANGRYSTEVE>	8.8.8.8 is evil!
+*	gehidore waas serious in this question.
+<DarkElement>	friend remote connected and it's working alright now, ty!
+<Namarrgon>	were you told what to do?
+<DarkElement>	just needed to do dhcpcd
+<Namarrgon>	just 'dhcpcd'?
+<DarkElement>	yep :P
+<Namarrgon>	https://wiki.archlinux.org/index.php/Beginners%27_guide#Wired
+<phrik>	Title: Beginners' guide - ArchWiki (at wiki.archlinux.org)
+<Namarrgon>	do it properly
+<DarkElement>	yea, ill download wireless :D
+<Namarrgon>	what?
+<DarkElement>	stuff for wireless connections
+<Namarrgon>	you have to enable the service to make it persist across reboots
+<DarkElement>	ok
+<Namarrgon>	wifi in a vm?
+<DarkElement>	thought thats what you meant, but I realize my mistake
+<DarkElement>	:|
+<fsckd>	gehidore: nope
+<fsckd>	gehidore: i think i use this on my desktop https://wiki.archlinux.org/index.php/Dnscrypt
+<phrik>	Title: DNSCrypt - ArchWiki (at wiki.archlinux.org)
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Fri May 08 16:10:38 2015
+
+**** BEGIN LOGGING AT Fri May 08 16:29:07 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Fri May 08 16:29:27 2015
+
+**** BEGIN LOGGING AT Fri May 08 16:29:51 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+>nickserv<	identify ****
+-NickServ-	You are now identified for DarkElement.
+Usage: JOIN <channel>, joins the channel
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Fri May 08 17:25:08 2015
+
+**** BEGIN LOGGING AT Fri May 08 17:28:20 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Fri May 08 18:47:05 2015
+
+**** BEGIN LOGGING AT Fri May 08 19:10:36 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Fri May 08 19:11:08 2015
+
+**** BEGIN LOGGING AT Fri May 08 19:11:37 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+*	angerctl is now known as Namarrgon
+*	tigrmesh is now known as FascistIp
+*	FascistIp is now known as FascistOp
+*	fsckd is now known as crankymod
+*	FascistOp is now known as tigrmesh
+*	crankymod is now known as o|^_^|o
+*	o|^_^|o is now known as fsckd
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Fri May 08 20:51:12 2015
+
+**** BEGIN LOGGING AT Fri May 08 20:55:58 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Fri May 08 21:23:30 2015
+
+**** BEGIN LOGGING AT Fri May 08 21:34:55 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Fri May 08 21:38:52 2015
+
+**** BEGIN LOGGING AT Fri May 08 21:43:29 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+*	ChanServ gives voice to tigrmesh
+*	ChanServ gives voice to tigr
+<manish>	hi
+<manish>	i'm having trouble running gnome terminal, can anybody help me out ?
+<manish>	The error i get is - > Error constructing proxy for org.gnome.Terminal:/org/gnome/Terminal/Factory0: Error calling StartServiceByName for org.gnome.Terminal: GDBus.Error:org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.gnome.Terminal exited with status 8
+<manish>	Ty to help
+*	manish is now known as manish_afk
+<MrElendig>	!give manish_afk away-ng
+<phrik>	manish_afk: We will murder you for using away nicks: http://bisqwit.iki.fi/jutut/away.html
+*	manish_afk is now known as manish
+<manish>	hi, any tips ?
+<Namarrgon>	is your locale set up?
+*	ChanServ gives voice to crankyop
+*	crankyop is now known as tigrmesh
+<f87ahsdfo>	hello, can someone help me stup offlineimap for my university account?
+*	ChanServ gives voice to fsckd
+<DarkElement>	how can I log into the guest OS on my vmware arch linux?
+<DarkElement>	I want to install vmware tools.
+<Namarrgon>	you boot it?
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Sat May 09 11:37:33 2015
+
+**** BEGIN LOGGING AT Sat May 09 11:37:57 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Sat May 09 11:45:15 2015
+
+**** BEGIN LOGGING AT Sat May 09 16:09:48 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+*	ChanServ gives voice to tigrmesh
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sat May 09 18:51:39 2015
+
+**** BEGIN LOGGING AT Sat May 09 18:56:23 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sat May 09 18:58:03 2015
+
+**** BEGIN LOGGING AT Sat May 09 19:39:36 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+<spechter>	is there a way to force a command to split his output to several lines ?
+<spechter>	i'm trying to startx, but it fails and he puts all error in just one line which doen't fit my screen
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Sat May 09 19:45:39 2015
+
+**** BEGIN LOGGING AT Sat May 09 19:50:35 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+<spechter>	i've already read the log, but fixing errors with missing fonts didn't help
+<Cheese>	Did it give you an error number?
+<spechter>	i don't think so
+<spechter>	i will check after a quick restart
+<spechter>	no, it didn't give me a error number
+<spechter>	and running mkfontdir in the given directory fixed it so far
+<spechter>	there is one warning left about opening ACPI failed for a missing directory
+<Cheese>	Well sounds like you know more than me.
+<Cheese>	I just had a problem with xorg giving me error 1
+<Cheese>	Reinstalled the video driver and it worked
+<spechter>	ok, i will try that
+<Cheese>	Not sure i would listen to me. I dont even know if is working. I run startx and i get a black screen. I run startx 'openbox sessions' and get a black screen
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sat May 09 20:05:14 2015
+
+**** BEGIN LOGGING AT Sat May 09 20:09:31 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+<Cheese>	Having trouble finding the file
+<fsckd>	probably you didn't make it. don't worry, you can make it now. :)
+<fsckd>	there is this https://wiki.archlinux.org/index.php/Xinitrc
+<phrik>	Title: xinitrc - ArchWiki (at wiki.archlinux.org)
+<tigrmesh>	ls -l .*rc*
+<Cheese>	Thanks. Let me give it shot
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sat May 09 20:20:42 2015
+
+**** BEGIN LOGGING AT Sat May 09 20:24:36 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+<Cheese>	Not sure if im doing this right. startx run /etc/X11/xinit/xinitrc,  gives me a black screen
+<fsckd>	the default xinitrc starts twm and xterm. you need the packages for both of those installed
+<Cheese>	Ahhh...  I see....
+<Cheese>	So if i decide to skip those andn
+<fsckd>	make your own ~/.xinitrc
+<Cheese>	And just run open box would there be problem
+<fsckd>	no problem. but you have to make your own xinitrc
+<fsckd>	https://wiki.archlinux.org/index.php/Openbox#Standalone
+<phrik>	Title: Openbox - ArchWiki (at wiki.archlinux.org)
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sat May 09 20:42:26 2015
+
+**** BEGIN LOGGING AT Sat May 09 20:57:11 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+<spechter>	when running startx  now i get no errors shown in terminal
+<spechter>	and when reading the logs in /var/log/Xorg.0.log it say adding PC Speaker and next line is closing several evdev
+<fsckd>	spechter: share the full log please
+<blahdodo>	anybody have any ideas how to stop dropped packets in kvm guest - tried "sudo ethtool -K eth0 tx off sg off tso off ufo off gso off gro off" no joy
+<tigrmesh>	Cheese, the other thing pacman will do for you is show you what's installed.  as much as possible, package everything and install it with your package manager
+<tigrmesh>	so when you find something awesome that depends on a certain version of a package, you can see whether it's installed
+<spechter>	http://fpaste.org/220289
+<phrik>	Title: #220289 • Fedora Project Pastebin (at fpaste.org)
+<spechter>	there is my most recent log
+<fsckd>	spechter: no errors, how are you starting it?
+<Cheese>	So (+ti pacman -Ss openbox
+<Cheese>	pacman -Ss openbox doesnt seem to work
+<Cheese>	Something about config file ..... Mirriorlist..... Core not recognized
+<fsckd>	Cheese: sorry, not Ss as that searches, just S by itself
+<fsckd>	see: https://wiki.archlinux.org/index.php/Pacman#Installing_packages
+<phrik>	Title: pacman - ArchWiki (at wiki.archlinux.org)
+<Cheese>	Ok that makes more sense. Ive done that. I thought it was another command or something. I have like 0 experience in the command line. Its taken me a week to get this to boot up.
+<fsckd>	ahh, if i may ask, what did you use before?
+<Cheese>	Osx and windows
+<fsckd>	oh i see. osx is technically unix but one can go without ever using the command line
+<Cheese>	Yea... That was. Me just point and click
+<fsckd>	what made you chose arch?
+<fsckd>	choose*
+<Cheese>	After upgrading to Yosemite my computer got even slower. Im over all the crap they bundle with the os. I like the idea of arch keeping it simple and that you only install what you want. Plus i thought building it from the ground up would be a good learning experience
+<fsckd>	yeah, it can be a good learning experience. you've dived in. :)
+<fsckd>	arch isn't hard if one perseveres and tried to learn. it isn't intended for beginners but it isn't impossible for beginners.
+<Cheese>	The more I play with it the more I'll understand and the easier it will get.
+<Cheese>	Plus there is so much info out there for it.
+<Cheese>	And support
+<fsckd>	hehe, i'm told the wiki is the best. when i started using arch, gentoo's wiki was the best.
+<Cheese>	The wiki is till pretty heavy right now but its definitely helpful
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Sat May 09 23:39:47 2015
+
+**** BEGIN LOGGING AT Sat May 09 23:41:38 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+<Cheese>	I get an error during xorg-config. The log says i have a kernel claiming my video card. Lsmod shows video i915, apple_gmux.... Is this why im still getting a black screen?
+<Cheese>	I followed the wiki and download the 340.xx when initially trying to set up xorg
+<manish>	hi! i'm having trouble running gnome terminal, can anybody help me out ?
+<manish>	The error i get is - > Error constructing proxy for org.gnome.Terminal:/org/gnome/Terminal/Factory0: Error calling StartServiceByName for org.gnome.Terminal: GDBus.Error:org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.gnome.Terminal exited with status 8
+<manish>	hi, anyone ?
+*	ChanServ gives voice to tigrmesh
+*	ChanServ gives voice to tigr
+*	tigr is now known as tigrmesh
+<spechter>	fsckd are you there
+<spechter>	damn, he isn't
+<spechter>	is here someone who might help me with my broken xserver ?
+*	ChanServ gives voice to fsckd
+<tigrmesh>	spechter1, hi
+<tigrmesh>	spechter1, is it still broken?
+<colbyftp>	hey folks, have a combi bluetooth/wifi card on my HP laptop. The wifi works ok, but not Bluetooth, when using Ubuntu I was able to download drivers and kernel update for it. Can I do this in Arch...
+<colbyftp>	rtl8723be  <<<< is the name of the device
+<fsckd>	there might be something in the AUR
+<fsckd>	there are other Arch users with the same problem https://bbs.archlinux.org/viewtopic.php?id=194053
+<phrik>	Title: Bluetooth not working / Newbie Corner / Arch Linux Forums (at bbs.archlinux.org)
+<tigrmesh>	what do you use the bluetooth for?
+<colbyftp>	I use it for my beats pill
+<spechter1>	tigrmesh yes, even if it seems like i come closer to a soultion
+<spechter1>	right now it looks like i'm just missing some fonts for a config file for bspwm i got from github
+<spechter1>	but i'm not sure how to read those lines
+<spechter1>	urxvt*font: -*-neep-medium-r-semicondensed-*-11-*-*-*-*-*-*-*
+<MrElendig>	use xft instead
+<MrElendig>	imo
+<MrElendig>	asuming it is a ttf/otf font
+<spechter1>	so replacing urxvt*font with urxvt*xft ?
+<fsckd>	example from mine: URxvt.font: xft:Droid Sans Mono Dotted:bold:size=9
+<fsckd>	you would keep urxvt*font and replace the right side
+<spechter1>	ok, i will try it
+<spechter1>	btw when i startx it doesn't crahs immediately but shows an xsessin
+<spechter1>	but the background i set with hsetroot in my .xinitrc is not shown
+<fsckd>	what de or wm?
+<spechter1>	and none of my sxhkd shortcuts is working
+<spechter1>	bspwm
+<spechter1>	both bspwm and sxhkd are installed from the official repository if i remember correctly
+<MrElendig>	post your xinitrc
+<spechter1>	one moment
+<MrElendig>	use bpaste.net or similar
+<MrElendig>	not pastebin.com
+<spechter1>	it's on fpaste.org
+<spechter1>	http://fpaste.org/220420
+<phrik>	Title: #220420 • Fedora Project Pastebin (at fpaste.org)
+<spechter1>	shall i upload my .Xressources aswell ?
+<spechter1>	there are all those fonts for urxvt defined
+<spechter1>	in my panel config i found some declarations of fonts
+<spechter1>	and the comment above says xft is not supported yet
+<spechter1>	so how is this sytax i've posted before called ?
+<spechter1>	maybe it will work if i modify this or atleast understand it
+<MrElendig>	xfontsel
+<MrElendig>	but if your panel doesn't support xft then get a less crappy panel
+<MrElendig>	since it is not 1982 anymore
+<spechter>	well, for now i've loaded my saved config files
+<spechter>	i wlll give it a try in the upcoming week and add it module by module
+<tigrmesh>	MrElendig!  Total extended memory: 1982 MB.  would you set the UMA Frame Buffer Size to 64 MB or 128 ?
+<tigrmesh>	MrElendig, you personally.  supports 32MB too, but that causes bad flicker
+*	ChanServ gives voice to tigr
+*	tigr is now known as tigrmesh
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sun May 10 14:51:07 2015
+
+**** BEGIN LOGGING AT Sun May 10 14:59:40 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+<DarkElement>	Hey guys how can I access the guest OS with my archlinux VM? I am trying to download vmware tools for it.
+<fsckd>	access how?
+<DarkElement>	I accessed it.
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sun May 10 16:37:09 2015
+
+**** BEGIN LOGGING AT Sun May 10 16:39:17 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+<DarkElement>	Anyone know how to install vmblock?
+<DarkElement>	I can't run vmware-user without it.
+<MrElendig>	tigrmesh: as high as possible probably
+<tigrmesh>	ok
+<tigrmesh>	thanks
+<Namarrgon>	DarkElement: are you using the open-vm-tools package?
+<DarkElement>	Yea it shouldbe that
+<Namarrgon>	why do you need vmblock then?
+<DarkElement>	so i can run vmware-user 
+<DarkElement>	And I need to run that to change my resolution.
+<Namarrgon>	no, vmblock has nothing to do with the resolution
+<MrElendig>	tigrmesh: if running X etc
+<DarkElement>	Well I can't run vmware-user without it.
+<Namarrgon>	you only needed it for d&d support but it was replaced by a fuse module
+<DarkElement>	How can I install vmblock
+<Namarrgon>	you can't
+<DarkElement>	what do i do instae
+<Namarrgon>	what error do you get?
+<DarkElement>	instead.
+<DarkElement>	it's telling me that /proc/fs/vmblock/dev is unable to be accessed, and that is because it's not there
+<Namarrgon>	how are you starting it?
+<DarkElement>	test
+<DarkElement>	./usr/bin/vmware-user and vmware-user both give this.
+<DarkElement>	sorry
+<DarkElement>	forgot about "/"
+<Namarrgon>	where did you get 'vmware-user' from?
+<Namarrgon>	open-vm-tools doesn't contain it
+<DarkElement>	please just help me get over this problem
+<Namarrgon>	that's what i'm trying to do
+<DarkElement>	I'm trying to set up vmware tools, and i have to run that command in order to change resolution.
+<Namarrgon>	have you enabled and started the service as the wiki said?
+<DarkElement>	enabled and started vmware tools? yes I believe it is running
+<Namarrgon>	and the one?
+<Namarrgon>	*the other
+<DarkElement>	the other what
+<Namarrgon>	service
+<DarkElement>	which service are you referrring to? vmware tools should be running, I just need to get vmware user working in order to do things I need to do
+<Namarrgon>	https://wiki.archlinux.org/index.php/VMware/Installing_Arch_as_a_guest#Graphical_Target
+<phrik>	Title: VMware/Installing Arch as a guest - ArchWiki (at wiki.archlinux.org)
+<DarkElement>	alright, do you know the shortcut to open terminal in dwm
+<Namarrgon>	mod+return or mod+shift+return, don't remember the default
+<Namarrgon>	it should be in config.h and config.h.mk
+<DarkElement>	mod being alt
+<DarkElement>	right?
+<Namarrgon>	was that a question?
+<Namarrgon>	yes, alt
+<DarkElement>	I ask because that doesnt' work, i've tried it.
+<DarkElement>	:P
+<Namarrgon>	do you have the terminal installed?
+<DarkElement>	yea
+<DarkElement>	Friend opened it earlier, i just never asked shortcut
+<Namarrgon>	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+<Namarrgon>	that's the default, i don't know which version you are using
+<Namarrgon>	and the default terminal is 'st'
+<Namarrgon>	you might want to switch to a wm with a more accessible config
+<halosghost>	lol
+<halosghost>	it's true dwm takes a bit of doing to understand the config
+<fsckd>	DarkElement: just so you know, in arch service usually means a systemd service
+<DarkElement>	fsckd:alright
+<DarkElement>	why does "st" not work....:*(
+<Namarrgon>	you are sure you have it installed?
+<Namarrgon>	it's not in the official repos
+<DarkElement>	it's good now
+<DarkElement>	friend got on, just did alt+p and started up terminator
+<DarkElement>	thanks for help anywho
+<fsckd>	did your friend configure it for you?
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sun May 10 17:40:24 2015
+
+**** BEGIN LOGGING AT Sun May 10 18:09:28 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sun May 10 18:23:24 2015
+
+**** BEGIN LOGGING AT Sun May 10 18:31:18 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sun May 10 18:31:48 2015
+
+**** BEGIN LOGGING AT Sun May 10 18:32:16 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sun May 10 20:53:31 2015
+
+**** BEGIN LOGGING AT Sun May 10 21:10:07 2015
+
+*	Now talking on #archlinux-newbie
+*	Topic for #archlinux-newbie is: Welcome to the Arch Linux community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass.  Thanks!
+*	Topic for #archlinux-newbie set by tigrmesh!~tigrmesh@archlinux/op/tigrmesh (Sun Sep 28 19:12:35 2014)
+<Kyusaki>	Do I really need to put my password in plaintext in the muttrc config file?
+<gehidore>	pretty sure there's documentation for setting it with a hash...
+<Kyusaki>	hmm, i will see if i can find it.
+<gehidore>	!g use password hash with muttrc
+<phrik>	gehidore: Mutt: how to safely store password? - Unix & Linux Stack Exchange: <http://unix.stackexchange.com/questions/20570/mutt-how-to-safely-store-password>
+<Kyusaki>	Thanks :)
+<gehidore>	not sure if it's relevant I just remember seeing stuff about it when i set it up, frankly didn't care as email is about as insecure as you get...
+<Kyusaki>	True that, but email is still needed for so much.
+<gehidore>	aye which is why i use it
+<gehidore>	but I gave up caring about the password as if the machine gets compromised in that sense email is the last of my worries
+<Kyusaki>	haha
+<Kyusaki>	Seems like the config of the multicolor theme for awesome is awesome :D
+*	Guest34703 is now known as tugrik
+<typh00nz>	hello
+<typh00nz>	I want to thank you  Namarrgon - test fglrx driver works great, brings additional fps and finally Ive up to date xserver
+<typh00nz>	I thought it
+<typh00nz>	ll bring issues 
+<typh00nz>	but I havent noticed yet
+<Namarrgon>	if at all it'll be smaller issues
+<typh00nz>	Do you recommend using ssd for archlinux?
+<typh00nz>	Wiki is near empty about this
+<Namarrgon>	_i_ recommend an ssd for everything
+<typh00nz>	gives only info about reducing input output operations
+<typh00nz>	I am close to buy my first ssd 
+<typh00nz>	but
+<typh00nz>	what about firmware
+<typh00nz>	and software given by them
+<typh00nz>	I dont remember exact models
+<typh00nz>	but some sort of them uses additional software 
+<typh00nz>	distributed for [ofc] windows platform
+<Namarrgon>	you won't need the software, see if they offer linux tools or isos for fw-updates
+<typh00nz>	fw = firmware?
+<Namarrgon>	yeah
+<typh00nz>	what is isos?
+<Namarrgon>	i mean bootable images in general
+<Namarrgon>	so you don't need windows specifically
+<typh00nz>	aha
+<typh00nz>	which model do you use?
+<Namarrgon>	iirc, a crucial c300 and a 830 from samsung
+<typh00nz>	intel models look safe and stable
+<typh00nz>	aha
+<typh00nz>	and last, more practical question
+<typh00nz>	Is 128GB enough for system [I cant afford bigger atm] + hdd for media things
+<typh00nz>	or do would you recommend to wait, spare some more cash and buy bigger on
+<typh00nz>	one
+<Namarrgon>	128 just for arch?
+<Namarrgon>	http://ix.io/itP
+<Namarrgon>	i don't think i ever ran out of space
+<typh00nz>	yeah, whole space is for arch
+<typh00nz>	8 months ago I made yolo action and changed OS to only linux, especially arch
+<typh00nz>	what command did you use
+<typh00nz>	paths to filesystem look strange
+<typh00nz>	df?
+<Namarrgon>	df -h / /home
+<typh00nz>	ah right u re using volumes
+*	typh00nz is add.ing next position in todo_learning text file.
+<tak3r07>	Hey there! I've got a little question regarding fonts in arch. I was using cinnamon the last past weeks and just gave plasma a try and installed kde-applications-meta and plasma-meta. After playing around with it for a few hours i came back to cinnamon and uninstalled the kde-packages. But now all my gtk-applications have changed its font and i cannot revert it via standard settings in cinnamon. It says I am using "Sans Regular 
+<tak3r07>	9" but the font in chromium for example is definitly not Sans.
+<Kyusaki>	Hello o/
+<sniper570>	Hallo \o
+<Kyusaki>	Do you guise know from where my spotify notification comes from ? http://i.imgur.com/P1HcGzX.png (I have awesome WM but i haven't found anything with naughty).
+<Kyusaki>	it's a little too big, the picture so i want to resize the picture :P
+*	ChanServ gives voice to fsckd
+<tigrmesh>	there may be a spotify or .spotify file or folder somewhere in your home directory
+<tigrmesh>	if you have locate/mlocate installed, and the db is up-to-date, you can run  locate spotify | grep home 
+<tigrmesh>	which will find every file on your system that has the string "spotify" and then select the ones that also have the string "home" - which should pretty much be only your home directory
+<colbyftp>	hey folks is it possible to make package out of this http://pastebin.com/791DPkJj
+<phrik>	Title: Spam Detection For Paste ID: 791DPkJj (at pastebin.com)
+<colbyftp>	ah I can't post the link
+<colbyftp>	791DPkJj
+<colbyftp>	put pastebin in fron tof it :)
+<sniper570>	xD
+<fsckd>	colbyftp: it should be doable. there are other drivers in the AUR which can serve as reference.
+<colbyftp>	ok will have a look,
+<colbyftp>	I know people have been asking in forums about this wifi/bluetooth but no repsonse how to fix it, this does, 
+<colbyftp>	I know I could just post it, that is what I am going to do
+<colbyftp>	but want to learn and all that :0
+<fsckd>	that is great. thank you. things in Arch happen because people like you make it happen. :)
+<fsckd>	if you need help, you can ask here or on the forums. we'll be glad to assist you. :)

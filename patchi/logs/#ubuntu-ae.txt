@@ -1,0 +1,300 @@
+=== nlsthzn-work changed the topic of #ubuntu-ae to: FOSS in the UAE, alive and kicking | http://www.meetup.com/EmiratesLoCo/ | https://wiki.ubuntu.com/EmiratesTeam | Next IRC meeting: Sunday 24 April 2011 @ 20:00 (GMT+4)
+[03:10] <nlsthzn-work> ubuntulo1_: morning
+[03:10] <nlsthzn-work> doh... it is a bot :)
+[03:38] <nlsthzn-work> Time to go home :D
+[04:29] <bassem_lap> jjk_saji, Josef?
+[04:30] <jjk_saji> Hi , yesterday I had tough time
+[04:30] <jjk_saji> was not able to join
+[04:30] <bassem_lap> jjk_saji, no probeml! anyway next meeting will be at 8pm
+[04:30] <jjk_saji> Will we post the conversation
+[04:31] <bassem_lap> jjk_saji, already posted I think
+[04:32] <bassem_lap> jjk_saji, http://dl.dropbox.com/u/3788421/2011-04-17_Freenode.txt
+[04:38] <jjk_saji> thanks read it, I will make sure next time . I wont miss it
+[05:28] <hadenx> Morning guys ..
+[05:28] <hadenx> bassem, nlsthzn
+[05:29] <nlsthzn> hadenx: morning...
+[05:29] <hadenx> http://m.facebook.com/pages/Ubuntu-Emirates-Team-LoCo/185867921459214
+[05:30] <hadenx> nlsthzn , like it...
+[05:31] <nlsthzn> hadenx: done
+[05:32] <hadenx> Hello jjk_saji
+[05:32] <nlsthzn> greetings jjk_saji
+[05:32] <nlsthzn> :)
+[05:33] <jjk_saji> Hi
+[05:33] <jjk_saji> I am joseph JOhn
+[05:33] <jjk_saji> I was away from the PC
+[05:33] <hadenx> Hello Joseph .. Good morning
+[05:34] <hadenx> Hello ubuntulo1_
+[05:34] <nlsthzn> jjk_saji: Mr. Joseph, welcome :)
+[05:35] <nlsthzn> hadenx: ubuntulo1_ is a bot... :)
+[05:35]  * hadenx facepalm
+[05:38] <hadenx> btw , jjk_saji , I am very keen on your plan on promoting Ubuntu to schools..
+[05:38] <jjk_saji> You can help me,
+[05:39] <hadenx> jjk_saji , sure .. I'm sure all of us here can contribute in some way or the other
+[05:39] <jjk_saji> right now I am working on NI model school, last saturday I went there meet pricipal, head masters
+[05:39] <jjk_saji> right now I want support in creating a document why a  school should  select Ubuntu for its educatinal need
+[05:40] <hadenx> Jjk_saji I'm actually working on that ...
+[05:40] <jjk_saji> also I need support in helping the IT support staff over there in there ubunut doubts
+[05:40] <jjk_saji> I will ask them also to be a part of IIRC and take help
+[05:41] <hadenx> This weekend I'll be busy cos of church activities ... Next week I can have a documentation n presentation ready ..
+[05:42] <hadenx> jjk_saji , yeah sure ... We can help them out on IRC .
+[05:44] <nlsthzn> gents... I have to go sleepy now... one more night to go :)
+[05:44] <nlsthzn> cheers
+[05:45] <hadenx> Btw , jjk_saji , you have these Linux training session right ?
+[05:46] <hadenx> Where do they take place ?
+[05:48] <jjk_saji> you mean destinationopensoure.com
+[05:48] <hadenx> Yes...
+[05:49] <jjk_saji> No fixed place, I ask any office near me for the space for free, if they give I conduct there some where near to my office, place varies depending on the availablity
+[05:50] <hadenx> jjk_saji are any sessions going on at the moment ?
+[05:50] <jjk_saji> Next batch it is going to start by June 1'st week for 20 hours
+[05:51] <jjk_saji> the present batch classes are over and candidates are supposed to do the assignments
+[05:52] <hadenx> that's great .. Have a friend who is interested ..
+[05:57] <hadenx> anyway jjk_saji , can you give a brief idea on what we might be targeting at ?
+[05:58] <hadenx> Or what you plan introducing to the Schools admins ?
+[05:59] <jjk_saji> destination training and school activities are both different
+[05:59] <jjk_saji> DOS session is open to IT support guys from the industry for are not knowing how to use LINUX
+[06:00] <jjk_saji> my Scholl activity is different , there I am  trying to co-ordinate with the "it staf" and install Ubunut over ther
+[06:01] <hadenx> jjk_saji , server side or the client machines ?
+[06:01] <jjk_saji> at school client machine first , in DOS server side has priority
+[06:03] <hadenx> jjk_saji , you have any clue as to what the current major applications on server side at schools are ?
+[06:03] <jjk_saji> File sharing + some application developed on .net for school admin
+[06:04] <hadenx> Filesharing we can manage .. .net apps is a problem ..
+[06:05] <hadenx> Was going through edubuntu the other day , there's a great free application for school admins to use...
+[06:07] <jjk_saji> First we have to bring ubuntu to the lab
+[06:08] <jjk_saji> changing admin software which they had purchased will be tough
+[06:50] <bojicas> is preparing the MoM for our first IRC meeting
+[06:50] <hadenx> morning bojicas
+[06:50] <bojicas> good morning, hadenx
+[06:52] <hadenx> bojicas , you didn't like the facebook page :)
+[06:53] <bojicas> just now ... got online. all things in order. i don't find the Meetings subpage on our wiki, i remember it was there before
+[06:56] <xnixan> Hi, Good morning everybody!
+[06:57] <bassem_mobile> xnixan: hi
+[06:57] <bassem_mobile> morning :)
+[06:57] <xnixan> bassem, fine
+[06:57] <xnixan> :)
+[06:57] <xnixan> bassem_mobile, , fine
+[06:58] <bassem_mobile> xnixan: :)
+[06:58] <xnixan> bassem_mobile, where are you from?
+[06:59] <hadenx> bojicas , pages are case sensitive
+[06:59] <bassem_mobile> hadenx: morning
+[07:00] <bassem_mobile> hadenx: did you welcome the bot?
+[07:00] <bojicas> hadenx, yes, i know, found the meetings link on the bottom - from that subpage i'll go further deep with logs and mom
+[07:00] <bassem_mobile> bojicas: morning
+[07:06] <hadenx> bassem_mobile , yes I did .. First thing in the morning ..
+[07:07] <hadenx> Btw , this Is the official ubuntu bot right ?
+[07:08]  * bassem I'm here :-)
+[07:09] <bassem> hadenx, yes, it's the official one
+[07:12] <bojicas> I would like to change a link in our wiki menu: Meetings => https://wiki.ubuntu.com/EmiratesTeam/Meetings
+[07:12] <bojicas> do you agree?
+[07:14] <bojicas> IRC meeting log: https://wiki.ubuntu.com/EmiratesTeam/Meetings/IRCMeetinLogs20110417
+[07:29] <bassem> bojicas, thanks
+[07:30] <bassem> xnixan, did you attend any of our LoCo meetings?
+[07:30] <xnixan> bassem, yep!
+[07:31] <xnixan> bassem, second one :)
+[07:31] <bassem> xnixan, what is your name?
+[07:32] <bassem> xnixan, is it the first time here in the channel?
+[07:32] <xnixan> My name is Ahmad
+[07:32] <xnixan> bassem, you are welcome!
+[07:33] <hadenx> xnixan , bojicas http://m.facebook.com/pages/Ubuntu-Emirates-Team-LoCo/185867921459214
+[07:33] <hadenx> Please like our facebook page..
+[07:33] <bojicas> hold on, a sec... hadenx, working on https://wiki.ubuntu.com/EmiratesTeam/Meetings/IRCMeetingSummary20110417
+[07:34] <bassem> xnixan, Ahmad Hamada ?
+[07:34] <xnixan> :)
+[07:34] <xnixan> bassem, yes!
+[07:34] <bassem> xnixan, ah :-) welcome Ahmad
+[07:35] <hadenx> xnixan , Ubuntu enthusiast or newbie ?
+[07:36] <bassem> https://www.facebook.com/pages/Ubuntu-Emirates-Team-LoCo/185867921459214
+[07:37] <xnixan> bassem, Linux/Unix newbie, since 1996 ;)
+[07:38] <bassem> xnixan, hadenx asked you not me!
+[07:40] <xnixan> bassem, :)
+[07:41] <xnixan> hadenx, what about you?
+[07:42] <xnixan> bbl
+[07:46] <bassem> xnixan, did you try ubuntu cloud?
+[07:46] <bassem> it's based on eucalyptus!
+[07:51] <bassem> hadenx, what is that DOS server which you talked with Josef about!
+[07:53] <hadenx> xnixan , been using ubuntu for almost 4 years now..
+[07:54] <hadenx> bassem, DOS is destinationopensource
+[07:54] <hadenx> That's his website
+[07:54] <bassem> hadenx, oh thanks god! I thought it's M$ DOS!!!
+[07:55] <hadenx> lol bassem..
+[07:56] <hadenx> BTW , bassem , have you used LTSP ?
+[08:00] <bassem> hadenx, no, but I did network booting and remote login on linux before
+[08:02] <bojicas> partial MoM: https://wiki.ubuntu.com/EmiratesTeam/Meetings/IRCMeetingSummary20110417 Comments, pls
+[08:02] <bojicas> I'll edit soon Actions/ToDos section
+[08:04] <hadenx> bojicas .. Nice job..
+[08:10] <xnixan> bassem, No, i did not!
+[08:10] <bassem> bojicas, thank you for your efforts, I will read it later
+[08:11] <xnixan> hadenx, Desktop side or Server side?
+[08:11] <hadenx> LTSP server side ...
+[08:11] <hadenx> Setting it up..configuring etc..
+[08:12] <xnixan> hadenx, any experience with Asterisk?
+[08:13] <hadenx> xnixan , no not really ... But I've read through the documentation ..
+[08:20] <Toki> Wai~! New people!
+[08:22] <hadenx> Xnixan , how good are you at troubleshooting Linux issues ?
+[08:24] <xnixan> hadenx, hehe
+[08:25] <xnixan> hadenx, depending on the issue, do you have any?
+[08:25] <hadenx> xnixan , we need people on IRC..
+[08:26] <hadenx> Help out those who have issues...
+[08:26] <xnixan> hadenx, do you mean for support?
+[08:26] <hadenx> Hey Toki...
+[08:26] <hadenx> xnixan .. Yes :)
+[08:26] <xnixan> hadenx, i am in ;)
+[08:27] <Toki> xnixan: Advanced support, or basic?
+[08:27] <xnixan> Toki, both, :D
+[08:28] <Toki> Tier 2 you are. :D
+[08:28] <hadenx> xnixan , great .. Hope to see you often on IRC then.. :)
+[08:28] <xnixan> hadenx, me too :)
+[08:29] <xnixan> i was a very active user @ eglug, till 2004
+[08:29] <Toki> xnixan: Shall we introduce ourselves? I'm the so-called 'community manager', attended all the meetups so far, though missed yesterday's meeting.
+[08:29] <Toki> *IRC meeting
+[08:29] <Toki> Tier 1 support guy as well.
+[08:30] <hadenx> xnixan , what happened to eglug?
+[08:31] <xnixan> hadenx, Egyptian Linux Users Group
+[08:33] <hadenx> Oh ok.. How's the group going ?
+[08:33] <xnixan> I am Ahmad Hamada, using Unix/Unix Like systems since 1996, fall in love with linux since 2000, working as Linux System Administrator for more than 8 yrs, attended one meetup (second one) tried to attend the rest but i could not :(, hope to see this community growing bigger and bigger :)
+[08:34] <Toki> xnixan: We've met, though I don't exactly remember you/ :(
+[08:34] <xnixan> Toki, NP
+[08:34] <Toki> You should've attended the installfest.
+[08:34] <xnixan> :)
+[08:35] <Toki> We had two laptops we had to return because of X problems.
+[08:35] <xnixan> Toki, i was dreaming of that, but it was out of my hand :(
+[08:36] <Toki> xnixan: Hope to see you in the future events - your knowledge and experience would come in handy.
+[08:36] <xnixan> Toki, it would be always my pleasure :)
+[08:36] <xnixan> Toki, the best thing for this LUG is launching this Channel, a community without IRC is useless!
+[08:38] <Toki> xnixan: Agreed, a simple discussion board just doesn't cut it.
+[08:39] <xnixan> Toki, yep!, IRC, faster and much more interactive ;)
+[08:40] <xnixan> Toki, what is your name?
+[08:40] <bojicas> Toki: Minutes of Meeting: https://wiki.ubuntu.com/EmiratesTeam/Meetings/IRCMeetingSummary20110417
+[08:42] <Toki> xnixan: Toki is my name. :)
+[08:42] <Toki> bojicas: Thanks.
+[08:43] <xnixan> Toki, :)
+[08:43] <bojicas> The post on meetup is here: http://www.meetup.com/EmiratesLoCo/events/17261336/ or here: http://www.meetup.com/EmiratesLoCo/messages/boards/thread/10709924
+[08:52] <bojicas> http://irclogs.ubuntu.com/2011/04/18/%23ubuntu-ae.txt ;)
+[08:52] <bojicas> thx, ubuntulo1_
+[08:53] <hadenx> becareful , what you guys say.. You are being monitored :)
+[09:02] <hadenx> ubuntulo1_ is a spy ...
+[09:09] <xnixan> bbl
+[11:35] <bassem> xnixan, are you memeber of eglug?!!!
+[11:40] <xnixan> bassem, yep!
+[11:40] <bassem> xnixan, are you egyptina?
+[11:40] <bassem> *Egyptian
+[11:42] <xnixan> bassem, sure! ;)
+[11:43] <xnixan> bassem, and you?
+[11:43] <bassem> xnixan, syrian! but I'm eglug member too :-)
+[11:43] <bassem> xnixan, http://eglug.org/node/3831 I'm the second person on the left
+[11:44] <xnixan> bassem, welcome!
+[11:44] <bassem> xnixan, you welcome :-p
+[11:45] <bassem> xnixan, me https://www.facebook.com/photo.php?fbid=416304615729&set=a.416301985729.212024.714035729&type=1
+[11:45] <bassem> https://www.facebook.com/photo.php?fbid=416306015729&set=a.416301985729.212024.714035729&type=1
+[11:47] <xnixan> bbl
+[12:03]  * bassem تجربة العربي على بوت التسجيل!!
+[12:10] <bassem> hadenx,
+[12:18] <hadenx> bassem
+[12:19] <bassem> hadenx, what is DOS? Destination Open Source ?
+[12:19] <hadenx> Yup..
+[12:19] <hadenx> I think destinationopensource.org
+[12:21] <bassem> hadenx, yeah this one! what do you know about it?
+[12:21] <hadenx> It's Josephs website .. He conducts free Linux training sessions ..
+[12:24] <bassem> hadenx, he's the trainer?
+[12:24] <hadenx> bassem , yup..
+[12:25] <bassem> hadenx, did you attend any?
+[12:26] <hadenx> no.. I wanted to though...
+[12:27] <bassem> interesting ...
+[12:27] <hadenx> He's pretty good I heard ..
+[12:32] <bassem> hadenx, you know someone attended !
+[12:33] <hadenx> No.. Not really..
+[12:36] <bassem> hadenx, oh btw, when Silviu updated this pag: http://www.meetup.com/EmiratesLoCo/events/17261336/#initialized
+[12:36] <bassem> does it sent an alret to all the group or only the attenedees !
+[12:51] <hadenx> bassem , only atendees..
+[12:58] <bassem> hadenx, so we have to repost it again in the mailing list or message board!
+[13:00] <hadenx> We have to ask Toki to do that ...
+=== nlsthzn is now known as nlsthzn-work
+[20:14] <nlsthzn-work> Very quiet in here tonight...
+[20:57] <xnixan> Good evening all!
+[21:08] <bassem_lap> xnixan, evening
+[21:09] <xnixan> bassem_lap, are working in dubai?
+[21:10] <bassem_lap> xnixan, yes
+[21:10] <xnixan> bassem_lap, which in which sector your company is working in?
+[21:14] <bassem_lap> xnixan, mobile apps
+[21:14] <xnixan> bassem_lap, IPhone?
+[21:15] <bassem_lap> xnixan, bb and android
+[21:15] <xnixan> bassem_lap, business solution?
+[21:15] <bassem_lap> xnixan, yes
+[21:15] <xnixan> :)
+[21:16] <bassem_lap> xnixan, yes?
+[21:16] <bassem_lap> xnixan, sorry
+[21:16] <bassem_lap> xnixan, you?
+[21:17] <xnixan> bassem_lap, i am a System and Network administrator in driving center
+[21:18]  * nlsthzn-work waves as xnixan and bassem_lap 
+[21:18] <xnixan> nlsthzn-work, evening :)
+[21:20] <nlsthzn-work> xnixan: welcome, not seen you on IRC yet :)
+[21:21] <xnixan> nlsthzn-work, thanks, i was here in morning!
+[21:23] <nlsthzn-work> xnixan: ah, ok... sorry, I was sleeping then :)
+[21:24] <xnixan> nlsthzn-work, NP ;)
+[21:24] <xnixan> nlsthzn-work, since when you are using Linux?
+[21:26] <bassem_lap> xnixan, Linux admin?
+[21:26] <xnixan> bassem_lap, yep!
+[21:26] <nlsthzn-work> xnixan: on and off since around 1998 actually... but mostly on windows... only a bit more permanent the last two years (and still Windows for gaming)
+[21:27] <bassem_lap> xnixan, good, driving center with linux!
+[21:27] <xnixan> bassem_lap, :), why not?
+[21:27] <bassem_lap> xnixan, it's rare to see linux here!
+[21:27] <xnixan> bassem_lap, our proxy, mail, dns, fw all are 100% Linux
+[21:28] <bassem_lap> xnixan, great!
+[21:28] <bassem_lap> xnixan, which school?
+[21:28] <xnixan> Al Ahli Driving Center
+[21:29] <nlsthzn-work> cool to hear :)
+[21:29] <xnixan> nlsthzn-work, :) thanks!
+[21:31] <bassem_lap> xnixan, do you have any idea how it cost to attend the lessons ! the whole cost
+[21:31] <xnixan> bassem_lap, LOL
+[21:31] <xnixan> bassem_lap, i thought this is LUG IRC channel :p
+[21:32] <xnixan> bassem_lap, any way, do you have driving license form Syria?
+[21:32] <bassem_lap> xnixan, nope, I have to take all the lessons
+[21:33] <xnixan> bassem_lap, did not get it
+[21:33] <xnixan> bassem_lap, are you a student in any other institute ?
+[21:34] <bassem_lap> xnixan, no, I don't have any kind of license
+[21:34] <xnixan> bassem_lap, aha
+[21:34] <xnixan> bassem_lap, around 4200-4400 AED
+[21:35] <xnixan> bassem_lap, till you get your license in your hand ;)
+[21:35] <bassem_lap> xnixan, oh, no! it's very expensive !!!
+[21:36] <xnixan> bassem_lap, as far as i know, this is the lowest between all 5 driving centers!
+[21:36] <bassem_lap> xnixan, one payment ?
+[21:36] <xnixan> bassem_lap, the difference is not too much, but this is the lowest
+[21:37] <xnixan> bassem_lap, if you paid the full amount you will get 10% discount
+[21:37] <xnixan> bassem_lap, but you do not need to do so
+[21:37] <xnixan> bassem_lap, just pay as you go through process
+[21:38] <bassem_lap> xnixan, period ?
+[21:38] <bassem_lap> xnixan, duration
+[21:39] <xnixan> bassem_lap, if you take daily classes, (4-6)
+[21:39] <xnixan> bassem_lap, after 10-14 days you will get your license
+[21:40] <xnixan> bassem_lap, of course if you passed final test from first time
+[21:40] <bassem_lap> xnixan, let's make it simple! can I pay it in two months ?
+[21:40] <xnixan> bassem_lap, NP
+[21:40] <xnixan> bassem_lap, the only restriction, do not stop taking lessons for more that 2 months
+[21:41] <bassem_lap> xnixan, I live in Dubai marina and work near burj dubai! is there any near center?
+[21:42] <xnixan> bassem_lap, sure, our HO @ Al Qouz
+[21:44]  * nlsthzn-work was very pleased he could just switch his licesnse in the UAE :p
+[21:44] <bassem_lap> xnixan, how to go there, I don't have car!!!
+[21:44] <bassem_lap> nlsthzn-work, only switching!!
+[21:46] <xnixan> bassem_lap, they will pick you and drop you back!
+[21:47] <xnixan> nlsthzn-work, from where you are?
+[21:50] <bassem_lap> bojicas, thank you for the MoM
+=== bassem_lap changed the topic of #ubuntu-ae to: FOSS in the UAE, alive and kicking | http://www.meetup.com/EmiratesLoCo/ | Wiki: http://ubuntu.ae | Next IRC meeting: Sunday 24 April 2011 @ 20:00 (GMT+4)
+[21:54] <bassem_lap> nlsthzn-work, it's ok like this? the topic!
+[21:54] <nlsthzn-work> Sunny South Africa
+[21:54] <nlsthzn-work> bassem_lap: sure, looks good to me
+[22:11] <xnixan> Have to go :)
+[22:11] <xnixan> Zzzzzzzzzzzzzzzzz
+[22:13] <nlsthzn-work> xnixan: cheers
+[22:13] <bassem_lap> nlsthzn-work, night :-)
+[22:13] <bassem_lap> xnixan, , night :-)
+[22:13] <nlsthzn-work> bassem_lap: night :)
+[22:14] <bassem_lap> nlsthzn-work, me too, but I'm listening to Om Kalthoom now!
+[22:14] <nlsthzn-work> who?
+[22:14] <bassem_lap> nlsthzn-work, http://en.wikipedia.org/wiki/Umm_Kulthum
+[22:15] <nlsthzn-work> bassem_lap: ah... enjoy
+[22:15] <bassem_lap> nlsthzn-work, http://www.last.fm/music/Umm%2520Kulthum?ac=Umm%20Kulthum%20
+[22:16] <nlsthzn-work> bassem_lap: that's fine... not my cup of tea
+[22:16] <bassem_lap> nlsthzn-work, it's only one song, duration is about 1 hour and 20 mins
+[22:17] <nlsthzn-work> bassem_lap: ouch...
+[22:18] <bassem_lap> nlsthzn-work, classic arabic
+[22:18] <nlsthzn-work> bassem_lap: well if you enjoy it, enjoy it :)
+[22:21] <bassem_lap> nlsthzn-work, thanks

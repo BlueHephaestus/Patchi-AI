@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /linds/
+Disallow: /stats/
+Disallow: /full-stats/
+Disallow: /projecten/
+Disallow: /zooi/
+
+User-agent: TurnitinBot
+Disallow: /projecten/fotos/
+
+User-agent: msnbot 
+Crawl-delay: 120

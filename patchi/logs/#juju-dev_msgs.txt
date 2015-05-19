@@ -1,0 +1,7 @@
+<mup> bug #1455840 was opened: network-bridge compatibility with open vswitch <network> <openvswitch> <ovs> <juju-core:new> <https://launchpad.net/bugs/1455840>
+<davecheney> mwhudson: do arm put "superceeded" on the background of every page unconditionally
+<davecheney> or are there actually some pages they have not yet depricated ?
+<mwhudson> davecheney: heh
+<mwhudson> davecheney: only the pages that have been around long enough to be found by google, i think
+<mwhudson> there will be a version that does not have superceded written on
+<mwhudson> but it can be pretty hard to find

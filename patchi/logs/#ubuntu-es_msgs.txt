@@ -1,0 +1,151 @@
+<piter0> alguien sabe como reparar el centro de software de ubuntu que no puedo instalar nada porfa
+<ricard> hola alguien tiene instalado el kernel 3.13.0-53.88
+<ricard> o el kernel 3.13.0-53
+<ricard> vale entiendo que nadie,gracias
+<mimecar> ?
+<ricard> no preguntaba si alguien tiene instalado el kernel 3.13.0-53
+<mimecar> ¿qué versión de ubuntu estás usando?
+<ricard> 14.04
+<mimecar> ¿con todas las actualizaciones?
+<ricard> si pero este lo baje a mano
+<mimecar> lo has instalado fuera de los repositorios?
+<ricard> que quieres decir por repositorios lo he intalado de esta pagina http://www.ubuntuupdates.org/package/canonical_kernel_team/trusty/main/base/linux
+<mimecar> ok, lo que has hecho es añadir un ppa de canonical
+<mimecar> eso tiene ventajas pero también te puede dar algún problema
+<ricard> bueno cogi paquete deb.
+<mimecar> ¿cuál es el problema que tienes con ese kernel?
+<mimecar> añade ppa, nunca instales el .deb
+<ricard> no si tu crees que he hecho bien ya que el 3.13.0-51 y 3.13.0-52 me daban erro al inicio
+<mimecar> si añades el .deb a mano
+<mimecar> no tienes actualizaciones de ese kernel
+<ricard> pues lo desinstalo y lo instalo ppa
+<mimecar> añade el ppa y con suerte actualizará el paquete
+<ricard> gracias hasta luego voy a probar
+<ricard> adios
+<ricard> he desintalado el paquete 3.13.0-53 y lo he vuelto a instalar de la ppa y ahora me sale en otro software ppa canonical team no se que mas
+<mimecar> ese es el ppa que has añadido
+<ricard> vale lo he hecho todo bien he añadido la ppa en la terminal le he dado a enter luego he hecho u sudo apt-get update y luego sudo apt-get install linux-image-3.13.0-53-generic linux-image-extra-3.13.0-53-generic y se ha instalado
+<ricard> todo correcto?
+<mimecar> de momento si
+<ricard> gracias mimecar el kernel va bien
+<mimecar> mientras no desinstales los kernels anteriores no deberías tener problemas
+<ricard> tengo el 3.13.0-49 instalado
+<ricard> ya esta bien no?
+<mimecar> sí
+<ricard> gracias nos vemos pronto y muchas gracias recuerdos a todos/as
+<mimecar> ok
+<knight80> hola, buenas tardes a todos/as
+<knight80> ¿alguien usa mythtv?
+<ricard> he descargado el kernel 3.13.0-53 de la siguiente ppa http://www.ubuntuupdates.org/ppa/canonical_kernel_team?dist=trusty que me decis
+<mimecar> ricard, si has añadido el ppa e instalado el kernel no tienes que hacer nada más
+<ricard> pero en la pagina pone no se recomienda esta ppa echale un vistazo porfavor
+<mimecar> necesitas el kernel 3.13 por alguna razón?
+<mimecar> el ppa es para versiones de testeo y desarrollo
+<ricard> hombre todos llos que he tenido son 3.13
+<ricard> no hace mucho tiempo que me muevo con ubuntu
+<mimecar> ubuntu 14.04 lleva el 3.16
+<ricard> en mi caso cuando se ha actualizado automatico salia 3.13
+<mimecar> con los repositorios que hay por defecto y ubuntu 14.04
+<mimecar> la última versión ens la 3.16.
+<ricard> pero si en actualizacion de software me sale 3.13 que hago?
+<mimecar> asegurarte que realmente estás poniendo las actualizaciones
+<knight80> ¿alguien usa mythtv?
+<ricard> estoy esperando la nueva a ver cual es porque las dos ultimas 3.13.0-51 y 3.13.0-52 me daban error al inicio
+<mimecar> ricard, sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
+<mimecar> la última es la 3.16
+<ricard> voy a probar
+<ricard> me dice esto ricard@casa:~$ sudo apt-get upgrade
+<ricard> leyendo lista de paquetes... hecho
+<ricard> creando árbol de dependencias
+<ricard> leyendo la información de estado... hecho
+<ricard> calculando la actualización... listo
+<ricard> 0 actualizados, 0 se instalarán, 0 para eliminar y 0 no actualizados.
+<mimecar> !paste ricard
+<kubot> ricard: pastebin es un servicio para pegar mucho texto sin inundar el canal, se encuentra en http://paste.ubuntu.com (asegurate de darnos la dirección de tu paste) - ver también en el topic.
+<ricard> total que me dice 0 actulizaciones
+<mimecar> sudo apt-get dist-upgrade también?
+<ricard> si
+<mimecar> pon en pastebin la salida de sudo apt-get update
+<ricard> lo he puesto en una pagina que me indicabais que era pastebin
+<mimecar> pega el enlace que te ha dado la página
+<ricard> hecho me sale otra pagina con todo el sudo apt-get update i dowload
+<ricard> y dowload as text
+<mimecar> copia el enlace de la página y ponlo en el canal
+<ricard> como lo hago?
+<mimecar> has pegado el texto en pastebin y lo has mandado?
+<ricard> mandado donde?
+<mimecar> ...
+<mimecar> entra en la página de pastebin y pega la salida del comando sudo apt-get update
+<mimecar> pulsa en el botón para mandar el texto a la web
+<ricard> he hecho paste
+<mimecar> copia la dirección que sale en el navegador en el chat
+<ricard> y que hago ahora
+<mimecar> has copiado la url que sale en el navegador?
+<ricard> me sale canal oficial de soporte de ubuntu y derivados oficiales en español y varias direcciones
+<mimecar> http://paste.ubuntu.com/
+<ricard> canal oficial de soporte de ubuntu y derivados oficiales en español - normas: https://wiki.ubuntu.com/irc/guidelines/es - canal social: /join #ubuntu-es-cafe - ¿pegar texto? http://paste.ubuntu.com - descargar ubuntu 14.10: http://www.ubuntu.com/download/desktop - versiones soportadas: 10.04 lts (servidor), 12.04 lts, 14.04 lts y 14.10.
+<mimecar> https://dl.dropboxusercontent.com/u/92458135/captura.png
+<mimecar> esa es la pantalla te pastebin
+<ricard> no me deja escribir nada
+<ricard> lo he vuelto a poner en http://paste.ubuntu.com y despues de poner el texto le doy a pate
+<ricard> a paste
+<ricard> pongo mi nombre tambien
+<ricard> lo has logrado leer
+<mimecar> te cambia la url?
+<ricard> que url
+<mimecar> cuando pones el texto y pulsas el botón paste
+<mimecar> se manda el texto a pastebin y cambia la url del navegador
+<ricard> si me sale una pagina con todo el terxto y pone dowload as test la url es http://paste.ubuntu.com/11187037/
+<mimecar> ahí está el texto
+<ricard> querias mirarlo no?
+<mimecar> ya lo estoy mirando
+<mimecar> estoy haciendo otras cosas aparte del irc
+<mimecar> estás con los repositorios de la 14.04, debería salirte el último kernel
+<mimecar> con 14.04.2 sale la versión que te he dicho antes
+<ricard> porque sudo apt-get dist-upgrade no me da nada
+<mimecar> pon la salida de sudo apt-get upgrade && sudo apt-get dist-upgrade
+<ricard> sudo apt-get upgrade
+<mimecar> usa pastebin también
+<ricard> el enlace es http://paste.ubuntu.com/11187376/
+<mimecar> no le veo sentido a que no te salga la actualización
+<ricard> quizáz me falta algun programa?
+<mimecar> no, es cosa de los repositorios
+<mimecar> la máquina virtual la tengo con ubuntu server 14.04
+<mimecar> pero son los mismos repositorios que la versiónd esktop
+<mimecar> desktop
+<ricard> entonces de que puede ser?
+<mimecar> en estos momentos estoy sin ideas
+<mimecar> has desactivado el ppa que pusiste?
+<ricard> no la desactivo?
+<mimecar> desactivalo
+<ricard> y vuelvo a probar?
+<ricard> sudo apt-get update
+<mimecar> no tendrá efecto en el sistema
+<ricard> lo he desactivado he hecho lo de sudo apt-get dist-upgrade y no ha surgido ningun efecto
+<mimecar> no tiene que tener efecto
+<mimecar> la causa del fallo será otra
+<mimecar> aunque no te salga una versión más reciente del kernel tampoco es un problema
+<ricard> vuelvo activar las app
+<ricard> perdon la ppa
+<ricard> activo o no?
+<ricard> las ppa claro
+<ricard> me salen dos la main y la codigo fuente
+<mimecar> querías otro kernel por alguna razón?
+<ricard> no el que he instalado esta mañana marcha bien
+<ricard> pero activo las ppa o no?
+<mimecar> siendo que es un ppa de desarrollo
+<mimecar> igual es buena idea no usarlo
+<ricard> quito el kernel entonces
+<ricard> porque entonces solo me queda uno fiable
+<mimecar> sigue con el kernel que tenías antes
+<ricard> o sea ser quito el 3.13.0-53
+<ricard> no me da ningun problema
+<mimecar> deja los kernels que tienes ahora
+<mimecar> que acabarás quitando el único que funciona y no te arrancará el sistema
+<ricard> o sea dejo el 3.13.0-53 y el 3.13.0-49 estamos deacuerdo
+<mimecar> sí
+<ricard> garcias por tus consejos me quedo mas tranquilo
+<ricard> cuidate mucho gracias a todos/as adios
+<pedro_> illa
+<successus> salud o/
+<george2002> hola chicos tengo un rollo con el escritorio cinnamon y ardour, trato de abrir ardour3 en ese entorno y no carga, luego lo lance por terminal y me vota esto  http://paste.ubuntu.com/11191959/

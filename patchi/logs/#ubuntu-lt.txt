@@ -1,0 +1,3 @@
+[06:55] <shookees> labas rytas
+[17:44] <tomask> Kaip jums būsimos Ubuntu UI? Kažkas naujo :) Pasileidau alpha 3 live cd, tai patiko. Viršutinis meniu patapo visai panašus į OS X.
+[17:48] <tomask> Ar Unity pridės spartos Ubuntu? Iš live cd sunku spręsti.

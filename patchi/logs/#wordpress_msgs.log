@@ -1,0 +1,1239 @@
+<lindsaymac>	sterndata:  both let you basically setup an attribute that you can add and it increases the price of the product. its exceedingly stupid and annoying.
+<darkelement>	hey guys anyone used accesspress parallax?
+<lindsaymac>	sterndata:  or you can write your own plugin that does it. it wouldn't be that bad since its just another custom field extending the variations and some math that hooks into the price update (i would use ajax for that)
+<sterndata>	this is the project i'm jumping into in the middle -- customizing a crap theme, dealing with requirments i didn't vett, etc.
+<lindsaymac>	well doing this wouldn't really require doing anything huge with the customized codebase. it really just needs to hook into the core woo files and then minor alteration to the theme.
+<lindsaymac>	some customizations like that could be a nightmare if you're jumping into an already coded project, but for something liek this, it skirts around the outside of those types of things and just requires woo files / hooks
+<sterndata>	i'm going to go the plugin route because we're also approaching the budget cap
+<lindsaymac>	its one of those things on my list of plugins to make and release free. i hate that they charge for that type of functionaliry
+<kegster>	lindsaymac, you tell doc-bot :d
+<kegster>	i'll jump on the i hate ecommerce out-of-box bandwagon heh
+<lindsaymac>	meh. typo... i just hit tab thinking the last guy i mentioend was the guy i was talking to. dont care enough to fix it
+<lindsaymac>	kegster: ^
+<kegster>	oh i know haha. i've been guilty before. nice to see someone else do it  heh
+<lindsaymac>	http://images2.memedroid.com/images/uploaded17/4fa61cc378d38.jpeg
+<kegster>	zero
+<lindsaymac>	zero
+<lindsaymac>	point
+<lindsaymac>	zero
+<kegster>	not a nare nutter
+<kegster>	lol
+<kegster>	or however u type that
+<lindsaymac>	https://www.youtube.com/watch?v=2v3cfd8tpac
+<lindsaymac>	https://www.youtube.com/watch?v=iks0gvvoe9i with context
+<kegster>	https://www.youtube.com/watch?v=e8ifobthbts
+<kegster>	not a nan nutta
+<lindsaymac>	what is that from?
+<kegster>	how high i think
+<kegster>	" my grandaddy been pimpin since been pimpin since been pimpin"
+<kegster>	heh
+<kegster>	or w/e
+<lindsaymac>	oh hah...
+<aikar>	hi - i use custom-permalinks plugin to let us control urls fully. however it has a bug that it doesnt keep wordpresses automatic slug generation feature. i have an override to repair it for most part: https://gist.github.com/aikar/f34b353f4b4c6df9d8fd - but custom post types don't have their prefix. i could hack it in sure, but looking for proper way to look up the post types rewrite prefix slug. too tight of a deadline to wait for author to fix this.
+<logicport>	hello?
+<fridaynext>	olleh?
+<logicport>	eyb
+<steeze>	ih
+<fridaynext>	oy
+<steeze>	oy vey
+<fridaynext>	yev yo
+<kegster>	oh dear
+<darkelement>	hey guys how can i upload a picture to accesspress parallax (non-pro) so that it will go all the way across the screen like the default pictures? i am using correct resolution and uploading them through the post-> category, however they are appearing in smaller boxes in the middle of the page.
+<aikar>	ok i think i have it - this works - look good? https://gist.github.com/aikar/f3b3e6eb63bafe67209f
+<darkelement>	nvm, featured image
+<es0teric>	ok so i have this: get_next_post( true, array(), 'post_tag' ); but it's not returning the next post in the same post_tag... why is that?
+<kegster>	darkelement, sounds like you need a new paralax generator lol
+<darkelement>	no i just didn't know you needed to set the picture as the featured image of the post in order for it be full size on the slider
+<darkelement>	we gucci boys
+<steeze>	but he's in prinson
+<steeze>	prison
+<dinet>	i have a site running but the updates has to be done manually cuse some settings in ftp is missing
+<dinet>	where can i read up on that?
+<kegster>	.c disable automatic updates > dinet
+<doc-bot>	dinet: https://codex.wordpress.org/configuring_automatic_background_updates
+<kegster>	^ right there ;)
+<dinet>	i want to be able to click it but i only get some ftp-settings when trying
+<lindsaymac>	dinet:  do you want autoupdates or do not want autoupdates?
+<lindsaymac>	ugh.. can't focus today.
+<dinet>	i want to be able to update from the panel
+<lindsaymac>	being entertained by twitter today.. which is weird because i never really use it
+<lindsaymac>	.c permissions > dinet
+<doc-bot>	dinet: https://codex.wordpress.org/changing_file_permissions
+<dinet>	when trying i cet a page asking for ftp-settings
+<lindsaymac>	dinet:  if you can't do that but want to, its likely a permissions issue
+<lindsaymac>	dinet:  click the doc-bot link
+<dinet>	so that fixes the ftp-settings?
+<kegster>	dinet, no the ftp settings is gonna be how your webserver is setup (prob php settings)
+<kegster>	are you using shared or vps/dedi ?
+<dinet>	dedicated
+<lindsaymac>	dinet: you dont need to change your ftp settings.. you need to change your permissions so it doesnt require authentication every time you click update
+<lindsaymac>	.g ftp credentials for updating wordpress > dinet
+<doc-bot>	dinet: https://codex.wordpress.org/updating_wordpress
+<lindsaymac>	ugh thats not what i wanted.
+<lindsaymac>	.lmgtfy ftp credentials for updating wordpress > dinet
+<doc-bot>	dinet: http://tinyurl.com/kyynef4
+<dinet>	lindsaymac: that dont answer why the site wants settings for ftp
+<lindsaymac>	dinet:  sorry.click the next link i just posted
+<lindsaymac>	i kinda wish doc-bot had a second less inflammator way to link to search results. i mean, lmgtfy is awesome and i do not want it to go away. just want a secondary option for that
+<dinet>	lindsaymac: i have tried asking google. only got other links
+<lindsaymac>	dinet:  yes. click those other links.
+<lindsaymac>	dinet:  thats the purpose of google.. google answers you in the form of links... you're supposed to click them to get answers.
+<lindsaymac>	smh
+<steeze>	lol
+<lindsaymac>	dinet:  this is not an uncommon problem and there's info all over the place about it, including on google in the form of links
+<steeze>	time for a nap
+<lindsaymac>	steeze:  :) wtf
+<lindsaymac>	yesss.... just got work my prop was accepted by the client.
+<dinet>	lindsaymac: gonna try permissions one last time
+<dinet>	lindsaymac: seems unlikly to me tho
+<steeze>	lindsaymac, congratulations! wooo!!
+<lindsaymac>	dinet: i am telling you that permissions is 100% the issue. based on my extensive experience
+<subx>	would any of you know why certain search terms are not matched by wordpress default search?
+<subx>	or, if anyone has experienced similar behavior...
+<kegster>	dinet, go to your php settings and enable suphp instad of dso
+<kegster>	dinersorry for delay haha
+<kegster>	dinet,
+<kegster>	are you using a control panel of any kind?
+<kegster>	ie cpanel, virutalmin, plesk, etc
+<kegster>	does plesk even exist anymore? ;)
+<lindsaymac>	subx:  the built in wp search is not that intensive. what types of words are you searching and expecting results for
+<lindsaymac>	kegster:  lol
+<lindsaymac>	kegster:  i think virtualmin has taken over
+<subx>	i'm matching terms which appear in both post titles and in the content.
+<lindsaymac>	subx: do you have a list of specific words that are consistently left out? like, can you replicate the issue with a specific word in different posts
+<dinet>	kegster: gonna try it
+<subx>	lindsaymac, for this particular project, it's dealing with multiple custom post types and taxonomies. it's a pretty large motorcycle review website
+<lindsaymac>	ie: find a word that returns no results that you know should render results and write a new blog post with it. one with the word in the body and one with the word in the title and compare
+<lindsaymac>	subx:  debugging is all about replication
+<dinet>	kegster: no extra controlpanel running
+<lindsaymac>	subx:  ok... well then you probably should give more information
+<subx>	lindsaymac, yes, certain ones like motogp, rossi, and oddball terms where others match perfectly.
+<lindsaymac>	subx:  what word are you searching? where do you expect to find it? have you tested across all content types?
+<lindsaymac>	subx:  those mean nothing to me.
+<lindsaymac>	subx:  i just want to know the cause / effect
+<kegster>	dinet, seriously though. enable suphp instead of dso and viola!
+<kegster>	there was something else others claimed works too.. lib2? or something idk
+<subx>	lindsaymac, i can successfully search for those terms in the back end and pull of relevant posts. but examining the sql, there's a puzzling lack of ids "and wp_posts.id in (0)"
+<subx>	lindsaymac, the "(0)" should be a comma-separated list of post ids
+<lindsaymac>	subx: you really aren't giving me any of the answers i'm looking for here. it;s like you're reading completely different words from what i am writing
+<subx>	lindsaymac, what do you mean by cause / effect?
+<lindsaymac>	subx:  read what i wrote before that. read my actual questions i am asking
+<subx>	lindsaymac, i can find the posts by other terms in the title and content, but certain terms seem to be resistant on the front end, but in the back end, i can find everything just fine.
+<lindsaymac>	ok.. i literally asked you specific questions. hold on. i'll repost them
+<es0teric>	ok so i have this: get_next_post( true, array(), 'post_tag' ); but it's not returning the next post in the same post_tag... why is that?
+<lindsaymac>	do you have a list of specific words that are consistently left out? like, can you replicate the issue with a specific word in different posts
+<lindsaymac>	ie: find a word that returns no results that you know should render results and write a new blog post with it. one with the word in the body and one with the word in the title
+<lindsaymac>	what word are you searching? where do you expect to find it? have you tested across all content types?
+<subx>	lindsaymac, you asked me which terms, i posted them, and you said those mean nothing to you. what else do you want?
+<lindsaymac>	subx: read the above pasted questions / info i asked for
+<es0teric>	anyone?
+<quinncom>	jamesbdev: not exactly what you asked, but: instead of copying the content you could simply load it from its origin onto the other pages where it would display (i'd use the new json api <http://torquemag.io/introduction-wordpress-new-universal-connector-json-rest-api/> and then you can pull it into place with javascript, e.g., <http://www.newmediacampaigns.com/blog/how-to-use-json-apis-with-jquery> ).
+<lindsaymac>	es0teric:  is post_tag the term you're wanting to stauy within?
+<subx>	lindsaymac, yes, i have a list of specific words. in test posts across mutiple post types, those terms evade the front end search, but are successfully found in the back end.
+<lindsaymac>	subx: you have tested those "bad" terms in both the body and the title and in every post type you have?
+<es0teric>	lindsaymac well whatever post tag(s) the post belongs to
+<subx>	lindsaymac, read my last post.
+<lindsaymac>	es0teric:  not sure what you mean by that
+<lindsaymac>	subx:  i am verifying that is what you are asking
+<lindsaymac>	saying*
+<es0teric>	lindsaymac ok let me back it up for a sec
+<lindsaymac>	subx:  notice i asked about the word being in the title and content.. and were you test posts newly added fresh posts?
+<subx>	lindsaymac, of course.
+<jordan87>	hey all, i'm having some trouble with repeated "wordpress databaese is up to date" messages (and sometimes your database requires update). i'm nearly positive it's because something in the file system is saving the old caching settings
+<lindsaymac>	subx:  you answer that as though i should automatically know what you did...
+<es0teric>	lindsaymac post_tag only applies to one tag on the post right?
+<jordan87>	but i'm using elastic beanstalk to autoscale so everytime a new one comes up the the file is there, and im not sure which
+<lindsaymac>	subx:  is that of course to the title/content question or the question as to whether the posts were fresh/ new posts
+<subx>	lindsaymac, both.
+<subx>	lindsaymac, have you experienced this behavior before?
+<subx>	i have not
+<lindsaymac>	es0teric: umm.. i dont think you are understanding how get_next_post works.. did you copy this code frm some tutorial>
+<es0teric>	lindsaymac no
+<lindsaymac>	subx: well.. i am just now figuring out what exactly it is you are experiencing.
+<lindsaymac>	es0teric:  then where did you get post_tag from?
+<lindsaymac>	es0teric:  if you read the docs.. https://codex.wordpress.org/function_reference/get_next_post
+<es0teric>	lindsaymac post_tag is a taxonomy
+<subx>	lindsaymac, tell me what you think i explained to you, and i'll confirm if you are correct.
+<lindsaymac>	es0teric:  so you have a taxonomy named post_tag????
+<es0teric>	lindsaymac thats the default taxonomy for post tags
+<lindsaymac>	es0teric: and that is a custom taxonomy name?
+<es0teric>	wow
+<ccm84>	derp.
+<dinet>	i have another problem installed two sites using sandbox.domain.com and now both points the wp-admin to the same domain even after i have changed to the right adresses
+<es0teric>	lindsaymac how do you not know that post_tag is the default tag taxonomy though?
+<lindsaymac>	es0teric:  i could have sworn you said that you were getting my a custom taxonomy
+<es0teric>	i never said that
+<lindsaymac>	es0teric:  ok.. sorry.. if you didn't notice i was talking to two people at once
+<es0teric>	thats cool
+<subx>	it's coolio yo
+<es0teric>	so, lindsaymac do you know the answer to my problem?
+<lindsaymac>	the $taxonomy arguement in get_next_post just keeps oyu in that taxonomy. the first param $in_same_term keeps you in the same term within that taxonomy
+<lindsaymac>	es0teric:  taxonomies are the global name of your tags and terms are the actual tags
+<lindsaymac>	es0teric:  i am still trying to figure out what the issue is,.. but if you're in a rush, good luck
+<lindsaymac>	es0teric:  what exactly is the unexpected results you are seeing?
+<lindsaymac>	subx:  so you can't find anything about those terms or posts that are not showing.
+<lindsaymac>	subx:  not a single pattern has emerged.. for instance they are all on posts that are custom content types, they're all terms within quoates or parenthasis or all in titles, etc
+<z`>	hello people. i chose to upgrade 1 wp plugin and for quite some time my wp says that it's updating but nothing happens. how could i cancel the update ?
+<subx>	lindsaymac, the terms are fully accessible through the back end, phpmyadmin, and through mysql command line.
+<z`>	ah never mind. it resurrected just now (after 15 minutes :))
+<lindsaymac>	subx:  that doesn't matter to me. i am trying to understand why the search isn't finding them. whatever find function you write isn't the same as the complex one written for the search function.
+<lindsaymac>	subx: i am not doubting that they exist.. i'm trying to see if there's anything with the wp search function that is overlooking them.
+<subx>	lindsaymac, when wp constructs the query, it first executes a subquery with a list of ids. those ids should populate the parenthetical in the expression " and wp_posts.id in (0) " where the zero is.
+<lindsaymac>	i understand how it works. i am trying to see if any of those terms have an underlying pattern that the actual query is overlooking.
+<lindsaymac>	for instance, looking for "posts" and "post's"
+<subx>	lindsaymac, well in the case of apostrophes, they are escaped with a backslash.
+<lindsaymac>	i was using it as a general example
+<es0teric>	lindsaymac the unexpected result is an empty string
+<es0teric>	i just want it to go to the next post in the same taxonomy.. in this case post_tag
+<es0teric>	lindsaymac correction -- next post in the same term
+<lindsaymac>	es0teric:  did you try the same code using categories just to see if its the post_tag conflicting?
+<es0teric>	post_tag conflicting with what?
+<lindsaymac>	i dont know. i dont know your setup or anything.
+<lindsaymac>	its worth a try
+<lindsaymac>	just to see if the rest of your code works
+<es0teric>	lindsaymac i just tried it with category and it still returns an empty string
+<burattino>	hello all!
+<sterndata>	howdy
+<lindsaymac>	es0teric:  and what about with no params?
+<lindsaymac>	es0teric:  also, its 'categories' not category
+<lindsaymac>	i think
+<lindsaymac>	maybe i'm wrong i thought it was categories
+<burattino>	does anybody know where to find instructions to access the wordpress team in slack? i cannot understand what username and password i need in order to access it.
+<lindsaymac>	.slack
+<lindsaymac>	.c slack chat > burattino
+<doc-bot>	burattino: https://codex.wordpress.org/contributing_to_wordpress
+<lindsaymac>	.g wordpress slack chat > burattino
+<doc-bot>	burattino: https://make.wordpress.org/chat/
+<sterndata>	if i recall correctly, i just set up an account there
+<lindsaymac>	you already have an account you just have to use the right username to log in
+<es0teric>	lindsaymac even worse, now it just returns null
+<burattino>	thank you!
+<lindsaymac>	es0teric:  are you doing this inside the loop or no?
+<es0teric>	lindsaymac this is inside of a single.php page
+<lindsaymac>	a page or post? i'm assuming you meant post
+<lindsaymac>	get_next_post(true, '', 'post_tag )
+<lindsaymac>	oops missing last '
+<lindsaymac>	but try that
+<lindsaymac>	es0teric: also get_next_post is really just a wrapper for get_adjacent_post so you can try that... no clue why this isn't working...
+<lindsaymac>	es0teric:  are you sure that your current post has an actual tag term assigned?
+<es0teric>	yes
+<es0teric>	lindsaymac the post has tags
+<es0teric>	so i will use get_adjacent_post and see where that leads me
+<es0teric>	sec
+<lindsaymac>	es0teric:  my pasted code did nothing ?
+<es0teric>	lindsaymac i did this get_adjacent_post( true, '', false, 'post_tag' ); and the var_dump outputs an empty string
+<lindsaymac>	did you try my earlier psated code
+<lindsaymac>	try doing var_dump($post); and see what you ghet
+<es0teric>	lindsaymac i get the post object
+<lindsaymac>	get_next_post(true, '', 'post_tag' ) and that exact code gives you nothing?
+<es0teric>	lindsaymac the exact code gives me an empty string
+<lindsaymac>	i dont know what to say.. it works on my stuff...
+<es0teric>	lindsaymac did you do global $post; ?
+<es0teric>	lindsaymac and this is on a single.php
+<burattino>	lindsaymac, i did it! thank you again! :-)
+<es0teric>	lindsaymac according to the source, * @return mixed       post object if successful. null if global $post is not set. empty string if no corresponding post exists.
+<es0teric>	so how could no corresponding post exist when i am using the single.php of it?
+<es0teric>	lindsaymac ?
+<thiras>	anyone familiar with caldera forms
+<thiras>	need some info about variables
+<jbjon>	hi all. running wordpress 4.2.2 and my admin pages are taking over 60s to load. after installing query monitor to try and understand whats happening its showing each page seems to be trying to load wp-admin/upgrade.php?step=1. any tips on solving this please?
+<sterndata>	jbjon: let me see if one of my sites does that
+<steeze>	thiras, can you be more specific?
+<thiras>	steeze, there is three options there
+<sterndata>	jbjon: nope, not seeing it.
+<thiras>	static passback entrylist
+<thiras>	what do those three?
+<thiras>	whats the difference
+<jbjon>	stern data: ok that's odd. there's 2012 posts alluding to upgrade loops where people's installations get stuck but nothing recently. might have to try re applying the last update
+<edegaru>	quick question. this site uses a drop-down search box in the main menu, working fine in every page except if the page uses a contact form 7, in this case, when you click in "search" to get the drop-down, the page scrolls to the form. the search box has href="#", but the cf7 doesn't have an anchor, why is it going to there? im working locally.
+<lindsaymac>	edegaru:  thats an odd one.
+<lindsaymac>	does it smooth scroll to the cform or just jump to it?
+<edegaru>	lindsaymac: smooth scroll. i'm going to reach the developers, premium theme, but in the meantime, any insight is welcome.
+<lindsaymac>	edegaru:  can you find the smooth scroll init code? it might bind weird things together
+<edegaru>	lindsaymac: you are right! let me check that. are we using id or name to link anchors nowadays?
+<es0teric>	sterndata, edegaru i have this: get_adjacent_post( true, '', false, 'post_tag' ); and its returning blank on a single.php page
+<es0teric>	do you know why?
+<es0teric>	or do you have an idea why?
+<lindsaymac>	ids usually
+<lindsaymac>	edegaru: ^
+<maddtech>	is there a debug toolbar that i can install in wordpress?  i really like the one i can use in laravel.
+<sterndata>	try   true, array(),false,'post_tag'
+<sterndata>	and are you sure 'post_tag" is write for the taxonomy?
+<edegaru>	lindsaymac: thanks!
+<es0teric>	sterndata
+<es0teric>	post_tag is the default taxonomy for post tags
+<es0teric>	sterndata so yes i am sure
+<es0teric>	and i already tried with array() in it
+<sterndata>	what's the return value of the function? post object, null, or empty string?
+<sterndata>	and is $post global?
+<es0teric>	sterndata empty string and i would assume $post is global in single.php
+<sterndata>	"i would assume".... hah
+<sterndata>	check it out
+<es0teric>	sterndata also i made $post global
+<monarchmonarch>	hello friends!
+<es0teric>	on single.php and it still returned the same empty string
+<monarchmonarch>	es0teric, i believe you helped me last time about 6-10 months ago
+<es0teric>	monarchmonarch i did?
+<monarchmonarch>	i have a quick question for anyone here that i cannot find an answer to.
+<sterndata>	so empty string means "no corresponding post exists"
+<dlsteve>	monarchmonarch, ask
+<monarchmonarch>	i have created a classifieds page on my website and want to create a few posts that use the permalink structure xxxx.com/classifieds/post-name
+<monarchmonarch>	the only solution i am finding is to create a category instead and use that permalink structure
+<es0teric>	sterndata ah i see
+<es0teric>	i tried it on a different post and it worked
+<es0teric>	so that means the other post i was just on had no adjacent post
+<sterndata>	always good to read the return values section for a function
+<es0teric>	sterndata yeah i was reading that in the source but i didnt think it applied to the post i was on because it had tags
+<jbjon>	sterndata: i've just manually browsed to wp-admin/upgrade.php?step=1 and clicked the database upgrade button again. this has made my main admin site run back at full speed. just got to sort out the other sub-sites now but looks like a previous upgrade hadn't totally completed
+<sterndata>	jbjon: interesting!
+<monarchmonarch>	any advice would be highly appreciated.
+<jbjon>	sterndata: doing the same on one of the sub-sites has also fixed it. i think this stems from trying to use plesk 12 to manage wordpress sites
+<sterndata>	ick
+<dlsteve>	monarchmonarch, yah i'm looking. did you see any plugins for this?
+<monarchmonarch>	i prefer to stay away from plugins for basic tasks and i know i'll eventually have to jump to a wordpress hosting like wpengine and will have to dump a lot of plugins.
+<steeze>	sorry thiras i'm about to leave work. otherwise id dig a little deeper to try and help you
+<sterndata>	 monarchmonarch that's a very strange statment
+<thiras>	sterndata, np thanks anyway
+<dlsteve>	monarchmonarch, something like this will need a plugin, or you being able to code rewrite rules.
+<steeze>	if i had a nickel for everytime someone msg'd sterndata instead of steeze
+<thiras>	steeze
+<steeze>	hehe
+<thiras>	:)
+<kokut>	anyone knows which one is the "respond/reply" to comment template?
+<steeze>	take care all
+<sterndata>	and stepdad, too.
+<monarchmonarch>	i see, so then its not as simple as i thought.
+<dlsteve>	yah, not with wp. it does not have traditional routing. all the routs are based on sql queries.
+<kokut>	where is the reply/respond method being called like in comments?
+<kokut>	when you click respond
+<monarchmonarch>	i guess i need to restructure my website then since choosing a permalink structure seems to run throughout the site. its a car website and i was doing just /post-name as the permalink structure but now i am relaunching the website, i want different sections like articles, spotted cars, classifieds and interviews. so for all future links to be like xxx.com/articles/post-name and xxx.com/intertiews/post-name what is my soluti
+<kokut>	i need to change the location
+<kokut>	the id="respond" one
+<dublinman>	hi, is there a filter or something that can change the weekday and month names in locale?
+<lindsaymac>	anyone here charge maintenence hourly?
+<sterndata>	occasionally
+<dlsteve>	monarchmonarch, https://ruslanbes.com/devblog/2013/04/03/wordpress-routing-explained/
+<lindsaymac>	sterndata: looking around to see what the average person charges
+<lindsaymac>	lol kokut pmed me "do you need maintenance work"
+<lindsaymac>	thirsty
+<sterndata>	i charge $100/hour, 15 minute minimum.
+<kokut>	lindsaymac: whats so funny? :\
+<lindsaymac>	because you were like a darn shark about it. don't even know anything about what i'm asking or need but you're right there... in pm
+<lindsaymac>	sterndata: that's pretty high.. unless the maintenece work isn't really that much per month
+<sterndata>	usually, on a site i've never seen, a good chunk of an hour gets eaten up doing backups, trying to understand some p-o-s them, and a bunch of plugins that duplicate each others functionality.
+<sterndata>	if i have an ongoing relationship, it's a lot less.
+<monarchmonarch>	lindsaymac, you came here asking who does a service, no need to bash those who respond to you.
+<lindsaymac>	yea but thats not really maintenance. thats first time dev stuff...
+<sterndata>	its $100/hour for an out-of-the-blue request.
+<lindsaymac>	monarchmonarch:  i didn't ask "can anyone do a service" i asked if anyone charges hourly for maintenence ...
+<sterndata>	i maintain one site (do their content, updates, act as webmaster) for $175/month
+<lindsaymac>	sterndata: i'm talking monthly maintenance work. not first time site stuff
+<lindsaymac>	no content.. just web dev / wordpress maintenence
+<monarchmonarch>	dlsteve: wow thats a brainful looking through the article, did you catch my text above? is my simple solution just doing the category permalink?
+<sterndata>	for sites i've built -- keeping them up to date and backing up once a week -- it's $120/year.
+<dlsteve>	monarchmonarch, yah, most likely that will be the best way to do it without a plugin.
+<monarchmonarch>	dlsteve: just so i understand before i start changing permalink structure...by doing the category permalink, each post i make i will have to tag the category for which page i want for it to show up under, correct? what happens when i have two categories checked? this just means that the post will show up under both category pages, correct?
+<lindsaymac>	sterndata:  $10/month?
+<monarchmonarch>	dlsteve: and how does the permalink structure know which category to make the url under if i choose more than one category?
+<edegaru>	the rendered html for contact form 7 has a blank "name" attribute. how can i set it?
+<dlsteve>	monarchmonarch,  i believe so. permalink is generated by a db query.
+<lindsaymac>	edegaru:  what field is blank?
+<lindsaymac>	or are they all blank
+<monarchmonarch>	dlsteve: okay i will test this out right now
+<rxro>	helloo
+<edegaru>	lindsaymac: not the field, the form attribute <form name=""
+<rxro>	edegaru >> heeyy :d long time no "c" how are you ? :d
+<edegaru>	lindsaymac: i tried [contact-form-7 id="32" title="contact-1" name="contact-1"] but comes blank as well...
+<zyxep>	hi guys, are you familiar with https://github.com/studio24/wordpress-multi-env-config ? to setup multi environment wordpress, they don't write anything about the db should all env work on the same db or should i copy that ? but have the naming after production ?
+<monarchmonarch>	is this the proper permalink structure for what we discussed? /%category%/%postname%/
+<dlsteve>	zyxep, i would work with a copy of production.
+<zyxep>	dlsteve, ya and keep the siteurl naming as production right ?
+<zyxep>	but change them as they do with set_env
+<lindsaymac>	edegaru: hmmm maybe they never added it. people tend to use ids similarly
+<dlsteve>	zyxep, thats what i do.
+<zyxep>	okay thx, i will try that :)
+<dlsteve>	monarchmonarch, think so, it's been a while.
+<monarchmonarch>	when i change the structure, will all my old posts change the structure automatically?
+<dlsteve>	monarchmonarch, they should if they are categorized properly.
+<edegaru>	lindsaymac: i can set it with firebug and the search works fine, without scrolling...
+<dublinman>	can i change month names without editing /wp-includes/locale.php ?
+<lindsaymac>	edegaru:  well that is just plain weird
+<monarchmonarch>	dlsteve: theyre not categorized properly so i will have to go back and just pick the one category i want them to show up under the page and then go from there.
+<lindsaymac>	edegaru:  so you require a name attribute in the form to not force the search to scroll on op
+<lindsaymac>	open
+<sterndata>	hey, rxro
+<lindsaymac>	ohhhhh i bet i know. i bet your init that triggers the drop down just looks for a form element and not a specific form id
+<edegaru>	lindsaymac: exactly, somehow...
+<rxro>	sterndata!! how are you ?
+<lindsaymac>	edegaru:  look at your drop down init to see what it's requiring for triggering it. it probably just needs a more specific id set. better than trying to have cform 7
+<sterndata>	rxro: doing ok. you?
+<lindsaymac>	edegaru: can you pm me a link to the site, or is it only local?
+<rxro>	sterndata : i am good too thxx for asking
+<maddtech>	has anyone built a plugin to work with gravityforms before?
+<rxro>	sterndata : what is new with you ?
+<edegaru>	lindsaymac: only local, for now :)
+<sterndata>	not much, same old stuff
+<monarchmonarch>	thanks for your help guys!
+<monarchmonarch>	ill try out what ive learned so far
+<lindsaymac>	edegaru:  is the search drop down custom or a plugin?
+<rxro>	yea me too same old trashy stuff , except i got new and more trashy stuff :d
+<edegaru>	lindsaymac: it uses smoothscroll.js
+<lindsaymac>	edegaru:  the search drop down uses smooth scroll to trigger the show form drop down?
+<edegaru>	lindsaymac: now that you say it... not quite sure. the site uses smooth scroll, but the search icon triggers a drop-down search form. the icon has a link attribute to "#"... when you click, it smooths scroll to cf7.... i'm sorry i can't show you the site yet... i think it's not fair. maybe i can mount a dummy dev site online later, and take a look.
+<lindsaymac>	so i'm suggesting to look at the js that triggers the drop down search form. its possible that is encased in a <form> and the js is basically saying "when this link is clicked, do something with <form>" instead of "when this link is clicked, do something with form.search-form"
+<lindsaymac>	edegaru:  basically its possible that the drop down trigger isn't specific enough so it's going to the contact form instead of the search form because the contact form is first in the dom or first loaded
+<edegaru>	lindsaymac: yep, sounds logical. im going to set another <form>, non-cf7 and test it. thanks!
+<lindsaymac>	edegaru:  good idea
+<juniorsa>	hi - my site is infected with the mw:blacklist:35 malware - users on mobile devices get redirected to ashleymadison.com - any step by step on how to clean it?
+<edegaru>	juniorsa: step 1: go back to a working, clean backup
+<juniorsa>	don't have one :(
+<juniorsa>	just inherited this problem
+<sterndata>	try installing wordfence and runnign a scan, juniorsa
+<sterndata>	and delete your .htaccess file. when you reset permalinks, wordpress will recreate it.  it seems that some of this particular nastiness comes from a corrupted .htaccess file.
+<klos>	hey, is there anyone interested in alpha testing a bash script thats install wordpress locally, and configures an apache server with a staging environment and then adds it all to livereload.
+<klos>	basically a simple provisioning and staging environment
+<clorith>	so basically... vvv ?
+<klos>	@clorith: yes, but for normal people :0
+<klos>	i had exactly that in mind. i am tinkering for a while now with provisioning tools like yeoman, vvv, simple vvv
+<klos>	the problem i had with all of them was that they were just doing too much. too much overhead, and to difficult to use
+<klos>	so i took a step back and tried to automate the whole chain including configurin a remote apache vhost, adding subdomain via cloudflare dns in one command
+<klos>	so you run it and get a simpel dev environment locally with mamp, and livereload and ready staging installation where you can push to using wordmove
+<klos>	definitely not for core development, but great for simple developers
+<klos>	you want to help out @clorith
+<klos>	?
+<rob1n>	have you looked at chassis?
+<rob1n>	https://github.com/chassis/chassis
+<virtualsid>	chassis got me to learn git. :p
+<peter_occ>	when i go to a category page, it usually shows a list of products.  i have a woocommerce template for displaying product category thumbnails within loops. how do i alter the default display to use this template to display child categories instead of products?
+<klos>	rob1n:
+<klos>	yes i saw chassis a while ago. but again, it's not really what i'm doing. the problem for me wasn't the local dev environment. what i always hated was that i had to login to my server to setup vhosts, then update the dns to get a subdomain. copy content, etc to the staging environment
+<klos>	there are scripts for each of those things, but none of them does all together and most of them do one thing of the chain just too much
+<klos>	@peter_occ: https://wordpress.org/support/topic/get-children-and-loop-through-each-child?replies=5
+<klos>	this should get you on track i think
+<peter_occ>	klos: it turns out that woocommerce categories offer the choice in the admin of how to display each category
+<klos>	:)
+<klos>	even better
+<guest59747>	helloi
+<guest59747>	anybody there
+<guest59747>	hi all
+<guest59747>	anybody
+<klos>	i'm anybody
+<momothec1t>	what is the relationship between posts and attachments
+<guest59747>	attachments are from media
+<momothec1t>	like i have a cpt
+<momothec1t>	and i used the add media button
+<momothec1t>	to insert like 5 images
+<momothec1t>	then i use this snippet
+<momothec1t>	https://codex.wordpress.org/function_reference/wp_get_attachment_image
+<momothec1t>	the examples in there
+<momothec1t>	its not getting the images attached
+<momothec1t>	if i do the_content() i get everything in html
+<klos>	what are you trying to achieve?
+<momothec1t>	i want to go through the images i attached and insert my own markup
+<momothec1t>	its in a custom post type for display gallery
+<klos>	how did you attach the images to the post
+<momothec1t>	i used the add media button
+<klos>	just by clicking add media or did you actually put them into the post/gallery?
+<momothec1t>	http://i.imgur.com/3djdlly.png
+<momothec1t>	this one
+<momothec1t>	oh and i also did the gallery one too
+<klos>	mhm
+<klos>	i think the relation is already established by just uploading them via add media
+<klos>	good to know
+<klos>	i think the code snippet should work
+<klos>	are you applying it to the correct cpt php file?
+<momothec1t>	oh
+<momothec1t>	maybe something wrong with the code then
+<momothec1t>	yeah its the correct file
+<klos>	let me try that quickly
+<momothec1t>	the_content() gives me all images
+<momothec1t>	k thanks
+<klos>	its working for me
+<klos>	just copy and pasted the code
+<klos>	something wrong with your code then i guess
+<klos>	i just pasted it into single.php after the loop for testing
+<klos>	https://www.dropbox.com/s/y1twkucqm7ui2a7/screenshot%202015-05-16%2014.44.11.jpg?dl=0
+<klos>	so it added the image undernetah the post
+<momothec1t>	okay let me try your snippet
+<klos>	i just added the image to the post, no gallery, no insert
+<klos>	https://www.dropbox.com/s/viznkvb4klthn5g/screenshot%202015-05-16%2014.45.03.jpg?dl=0
+<momothec1t>	oh how did you do it again?
+<momothec1t>	no gallery no insert?
+<momothec1t>	thats the snippet i used
+<guest59747>	i am using two different theme in my wordpress site. one is for desktop view other one is for mobile view.  ------------ and i am displaying a page for desktop theme as a frontpage and displaying latest posts on mobile theme on frontpage.  ------------ but on mobile theme by default theme functionality it shows latest posts. but i would like to show custom type posts on frontpage.  ------------ how can i do that? i am using th
+<guest59747>	to display latest posts ( this function automatically switch to latest posts from page )  screenshot link - http://prntscr.com/75qzaw
+<klos>	i just went to add post
+<klos>	clicked ad dmedia and uploaded an image.
+<klos>	thats all
+<klos>	i didnt insert the image in the post or anything
+<klos>	just closed the modal
+<klos>	its automatically attached to the post
+<momothec1t>	ohhhhhh
+<momothec1t>	you uploaded it like that
+<momothec1t>	thank you klos
+<momothec1t>	that worked
+<momothec1t>	the image already existed in the systema rleady
+<momothec1t>	i think i added through some other post
+<klos>	:0
+<klos>	ye the add media thing canbe confusing
+<klos>	happy that it works. i didn't know about the attachment correlation by just uploading neither
+<klos>	definitely good to know. thank you :)
+<momothec1t>	:)
+<klos>	btw, as a theme developer you mgiht be interested in a script i made
+<momothec1t>	oh what is it
+<klos>	it installs wordpress locally, along with live reload on mamp and sets up a staging environment
+<klos>	it has quite a few requirements and is for mac
+<klos>	are you on a mac?
+<momothec1t>	on ubuntu
+<momothec1t>	i use docker and sage
+<klos>	oh ok
+<klos>	it's not yet cross platform. i have to see if i bring it there
+<klos>	if you want you can watch the repo on github
+<momothec1t>	i use mac too on the couch or on my bed
+<momothec1t>	yeah link
+<klos>	https://github.com/klosk/wpstager
+<klos>	it's quite stable already, but needs some prework and documentation
+<momothec1t>	cool
+<momothec1t>	oh your in japan
+<klos>	i also want to create a homebrew package for it so it's easier to install
+<momothec1t>	i always wanna live there
+<klos>	ye
+<klos>	its nice and a pain as everywhere
+<klos>	:)
+<momothec1t>	where in japan
+<klos>	okayama
+<momothec1t>	thats awesome dont know where that is but sounds awesome
+<momothec1t>	japan is like the place the go every now and then for me
+<gagalicious>	how can i tell if a page is a buddypress page?
+<herol3oy>	is it possible to add some field in comments page like mobile number?
+<mind_hacker>	i'm trying to get my head around using actions and filter for extending features.but can't really get what to do.
+<mind_hacker>	is there anyone who could help me out?
+<kokut>	hello, anyone used the plugin add meta tags? it's adding a huge string that looks encoded in base 64 or something as my sites description :\
+<pankji>	hello everyone , how  i add the subproducts  under products in woocomerce  can you suggest me
+<siddharth030>	i cannot run simple prompt function in wordpress page
+<siddharth030>	using javascript
+<pankji>	can i add the category in cart woocomerece ?suggest me
+<pankji>	is there anybody
+<siddharth030>	im here but nobody talks here
+<siddharth030>	and i dont know your answer
+<pankji>	ok
+<siddharth030>	can somebody help me im not able to run javascript in my page
+<siddharth030>	ppl help me plz i cannot go to another page
+<siddharth030>	im using javascript and using window.open
+<zyxep>	hi, isn't it possible to use get_posts() to get all posts from a specific post_id? i have a an array of other posts inside a meta_value for the specific post_id.
+<zyxep>	i have used get_posts(array('post_type' => 'obstacles')); before but that just gets all available, i only need the obstacles specific for that post_id i am on.
+<clorith>	get_posts( array( 'include' => $post_id_array ) );
+<clorith>	zyxep ^
+<zyxep>	thx clorith
+<devinder>	hey everybody!
+<devinder>	i was working on child themes. could any one of you help me out regarding the same?
+<devinder>	as am having a few doubts regarding it
+<devinder>	particularly about "wp_enqueue_style()" function
+<zyxep>	clorith, that gives me only the id printed out, https://gist.github.com/zyxep/f55810d75bbc64d7d902 :s
+<clorith>	it will return an array of post objects, what you do with it after this is up to you
+<devinder>	i have been using it in functions.php file, in child theme
+<devinder>	but am not properly getting the arguments that are being passed into it
+<devinder>	to inherit the parent theme's properties
+<devinder>	like am in the middle of stuff, php and wordpess, i just need a little help to understand it properly
+<devinder>	i would really appreciate, if one could help me out with this, so that i get the logic behind it
+<zyxep>	clorith, it doesn't work.
+<opsec>	i love that description!
+<crikkit>	hey guys... i have had to downgrade wp to 4.0 to get around the fact that my shared hosting doesn't like the new charset (outdated version of php)... i thought the downgrade had gone fine, and i got the message to upgrade my db, but i am still getting the same error when uploading the db to my host
+<crikkit>	unknown collation: 'utf8mb4_unicode_ci'
+<crikkit>	which i thought would have been taken care of when i downgraded, since that has to do with the new emoji support, if i am not mistaken
+<crikkit>	anyone have any idea why my db is still showing the new charset when it hadn't been introduced yet in 4.0?  what did i miss or leave out, i wonder
+<spongsta>	crikkit: what hosting provider are you with? (just curious) also, man, so it's been a while since i've looked in db charsets, but check the db's sql dump file for the 'utf8mb4_unicode_ci'. each create table after i export from sequel pro has this declaration 'engine=myisam default charset=[charset]' .  also double check your wp-config file for the db_charset constant.  after upgrading to both 4.2.1 and then 4.2.2 today, i've not had any dramas with the
+<spongsta>	 charset changing.
+<spongsta>	crikkit: fyi, both my wp-config and all exports of my db declare charset=utf8 :/
+<crikkit>	spongsta: i'm at mediatemple for this site... i am just throwing up a test site on a subdomain for a client.  the real site will not go at this domain.
+<spongsta>	crikkit: interesting, i've only heard decent things about mt, but that was admittedly before they got bought by gd. have you tried tech support? last i heard they were always really helpful.
+<crikkit>	i just looked at the wp-config and db charset is at utf-8 , while db-collate is blank
+<crikkit>	yeah they just told me to upgrade my server :|
+<spongsta>	crikkit: oh geez... what punks.   ok, yeah usually db_collat is blank for any of my installs, so not feeling like that's your culprit.
+<crikkit>	there are no issues with sites upgrading that are already hosted... the problem is only when trying to import db's that have been created with the new utf
+<crikkit>	like when i develop locally and then want to go live
+<spongsta>	sure sure...
+<crikkit>	it won't take the new dbs on the shared hosting
+<crikkit>	which is hugely annoying
+<spongsta>	i hear ya. have you tried looking into the .sql file?
+<crikkit>	i don't know too much about working with dbs and i don't really know what i'm doing
+<crikkit>	i did change the charset values in wp options back to utf8
+<crikkit>	that didn't help.. still getting the same error
+<spongsta>	which option value did you change? blog_charset?
+<crikkit>	no, i didn't change that one
+<crikkit>	i changed option_name, option_value, and autoload
+<crikkit>	where do i find blog_charset?
+<valduare>	fris: are you around?
+<spongsta>	well, i wouldn't assume blog_charset would alter you db>
+<spongsta>	i think that's presentation.
+<spongsta>	export you database and open the .sql file in a text editor
+<crikkit>	actually as i poke through here i see a whole whack of places i need to change the charset
+<crikkit>	yes, i have it exported and opened in sublime
+<spongsta>	noice. love sublime. so do a find for the other charset
+<crikkit>	under meta_key and meta_value it still says collate utf8mb4_unicode_ci
+<spongsta>	cmd+f mac or ctrl+f pc
+<crikkit>	and under engine as well
+<crikkit>	global search and replace?
+<spongsta>	worth a try
+<spongsta>	back up first
+<crikkit>	what exactly should i replace it with?
+<crikkit>	just utf8?
+<spongsta>	utf8
+<spongsta>	yarp
+<crikkit>	it still says unknown collation, but now it says utf8 is the unknown collation
+<spongsta>	haha, oh it was a collation field... woops.  try utf8_general_ci
+<spongsta>	or utf8_unicode_ci
+<spongsta>	just don't do a find and replace on utf8
+<spongsta>	export the db again.
+<crikkit>	ah ok
+<spongsta>	yeah, if you did a find and replace on utf8 that could have gotten interesting ;)
+<crikkit>	now it's telling me #1115 - unknown character set: 'utf8mb4'
+<trac-bot>	crikkit: http://core.trac.wordpress.org/ticket/1115 minor, unassigned, mc_incubus->(no owner), closed, move comment_form do_action() above submit button
+<spongsta>	ah... looks like you might need latin1_swedish_ci for your collation sry mate... haha https://codex.wordpress.org/converting_database_character_sets
+<crikkit>	:)
+<spongsta>	depending on if your charset for tables is utf8 or latin1
+<spongsta>	i'd say read that whole page and go from there.  sorry, juggling lots of things
+<c0sm0x>	afternoon gents
+<crikkit>	thanks spongsta
+<spongsta>	hey c0sm0x
+<spongsta>	no dramas crikkit
+<valduare>	hey guys i got a custom post type with categories, im trying to make a navbar that uses those categories as anchor tags in a one page layout. so i need to auto generate the navbar of categories with the url being #categoryname
+<valduare>	right now im doing it from scratch whenever a category is added/taken away but thats really not a good way with custom links in apperance/menus
+<sterndata>	categories or custom taxonomies, valduare?
+<valduare>	just the categories  no tags
+<valduare>	btw morning sterndata how’s the weather down there today
+<sterndata>	70, cloudy, humid
+<valduare>	suppose to be around 80 here today and were in a parade later today
+<sterndata>	get_categories is what you want, valduare. set the type to your cpt slug and hide empty
+<sterndata>	.c get categories > valduare
+<doc-bot>	valduare: https://codex.wordpress.org/function_reference/get_categories
+<valduare>	this is on a bootstrap theme, and using the wp bootstrap navwalker
+<sterndata>	you stlll should be able to use the functions to add stuff dynamically to a menu.
+<valduare>	aye i can print out a list of the categories.
+<valduare>	im stuck with tieing it into wp bootstrap navwalker
+<sterndata>	.c wp_nav_menu_items > valduare
+<doc-bot>	valduare: https://codex.wordpress.org/function_reference/wp_get_nav_menu_items
+<sterndata>	so find the spot in them and add the category list with the appropriate submenu markup
+<sterndata>	examles abound http://www.wpbeginner.com/wp-themes/how-to-add-custom-items-to-specific-wordpress-menus/
+<crikkit>	spongsta:in phpmyadmin, what does changing "server connection collation" do?  i see that this is set in my local environment to utf8mb4 as well
+<valduare>	k reading up ty for the links
+<spongsta>	crikkit: mate, you're on a local system right?
+<crikkit>	yes
+<spongsta>	crikkit: brilliant. i reckon go ahead and  change that as well to the default one you set up for wordpress. and see how you go with the export.
+<spongsta>	make sure you always back up everything first tho
+<crikkit>	k
+<spongsta>	crikkit: are you on a mac or pc?
+<crikkit>	spongsta:mac
+<spongsta>	crikkit: try grabbing a copy of sequel pro.app it might save you some hassles before you change the phpmyadmin collation
+<crikkit>	ok will do
+<spongsta>	crikkit: sweet. alternatives to that are mysqlworkbench etc. as well.
+<spongsta>	brb
+<sterndata>	valduare: what sort of parade?
+<kitu>	hello
+<kitu>	how to get list of active widgets ?
+<kitu>	i want to call a widget, but i don't find its name ...
+<kitu>	with the_widget()
+<therealalexz>	interesting bug: https://core.trac.wordpress.org/ticket/32127
+<trac-bot>	therealalexz: http://core.trac.wordpress.org/ticket/32127 critical/high, 4.2.3, kovshenin->(no owner), new, broken support for utf8mb4 with the mysql extension
+<therealalexz>	this stops me from adding a new multisite, re: https://core.trac.wordpress.org/ticket/32127
+<trac-bot>	therealalexz: http://core.trac.wordpress.org/ticket/32127 critical/high, 4.2.3, kovshenin->(no owner), new, broken support for utf8mb4 with the mysql extension
+<jangoh>	i am trying to call a php file through ajax call but getting error fatal error: class 'wp_query' not found in .. whats the best way to solve it?
+<jangoh>	since its not a template dont have header
+<mark123>	could anyone figure out when my wordpress is all of the sudden saying error establishing a database connection
+<mark123>	very strange
+<mark123>	never did that in years
+<mark123>	perhaps it is a server overload on shared hosting?
+<therealalexz>	mark123: have you checked with your host?
+<mark123>	yes
+<therealalexz>	what did they say about the matter?
+<therealalexz>	the only thing i can come up with is changed credentials or a mysql-server that is down atm.
+<mark123>	i logged in to the ftp, no problems, and my http sites are running fine
+<therealalexz>	mark123: a mysql-server is a different server, as far as i'm concerned.
+<mark123>	yea, i logging in to the mysql server
+<mark123>	nothing chaned unless the host provider did something funky
+<therealalexz>	via phpmyadmin?
+<klos>	i have custom post type question: i am creating a page with information about states and each city within the state. would be the correct way to do it, to create a custom post type for states and another custom post type for city, so the user can edit the information for each of them, or is there a smarter way, to do that?
+<mark123>	yep
+<therealalexz>	try to email them mark123
+<mark123>	i just called them
+<mark123>	they said there is something wrong with your strings
+<therealalexz>	with your strings? hmm
+<mark123>	everything seems fine in https://mysqladmin
+<mark123>	password hasn't changed
+<therealalexz>	so what strings are they referring to?
+<mark123>	i know wordpress does an auto update
+<therealalexz>	yeah
+<mark123>	but i have a real old wp site linked to the domain too i use for testing and that is down as well
+<mark123>	it is the host
+<mark123>	i think i am gonna called them again
+<therealalexz>	mark123: yes. do that. since the other site hasn't been "touched" since the error.
+<mark123>	it does say mysql version
+<mark123>	5.0 (direct access not allowed)
+<mark123>	in the database manager
+<kitu>	please? :/
+<therealalexz>	the host might have changed some settings at their end
+<hellomat>	confused about vvv vagrant + phpstorm on settings page (php>servers>remote) i have message "no path mappings were found please configure them in vagrantfile"
+<daspence>	i updated a footer on a theme that i'm customizing...however, the new (just text) doesn't show on the live site...what can i check ?
+<rabsimpson>	daspence: are you using a caching plugin?
+<steedle>	how did you update ?
+<steedle>	or cache maybe
+<steedle>	blah rab beatme
+<rabsimpson>	;)
+<daspence>	already cleared browser cache
+<steedle>	how is the text in footer ?
+<rabsimpson>	not the browser cache, a flat html cache in wp
+<daspence>	checking for wpsuper or other
+<mark123>	could it be a server overload?
+<sterndata>	daspence: whats the url?
+<sterndata>	keike: are these your own shortcodes or from some plugin?  what's the url of the page in question?
+<keike>	sterndata, using a plugin.  the link is javelinatexmex.com/menus
+<daspence>	mark123: what was the issue?
+<daspence>	ah, i see it above
+<mark123>	yea, the lady never even told me that they changed it when i called
+<mark123>	and i asked her if they updated their mysql databases
+<sterndata>	keike: wow, is that one unreadable page or what! it's just a pdf
+<madlyfe>	does wp have the ability to edit/make posts from the front end?
+<mark123>	she said "no", i had these sites up for over 5 years and never experenced that
+<sterndata>	madlyfe: look at the p2 theme
+<sterndata>	madlyfe: for an example
+<keike>	sterndata, they are all images that link to the pdf menu
+<madlyfe>	you need a theme for front end editing?
+<sterndata>	so what do columns have to do this this?
+<keike>	there are 2 menus for each category, it will be readable once i can add titles in between
+<keike>	the columns are placing the menu images side by side
+<sterndata>	madlyfe: i'm just saying that this theme is a nice example of how to do it.
+<sterndata>	keike: bad seo by using images linking to pdfs. you'd do a lot better to put menus in text on site.
+<mark123>	welp, i am out of here see ya
+<mark123>	thanks everyone
+<keike>	sterndata, they want to use images because of the way it looks
+<madlyfe>	i just figured it would be a feature that all themes could use?
+<sterndata>	just look at it, madlyfe, will ya... or not. whatever.
+<madlyfe>	i did look at it
+<madlyfe>	it looks like just text and no styling
+<sterndata>	madlyfe: when you're logged in, posts are written and edited from the front end.
+<sterndata>	https://p2demo.wordpress.com/
+<lobstah>	hey all - is there a way on the comments area to allow just a first name when the user puts their name in?  right now it won't publish unless they enter both their first and last name
+<sterndata>	you could do the same, probably, with gravity forms and a bunch of code.
+<keike>	sterndata, so is there a way to add titles in between shortcodes like that
+<sterndata>	sure.  close off the columns, put in a title, and start a new pair of columns.
+<sterndata>	  title [col 1] content [/col1] [col2] content [/col2] title... etc
+<sterndata>	center the title and all will be nice
+<sterndata>	but your design, using images and pdfs  is extremely mobile unfnriendly
+<sterndata>	back in a little while...
+<jangoh>	its my ajax call http://dpaste.com/269azye and here is the php file to query http://dpaste.com/21a4xma   it doesnt work and getting error fatal error undefined wp_query ...
+<jangoh>	simple text echo works fine from the php
+<michaelgamble>	if you needed to create a popup within a page what method would you use.. something like bootstrap or a wp plugin maybe?
+<jangoh>	the function doesnt work with wp_query
+<qtrain>	i’m looking to implement a form on a page that will take testimonials from customers and display on said page.  i want to use facebook as a login and display a pic or something.  i’ve done some googling but i havent’ been able to find a plugin that i liked.  so, before i write a custom solution i was wondering if anyone had any suggestions.  thanks!
+<michaelgamble>	qtrian, maybe something like a buddy press testimonial plugin
+<michaelgamble>	?
+<jangoh>	michaelgamble there is popup plugins
+<michaelgamble>	yeah i was looking at popup maker
+<michaelgamble>	but i find choosing which one to use a bit of luck of the draw
+<jangoh>	there are many you can find your one :)
+<jangoh>	check preview /  demo before install
+<jangoh>	check screenshot , video guide you will know
+<qtrain>	@michaelgamble yeah something similar, but, not using buddypress.
+<jangoh>	https://wordpress.org/plugins/wordpress-popup/ is good one
+<qtrain>	@jangoh on the subject of popups.  wp welcome message is good.
+<qtrain>	@jangoh https://wordpress.org/plugins/wp-welcome-message/
+<qtrain>	any testimonial plugin suggestions are welcome.
+<jangoh>	qtrain you should pick plugin that has high reputation , dowloads would be good one :)
+<michaelgamble>	i purchased a few decent ones off of themeforest, but i havent seen the functionality your asking about
+<qtrain>	@michaelgamble  i should of specified, even if it doesn’t have the exact functionality just looking for general suggestions on the best testimonial plugins.
+<qtrain>	*have
+<michaelgamble>	http://codecanyon.net/item/testimonials-showcase-for-visual-composer-plugin/full_screen_preview/7854406
+<michaelgamble>	i’ve used this one
+<michaelgamble>	i liked the layout options
+<qtrain>	@michaelgamble  does it allow a customer to enter their testimonial on the site or does an admin have to do that?
+<michaelgamble>	im pretty sure that one is an admin based
+<michaelgamble>	it creates a testimonial post type
+<qtrain>	ok.  thx
+<jangoh>	anyone know how do i get work the wp query in a php file  http://dpaste.com/21a4xma
+<jangoh>	which is being called from a template via ajax
+<michaelgamble>	ok i got a silly question
+<michaelgamble>	so i installed a plugin, it gave me a nice fullscreen overview of its features in the admin, what seemed like the dashboard section
+<michaelgamble>	for the life of me i cant find that page again
+<jangoh>	check  appearance >  or settings >   or plugin list then check  "settings" of that plugin
+<jangoh>	or it would be on main dashboard menu
+<michaelgamble>	yeah im not sure
+<michaelgamble>	really wierd
+<jangoh>	check plugin list
+<jangoh>	it should be there
+<michaelgamble>	lol im about 15 min away from saying screw it and using a bootstrap js
+<mogwaidesign>	hey ra9man
+<stephenplatz>	hi - what are some possible causes for undefined function is_wp_error() in wp-settings.php?
+<sterndata>	stephenplatz: what's at the top of the calling stack?
+<sterndata>	are you using a file that does not properly load wordpress?
+<stephenplatz>	sterndata: i can't see the whole stack, this is getting returned when i hit the page with a browser
+<sterndata>	is the page template one you've written? what's the last think you did on the site since it worked?
+<stephenplatz>	sterndata: honestly, i'm trying to help a friend, i'm not sure what they've done, i checked the wp-settings.php for wp 4.22 and that function doesn't even exist in the file
+<sterndata>	source fileis_wp_error() is located in wp-includes/class-wp-error.php.
+<sterndata>	source fileis_wp_error() is located in wp-includes/class-wp-error.php.
+<sterndata>	https://codex.wordpress.org/function_reference/is_wp_error
+<sterndata>	well, there's always this:
+<sterndata>	.first > stephenplatz
+<doc-bot>	stephenplatz: please disable or delete all plugins and switch to one of the default themes (twenty*). after making these changes does the problem still occur? if no, re-enable everything one by one to see which component causes the problem.
+<stephenplatz>	sterndata: right, i'll have to start there, i think
+<sterndata>	it's a pain, but it's usually the right way to go
+<stephenplatz>	i can't bootstrap the site at all, what's a good way to switch themes, etc.?
+<stephenplatz>	i'm a drupal developer!
+<stephenplatz>	like i said, this is sort of a favor
+<stephenplatz>	for a friend
+<sterndata>	do you have ftp or shell access?
+<stephenplatz>	i'll need to get it, she gave me some creds but they are not enough
+<stephenplatz>	but i can get access
+<stephenplatz>	i supposed i can set some variables in the files
+<stephenplatz>	for the theme, etc.
+<sterndata>	from ftp or shell, rename wp-content/plugins to wp-content/plugins-old and that will disable all plugins. if you can figure out the theme, rename that directory to -old in wp-content/themes and wp will pick a default theme (usually twentyfifteen, if it's 4.2.2.)
+<stephenplatz>	great, that helpd
+<stephenplatz>	helps
+<jangoh>	i cant call this function via ajax  http://dpaste.com/031pv7s  but raw php works from that file
+<clorith>	jangoh: when using ajax in wordpress you don't call files, you call admin-ajax.php every time ;)
+<clorith>	.c ajax in plugins > jangoh
+<doc-bot>	jangoh: https://codex.wordpress.org/ajax_in_plugins
+<jangoh>	here is http://dpaste.com/3n5e73m  ajax call
+<jangoh>	clorith yes i can call admin-ajax and put function in functions.php
+<jangoh>	i want to call from any custom php file
+<jangoh>	whats the solution for this? :)
+<clorith>	same as with any ajax call in wordpress, as described by the codex article
+<jangoh>	cant find any to call from seperate php file :/
+<sterndata>	 jangoh: http://stackoverflow.com/questions/4641545/i-want-to-run-wp-query-on-a-separate-php-file-for-an-ajax-call
+<berto>	hi - i am enqueuing a script, but need to simply add data-noprefix to the <script> call... how can i do this?
+<sterndata>	.c wp localize > berto
+<doc-bot>	berto: https://codex.wordpress.org/function_reference/wp_localize_script
+<sterndata>	berto: are you the berto who use to work at uofc?
+<berto>	sterndata, ohhh, i think i was doing it after enqueuing it...
+<berto>	sterndata, nope!
+<jangoh>	sterndata yes that works for raw php i cant to call a specific function from that file
+<jangoh>	like calling a function from functions.php
+<jangoh>	want to*
+<sterndata>	so don't use the 'false' define for wp_use_themes, i think
+<c0sm0x>	hi
+<c0sm0x>	is it possible to secure a wordpress website from others, which are hosted on one particular server?
+<sterndata>	c0sm0x: of course.
+<sterndata>	i use mod_ruid2 on my apache system
+<c0sm0x>	if one website got hacked because of an out-of-date plugin, others may be hacked aswell
+<c0sm0x>	hmm i use nginx
+<sterndata>	each website runs under a different id.
+<berto>	sterndata, this wp_localize_script added code before the <script> call, but not inside of it!
+<c0sm0x>	hmm, but mostly wordpress websites got hacked by out of date plugins, whill will exploit the linux webserver
+<c0sm0x>	( shell codes )
+<sterndata>	it's a separate call, berto
+<berto>	i need <script type='text/javascript' src='...../js/prefixfree.min.js' data-noprefix></script>
+<berto>	sterndata, is what i need covered by wp_localize_script ?
+<sterndata>	look at the codex example  https://codex.wordpress.org/function_reference/wp_localize_script  if you have multiple places the js might be used, you need a few conditionals added.
+<michaelgamble>	hey ok
+<michaelgamble>	so if i have  button and i dont want it to do anything what can i do besides setting its url to #
+<michaelgamble>	b.c. i dont want it jumping things to the top of the page
+<sterndata>	so you want it clickable but non-functional otherwise? how about href="javascript:void();"
+<sterndata>	i suppose that should  be void(0)
+<davidpardy>	hello. i have a client’s wordpress site and can access the backend in the browser, ie their-site/wp-admin…how would i access the actual folders of this site? like,  /wp-content/themes/whatever etc etc
+<hoolyon>	does anyone have an example of a document they prepare when sending a website off to the development team?
+<sterndata>	davidpardy: ssh? ftp?
+<davidpardy>	ssh
+<sterndata>	there are also plugins that give you file system access from the backend
+<davidpardy>	nice, anyone that comes to mind?
+<sterndata>	http://miwisoft.com/
+<sterndata>	http://miwisoft.com/wordpress-plugins/miwoftp-wordpress-file-manager
+<davidpardy>	sweet, thank you
+<rxro>	hello , i am trying to add pagination to my theme along with the existing ( infinite scroll with "load more button" , is there anyone can help be to do that myself with toturial / video ?
+<sterndata>	jak2000: did you even bother to look?
+<jak2000>	yes
+<jak2000>	is free, if want donate
+<jak2000>	:)
+<sterndata>	its free
+<sterndata>	i use version 2; it's simpler than version 3
+<jak2000>	ok thanks
+<sterndata>	i left out one step... you will probably need to edit the db info in wp-config.php due to different hosts having different naming conventions
+<jak2000>	sterndata before run the script?
+<sterndata>	yeah, because it uses the info in wp-config.php to login to the db
+<jak2000>	sterndata:
+<jak2000>	first export db domain1.com, then create domain2.com, then import domain1.com backup to domain2.com
+<jak2000>	right?
+<therealalexz>	jak2000: i've moved sites with the duplicator plugin.
+<therealalexz>	it worked like a charm.
+<sterndata>	jak2000: right
+<impliednude>	i have a plugin that generates a psuedo page called store/products. /store is an actual page and i can retrive the id for that page. how would i go about looking for the permalink /store/products 's id?
+<impliednude>	using is_page to declare all but not a specific slug. how would i go about that
+<bobdobbs>	impliednude: could you use a 'not if' php logical operator?
+<impliednude>	is_page though isn't working for it. it takes out everything past it also when all i want is that specific slug to not show a widget/plugin
+<impliednude>	so even /store/products/testing-2 disappears
+<bobdobbs>	i'm not sure how you are using it
+<bobdobbs>	but (! is_page('target')) should do exactly what you need
+<bobdobbs>	if you don't want a particular page to show a widget then you could do other things as well...
+<bobdobbs>	wrap your sidebar call in some conditional logic
+<bobdobbs>	or have a custom sidebar for that page
+<impliednude>	it's a psuedo permalink created by a plugin
+<impliednude>	to display search results
+<impliednude>	if it actually generated a page id, i could just exclude it from the list
+<joespeakeasy>	quick question for the super users
+<joespeakeasy>	would there be any reason a wp plugin would be attempting to reach mysql via unix socket opposed to the tcp/ip info i put in wp-config? has anyone heard of this behavior?
+<joespeakeasy>	i checked the logs and there is any entry telling me that the script failed because it couldn't connect via a particular .sock… but i config'd wp to use an ip.
+<cupe>	g4
+<impliednude>	bobdobbs> for some odd reason for custom post types it doesnt work. or psuedo permalinks.
+<mg123>	hi guys
+<mg123>	i am trying to find in my access logs what ip address deleted a post, would `cat access.log | grep \&action=trash` be the best way to do so
+<maddtech>	has anyone developed a plugin for gravityforms before?
+<ebonics>	hi i have a client that wants a website semi-ecommerce related. i need to implement a design into wordpress (markup is already done), and also add functionality for importing a database on cron. im wondering if someone experienced could give me some advice as to whether to build the entire thing into the theme, or whether to separate the theme from the db functionality (ie. db functionality ->  plugin, design -> theme)
+<kenshino>	functions that are not aesthetical in nature should be built into the plugin
+<ebonics>	kenshino, i'm not really aiming for semantics here, tohugh. i assumed that was the "right" thing to do, but what exactly is the advantage of doing that?
+<kenshino>	if someone changes the theme, your functions remain
+<ebonics>	kenshino, but say there's a custom post type. what is the best way to have the plugin's custom post type interact with the theme?
+<ebonics>	ie. the template for the custom type
+<kenshino>	default template for custom post type should be in the plugin folder - eg cpt searches first in the theme for overrides - and if it can't be found, use the default in the plugin's folder
+<ebonics>	kenshino, im assuming theres no dependency injection functionality for that whole system right
+<kenshino>	dependency on what?
+<ebonics>	like say the plugin cpt has some specialized css
+<ebonics>	i would let the theme load its default cpt but just hook the content body right?
+<kenshino>	?
+<kenshino>	your cpt would only exist in the plugin
+<kenshino>	what has it gotta do wit hthe theme
+<ebonics>	kenshino, so i just override it completely?
+<ebonics>	i thought i would be able to just hook some part of wp body
+<ebonics>	and override that part
+<ebonics>	ie. say i want the plugin to still use the theme's header, footer, sidebars, etc
+<ebonics>	do i have to call the functions for those things myself from the cpt override in the plugin?
+<kenshino>	no the plugin's templates still load within your theme's templates
+<ebonics>	but say i have a blank php file for my cpt override
+<ebonics>	the page is just gonna have no html on it right?
+<ebonics>	btw thanks kenshino i appreciate your time :| im pretty noob with wp
+<kenshino>	you're confusing yourself - why don't you try writing some parts of it before you ask all these questions? it'll come as you write when you get to know more about wordpress
+<ebonics>	i have some of it written
+<ebonics>	but i'm stuck as to how to design it
+<ebonics>	but i will try, thanks
+<kenshino>	.c load template > ebonics
+<doc-bot>	ebonics: https://codex.wordpress.org/function_reference/load_template
+<ebonics>	kenshino, thanks but all these docs seem pretty thin to be honest
+<ebonics>	well, the ones i'm interested in
+<ebonics>	that will probably help make my plugin more extensible though. it's not exactly what i'm stuck with
+<kenshino>	ebonics: https://tommcfarlin.com/page-template-in-wordpress-plugin/
+<jak2000>	hi friends
+<jak2000>	how to remove: http://postimg.org/image/5aqhqlzvz/
+<jak2000>	in the left
+<jak2000>	remove or modify?
+<ebonics>	thanks kenshino
+<kenshino>	jak2000: in the left?
+<kenshino>	remove what?
+<peter_occ>	there are various functions for getting data from a post from within a loop, such as the_post_thumbnail(); where can i find a list of these functions?
+<quinncom>	right, but wp_debug_log seems only to be for php errors. are you suggesting to generate all errors using `trigger_error('…', e_user_notice)`?
+<quinncom>	i was hoping wp would have a facility for logging debug/info/notice messages to a log independent of php's error reporting.
+<kenshino>	.c _log > quinncom
+<doc-bot>	quinncom: https://codex.wordpress.org/function_reference/log_app
+<kenshino>	wrong one
+<kenshino>	http://fuelyourcoding.com/simple-debugging-with-wordpress/
+<kenshino>	see the _log function
+<quinncom>	log_app "…removed from wordpress core as of version 3.5".
+<quinncom>	ok, so i'll roll my own then, ala _log().
+<kenshino>	:)
+<quinncom>	i would have thought wp would have this =\
+<kenshino>	what are you trying to log?
+<quinncom>	most of what i'll be logging are error conditions, but also success ("received sms from number…") and notice events ("unauthenticated user attempted foo…").
+<kenshino>	okay :)
+<quinncom>	i've always been a bit sore with wp that it didn't have extensive debug logging to see what it's doing (for error or success conditions).
+<quinncom>	i have a mature logging facility written as part of a general purpose framework that works excellent, perhaps i'll port it to a plugin. https://trac.strangecode.com/codebase/browser/trunk/lib/app.inc.php#l665
+<kenshino>	that would be awesome :)
+<whirled>	i have a couple of really long panorama images that i want to feature on a wordpress home page as a slowly moving background image. any suggestions on the best way to facilitate this? one long image, a low-frame rate movie?
+<peter_occ>	here are some query vars for new wp_query($query_args);  http://pastie.org/10192812  i don't really want to order by random, but that's the only thing that words. otherwise, the page dies.  i tried term_id, i tried name but they do't work. why?
+<kenshino>	.c wp_query > peter_occ
+<doc-bot>	peter_occ: https://codex.wordpress.org/class_reference/wp_query
+<kenshino>	orderby doesn't accept term_id directly
+<peter_occ>	kenshino: thanks
+<jak2000>	hi all
+<jak2000>	free templates? anyone can recommend me a site?
+<ebonics>	jak2000, i heard http://wordpress.org had a bunch
+<markisgreat>	what's a good place to get a banner for your website, free preferably
+<opsec>	heh, what?
+<opsec>	.g adsense > markisgreat
+<doc-bot>	markisgreat: http://www.google.com/adsense/start/
+<opsec>	free banners.
+<markisgreat>	no, not google banners, website banners for the name of your page, a place to put a picture and an image to make it look nice
+<markisgreat>	my page has a pre-set banner where you put your own, so you can have your own picture, what is a good place to make one of these?
+<ebonics>	is init called at some point differently from wp-admin than from / ?
+<ebonics>	i'm adding an init hook from a plugin and i'm getting "call to a member function add_rewrite_tag() on a non-object" when i try to load wp-admin. though i don't understand why $wp_rewrite hasn't been loaded yet
+<whirled>	i recently asked if there was any way to register a custom post format (not custom post type) and was told, "not yet" which begs the question, if not yet, any news on when?
+<ebonics>	whirled, a what
+<ebonics>	whirled, like these https://github.com/eddiemachado/bones/tree/master/post-formats
+<ebonics>	?
+<whirled>	some themes support the "post format" feature where you can use the standardized post formats like aside, comment, page, etc.
+<whirled>	ebonics, yes. i kind of felt like those were arbitrary selections (though i am sure there was good logic behind the choices) and would like to be able to define a "chunk" of content that was modular and went inside a page, single-post, etc.
+<ebonics>	whirled, what do you mean arbitrary selections
+<ebonics>	of course they're arbitrary
+<whirled>	sure. but it would be nice if they offered the arbitrary list and allowed for custom formats that you could define yourself much like you can with post types
+<whirled>	if you wanted to have a "user" format or an "event" format which would be much more useful to me than a "chat" format
+<ebonics>	whirled, then add one?
+<whirled>	i was told there is no support for post formats ....yet. before i go reinventing the wheel (poorly, i might add), i was hoping there was news about when it might come out.
+<whirled>	*custom post format, sorry
+<ebonics>	whirled, are those ones i linked not the same thing you want?
+<whirled>	those are the existing ones. i am looking into them now.
+<ebonics>	whirled, those are ones from a completely different theme
+<ebonics>	idk what you mean "the" existing ones
+<ebonics>	they're part of the bones theme
+<whirled>	https://codex.wordpress.org/post_formats
+<ebonics>	oooh
+<whirled>	so your link is the bones implementation of the standard post formats.
+<ebonics>	yeah ic
+<ebonics>	i'm skeptical of any improvement in wordpress
+<ebonics>	they're still using ezsql after how many years?
+<whirled>	i just think it would be nice if there was a standardized nomenclature for methods that used namespacing internally. like all wp_native methods would be wp_the_post() or wp_get_the_post() or what have you.
+<whirled>	and naming convention for when the method would return html, a wp_query, etc. so you can look at the function and know what it returns.
+<ebonics>	i think there would be a s hitload of things that would be nice changes in wordpress
+<ebonics>	firstly start using git
+<virtualsid>	heh
+<whirled>	i wish i was skilled enough to take the source and write a concise version with a ton of shims to make it backward compatible. can't believe nobody's done it.
+<ebonics>	honestly ive hardly ever touched wp
+<ebonics>	i have to write a plugin for a client
+<ebonics>	only reason im touching it
+<ebonics>	and honestly, it's worse than i imagined.. and i thought it was bad before
+<widoz>	hello all
+<whirled>	hello
+<ebonics>	i'm adding an init hook from a plugin and i'm getting "call to a member function add_rewrite_tag() on a non-object" when i try to load wp-admin. though i don't understand why i'm getting this when my init hook should be deferred?
+<ebonics>	how do you even debug it in wordpress?
+<ebonics>	wp_debug doesn't help cause it's fatal
+<momothecat>	anyone have played around with masonry/isotope/packery before
+<anandoriginal>	hey
+<anandoriginal>	im am trying to href mailto in a wordpress image, but its just going to page not found, instead of opening in mail
+<anandoriginal>	if someone could help me, that would be awesome
+<virtualsid>	anandoriginal: how are you writing the link at the moment?
+<anandoriginal>	this my website 'http://www.theanand.me/' if you go on menu bar and click on email
+<anandoriginal>	it will show you
+<anandoriginal>	im fairly sure the html is correct for it, it looks like a fault with wordpress
+<anandoriginal>	@virtualsid  any ideas?
+<dc5ala>	anandoriginal, there are some extra quotes where it shouldn't
+<anandoriginal>	oh, any ideas where?
+<anandoriginal>	i dont think its quotes, quotes look alright?
+<anandoriginal>	unless hrc aint meant to have any quotes
+<dc5ala>	anandoriginal, in the href itself, those don't looke like normal quotes
+<anandoriginal>	oh yes! thank you so much, its retarded mac default text application's quotes
+<anandoriginal>	how did you check btw
+<dc5ala>	anandoriginal, my browser added some normal quotes around those special ones, so it looked like 2 different, then i looked at the source and saw just the odd ones
+<anandoriginal>	ohh, thank you :d
+<anandoriginal>	have a good day
+<bobdobbs>	what could prevent the post thumbnails meta box from being presented in the admin?
+<bobdobbs>	i'm trying to create a custom post type. i started doing it using pods. i activated post thumbnails, but the 'featured image' meta box didn't show.
+<jangoh>	this function returns all posts: http://dpaste.com/2rmbsq1
+<jangoh>	the $cat getting cat id via ajax
+<bobdobbs>	so i deactivated pods and used another plugin to generate my cpt. i had the same issue: no featured image meta box.
+<bobdobbs>	so i then just created the cpt definition by hand, making sure to add 'thumbnail' to the supports array.
+<bobdobbs>	but still! no featured image box!
+<bobdobbs>	this is for a child theme. the parent theme has post thumbnails enabled
+<vimes1984>	morning people
+<vimes1984>	i have a question
+<vimes1984>	is there any way to get a list of profile fields not even there content
+<vimes1984>	just the profile field name
+<vimes1984>	got it
+<vimes1984>	:d
+<bobdobbs>	what is a profile field?
+<vimes1984>	i was looking at get authoer meta
+<vimes1984>	i wanted
+<vimes1984>	get_user_meta
+<bobdobbs>	oh yup
+<vimes1984>	it's early still
+<vimes1984>	thanks for the help bobdobbs
+<vimes1984>	:d
+<bobdobbs>	hehe
+<bobdobbs>	i don't think i was much help. but, i'm glad you got it sorted :)
+<vimes1984>	:d
+<vimes1984>	the moral support helped mate
+<vimes1984>	:d
+<vimes1984>	i'm trying to build a buddypress to aweber
+<vimes1984>	plugin where you can just pick the buddypress fields and which ones you want them to map to in your aweber list
+<vimes1984>	and they just get updated
+<vimes1984>	:d
+<bobdobbs>	that does sound cool
+<vimes1984>	i'm just starting day two
+<vimes1984>	it's goin good
+<vimes1984>	so far
+<vimes1984>	got all the api poop sorted
+<toarushiroineko_>	hello
+<toarushiroineko_>	is there an addon you can reccomend for me for a hover banner?
+<toarushiroineko_>	it merely needs to display a single clickable image.
+<daspence>	what's up with wordpress being exploited? has anyone seen or known news about these new phishing attacks where it infects this:
+<daspence>	~world/hosti/8728b22d7a2d2fc408ce72184c47c558/ ?
+<ibog>	daspence phishing is likely not expliting wordpress... it targets the user
+<daspence>	ah
+<daspence>	sorry for my word mix-up there :/
+<ibog>	this is not a wordpress vulnerability
+<ibog>	i am very familiar with phishing
+<ibog>	which events are you refering to?
+<daspence>	i work for a hosting company and i've seen two reports with the same style of issue. customer comes in and google has told them there is some phishing content on their site (i have yet to locate the content as i do not primary deal with the clean up process)
+<ibog>	wp site is compromised at it's hosting a spoofed webpage?
+<ibog>	daspence is that what you mean?
+<daspence>	from what google has told them yes. this is the link: http://lawacademy.nz/~world/hosti/8728b22d7a2d2fc408ce72184c47c558/
+<ibog>	yes, chrome, safari and mozilla all support googe;s safe browsing api
+<ibog>	if a url is flagged as phishing enough times, those browsers can warn users
+<ibog>	i didn't see what the page was... do you hve a screenshot?
+<daspence>	it just says web forgery
+<ibog>	i see the message from my browser
+<ibog>	but what was the offending content?  it is no longer there
+<daspence>	i'm not sure, and that's what i'm currently investigating
+<ibog>	i manage security for financial institutions and have investigated various phishing incidents.  in my experience, 9 out of 10 incidents involve a website that has been hacked and is hosting a spoofed version of our login page
+<ibog>	this is the same of sites hosting spoofed google login pages... or paypal login pages... etc
+<ibog>	daspence if the provider locked the account, ask them what content there is
+<daspence>	ibog: it looks like iframe injection.
+<daspence>	i went to the page and looked at the source code (bypassing the phishing warning) and see a weird iframe url.
+<daspence>	<frame src="http://domainfwding.com/?dn=lawacademy.nz&fp=tsy09ydcwgo9edt…3sja377f8wbtjwb8yb%2fjmymfvtjtypuw0xscyeomhw4hni%2faiw2g%3d&">
+<ibog>	daspence login to the site and look in the ~world/hosti/8728b22d7a2d2fc408ce72184c47c558/
+<ibog>	whats there?
+<daspence>	checking.
+<daspence>	nothing, just shows suspended page. http://lawacademy.nz/cgi-sys/suspendedpage.cgi
+<ibog>	i mean you need to ftp to the site
+<daspence>	i wasn't able to find anything by ftping
+<ibog>	daspence the provider has removed the content then
+<daspence>	thanks ibog.
+<ldc>	any chances of breaking anything with 3.8 -> 4.2?
+<ldc>	all plugs updated
+<ldc>	*plugins
+<darkelement>	hey guys how can i make the opacity of the background of a page 0 while keeping the text at 1?
+<darkelement>	i can change the entire page but not keep the text opaque
+<devster31>	css?
+<ebonics>	i'm adding an init hook from a plugin and i'm getting "call to a member function add_rewrite_tag() on a non-object" when i try to load wp-admin. though i don't understand why i'm getting this when my init hook should be deferred?
+<benny_>	i need somebody to help me with a theme i have on my website. anybody up for a 1 on 1 chat?
+<svpernaut>	could you be more specific.
+<benny_>	yes, i have a widget i need to modify.
+<benny_>	or more correctly, understand how it works.
+<benny_>	this is my code: http://pastebin.com/bi3jkhx9
+<benny_>	i would like to change the list in the widget.
+<burzum>	is any one here using this plugin? https://wordpress.org/plugins/crayon-syntax-highlighter/changelog/ i have a strange issue with it that it removes and indentation from my code except i let it display the code "plain" without any formatting.
+<opsec>	.p fv code highlighter
+<doc-bot>	opsec: https://wordpress.org/plugins/fv-code-highlighter/
+<opsec>	.p syntax highlighter
+<doc-bot>	opsec: https://wordpress.org/plugins/syntaxhighlighter/
+<burzum>	i would prefer to get it fixed than switching to something else.
+<burzum>	https://wordpress.org/plugins/fv-code-highlighter/ <-- you should remoe that from the bot because "this plugin hasn't been updated in over 2 years."
+<toarushiroineko>	hi
+<toarushiroineko>	i am looking to add a hover banner to my wordpress site
+<toarushiroineko>	what would be a way to do this?
+<svpernaut>	do you have an example of what you want?
+<benny_>	i can explain.
+<benny_>	no live example.
+<toarushiroineko>	sure
+<toarushiroineko>	hmm
+<toarushiroineko>	http://www.magestore.com/skin/frontend/default/affiliateplus50/images/features/scrs/hover-banner-magento-affiliate.png
+<toarushiroineko>	consider the hover banner here
+<toarushiroineko>	i'd be looking something like that
+<toarushiroineko>	rest of the site is inaccessable until the x is clicked
+<benny_>	i have a widget that pulls information from a spesific table in the db. would like to change that. anyone care to hel[?
+<benny_>	i have a widget that pulls information from a spesific table in the db. would like to change that. anyone care to hel[?
+<svpernaut>	try: https://wordpress.org/plugins/wordpress-popup/
+<toarushiroineko>	svpernaut that was perfect, thanks
+<forbidd3_>	woocommerce paypal sandbox ipn response from paypal shows pending after processing payment but doesn't show completed
+<opsec>	contact paypal support or woocommerce support?
+<forbidd3_>	opsec: it isn't paypal. i get the response from ipn. thanks for the suggestion. anyone here use woocommerce that might be able to shed light on this situation?
+<opsec>	heh, sure.
+<opsec>	but this isn't the best place for that support.. just saying..
+<ebonics>	what's the proper way to validate ajax calls in the admin panel? do i really need to load all of wordpress to do it properly?
+<valduare>	hmm im still trying to figure this out.  i have a single page layout and want to auto add categories to the menu  but the urls need to be the categoryname with a # infront   so they are anchor tag links instead...
+<valduare>	any ideas?
+<fris>	ebonics same was as front end, hook into the ajax action
+<fris>	valduare add the category name and prepend with the #
+<valduare>	ya but automated.
+<valduare>	the part thats screwing me up is i already have wp_bootstrap_navwalker in use to get the navbar in a boostrap format
+<fris>	valduare which part automated
+<valduare>	when a new category is added or deleted
+<fris>	valduare make it a custom link
+<fris>	so you can specify the url with the # prefixed
+<valduare>	aye i’ll just have to do it manually with custom links for now
+<fris>	then just use wp_nav_menu_update_menu_items or something
+<fris>	on the category creation
+<fris>	or wp_update_nav_menu_item probably
+<fris>	http://codex.wordpress.org/function_reference/wp_create_nav_menu#examples in the example it shows adding an item, you could bascially get the category etc and add it via your create category hook
+<fris>	valduare here is an example to fire on create category to update nav menu items, you would have to adapt it for your situation though http://wordpress.stackexchange.com/a/99890
+<ebonics>	fris, is this the proper way? https://dpaste.de/9uuw
+<devt204>	i'm using a countdown plugin on a woocommerce store, what i'm trying when countdown reaches 00:00:00 the text inside a wrapper should change, how can i achieve it ? through jquery/php ?
+<toarushiroineko>	svpernaut i also trying to add a button that always stay on the same location on the page even if user scrolls down
+<fris>	ebonics http://wptheming.com/2013/07/simple-ajax-example/ then do the success, and error, etc
+<fris>	also implemet nonce to verify
+<ebonics>	fris, i mean the is_admin part
+<fris>	ya
+<ebonics>	ok cool
+<ebonics>	thanks
+<fris>	if you are going to enqueue the js for the ajax call you can also use a hook so it only loads on that certain page, not all of the admin area
+<ebonics>	fris, yeah i'm doing that currently
+<fris>	add_action( 'admin_print_scripts-post-new.php', using this would only load it on the new post screen
+<fris>	etc
+<toarushiroineko>	any suggestions for me :/
+<vimes1984>	ok finished my little plugin :d
+<vimes1984>	@toarushironeko what's the issue?
+<vimes1984>	hey @valduare!
+<vimes1984>	whats up people?
+<maddtech>	anyone have any experience developing a plugin that expands gravityforms?
+<vimes1984>	@maddtech what you trying to do?
+<maddtech>	vimes1984 i'm trying to use their gform_after_submission to take data from the form and send it to a 3rd party api.
+<maddtech>	my code right now is pretty simple.  it just take 6 entries from the form and then sends them to the api for insertion.  well that never happens.  i've even tried adding a mail(); to the function but it never fires.
+<vimes1984>	is the hook being fired?
+<fris>	maddtech are you passing the 2 vars into the hooked function pssed through gform after submission?
+<fris>	$entry, $form?
+<maddtech>	yes
+<maddtech>	it doesn't appear that it is being fired.
+<fris>	have a look at this example (just the part where it uses the hook) it creates a coupon using the hook https://gist.github.com/spivurno/951d4ab966a26ab31465#file-gw-gravity-forms-create-coupons-php-l39
+<maddtech>	i added an error log to the plugin and this is what i'm getting.  hp warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'post_to_pancake' not found
+<maddtech>	do i need to have an init() in my function?
+<maddtech>	in my plugin not function
+<fris>	no
+<maddtech>	hmmmm
+<fris>	have a peek at a few other gravityforms addons in the plugin repo, some use external apis, so they will have the method youa re looking for
+<maddtech>	does my function need to be a public function or just function?
+<therealalexz>	jak2000: sir, you pinged me
+<fris>	maddtech can be either
+<fris>	do you have a dev copy of gf? if you do have a look at the mailchimp addon, it uses the hook you are wanting to use to post to mailchimp
+<maddtech>	i don't.  this is my first attempt at creating something for gf.
+<fris>	ahh k
+<fris>	i saw the word pancake, you trying to post to pancakeapp the invoicing software? or something else
+<maddtech>	yes pancakeapp
+<fris>	what you attemping to do with the both?
+<fris>	i use pancake myself
+<benny_>	anybody here can help me modify a widget?
+<benny_>	my widget pulls info from a table in the db, i need it to pull info from another table
+<zztopless>	hi everyone.  for some reason my wordpress isntallation (well at least the one i'm working on at the moment) seems to be ignoring at the very least my system's php.ini settings (centos 6.6, php 5.4, apache 2.4).  i noticed it when it gave me a 'your max_upload' had been reached when uploading a 15mb plugin, yet i have "upload_max_filesize = 64m" and "post_max_size = 64m".  i now believe this
+<zztopless>	is what's causign my csv import plugin to crawl along for the last few days... any ideas would be much appreciated...
+<maddtech>	that's awesome fris.  i actually work for pancake.  i'm written code in a stand alone php page that uses our api to insert the data.  i just need to move it into a wp plugin.
+<maddtech>	fris just to let you know i also created a #pancakeapp channel.
+<vip3r>	does anyone know a tool to replicate a diagram like on http://www.behaviouraldesignlab.org/work/services/ ?
+<zztopless>	no runnin <? phpinfo () ?> from the site in question, gives the correct php.ini file, yet it lists (amongst other errors) "upload_max_filesize 2m"
+<zztopless>	*so running
+<zztopless>	yet opening the php.ini file in question, searching for upload_max_filesize (making sure it's not listed in more than one spot) clearly shows the upload_max_filesize 64m
+<burzum>	is any one here using this plugin? https://wordpress.org/plugins/crayon-syntax-highlighter/changelog/ i have a strange issue with it that it removes and indentation from my code except i let it display the code "plain" without any formatting. https://www.dropbox.com/s/wt3w9rxacarjfwg/screenshot%202015-05-17%2019.08.45.png?dl=0
+<devt204>	i'm using a wordpress countdown plugin, now what i'm trying to achieve is when countdown reaches text of a div should change, how can i do it the best ? php/jquery ?
+<fris>	maddtech how bout just try dumping the values before actually sending anything just to make sure the values are being dumped. like print_r($entry); so after the form submit it will show on the screen
+<maddtech>	it won't get that far without that error message coming up.
+<fris>	also you dont really need to use an http request library, wp has its own built in one you can use to post
+<maddtech>	it keeps referencing the add_action when i hit submit saying that "warning: call_user_func_array() expects parameter 1 to be a valid callback, function 'post_to_pancake' not found or invalid function name"
+<fris>	let me install gf here and try and create a form and dump the values see what it shows here
+<maddtech>	okay.  thanks.
+<dlsteve>	not a php expert but you might try post_to_pancake()
+<maddtech>	dlsteve based off of gravityforms docs my add_action is correct.
+<dlsteve>	maddtech, would declaring the function after add_action() affect it?
+<fris>	maddtech weird, i did a form submission,i created a basic form, try here http://noshrimp.com/contact/ enter your details, and click submit you will see
+<maddtech>	what does your code look like?
+<fris>	just add_action( 'gform_after_submission', 'post_to_pancake', 10, 2 ); and function post_to_pancake( $entry, $form ) { print_r($entry); }
+<maddtech>	i removed everything from my app and still gives me that error.  hmmmm
+<fris>	try removing the namespace at the top
+<dlsteve>	yah i think the namespace is what is messing it up.
+<fris>	http://pastebin.com/gbsebss1 the plugin is bascially just this
+<fris>	https://codex.wordpress.org/function_reference/wp_remote_post is what you would use with the built in wp http api
+<maddtech>	awesome.  thanks fris.  found the issue.
+<maddtech>	post_to_pancake is evidently in bruno's code somewhere.  i removed the api namespace.
+<dlsteve>	php is an odd language.
+<maddtech>	fris namespace pancake; kills the app.
+<fris>	looks like you are jusr sending to a post, you wouldn tneed any other code, just the request lib or wp's
+<lobstah>	is there a known issue with twenty fifteen theme in that it's not full width?  there's a fairly good sized right-sided blank margin when viewing the browser at full screen
+<fris>	lobstah do you have any plugins enabled?
+<lobstah>	fris : no, i do not
+<dlsteve>	lobstah, demo looks fine for me.
+<lobstah>	hmmm - odd
+<dlsteve>	https://twentyfifteendemo.wordpress.com/
+<fris>	havent noticed the 2015 theme doing that
+<lobstah>	fris dlsteve  - you can see the right sided margin that i'm referring to:  http://postimg.org/image/x36t9w743/ - very odd - i might do a fresh reinstall to be safe
+<fris>	thats not 2015
+<fris>	2014 theme
+<lobstah>	well crap - haha - so is that a known issue with 2014 then??
+<lobstah>	(my bad - sorry about that  on the 2014 vs 2015)
+<lobstah>	and you're right - 2015 doesn't do it - but 2014 does
+<fris>	no idea, havent really used the 2014 theme
+<lobstah>	fris just looked - it's a known issue with 2014; by design.  could edit the css to make it full width though it appears... appreciate the correction to my error on themes
+<fris>	https://kb.webhostface.com/knowledgebase/how-to-make-wordpress-twenty-fourteen-theme-full-width/
+<fris>	http://voodoopress.com/use-screen-real-estate-making-twenty-fourteen-wider/ another decent link
+<fris>	http://www.tjessberger.com/free-download-wordpress-fourteen-extended-plugin/ has a few other tweaks too
+<fris>	https://wordpress.org/support/topic/twenty-fourteen-theme-not-full-width-for-high-resolution-monitors or just this css
+<pellos>	hi guys how can i remove <h1 class="page-header">home</h1> from my homepage? i am trying to hide "home". thanks in advance

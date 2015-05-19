@@ -1,0 +1,26 @@
+<philipballew> linux users group of tijuana mexico (yes i know this is not our turf)  monthly meeting is underway.
+<philipballew> we're talking abut uptime
+<donkeyhotei>  17:22:45 up  4:09,  6 users,  load average: 0.31, 0.36, 0.49
+<philipballew> donkeyhotei, i prefer uptime -p
+<philipballew> its prettier.
+<donkeyhotei> up 4 hours, 20 minutes
+<donkeyhotei> meh
+<nhaines> nhaines@tethys:~⟫ uptime -p
+<nhaines> up 9 weeks, 1 day, 2 hours, 10 minutes
+<philipballew> nhaines, have you ever tried updating?
+<philipballew> i hear its fun.
+<nhaines> yes, i ran updates last night.
+<philipballew> no kernel updates for you?
+<nhaines> not currently needed.
+<philipballew> soon when all are running 4, updates with reboot with be needed
+<philipballew> *wont
+<nhaines> there's more work to it than that, but i'll be looking forward to that.
+<roguehorse> 22:09:02 up 9 days,  2:49,  5 users,  load average: 0.35, 0.38, 0.65
+<nhaines>  22:20:12 up 2 days,  8:21,  3 users,  load average: 0.57, 0.55, 0.50
+<nhaines> i try to shut down at least every other day.
+<ianorlyn> i shut donw a lot because kernele upgrades a lot on devlopment version
+<ianorlyn> or other low level stuff
+<nhaines> dev versions are for virtual machines.  :)
+<ianorlyn> i do both
+<ianorlyn> i run vms of the dev release on the dev release
+<nhaines> devception.

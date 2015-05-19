@@ -1,0 +1,2 @@
+<ianorlyn> um is the openbox window manager context menu supposed to be there when slecting install in ubiquity?
+<ianorlyn> cause i have used it in the past to launch a terminal so i didn't have to switch tty to export display to run ubuntu-bug

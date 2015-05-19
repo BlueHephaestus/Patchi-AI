@@ -1,0 +1,10 @@
+<fo0bar> test (ubuntulog)
+<alanbell> http://irclogs.ubuntu.com/2012/02/01/%23ubuntu-classroom-es.html
+<alanbell> m4v: ^^
+<m4v> alanbell: gotcha
+<m4v> alanbell: ops, i don't have +s so i can't set the entrymsg
+<alanbell> erm, right
+<alanbell> try now
+<m4v> done
+<alanbell> great
+<alanbell> adios o/

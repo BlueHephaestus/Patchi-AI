@@ -1,0 +1,97 @@
+<darkelement>	hey guys how can i view and make databases, tables, etc. with a program, rather than just the command prompt?
+<aradapilot>	!t darkelement client
+<aradapilot>	hm
+<darkelement>	i can use ubuntu or windows, just kinda new to this and hoping to use what i saw a friend use
+<aradapilot>	there's no client one?
+<aradapilot>	darkelement: navicat, sequelpro, workbench, some others
+<aradapilot>	there are quite a few options
+<darkelement>	alrighty
+<darkelement>	easier on linux right
+<aradapilot>	try a couple and pick whichever you like best
+<aradapilot>	most are cross-platform
+<darkelement>	aradapilot, i will do just this, thank you
+<darkelement>	i think i'll use ubuntu anyway
+<darkelement>	xd
+<aradapilot>	cool, start with those.  i think sequelpro might be mac only, the other two are all platforms
+<nesoi>	oops, hardware problem
+<nesoi>	so what was the obvious solution to my mysql cli login issue? :)
+<aradapilot>	mysql -h hostname/ip
+<nesoi>	-h and then -u then -p?
+<darkelement>	aradapilot, is navicat lite alright?
+<darkelement>	aradapilot, also, how will we know there was lightning now?
+<nesoi>	worked!
+<nesoi>	thanks!
+<darkelement>	*lite -> free trial
+<darkelement>	also unsure which is better for all of this, ubuntu or windows 7. opinions?
+<mgriffin>	aradapilot++
+<aradapilot>	darkelement: yeah go for the free trial.  if you like it, they have a $15 version that has the most useful stuff.
+<aradapilot>	i use ubuntu on my desktop and have a mac laptop
+<darkelement>	aradapilot, alright, but which os woudl you recommend for it
+<darkelement>	oh.
+<darkelement>	so you haven't tried it in windows? how is it on ubuntu?
+<aradapilot>	works fine
+<aradapilot>	yeah, i don't have a windows machine
+<darkelement>	alright
+<darkelement>	i've been liking linux more and more anyways
+<darkelement>	xd
+<aradapilot>	welcome to the club!
+<darkelement>	coming closer and closer to fully booting into and installing ubuntu on my currently windows 7 laptop. just vmware for now, howver.
+<darkelement>	*installing ubuntu and never going back*
+<mgriffin>	thumbs++
+<nesoi>	does anyone here know if snapshots are guaranteed to be transaction-consistent?
+<nesoi>	and have a reference? :)
+<ss23>	what kind of snapshots?
+<nesoi>	aws rds mysql snapshots actually ss23
+<nesoi>	but snapshots in general
+<nesoi>	i haven't found any reference to how transaction safe snapshots are so far
+<mgriffin>	anything that isnt commited will be rolled back on startup
+<nesoi>	mgriffin:  so you're saying that they do end up consistent?
+<mgriffin>	nesoi: i would check with your provider but they would be pretty worthless otherwise
+<nesoi>	heh. true, but i never assume anything will work as expected unless someone says it really does. and even then i'm not 100% certain.
+<mgriffin>	well ask your provider and get it in writing (or read the docs they have written and have a lawyer double check everything)
+<nesoi>	mgriffin:  :)
+<mgriffin>	"snapshots" in general can be either consistent or inconsistent, depending on your data and your method
+<mgriffin>	blindly creating an lvm/xfs snapshot should be safe if you don't care about non-transactional tables
+<nesoi>	interesting. what do you mean about "non-transactional tables'?
+<nesoi>	mean by
+<mgriffin>	!t nesoi myisam
+<ubiquity_bot>	nesoi: a malfunctioning form of blackhole engine that sometimes accidentally stores data.
+<nesoi>	oh i see
+<nesoi>	but if we're using innodb that's not an issue, you're saying.
+<mgriffin>	maybe. do you care about binary log position?
+<mgriffin>	also, if you are using innodb, maybe you want xtrabackup not "snapshots" if snapshots are really expensive in your case
+<mgriffin>	https://www.percona.com/blog/2013/07/09/lvm-read-performance-during-snapshots/
+<mgriffin>	(does not apply to thin provisioning)
+<nesoi>	i'm not sure if i do or not in this case. if we restore from a snapshot and set up replication subsequently it probably doesn't matter?
+<mgriffin>	not sure what you are asking.
+<nesoi>	maybe i'm not either! how about: when would one care about binary log position with regard to snapshots?
+<mgriffin>	pitr or new slaves of this server
+<mgriffin>	(using existing backups)
+<nesoi>	so let's say we have a replicated server
+<nesoi>	and everything fails totally
+<nesoi>	and we're left with a snapshot
+<nesoi>	and have to bring it all back from that
+<nesoi>	are there any issues there that i should think about?
+<mgriffin>	pitr
+<nesoi>	other than that i'm not seeing a case
+<nesoi>	pitr?
+<mgriffin>	yes, the thing i keep talking about
+<nesoi>	:)
+<nesoi>	i see
+<nesoi>	so what do you do if you care about that?
+<mgriffin>	usually you hold flush tables with read lock, acquire the binary log position, create the snapshot, and finally release the lock
+<mgriffin>	rds might be something different'
+<nesoi>	ah
+<nesoi>	i think this is dong what your'e suggesting https://github.com/alestic/ec2-consistent-snapshot
+<nesoi>	hm. or maybe not
+<mgriffin>	that is not rds.
+<nesoi>	oops, right. maybe worth asking aws support about.
+<mgriffin>	nesoi: start with docs http://docs.aws.amazon.com/amazonrds/latest/userguide/user_pit.html
+<nesoi>	good idea
+<nesoi>	right, that's with backups
+<nesoi>	but this is a different use case
+<mgriffin>	i have no idea sorry.
+<nesoi>	thanks though!
+<jjjack>	what's the best approach to creating a report from multple table count and date range?
+<aradapilot>	jjjack: a query!
+<aradapilot>	we're going to need a bit more info than that

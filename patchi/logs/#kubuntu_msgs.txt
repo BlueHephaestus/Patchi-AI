@@ -1,0 +1,201 @@
+<gefiltefish> can someone help me fix this "boot device not found 3f0" error? what i did was delete my efi partition now i'm stuck with a bricked laptop with xubuntu installed, but inaccessible. all the linux distros i've tried on a liveusb won't boot. super grub2 disk is the only exception but it's kind of useless. i can use it to get to xubuntu's terminal though.
+<sjr> hmmmm i tried install nvidia drivers from some website that i found and now after rebooting x won't start.
+<beast> hi
+<beast> anyone know a way to get a stylus to work on a toshiba laptop running kubuntu 14.04, the wacom-tools package is no longer available and everything i've found points to that package :(
+<gino__> ciao
+<gino__> film
+<martinpaprika> hallo ????
+<blueskaj> hiyas all
+<mfeiz> hi. i just finished with minimal setting customization on a new kubuntu 15.04 install a while ago. if i switch akonadi db backend from mysql to sqlite now, what would i need to re-do again?
+<kirk_> konversation is pretty, almost as nice as weechat
+<kirk_> konversation is pretty, almost as nice as weechat
+<badluckryan> hello, can someone walk me through how to recreate my efi partition? i deleted it by accident but found a way to make one with gparted. i have a workaround to get to xubuntu desktop but when my laptop boots normally i get "boot device not found 3f0".   basically, i need to repopulate the /boot/efi/ path
+<blueskaj> !uefi
+<ubottu> uefi is a specification that defines a software interface between an operating system and platform firmware. it is meant as a replacement for the bios. for information on how to set up and install ubuntu and its derivatives on uefi machines please read https://help.ubuntu.com/community/uefi
+<badluckryan> ok thanks
+<badluckryan> is it possible to repopulate my efi partition via command line?
+<badluckryan> because i can't reinstall my os via live usb.. it jist wont boot
+<blueskaj> badluckryan, try the legacy mode with secure boot disabled in the uefi/bios
+<blueskaj> badluckryan, and the usb as first in the boot sequence
+<badluckryan> i've tried that numerous times unless theres a specific way to enter 'legacy mode'. i just press f10 and get to the bios
+<blueskaj> badluckryan, in the uefi/bios look for the uefi in the "boot" section of the efi/bios and click it to change to legacy
+<badluckryan> yea my laptops completely bricked now. and there is no legacy mode option in my bios. using a pavilion x2
+<robertjdohnert> the pavilion x2 has a legacy mode
+<robertjdohnert> badluckryan its under secureboot configuration
+<badluckryan> maybe im blind. so i press f10 which takes me to my "setup utility" (bios right?)
+<badluckryan> go over to system configuration
+<badluckryan> 'boot options'
+<robertjdohnert> right and you should have something that says
+<robertjdohnert> secureboot configuration
+<badluckryan> i only have the option to enable and disable it
+<badluckryan> there are two blacked out options under it that say "platform key" & "pending action"
+<robertjdohnert> when you disable it thats legacy mode
+<badluckryan> oh, well that doesn't help because it's been disabled
+<robertjdohnert> once its been disabled you dont need to use gpt formatting
+<robertjdohnert> legacy mode does not recognize gpt formatting
+<robertjdohnert> if your drive is larger than 2 tb's you need to partition it off
+<blueskaj> uefi isn't cooperating with his usb boot on which he has a kubuntu image to install
+<robertjdohnert> and he toasted his drive
+<blueskaj> how? , we didn't suggest any partitioning
+<robertjdohnert> he just said the thing wqas a brick
+<robertjdohnert> is it a good key? because with secure boot disabled it should start
+<blueskaj> well, that's because his boot sequence wasn't set up to boot usb first afaik
+<oerheks> maybe fastboot is enabled, that can cause trouble too
+<badluckryan> my os is completely wiped now
+<blueskaj> yeah oerheks, good point
+<badluckryan> theres nothing left. no linux-swap, efi, or os
+<blueskaj> badluckryan, how do you know?
+<badluckryan> i did put usb first on the list
+<blueskaj> did you use the live media to wipe it
+<badluckryan> because i can boot up super grub2 disk & i can see that my os is no longer bootable
+<badluckryan> linux-swap may still be lingering around
+<blueskaj> which os?
+<badluckryan> theres something about super grub2 disk thats allowed to boot via usb while others just cant
+<badluckryan> kubuntu
+<blueskaj> do you have a windows install ?
+<badluckryan> i have nothing now.. i just need something thats bootable
+<badluckryan> no, no windows either
+<robertjdohnert> well you can always go download the windows 10 preview
+<blueskaj> did you have ? and /home partitions ?
+<blueskaj> oops / amd /home
+<badluckryan> i dont think its that easy. windows 10 probably wont boot from liveusb
+<badluckryan> i dont know blueskaj
+<badluckryan> im just stuck on "boot device not found 3f0" and the only thing that can actually boot via liveusb is super grub2 disk. i tried ubuntu, manjaro, opensuse, etc to no avail.
+<oerheks> if win10 would not boot from usb, surface guys going to cry
+<ascot> hello there, is it possible to prevent screen locking in kubuntu 15.04 while playing youtube or flash players (twitch) in fullscreen or not? i already tried caffeine but didin't work
+<robertjdohnert> actually windows 10 does boot from usb i installed it on an envy from usb
+<robertjdohnert> you need a usb creator https://rufus.akeo.ie/
+<robertjdohnert> ascot, no 15.04 uses plasma 5 beta and currently there is nothing that works
+<robertjdohnert> thats why most people have gone back down to 14.10 or 14.04
+<ascot> oh i see, guess i'll just have to increase the time, thanks for the quick answer!
+<robertjdohnert> you can try mucking with your power and display options but the problem being that those settings will be permanent until you change them
+<robertjdohnert> plasma 5 makes me want to use unity sometimes
+<blueskaj> i miss the different wallpapers on each virtual desktop
+<robertjdohnert> i feel bad for badluckryan
+<blueskaj> can't assign them anymore, each vd uses the same background
+<blueskaj> i wonder if he actually lost his os , i think i he went back to uefi mode the boot flag will reappear on that  partition
+<blueskaj> i=if
+<moonunit`> i can't use a clean configs in plasma5, folder mode always switches to my smaller 2nd monitor. have to copy settings over from one i made in rc1.
+<moonunit`> a frustrating bug me for
+<caos> has anyone tried to change icons by adding a new folder to /usr/share/icons in 15.04?? i had a bad time trying it.
+<naphatul> how do i get thumbnails for video files back? i'm on 15.04
+<voyage> i plugged in a usb disk but dolphin is not showing it. what should i do? it used to auto mount it even in the past.
+<blueskaj> voyage, open the partition editor and mount it there
+<ninjahmahs> is there any way to get firefox to be less teary using a gtx 970 and proprietary drivers from nvidia?
+<blueskaj> ninjahmahs, why not use the recommended drivers?
+<voyage> my desktop isnt just loading. i see no taskbar and no wallpaper. xhcat just popup up so i am able to chat here. tried rebooting too. same
+<voyage> anyhelp?
+<blueskaj> voyage, do you have a terminal ? if not drop to the tty/vt and update and upgrade
+<voyage> yes
+<voyage> ok
+<blueskaj> no need to use the vt if you have a terminal availble on the desktop
+<etriaph> can someone test if ksysguard reports no io on /dev/sr0 when you're reading/writing to a cd/dvd/brd?
+<etriaph> on 15.04 w/plasma 5.3 ppa
+<voyage> blueskaj,  no use
+<voyage> same again
+<voyage> after upgrade
+<blueskaj> voyage, which graphics chip/gpu?
+<voyage> intel
+<ninjahmahs> blueskaj i am using the recommended drivers???
+<blueskaj> nvidia-340 ?  ninjahmahs
+<ninjahmahs> 346
+<ninjahmahs> is the recommended in my driver manager
+<voyage> blueskaj,  it was working fine before
+<voyage> blueskaj,  can i just reconfigure kde?
+<blueskaj> voyage, plasma 5.2 or 5.3?
+<voyage> lastest
+<voyage> not sure
+<voyage> but as i upgraded. it should be latest
+<zippi> ninjahmahs, do you have the screen tearing prevention on? if so, try to change opengl from 2.0 to 3.1 and back again
+<zippi> or the otherway around
+<zippi> or change tearing prevention off and on again
+<zippi> there are silly fixes that might work
+<blueskaj> ff has a new version as well, but it should have have autoupgraded
+<ninjahmahs> tearing prevention is on auto
+<zippi> i don't think auto works, for me it doesn't help with tearing
+<zippi> kinda like, it's not detecting tearing to begin with
+<blueskaj> ninjahmahs, firefox 37.02?
+<ninjahmahs> the stock ffox that came with kubuntu 15.04
+<ninjahmahs> installed like  1 day ago so the latest version from update
+<zippi> i think that would be 38
+<ninjahmahs> tbh having set the compositor to either of the open gl modes makes it not tear
+<ninjahmahs> it was on xrender before
+<zippi> i see
+<zippi> anyway, i think something wonky going on with the compositor and tearing, only if you change some setting, does it start to work
+<ninjahmahs> in opengl intwerface option i get glx or elx choice, should i be using one in particular, its defaulted to glx and seems like things are ok
+<zippi> glx should be ok
+<ninjahmahs> right, i thought it was maybe something to do with noveau getting installed during fresh install
+<ninjahmahs> then applying the nvidia drivers after
+<ninjahmahs> as i seem to recall that when you use nvidia drivers a lot of people have suggested purging noveau afterwards or at least blacklisting, and im a bit new to linux
+<zippi> i'm quite new too, though haven't heard about that
+<zippi> i would expect the driver manager to purge the noveau while installing the nvidia one though
+<ninjahmahs> not sure if its still relevant but yeah some people were finding having both noveau drivers and nvidia drivers around would cause issues sometimes
+<ninjahmahs> yeah maybe it does in newer versions of ubuntu base
+<zippi> i think i can check if i still have it
+<ninjahmahs> like installing kubuntu 15.04 was the first time that when i clicked the driver manager it actually had re cognised and offered me the proprietary drivers as an optiong, mint had a no drivers installed message
+<ninjahmahs> and was a right run around
+<zippi> it does seem i still have the nouveau driver installed
+<ninjahmahs> if you google about a little, you will see a lot of people find purging nouveau helps when using nvidia drivers
+<ninjahmahs> although im not sure how that is on this version of ubuntu base
+<zippi> yeah, i'll do some research
+<ninjahmahs> odd i cant seem to get these to install
+<ninjahmahs> the packages containing debug information for the following application and libraries are missing:
+<ninjahmahs> /usr/bin/plasmashell
+<ninjahmahs> /usr/lib/x86_64-linux-gnu/libqt5core.so.5
+<ninjahmahs> /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqxcb.so
+<ninjahmahs> and another 4 similar
+<ninjahmahs> cant send this bug report as it isnt good enough without those installed but it wont let me install them *shrugs*
+<grokling> so, on the nvidia topic - i've found that kubuntu 15.04 blacklists nouveau with nvidia is installed/chosen. the nouveau driver is working better for me at the moment anyway (i have two cards, four screens)
+<ninjahmahs> fair, i dont even really need the nvidia drivers i guess
+<ninjahmahs> i mean im only really using linux for compiling (or practicing to) android roms
+<zippi> i don't think i tried the nouveau myself either
+<zippi> just went with the recommended right away
+<ninjahmahs> i notice the recommended is not the latest version as well
+<grokling> i tried the nvidia driver, and it broke stuff - four screens = xinerama, and xinerama is well past it's use-by date now. the nvidia driver only exposed one gpu to xrandr, so that was a deal breaker.
+<ninjahmahs> nvidia site offers 346.72 kubuntu suggests 346.59
+<grokling> i'm well impressed with the kubuntu auto-configuration stuff with nouveau. this is the first distro i've found that will, out of the box, spin up all four of my screens without me having to mess around with drivers, xorg.conf etc. etc.
+<ninjahmahs> yeh i was quite impressed with my fresh install with kubuntu
+<ninjahmahs> fyi
+<ninjahmahs> if people come in saying they are getting random reboots, ask them if they are on an asus motherboard
+<ninjahmahs> if they are tell them to google anti-surge protection asus bios setting
+<ninjahmahs> :p
+<ninjahmahs> it really hates linux and acpi
+<ninjahmahs> like a lot
+<grokling> asus, only with a very long stick for me now.
+<ninjahmahs> learning that myself
+<ninjahmahs> although their gtx line is actually pretty solid for me so far
+<grokling> ninjahmahs: can you have a quick look in libreoffice and see if you're getting tooltips? i get the boxes appear, but no words.
+<ninjahmahs> sec
+<grokling> not sure if it's graphics, themes, libreoffice or something else!
+<ninjahmahs> so u mean as in when i hover over any button on the ribbons?
+<ninjahmahs> as im getting text fine
+<grokling> i also had no mouse cursor until i dropped back to the xrender compositor.
+<grokling> yeah, valid test. i get just grey boxes hovering the ribbon buttons.
+<ninjahmahs> shows for me in any libre app
+<ninjahmahs> file bug report
+<ninjahmahs> might be nouveau specific
+<grokling> just me then. dumb. sometimes i wish i was mainstream!
+<ninjahmahs> lol
+<ninjahmahs> im only mainstream on the nvidia driver, just figure its going to best utilise the gfx card tbh
+<ninjahmahs> specially with the newer cards
+<ninjahmahs> maxwell and linux = issues in general from what im told
+<grokling> yeah, tempting, but i'm on a pair of gt210s, and they are basic at best (but solid state, so quiet, with two outputs from each) it's the fact that the nvidia driver only exposes one interface to xrandr that stops me using it.
+<grokling> i can run the nvidia driver fine, but only get two screens for my trouble.
+<ninjahmahs> yeh im on a gtx 970
+<ninjahmahs> the asus direct cu cooling is basically silent
+<ninjahmahs> coolers dont kick in until 60 degrees
+<grokling> my gpus never get over 45, and that's pure heatsink goodness.
+<ninjahmahs> although coil whine happens here and there especially on less intensive games as the frame rates go crazy high in menus and cause the whine to be quite noticeable
+<zippi> hmm, this feels ridiculous
+<zippi> i went to nouveau, it really didn't work well for me
+<ninjahmahs> ?
+<zippi> now i got back to the recommended driver and now everything just werks
+<ninjahmahs> gpu model?
+<zippi> no tearing, pretty smooth as well
+<zippi> gtx 770
+<ninjahmahs> yeh so maxwell chip
+<ninjahmahs> basically anything maxwell is almost "too new" for linux right now, hence why i sticking with the nvid drivers
+<zippi> my laptop worked well right away, with both nouveau and nvidia one
+<zippi> it was kinda driving me insane that i got better experience on laptop than desktop
+<zippi> but now it seems okay
+<grokling> zippi: same experience for me.. laptop is perfect. reckon the devs work on their laptops mostly?

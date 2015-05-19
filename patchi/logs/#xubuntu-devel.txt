@@ -1,0 +1,6 @@
+=== tahr193531 is now known as stevend4le
+[12:21] <pleia2> knome: yeah re: hellotux on donations page
+[16:37] <Unit193> bluesabre: Can we just sync xfpm and get it over with?
+[16:40] <Unit193> http://paste.openstack.org/show/pPfZEjWPlIpK8VHoJiND/
+[16:54] <elfy> hi Unit193 
+[17:25] <Unit193> Howdy, elfy.

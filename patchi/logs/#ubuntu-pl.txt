@@ -1,0 +1,121 @@
+[06:33] <gjm> Ashiren: jaki kebab
+[06:42] <mattti> kebab?
+[06:42] <mattti> mam czuć się zaproszony?
+[06:42] <Dread> nie
+[06:43] <Dread> jak nie płacisz za wszystkich to nie
+[06:43] <mattti> a jak tylko za siebi?
+[06:43] <mattti> *siebie
+[06:46] <Dread> to nie
+[06:46] <gjm> dokładnie, nie
+[06:51] <m477> jacekowski: kojarzysz czy mplayer potrafi z klatek montowac film? albo czy jest cos, co nie jest ffmpeg'iem
+[07:18] <Dread> mplayer
+[07:18] <Dread> montować
+[07:18] <Dread> choose one
+[07:18] <Dread> i why not ffmpeg
+[07:24] <Ashiren> moze mencoder
+[07:29] <m477> Dread: bo jest cos zwalone w mintcie, zrodla nie dzialaja
+[07:30] <Dread> dokładniej coś?
+[07:30] <gjm> womencoder
+[07:34] <m477> Dread: $ sudo add-apt-repository ppa:jon-severinsson/ffmpeg
+[07:36] <gjm> no tak, bo w ubu jest libav xD
+[07:37] <m477> a kto mowi ze mam ubu?
+[07:49] <Ashiren> pacman -S ffmpeg
+[07:49] <Dread> >ppa
+[07:50] <TheNumb> m477: mint to ubuntu
+[07:50] <TheNumb> jeden chuj
+[07:50] <Dread> m477: weź jak normalny murzyn skompiluj z oficjalnych źródeł, a nie jakieś szajsy sie bawisz
+[07:50] <TheNumb> w 15.04 już masz ffmpega jak człowiek
+[07:50] <TheNumb> a nie libav
+[07:50] <TheNumb> ...
+[07:50] <TheNumb> w sumie to obydwa są
+[07:50] <TheNumb> m477: albo zrób sobie gento z USE="-libav ffmpeg"
+[07:50] <TheNumb> i wyjabene
+[07:51] <m477> mam 17 i nie ma
+[07:51] <m477> juz zainstalowalem
+[07:51] <TheNumb> mint 17 to ubuntu 14.04
+[07:51] <TheNumb> z czym do ludzi?
+[07:51] <TheNumb> ...
+[07:52] <TheNumb> w *15.04* jest ffmpeg
+[07:52] <TheNumb> kapiszi?
+[07:52] <m477> nie ma minta 18, czaisz?
+[07:52] <Dread> no to zainstaluj system który wspiera porządne pakiety
+[07:52] <Dread> a nie jakieś szajsy
+[07:52] <TheNumb> m477: i nie będzie do 2016
+[07:52] <m477> no wlasnie sie przymierzam do tego
+[07:53] <TheNumb> m477: w ogóle to z problemami z mintem out na #linuxmint-pl
+[07:53] <TheNumb> tutaj jest #ubuntu-pl
+[07:53] <Dread> tam Ci powiedzą żebyś zainstlował co innego :D
+[07:53] <m477> ale nie chce mi sie druygi raz wszystkiego instalowac :<
+[07:53] <TheNumb> Dread: dokładnie.
+[07:53] <m477> <TheNumb> mint 17 to ubuntu 14.04
+[07:53] <m477> jaki problem
+[07:53] <TheNumb> Napiszą mu żeby zainstalował ubuntu :DDD
+[07:53] <m477> wiec
+[07:54] <TheNumb> m477: widzisz różnicę między 15.04 a 14.04?
+[07:54] <m477> >_>
+[07:54] <TheNumb> Na dodatek mint nie jest wspierany na kanale #ubuntu
+[07:54] <TheNumb> A #ubuntu-pl to oficjalny polski kanał.
+[07:54] <TheNumb> Tutaj obowiązują te same zasady.
+[07:54] <m477> ojej
+[07:55] <Dread> m477: chcesz mieć ubuntu, to zmień repo i zrób sobie apt-get upgrade
+[07:55] <Dread> będziesz miał ubuntu ;d
+[07:55] <m477> nie chce
+[07:55] <Dread> leń
+[07:55] <m477> korzystalem z ubu z pińć lat
+[07:57] <TheNumb> i zacząłeś używać ubuntu z upośledzeniem
+[07:57] <m477> o fak, chleb mi spadl z polki na klawe ;o
+[07:57] <TheNumb> ech
+[07:57] <TheNumb> co ci ludzie
+[07:57] <m477> wut?
+[07:57] <TheNumb> LM to takie gorsze ubuntu.
+[07:58] <TheNumb> Gdyby pojawiła się edycja ubuntu z cinnamonem to LM był by skończony.
+[07:58] <TheNumb> Najlepiej by było gdyby cinnamon w ogóle nie powstał.
+[07:58] <TheNumb> To takie gorsze GNOME 3.
+[07:58] <TheNumb> Które i tak jest gnuwniane.
+[07:58] <m477> imo takie bardziej gnome 2.5
+[07:59] <TheNumb> yyy
+[07:59] <TheNumb> nie
+[07:59] <TheNumb> gnome 2.5 to bardziej MATE :p
+[07:59] <m477> no moze
+[07:59] <m477> nie wiem
+[08:00] <m477> gnome3 jest w ogole unusable
+[08:01] <TheNumb> jest używalne
+[08:02] <TheNumb> ale z kilkoma rozszerzeniami
+[08:03] <m477> w postaci innego srodowiska
+[08:49] <m477> w 15.04 sa jeszcze Xy?
+[08:50] <TheNumb> no tak
+[08:50] <gjm> igreki
+[11:18] <Wizard> Gimby nie znajo :(
+=== Diabelko is now known as systemd
+[19:05] <mattti> heja
+[19:05] <mattti> czy wy plus
+[19:06] <gjm> nie, minus
+[19:07] <mattti> minus gsm
+[19:32]  * Wizard ziewa
+[19:35] <TheNumb> Wizard: nie ziewaj bo ci karaluch wpadnie
+[19:35] <Wizard> Nie ma tu karaluchów
+[19:35] <Wizard> Co najwyżej papugi
+[19:35] <Wizard> Wrzeszczo i srajo
+[19:35] <gjm> ale ja jestem
+[19:36] <Ashiren> albo palec ci wloza http://img0.joyreactor.com/pics/post/cat-yawn-finger-gif-1697318.gif
+[19:37] <gjm> ja tak zawsze robię
+[19:37] <Wizard> Ja kotu
+[19:38] <mattti> lepiej zaśliniony do ucha komuś
+[19:38] <mattti> albo kotku
+[19:39] <gjm> albo w dupę
+[19:42] <Ashiren> raz w dupe to nie pedal
+[19:43] <gjm> no to dawaj
+[19:58] <mattti> jak się nazywa aplet w tacce systemowej kde odpowiadający za dźwięk
+[19:58] <jacekowski> kmix
+[19:59] <mattti> a jak go dodać do tacki?
+[19:59] <mattti> albo mam jakiś bląd
+[19:59] <mattti> że to nie działa jak powinno
+[20:07] <mattti> po usunięciu i reinstalacji kmix pojawia się w tacce systemowej
+[20:09] <TheNumb> nie trzeba usuwać
+[20:09] <TheNumb> wystarczy go uruchomić ,_,
+[20:10] <TheNumb> alt+f2 i wpisz kmix
+[20:16] <mattti> już za późno
+[20:16] <mattti> ale fakt można spróbować to zrobić w ten sposób
+[20:18] <mattti> a jak przypisać skrót Alt+F1 by wyświetlał się pasek z aktywatorami programów przycisk start
+[20:19] <mattti> nie wiem jak w nazywa się to działanie w programie do skrótów
+[20:20] <mattti> kiedyś sobie już to w jakiś sposób utworzyłem ale niestety już nie pamiętam

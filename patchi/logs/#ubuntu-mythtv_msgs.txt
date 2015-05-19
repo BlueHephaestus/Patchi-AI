@@ -1,0 +1,6 @@
+<knight80> hello everyone!
+<knight80> good afternoon from spain
+<knight80> :)
+<knight80> i'm having some problems with my remote and mythtv
+<knight80> i'm putting the lircrc file in /home/user/.mythtv
+<knight80> but still doesn't work

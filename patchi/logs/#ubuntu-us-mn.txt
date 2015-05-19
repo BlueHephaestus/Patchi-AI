@@ -1,0 +1,18 @@
+[15:00] <h00k> mr_steve: do you happen to be around?
+[15:02] <mr_steve> h00k, I am
+[15:03] <h00k> mr_steve: can you grab the latest branch and give voicecheck a try again?
+[15:03] <mr_steve> sure can
+[15:03] <h00k> I didn't update the .tar.gz yet
+[15:04] <mr_steve> looks like the latest revision works for me too
+[15:04] <h00k> ahha, alright.
+[15:14] <h00k> and the tarball is released
+=== mr_steve_ is now known as mr_steve
+[21:40] <Takyoji> I love how pathetic the people that administrate our school district are
+[21:41] <Takyoji> Apparently I was talking with with the teacher that helps with the school newspaper, and was talking on the topic of raising awareness of the issue I wrote about, and she said that she's trying to go infront of a School Board over the idea of having the school news also available online and one of the arguments against it is that the website might attract online sexual predators.
+[21:47] <tonyyarusso> wait, what?
+[21:48] <tonyyarusso> sexual predators for a non-interactive read-only news site posted by adults?
+[21:48] <Leaf> with studan names & very likely their pictures too
+[21:48] <Leaf> er, student
+[21:51] <tonyyarusso> Well, he only said news so far.
+[21:51] <tonyyarusso> But it's also very common practice to have policies for things like only using first names and not identifying which person goes with which name, and whatever - the BSA has a web site photo policy like that, and it seems to work fine.
+[21:52] <tonyyarusso> and it would still be easier to go pick kids off at the bus stop randomly than to see them online and then try to track down certain ones later....

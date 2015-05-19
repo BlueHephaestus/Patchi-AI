@@ -1,0 +1,28 @@
+[13:28] <toabctl> i would like to have a ubuntu-cloak
+[13:29] <toabctl> can somebody help, please!?
+[13:33] <jussi01> toabctl: #ubuntu-irc for cloaks
+[13:34] <jussi01> rww: please note the last join :)
+[13:34] <toabctl> jussi01, thx
+[13:35] <rww> jussi01: ta
+[13:41] <Akos> there are ubuntu-irc cloaks that are given out?
+[13:41] <rww> Akos: if you're an Ubuntu Member
+[13:45] <Akos> rww: aha, now i understand (:
+[13:46] <Akos> thank you
+[14:09] <nhandler> jussi01: Can you s/Freenode/freenode/ in the /topic ;)
+=== jussi01 changed the topic of #ubuntu-irc-helpers to: Welcome to #ubuntu-irc-helpers - The Ubuntu IRC Helpers team exists to help co-ordinate and educate helpers in the the Ubuntu support channels on freenode | This is not a support channel | https://wiki.ubuntu.com/IRC/IrcTeam/UbuntuIRCHelpers | Please join #ubuntu-meta for unanswered questions | #metabot-client for LjL's metabot client - more help with making #ubuntu a better place!
+[14:12] <czajkowski> could you make it any longer :p
+[14:21] <jussi01> czajkowski: go look at #ubuntu's topic :D
+[14:21] <czajkowski> not_logging_in_there :)
+[14:43] <nhandler> jussi01: Might I also suggest adding *!*@freenode/staff/* to the access list?
+[14:43] <jussi01> nhandler: feel free...
+[19:15]  * MenZa wibbles.
+[19:18]  * IdleOne wobbles
+[19:25]  * jussi01 gobbles
+[19:40]  * guntbert wonders if those activities are carnival related :)
+[19:41] <IdleOne> the wibbling and wobbling
+[19:41] <IdleOne> ?
+[19:43] <guntbert> IdleOne: yes :)
+[19:44] <IdleOne> will if it is carnival related I want cotton candy
+[19:45] <guntbert> sweet
+[20:00]  * erUSUL watchs the tumbleweeds pass away
+[22:07]  * funkyHat wiggles

@@ -1,0 +1,131 @@
+<myordo> âñåì ïðèâåò
+<ubuntuhelp> myordo! please, use utf-8 here. >>> how to configure: http://tinyurl.com/4qgpm3 or use web chat: http://ubuntu.ru/irc/webchat
+<aleksei`> дня
+<yurikoles_> что,
+<andrex> какого хлеба, воскресенье а тут 40 ботов
+<yurikoles_>  /join #ubuntu
+<myordo> åñü êòî æèâîé?
+<ubuntuhelp> myordo! please, use utf-8 here. >>> how to configure: http://tinyurl.com/4qgpm3 or use web chat: http://ubuntu.ru/irc/webchat
+<myordo> êó
+<myordo> åñòü êòî æèâîé?
+<ubuntuhelp> myordo! please, use utf-8 here. >>> how to configure: http://tinyurl.com/4qgpm3 or use web chat: http://ubuntu.ru/irc/webchat
+<froover> фух, я уже подумал. что попал в english комнату...
+<froover> myordo: кодировку utf 8 выстави
+<andrex> ÿ ÷åò ñîìíåâàþñü ÷òî îí òåáÿ ïîíÿë)
+<ubuntuhelp> andrex! please, use utf-8 here. >>> how to configure: http://tinyurl.com/4qgpm3 or use web chat: http://ubuntu.ru/irc/webchat
+<andrex> тест
+<ubuntuhelp> andrex, Ну понг, и что?
+<andrex> ниче(
+<andrex> сташный чел с мирандой вернулсо
+<myordo> так норм?
+<andrex> угу
+<froover> myordo: А ты как думаешь?
+<myordo> огонь
+<froover> уже второй раз "волосы дыбом" встают от странностей ошибок, всё ни как не привыкну, что это irc, а не xmpp
+<myordo> )
+<andrex> и да привет, ку, и нет никого живого
+<myordo> есь
+<myordo> не обманывай
+<myordo> -)
+<froover> "Откройте файл '/etc/pulse/default.pa'
+<froover> найдите строку 'load-module module-udev-detect'
+<froover> и замените ее на 'load-module module-udev-detect tsched=0'
+<froover> *везде без кавычек."
+<froover> Кто нибудь может пояснить на понятном русском, что это за параметр tsched=0 ?
+<tagezi> andrex: трям )
+<sergey_it> хм
+<tagezi> froover: это откуда заклинание?
+<andrex> tagezi: бу
+<froover> tagezi: да это по всему рунету ходит, для решения проблем и хрипов в скайпе, плюс, так же кое кто использует для решения проблем со звуком в вайбере. Но я не пользуюсь данными продуктами вообще, но заметил что в empathy при использовании вызова есть хрипы в на
+<froover> чале разговора, потом проходят, но не всегда, кажется это заклинание решае проблему, но ... в общем я обычно с эмпати просто переписываюсь для звонков linphone, и он работает норм всегда
+<tagezi> froover: я думаю нужно курить ман пульса
+<froover> tagezi: Да вот уже курить, нет бы кто обьяснил во так просто )
+<sergey_it> в сорсах глянуть
+<tagezi> обычно, в других местах не рассказывают о тайном смысле сокральных сочетаний буковок )
+<froover> tagezi:  просто это заклинание используют для решения какой то проблемы в софте конкретном, а действует то на всю систему... ну всмысле мало ли...
+<froover> tagezi: и это печально.... если знать что сделал, не так страшно компьютером пользоваться )
+<tagezi> ну так для этого маны и придумали )
+<tagezi> и вообще, привычка читать маны - это хорошая привычка..
+<froover> tagezi: мне не удаётся привыкнуть к этому
+<froover> tagezi: открываю, и аааа первым делом думаю ОТКУДА НАЧИНАТЬ ЧИТАТЬ...
+<tagezi> froover: откажи от ДЕ на месяц )
+<tagezi> с начала всегда ))
+<andrex> timer-based scheduling
+<andrex> ноль вырубает таймер 1 врубает
+<froover> tagezi: Слишком кардинально, для точно не для меня, ИБО, я и так порой стараюсь отказаться от некоторого gui в пользу cli, только потому, что мне не нравится дизайн gui, но лишаться самого рабочего стола не хочу, то есть использую терминал
+<tagezi> поню я читал книгу, учебник,  как всегда по привычке пров=пустил введение, ну там же фигня всякая.. сижу читаю, и понимаю что я нифига не понимаю... а там введение условным обозначениям было посвящено )))
+<andrex> и да оно не всегда дружет с альсой
+<andrex> бугага
+<froover> andrex: Что это за таймер, можно конкретней? При его выключении могут возникнуть проблемы с алсой?
+<andrex> и да с нгекоторых пор этот параметр нафиг ненужен
+<andrex> таймер планирования
+<andrex> делает задержки
+<froover> andrex: ну так по умолчанию же нет этого параметра в системе, вот и спрашиваю...
+<tagezi> между песнями? )
+<andrex> в буфере или фз где
+<froover> я так понимаю по умолчанию 1?
+<tagezi> froover: он же тебе сказал что не нужен )
+<andrex> чтоб было несколько патоков
+<andrex> и наче заикания либо треск
+<andrex> если оно некоректно пашет
+<tagezi> так сейчас же везде альса стоит
+<froover> tagezi: я не понял. кто не нужен? )
+<tagezi> флаг этот
+<froover> tagezi: Так сейчас же везде pulse audio стоит
+<tagezi> так ты меня запутал
+<froover> tagezi: я думал ты меня специально запутал
+<tagezi> нет, это ты меня запутал, теперь придётся идти ман курить
+<tagezi> напакупают себе элитных плат, а потом мучаются 0 или 1
+<froover> по умолчанию
+<froover> load-module module-udev-detect
+<froover> а в случае треска в каком то софте, то предлагается к этой строчке добавить
+<froover> tsched=0
+<tagezi> потому что по умолчанию он единица
+<andrex> оно уже ненужно весь этот баг испавили фз в какой версии еще
+<andrex> помойму в 11.4 уже все норм было бубунте
+<froover> если просто
+<froover> load-module module-udev-detect
+<froover> значит ли это, что непонятная tsched уж не ноль, а один? И Если так, то это значит по умолчанию она включена, а нам предлагают её выключить,
+<andrex> да
+<andrex> чтоб не грузила систему
+<froover> andrex: оно норм, но не всех приложениях, и люди юзают это решение до сих пор
+<andrex> это уже зависит от драйваеров
+<andrex> и их железа
+<froover> andrex: У меня не маломощная машина )
+<tagezi> пеньтиум 2? )
+<froover> core i7 хасвел
+<froover> но низковольтный
+<andrex> а это уже пофиг
+<andrex> когда он перегружает звукавуху в хлам тут проц моодет и не работать вовсе
+<andrex> ппц, надо мне ломом по рукам
+<andrex> граматей емае
+<froover> опечатки это не так страшнно, а хромой смысл предложений )
+<froover> по электронной почте, хоть не так глупо выгляжу
+<froover> на самом деле я так толком не понял, что есть tsched, таймер какой то говорите, какой таймер? что он таймерит?
+<froover> а кстати прикол, часто в empathy после начала разговора если не удаётся исбавиться от хрипов (tsched по умолчанию) то завершить разговор и перезвонить ещё раз, то разговор может начаться хорошо без искажений уже...
+<froover> тестировал я так, звонил сам себе с вирт машины
+<froover> исключительно академический интеерс
+<andrex> переводить всю бодягу лень а на русском я ненашел)
+<froover> andrex: маны на русском, это фантастика
+<froover> даже если их пишут русские
+<andrex> а ты ше домул, в рай попал чтоли?
+<andrex> их еще найти нада, на русском в нормальном виде еще и актуальные
+<andrex> а не очередной копипаст источника из средневиковья
+<froover> вот поэтому я зашёл сюда )
+<foobarry> hello, any english speakers? i have a favour to ask...
+<sergey_it> ask
+<foobarry> hi, its offtopic but wondered if anyone could help (i'm a long time ubuntu-uk member)
+<foobarry> i bought this hat in 1990
+<foobarry> http://i.imgur.com/6btt40o.jpg
+<foobarry> from gym dept store
+<foobarry> wondered if it was real/fake fur, which animal?
+<foobarry> i can understand "traditional mens hat"
+<foobarry> http://i.imgur.com/x8fll7l.jpg
+<sergey_it> made in moldova, it likes the golden fleece
+<foobarry> golden fleece?
+<sergey_it> sheep wool
+<sergey_it> sheep fur
+<foobarry> ah, great, spassibo bolshoya
+<foobarry> thanks :d
+<sergey_it> moldova hat is not russian, usualy
+<foobarry> s

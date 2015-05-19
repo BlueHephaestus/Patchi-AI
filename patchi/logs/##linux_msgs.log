@@ -1,0 +1,19 @@
+﻿<dtscode>	pingfloyd, ok did that, and im pretty sure it workedd
+<dtscode>	but now theres a new issue...
+<dtscode>	the resolution went from 16:9 to 4:3 and i cant change it
+<tdk2fe>	 /gui attach
+<pingfloyd>	dtscode: was worth a shot, sounds like a bug in the video driver
+<dtscode>	damn
+<dtscode>	oh well
+<dtscode>	i think ill just move to a bsd
+<dtscode>	thanks for the help though pingfloyd
+<justanotheruser>	if i have conflicts and aptitude wants to remove "xserver-xorg-video", should i be scared?
+<ayecee>	justanotheruser: yes
+<justanotheruser>	:(
+<justanotheruser>	i posted my whole message, this doesn't look right to me http://hastebin.com/ewifaroqum.vhdl
+<nomelette>	what is the most widely used linux distribution ?
+<ayecee>	i don't know how you'd fix that in a satisfactory way.
+<ayecee>	nomelette: there are no reliable numbers to use to quantify that.
+<justanotheruser>	(probably ubuntu)
+<andrew39>	android
+droid isn't a linux distribution

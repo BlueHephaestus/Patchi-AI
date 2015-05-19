@@ -1,0 +1,1 @@
+<vazhnov> hi! sorry for my english. i want add to https://help.ubuntu.com/community/installation/fromusbstick#booting_the_computer_from_usb link to boot-keys.org. i registered on wiki, but i don't want somebody think what i am spammer :)

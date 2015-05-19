@@ -1,0 +1,13 @@
+<paulw2u> added mx4 announcement to prep .doc and written summary
+<pleia2> :d
+<pleia2> i'm going to start copying things over to the wiki, in flight again today so i might be getting to some things later than usual
+<pleia2> (and some things earlier, woo 5:20am)
+<paulw2u> pleia2: have a good flight, i'm off out now, no doubt ahoneybun will be here later to finish off the summaries :)
+<pleia2> thanks :) have a good one!
+<pleia2> boo, askubuntu script has gone sideways
+<pleia2> or the api it connects to has
+<pleia2> yeah, api timeout
+<ahoneybun> *summary
+<paulw2u> planet, blogosphere and in the press now done. just three canonical summaries to do.
+<paulw2u> summaries completed
+<paulw2u> pleia2: sarcastic suggestion - please can we bullet point iot articles? :)

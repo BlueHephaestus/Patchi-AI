@@ -1,0 +1,14 @@
+<darkelement>	 guys how can my java function accept any value as a parameter?
+<mebigfatguy>	ddefine the parm as object
+<darkelement>	ahh,thnaks
+<darkelement>	it does not work with double, however.
+<mebigfatguy>	it would work for double
+<darkelement>		public static void print(object var){
+<darkelement>			system.out.println(var);
+<darkelement>		}
+<darkelement>	trying to do this, "not applicable"
+<mebigfatguy>	print(double.valueof(1.1))
+<ojacobson>	darkelement: javac -version?
+<mebigfatguy>	you can't specify a parmaeter type that handles both primitive values and objects
+<darkelement>	alright
+<i-make-robots>	mebigfatguy - thanks for trying to help.  i'll probably just use export for now and fix maven in the next edition.

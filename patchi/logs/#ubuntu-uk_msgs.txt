@@ -1,0 +1,194 @@
+<penguin42> are you saying that advertising something as a reluctance motor might not sound that good?
+<daftykins> xd makes it sound like it doesn't want to be cleaning for you
+<daftykins> instead it wants to be free, where all the motors spin for nobody but themselves
+<mapps> hi all
+<brobostigon> morning boys and girls.
+<dutchie> morning
+<brobostigon> mornind dutchie
+<diddledan> howdo
+<diddledan> sorry, daftykins, i went to bed just after my comment last night so you may have felt ignored :-/
+<diddledan> so a digital motor is actually a reluctance motor, but what's the v6 all about?
+<diddledan> it's got 6 cylindars in a v formation?
+<diddledan> like my ca?
+<diddledan> car*
+<diddledan> do i need to feed it petroleum?
+<azelphur> https://twitter.com/ownclouders/status/598741430333480960 look ma i'm famous
+<diddledan> \o/
+<penguin42> azelphur: excellent
+<azelphur> :)
+<popey> yay
+<diddledan> currently watching https://www.youtube.com/watch?v=b392kwhg_rs a discussion starter presentation about drupal.org's workflow for contributions
+<diddledan> 400metres, for 7m? that's an impressive overspend
+<penguin42> diddledan: http://www.bbc.co.uk/news/uk-england-lancashire-15519605
+<penguin42> (it just opened)
+<penguin42> looking at the pictures it looks single track at that
+<daftykins> diddledan: hehe np, yeah i just assumed the 6th version - though surely you'd not want that in marketing 'cause it sounds like it took that many tries to get it right
+<diddledan> lol
+<diddledan> their advert says "only the handheld dyson uses a vee six digital motor"
+<diddledan> it's like women's beauty products containing random marketing invented names
+<diddledan> it's probably exactly the same as competitor-x just named differently with a trademark so only this company can include it because it's a trademark
+<penguin42> diddledan: you mean things with enhanced serum of youngify and anti-wrinkelate?
+<diddledan> yup
+<daftykins> xd
+<diddledan> includes elastane etc
+<daftykins> and for some reason possesses the ability to say hello to vera all the time, too
+<diddledan> for elastic skin
+<diddledan> vera's popular
+<daftykins> that she is
+<moreati> a̶b̶c̶d̶e̶f̶g̶h̶i̶j̶k̶l̶m̶n̶o̶p̶q̶r̶s̶t̶u̶v̶w̶x̶y̶z̶a̶b̶c̶d̶e̶f̶g̶h̶i̶j̶k̶l̶m̶o̶n̶p̶q̶r̶s̶t̶u̶v̶w̶x̶y̶z̶ ̶ ̶0̶1̶2̶3̶4̶5̶6̶7̶8̶9̶ ̶)̶!̶"̶£̶$̶%̶^̶&̶*̶(̶
+<moreati> sorry, i was using the text box to try something, didn't mean to press return
+<shauno> that's kinda funkylookin
+<moreati> playing with http://adamvarga.com/strike/
+<daftykins> o0
+<diddledan> i'm guessing my client isn't displaying it right
+<diddledan> i see: a_b_c.....
+<daftykins> ok here in irssi
+<shauno> it looks like strikethru on mine, but odd-looking because the strike is at a different height in each character
+<moreati> the underline equivalent doesn't render very well for me, on 15.04/unity https://en.wikipedia.org/wiki/underline#unicode there are gaps, and additionally differing height in firefox a̲b̲c̲d̲e̲f̲g̲h̲i̲j̲k̲l̲m̲n̲o̲p̲q̲r̲s̲t̲u̲v̲w̲x̲y̲z̲0̲1̲2̲3̲4̲5̲6̲7̲8̲9̲
+<diddledan> i see that as underscored but only on the second letter through to a space at the end
+<diddledan> i.e. the first a isn't underscored but the rest is along with a trailing underscore
+<shauno> oh that's odd.  i get gaps, and most where they should be, but the gap between p & q isn't lined
+<penguin42> moreati: it's nutty what you can do with unicode ɥ̶b̶n̶o̶ɹ̶ɥ̶ʇ̶ ̶ʞ̶ɔ̶n̶ɹ̶ʇ̶s̶ ̶u̶ʍ̶o̶p̶ ̶ǝ̶p̶ı̶s̶d̶n̶
+<moreati> in pidgin on 15.04 the strikethrough is correct, in chrome and firefox the strikethrough starts at the second character
+<penguin42> moreati: yeh, i see the same
+<penguin42> moreati: and it's right in konsole but not terminator
+<diddledan> again the strikethrough isn't shown on mine in favour of an _ between each character
+<diddledan> the letters themselves are correctly upside-down and back-to-front
+<moreati> correction: pidgin has a gap in the strikethrough on wide characters e.g. w, m
+<daftykins> i like letters
+<daftykins> ^_^
+<daftykins> right, what to do today
+<moreati> those upside down characters are actually glyphs from other alphabets/writing systems
+<daftykins> diddledan: lets have a postal chess game!
+<diddledan> eep
+<daftykins> it's ok i haven't played in years so i'm gonna be rubbish
+<daftykins> and even then you can probably count on one hand how many games i've played in my life :>
+<shauno> i get http://i.imgur.com/ke2brui.png  and http://i.imgur.com/jnjchvb.png
+<daftykins> hrmm that's a nice readable font
+<shauno> the varying height of the strikethrough is a very strange effect
+<diddledan> shauno: you're just wonky
+<daftykins> popey: have you been enjoying gta v on a new card, then?
+<popey> no, i have been enjoying it on my existing card
+<popey> after i asked about new cards here, nvidia gave me a driver update which included the automagic thing that sets the game up correctly
+<diddledan> put a new card on the card :-p
+<popey> it's now running flawlessly
+<diddledan> just make sure you're ready to be carded
+<daftykins> hrmm, my old q6600 runs with it pretty poorly with my gtx 560 ti so it can't look all that great?
+<daftykins> -with
+<popey> looks great to me
+<daftykins> that's the odd thing about graphical and audio quality though
+<diddledan> paraphrase: a paradigm shift is indistuingishable from a bad idea
+<penguin42> what about a paradigm shift in bad ideas?
+<penguin42> like the orion space craft
+<zmoylan-pi> a paradigm shift in bad ideas...  microsoft changing the ui to touch silliness version? :-)
+<diddledan> onions in space is always a bad idea
+<penguin42> yes, it would be cruel to put one in someones helmet
+<zmoylan-pi> whereas in ants in their space suit is hilarious... :-)
+<ali1234> moreati: firefox has terrible font rendering
+<moreati> ali1234: i saw similar rendering errors in chrome and firefox
+<moreati> *chromium
+<ali1234> https://lh3.googleusercontent.com/-45sp60v6kms/uy7cn_uekai/aaaaaaaaccw/dzaitklgrse/w426-h237/screenshot%2b-%2b230314%2b-%2b11%253a16%253a35.png
+<ali1234> dat h
+<ali1234> h for high
+<ali1234> i don't know what it is about text that is so hard
+<ali1234> but it seems like nobody can do it right except apple and microsoft
+<ali1234> and maybe gtk if you are lucky
+<zmoylan-pi> adobe? :-d
+<ali1234> never had to deal with pdf i take it...
+<zmoylan-pi> i have... lots... never had much trouble once you've beaten them with a stick
+<ali1234> challenge for you then. extract the text from this pdf and run it through google translate: http://scharmn.narod.ru/avd/gauss_15_2.pdf
+<zmoylan-pi> been a while... ::ponders::
+<diddledan> i've heard pdf is a frankenstein format with bits from here and bits from there and barely hodgepodged together
+<zmoylan-pi> a lot of it's wackiness seems deliberate to prevent ebooks from been ripped to text
+<zmoylan-pi> i've used various wackiness to break them open.  ghost script, text printer drivers, calibre
+<ali1234> there is no drm here and the text is stored in the pdf as a series of codepoints
+<ali1234> try "pdf2txt" for a start
+<zmoylan-pi> yeah, it means you can get tiny random chunks out of the pdf.  i've seen that before too
+<shauno> hm, fun.  osx falls apart on that one too
+<zmoylan-pi> calibre is random text...
+<shauno> mine doesn't look random.  it looks like it's just missing all the cyrilic characters
+<ali1234> there's some english on the last page, can't even copy that
+<shauno> oh, you're right.  i'm just getting tables, figures and equations, not body text at all
+<ali1234> pdf2txt outputs a lot of "(cid:27)(cid:25)(cid:17)(cid:26)"
+<shauno> and it's a complete dog to scroll, which is unusual on osx
+<shauno> (the display engine is pdf-based like macos was postscript-based, which is really weird to explain, but ends up with above-average pdf support for free)
+<ali1234> presumably you can print super high res screenshots as well :)
+<shauno> heh, it seems not, they're just kicked out as png
+<shauno> i have no idea to what extent it's still true either, but originally quartz was described as a pdf version of http://en.wikipedia.org/wiki/display_postscript
+<penguin42> oh heck, not used that for a long time
+<shauno> both of which strike me as an interesting mix of voodoo, witchcraft and lies
+<shauno> i'm not sure they're stored as characters at all
+<zmoylan-pi> i do have a few d&d pdfs that store everything as images.  they're... fun... :-)
+<shauno> the characters don't hint properly if i scale off 100%
+<shauno> like http://i.imgur.com/fxd2dmh.png
+<shauno> α1 etc i can copy fine, and they render properly.  the body text blurs, and shouldn't
+<ali1234> looks like each glyph is stored as one bitmap and then indexed
+<shauno> hm.  so if you really wanted to, you could probably rip it out with a lookup table
+<shauno> but if you're just trying to prove that pdf are perfectly capable of being a royal pain in the familyfriendly, it's surplus to requirement
+<zmoylan-pi> bizarre, i got caibre to convert to epub instead of text and while first page looks good it goes rapidly downhill
+<zmoylan-pi> if i had to get them as useable text with a 14page document it might be faster/less effort just to retype them.  not easy if you don't speak the language but not impossible.  if they're needed by a group you can split the work in such a way there's overlap to ensure accuracy
+<ali1234> could just ocr it
+<zmoylan-pi> that too
+<zmoylan-pi> but i've used ocr and prefer a human making mistakes over ocr making mistakes.
+<penguin42> very different type of mistakes
+<zmoylan-pi> and i found it easier to spot the human mistakes as i made the same ones myself..
+<shauno> i dunno.  in cyrillic, "the same ones myself" would be everything
+<daftykins> hrmm debating something like this for my friends art gallery
+<daftykins> http://www.amazon.co.uk/annke-weatherproof-megapixels-hi-resolution-vandalproof/dp/b00nzwizys/
+<daftykins> maplins selection seem to be a lot more expensive :d
+<daftykins> and it looks like if they even ship here, they won't remove vat :p
+<penguin42> maplins more expensive? <shock>
+<daftykins> :d
+<daftykins> you have to give me some lee-way there, we don't have them locally and i've only used them once to buy some fuses during uni :p
+<diddledan> ocr leads to weirdness
+<diddledan> e.g an i transferred as an l
+<diddledan> which makes it particularly difficult to work out swedish place names when they're transcribed via ocr
+<diddledan> (i'm referring to the amazon kindle version of the girl with the dragon tats)
+<diddledan> that's an a not an i
+<diddledan> although dragon tats with an i would be interesting
+<zmoylan-pi> spotting numbers amongst the text was always my favourite way to spot ocred text :-)
+<daftykins> tsk tsk naughty diddledan
+<daftykins> brings a whole new meaning to "here be dragons"
+<diddledan> lol
+<diddledan> don't look them in the eye
+<zmoylan-pi> it's the way it follows you around the room... :-p
+<diddledan> don't you love how folk from around the indian region refer to gb as gee-bees rather than gig or gigs or gigabytes
+<diddledan> "i've got 500 gee-bees"
+<diddledan> oh gee, bees!
+<diddledan> don't you hate bees
+<diddledan> they're fine when they're pollinating elsewhere but come near me and i run a mile
+<diddledan> they shouldn't pollinate in public anyway
+<diddledan> now, see, you all bring my randomness out if you stop talking because i just natter away
+<diddledan> if you don't want me to be crazy, don't stop talking!
+<daftykins> so rare anyone gets any notation correct :(
+<diddledan> now as we refer to gb as "gigs" does that mean tb is tigs?
+<zmoylan-pi> nah, in honour of the times we live in they are now terror bites
+<diddledan> or ters?
+<diddledan> not to be confused with t'sers as in "it's hers"
+<foobarry> any russian speakers in here tonight?
+<diddledan> niet
+<foobarry> trying to deipher a label
+<diddledan> does it have fake letters on it?
+<daftykins> #ubuntu-ru ? :)
+<foobarry> but does ubuntu-ru speak english?
+<diddledan> the russians pretend to have a written language but i think they just make stuff up as they go along
+<foobarry> http://i.imgur.com/6btt40o.jpg
+<diddledan> aah that's easy. 56 in russian is 56 in english too
+<daftykins> =]
+<foobarry> mapps seems to be in there
+<daftykins> o0
+<diddledan> mapps is a weird one - he gallivants all over the place :-p
+<foobarry> must be vodka related
+<diddledan> i recall he disappeared to russia a few months ago
+<diddledan> can't remember whether that was before or after he moved to the rock
+<diddledan> (alcatraz? :-p)
+<foobarry> gib
+<daftykins> he went to the ukraine i thought
+<diddledan> oh, close
+<diddledan> former ussr at least
+<foobarry> i got this hat in 1990 in gum dept store
+<daftykins> they had hats back then?
+<diddledan> when were hats invented anywho?
+<diddledan> new-fangled things for foobarry ?
+<diddledan> :-p
+<foobarry> a russian style hat

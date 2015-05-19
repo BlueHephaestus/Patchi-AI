@@ -1,0 +1,12 @@
+=== Guest79583 is now known as ost
+=== john is now known as Guest42224
+[11:59] <studio-user003> hello world
+[12:00] <studio-user003> vous parlez français ?
+=== victor__ is now known as victor__Cardoso
+[14:28] <kyle123> Hey has anyone got liquidsoap working with libav for stremaing to twitch/livestream?
+[17:05] <delt> Hello
+[17:06] <delt> just a quick question, how do i setup my jack session so that i can run stuff as another user with sound?
+[17:06] <delt> (using my main user's jack session)
+[17:09] <delt> my other account is part of the 'audio' group, but i still get just silence :(
+[17:12] <delt> i'd prefer to use the main user's jack connection, but for the mean time i'd just like my piano program to work.... i really don't want to do the registration stuff for another user (pianoteq has only 3 "activation"/registration slots, and i don't want to waste my last one)
+[18:41] <delt> SOLVED, thanks to the very kind folks in #linux ... now everything works perfectly!

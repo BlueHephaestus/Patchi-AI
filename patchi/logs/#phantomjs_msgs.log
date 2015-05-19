@@ -1,0 +1,147 @@
+*	topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+pilate> because its a browser
+<darkelement>	 hey guys how can i execute and get the live output of a phantomjs script in node.js?
+*	topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+pilate> because its a browser
+<cob>	hi, does anyone know if there's a channel specific to phantomjs-node ?
+<cob>	anyway, i have a question that is pertaining to that... i'd like to use phantom-node because i want to do some filesystem things, i just find it easier to use some npm modules than have to code everything compatible with phantomjs. if there's a place where there are libraries available for phantomjs please enlighten me.
+*	topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+pilate> because its a browser
+<darkelement>	hey guys, looking to run some phantomjs code with the phantomjs-node package for node.js. here is the file i'm working on, with phantom-node code commented, and phantomjs code as the rest of the file. hope you guys can help!
+<r0sk>	hey guys, good morning, a question about phantom... i'm running python tests successfully til a point where phantom seems to crash:
+<r0sk>	file ".../lib/python2.7/site-packages/selenium/webdriver/chrome/service.py",
+<r0sk>	line 70, in start http://code.google.com/p/selenium/wiki/chromedriver")
+<r0sk>	webdriverexception: message: 'chromedriver' executable needs to be available in the path.
+<r0sk>	and dunno what could be the reason
+<r0sk>	it's osx, i've tried binary from ports, directly downloaded from phantomjs web and with a built binary (1.9.8) with same result
+<r0sk>	any clue?
+<r0sk>	is anyone awake?
+<zlude>	a lot of time to install phantomjs o_o
+<pilate>	installing should be quick, compiling is not
+<zlude>	pilate, compiling... maybe it's running about 10 ~ 15 min and compiling yet q.q
+<pilate>	depending on what youre compiling on, it could be a few more hours
+<zlude>	pilate, ubuntu 4gb ram + i5
+<vitallium>	and if you don't have at least 4 gb ram, it will fail.
+<zlude>	omg
+<vitallium>	:-)
+<zlude>	in this case, what can i do? .-. because... "binary packages for linux are still being prepared. there are still issues to be solved until a static build is available (see issue 12948 for more details)."
+<zlude>	crying... missing my macbook pro that was hardware crash last week
+<zlude>	sorry my bad english too .-.
+<vitallium>	zlude: well, we have non-released binaries for debian stable and ubuntu
+<zlude>	where?
+<zlude>	done! apt-get install phantomjs works..
+<zlude>	phantomjs --version output => 1.4.0
+<vitallium>	lol
+<zlude>	what's the current stable version?
+<zlude>	2.0
+<zlude>	?
+<vitallium>	for 1.x = 1.9.0, for 2.x - 2.0.0
+<zlude>	so, i'll try do what i want using 1.4.0, thank you anyway!
+<zlude>	vitallium, i tried run a example from: https://github.com/barrosfilipe/url-to-screenshot, exactly the example.js, error i've got: undefined:0 unknown module ./ for require()
+<zlude>	can i specify the required manually? and.. what exactly this required call?
+<vitallium>	zlude: you don't need this module to make a screenshot. just use plain phantomjs api
+<r0sk>	vitallium: 1.9.0 or 1.9.8?
+<vitallium>	zlude: `require` in phantomjs is similar to nodejs one
+<vitallium>	r0sk: whoops, yeah, 1.9.8
+<r0sk>	:)
+<r0sk>	may i repaste the question i did this morning?, any clue will be welcomed!
+<vitallium>	r0sk: yup
+<r0sk>	file ".../lib/python2.7/site-packages/selenium/webdriver/chrome/service.py",
+<r0sk>	line 70, in start http://code.google.com/p/selenium/wiki/chromedriver")
+<r0sk>	webdriverexception: message: 'chromedriver' executable needs to be available in the path.
+<r0sk>	and dunno what could be the reason it's osx, i've tried binary from ports, directly downloaded from phantomjs web and with a built binary (1.9.8) with same result
+<r0sk>	i'm running about 200 tests or more, and the crash is always happening at the same point
+<vitallium>	r0sk: um, you are trying to use chromedriver, when you should use ghostdriver
+<r0sk>	there are some tests passing, and suddenly, it appears to fail
+<r0sk>	vitallium: i've tested with phantomjs and with chromedriver
+<r0sk>	sorry, that's the error related to chromedriver, the one related to phanthomjs is this one:
+<r0sk>	file ".../lib/python2.7/site-packages/selenium/webdriver/phantomjs/service.py",
+<r0sk>	line 75, in start raise webdriverexception("unable to start phantomjs with ghostdriver.", e)
+<r0sk>	webdriverexception: message: unable to start phantomjs with ghostdriver.
+<r0sk>	screenshot: available via screen
+<vitallium>	r0sk: you're experiencing a crash, try to make a small example and post it to github
+<vitallium>	r0sk: also, ghostdriver is not compatible with phantomjs 2
+<r0sk>	1.9.8 here
+<r0sk>	i've prepared this gist, dunno if it could be helpful: https://gist.github.com/oscarmlage/604355b72768796ab9af
+<vitallium>	r0sk: you should have file called `ghostdriver.log`. this file contains all output from ghostdriver. can you find it?
+<r0sk>	yes
+<vitallium>	can you post it somewhere?
+<r0sk>	i was tail -f'ing while testing, but can't understand all that information
+<r0sk>	vitallium: sure!
+<r0sk>	vitallium: https://gist.github.com/oscarmlage/604355b72768796ab9af (gist updated with last lines of ghostdriver.log)
+<vitallium>	this selenium==2.45.0
+<vitallium>	r0sk: ghostdriver doesn't work with 2.45.0. it requires in update
+<r0sk>	hmm
+<r0sk>	a selenium update?
+<vitallium>	r0sk: yeah, we should update selenium binding
+<vitallium>	to the latest release
+<r0sk>	hmm may i try to update selenium in my enviroment (pip)
+<vitallium>	r0sk: you need to downgrade it
+<r0sk>	ah
+<r0sk>	which version do you think it could work?
+<vitallium>	r0sk: 2.44.0
+<r0sk>	vitallium: nice, i'm going to try it
+<r0sk>	would be really nice if it runs!
+<r0sk>	i'll pay you some beers!
+<r0sk>	vitallium: are there some known issues related to osx or any python version?
+<vitallium>	r0sk: i don't remember any :( because i don't use osx
+<r0sk>	np, ty anyway
+<r0sk>	(they're still running with selenium 2.44.0 now, lets see)
+<zlude>	vitallium, http://pastie.org/private/jnrjrbn8kyjh11eot4qigg it's working... but it 'crop' the page.. can i get 640x640 with full page width? no height, just width.
+<zlude>	result of image here: http://s22.postimg.org/tol5aw53l/github.png
+<vitallium>	zlude: use `viewportsize` instead of `cliprect`
+<zlude>	doesn't work :/
+<vitallium>	zlude: what do you mean by `full page width`?
+<zlude>	wait, i will show you
+<zlude>	vitallium, i do it manually, using gimp to resize and crop, look: http://s4.postimg.org/dih210ldp/github_640_640_manual_resize_and_crop_using_gimp.png
+<zlude>	can i get a similar result using phantomjs?
+<zlude>	vitallium, first image look: "http://imgur.com/a/xk4gi" i'm using cliprect to 640x640, second image i resize and crop manually. i wanna know if can i get a similar output from image two using phantomjs
+<vitallium>	zlude: use `cliprect`. `cliprect` define a rectangle which will be rendered by phantomjs
+<vitallium>	defines*
+<vitallium>	zlude: 1) set up `viewportsize` (your virtual window size) 2) use `cliprect` to define a rectangular area to render
+<zlude>	ok, let me try
+<zlude>	vitallium, no success...
+*	topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+pilate> because its a browser
+*	topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+pilate> because its a browser
+<darkelement>	 hey guys, looking to run some phantomjs code with the phantomjs-node package for node.js. here is the file i'm working on, with phantom-node code commented, and phantomjs code as the rest of the file. hope you guys can help:http://paste.pound-python.org/show/o1s5ic1yt6tla3la4njr/
+<pilate>	your code would do absolutely nothing
+<darkelement>	what do you mean? i'm hoping to use node.js' serial package to send the data from a websocket to a serial port.
+<sopparus>	hello, is it possible to use a presaved cookie like wget has its --load-cookie cookie.txt?
+<sopparus>	i thought --cookies-file was for that but apperntly not
+*	topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+pilate> because its a browser
+*	topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+pilate> because its a browser
+<sopparus>	morning
+<sopparus>	hello, is it possible to use a presaved cookie like wget has its --load-cookie
+<ghanima>	has anyone ever come across this error
+<ghanima>	[info  - 2015-05-13t18:10:20.457z] ghostdriver - main - running on port 4444
+<ghanima>	[info  - 2015-05-13t18:10:20.457z] ghostdriver - main - registering to selenium hub 'http://52.5.73.130' version:  using '127.0.0.1:4444' with org.openqa.grid.selenium.proxy.defaultremoteproxy as remote proxy.
+<ghanima>	[error - 2015-05-13t18:10:20.460z] ghostdriver - main.fail - {"line":96,"sourceurl":"","stack":"\tat \n\tat global code (:/ghostdriver/main.js:78:37)"}
+<ghanima>	  :262 in error
+*	topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+pilate> because its a browser
+*	topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+pilate> because its a browser
+<cob>	hi all!
+<pilate>	hello
+<cob>	anyone using phantomjs-node have an issue with a leftover process (easily identified as shim.js), and identified how to solve it?
+<cob>	hi pilate, what's your favorite headless browser?
+<pilate>	phantomjs :p
+<pilate>	but i dont use any of the third party stuff :(
+<cob>	do you know a good source for vanilla phantomjs libs? (such as loading config from files, etc)
+<pilate>	not really :/ ive just implemented everything ive ever needed
+<cob>	i always think "why re-implement an ini file parser?"
+<cob>	or writer, or database connector, etc
+<pilate>	json.parse, ezmode
+<cob>	actually it's the webdriver i should be using
+<ghanima>	when building phantomjs
+<ghanima>	is there a way to compile it as a static binary
+<pilate>	isnt that the default?
+<ghanima>	pilate: when i do a ldd i see libraries linked to it
+*	topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+pilate> because its a browser
+*	topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+pilate> because its a browser
+*	topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+pilate> because its a browser
+*	topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+pilate> because its a browser
+*	topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+pilate> because its a browser
+<lsolesen>	i have behat tests which works great when running it in selenium in e.g. firefox. however when i run the behat tests from the command line in phantom js, they fail. something from the page is simply missing (drupal panels ipe buttons) both if i take a screenshot with phantomjs or "print last response" with behat. do any of you experienced similar issues?
+<pilate>	debug
+<lsolesen>	pilate: yeah. i've been doing that for a lot of time already. do not know where to look. everything is working manually and in firefox :/
+<pilate>	so what have you done for debugging? whats the error output? did any requests fail? are you using features that your version of phantom doesnt support?
+<lsolesen>	there is no error output when watching the console ouput.
+<lsolesen>	i tried putting in some waits in the behat tests to make sure that phantomjs was not just too quick to look for stuff.
+*	topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+pilate> because its a browser
+*	topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+pilate> because its a browser

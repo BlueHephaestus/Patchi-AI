@@ -1,0 +1,10 @@
+[03:35] <Sgiomlaireachd> good evening
+[03:51] <Sgiomlaireachd> finally decided to learn how to use vi
+[04:06] <adam_vollrath> hi5
+[04:07] <adam_vollrath> `vimtutor`
+[04:10] <Sgiomlaireachd> u like vim?
+[04:11] <Sgiomlaireachd> its a little different having a command mode and text mode, but i think i am getting the hang of it
+[04:12] <Sgiomlaireachd> so how do you type a ':' since that is use to open the command menu
+[04:12] <Sgiomlaireachd> nm
+[16:59] <Sgiomlaireachd> good afternoon
+[17:05] <Tracy_P> Just, yes.

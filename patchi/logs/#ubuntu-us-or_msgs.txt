@@ -1,0 +1,185 @@
+<cinerama_> test
+<shantorn> thefinn93, do you recall the ppa
+<thefinn93> one sec
+<thefinn93> i'll pull it up
+<thefinn93> http://j.mp/rmx93f
+<thefinn93> shantorn, http://j.mp/rmx93f
+<thefinn93> shantorn, report back when you get it
+<thefinn93> or dont
+<shantorn> rebooting now
+<thefinn93> alright
+<thefinn93> good luck
+<thefinn93> so how'd it go?
+<thefinn93> clearly not completely ruined
+<thefinn93> lol
+<thefinn93> maybe so
+<shantorn_> well it wont let me login
+<shantorn_> same error i got last time
+<thefinn93> which is?
+<shantorn_> failed to load session "gnome" and i tried ubuntu and got failed to load "ubunut"
+<thefinn93> oh
+<thefinn93> were there any other options?
+<shantorn_> concole
+<thefinn93> oh
+<thefinn93> hmm
+<thefinn93> try running aptitude and installing gnome-session
+<thefinn93> or fixing it
+<thefinn93> from tty1
+<thefinn93> oh shit i gtg
+<thefinn93> best of luck
+<goddard> hey does usb 3 work for you guys?
+<goddard> i have two threads i am trying to solve anyone have ideas let me know http://ubuntuforums.org/showthread.php?t=1816495   http://ubuntuforums.org/showthread.php?t=1817164
+<bkerensa> oh
+<bkerensa> thought i should mention this channel is now logged :)
+<bkerensa> well guys were still waiting for ubuntu loco council to list us on loco.ubuntu.com and not sure how long this process takes
+<bkerensa> hi
+<bkerensa> :d
+<thefinn93> hi!
+<thefinn93> :d
+<goddard> you guys use a software firewall helper for your ip tables?
+<bkerensa> nah
+<bkerensa> just terminal here
+<goddard> firewall builder sounded interesting especially its push feature
+<goddard> maybe for you to since you are gonna setup some servers
+<goddard> damn didn't realize how late it was
+<goddard> new nvidia drivers came out still didn't fix the issue i made a forum post about it http://ubuntuforums.org/showthread.php?p=11113783#post11113783  if anyone can help let me know
+<goddard> im out
+<shantorn> morning all
+<shantorn> good morning all
+<bkerensa> hello all... hope you are having a super-charged morning!
+<thefinn93> totally...
+<bkerensa> finn whats ur fb url i wanna add u
+<thefinn93> http://facebook.com/finniswatchingyou
+<bkerensa> lol i cant add u
+<bkerensa> :p
+<thefinn93> send me yours, i'll add you
+<bkerensa> http://www.facebook.com/bkerensa <--- consistent in branding
+<thefinn93> of course
+<thefinn93> i'm usually consistant
+<thefinn93> but my facebook is different
+<thefinn93> because screw facebook
+<bkerensa> :p i saw you at their booth
+<thefinn93> yeah
+<bkerensa> you know you would take a job for them
+<bkerensa> :d
+<thefinn93> telling them how much they suck
+<thefinn93> :d
+<bkerensa> are you going to be at jono's weekly q&a on ustream?
+<thefinn93> i wasn't aware of it
+<thefinn93> where
+<bkerensa> http://www.ustream.tv/channel/at-home-with-jono-bacon
+<thefinn93> when is it?
+<thefinn93> 11?
+<thefinn93> that's what it looks like based on past streams
+<bkerensa> 11am
+<bkerensa> every wednesday
+<thefinn93> kk
+<bkerensa> i have only been to one before
+<bkerensa> :d
+<bkerensa> markdude: dont forget offtopic
+<bkerensa> hi
+<thefinn93> ...
+<goddard> hi
+<goddard> no one has been able to fix my two problems yet haha darn
+<goddard> so i have a 64 bit operating system but half the drivers are 32 how do they work with that
+<goddard> i was looking at a lot of my drivers and some are 32 bit
+<thefinn93> should work
+<goddard> it works but does it hurt performance
+<thefinn93> proly
+<goddard> i wonder what a completely non-backwards compatible pc looks like
+<goddard> all update software hardware and drivers without the old crap
+<thefinn93> http://i.imgur.com/1eeh9.png
+<goddard> i wonder if anyone has done tests
+<thefinn93> unrelated
+<goddard> haha
+<thefinn93> off to do shit, then to pack for defcon
+<thefinn93> i hear there are gonna be feds there, like actively recruiting
+<goddard> you going huh
+<goddard> nice i went to 18
+<thefinn93> nice
+<goddard> it was fun
+<thefinn93> cool
+<thefinn93> i expect it to be fun
+<goddard> turn off your bluetooth and wifi
+<goddard> and be ready to crack some bades
+<thefinn93> i was planning on wiping my ubuntu install
+<goddard> badges
+<thefinn93> yep
+<thefinn93> also, got tunneling setup on a vps should i need to get online
+<goddard> smart
+<goddard> man now i wanna go
+<thefinn93> book a plane
+<thefinn93> go
+<thefinn93> or drive
+<thefinn93> tickets are $150
+<goddard> when does it start?
+<thefinn93> tomorrow
+<goddard> haha
+<thefinn93> not many of the talks happen then
+<thefinn93> just sort of getting started
+<thefinn93> stuff starts happening on friday
+<goddard> gonna have to think about it .. it is so tempting
+<thefinn93> it'll be fun
+<thefinn93> i gtg tho
+<thefinn93> pack and shit
+<thefinn93> bye
+<goddard> let me crash in your room!
+<bkerensa> :d
+<bkerensa> lol
+<bkerensa> better use bleachbit to do a wipe
+<bkerensa> and make sure your iptables, roothunter and everything is primed and ready
+<bkerensa> :)
+<thefinn93> bkerensa, gonna wipe my main system
+<thefinn93> like trash it and expand the bt5 partition to everything
+<thefinn93> might reinstall that
+<thefinn93> i got bt5 32bit on accident
+<goddard> you staying at the rivera?
+<goddard> riviera
+<goddard> if i can get a free plane ticket im going
+<thefinn93> staying at the rio
+<thefinn93> where the con is
+<goddard> let me sleep on your floor i dont stink that bad :d
+<thefinn93> na
+<thefinn93> can't
+<thefinn93> my dad's, um, accompanying me
+<thefinn93> he doesn't trust me in vegas alone
+<thefinn93> i said ok because he's paying for the trip, my college, etc
+<goddard> damn lucky bastard
+<goddard> thats cool if i can get the plane ticket cheap im sure i can find some ones floor to crash on
+<thefinn93> yeah
+<thefinn93> tweet about it
+<thefinn93> #defcon
+<thefinn93> someone will help out
+<goddard> plus the bbq you get a chance to talk to a lot of people
+<thefinn93> ask pdx2600, other groups that you're associated with
+<thefinn93> yeah
+<goddard> oh nice didn't think about the pdx2600
+<thefinn93> yeah they're not too big, but worth a try
+<thefinn93> have you ever been there?
+<thefinn93> oh and i'm sure some guys from brainsilo are going
+<goddard> i went to 18
+<goddard> i paid for everything then
+<thefinn93> damn
+<goddard> was fun but i had my girlfriend with me
+<goddard> now i will go by myself
+<thefinn93> my girlfriend would not come with me to that
+<goddard> so no need for all the frills
+<thefinn93> yeah
+<goddard> yeah dont bring her
+<goddard> unless she likes computers
+<goddard> mine was so bored and it divided my time
+<thefinn93> yep
+<thefinn93> that's what mine would do
+<goddard> i had to go to a talk or two then do something fun for her
+<thefinn93> except she wouldn't come in the first place
+<goddard> haha
+<thefinn93> "you want me to go to some convention halfway across the country with you? and it's about something i don't even care about?"
+<goddard> haha
+<thefinn93> lol
+<thefinn93> there's a #defcon on freenode
+<thefinn93> topic was set in 2008
+<thefinn93> one other idler
+<thefinn93> lets try efnet
+<thefinn93> invite only
+<thefinn93> this does not belong on the ontopic channel
+<goddard> we have an offtopic channel as well ? good for planning ahead but not popular enough yet for that :d

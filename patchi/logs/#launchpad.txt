@@ -1,0 +1,23 @@
+[00:14] <wgrant> ki7mt: No, a team must have an owner that isn't itself.
+[00:14] <wgrant> (and you can't create cycles, eg. have two teams that own each other)
+[00:28] <ki7mt> wgrant, Ok, thanks. Will need to look at that a bit more in depth.
+[11:07] <mpt> As the admin of a team, is there any way to unsubscribe someone from the team’s mailing list? (They claim that they can’t do it)
+[11:28] <wgrant> mpt: All you can do is remove them from the team.
+[11:28] <wgrant> mpt: However, you should tell them they're wrong.
+[11:29] <mpt> Launchpad says “You must log in to join or leave this team.”
+[11:29] <wgrant> Then they should probably log in :)
+[11:29] <mpt> Right, but they last used Launchpad years ago
+[11:29] <mpt> They don’t remember their password
+[11:29] <wgrant> They'll need to reset it, then.
+[11:30] <mpt> https://twitter.com/search?q=unsubscribe%20password%20spam
+[11:30] <wgrant> I speak of current reality, not fiction.
+[11:31] <mpt> I know, I’m just pointing out this is a problem (just reported as bug 1455896)
+[11:31] <ubot5> bug 1455896 in Launchpad itself "Can't unsubscribe from mailing list without logging in" [Undecided,New] https://launchpad.net/bugs/1455896
+[11:34] <wgrant> However, I've always found it quite extraordinary that people expect to be able to unsubscribe without logging in when they had to log in to subscribe.
+[11:34] <wgrant> Unauthenticated unsubscription is more than a little dodgy.
+[11:37] <mpt> It’s a legal requirement in the US.
+[11:37] <mpt> That you must not be required to log in to unsubscribe from anything.
+[11:39] <wgrant> Hm?
+[11:39] <wgrant> Have we determined that CAN-SPAM is applicable to mailing lists?
+[11:44] <mpt> I don’t know. But most of the mailing lists that most people are subscribed to are commercial ones, so they’ll be used to that ease of unsubscription.
+=== JanC_ is now known as JanC

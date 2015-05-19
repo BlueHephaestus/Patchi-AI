@@ -1,0 +1,79 @@
+<leoquant> wazzzaaa, prima.
+<wazzzaaa> ow, het is op de zondag
+<wazzzaaa> ik dacht maandag
+<wazzzaaa> als ik dan kan, kan het helemaal
+<wazzzaaa> :)
+<wazzzaaa> vind je het goed als ik wat aanpassingen doe aan de wiki (dingen verplaatsen)
+<wazzzaaa> leoquant:
+<leoquant> goed
+<wazzzaaa> oke
+<leoquant> wazzzaaa, je wilt de meeting omhoog halen in de wiki? ik ben trouwens heeel slecht met wiki stuff...brrr
+<leoquant> ik snak naar een masterclass op dat gebied
+<wazzzaaa> ik zal je het zo laten zien, ben bijna klaar
+<wazzzaaa> ah, ik zie gelijk een mooi idee voor een workshop -:d
+<leoquant> :p
+<wazzzaaa> oke, check http://wiki.ubuntu-nl.org/community/mwanzo
+<wazzzaaa> je kunt nu doorklikken naar vergaderingen
+<leoquant> moment wazzzaaa
+<leoquant> dank!
+<wazzzaaa> ik heb het ongeveeer standaardformat gepakt dat bij andere teams ook wordt gebruikt
+<leoquant> yep, dat is ook mooi/beter vind ik. en over een teamwiki moet ik nog nadenken. ik wil een duidelijk andere nadruk leggen dan bij ubuntu-beginners
+<leoquant> geen overdrijving met dubgroepen etc.
+<leoquant> daar zijn we te klein voor als loco
+<wazzzaaa> ja, misschien heb je de wiki alleen maar nodig om vergaderingen vast te leggen (agenda + log)
+<wazzzaaa> ik moet er nu ff vandoor. later
+<leoquant> later
+<testcees> agendapunt 5 gaat over een persoonlijke wiki. http://wiki.ubuntu-nl.org/community/mwanzo/agenda/2010-11-28, voor de duidelijkheid dat is op wiki.ubuntu.com of wiki.ubuntu-nl.org (of beide ;))
+<gotiniens> ah ik zie dat de eerste meeting is geplanned, komt niet helemaal tof uit, kan niks beloven over mijn aanwezigheid
+<leoquant> testcees tis een lief log/bot
+<leoquant> nu nog ff je vraag
+<leoquant> moment
+<leoquant> ja ik refereer aan/naar een persoonlijke wiki en een launchpad account
+<leoquant> ik heb het idee dat veel leden de weg daar naar toe nog niet hebben gevonden, dat hoeft uiteraard ook niet. maar wil je een net account en wiki plus code of conduct kunnen we misschien helpen?
+<leoquant> (je= een willekeurig lid)
+<leoquant> dus een engelstalige wiki
+<testcees> duidelijk leoquant
+<leoquant> oki
+<testcees> leoquant, waar komen de logs? kan ik een verwijzing maken op http://wiki.ubuntu-nl.org/community/mwanzo
+<leoquant> gotiniens, zie maar, als je zin hebt/tijd hebt van harte welkom
+<leoquant> testcees, nog geen idee hierover
+<leoquant> testcees ik neus eerst even rond/vraag na hoe teams dit aanmaken
+<leoquant> aanpakken
+<leoquant> ubuntu-beginners hebben idd een logpagina die op de meeting pagina staat. logische ook.
+<leoquant> -e
+<leoquant> onze log bot/logs  vinden we hier terug: http://irclogs.ubuntu.com/
+<leoquant> dus vergaderen we liever hier....
+<leoquant> latersz
+<leoquant> : http://forum.ubuntu-nl.org/ubuntu-nl/vacatures-nieuwe-teamleden/msg675345/#new
+<leoquant> serieus he...echt.
+<darkera> ?
+<darkera> even checken
+<darkera> dus hij stopt ermee....?
+<leoquant> misschien he...
+<leoquant> vanaf het eerste begin actief
+<darkera> als dat zo is vind ik dat jammer, ik mag 'm wel die ron
+<leoquant> precies
+<darkera> hij zit er inderdaad al heel lang bij
+<leoquant> 4 jaar denk ik
+<leoquant> zoiets
+<darkera> 0_o dat is lang ja
+<leoquant> dit kan niet eindigen met: bedankt he ron
+<leoquant> doeg
+<darkera> dacht het toch ook niet.... speciale vip behandeling op een release party eventueel?
+<leoquant> het is een idee, of iets naar hem opsturen
+<leoquant> dat is wel eens eerder gebeurd
+<darkera> een soort van ubuntu nl/ubuntu trofee erbij
+<leoquant> het is aan het  team uiteraard
+<darkera> hmmmm..... zal ik nunslaughter eens aanspreken daarover?
+<leoquant> of even afwachten?
+<leoquant> moeilijk
+<leoquant> ff thee hier sorry
+<leoquant> ツ
+<darkera> geen probleem, doe lekker rustig aan ;)
+<wazzzaaa> leoquant, wie is "het team" ?
+<wazzzaaa> het forumteam?
+<darkera> ik zal nun eens aan de mouw trekken
+<wazzzaaa> :)
+<darkera> hallo wazzzaaa :)
+<wazzzaaa> dag darkera
+<leoquant> tot morgen allen

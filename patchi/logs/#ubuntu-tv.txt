@@ -1,0 +1,15 @@
+[12:32] <jussi> popey: you probably want to remove the VO from your flags, so you dont get auto opped everythime you join
+[13:52] <willcooke> Hi folks!
+[13:52] <willcooke> Thanks popey for setting this up for me
+[13:58] <popey> np
+[14:32]  * jussi bans willcooke :P 
+[14:32] <willcooke> :(
+[14:32] <jussi> nah, just kidding
+[14:33] <jussi> willcooke: tell me how to tar a dir from the cli. Im tired and the man page is doing my head in
+[14:33] <willcooke> tar -cvjf foo.tar.bz2 dir/*
+[14:34] <jussi> thanks!
+[14:35] <willcooke> :D
+[14:35] <willcooke> caveat:  I haven't tested that
+[14:35] <willcooke> it might not, and probably wont, work
+[14:36] <willcooke> oh, an I assumed you want to compress it, which you might not want to.  "j" will create bz2 and "z" will create gz
+[14:37] <jussi> it appears to have works, lets see how we go

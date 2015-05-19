@@ -1,0 +1,1 @@
+=== ChanServ changed the topic of #ubuntu-newmexico to: We have moved to #ubuntu-us-nm.  Please type /join #ubuntu-us-nm to get to us.  Thanks!

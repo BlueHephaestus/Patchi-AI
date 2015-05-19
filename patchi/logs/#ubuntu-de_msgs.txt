@@ -1,0 +1,155 @@
+<dreamon> würde gerne verzeichnisse vergleichen wollen /home/xyz mit /backup/xyz am besten recursiv so das ich sehe ob es identisch ist. gibt es ein tool für solche problematik?
+<randolf> hat jemand eine idee wo ich "systemctl" bekomme?
+<frickelpit> wie meinen?
+<randolf> will einen service starten und finde systemctl nicht
+<frickelpit> randolf: welche ubuntuvesion?
+<frickelpit> *version
+<randolf> moment. schauen muss
+<randolf> ahh. ubuntu 14.04
+<mrkramps> systemd ist erst ab 15.04 an bord
+<frickelpit> dann hast du deine antwort
+<frickelpit> ;)
+<randolf> sag das doch gleich. danke dir ;-9
+<randolf> sorry sollte ;-)
+<stevieh> systemctl ist bei meinem 14.10 auch dabei.
+<mrkramps> stevieh, sry … stimmt natürlich
+<randolf> dann mal wieder weg ist. merci.
+<dreamon> beim zurück kopieren von meinem /home frägt er mich ob er symbolic link folgen soll. was meint er damit.?
+<reqq456> dann haste wohl nen symlink drin, sozusagen wie eine verknuefpung unter windows
+<reqq456> @dreamon
+<sirusdev> gute tag. system: lubuntu 15.04; kernel: 3.19.0-16-generic; problem: während dem booten wechselt systemd in den emergency mode. wenn ich dann eingebe: systemctl default (wie vorgeschlagen) kommt noch eine fehlermeldung aber das system bootet im nachhinein richtig und funktioniert auch ohne probleme. jemand eine idee woran es liegen könnte?
+<ppq> schau dir mal die logs an, sirusdev
+<sirusdev> ich hatte jetzt auch einmal mal systemctl --failed eingegeben; dabei kommt folgendes heraus: http://pastebin.com/7vgsf6hz
+<brainwash> sirusdev: und systemctl status systemd-fsck-root.service ?
+<sirusdev> der befehl gibt folgendes aus: http://pastebin.com/yifqsbcp (hatte noch ein -l hinzugefügt)
+<sirusdev> ich seh grad, dass dort dabei besteht "fsck" selbst ausführen. einfach nur fsck im terminal oder mit irgendwelchen optionen dazu?
+<sirusdev> ok, wenn ich fsck /dev/sda1 eingebe, dann kommt, dass mein dateisystem eingehängt ist und ich die überprüfung machen soll, wenn das dateisystem nicht eingehängt ist. aber wie bewerkstellige ich das am besten?
+<frickelpit> boot per live-cd
+<sirusdev> oder könnte ich auch wie im ubuntuusers-wiki beschrieben wird dies verwenden: sudo touch /forcefsck  ?
+<sirusdev> das soll beim systemstart eine manuelle prüfung anwerfen und dann erst danach das system booten
+<ppq> ist einen versuch wert
+<dreamon> reqq456, mag sein, die frage ist ob der folgen soll oder nicht.. ich verstehe nicht wie er das meint.
+<reqq456> je nachdem was es fuer symlinks sind :/
+<reqq456> weisst du das zufaellig?
+<dreamon> reqq456, ich habe mit rsync kopiert -> rsync -avc --progress --delete /home/xy /media/backup/ -> jetzt will ich alles retour kopieren und da frägt mich doublecmd danach.
+<reqq456> sonst mach einfach ja, wenn die symlinks kaputt sind gehts halt nicht
+<dreamon> bisher hab ich noch keinen gefunden. ich werde mal verzeichnisweise durchschauen. warum kann ich den nicht einfach kopieren?
+<dreamon> ich kopiers ja wieder an den alten platz zurück
+<reqq456> wozu das ganze dann ueberhaupt?
+<kcalb> hi leutz,  ich benutze gerade ubuntu 14.04 mit dem kernel 3.16.0-37-generic bei kernel.org gibt's den 3.18.13 lts. kann mir jemand sagen warum da ubuntu hinterher hinkt ? o.o
+<ppq> kcalb, ubuntu legt beim release einer version die kernelversion fest
+<ppq> kcalb, danach gibts nur noch bugfixes und fixes für sicherheitslücken, die werden zurückportiert
+<frickelpit> und es gibt zudem während der entwicklung einen feature freeze
+<ppq> kcalb, wenn du nen neuen kernel willst: http://wiki.ubuntuusers.de/lts_enablement_stacks
+<frickelpit> da ist der 3.16 schon aktuell
+<dreamon> reqq456, ich habe mein altes ubuntu komplett gelöscht. xubuntu installiert und nun will ich alles zurückspielen.
+<dreamon> reqq456, auch die festplatten anderst aufteilen.
+<ppq> achso, gibts noch nicht die vivid sachen?
+<frickelpit> dreamon: woher soll denn dein neues system wissen, wasn in deinem alten system verlinkt war? ;-)
+<frickelpit> -n
+<kcalb> ppq, frickelpit, verwendet ihr eigentlich auch ubuntu oder ne ander distri "wenn ich fragen darf" ???
+<frickelpit> kcalb: eine andere
+<ppq> unter anderem auch ubuntu, ja
+<dreamon> frickelpit, ich selbst jabe meines wissens keine links im /home bereich erzeugt. machen das die programme eventuell selber?
+<frickelpit> dreamon: durchaus möglich
+<koegs> dreamon: warum benutzt du nicht wieder rsync?
+<kcalb> hmmm... lässt mal drauf schließen das ihr nicht sooo zufrieden deid mit ubuntu nicht wahr ? *lach*
+<dreamon> koegs, weil er dann alles zurück spielt.. eventuell auch alte configs, die ich nicht mehr haben will. um nicht nochmal einen fehler vom alten system einzufangen.
+<dreamon> darum hätte ich gerne selektiv kopiert.
+<kcalb> +s
+<frickelpit> kcalb: verschiedene gründe, die eher nach #ubuntu-de-offtopic gehören ;-)
+<koegs> dreamon: cp --preserve=links
+<dreamon> frickelpit, reqq456 die eigentliche frage die sich mir stellt, was er meint wenn er beim kopieren frägt ob er dem link folgen soll. (aber ich such mal weiter)
+<koegs> keine schlechte idee
+<dreamon> meldung : sym-link "libvx.so" folgen? ja/alle/nein/übersringen
+<dreamon> ist mir unbegreiflich. sobald ich ins verzeichnis wechsele und dort datei und ordner für ordner kopiere geht es. kein fehler. nur wenn den ordnerselbst in der höhreren ebene kommt diese meldung.
+<dreamon> ah jetzt hab ich einen. in thunderbird z.b. ist in den profilen eine datei "lock" - lrwxrwxrwx drin
+<dreamon> koegs, frickelpit. wie bekomm ich raus wo der hinzeigt.
+<koegs> ls -la
+<frickelpit> genau
+<guest56040>  hallo leute, gibt es youtube für die unity dash?
+<dreamon> ls -la lock → lrwxrwxrwx 1 dreamon dreamon 15 mai 16 14:14 lock -> 127.0.1.1:+2226
+<dreamon> das ja interessant.
+<guest56040> habe was ueber yavol scope-youtube gelesen aber das funzt iwie nicht
+<dreamon> koegs, frickelpit, würde mir gerne sämtliche von den symbolic links anzeigen lassen, wo die sich verstecken. gibts da auch einen trick?
+<koegs> find . -type l
+<dreamon> puh die lieste ist länger als mein klopapier :)
+<dreamon> koegs, frickelpit ich habe nun beides probiert, link folgen oder nicht folgen. das ergebnis scheint identisch zu sein.
+<koegs> ich würde das ergebnis kontrollieren, in dem einen fall wird der link kopiert und in dem anderen fall wird die datei an die stelle des links kopiert
+<dreamon> ich habe beidesmal die datei drin mit lrwxrwxrwx rechten und beidemal mit eigenschaften den link anzeigen lassen, selbe stelle. aber ich halte es im auge.
+<dreamon> sind auf jedenfall nicht meine links
+<dreamon> verdammt.. jetzt hab ich ein 32bit os installiert.. heul..
+<sash_> :d
+<dreamon> moment amd64 ist doch 64bit oder?
+<jokrebel> ja
+<dreamon> uname -a → linux dreamon 3.13.0-52-generic #86-ubuntu smp mon may 4 04:32:59 utc 2015 x86_64 x86_64 x86_64 gnu/linux
+<dreamon> Ähm.. 64bit?
+<frickelpit> ja
+<dreamon> ist das nun ein 64bit oder nicht? ich wunder mich wenn ich teamviewer 64bit installiere, geht es nicht die 32/64bit version geht.
+<koegs> normal
+<dreamon> frickelpit, danke, dann hab ich nochmal mächtig "schwein" gehabt.
+<dreamon> normal ? warum
+<koegs> https://www.teamviewer.com/de/help/363-wie-installiere-ich-teamviewer-auf-meiner-linux-distribution.aspx dort lesen
+<dreamon> koegs, danke, deswegen bin ich jetzt zu tode erschrocken. :)
+<jokrebel> na toll! mit anderen gapps installiert stürzt nun youtube nicht mehr ab. abspielen tuts trotzdem nicht. meldung: keine serververbindung - zum wiederholen tippen.
+<jokrebel> zu früh gefreut. abstürze wie eh und je
+<jokrebel> oups - sorry falscher kanal
+<tingeltangeltom> jokrebel: passiert ;-)
+<mrkramps> dreamon, hast du mal bei den tastenkürzeln für den fenstermanager geschaut?
+<mrkramps> oder ist super bei dir zufällig die taste zum einfachen verschieben von fenstern?
+<dreamon> mrkramps, danke für die idee.. leider steht da kein super + space drin.
+<dreamon> mrkramps, super ist die windows taste links vom alt
+<mrkramps> dreamon, wird die überhaupt als super erkannt?
+<mrkramps> bei mir ist super_l immer multi_key
+<dreamon> ja beim festlegen der tasten super und space wird es auch so angezeigt, ich hab das früher schon immer verwendet. super+space..
+<mrkramps> check das mal mit xev an und propiere alternativ super_r, also die rechts von atl gr
+<mrkramps> falls du den compose key auf lwin liegen hast, würde sich das übrigens auch beißen
+<dreamon> ist eine neuinstallation von xubuntu.. wo finde ich compose key?
+<mrkramps> dreamon, tastatureinstellungen
+<mrkramps> → layout
+<dreamon> habs nun mal in der konsole gespeicher → (do:15958): libdo-warning **: binding '<super>space' failed! → [error 17:56:11.651] [abstractkeybindingservice] key "" is already mapped.
+<dreamon> gespeicher = gestartet
+<mrkramps> ich schätze mal, dass gnome-do eher gconf verwendet …
+<dreamon> mrkramps, tastenabkürzungen für anwendung? -> da hab ich keinen eintrag gefunden.
+<mrkramps> das tastenkürzel muss ja gar nicht in xfce vergeben sein
+<dreamon> ich habe kein gnome installiert.. läuft nur xubuntu
+<dreamon> auch kein kde oder sonstiges
+<mrkramps> vielleicht ist das tastenkürzel auch einfach in gnome-do vergeben
+<mrkramps> z.b. für "switch to next source"
+<mrkramps> all settings > keyboard > typing
+<brainwash> ibus verwendet super + space, wird jedoch nicht mehr von xubuntu installiert
+<dreamon> ah hab was gefunden -> switch-input-source super-space → keybindings → dconf zeigt das an
+<dreamon> was meint man unter eingangsquellen wechsel? welche quellen?
+<mrkramps> ich denke, das ist das, was eben mit ibus gemeint war
+<dreamon> ich reboote mal, um zu sehen ob es das war
+<dreamon> mrkramps, brainwash_ !nun gehts!! danke
+<mrkramps> \o/
+<ub_umstieg> guten abend bekks  ? danke
+<dreamon> nautilus, caja, thunar usw. die verwenden eine art lesezeichenliste, der häufigst benützten verzeichnisse. wo ist die eigentlich abgelegt?
+<jokrebel> dreamon: ist vermutlich abhängig von dem programm. vielleicht zu finden in den jeweiligen config-files
+<dreamon> .config/nautilus/ ist nichts drin. hab ich geschaut.
+<jokrebel> dreamon: muss jetzt nicht unbedingt menschenlesbar sein; je nach tool
+<dreamon> mir ist aufgefallen, das sich die dateimanager diese lesezeichen irgendwie teilen, weil diese in mehreren auftauchten, obwohl ich diese dateimanager nicht verwendet habe.
+<frickelpit> dreamon: guck mal nach .gtk-bookmarks
+<dreamon> frickelpit, danke!
+<benno-007> dreamon: vieles steht auch in dconf und gconf: http://wiki.ubuntuusers.de/gnome_konfiguration
+<dreamon> benno-007, das kann ich nicht so einfach reinkopieren..(die alten lesezeichen meine ich nun in diesem fall)
+<benno-007> hab dir nur einen hinweis geben wollen, wo gnome-progs ihr zeug (zumindest einstellungen) ablegen.
+<dreamon> benno-007, dieses gconf/dconf zeug erinnert mich an die registry bei m$ .. find ich nicht gut.
+<benno-007> ja. gconf sind noch xml-dateien, dconf binär. dafür schneller. hat alles vor- und nachteile.
+<dreamon> was ist das? doublecmd-0.6.2.gtk2.x86_64.tar.xz xz?
+<dreamon> http://sourceforge.net/p/doublecmd/wiki/download/
+<bekks> was ist was genau?
+<dreamon> portable packages (most modern distro)
+<dreamon> wollte es entpacken.. aber xz hab ich noch nicht gehört
+<bekks> und was ist deine genaue frage?
+<dreamon> ich wollte es entpacken und installieren
+<dreamon> bei 14.04 ist eine alte version von doublecmd und die hängt sich hier ständig auf
+<dreamon> 0.5.8 beta → neu wäre 0.62
+<bekks> und was ist deine genaue frage?
+<dreamon> wie entpack ich das. um was handelt es sich bei der dateiendung .xz
+<dreamon> dachte immer das hieße tar.gz
+<bekks> die dateiendung .xz ist ein zeichen dafür, dass "xz" zum packen den tarballs verwendet wurde.
+<dreamon> oh. doublecmd kennt das selbst das format nicht.. dann nehm ich einen anderen archivierer. danke
+<dreamon> dachte das sei ein schreibfehler
+<bekks> "xz" würde sich anbieten.

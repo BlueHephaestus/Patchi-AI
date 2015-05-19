@@ -1,0 +1,778 @@
+apr 28 23:31:44 <canonprinter>	(i'm fairly new to html) i have a table and its border is "1" and its cellspacing is "1", but the border looks like this http://i.icap.me/2941430278757bb23.png , is there a way i can make the border as thin as like 1 pixel
+apr 28 23:35:45 <jrich523>	canonprinter: 1 is 1px
+apr 28 23:36:07 <jrich523>	also, use things like fiddler
+apr 28 23:37:24 <canonprinter>	oh
+apr 28 23:37:43 <jrich523>	with fiddler you can show us what you're doing and we can edit it/show you
+apr 28 23:38:00 <jrich523>	plunker is also pretty cool
+apr 28 23:39:11 <canonprinter>	ok
+apr 28 23:39:25 <jrich523>	also using chrome or ff with its devtools can be very helpful, because basically what you're asking is css related
+apr 28 23:39:39 <canonprinter>	ok
+apr 28 23:39:42 <canonprinter>	but like
+apr 28 23:39:46 <canonprinter>	http://i.icap.me/29414302792340f93.png
+apr 28 23:39:48 <canonprinter>	that's what i want
+apr 28 23:39:51 <canonprinter>	but the table
+apr 28 23:40:01 <canonprinter>	has slightly thicker borders? not sure how to explain it
+apr 28 23:40:02 <jrich523>	well thats way thicker than 1px
+apr 28 23:40:06 <canonprinter>	well
+apr 28 23:40:08 <canonprinter>	yes obviously
+apr 28 23:40:09 <jrich523>	thats like 10 or 15px
+apr 28 23:40:22 <canonprinter>	well yes i zoomed in quite a bit
+apr 28 23:40:32 <canonprinter>	but i mean like that, but those lines are only 1px big
+apr 28 23:40:42 <jrich523>	.....
+apr 28 23:40:47 <jrich523>	1px is subjective
+apr 28 23:41:02 <jrich523>	especially when you've got some random zoom going on
+apr 28 23:41:19 <canonprinter>	ok
+apr 28 23:41:21 <canonprinter>	here http://i.icap.me/29414302793673cb5.png
+apr 28 23:41:22 <jrich523>	which is why i say, use fiddler, that way you can just show me a rendered version of your code and i can edit it on the fly
+apr 28 23:41:23 <canonprinter>	like that
+apr 28 23:41:29 <canonprinter>	ok
+apr 28 23:41:33 <canonprinter>	i'll check out fiddler
+apr 28 23:41:35 <jrich523>	so, thats more so a drop shadow
+apr 28 23:41:57 <jrich523>	https://jsfiddle.net/
+apr 28 23:42:43 <jrich523>	https://jsfiddle.net/#&togetherjs=csgskfoiwb
+apr 28 23:47:35 <jrich523>	next time, just provide a link to jsfiddle
+apr 28 23:49:38 <visage>	`paste
+apr 28 23:49:43 <visage>	bleh, bot still broken.
+apr 28 23:50:29 <visage>	live pastebins: http://www.webdevout.net/test, http://www.jsfiddle.net/, http://tinkerbin.com/, http://jsbin.com
+<dragonpunch>	why isnt the password field being cleared when i press the refresh button
+<visage>	dragonpunch: because your browser is remembering it, probably.
+<dragonpunch>	ai ya yai
+<meir`>	what's your perfect approach to make a little colored square with definition next to it? (i need it for color legend)
+<[tyrant]>	just joined
+<[tyrant]>	the perfect apprach is to make a little colored square with definition next to it
+<[tyrant]>	y0 so i need a few peeps
+<[tyrant]>	taking over food
+<meir`>	[tyrant], just exploring the most elegant way
+<meir`>	it can be a little div, or table td, or anything else
+<[tyrant]>	elegance is not a definition
+<[tyrant]>	what it look like
+<[tyrant]>	ill tell you
+<meir`>	http://i.stack.imgur.com/cxcjs.png
+<meir`>	i wanna mimic this with some clean html code
+<[tyrant]>	thats
+<[tyrant]>	jesus dude
+<[tyrant]>	ul with the squares on side
+<meir`>	i'm just wondering about the *squears* themselves
+<[tyrant]>	you make an image
+<meir`>	are they small divs in your opinion?
+<[tyrant]>	and get it done
+<[tyrant]>	no
+<meir`>	that's exatcly what i wanna avoid
+<meir`>	or perhaps i'll make by css3?
+<[tyrant]>	margin with that image in the li elements
+<[tyrant]>	no
+<[tyrant]>	not even close to css3
+<meir`>	i don't want to create permanent images
+<oksushi>	meir`: anything about “how things look” goes to #css
+<cojabo>	..isn't there a square option already? lol
+<[tyrant]>	haha
+<cojabo>	list-style: square;  even.. lol
+<meir`>	cojabo, well, there's the ul css list-style-type:square
+<[tyrant]>	he had such an elaborate starting question
+<meir`>	[tyrant], i'm just a bit crazy about beautifuling the code
+<[tyrant]>	you should be
+<[tyrant]>	stop it guys
+<[tyrant]>	img and done
+<[tyrant]>	hes not making google
+<[tyrant]>	damn
+<meir`>	[tyrant], i can't use permanent images
+<[tyrant]>	what bandwidth?
+<meir`>	it should be dynamic, following some selected css color by the user
+<[tyrant]>	hahahaha
+<[tyrant]>	pick your hacks man
+<meir`>	it's not about storage
+<cojabo>	..whytf would you use images for that when theres that style built-in
+<[tyrant]>	just put the img to the left
+<meir`>	cojabo, 'cause controlling the bullet size is a pain
+<cojabo>	if it has to be exact, hell, use ::before or something
+<cojabo>	it's #css anyway, so yeh..
+<[tyrant]>	stop yes
+<meir`>	i'm already there
+<meir`>	thanks for your kind and offensive help...
+<[tyrant]>	no you’re not
+<[tyrant]>	not offensive
+<[tyrant]>	i told you what to do
+<[tyrant]>	put the img in css and do your ul
+<[tyrant]>	i gotta use irc more
+<[tyrant]>	been a while
+<[tyrant]>	used it most in efnet
+<krambiorix>	hi, here are my meta tags : http://laravel.io/bin/blyx5   ->howcome my page is still cached? i see in firebug that the date is today but two hours ago..
+<iaj>	hi there, got a small question i have a log file that i link to on my webserver, just the plain log file, however that log file is in utf-8 fileencoding, and on the webpage it seems like its latin1 or something, eg. weird umlaut characters
+<iaj>	do i have to create a php file that sets body and head to be utf-8 and just read the file-contents?
+<oksushi>	`utf-8 @ iaj
+<oksushi>	iaj: a) the page must be saved with utf-8 encoding; b) the 'content-type' http header must specify the utf-8 encoding; c) data pulled from databases must be saved utf-8-encoded; d) any database connections must be using utf-8.
+<catricycle>	hello
+<catricycle>	i was wondering if i can place robot text in <body>
+<magneticduck>	lol wtf is robot text
+<visage>	i wondered that myself.
+<magneticduck>	maybe it's like
+<magneticduck>	what robots .. type ..
+<catricycle>	:d
+<magneticduck>	catricycle: what do you mean by robot text?
+<magneticduck>	robots.txt?
+<catricycle>	yea
+<catricycle>	i just have access to content managment system
+<catricycle>	but not to website files
+<catricycle>	so i thought, maybe i can add that meta tag inside <body>
+<magneticduck>	i don't think so
+<magneticduck>	oh wait
+<magneticduck>	hmmm, you could try
+<visage>	what also made him think it was a meta tag solution? heh.
+<bytegap>	hi guys, i need some help. i have a width scroll bar on my lab project web site, even though i have the width set to 100%. can anyone tell me what might cause that?
+<johnny->	try #css
+<bytegap>	thanks
+<visage>	i love psychic helmet questions.
+<bytegap>	hi guys, can anyone recommend me some high-quality resources for learning html5, css3 and js?
+<visage>	bytegap: explore the intricacies of html and css here: http://www.w3.org/community/webed/wiki/main_page, http://docs.webplatform.org/wiki/html/tutorials, http://docs.webplatform.org/wiki/css/tutorials, http://css.maxdesign.com.au, http://diveintohtml5.info, http://html5doctor.com
+<bytegap>	thanks, visage.
+<bytegap>	i was hoping there is some kind of compilation of high-quality resources in the form of a book, but this will have to do.
+<steeze>	anyone here used adobe muse?
+<steeze>	i don't have it, but i'm trying to help a friend
+<bytegap>	what is that, steeze?
+<steeze>	wsyiwyg site maker i believe bytegap
+<steeze>	trying to help my friend host. im not familiar with how it exports the site. wondering if its just html,css, then he can host on github pages
+<bytegap>	hmm, i'll check it out, but making web sites with a wysiwyg editor is not cool.
+<steeze>	bytegap, haha i know. it's not my site.
+<visage>	bytegap: books are too often outdated and wrong. we never recommend them here.
+<visage>	steeze: please read the channel topic. no wysiwygs.
+<bytegap>	visage, i though so. i'm used to learning technology from books, so that's why i asked.
+<bray90820>	does anyone know of a good rss reader to embed onto my blog
+<duckey>	bray90820, use js to make a new one??
+<bray90820>	i was hoping to use an already made one
+<bray90820>	i'm gonna be imbeding it int tumblr and idk if tumblt even supports javascript
+<visage>	bray90820: please ask about finding tools in #web. this channel is for markup language support only.
+<bray90820>	alright
+<bray90820>	thanks
+<thecoolguy>	hello
+<iaj>	hi there.
+<iaj>	is it possible to use an <a> tag to initiate the same as an <input type="submit"> would do? eg. replace the input tag with a defined onclick="return optin_subscribe_check();" with an a tag?
+<atoem>	hi
+<atoem>	look www.scooterelektro.nl/1/
+<atoem>	html5 not?
+<atoem>	did make a h6 in the logo with fons size 0
+<atoem>	will that do good for seo?
+<nimomo>	hi, i use facebook share plugin which opens a pop up. the chrome pop up blocker blocks it. how can i solve this issue?
+<iaj>	when i just want to have a input type="submit" that submits a form, how does it need to look like?
+<pacmakaveli>	<input type="submit" value="submit form" />
+<iaj>	can i style that as a button?
+<visage>	iaj: ...it already is a button, but yes, you have our permission. :)
+<iaj>	visage: thats what i wanted to hear thanks
+<pacmakaveli>	:))
+<visage>	iaj: alternatively, you could do <button type="submit">send some shit</button>, then style away.
+<iaj>	hehe, yeah! :)
+<code_pod>	i have a parallax web page that has a button that loads next project showcase. upon clicking that button i wanna 1) load next project images and put them in right places(in order to accomplish this i use document.getelementbyid("someid").src = "some image") 2) change the animation such as fading(i use animation.css)
+<code_pod>	in my javascript file i have a global variable that contains a string that represent current project name
+<code_pod>	and i have a function called loadnextproject() that get called when clicking said button
+<code_pod>	inside the function i use if/else if on current project name and based on that i load images and change .src of each <img ... />
+<code_pod>	it's not a good solution since it doesn't work 'cause if we have lots of project handling these project just using an if/else if is not rational
+<code_pod>	any idea?
+<visage>	code_pod: you want ##javascript. down the hall. we only deal with markup here.
+<code_pod>	visage: okay, sorry.
+<atoem>	<img ... />?
+<atoem>	<img ../>?
+<code_pod>	atoem: i meant img tag buy using it
+<code_pod>	atoem: any idea?
+<atoem>	well it is css and not html
+<code_pod>	atoem: well, my main question is that how to load images though i have css related question too
+<visage>	right, #css for those.
+<code_pod>	visage: thanks
+<dolphinling>	hi. ie (all versions) has a bug with <base> where if you set window.location = "a/relative/url/", <base> doesn't get applied. is there some way i can feature detect for this bug, or should i give in and use browser detection?
+<visage>	dolphinling: you should ask the ##javascript folks if there's a js solution.
+<dolphinling>	visage: will do, thanks
+<kushite>	hi guys!
+<atoem>	time for red alert!
+<ravenzz>	is there any way to select by custom data attributes on ie<9?
+<ravenzz>	probably a question for #css
+<ravenzz>	sorry
+<thecoolguy>	 is it bad practice to format things with a table like this and would it be better to use css ? https://jsfiddle.net/yrguwpgz/
+<texasmynsted>	is it valid to add an id property to a meta tag?
+<texasmynsted>	never mind looks like id is valid for all html5 tags
+<rajrajraj>	is there any such option audio.ontime(5:00, function(){}); in html
+<rajrajraj>	html5*
+<pantolon>	is it possible to bypass html validation. as far as i understand if you make javascript off you can type malicious input. but afaik no way to disable hhtml5 validation attribute. or may be html validation attribute works with java script under the hood. is that treue
+<matip>	hello!
+<matip>	how do you do so that the box with "bar" has its own scroll bars? http://jsfiddle.net/zzqz3jhy/
+<matip>	i don't want to scroll the whole page, only the green box
+<matip>	any idea?
+<cojabo>	matip: see topic
+<matip>	cojabo, read, what's next?
+<cojabo>	matip: the styling bit.
+<matip>	you mean the stuff about tables?
+<cojabo>	the #html channel is just for the markup; you want #css for css
+<matip>	ah, ok
+<matip>	got it
+<matip>	sorry, you're right, wrong channel :p
+<nikhil_>	how do i make a form submit when a file is uploaded?
+<nikhil_>	or rather, when a file is chosen
+<lilmonkey>	not with html.
+<harris>	hello
+<foofin>	hello!
+<rajrajraj>	https://jsfiddle.net/mjw8wg3h/ why am i not able to run this in "background" in android built in browser, can anyone help please...
+<rajrajraj>	here is the full code https://www.irccloud.com/pastebin/dnhkenmj
+<visage>	rajrajraj: you already know this channel is only about markup. keep your questions to markup only, please.
+<el_juliano>	can anyone tell me why this does not work: http://pastebin.com/qgfayhy7
+<visage>	el_juliano: what exactly doesn't work? be specific. don't make us guess. also, if this is a js issue, then you want ##javascript, down the hall.
+<overbythere>	how can i escape brackets used in html template files? so i can have inline css such as body { padding:0; } without it being converted to body (unknown)? the details about the template system are here, but dont include any escape help http://manpages.ubuntu.com/manpages/oneiric/man8/tinyproxy.8.html
+<el_juliano>	visage: when i open the file with my browser, it shows ma an error message that the password typed is wrong
+<el_juliano>	visage: and the html document is to automatically login to facebook when opening the file with the browser.
+<visage>	el_juliano: right, that's not an html issue.
+<el_juliano>	visage: thank you very much :)
+<visage>	overbythere: sounds like a terrible template system if that is indeed the issue. you should also be using external css files anyway.
+<overbythere>	visage it's running on my router as a transparent proxy, so having an external css file isn't as easy as i would want it to be, believe me if i could put one in i would.. any ideas what template system it is using, or how i could start finding that out?
+<overbythere>	ah there's a tinyproxy channel, will try there, thanks for your help though visage :)
+<visage>	heh, good luck.
+<overbythere>	turns out it needs a double bracket, so body {{ padding:0; }, weird eh?
+<tongcx>	hi guys, where should i put <link>? in body or header?
+<harris>	how can i have a button hidden when a html program starts
+<visage>	"html program..."
+<duckey>	i am having some trouble positioning these paragraphs. like the conclusion is at the top of the page. halp plz. https://jsfiddle.net/vhczqd6x/
+<harris>	visage, hey
+<psybr>	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
+<psybr>	bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img border="0" src="http://kiwichat.nz/pgm-show_image.php?id=47363" /></p>
+<psybr>	yep.
+<chulbul>	i'm using object and embed instead of iframe but on iphone, there is no scrollbar
+<visage>	chulbul: why do you think you needed an iframe in the first place? what are you trying to do?
+<chulbul>	visage, http://www.connekd.com here is the website, scrollbar is working on web, but when opened in ios safari, it just displays the visiable content and i can't scroll left or down
+<visage>	chulbul: again, why do you think you need an iframe?
+<chulbul>	visage, i replaced iframe with objetct embed also
+<visage>	...
+<chulbul>	what else i can do here if i want to show content from other sub domain to main domain
+<chulbul>	as per my knowledde, i can use iframe or embed object
+<chulbul>	could you sugest me something
+<visage>	easy. you fetch the data from the server and display it. you need to look at things like xhr and/or cors (javascript.)
+<visage>	there is no need to use a silly iframe or object.
+<visage>	you use js and some server-side magic and write a proper api.
+<chulbul>	do you mean to say that i should get the html from sub domain and then display it on main domain?
+<chulbul>	but why don't you prefer iframe or embed object, this simply is resolving my problem with one line of code although its just not working on iphone and that is my major requirment to make it work on iphone
+<visage>	do you even know what xhr and json are?
+<chulbul>	yes i know json, xhr . im web developer
+<visage>	then use cors and xhr to do what you want.
+<visage>	build a proper api.
+<visage>	sometimes the shortest path isn't always the correct one.
+<chulbul>	yeah i can understand visage, so you mean that using iframe or embed object is simply a bad idea?
+<chulbul>	may i know the reason please
+<visage>	using an iframe isn't...bad.. it's just not the right solution for what you want to do.
+<chulbul>	visage, okay thanks
+<davvblack>	anyone know if theres a wy as a webmaster to change the window.document.referrer a child cross-domain iframe sees?
+<davvblack>	i know it can be hidden, not sure if it is spoofable
+<visage>	davvblack: not a markup question.
+<rajrajraj>	 is there any code that can run in background of android built in browser specially when phone is locked
+<visage>	rajrajraj: same for you. you know this already.
+<visage>	this channel is only for html (the markup language.)
+<rajrajraj>	visage:  is there any markup that runs in browser even when it is minimized and phone is locked
+<visage>	rajrajraj: html doesn't "run" in that sense anyway, android or not. maybe you meant javascript.
+<rajrajraj>	visage: i dont know
+<rajrajraj>	visage:  i just want anything on browser to run when its minimized and phone is locked
+<visage>	sounds like a silly and potentially dangerous idea. whatever. ask the ##javascript folks. that's as good as you're gonna get unless you make your android app or whatever.
+<thecoolguy>	anyone know why the margins aren't being updated ? https://jsfiddle.net/dtchh/7355/
+<visage>	thecoolguy: you already knows margins are a css thing.
+<harris>	hello
+<foofin>	hello!
+<basketball>	hello
+<foofin>	hello!
+<basketball>	anyone know a good video that teaches html div and table
+<visage>	basketball: don't be silly.
+<visage>	`schools @ basketball
+<rivvles>	basketball, explore the intricacies of html and css here: http://www.w3.org/community/webed/wiki/main_page, http://docs.webplatform.org/wiki/html/tutorials, http://docs.webplatform.org/wiki/css/tutorials, http://css.maxdesign.com.au, http://diveintohtml5.info, http://html5doctor.com
+<basketball>	visage, ??
+<lilmonkey>	foofin: can you turn that off please?
+<basketball>	'schools @ basketball '
+<visage>	basketball: we don't do videos here, we do links. the bot pasted you some.
+<basketball>	'schools @ basketball'
+<basketball>	'schools @ visage '
+<uxfi>	lol
+<uxfi>	basketball is 12
+<basketball>	'schools @ visage'
+<lilmonkey>	dear lord
+<visage>	i can tell. :)
+<uxfi>	troll
+<uxfi>	he's done this crap before
+<basketball>	what why wont that work
+<basketball>	'schools @ visage
+<visage>	basketball: go read some links, sheesh.
+<visage>	uxfi: yeah, he's been here before...
+<uxfi>	lol he left
+<uxfi>	or here
+<uxfi>	anwyays brb
+<visage>	2015-01-10 16:23:09 <basketball> arent websites written in html <- classic. :)
+<lilmonkey>	that's so wrong. everyone know websites are written in notepad.exe.
+<lilmonkey>	knows*
+<visage>	heh.
+<visage>	wait, i don't have .exe files. i call shenanigans!
+<lilmonkey>	well you clearly don't write websites then.
+<visage>	probably not. :sniffle:
+<lilmonkey>	btw, did you know that the linux kernel is written in notepad too?
+<lilmonkey>	notepad is very versatile.
+<visage>	you mean notepad.exe, right?
+<visage>	is that different than notepad?
+<lilmonkey>	shhh
+<d4rklit3>	what is best semantics to use if i have a page that lists projects
+<d4rklit3>	each project has a div with some headlines
+<d4rklit3>	can i use an h1 in each project for its title?
+<d4rklit3>	.project.tile > .tile-text > h1
+<tongcx>	hi guys, want to use polymer for material design, really struggling how to implement some layout
+<tongcx>	i basically want to have a big textbox in the middle
+<tongcx>	but i don't know how to learn about all the structures, which elements should i use
+<johnny->	tongcx, there's a #polymer channel
+<tongcx>	johnny-: thanks, but i guess my problem is that there are so many "layout", "elements", "flex". i'd like to find somewhere to learn how everything fit together
+<johnny->	#web maybe? this channel is strictly for html, not a mixmash of all web tech
+<tongcx>	johnny-: thanks
+<harris>	hey
+<hassoon>	how can i insert a date thing from a html form into the mysql db :o
+<tty>	hi. i want to have have 10+ image-maps. i have created on some image-mapping software but is so crumbershome to make any changes. can i create the image maps on illustrator so that i can edit them easier?
+<bear10>	i'm looking at srcset and i'm wondering if there's a way to tell it to use one image for a certain screen with given width or another.
+<bear10>	or is there another way of dealing with this
+<reelsjigs>	can someone help me to locate a specific command within a html script
+<tongcx>	hi guys, how to have a tooltip or value displayed for <input type="range">?
+<pilum>	title
+<tongcx>	pilum: how?
+<pilum>	title="tooltip"
+<tongcx>	pilum: still didn't get it, can you give me more complete code?
+<pilum>	<input type="range" title="tooltip">
+<tongcx>	pilum: nothing happened
+<tongcx>	pilum: i'm using chrome
+<pilum>	works just fine in chromium.
+<pilum>	jsfiddle.net/v9gqr4qf/
+<tongcx>	pilum: thanks
+<tongcx>	another problem is that seems i cannot set default value for range input
+<pilum>	what are you doing then?
+<darkelement>	chi
+<darkelement>	oops
+<rodd>	hi i need help with form and a button with onclick: https://jsfiddle.net/laz289mx/ how can i keep it from triggering the onlick when i enter some text in the textfield then hit enter in my keyboard? (check the network tab in your dev tools, it will call something_else.php)
+<rodd>	nvm added type=button solved
+<visage>	...
+<dkfn>	is there a way to put a hyperlink to the current page if <base> element is activated?
+<visage>	dkfn: obviously use a relative link that would resolve to the current page or else use a full url that would.
+<dkfn>	but that is infeasible
+<visage>	sure it is. you have access to a server-side language or js in the client, don't you?
+<dkfn>	i could use js
+<visage>	then simply get the current url with js and, well, you win.
+<steeze>	is there a better supported alternative to <nobr> ?
+<uxfi>	april 12, 2011 10:03 a.m.
+<uxfi>	whoops
+<visage>	steeze: explain what you're trying to do and we'll provide a better alternative.
+<steeze>	visage, i said never mind because i figured it out ^_^
+<steeze>	oh wait woops that was another channel
+<steeze>	either way
+<visage>	heh.
+<billy71>	hi
+<billy71>	microdata, can i use multiple properties per element? because i would hate to nest them somehow.
+<billy71>	ah yes, could i nest them at least? span in span? to avoid extra css just for having them next to each other?
+<compact>	hey guys. in html i've got a date input. date('y-m-d') works, but i don't want to add the day to the input. however date('y-m') won't show up any date in the input. know anyway around it?
+<docmarten>	morning all, having a bizarre problem with formatting a form layout in a phonegap app...i am beginning to think its a bug but need some additional eyes on it: http://forum.ionicframework.com/t/possible-bug-form-input-wrapping-issues/22580
+<docmarten>	it is happening on two forms, one above the map and one below the map.  should be one line forms but its forcing everything to be wrapped causing the form to spread across three lines.
+<visage>	docmarten: formatting and styling are all css issues. did you read the channel /topic?
+<docmarten>	i did, but no one was responding over there, figured i would get attention here.  but...that aside, i finally figured out the issue.  not a bug, but its a framework formatting parameter that must be included that i wasn't aware of.
+<visage>	good that you solved it, but remember, just because no one in a particular channel is saying anything is no excuse to go bother other off-topic channels.
+<docmarten>	fair enough
+<blinky_>	hi all, is it possible to have a scroll bar within a datalist, the contents of mine are running off the bottom of the page and i am not able to get to the bottom ones.?
+<secrettriangle>	why won't the clip-path css rule on <image> apply in firefox? i have to set the it in style="" (i.e. element styles) for some reason http://secrettriangle.net:31004/
+<lilmonkey>	secrettriangle: please read the channel topic
+<secrettriangle>	lilmonkey: if you want me to do something please tell me what you want me to do instead of making me guess
+<lilmonkey>	there's nothing to guess. read the fucking channel topic.
+<secrettriangle>	ok done
+<secrettriangle>	why won't the clip-path css rule on <image> apply in firefox? i have to set the it in style="" (i.e. element styles) for some reason http://secrettriangle.net:31004/
+<lilmonkey>	sigh
+<visage>	hugs.
+<visage>	readin' is hard.
+<atoem>	it is
+<atoem>	its not native for me
+<atoem>	specialy geek enlish
+<atoem>	g
+<lilmonkey>	not to sound like too much of an ass, but that's not our problem. english-language channel, english-language topic. if it's too hard for someone because of a language barrier, they should go find a support channel or forum or whatever in a language more comfortable for them.
+<lilmonkey>	aka "ignorance is no excuse"
+<atoem>	it's not too hard!
+<lilmonkey>	good!
+<atoem>	i have more problems with chinese language
+<lilmonkey>	me too! go figure :)
+<atoem>	ow, i'm not the only one:)
+<visage>	atoem: that's not even the real issue. the thing is that most folks who have styling questions here don't read the topic at all. they think that "well, it deals with html anyway" or "yuo can't have html without css" gives them an excuse to bother off-topic channels.
+<visage>	not to mention they don't understand the way freenode is set up. channels exist for a particular reason/topic. if they don't like it and think they can do better, hey, feel free to /part and start your own chan.
+<visage>	...which reminds me, gonna start work on an #html rules page at some point.
+<atoem>	a whole page with rules?
+<visage>	oh yes.
+<visage>	a topic can only be so large.
+<atoem>	do we need that?
+<lilmonkey>	no need for that to be a rule; that's common sense.
+<lilmonkey>	we don't need a rule saying "no molesting children" either.
+<lilmonkey>	brb :)
+<visage>	atoem: no, the rule is "don't do stupid shit."
+<uxfi>	hi atoem
+<uxfi>	lilmonkey secrettriable has asked that for days now
+<michaeladairhelp>	i need help with my boostrap site, on the index my carousel works but not in my general page... https://tynmk-mikeadair.c9.io/general.html as you can see, in the general page, it'll change the link when you press the left or right button which shouldn't happen....
+<michaeladairhelp>	i need help with my boostrap site, on the index my carousel works but not in my general page... https://tynmk-mikeadair.c9.io/general.html as you can see, in the general page, it'll change the link when you press the left or right button which shouldn't happen....
+<oksushi>	michaeladairhelp: this channel is for help with html only. ask ##bootstrap if you want help with that
+<michaeladairhelp>	ah okay, sorry! :d
+<michaeladairhelp>	(if you could help me with it though, that would be cool... the bootstrap channel seems to be dead...) i'd be eternally grateful.
+<oksushi>	all the folk that want to help with bootstrap are there
+<michaeladairhelp>	well, i think we should call the cops cause someone seems to have shot up that irc...
+<visage>	wut?
+<michaeladairhelp>	can anyone do me a quick help favor?
+<michaeladairhelp>	it involves bootstrap...
+<oksushi>	michaeladairhelp: stop asking about that here
+<michaeladairhelp>	oksushi: alright, sorry.. i was just getting no help at the bootstrap one.
+<oksushi>	that doesn’t make it a discussion for #html. try looking for other ways to get support if irc is not working for you
+<michaeladairhelp>	oksushi: i guess i'll just code it in javascript. thanks.
+<ephexeve>	hey guys, i am writting a html parser, i wonder if there if any easy way i can get the date from an article (when it was created)
+<ephexeve>	trying to find a tag where in general, everyone ueses
+<ephexeve>	*uses
+<oksushi>	depends on the html. these days, it’s likely <time> - unless it’s marked up with a schema (see http://schema.org/article for an example)
+<ephexeve>	thx
+<oksushi>	<time> can have a pubdate attribute iirc
+<ephexeve>	cool
+<explodes>	is there anything wrong with this html? http://pastie.org/10179286 when it renders, the button has no value and the images src is empty.
+<explodes>	(as inspected in the chrome dev tools)
+<explodes>	chrome dev tools looks like this: http://explod.io/hosted/ss.png
+<explodes>	jk found it
+<explodes>	python bug i'm retarded sometime
+<explodes>	gg
+<anj7>	how can i get rid of the dotted rectangular selection for a button in html
+<speedio>	how can i place an image so it wont take up a whole row, instead just the very first part of the row?
+<uskerine>	how can i make that a field can not be edited?
+<uskerine>	input type="text"
+<visage>	uskerine: use the readonly attribute.
+<feodoran>	i am trying to get a constant width for all <input type="text"> and <select> field. i found "box-sizing: border-box;", but it does not work in this example: http://pastebin.com/pjnknkyw  can someone help me out?
+<lilmonkey>	feodoran: please read the channel topic
+<visage>	feodoran: did you read the channel /topic?
+<lilmonkey>	lol
+<visage>	lilmonkey: jinx!
+<lilmonkey>	:)
+<feodoran>	sorry, i got no response in #css yet, so i thought i give it a try here
+<visage>	feodoran: a very common tactic, but no, #css is still the channel to ask in. just have patience.
+<duckey>	visage, actually, i learned a little js. maybe it is a far shot, does not mean you must shut on my dream.
+<visage>	he's got no chance.
+<hi-angel>	is there a tag to paste a bunch of text with special characters (like «<») and newlines? or do i have to convert this all into an according &amp, etc?
+<hi-angel>	hm… it is harder than i thought… i am trying to use html to write a document. i tried before latex, but it have a big problems with unicode, so people adviced me html. seems it isn't that easy…
+<hi-angel>	ah, screening≡escaping
+<lilmonkey>	it's plenty easy.
+<lilmonkey>	in latex or html.
+<lilmonkey>	you don't have to escape any unicode.
+<visage>	hi-angel: latex doesn't have a problem with unicode at all. try looking at xetex.
+<visage>	but that's another subject entirely.
+<hi-angel>	lilmonkey, well, i just have a bunch of text, and i am surely need to do something with newlines there and symbols like «>». that what i meant
+<lilmonkey>	why are the newlines significant?
+<hi-angel>	well, because if these are pasted as is, then it displaying like one single line. tbh i didn't searched yet about tags specifically to newlines, because i thought here is solution for both newlines and special symbols
+<lilmonkey>	but why are the newlines significant?
+<hi-angel>	because newlines should be displayed in the text.
+<lilmonkey>	what is their purpose?
+<hi-angel>	to separate lines of text
+<lilmonkey>	you mean to create paragraphs?
+<hi-angel>	well, paragraphs here, as i see, looks just like an usual separate lines, so, i think, yes
+<hi-angel>	okay, anyway, thank you, i see, i ought to find some converter for a text to be pasted
+<lilmonkey>	i don't think you understand how html is used, then. html describes content. if you have content with paragraphs, you use the appropriate element to indicate that: <p>
+<lilmonkey>	... and so forth for everything else.
+<exounx>	hello :d
+<visage>	exounx: we only help with markup here. if you want styling help, then you want #css.
+<visage>	you should probably fix those validation errors first though.
+<exounx>	visage, yah will do, and yah i went to #css
+<_3by8>	would someone please tell me why my code isn't working? it's very simple. just some html with some jquery. http://pastebin.com/pf2cmayu
+<uxfi>	hi _3by8
+<uxfi>	:)
+<_3by8>	hi!
+<_3by8>	ux = user experience?!
+<meandrain>	hi
+<gemclip>	is there a rule of thumb for line height vs font size?
+<textmode>	gemclip: a point is an actual unit of measurement. so yes.
+<gemclip>	whats the rule?
+<textmode>	gemclip: the typographic point is defined as 1/72 of a standard international inch, which is the measure from baseline to top-line. this measure is equal to the "point size" of the font, by definition.
+<textmode>	(though if a given system is (or can be) properly calibrated is a different story.
+<gemclip>	sorry i must not have explained what i was looking for clear enough
+<gemclip>	if a font size is 14px the rule of thumb would be a line height of 18px or 120% ect...
+<gemclip>	the ratio of font-size to line-height
+<textmode>	…is a font metric, technically its utterly at definition of the font; part of its data.
+<textmode>	certainly some values are more common than others. 120% sounds about right.
+<textmode>	as a sort of average.
+<textmode>	but you might find fonts where thats quite wrong. eg some terse or small-cap fonts have essentially no decenders, and thus don't need the room. conversely some script or true italics can have rather elaberate or long decenders in which case you might be looking at closer to 175%
+<textmode>	if you have access to such data, you should just get the line height from the font's metrics. its the only real answer.
+<textmode>	(true italics as opposed to mechanically tilted fonts)
+<gemclip>	i found what i was looking for. thank you for your help
+<gemclip>	good article here in ref to the topic: http://www.pearsonified.com/2011/12/golden-ratio-typography.php
+<uskerine>	hi, is there any linux command line utility to automatically indent html code?
+<gemclip>	what editor?
+<uskerine>	command line, no editor
+<gemclip>	that doesnt make sense
+<gemclip>	how are you looking at the code?
+<uskerine>	i use vi
+<gemclip>	so vi is your editor
+<uskerine>	ok, a tool for vi would fit too
+<uskerine>	but i would prefer command line
+<gemclip>	use the > command. to indent 5 lines, 5>>
+<gemclip>	vi is not the command line
+<uskerine>	i am looking for something like this: http://manpages.ubuntu.com/manpages/dapper/man1/tidy.1.html
+<gemclip>	vi is a screen-oriented text editor
+<uskerine>	that command does not work
+<uskerine>	i want to have an indentation mess and correct the mess
+<uskerine>	html tidy works fine but it adds header and body tags, and i have files with partial html code (such as <ul> lists)
+<gemclip>	do you only have a shell?
+<textmode>	uskerine: for dumbfire indenting you could probably do something with sed. otherwise look at the program called "indent"
+<uskerine>	there must be something, "tidy" works but it adds the "missing" tags, which in my case aren't missing
+<uskerine>	found it:    tidy -config tidyconfig -wrap 132 -i -o sidebarmenu.html2 -c sidebarmenu.html
+<uskerine>	you can tell not to add missing tags
+<uskerine>	thanks anyway
+<uskerine>	http://tidy.sourceforge.net/docs/tidy_man.html#detailed%20configuration%20options
+<resio>	in html5, should you still use /> for void elements
+<resio>	like <input type='submit />   or <br />
+<lilmonkey>	"still"?
+<resio>	yeah still
+<lilmonkey>	there's no "still".
+<resio>	you had to for html4
+<lilmonkey>	um, no.
+<resio>	well didnt -have to-
+<lilmonkey>	it wasn't even valid in html4.
+<resio>	alright
+<resio>	xhtml
+<resio>	didnt know you had to get very detailed ehre
+<lilmonkey>	not for closing elements, anyway. html4, being an sgml language, uses the / alone to self-close an element, with the following > being a normal, printed character.
+<resio>	thanks
+<lilmonkey>	browsers chose not to implement that fun bit of sgml to help out all the idiot devs who thought they could use xml semantics in html.
+<lilmonkey>	anyway, moving on...
+<lilmonkey>	you are allowed to do it in html5, but you don't have to.
+<lilmonkey>	"didnt know you had to get very detailed ehre"... what does that even mean? if you want a correct answer, which i'll assume you do, the question needs to be right, too, obviously.
+<resio>	lilmonkey. i appreciate the help. perhaps the question wasn't "right" because i used the word 'still' and that spiraled sideways, but the purpose of my question i think was clear
+<lilmonkey>	we don't just answer questions here, sorry. we educate.
+<lilmonkey>	i'm terribly sorry for inconveniencing you with the burden of extra knowledge, though. perhaps next time you should ask in a different channel! :)
+<resio>	:(
+<visage>	"i'm terribly sorry for inconveniencing you with the burden of extra knowledge." <- new shirt slogan. :)
+<lilmonkey>	hehe ^_^
+<blackpawnsc>	may i ask a http protocol question?
+<visage>	blackpawnsc: this channel is for html, as in markup only.
+<blackpawnsc>	do you know what channel would be appropriate for questions about implementing http protocol to handle html file uploads?
+<visage>	probably in whatever channel supports the language you're using.
+<blackpawnsc>	well implementing a server in c... i can upload to my server properly from curl but with safari and chrome the browser sends headers then seems to wait for my server instead of continue with full file contents.. trying to figure out what response it's expecting
+<visage>	right, aren't there http libraries for c?
+<textmode>	visage: i presume they mean from scratch.
+<visage>	probably, but it's still a c question.
+<textmode>	blackpawnsc: http lint services come in real handy when developing a server. you might have to dig a bit for a free one, though.
+<blackpawnsc>	well is question about the protocol. i've read the rfcs for http 1.1 and multipart/form but haven't found answer yet
+<textmode>	visage: no, it really isn't. though i get your point about it not being on topic here either.
+<textmode>	blackpawnsc: perhaps in ##programming ?
+<textmode>	wasn't there a #webdev ?
+<visage>	there's #web, and there's also ##c.
+<uxfi>	elo
+<blackpawnsc>	thanks for the suggestions... visage's prompt about using http library led me to google and find a couple open source ones i can look at their source code to see how they are handling post with files
+<iaj>	hi there :)
+<iaj>	when i want to have a button with type="submit" to submit a form from outside the actual form, how could i do that?
+<dragonpunch>	i have an iframe
+<dragonpunch>	<iframe width=\"540\" height=\"304\" data-src=\"//www.youtube-nocookie.com/embed/uky3scpimd8\" frameborder=\"0\" allowfullscreen></iframe>
+<dragonpunch>	how do i test this and get the video?
+<industrial>	hi. i have an element "<textarea id="title" class="title" placeholder="mijn subdoel is" maxlength="40" data-required="true" autofocus=""></textarea>"
+<industrial>	$('#title') returns one jquery result. both $('#title').focus(); and $('#title')[0].focus(); have no effect on the input. it doesn't get focused. any idea why?
+<oksushi>	industrial: this is #html - perhaps you want ##jquery?
+<industrial>	oksushi: well the html api's .focus $('x')[0].focus() also didnt work
+<industrial>	and it does return undefined :s
+<oksushi>	this channel is for questions about html, not javascript. you can try ##javascript
+<industrial>	okay.
+<iaj>	hi there, which image format is best suited for being used in webdesign?
+<iaj>	that shall be acting responsive?
+<cojabo>	iaj: depends on what the image is of
+<cojabo>	iaj: you want #web for that tho.
+<sweb>	how can i tell object or embed height is auto of size of flash object ?
+<sweb>	remove height attribute will hide element
+<macaveli>	i have the following table is it possible to move everything up so artikel 1 and and artikel 2 start on the same height? https://jsfiddle.net/4wk0zqts/1/
+<uxfi>	newbie to le html css
+<visage>	uxfi: aren't they all? :)
+<uxfi>	visage haha
+<uxfi>	yep
+<dna113p>	in html is there a tag that i can wrap every word inside of a <p></p> in that would allow me to dynamically allow me to style a word but otherwise default to a normal word in a paragraph?
+<visage>	dna113p: well, html doesn't know about "dynamic" things, but you're probably thinking of span.
+<darkelement>	is it possible to use a wordpress plugin in html?
+<darkelement>	basically, without wordpress.
+<lilmonkey>	...
+<darkelement>	i'm just wondering if there is a way
+<darkelement>	with php, javascript, html, etc
+<visage>	...wow.
+<visage>	darkelement: don't be silly.
+<visage>	not that you'd want to anyway, since anything wordpress is a steaming turd.
+<darkelement>	didnt think so xd
+<anahumar>	can anyone take a look and tell why li display : inline is not taking place? https://jsfiddle.net/7xxqtxek/
+<lilmonkey>	anahumar: please read the channel topic
+<godzirra>	hey guys.  i'm watching vince allen's talk and it says one parent can have multiple box shadows.  is this true?  duplicating the box-shadow and giving it a different position on the same css selector moves the box shadow, it doesn't duplicate it for me.
+<oksushi>	godzirra: #css is over there -->
+<godzirra>	oh, sorry.  thanks.
+<vincere>	is there any easy to repeat svg to the full width of the screen?
+<elemae2>	i have a problem. i just used a youtube video with iframe and it worked. but as soon as i switched to another one, i think because of https, it won't show up.
+<elemae2>	why?
+<supsup>	is there any reason to have text as part of your image vs just having html text on top of the image?
+<uxfi>	hi supay
+<uxfi>	er
+<uxfi>	supsup
+<visage>	uxfi: yes?
+<uxfi>	visage oh was looking for someone
+<uxfi>	visage nvm ill ask here later
+<visage>	if you were looking for someone, it might be a better idea to pm them or use memoserv.
+<uxfi>	ah
+<uxfi>	ok
+<uxfi>	visage sure i'll ask le questions here later
+<sal>	hi
+<sal>	anyone here has experience with html mobile apps?
+<visage>	mcoffee: sorry, but this channel is for markup support only. for general web-related questions or help finding tools, ask in #web.
+<mcoffee>	visage: thanks, and sorry for the wrong channel.
+<jayflux>	hah, thanks for the referal visage
+<[alyssa]>	what's the advantage of using ul/li versus using the unicode for the bullets directly? the latter seems more flexible for my purposes..
+<visage>	[alyssa]: semantics. html _always_ and _only_ describes content.
+<visage>	and you always want to mark up your content the best way(s) possible.
+<visage>	think about accessibility.
+<visage>	if you think that "using the bullets directly" somehow implies a list, then you're stuck in the past and you still think that html is something visual, which it isn't.
+<adsjlkdk>	what cool stuff cna you make with html5
+<cojabo>	did you have an actual queston
+<visage>	adsjlkdk: this is going to sound crazy, but you can create ...markup. unless you're talking about "html 5: the collection of technologies", but no, we only deal with the markup portion here.
+<adsjlkdk>	whats the difference between htlm5 and html
+<visage>	adsjlkdk: are you sure you're not just trolling?
+<adsjlkdk>	why do you say i am trolling
+<adsjlkdk>	are regular people expected to know the difference nowadays
+<visage>	no, it's just with your nick and your questions, my troll sense just went off. :)
+<adsjlkdk>	last time i remembered some people cant even use an email and you expect us to know all this
+<visage>	lulwut
+<adsjlkdk>	i can use an email but im just saying
+<visage>	anyway, what's the difference? semantics and new technologies, such as a drawing api, among others.
+<linuxmint>	hello, need some help on where to upload my littlewebsite files to the bigwebsite's domain alias little website?
+<dreamstiffler>	hi guys, im new. i am trying to do a divs positioning as per here : http://ibin.co/21g7y7mnq87z . i have used relative positioning to get those divs in place. and used left:**% right: **% top bottom etc. but the problem im having is that there will always be that spacing in the bottom. i had viewed the source a few thousand times and i couldnt get whats causing the space. please also note that these divs are nested in one big d
+<dreamstiffler>	got it on fiddle https://jsfiddle.net/lw2237u7/
+<dreamstiffler>	the space
+<keestu>	hi, is it possible to use more than one video tag in html5 in single page ?
+<lilmonkey>	yes of course, why wouldn't it be...
+<keestu>	getusermedia has only one callback wherein i provides only one stream object which the user have choosen ?
+<lilmonkey>	keestu: and? you asked about video elements, something entirely different.
+<keestu>	i use getusermedia to get local usb camera object attached and pass it to video tag.
+<lilmonkey>	why don't you just ask what you mean? sounds like what you wanted to ask is if you can capture more than one local camera source at the same time, to which the answer is no.
+<keestu>	lilmonkey, sorry. while i type window got changed.
+<keestu>	lilmonkey, that's right.. i was thinking to capture more than one camera at a time.
+<keestu>	lilmonkey,  where can i find official documentation that says only one camera supported ?
+<keestu>	lilmonkey, i am able to show both the cameras... :) :)
+<lilmonkey>	keestu: ok cool. it wasn't possible in the past, but i suppose a lot has changed recently.
+<keestu>	:)
+<keestu>	lilmonkey,  is it possible to display a browser window that sits always on top of the desktop applications ?
+<keestu>	i feel not possible. but that of asking.
+<lilmonkey>	never heard of any such thing.
+<keestu>	ok
+<anahumar>	can anyone tell why this html form is not functional? http://pastebin.com/knwk9mrd
+<anahumar>	when i submit it doesn't show any variables in the url
+<anahumar>	hello fuckers
+<anahumar>	can any none fucker help out there
+<oddskill>	how do i make the images (class img-sircle) (below carousel directly over the heading) to be links too ? http://getbootstrap.com/examples/carousel/
+<oddskill>	simply put a ahref in same div ?
+<oddskill>	got it sry for taking your time
+<sirlagz>	azrael_-: have you even looked at the video.js website ?
+<uxfi>	hi
+<azrael_->	hi
+<azrael_->	i want to stream a video file and provide the user a nice player. how can i set this up best?
+<giuseppesolinas>	hello
+<foofin>	hello!
+<giuseppesolinas>	i'm having a problem with a html5 canvas that won't resize past a value in height
+<giuseppesolinas>	keeping its ratio but cropping the lower part
+<giuseppesolinas>	is there a way in which i can set this limit?
+<lilmonkey>	foofin: i asked you to turn that off
+<lilmonkey>	giuseppesolinas: not with html. #css probably.
+<giuseppesolinas>	lilmonkey, css height does not affect canvas element in the proper way
+<yaksman>	dunno/win 1
+<cryp71c>	for something simple, like pong, is it concievable for it to be implemented using html5 and javascript elements? just javascript and traditional html / graphics elements?
+<ravenzz>	bewilled: the browser will render the page and won't wait in that specific case
+<ravenzz>	meaning that you can see unstyled stuff if you put your styles at the bottom of the page
+<root3d>	hello everyone
+<root3d>	i have some issue with validator.w3c.org
+<root3d>	i am getting:  bad value ”og:title” for attribute property on element meta: the string og:title”” is not an absolute url. but its title there is no need for url. how's that possible ?
+<iam>	is there a reason my page won't load a song with a question mark in the song name?
+<itsgokul>	how to displaying overflow content inside template
+<itsgokul>	without overflow:scroll
+<oksushi>	itsgokul: #css is over there -->
+<itsgokul>	ok
+<keksike>	how to make my form work with form-completing or chrome autofill?
+<krzkrz>	whats a good article that explains how to use html 5 elements (articles, aside, section, etc)?
+<d3m0n>	krzkrz: can try out http://html5doctor.com/
+<krzkrz>	ty
+<tty>	hi. i want to check 2 fields if the entered email is the same
+<tty>	i am using bootstfrap
+<tty>	bootstrap.
+<tty>	is there a way to validate this?
+<d3m0n>	tty: with js, yes.
+<tty>	d3m0n: do you have any example? i have tried http://reactiveraven.github.io/jqbootstrapvalidation/
+<tty>	but didnt work
+<d3m0n>	tty: works in the link you provided. are you sure you implemented it correctly?
+<d3m0n>	also, make sure that works with the bootstrap js you included.
+<d3m0n>	actually it doesnt even look like it uses it, just jquery
+<tty>	d3m0n: hm ok will do a check
+<d3m0n>	tty: it should work, check js errors on your browers too.
+<fleshtheworld>	hey guys, im making a sortable table using jquery. what methods are there to update table list?
+<fleshtheworld>	example, there are 10 people on the list, they are in order of who is paied the most, eventually the order will, plus more people may be added, etc.
+<fleshtheworld>	paid*, and 'eventually order will change'
+<krzkrz>	can you have two aside elements in an article?
+<rabsimpson>	hi folks. i'd like to use a special character in the value of a form button, but entering the code (such as &#10142;) just outputs that instead of the character. any ideas?
+<rabsimpson>	ignore me. the problem appears to be in changing the value using jquery. i'll ask in that channel.
+<visage>	rabsimpson: um, no.
+<visage>	rabsimpson: just use utf-8 everywhere and there won't be a problem.
+<visage>	you never need to use an entity for that; entities have always been an escaping mechanism.
+<rabsimpson>	visage: if i add the character to the html directly, it outputs as required, but i need to change it using jquery as the text changes before the form is submitted in order to guide the user.
+<visage>	right, so, what's the problem with changing it to another utf-8 character?
+<rabsimpson>	it's this specific character i'm looking to use.
+<visage>	they're all available in unicode.
+<rabsimpson>	apparently not if you're using jquery to set it.
+<visage>	i'll add that to the list of reasons to not use failquery then. :)
+<buscon>	hi all,
+<buscon>	i am developing a simple html5 application and i would like to keep the mobile browser page alive, even if the user is not touching the screen
+<buscon>	is it possible to set the timeout of android or ios with html5?
+<buscon>	i mean, the timeout of the screen of the phone
+<buscon>	i had some connection problems
+<buscon>	in case someone has an answer to my question, i'm happy to read it :)
+<alphaatom>	i don't think that it would be possible, given that the user sets that actually on the phone os and any potential solution would be hacky as hell i would imagine
+<buscon>	i have found this:
+<buscon>	https://developer.mozilla.org/en-us/docs/web/api/navigator/requestwakelock#specification
+<buscon>	i'm also trying it out but don't see any effect...
+<alphaatom>	buscon: "this feature is not on a current w3c standards track, but it is supported on the firefox os platform. although implementations may change in the future and it is not supported widely across browsers, it is suitable for use in code dedicated to firefox os apps."
+<alphaatom>	from the top of that page
+<buscon>	yes, in my case would be fine though, because it is a lan application
+<alphaatom>	for firefox os only?
+<buscon>	yes, i'd be fine with that
+<buscon>	at least for the moment
+<buscon>	but it doesn't look like working
+<buscon>	my phone does turn off...
+<buscon>	what i actually want is that the browser keep running a javascript even if the screen turn off
+<buscon>	is that maybe possible
+<buscon>	?
+<frenchieuser12>	is the form attribute from the select element supported in ie
+<frenchieuser12>	if not what other methods can i use to pass the selected option to my form when it is submitted in ie
+<mhammons>	hi, is there a way to make css transitions apply to display: none -> display: block?
+<visage>	mhammons: did you read our channel /topic when you joined?
+<blackcat79>	hello
+<siervo>	hey
+<blackcat79>	because gmail won't let you email zip files anymore. how to you send your code to someone? i can't sent the folder because it opens up.
+<siervo>	dropbox?
+<blackcat79>	ok that might be something worth looking into.
+<siervo>	are you sure they don't let you send zips?
+<siervo>	i'm pretty sure i was able to do it a few weeks ago
+<blackcat79>	i don't know if the recipient has drop box. its an employer interested in hiring me to code for them.
+<siervo>	if you get dropbox or one drive you can generate a share link
+<siervo>	i've used them both to send resumes out
+<blackcat79>	can you use dropbox for free?
+<siervo>	of course
+<siervo>	onedrive is free also
+<visage>	thiis is all cool, guys, but none of this is html-related.
+<blackcat79>	ok. thanks. let me create an account.
+<siervo>	yeah sorry visage
+<siervo>	trying to help the guy
+<blackcat79>	yes and i appreciate that.
+<visage>	siervo: take it to pm then. :)
+<visage>	blackcat79: in the future, #web for general web questions.
+<uxfi>	elo
+<levandia>	:)
+<visage>	widoz: turn that off, please.
+<widoz>	just do it, i'm so sorry
+<t1960ct>	hello, can anyone help me figure out how to access my new domain with altervista? i paid for the redirect option but i cant figure out how to not have it always link back to sitename.altervista.org instead of sitename.com
+<t1960ct>	from what i've read it has something to do with the dns, but those two things are in separate option categories and neither of them change anything
+<t1960ct>	if i access the ip of sitename.com it brings me to a page confirming that the domain has been successfully set up, but i cant seem to access the page using the url without it being sent back to the .altervista.org one
+<visage>	sigh.
+<visage>	#html, the new "because domains and dns obviously deal with html."
+<textmode>	visage: perhaps the topic line should say what we *don't* deal with?
+<visage>	textmode: topics can't be that long, silly.
+<visage>	i mean, we clearly don't deal with talk of various cheeses, but i'm not going to put that in the topic.
+<textmode>	shit, you don't? where there goes my reason for being here!
+<asahi>	i'm seeing some code that looks like <button class="foo"><a href>continue</a></button>. is there some tutorial on using an <a href> in this way, where href isn't given a value?
+<visage>	asahi: that's invalid markup. you can't nest interactive content.
+<visage>	asahi: the spec also says "the href attribute on a and area elements must have a value that is a valid url potentially surrounded by spaces." so yeah, it needs a valid url or you don't include that attribute at all.
+<asahi>	visage: so an anchor tag cannot be nested in a button tag? or is it the lack of href value that makes it invalid?
+<textmode>	both.
+<visage>	no, you cannot nest an a in a button ever. those are interactive elements.
+<asahi>	visage: i see. thank you
+<visage>	and as i just said, an @href with no value is also invaild. when in doubt, validate.
+<asahi>	got it
+<atomicb0mb>	its necessary the use of <h1> inside the header tag?
+<pagios>	 hi i am developing a cordvoa app, iframe in the app is scrollable from android smoothly but on ios i have to put my finger on the right side and try to catch the scrollbar to make it scroll, how can i make ios work like android by scrolling the iframe from anywhere on the window? here is my code any idea how to get scrolling working fine with ios? on android it works: http://pastie.org/10193819

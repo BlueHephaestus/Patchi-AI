@@ -1,0 +1,3 @@
+<jackson> morning
+<rmg51> o/
+<chinnodog> jthan: i built a puppet configuration to deploy a rails app to a centos 6.5 server. is that "really"?

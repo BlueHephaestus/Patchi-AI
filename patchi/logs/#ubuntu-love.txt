@@ -1,0 +1,1 @@
+=== locobot_1_2 is now known as locobot_1

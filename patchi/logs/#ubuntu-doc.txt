@@ -1,0 +1,3 @@
+=== aaron__ is now known as ahoneybun
+[16:32] <Vazhnov> Hi! Sorry for my English. I want add to https://help.ubuntu.com/community/Installation/FromUSBStick#Booting_the_Computer_from_USB link to boot-keys.org. I registered on wiki, but I don't want somebody think what I am spammer :)
+=== aaron__ is now known as ahoneybun

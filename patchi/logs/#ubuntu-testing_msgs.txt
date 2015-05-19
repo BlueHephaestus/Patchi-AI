@@ -1,0 +1,4 @@
+<lamont> .
+<stgraber> ogasawara: cool, thanks
+<stgraber> !!! this channel is now logged by ubuntulog. everything you say will be recorded (as in most #ubuntu-* channels) and available on the irc log website. !!!
+<stgraber> hmm, looks like i actually triggered some edit function of ubottu by saying that ...

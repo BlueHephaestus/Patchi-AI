@@ -1,0 +1,328 @@
+**** BEGIN LOGGING AT Sun May 10 19:36:48 2015
+
+*	Now talking on #phantomjs
+*	Topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+Pilate> because its a browser
+*	Topic for #phantomjs set by kanzure!~kanzure@131.252.130.248 (Mon Sep 16 15:32:58 2013)
+*	Channel #phantomjs url: http://phantomjs.org/
+<DarkElement>	 Hey guys how can I execute and get the live output of a PhantomJS script in Node.js?
+*	ChanServ gives channel operator status to JamesMGreene
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sun May 10 20:53:31 2015
+
+**** BEGIN LOGGING AT Sun May 10 21:10:07 2015
+
+*	Now talking on #phantomjs
+*	Topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+Pilate> because its a browser
+*	Topic for #phantomjs set by kanzure!~kanzure@131.252.130.248 (Mon Sep 16 15:32:58 2013)
+*	Channel #phantomjs url: http://phantomjs.org/
+*	ChanServ gives channel operator status to JamesMGreene
+<cob>	hi, does anyone know if there's a channel specific to phantomjs-node ?
+<cob>	anyway, I have a question that is pertaining to that... i'd like to use phantom-node because i want to do some filesystem things, i just find it easier to use some npm modules than have to code everything compatible with phantomjs. if there's a place where there are libraries available for phantomjs please enlighten me.
+*	ChanServ gives channel operator status to JamesMGreene
+*	ChanServ gives channel operator status to JamesMGreene
+*	ChanServ gives channel operator status to JamesMGreene
+*	ChanServ gives channel operator status to JamesMGreene
+*	ChanServ gives channel operator status to JamesMGreene
+*	ChanServ gives channel operator status to JamesMGreene
+*	ChanServ gives channel operator status to JamesMGreene
+*	ChanServ gives channel operator status to JamesMGreene
+*	ChanServ gives channel operator status to JamesMGreene
+*	ChanServ gives channel operator status to JamesMGreene
+*	ChanServ gives channel operator status to JamesMGreene
+*	ChanServ gives channel operator status to JamesMGreene
+*	ChanServ gives channel operator status to JamesMGreene
+*	ChanServ gives channel operator status to JamesMGreene
+*	ChanServ gives channel operator status to JamesMGreene
+-travis-ci/#phantomjs-	persistent-systems-ltd/phantomjs#1 (master - 88855f9 : ngundu): The build failed.
+-travis-ci/#phantomjs-	Change view : https://github.com/persistent-systems-ltd/phantomjs/compare/6897baae33bf...88855f9dff14
+-travis-ci/#phantomjs-	Build details : http://travis-ci.org/persistent-systems-ltd/phantomjs/builds/62057336
+-travis-ci/#phantomjs-	persistent-systems-ltd/phantomjs#2 (master - 4e194c3 : ngundu): The build failed.
+-travis-ci/#phantomjs-	Change view : https://github.com/persistent-systems-ltd/phantomjs/compare/88855f9dff14...4e194c34a733
+-travis-ci/#phantomjs-	Build details : http://travis-ci.org/persistent-systems-ltd/phantomjs/builds/62059051
+-travis-ci/#phantomjs-	persistent-systems-ltd/phantomjs#3 (master - 4e194c3 : ngundu): The build failed.
+-travis-ci/#phantomjs-	Change view : https://github.com/persistent-systems-ltd/phantomjs/compare/88855f9dff14...4e194c34a733
+-travis-ci/#phantomjs-	Build details : http://travis-ci.org/persistent-systems-ltd/phantomjs/builds/62059177
+*	ChanServ gives channel operator status to JamesMGreene
+*	ChanServ gives channel operator status to JamesMGreene
+*	ChanServ gives channel operator status to JamesMGreene
+**** BEGIN LOGGING AT Mon May 11 23:01:06 2015
+
+*	Now talking on #phantomjs
+*	Topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+Pilate> because its a browser
+*	Topic for #phantomjs set by kanzure!~kanzure@131.252.130.248 (Mon Sep 16 15:32:58 2013)
+*	Channel #phantomjs url: http://phantomjs.org/
+<DarkElement>	Hey guys, looking to run some phantomJS code with the phantomjs-node package for node.js. Here is the file I'm working on, with phantom-node code commented, and phantomJS code as the rest of the file. Hope you guys can help!
+*	ChanServ gives channel operator status to JamesMGreene
+*	ChanServ gives channel operator status to JamesMGreene
+*	ChanServ gives channel operator status to JamesMGreene
+*	ChanServ gives channel operator status to JamesMGreene
+<r0sk>	hey guys, good morning, a question about phantom... I'm running python tests successfully til a point where phantom seems to crash:
+<r0sk>	File ".../lib/python2.7/site-packages/selenium/webdriver/chrome/service.py",
+<r0sk>	line 70, in start http://code.google.com/p/selenium/wiki/ChromeDriver")
+<r0sk>	WebDriverException: Message: 'chromedriver' executable needs to be available in the path.
+<r0sk>	and dunno what could be the reason
+<r0sk>	it's osx, I've tried binary from ports, directly downloaded from phantomjs web and with a built binary (1.9.8) with same result
+<r0sk>	any clue?
+<r0sk>	is anyone awake?
+<zlude>	a lot of time to install phantomjs O_o
+<Pilate>	installing should be quick, compiling is not
+<zlude>	Pilate, compiling... maybe it's running about 10 ~ 15 min and compiling yet Q.Q
+<Pilate>	depending on what youre compiling on, it could be a few more hours
+<zlude>	Pilate, Ubuntu 4GB RAM + i5
+<Vitallium>	and if you don't have at least 4 Gb RAM, it will fail.
+<zlude>	omg
+<Vitallium>	:-)
+<zlude>	in this case, what can I do? .-. Because... "Binary packages for Linux are still being prepared. There are still issues to be solved until a static build is available (see issue 12948 for more details)."
+<zlude>	crying... missing my macbook pro that was hardware crash last week
+<zlude>	sorry my bad english too .-.
+<Vitallium>	zlude: well, we have non-released binaries for Debian Stable and Ubuntu
+<zlude>	where?
+<zlude>	Done! apt-get install phantomjs works..
+<zlude>	phantomjs --version output => 1.4.0
+<Vitallium>	lol
+<zlude>	what's the current stable version?
+<zlude>	2.0
+<zlude>	?
+<Vitallium>	for 1.x = 1.9.0, for 2.x - 2.0.0
+<zlude>	So, I'll try do what I want using 1.4.0, thank you anyway!
+<zlude>	Vitallium, I tried run a example from: https://github.com/barrosfilipe/url-to-screenshot, exactly the example.js, error i've got: undefined:0 Unknown module ./ for require()
+<zlude>	Can I specify the required manually? And.. what exactly this required call?
+<Vitallium>	zlude: you don't need this module to make a screenshot. Just use plain PhantomJS API
+<r0sk>	Vitallium: 1.9.0 or 1.9.8?
+<Vitallium>	zlude: `require` in PhantomJS is similar to nodejs one
+<Vitallium>	r0sk: whoops, yeah, 1.9.8
+<r0sk>	:)
+<r0sk>	may I repaste the question I did this morning?, any clue will be welcomed!
+<Vitallium>	r0sk: yup
+<r0sk>	File ".../lib/python2.7/site-packages/selenium/webdriver/chrome/service.py",
+<r0sk>	line 70, in start http://code.google.com/p/selenium/wiki/ChromeDriver")
+<r0sk>	WebDriverException: Message: 'chromedriver' executable needs to be available in the path.
+<r0sk>	and dunno what could be the reason it's osx, I've tried binary from ports, directly downloaded from phantomjs web and with a built binary (1.9.8) with same result
+<r0sk>	I'm running about 200 tests or more, and the crash is always happening at the same point
+<Vitallium>	r0sk: um, you are trying to use ChromeDriver, when you should use GhostDriver
+<r0sk>	there are some tests passing, and suddenly, it appears to fail
+<r0sk>	Vitallium: I've tested with PhantomJS and with ChromeDriver
+<r0sk>	sorry, that's the error related to chromedriver, the one related to phanthomjs is this one:
+<r0sk>	File ".../lib/python2.7/site-packages/selenium/webdriver/phantomjs/service.py",
+<r0sk>	line 75, in start raise WebDriverException("Unable to start phantomjs with ghostdriver.", e)
+<r0sk>	WebDriverException: Message: Unable to start phantomjs with ghostdriver.
+<r0sk>	Screenshot: available via screen
+<Vitallium>	r0sk: you're experiencing a crash, try to make a small example and post it to github
+<Vitallium>	r0sk: also, ghostdriver is not compatible with phantomjs 2
+<r0sk>	1.9.8 here
+<r0sk>	I've prepared this gist, dunno if it could be helpful: https://gist.github.com/oscarmlage/604355b72768796ab9af
+<Vitallium>	r0sk: you should have file called `ghostdriver.log`. This file contains all output from ghostdriver. Can you find it?
+<r0sk>	yes
+<Vitallium>	can you post it somewhere?
+<r0sk>	I was tail -f'ing while testing, but can't understand all that information
+<r0sk>	Vitallium: sure!
+<r0sk>	Vitallium: https://gist.github.com/oscarmlage/604355b72768796ab9af (gist updated with last lines of ghostdriver.log)
+<Vitallium>	this selenium==2.45.0
+<Vitallium>	r0sk: ghostdriver doesn't work with 2.45.0. It requires in update
+<r0sk>	hmm
+<r0sk>	a selenium update?
+<Vitallium>	r0sk: yeah, we should update selenium binding
+<Vitallium>	to the latest release
+<r0sk>	hmm may I try to update selenium in my enviroment (pip)
+<Vitallium>	r0sk: you need to downgrade it
+<r0sk>	ah
+<r0sk>	which version do you think it could work?
+<Vitallium>	r0sk: 2.44.0
+<r0sk>	Vitallium: nice, I'm going to try it
+<r0sk>	would be really nice if it runs!
+<r0sk>	I'll pay you some beers!
+<r0sk>	Vitallium: are there some known issues related to osx or any python version?
+<Vitallium>	r0sk: I don't remember any :( because I don't use osx
+<r0sk>	np, ty anyway
+<r0sk>	(they're still running with selenium 2.44.0 now, lets see)
+<zlude>	Vitallium, http://pastie.org/private/jnrjrbn8kyjh11eot4qigg it's working... But it 'crop' the page.. can I get 640x640 with full page width? no height, just width.
+<zlude>	Result of image here: http://s22.postimg.org/tol5aw53l/github.png
+<Vitallium>	zlude: use `viewportSize` instead of `clipRect`
+<zlude>	doesn't work :/
+<Vitallium>	zlude: what do you mean by `full page width`?
+<zlude>	wait, i will show you
+<zlude>	Vitallium, I do it manually, using Gimp to resize and crop, Look: http://s4.postimg.org/dih210ldp/github_640_640_manual_resize_and_crop_using_gimp.png
+<zlude>	Can I get a similar result using phantomjs?
+<zlude>	Vitallium, First image Look: "http://imgur.com/a/xk4Gi" I'm using clipRect to 640x640, Second image I resize and crop manually. I wanna know if can I get a similar output from image two using PhantomJS
+<Vitallium>	zlude: use `clipRect`. `clipRect` define a rectangle which will be rendered by PhantomJS
+<Vitallium>	defines*
+<Vitallium>	zlude: 1) Set up `viewportSize` (your virtual window size) 2) Use `clipRect` to define a rectangular area to render
+<zlude>	Ok, let me try
+<zlude>	Vitallium, no success...
+*	spader is now known as terinjokes
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Tue May 12 13:32:21 2015
+
+**** BEGIN LOGGING AT Tue May 12 13:37:40 2015
+
+*	Now talking on #phantomjs
+*	Topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+Pilate> because its a browser
+*	Topic for #phantomjs set by kanzure!~kanzure@131.252.130.248 (Mon Sep 16 15:32:58 2013)
+*	Channel #phantomjs url: http://phantomjs.org/
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Tue May 12 13:42:59 2015
+
+**** BEGIN LOGGING AT Tue May 12 13:51:31 2015
+
+*	Now talking on #phantomjs
+*	Topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+Pilate> because its a browser
+*	Topic for #phantomjs set by kanzure!~kanzure@131.252.130.248 (Mon Sep 16 15:32:58 2013)
+*	Channel #phantomjs url: http://phantomjs.org/
+<DarkElement>	 Hey guys, looking to run some phantomJS code with the phantomjs-node package for node.js. Here is the file I'm working on, with phantom-node code commented, and phantomJS code as the rest of the file. Hope you guys can help:http://paste.pound-python.org/show/o1S5Ic1Yt6tLa3la4njr/
+<Pilate>	your code would do absolutely nothing
+<DarkElement>	What do you mean? I'm hoping to use node.js' serial package to send the data from a websocket to a serial port.
+<sopparus>	hello, is it possible to use a presaved cookie like wget has its --load-cookie cookie.txt?
+<sopparus>	I thought --cookies-file was for that but apperntly not
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Tue May 12 17:13:01 2015
+
+**** BEGIN LOGGING AT Tue May 12 17:20:45 2015
+
+*	Now talking on #phantomjs
+*	Topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+Pilate> because its a browser
+*	Topic for #phantomjs set by kanzure!~kanzure@131.252.130.248 (Mon Sep 16 15:32:58 2013)
+*	Channel #phantomjs url: http://phantomjs.org/
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Wed May 13 02:08:10 2015
+
+**** BEGIN LOGGING AT Wed May 13 02:09:49 2015
+
+*	Now talking on #phantomjs
+*	Topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+Pilate> because its a browser
+*	Topic for #phantomjs set by kanzure!~kanzure@131.252.130.248 (Mon Sep 16 15:32:58 2013)
+*	Channel #phantomjs url: http://phantomjs.org/
+<sopparus>	morning
+<sopparus>	hello, is it possible to use a presaved cookie like wget has its --load-cookie
+<ghanima>	has anyone ever come across this error
+<ghanima>	[INFO  - 2015-05-13T18:10:20.457Z] GhostDriver - Main - running on port 4444
+<ghanima>	[INFO  - 2015-05-13T18:10:20.457Z] GhostDriver - Main - registering to Selenium HUB 'http://52.5.73.130' version:  using '127.0.0.1:4444' with org.openqa.grid.selenium.proxy.DefaultRemoteProxy as remote proxy.
+<ghanima>	[ERROR - 2015-05-13T18:10:20.460Z] GhostDriver - main.fail - {"line":96,"sourceURL":"","stack":"\tat \n\tat global code (:/ghostdriver/main.js:78:37)"}
+<ghanima>	  :262 in error
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Wed May 13 14:56:43 2015
+
+**** BEGIN LOGGING AT Wed May 13 15:01:02 2015
+
+*	Now talking on #phantomjs
+*	Topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+Pilate> because its a browser
+*	Topic for #phantomjs set by kanzure!~kanzure@131.252.130.248 (Mon Sep 16 15:32:58 2013)
+*	Channel #phantomjs url: http://phantomjs.org/
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Wed May 13 15:03:14 2015
+
+**** BEGIN LOGGING AT Wed May 13 15:14:46 2015
+
+*	Now talking on #phantomjs
+*	Topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+Pilate> because its a browser
+*	Topic for #phantomjs set by kanzure!~kanzure@131.252.130.248 (Mon Sep 16 15:32:58 2013)
+*	Channel #phantomjs url: http://phantomjs.org/
+<cob>	hi all!
+<Pilate>	hello
+<cob>	anyone using phantomjs-node have an issue with a leftover process (easily identified as shim.js), and identified how to solve it?
+<cob>	hi Pilate, what's your favorite headless browser?
+<Pilate>	phantomjs :P
+<Pilate>	but i dont use any of the third party stuff :(
+<cob>	do you know a good source for vanilla phantomjs libs? (such as loading config from files, etc)
+<Pilate>	not really :/ ive just implemented everything ive ever needed
+<cob>	I always think "why re-implement an ini file parser?"
+<cob>	or writer, or database connector, etc
+<Pilate>	JSON.parse, ezmode
+<cob>	actually it's the webdriver i should be using
+<ghanima>	when building phantomjs
+<ghanima>	is there a way to compile it as a static binary
+<Pilate>	isnt that the default?
+<ghanima>	Pilate: when I do a ldd I see libraries linked to it
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Wed May 13 17:45:35 2015
+
+**** BEGIN LOGGING AT Wed May 13 20:25:58 2015
+
+*	Now talking on #phantomjs
+*	Topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+Pilate> because its a browser
+*	Topic for #phantomjs set by kanzure!~kanzure@131.252.130.248 (Mon Sep 16 15:32:58 2013)
+*	Channel #phantomjs url: http://phantomjs.org/
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Wed May 13 20:26:23 2015
+
+**** BEGIN LOGGING AT Wed May 13 20:26:51 2015
+
+*	Now talking on #phantomjs
+*	Topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+Pilate> because its a browser
+*	Topic for #phantomjs set by kanzure!~kanzure@131.252.130.248 (Mon Sep 16 15:32:58 2013)
+*	Channel #phantomjs url: http://phantomjs.org/
+-travis-ci/#phantomjs-	persistent-systems-ltd/phantomjs#7 (master - ae27967 : ngundu): The build is still failing.
+-travis-ci/#phantomjs-	Change view : https://github.com/persistent-systems-ltd/phantomjs/compare/131d7b2080f0...ae27967e5089
+-travis-ci/#phantomjs-	Build details : http://travis-ci.org/persistent-systems-ltd/phantomjs/builds/62512411
+-travis-ci/#phantomjs-	persistent-systems-ltd/phantomjs#8 (master - bed7aa2 : ngundu): The build is still failing.
+-travis-ci/#phantomjs-	Change view : https://github.com/persistent-systems-ltd/phantomjs/compare/ae27967e5089...bed7aa2803db
+-travis-ci/#phantomjs-	Build details : http://travis-ci.org/persistent-systems-ltd/phantomjs/builds/62517318
+-travis-ci/#phantomjs-	persistent-systems-ltd/phantomjs#9 (master - c63fbf3 : ngundu): The build has errored.
+-travis-ci/#phantomjs-	Change view : https://github.com/persistent-systems-ltd/phantomjs/compare/bed7aa2803db...c63fbf310d8a
+-travis-ci/#phantomjs-	Build details : http://travis-ci.org/persistent-systems-ltd/phantomjs/builds/62519938
+-travis-ci/#phantomjs-	persistent-systems-ltd/phantomjs#10 (master - 4cc4137 : ngundu): The build failed.
+-travis-ci/#phantomjs-	Change view : https://github.com/persistent-systems-ltd/phantomjs/compare/c63fbf310d8a...4cc41374be9a
+-travis-ci/#phantomjs-	Build details : http://travis-ci.org/persistent-systems-ltd/phantomjs/builds/62520594
+-travis-ci/#phantomjs-	persistent-systems-ltd/phantomjs#13 (master - ef62507 : ngundu): The build has errored.
+-travis-ci/#phantomjs-	Change view : https://github.com/persistent-systems-ltd/phantomjs/compare/01d4422d146e...ef625078ba0f
+-travis-ci/#phantomjs-	Build details : http://travis-ci.org/persistent-systems-ltd/phantomjs/builds/62525112
+-travis-ci/#phantomjs-	persistent-systems-ltd/phantomjs#14 (master - a34bd06 : ngundu): The build failed.
+-travis-ci/#phantomjs-	Change view : https://github.com/persistent-systems-ltd/phantomjs/compare/ef625078ba0f...a34bd06f2db6
+-travis-ci/#phantomjs-	Build details : http://travis-ci.org/persistent-systems-ltd/phantomjs/builds/62525418
+-travis-ci/#phantomjs-	persistent-systems-ltd/phantomjs#12 (master - 01d4422 : ngundu): The build is still failing.
+-travis-ci/#phantomjs-	Change view : https://github.com/persistent-systems-ltd/phantomjs/compare/db78b1dc9cd3...01d4422d146e
+-travis-ci/#phantomjs-	Build details : http://travis-ci.org/persistent-systems-ltd/phantomjs/builds/62524714
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Thu May 14 12:17:44 2015
+
+**** BEGIN LOGGING AT Thu May 14 12:22:35 2015
+
+*	Now talking on #phantomjs
+*	Topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+Pilate> because its a browser
+*	Topic for #phantomjs set by kanzure!~kanzure@131.252.130.248 (Mon Sep 16 15:32:58 2013)
+*	Channel #phantomjs url: http://phantomjs.org/
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Thu May 14 12:24:39 2015
+
+**** BEGIN LOGGING AT Thu May 14 12:30:36 2015
+
+*	Now talking on #phantomjs
+*	Topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+Pilate> because its a browser
+*	Topic for #phantomjs set by kanzure!~kanzure@131.252.130.248 (Mon Sep 16 15:32:58 2013)
+*	Channel #phantomjs url: http://phantomjs.org/
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Thu May 14 12:40:59 2015
+
+**** BEGIN LOGGING AT Thu May 14 12:55:53 2015
+
+*	Now talking on #phantomjs
+*	Topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+Pilate> because its a browser
+*	Topic for #phantomjs set by kanzure!~kanzure@131.252.130.248 (Mon Sep 16 15:32:58 2013)
+*	Channel #phantomjs url: http://phantomjs.org/
+<lsolesen>	I have Behat tests which works great when running it in selenium in e.g. Firefox. However when I run the Behat tests from the command line in Phantom JS, they fail. Something from the page is simply missing (Drupal Panels IPE buttons) both if I take a screenshot with PhantomJS or "print last response" with Behat. Do any of you experienced similar issues?
+<Pilate>	debug
+<lsolesen>	Pilate: Yeah. I've been doing that for a lot of time already. Do not know where to look. Everything is working manually and in Firefox :/
+<Pilate>	so what have you done for debugging? whats the error output? did any requests fail? are you using features that your version of phantom doesnt support?
+<lsolesen>	There is no error output when watching the console ouput.
+<lsolesen>	I tried putting in some waits in the Behat tests to make sure that PhantomJS was not just too quick to look for stuff.
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Thu May 14 15:46:36 2015
+
+**** BEGIN LOGGING AT Thu May 14 15:52:31 2015
+
+*	Now talking on #phantomjs
+*	Topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+Pilate> because its a browser
+*	Topic for #phantomjs set by kanzure!~kanzure@131.252.130.248 (Mon Sep 16 15:32:58 2013)
+*	Channel #phantomjs url: http://phantomjs.org/
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Thu May 14 15:53:45 2015
+
+**** BEGIN LOGGING AT Thu May 14 15:58:35 2015
+
+*	Now talking on #phantomjs
+*	Topic for #phantomjs is: http://phantomjs.org/ https://github.com/ariya/phantomjs https://github.com/ariya/phantomjs/issues | #selenium #casperjs #webkit | <+Pilate> because its a browser
+*	Topic for #phantomjs set by kanzure!~kanzure@131.252.130.248 (Mon Sep 16 15:32:58 2013)
+*	[freenode-info] please register your nickname...don't forget to auto-identify! http://freenode.net/faq.shtml#nicksetup
+*	Channel #phantomjs url: http://phantomjs.org/
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Thu May 14 16:02:07 2015
+

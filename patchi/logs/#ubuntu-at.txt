@@ -1,0 +1,23 @@
+=== MichealH changed the topic of #ubuntu-at to: Ubuntu Austria LoCo | Flyer: http://bit.ly/uat-flyer | Wiki: http://bit.ly/uat-wiki | Next Meeting: Saturday 30th April 2011 5PM UTC/7PM Austrian Time/ | Want to officailly celecbarte 11.04 release? #ubuntu-release-party is for you |
+=== ml is now known as marko
+=== marko is now known as mlocher
+[19:03] <NRWlion> moin MootBot-AT
+[20:44] <Daniel0108> hi guntbert
+[20:45] <guntbert> hi Daniel0108, hab grad dein memo gesehen, ich gehs an sobald ich Zeit hab (heute eher nicht mehr) :)
+[20:45] <Daniel0108> guntbert: okay :)
+[20:50] <guntbert> Daniel0108: äh -- im wiki-Text- : "Du" oder "Sie" ?
+[20:50] <Daniel0108> Nimm Sie, ist höflicher ;)
+[20:50] <Daniel0108> guntbert: ^
+[20:51] <guntbert> ok
+[21:17] <guntbert> Daniel0108: möchtest du die wiki-Seite abonnieren? Wär vielleicht nicht schlecht (gegen Vandalismus und Blödheit) :-)
+[21:17] <Daniel0108> werd ich machen, guntbert :)
+[21:18] <guntbert> nur net genau jetzt, server-probleme?
+[21:19] <Daniel0108> wieso?
+[21:20] <Daniel0108> wenn so ein error kommt beim wiki, einfach doppelt auf den speichern button drücken ;)
+[21:20] <Daniel0108> 1 request geht manchmal verloren
+[21:20] <Daniel0108> is ein bug
+[21:22] <guntbert> Daniel0108: geht net - die Seite "internal server error" hat keinen Button :-))
+[21:23] <Daniel0108> guntbert: ich hab gemeint, bevor er error kommt :P und immer deinen edit vorher kopieren
+[21:24] <guntbert> Daniel0108: danke für die Erinnerung :-)  - btw ich hab in deinem Text den Satz über englisch abgeändert - ich glaub so sagt er besser was gemeint ist :-)
+[21:25] <Daniel0108> okay, danke :)
+[21:25] <Daniel0108> du darfst auch das formatting ein bisschen ändern, zum beispiel ein paar worte fett machen, wie du es beim deutschen text gemacht hast :)

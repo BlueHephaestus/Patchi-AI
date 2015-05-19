@@ -1,0 +1,60 @@
+[06:30] <DarkwingDuck> Thank you
+[08:17] <head_victim> DarkwingDuck: back again if you're still chasing me
+[15:36] <akgraner> DarkwingDuck, do we have a mailing list yet?
+[15:36] <akgraner> I want to send out a doodle pool
+[15:36] <akgraner> so we can come with a date for our first meeting
+[17:28] <akgraner> You’re Invited to Join the Ubuntu Leadership Team - http://akgraner.com/?p=1028 #ubuntu #locoteams #canonical #community #leadership
+[17:45] <DarkwingDuck> akgraner: We don't have a ML yes but, we have logging.
+[17:45] <akgraner> ok :-)
+[17:46] <akgraner> well I'll update the post to refect that
+[17:46] <DarkwingDuck> yes/yet
+[17:46] <akgraner> reflect even
+[17:46] <DarkwingDuck> akgraner: know anyone looking for a powerhouse laptop?
+[17:46] <akgraner> I just wanted more people to know what was happening, where we are and the direction we are heading in
+[17:46] <akgraner> DarkwingDuck, can't say that I do
+[17:48] <DarkwingDuck> Da, now that planet is fixed :)
+[19:35] <pleia2> akgraner: you didn't tag your post with UPlanet :)
+[19:35] <pleia2> er, categorize
+[19:35]  * pleia2 was looking for it on planet for UWN
+[19:39] <akgraner> fixed
+[19:39] <akgraner> :-)
+[19:40] <akgraner> pleia2, thanks for pointing that out....
+[19:40] <pleia2> sure thing, and added to UWN doc now
+[19:45] <akgraner> I'll jump in there on SUnday and write up some summaries
+[21:14] <NRWlion> hi there!
+[21:17] <DarkwingDuck> Afternoon :)
+[21:18] <NRWlion> hey DarkwingDuck  ;) just coming around because i read a post of akgraner inviting me into the leadership team ;)
+[21:19] <valorie> me too -- I'm glad to see this finally happening
+[21:20] <DarkwingDuck> Yes, it's still a work in progress. But, we are making headway :)
+=== DarkwingDuck is now known as DWonderly
+[21:20] <NRWlion> DarkwingDuck: could you give me a short intro ?
+=== DWonderly is now known as DarkwingDuck
+[21:20] <DarkwingDuck> Sure.
+[21:21] <DarkwingDuck> Our goal/aim is to be a help center and training people in leadership.
+[21:21] <NRWlion> cool. what is the status ?
+[21:22] <DarkwingDuck> Just off the ground :)
+[21:22] <DarkwingDuck> We have a doc that is a work in progress for Loco Leadership. https://docs.google.com/Doc?docid=0AdKZelXU8Y2LZGNrcHRkYmhfNzhmNnNmM2RjdA&hl=en_US
+[21:22] <DarkwingDuck> I'll be pouring more work into it now that the Doc freeze is over.
+[21:22] <NRWlion> Loco? i thought of general Ubuntu-leadership
+[21:22] <NRWlion> because i am from germany ;)
+[21:23] <DarkwingDuck> NRWlion: Awesome.
+[21:24] <DarkwingDuck> We are still building training guides and getting everything setup. This is def a communnity effort.
+[21:25] <NRWlion> leadership was a part of my studies
+[21:25] <NRWlion> ;)
+[21:25] <DarkwingDuck> Awesome.
+[21:26] <NRWlion> just tell me what i can do ;)
+[21:27] <DarkwingDuck> https://wiki.ubuntu.com/UbuntuLeadership/sandbox is where I will be placing ideas. There will be more coming very soon.
+[21:28] <DarkwingDuck> Within 24 hours there will be more coming.
+[21:29] <NRWlion> if you see me online just poke me or give me a note for a skype call ;)
+[21:29] <NRWlion> would be happy to get into the team as i have had a rough time around here
+[21:30] <DarkwingDuck> Awesome.
+[21:30] <DarkwingDuck> I will let you know.
+[21:31] <DarkwingDuck> Either akgraner (akgraner.com)or myself (wonderly.com) will be blogging updates.
+[21:32] <NRWlion> DarkwingDuck: if i am not online here you will get me on Facebook Chat
+[21:32] <NRWlion> ;)
+[21:32] <DarkwingDuck> Awesome.
+[21:59] <ashams> DarkwingDuck: Hi
+[21:59] <ashams> will this be hosted on lp?
+[22:00] <ashams> maybe it should be converted to a book
+[22:27] <NRWlion> bye every1
+[22:27] <NRWlion> DarkwingDuck: we are clear, arent we?

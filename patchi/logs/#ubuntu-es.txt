@@ -1,0 +1,152 @@
+=== emma_ is now known as emma
+[04:57] <piter0> alguien sabe como reparar el centro de software de ubuntu que no puedo instalar nada porfa
+[10:16] <ricard> hola alguien tiene instalado el kernel 3.13.0-53.88
+[10:26] <ricard> o el kernel 3.13.0-53
+[10:32] <ricard> vale entiendo que nadie,gracias
+[10:33] <mimecar> ?
+[10:34] <ricard> no preguntaba si alguien tiene instalado el kernel 3.13.0-53
+[10:34] <mimecar> ¿qué versión de Ubuntu estás usando?
+[10:34] <ricard> 14.04
+[10:34] <mimecar> ¿con todas las actualizaciones?
+[10:35] <ricard> si pero este lo baje a mano
+[10:36] <mimecar> lo has instalado fuera de los repositorios?
+[10:39] <ricard> que quieres decir por repositorios lo he intalado de esta pagina http://www.ubuntuupdates.org/package/canonical_kernel_team/trusty/main/base/linux
+[10:40] <mimecar> ok, lo que has hecho es añadir un PPA de Canonical
+[10:41] <mimecar> eso tiene ventajas pero también te puede dar algún problema
+[10:41] <ricard> bueno cogi paquete deb.
+[10:41] <mimecar> ¿cuál es el problema que tienes con ese kernel?
+[10:41] <mimecar> añade PPA, nunca instales el .deb
+[10:42] <ricard> no si tu crees que he hecho bien ya que el 3.13.0-51 y 3.13.0-52 me daban erro al inicio
+[10:42] <mimecar> si añades el .deb a mano
+[10:43] <mimecar> no tienes actualizaciones de ese kernel
+[10:43] <ricard> pues lo desinstalo y lo instalo ppa
+[10:44] <mimecar> añade el PPA y con suerte actualizará el paquete
+[10:44] <ricard> gracias hasta luego voy a probar
+[10:45] <ricard> adios
+[11:10] <ricard> he desintalado el paquete 3.13.0-53 y lo he vuelto a instalar de la ppa y ahora me sale en otro software ppa canonical team no se que mas
+[11:11] <mimecar> ese es el PPA que has añadido
+[11:14] <ricard> vale lo he hecho todo bien he añadido la ppa en la terminal le he dado a enter luego he hecho u sudo apt-get update y luego sudo apt-get install linux-image-3.13.0-53-generic linux-image-extra-3.13.0-53-generic y se ha instalado
+[11:19] <ricard> todo correcto?
+[11:19] <mimecar> de momento si
+[11:21] <ricard> gracias mimecar el kernel va bien
+[11:22] <mimecar> mientras no desinstales los kernels anteriores no deberías tener problemas
+[11:22] <ricard> tengo el 3.13.0-49 instalado
+[11:24] <ricard> ya esta bien no?
+[11:24] <mimecar> sí
+[11:25] <ricard> gracias nos vemos pronto y muchas gracias recuerdos a todos/as
+[11:26] <mimecar> ok
+[12:56] <Knight80> Hola, buenas tardes a todos/as
+[12:56] <Knight80> ¿Alguien usa Mythtv?
+[13:19] <ricard> he descargado el kernel 3.13.0-53 de la siguiente ppa http://www.ubuntuupdates.org/ppa/canonical_kernel_team?dist=trusty que me decis
+[13:20] <mimecar> ricard, si has añadido el PPA e instalado el kernel no tienes que hacer nada más
+[13:21] <ricard> pero en la pagina pone no se recomienda esta ppa echale un vistazo porfavor
+[13:21] <mimecar> necesitas el kernel 3.13 por alguna razón?
+[13:22] <mimecar> el PPA es para versiones de testeo y desarrollo
+[13:22] <ricard> hombre todos llos que he tenido son 3.13
+[13:23] <ricard> no hace mucho tiempo que me muevo con ubuntu
+[13:23] <mimecar> Ubuntu 14.04 lleva el 3.16
+[13:24] <ricard> en mi caso cuando se ha actualizado automatico salia 3.13
+[13:24] <mimecar> con los repositorios que hay por defecto y Ubuntu 14.04
+[13:25] <mimecar> la última versión ens la 3.16.
+[13:26] <ricard> pero si en actualizacion de software me sale 3.13 que hago?
+[13:26] <mimecar> asegurarte que realmente estás poniendo las actualizaciones
+[13:27] <Knight80> ¿Alguien usa Mythtv?
+[13:27] <ricard> estoy esperando la nueva a ver cual es porque las dos ultimas 3.13.0-51 y 3.13.0-52 me daban error al inicio
+[13:28] <mimecar> ricard, sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
+[13:28] <mimecar> la última es la 3.16
+[13:30] <ricard> voy a probar
+[13:33] <ricard> me dice esto ricard@casa:~$ sudo apt-get upgrade
+[13:33] <ricard> Leyendo lista de paquetes... Hecho
+[13:33] <ricard> Creando árbol de dependencias
+[13:33] <ricard> Leyendo la información de estado... Hecho
+[13:33] <ricard> Calculando la actualización... Listo
+[13:33] <ricard> 0 actualizados, 0 se instalarán, 0 para eliminar y 0 no actualizados.
+[13:33] <mimecar> !paste ricard
+[13:33] <kubot> ricard: Pastebin es un servicio para pegar mucho texto sin inundar el canal, se encuentra en http://paste.ubuntu.com (asegurate de darnos la dirección de tu paste) - Ver también en el topic.
+[13:35] <ricard> total que me dice 0 actulizaciones
+[13:35] <mimecar> sudo apt-get dist-upgrade también?
+[13:35] <ricard> si
+[13:35] <mimecar> pon en PASTEBIN la salida de sudo apt-get update
+[13:38] <ricard> lo he puesto en una pagina que me indicabais que era pastebin
+[13:38] <mimecar> pega el enlace que te ha dado la página
+[13:40] <ricard> hecho me sale otra pagina con todo el sudo apt-get update i dowload
+[13:40] <ricard> y dowload as text
+[13:41] <mimecar> copia el enlace de la página y ponlo en el canal
+[13:41] <ricard> como lo hago?
+[13:41] <mimecar> has pegado el texto en pastebin y lo has mandado?
+[13:42] <ricard> mandado donde?
+[13:42] <mimecar> ...
+[13:42] <mimecar> entra en la página de pastebin y pega la salida del comando sudo apt-get update
+[13:42] <mimecar> pulsa en el botón para mandar el texto a la web
+[13:42] <ricard> he hecho paste
+[13:43] <mimecar> copia la dirección que sale en el navegador en el chat
+[13:44] <ricard> y que hago ahora
+[13:44] <mimecar> has copiado la URL que sale en el navegador?
+[13:48] <ricard> me sale canal oficial de soporte de ubuntu y derivados oficiales en español y varias direcciones
+[13:48] <mimecar> http://paste.ubuntu.com/
+[13:48] <ricard> Canal oficial de soporte de Ubuntu y derivados oficiales en español - Normas: https://wiki.ubuntu.com/IRC/Guidelines/es - Canal social: /join #ubuntu-es-cafe - ¿Pegar Texto? http://paste.ubuntu.com - Descargar Ubuntu 14.10: http://www.ubuntu.com/download/desktop - Versiones soportadas: 10.04 LTS (servidor), 12.04 LTS, 14.04 LTS y 14.10.
+[13:49] <mimecar> https://dl.dropboxusercontent.com/u/92458135/Captura.PNG
+[13:49] <mimecar> esa es la pantalla te pastebin
+[13:54] <ricard> no me deja escribir nada
+[13:58] <ricard> lo he vuelto a poner en http://paste.ubuntu.com y despues de poner el texto le doy a pate
+[13:58] <ricard> a paste
+[14:00] <ricard> pongo mi nombre tambien
+[14:04] <ricard> lo has logrado leer
+[14:06] <mimecar> te cambia la URL?
+[14:06] <ricard> que url
+[14:07] <mimecar> cuando pones el texto y pulsas el botón paste
+[14:07] <mimecar> se manda el texto a pastebin y cambia la url del navegador
+[14:09] <ricard> si me sale una pagina con todo el terxto y pone dowload as test la url es http://paste.ubuntu.com/11187037/
+[14:10] <mimecar> ahí está el texto
+[14:11] <ricard> querias mirarlo no?
+[14:11] <mimecar> ya lo estoy mirando
+[14:11] <mimecar> estoy haciendo otras cosas aparte del IRC
+[14:12] <mimecar> estás con los repositorios de la 14.04, debería salirte el último kernel
+[14:12] <mimecar> con 14.04.2 sale la versión que te he dicho antes
+[14:12] <ricard> porque sudo apt-get dist-upgrade no me da nada
+[14:12] <mimecar> pon la salida de sudo apt-get upgrade && sudo apt-get dist-upgrade
+[14:13] <ricard> sudo apt-get upgrade
+[14:14] <mimecar> usa pastebin también
+[14:18] <ricard> el enlace es http://paste.ubuntu.com/11187376/
+[14:19] <mimecar> no le veo sentido a que no te salga la actualización
+[14:20] <ricard> quizáz me falta algun programa?
+[14:21] <mimecar> no, es cosa de los repositorios
+[14:21] <mimecar> la máquina virtual la tengo con ubuntu server 14.04
+[14:21] <mimecar> pero son los mismos repositorios que la versiónd esktop
+[14:21] <mimecar> desktop
+[14:22] <ricard> entonces de que puede ser?
+[14:25] <mimecar> en estos momentos estoy sin ideas
+[14:25] <mimecar> has desactivado el ppa que pusiste?
+[14:25] <ricard> no la desactivo?
+[14:29] <mimecar> desactivalo
+[14:29] <ricard> y vuelvo a probar?
+[14:31] <ricard> sudo apt-get update
+[14:31] <mimecar> no tendrá efecto en el sistema
+[14:34] <ricard> lo he desactivado he hecho lo de sudo apt-get dist-upgrade y no ha surgido ningun efecto
+[14:35] <mimecar> no tiene que tener efecto
+[14:36] <mimecar> la causa del fallo será otra
+[14:36] <mimecar> aunque no te salga una versión más reciente del kernel tampoco es un problema
+[14:37] <ricard> vuelvo activar las app
+[14:42] <ricard> perdon la ppa
+[14:45] <ricard> activo o no?
+[14:46] <ricard> las ppa claro
+[14:48] <ricard> me salen dos la main y la codigo fuente
+[14:49] <mimecar> querías otro kernel por alguna razón?
+[14:50] <ricard> no el que he instalado esta mañana marcha bien
+[14:51] <ricard> pero activo las ppa o no?
+[14:53] <mimecar> siendo que es un PPA de desarrollo
+[14:53] <mimecar> igual es buena idea no usarlo
+[14:54] <ricard> quito el kernel entonces
+[14:56] <ricard> porque entonces solo me queda uno fiable
+[14:59] <mimecar> sigue con el kernel que tenías antes
+[15:00] <ricard> o sea ser quito el 3.13.0-53
+[15:01] <ricard> no me da ningun problema
+[15:02] <mimecar> deja los kernels que tienes ahora
+[15:02] <mimecar> que acabarás quitando el único que funciona y no te arrancará el sistema
+[15:03] <ricard> o sea dejo el 3.13.0-53 y el 3.13.0-49 estamos deacuerdo
+[15:04] <mimecar> sí
+[15:05] <ricard> garcias por tus consejos me quedo mas tranquilo
+[15:06] <ricard> cuidate mucho gracias a todos/as adios
+[15:16] <pedro_> illa
+[18:34] <successus> salud o/
+[19:15] <george2002> hola chicos tengo un rollo con el escritorio cinnamon y ardour, trato de abrir ardour3 en ese entorno y no carga, luego lo lance por terminal y me vota esto  http://paste.ubuntu.com/11191959/

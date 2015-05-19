@@ -1,0 +1,171 @@
+<benno-007> sturmflut: crazy: after fastboot and even after normal reboot now i get into boot menu after about 1-3s power + vol+ almost instantan instead of waiting a long time for the red light. maybe i have to do a hard reset again to reset all the unexpected stuff. :-p but i don't want to steal your time so good bye for now.
+<sturmflut> benno-007: i copied everything you wrote, let's see if we can find out what actually happens.
+<sturmflut> benno-007: i get an adb shell in factory mode if i start the adb server as root. worked immediately, host is ubuntu 14.10.
+<sturmflut> benno-007: that's how i found out all the internal info last time, mentioned in the article
+<benno-007> sturmflut: so simply sudo adb start-server
+<benno-007> ?
+<sturmflut> "adb kill-server" to kill the adb server that is probably running as your user already and blocking the port
+<sturmflut> then you can either just run "sudo adb shell", which will also start the server
+<sturmflut> or "sudo adb -p 5037 fork-server server & &>/dev/null" followed by "adb shell"
+<sturmflut> benno-007: ^^
+<benno-007> sturmflut: thanks.
+<sturmflut> benno-007: or you add the following line to /lib/udev/rules.d/70-android-tools-adb.rules
+<sturmflut> action=="add|change", subsystem=="usb", attrs{idvendor}=="0bb4", attrs{idproduct}=="0005", tag+="uaccess"
+<sturmflut> then plug the usb cable to the phone in again and you can access the device as a normal user
+<benno-007> i like instantan commands, too.
+<webvisitor-0> hello there , i need help in enabling multi touch and other touch feature on my dell inspirion 15
+<sturmflut> webvisitor-0: this is the channel for ubuntu on phones, you might want to try #ubuntu
+<webvisitor-0> hi strumful a quick question
+<webvisitor-0> can i install unbunt phone on my dell insipiron laptop?
+<sturmflut> webvisitor-0: currently not. the normal ubuntu desktop should have some touch features, but i don't know anything about them.
+<webvisitor-0> ok
+<sturmflut_> benno-007: hm, it looks like mediatek has removed all the preloader and little kernel source code from their kernel releases :/ i can only find binary blobs and the the make targets are missing.
+<benno-007> sturmflut_: i don't have them, too. maybe i'm not so deeply in some stuff. but i write some user documentation, too (with some less helpers) - here the machine translated version from german to english: https://translate.google.de/translate?hl=de&sl=de&tl=en&u=http%3a%2f%2fwiki.ubuntuusers.de%2fbaustelle%2fubuntu_touch_erweiterte_konfiguration%3faction%3dexport%26format%3draw i'll go offline then but i will get mails by /msg memoserv send benno-00
+<sturmflut_> benno-007: actually i also speak german... ;)
+<benno-007> sturmflut_: i assumed that on your nick and today i realized that on your blog somehow. but it's better to make the things complicated so let's translate into english by a machine so that you have to translate it back in german by your human own (if you are no robot or hybrid). maybe the channel likes more english, too. your blog is in english, too. i try to get some of the german stuff upstream to the english forum (maybe wiki) and so worldwide.
+<nhaines> it's more fun to machine translate the machine-translated english back into german.
+<benno-007> this fun is especially for sturmflut_.
+<sturmflut_> http://www.meizu.com/products/ubuntu.html it's official!
+<sturmflut_> looks like no 32 gb version at the moment, only 16 gb, and shipment only to china?
+<sturmflut_> ah, flash sales within china
+<nhaines> sturmflut_: ooh, intersting!
+<nhaines> one thing about ubuntu, it really does make for very pretty screenshots.
+<sturmflut_> nhaines: yes, and the mx4 has a fullhd display. like the upcoming e5.
+<sturmflut_> nhaines: let's see when i get my mx4 ;) i wonder how the ui looks compared to the aquaris e4.5
+<nhaines> probably similar to the nexus 5... the higher resolution makes the ui look less crowded and sleeker.
+<nhaines> but if the mx4 is this rumored convergence-capable device, i'll happily get one this year.  :d
+<sturmflut_> nhaines: the mx4 is not the convergence device.
+<nhaines> we'll see.  i'm leaning towards no, too.
+<nhaines> but it's a beautiful phone nonetheless.
+<sturmflut_> nhaines: even though the somewhat hint it with their screenshots, http://www2.res.meizu.com/zh_cn/images/ubuntu/features/new_language_design.jpg
+<nhaines> nah, that looks like a normal "look at all the pretty apps" photo spread.
+<sturmflut_> nhaines: they have already made pretty much clear that the mx4 is not "it", and also not the third device (whichever it is). so we'll have to at least wait for the fourth device, and i have no idea if the e5 counts at all as a "new" device. it is really just the same hardware as the e4.5 with a slightly larger display.
+<nhaines> sturmflut_: the only language i heard was that a device was shipping this year, followed two days later by "well, sabdfl said it so we're going to work really hard to add the capability to unity 8."
+<nhaines> so if you have additional information, i'd love to hear it.
+<sturmflut_> nhaines: yeah, the convergence feature in unity8 is still a lot of work. and all devices also have to be switched to vivid images first, which is also a lot of work. and most likely there are other things which are a lot of work too.
+<nhaines> i'm not sure the vivid stuff is quite so hard, and the convergence feature is mainly "how do we do this in a not hacky way and then polish it" because there have been little baby steps being made here and there beforehand.  but i'm glad none of it is my job, that's for sure.
+<nhaines> but when sabfl announced that a device would launch which could deliver a convergent experience this year, i assumed that meant hardware-wise and we'd be waiting until 16.04 lts before it was enabled.
+<nhaines> sturmflut_: where did you hear that it would be the 4th device launched?
+<sturmflut_> nhaines: i've heard it a couple of times, i think during the online summit
+<nhaines> i do have a couple talks to catch up on from there.
+<sturmflut_> nhaines: the switch to vivid is targeted for milestone ww22-2015 and from what i hear it is still quite a lot of work, probably because ww22-2015 will be ota-4 at the same time.
+<sturmflut_> they told us that all phones after the bq will ship with vivid, so i don't expect the mx4 to actually ship in the next four weeks, which would also somehow fit the flash sale model they are doing again.
+<nhaines> it's quite a lot of work but it's been in progress for some time now, since before ota-3.5.
+<nhaines> and there's been a *lot* of work on the convergence stuff for wily as well, even though it isn't really active yet.
+<sturmflut_> it will work out in the end. out awesome developers are awesome.
+<nhaines> i was quite pleased to see the desktop switcher and spread work, although ideally i want unity 8 on the desktop to "just look like unity 7".
+<sturmflut_> nhaines: me too. unity 7 is all i need.
+<nhaines> as long as they keep the menus in the global menu bar (or keep the option for me to change it--i tested during vivid's beta and didn't like it at all) i'll be happy.
+<nhaines> i mean, there have to be improvements and enhancements sometimes.  :)
+<sturmflut_> nhaines: i wonder about the first official ubuntu tablet. both meizu and bq already sell tablets, and some of them are even based on the same hardware as the now-official ubuntu phones.
+<sturmflut_> but to be honest, i haven't used a tablet in over a year and don't miss it
+<nhaines> i just got a tablet like a month ago and it's fantastic.
+<nhaines> it's for the stuff i used to have to do on my phone but with a larger screen and without draining my phone's battery.
+<nhaines> and if i could run libreoffice on there occasionally i'd be pleased, too.
+<sturmflut_> i have a 14" thinkpad t430 notebook for actual work and a couple of phones, the need for anything in between has evaporated somehow
+<nhaines> i'm an author and i don't want to have to carry my laptop around just to write, and i sure don't want to write anything on my phone, even if i could, which i can't because battery life.
+<nhaines> although if i could run libreoffice on my phone that would work.  but i have a tablet anyway so i may as well run libreoffice on that.
+<sturmflut_> i'll go catch some sleep, it's morning already :/
+<nhaines> yes, quite late!
+<nhaines> träum süß!  :d
+<sturmflut_> haha
+<sturmflut_> happy "country of the rising mx4" day!
+<jcbjoe> sturmflut_: what does that mean ?
+<sturmflut_> jcbjoe: http://www.meizu.com/products/ubuntu.html
+<jcbjoe> sturmflut_: is that only for asia ?
+<lotuspsychje> nice page
+<sturmflut_> jcbjoe: only for china at the moment, you can only specify a chinese shipping address
+<jcbjoe> so the bq and mx4 are the 2 offical phones for ubuntu ?
+<chloewolfiegirl> i heard that the mx4 isn't going to be the first phone with convergence, why can't/isn't it though, i get if the software isn't ready but the phone seems like it'd be powerful enough, so why/how wouldn't that phone be the one with convergence?
+<lotuspsychje> chloewolfiegirl: i read an article that mark shuttleworth will anounce another brand as convergence phone
+<lotuspsychje> not sure why mx wont be first
+<lotuspsychje> alot of manufacturers secrets we dont know yet chloewolfiegirl
+<lotuspsychje> many things are happening for ubuntu thats for sure
+<chloewolfiegirl> lotuspsychje, i kinda get if they advertise this next one as the one you want for convergence, but like they're showing off convergence with the nexus 4 so... yeah, i'm just intrested in why mx4 isn't going to be a first convergence phone and what that means for ubuntu convergence,  i mean it might just be the first phone to get convergence code, or it could be the first phone developed with convergence in mind, but i really want to unravel what
+<chloewolfiegirl>  he means, because if we can do convergence on a nexus 4, we can do convergence on a mx4, and they've started showing off convergence on the nexus 4
+<sturmflut_> chloewolfiegirl: it's just about who gets to ship the first device that comes with convergence by default. marketing. if the hardware itself doesn't forbid it, it will be possible on any device, yes.
+<chloewolfiegirl> sturmflut_ so its not "mx can't do this in convergence" or "mx doesn't have this feature" its just "mx didn't ship with convergence but misingno did"
+<sturmflut_> chloewolfiegirl: the software isn't in an usable state yet, and meizu probably couldn't wait until it is. remember that the mx4 with ubuntu was supposed to already ship about five months ago.
+<chloewolfiegirl> sturmflut_ yeah i get that, i just didn't realise mark was on about shipped software i thought he just meant that the new phone either got the software first or has something special to do with convergence.
+<sturmflut_> chloewolfiegirl: to be honest i am not sure if the mx4 can really do it hardware-wise. it looks like most devices based on the exynos 5430 chip don't support external screens via slimport or mhl. just miracast, which is screen sharing over wifi.
+<chloewolfiegirl> sturmflut_ yeah i heard about some hardware not being able to hook up to external monitors
+<bohverkill> https://insights.ubuntu.com/2015/05/17/meizu-launches-the-ubuntu-mx4-for-developers-in-china/
+<sturmflut_> "in the first of a series of launches" <-
+<sturmflut_> apparently the picture on meizus main page says "518 one more thing" in chinese, but i couldn't confirm that
+<nhaines> chloewolfiegirl: it's going to be possible to twist ubuntu to do a *lot* of things it wasn't designed for, but as far as official support goes, canonical are going to want to push for a supported convergence-enabled device which will have a polished, enjoyable experience.
+<nhaines> mark already said that the first convergence device will not be very powerful and not to expect super fast performance.  storage and performance are going to be some key factors.
+<chloewolfiegirl> nhaines, true, i mean of cause i don't expect a phone to beable to match the performance of a laptop, but i would have reconned that looking at some older devices and how they low end they run, with unity8 being new and less weighty, i'd expect that the mx would do a pretty good job as long as you're not gonna over load it with videos running, a libre office documents and god knows what else xd
+<nhaines> chloewolfiegirl: videos don't tax phones at all--they have hardware decoding.  the entire use case for convergence is literally desktop webbrowser and libreoffice, so...
+<nhaines> you can bet that people will expect a converged phone to match the performance of a laptop, even though there's no good reason to do so.  you can switch a phone into windowed mode manually even though they may actually not enable a graphical switch for that.
+<nhaines> that doesn't mean they'll prevent it, just that they won't support it or make it easy.  but in the end they're going to focus marketing and support on devices that are going to make end-users who aren't super familiar with ubuntu want to show the new phones off to their friends.
+<nhaines> and for as beautifully as the bq aquaris runs ubuntu, it is a rather low performance device.  you can't get away with just unity 8.  libreoffice is going to need gtk and a lot of other software, as will most other things.  and those all have to run alongside all the phone stuff.
+<sturmflut_> nhaines: i wonder if we still think of the bq as "low performance" once those annoying lags and delays have been optimized out. i've compiled a bunch of software packages on the device and the four cores are actually quite fast.
+<chloewolfiegirl> nhaines, videos don't tax phones at all? idk about how much hardware a convergence phone would need, its just seeing libre office on the nexus4 running ubuntu touch, graphically it doesn't look great, but it doesn't look like much of an issue for it.  i do get that you don't want people to get a device and then have a crappy experiance of ubuntu's convergence, that makes alot of sense, i'm not saying that libreoffice is ready for end users who u
+<chloewolfiegirl> se ubuntu touch, i'm just saying that i beleive from seeing the nexus 4 run libreoffice the mx would do a good job a running libreoffice, and canonical wants to make sure libreoffice works great in a converged world, i mean if the specs aren't up to snuff to have a good time, it makes perfect sense, but if they are its more about waiting till the software is ready for the end user
+<nhaines> chloewolfiegirl: videos don't tax phones or computers at all.  the video hardware is optimized for the most common codecs so the cpu doesn't do anything but push the data along.
+<nhaines> libreoffice doesn't look good on the nexus 4 because gnome theming and icon sets aren't installed, it's just gtk with libreoffice's default gtk icons theme.  that's all polish work that has nothing to do with the development for convergence support and takes an hour to include once the hard work is done.
+<nhaines> anyway, convergence is going to require snappy ubuntu core and until recently it was thought that the android-based phones wouldn't get snappy because the kernels were too old.  happily, it's since been discovered that backporting the necessary features is possible after all.
+<nhaines> although the bq doesn't have enough storage for snappy.  i don't know what's blocking on the mx4.
+<ogra_> snappy with ui output simply doesnt exist yet
+<nhaines> but it's likely you're going to be able to force your phone to run anything you like.  even now you can do that.  they haven't done anything to prevent it.  they just haven't done anything to make it easy.
+<ogra_> which is why the phone development stays on vivid ... wily will switch to snappy and break mmassively on that way
+<nhaines> ogra_: i'm sure the peanut gallery will be howling about that once it happens, depsite the warnings.
+<ogra_> heh, yeah
+<chloewolfiegirl> nhaines, fair enough, i thought it was a taxing thing for computers sometimes, but i guess i was told fibs, often if my computer starts lagging videos are usually one of the first to go,  and yeah i understand that but it fits in with canonical wanting end users to have a good time with the software, i haven't heard much about this kernal issue with android devices, how come you can't upgrade the kernal of an android phone?
+<ogra_> howling is fine in a werewolf release ;)
+<ogra_> because you have binary drivers that are built against a certain kernel version
+<ogra_> (and device specific kernel patches that you cant easily just port forward)
+<chloewolfiegirl> so the drivers wouldn't work on a newer kernel?
+<ogra_> some, yes
+<chloewolfiegirl> what stops this being much of an issue on laptops and desktops?
+<nhaines> commodity hardware.
+<nhaines> phone hardware is all custom-built.
+<nhaines> and it is a giant issue on laptops and desktops, if you follow anyone complaining about 3d graphics support.
+<ogra_> well, and these drivers provide a layer you can actually re-compile for the new kernel ... they are not 100% binary
+<ogra_> (their core is, their "communication layer" isnt)
+<nhaines> so then you have binary-only drivers on the phones and you just never know.
+<ogra_> binary phone  drivers can even have hardcoded paths to a binary daemon the driver needs to function properly ...
+<ogra_> (which is the reason for the lxc container with the minimal android we need to ship)
+<chloewolfiegirl> oh, ok i haven't really researched this topic, i've just known that sometimes my kernal updates on my laptop and everything goes fine, but i see people using old kernals for phones and not upgrading them, it makes sense if theres driver issues with upgrading the kernal though,
+<nhaines> ogra_: i'm looking forward to the first ubuntu phone which doesn't require the minimal android.  :)
+<ogra_> technically you could surely forward port all that stuff ... practicallly you wouldnt be able to pay that developer time :)
+<nhaines> not because the lxc container is a big problem, just that i think it'll be a good development as far as open hardware goes.
+<ogra_> yeah
+<ogra_> but thats still a long way to go i fear
+<nhaines> i'm excited for snappy personal!  that's going to be fun to play with.  :)
+<ogra_> yeah
+<nhaines> but i'm more excited about convergence.  :)
+<lotuspsychje> https://twitter.com/hashtag/ubuntuphone?src=hash
+<lotuspsychje> http://www.omgubuntu.co.uk/2015/05/meizu-mx4-with-ubuntu-launched-in-china-coming-to-europe-soon
+<lotuspsychje> will be sold in europe too :p
+<elleo> popey: heya, could you try deleting your ~/.local/share/com.mikeasoft.cutespotify folder and see if it stills happens (there's a known bug which causes a crash if the playlists and the cache get out of sync)
+<elleo> popey: as i haven't been able to reproduce the crash you had just running it normally on that device
+<elleo> popey: although there are a bunch of ui issues
+<popey> elleo: just tried that, then opened app, signed in, opened playlist, pressed play, crash
+<elleo> popey: interesting :/
+<elleo> popey: could you start it with gdb and see if you can get a backtrace?
+<elleo> or rather, start it normally and then attach to the process with gdb
+<popey> uh, okay
+<popey> hmm, i would if it didn't die immediately now
+<popey> hmm, it's highly variable, sometimes crashes, sometimes doesnt
+<popey> now it's playing fine!?
+<elleo> popey: i'm going to try putting together a version that uses the new libqtspotify that the guy maintaining my old sailfish port has put together (which has fixes for some crashers), so that might help
+<elleo> popey: not sure i'll have it finished today though, as a lot has changed
+<popey> ok
+<elleo> mzanetti: the applicationmodel source seems to be missing from the tweakgeek repository (was hoping to take a look at its lifecycle exception stuff to add to an unconfined version of cutespotify)
+<elleo> mzanetti: ah, a bit of poking in gsettings found the way to do it :)
+<jcbjoe> forget it i just figured it out .. saw it in some faq
+<brunch875> hello!
+<mariogrip> have someone read this book http://www.amazon.com/effective-specific-improve-programs-designs/dp/0321334876/ref=pd_sim_14_1?ie=utf8&refrid=1eas6wyecdqwheep9c6c? can you recommend it?
+<drew_neilson> anyone in here?
+<dadexix86> drew_neilson, hi
+<ahoneybun> is there a number listing how many ubuntu devices are active?
+<vidjajames_> when can i put ubuntu on my tablet?
+<benno-007> ahoneybun + vidjajames_: only nexus 7 or 10 is official supported. unofficial devices (mostly phones): https://wiki.ubuntu.com/touch/devices somewhere was a link to a unofficial tablet, kickstarter corwdfunding or something. i don't find it again. but i would suggest the nexus because of best official support and drivers.
+<vidjajames_> i have a nexus 7 2013 wifi only model
+<benno-007> is supportet: https://wiki.ubuntu.com/touch/devices follow the link of the model in the table and this one: https://developer.ubuntu.com/en/start/ubuntu-for-devices/installing-ubuntu-for-devices/
+<vidjajames_> thanks i installed a couple of months ago but it was the developer version it was kinda unusable i imagine there is a stable release by now that there are actual unbuntu phones shipping
+<benno-007> vidjajames_: you can choose between channel stable and devel-proposed. in 2-3 weeks the devel-proposed (=vivid-proposed) is stable, too. i use it every day on my bq phone. but your satisfaction with one of them depends on what was unusable for you? there are less apps and some problems in both versions. but they are on a good way.
+<vidjajames_> the problems i had was getting any of my accounts to sync with the phone ie facebook, twitter, etc.
+<vidjajames_> well in this case tablet
+<benno-007> what do you mean with sync? you can login via webapp or browser. so it's normal usage like in a browser.

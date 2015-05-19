@@ -1,0 +1,5 @@
+<pleia2> knome: yeah re: hellotux on donations page
+<unit193> bluesabre: can we just sync xfpm and get it over with?
+<unit193> http://paste.openstack.org/show/ppfzejwplipk8vhojind/
+<elfy> hi unit193
+<unit193> howdy, elfy.

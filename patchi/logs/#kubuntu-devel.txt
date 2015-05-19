@@ -1,0 +1,132 @@
+[00:37] <_Groo_> in the meantime , im using blueman, it works so... but i would rather have the entire kf5 bluetooth stack working
+[00:42] <Etriaph> _Groo_: In time
+[00:43] <_Groo_> Etriaph: kde gives kde takes away
+[00:44] <Etriaph> _Groo_: I think the KF5 structure will likely continue as a staple in later versions.  It's progress, and sometimes progress is messy.
+[00:44] <Etriaph> _Groo_: I've been working on an open letter related to topics like this, hope to put it out there in the next few weeks.
+[00:48] <_Groo_> Etriaph: well its not kubuntu fault anyway, ubuntu touch team screwed up on this one
+[00:49] <_Groo_> Etriaph: i hope things dont get worse once kf5 fully migrates to wayland
+[01:02] <Etriaph> _Groo_: Right now app stability and migration, along with any bugs in KF5, are likely where the focus is.  It's hard migrating between major versions, just the reality of it.
+[08:18] <vip> hi ho
+[11:04] <BluesKaj> Hiyas all
+=== aaron__ is now known as ahoneybun
+=== aaron__ is now known as ahoneybun
+[17:10] <ahoneybun> something is wrong with this damn thing
+[17:11]  * ahoneybun just notice that Oxygen Font is the default :)
+[17:31] <KDDA> what is wrong ahoneybun
+[17:32] <ahoneybun> KDDA: I installed the nonfree nvidia driver, rebooted - fine
+[17:33] <ahoneybun> turned one a setting about font in System setting, reboot - fine
+[17:33] <ahoneybun> anti-aliaing - enabled, reboot -fine
+[17:33] <ahoneybun> anti-aliaing -enabled and forced DPI on caused nothing but a black screen for like 3 or 4 reboots
+[17:34] <ahoneybun> no login, I saw the systemd version but nothing after that
+[17:34] <ahoneybun> just got back in a few mins ago
+[17:34] <KDDA> I have a nvidia card too
+[17:34] <KDDA> hate it
+[17:35] <ahoneybun> it could be that I need that special setup
+[17:35] <ahoneybun> I have intel and nvidia
+[17:35] <ahoneybun> bumblee bee
+[17:35] <ahoneybun> rather have it over AMD some days though
+[17:35] <KDDA> although the nvidia driver with kubuntu seems to be working ok
+[17:36] <ahoneybun> I was so close to installing Ubuntu to see if the problem is just Kubuntu
+[17:36] <KDDA> these video meetings you guys do, are they a regular thing?
+[17:36] <KDDA> Unity??!?  Nooooo
+[17:36] <yofel> if you don't see sddm, you should look in your /var/log/Xorg.0.log really
+[17:37] <ahoneybun> KDDA: talk to ovidiu-florin about that, we usually do it when he is avaiable but I'm sure you would be very welcomed to join
+[17:38] <ahoneybun> also Unity is not that bad once 14.04 was released
+[17:38]  * ahoneybun see that there is a Capcom sale on steam, but his wallet is safe as none work on Linux
+[17:38] <yofel> KDDA: we usually only do such a meeting once shortly after release to talk about the next one
+[17:38] <KDDA> just wondering what time it usually is
+[17:39] <yofel> either part of vUDS, or around it
+[17:53] <ahoneybun> seems kwallet thinks my password is wrong
+[17:53] <ahoneybun> yet I just put it in for my wifi password
+[17:54]  * ahoneybun throws kwallet out a window
+[17:55]  * yofel gathers the pieces and throws them on his other broken kwallets
+[17:56] <KDDA> yofel are you a dev?
+[17:56] <yofel> yes
+[17:56]  * ahoneybun remembers in KDE4 when kwallet worked well
+[17:57] <yofel> in kde4 it at least didn't *repeatedly* asked you to open the same damn wallet
+[17:57] <KDDA> what do you use kwallet for?
+[17:58] <yofel> whatever asks for it, ie. kded, owncloud, chromium, ...
+[17:58] <ahoneybun> storing passwords
+[17:58] <KDDA> oh
+[17:58] <yofel> right ^
+[17:58] <ahoneybun> yofel: is it normal that kdepasswd to not be installed?
+[17:59] <yofel> not sure
+[17:59]  * yofel checks the manifest
+[18:00] <yofel> ahoneybun: yes
+[18:00] <yofel> now whether that's good I don't know
+[18:00] <ahoneybun> so we provide no GUI way to change the user password then
+[18:00] <ahoneybun> I would think that is not good
+[18:00] <yofel> doesn't user-manager do that?
+[18:01] <ahoneybun> from the system settings
+[18:01] <KDDA> I never used it, mostly LastPass
+[18:01] <yofel> yeah it does, that kaccount has a useless button is bad though :/
+[18:02] <yofel> I do remember someone talking about that a while ago though...
+[18:02] <ahoneybun> yea Im talking about "Password and User Account"
+[18:02] <ahoneybun> then there is User Manager that has a password option
+[18:03] <ahoneybun> ovidiu-florin: Riddell valorie https://github.com/ahoneybun/kubuntu-manual
+[18:03] <blaze> are there users of Wily?
+[18:05]  * ahoneybun starts playing PA
+[18:06] <KDDA> Im on 15.10
+[19:30] <ahoneybun> what is the default username and pass on a live cd/dvd?
+[19:31] <ahoneybun> got it
+[19:31] <Etriaph> http://askubuntu.com/questions/103896/live-cd-asks-for-a-username-and-password
+[19:31] <Etriaph> :D
+[19:31] <ahoneybun> thanks
+[19:31] <Etriaph> np
+[19:32] <ahoneybun> Etriaph: I'm trying to find out why the right click does not work on Ubuntu 
+[19:32] <ahoneybun> and Kubunt
+[19:32] <Etriaph> On your mouse?
+[19:32] <ahoneybun> laptop
+[19:32] <ahoneybun> trackpad/touchpad
+[19:32] <Etriaph> Ah, ya, I'm mostly desktop only.
+[19:32] <ahoneybun> so it would be synaptics I thiink
+[19:32] <Etriaph> I think my laptop is running 12.04 or something
+[19:33] <ahoneybun> just need to know where the conf file is and stiff
+[19:33] <ahoneybun> *stuff
+[19:34] <ahoneybun> so 
+[19:34] <ahoneybun> 'xinput list' says cannot connect to X server
+[19:34] <Etriaph> And you're connected?
+[19:34] <Etriaph> Your user session I mean?
+[19:36] <ahoneybun> well
+[19:36] <ahoneybun> with the right click not working I had to jump into a tty
+[19:37] <yofel> try "export DISPLAY=:0", then xinput might work
+[19:38] <ahoneybun> that did it yofel thanks
+[19:39] <ahoneybun> I see the TouchPad on there
+[19:41] <ahoneybun> so reading from this https://wiki.archlinux.org/index.php/Touchpad_Synaptics#Configuration_on_the_fly : the device shows a left and right button
+[19:47] <ahoneybun> yofel: Etriaph http://askubuntu.com/questions/579645/right-click-on-synaptic-touchpad-not-working-on-ubuntu-14-10 : this worked in the live iso so I'm going to try it in the installed version now
+[19:47] <Etriaph> Interesting.
+[19:49] <Etriaph> ahoneybun: Did you have to manually configure it?
+[19:49] <ahoneybun> Etriaph: what might be causing this is this laptop has 2 right and 2 left button
+[19:49] <ahoneybun> Etriaph: as in?
+[19:49] <ahoneybun> wtf now the right click works fine
+[19:49] <Etriaph> ahoneybun: Did you have to add anything to xorg.conf?
+[19:49] <Etriaph> Or synaptics config file?
+[19:49] <ahoneybun> Etriaph: yea what the guide said
+[19:50] <Etriaph> *nods*
+[19:50] <ahoneybun> now the right click is gone
+[19:50] <ahoneybun> works when you boot, then it goes away
+[19:51] <Etriaph> kcm-touchpad was replaced with what?
+[19:52] <ahoneybun> no clue
+[19:52] <Etriaph> Oh it's *still* in it
+[19:53] <Etriaph> Vivid I mean
+[19:53] <Etriaph> Arch has a package we don't
+[19:53] <Etriaph> kcm-touchpad-frameworks
+[19:53] <Etriaph> I would imagine kcm-touchpad is legacy for v4 apps
+[19:54] <yofel> we have kde-config-touchpad which is part of plasma(5)-desktop
+[19:54] <ahoneybun> opps I mean left click
+[19:54] <Etriaph> yofel: And is that just for the cursor pad, or does that include the buttons?
+[19:55] <yofel> no idea, I never had to configure the *buttons*
+[19:55] <Etriaph> I try to gather solutions for problems so I can help folks in #kubuntu from time to time.
+[19:55] <yofel> well, I had on my work thinkpad, but that requires xorg.conf meddling to properly work
+[19:55] <Etriaph> Ah.  I'm a desktop person mostly.
+[19:55] <Etriaph> I should try 15.04 on my laptop and see how it goes.
+[19:56] <yofel> that T440 has all buttons emulated on one huge touchpad, which is a PITA
+[19:57] <Etriaph> It's probably failure prone depending on the wiring in there :D
+[19:57] <Etriaph> bbiab, more coffee required
+[20:45] <ahoneybun> Etriaph: it seems if I switch to a tty, then back to the deskop the left and right buttons work
+[20:54] <Etriaph> ahoneybun: Maybe they are reinitialized when returning to the X.org display server.
+[20:55] <Etriaph> ahoneybun: If that were true, either they hang while in memory or they get put to sleep.  Are you actively typing/working with the laptop when they stop working?
+[21:10] <Etriaph> I'm burning a disk with K3B and KSysGuard doesn't report any IO on the device.
+[21:11] <Etriaph> Broken sensor for sr0?
+[21:16] <ahoneybun> not that I know of Etriaph
+[21:16] <ahoneybun> bbl

@@ -1,0 +1,61 @@
+<cia-5> inyoka [sandbox]: entequak * 9d3f7197d542:1699 inyoka/wiki/models.py: add delete to page cascade option in wiki.page
+<cia-5> inyoka [sandbox]: entequak * 044c2afc1499:1700 (2 files in 2 dirs): one underscore is enough for test database tables
+<markush> entequak: http://paste.pocoo.org/show/snjxundjkswsampxhww4/
+<markush> dasich: glückwunsch zum 1000. post im forum
+<entequak> stalker? :d
+<hefeweiz3n> entequak: markush hat die "user verfolgen" option schon eingebaut :d
+<entequak> ah
+<markush> hehe
+<entequak> hab ich nen denkfehler, oder ist mysql die einzige db die primary keys nicht wieder zurück setzt?
+<entequak> also wenn ich daten lösche
+<entequak> weil bei allen anderen bekomme ich bei objekt rein, objekt löschen und neues objekt rein immer id = 1
+<entequak> bei mysql id = 2
+<markush> entequak: primary-keys werden mit autoincrement immer weitergezählt
+<entequak> primary keys sind immer autocinrement
+<hefeweiz3n> der logik nach dürften pks auch nicht wiederverwendet werden
+<markush> also werden die immer hochgezählt und nicht zurückgesetzt
+<markush> hefeweiz3n: +1
+<hefeweiz3n> sollten
+<hefeweiz3n> bei informix (hab ich mal in nem praktikum benutzt) war das mein ich der fall
+<markush> dreck
+<hefeweiz3n> sollte aber nur bei auto-increment passieren
+<hefeweiz3n> von hand müsste es gehen
+<hefeweiz3n> http://stackoverflow.com/questions/253522/do-numerical-primary-keys-of-deleted-records-in-a-database-get-reused-for-future
+<hefeweiz3n> antwort 2 erklärts für mysql
+<hefeweiz3n> bin mal abendessen machen
+<entequak> genau, antwort 2 erklärts für mysql…
+<entequak> grml
+<entequak> hossa swege
+<swege> nabend
+<entequak> hefeweiz3n, naja, obwohl erklären tuts nichts
+<entequak> alle haben id 1, mysql als einzige 2…
+<markush> swege: was hältst du davon, wenn wir uns auf behind.uu. mal vorstellen? also mal einen kurzen blogartikel schreiben ?
+<swege> markush: bin nicht so der große schreiber und wüsste auch nicht was ich da hinschreiben sollte, also ich machs nicht :)
+<markush> ok
+<swege> wurden in entes vorletztem artikel ja auch genannt ;)
+<entequak> so, gleich passt auf…
+<cia-5> inyoka [sandbox]: entequak * 6a44a8d92a91:1701 tests/core/test_forms.py: don't test for proper id. mysql does fancy things with primary key ids
+<cia-5> inyoka [sandbox]: entequak * 903821455751:1702 tests/utils/test_confirm.py: fix test_confirm: don't hardcode an objects id, use the ids the database gives us
+<webshox-build> yippie, build fixed!
+<webshox-build> project inyoka-ng » mysql,2.7 build #12: fixed in 1 min 56 sec: http://webshox.org:8080/job/inyoka-ng/./database=mysql,python=2.7/12/
+<entequak> tschacka!!!!!!!!
+<markush> und nu ?
+<entequak> fehlt nur noch postgresql ;)
+<cia-5> inyoka [sandbox]: entequak * 37f3a00c31e3:1703 inyoka/core/auth/models.py: specify cascade rule on group.parent relationship
+<pocoo> changes in inyokabugs: ticket #191 (css-filter filtert {{| |}} heraus) created <http://trac.staging.ubuntuusers.de/ticket/191>
+<markush> was sagt ihr zum 2. teil von # 190: http://trac.staging.ubuntuusers.de/ticket/190
+<markush> ich wäre ja was das verlinken angeht für ein wontfix
+<cia-5> inyoka [prod-sa06]: markush * 9f63f3111d40:5011 inyoka/forum/ (models.py forms.py): changed ubuntu_distros to a set, instead of a dictionary. fixes #190
+<entequak> markush, der link is eig. am einfachsten ;)
+<pocoo> changes in inyokabugs: ticket #190 (versionsangabe bei neuen threads) closed <http://trac.staging.ubuntuusers.de/ticket/190#comment:2>
+<pocoo> changes in inyokabugs: ticket #192 (icon von user-makro weg) created <http://trac.staging.ubuntuusers.de/ticket/192>
+<cia-5> inyoka [prod-sa06]: markush * 25650770f40d:5012 inyoka/static/js/ (forum.min.js forum.js): notifications on selecting a ubuntu version when writing/editing a topic now link to the wiki page of te selected version and the version type ...
+<entequak> hrm, #192 is ja auch fancy ;)
+<markush> entequak: bin ich auch gerade auf der suche
+<markush> ich würde ja fast drauf tippen, dass die datei fehlt
+<apollo13> encbladexp: ideen zu 192?
+<apollo13> entequak: ^ meinte ich eigentlich
+<apollo13> markush: deine changes in 190 machen wohl nicht sonst noch was put?
+<apollo13> entequak: also deine checkins sind manchmal komisch, old mode: 644, new mode: 755, warum brauchen bilder executeable bit?
+<cia-5> inyoka [prod-sa06]: soeren * 26bfd166d13e:5013 inyoka/static/style/markup.css: restored markup.css. fixes #192.
+<pocoo> changes in inyokabugs: ticket #192 (icon von user-makro weg) closed <http://trac.staging.ubuntuusers.de/ticket/192#comment:2>

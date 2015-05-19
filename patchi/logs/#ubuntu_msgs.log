@@ -1,0 +1,391 @@
+<orakar>	gedit is running incredibly slow and my cursor is blinking when i have unsaved modifications. as soon as i hit ctrl+s it acts normally, and then a few more unsaved modifications make it run dog slow again. any idea what's up? my notebook sucks, but it runs eclipse luna fine!
+<bekks>	hikarubg: next time, build a deb file instead.
+<hikarubg>	bekks, :) thanks! :)
+<guest97876>	for add new boot option, its just select filesystem, path for boot option
+<guest97876>	and for select filesystem, the only one there is the usb
+<eric^^>	ok, try the efi/boot/grubx64.efi you were using earlier
+<eric^^>	guest97876: using the usb's partition letter
+<mrx>	i am running 15.04. when i shutdown i get a black screen with a blinking cursor
+<hikarubg>	so bekks, you think i can't remove it and i should trash my laptop? :) no solution, guys?
+<cromagi>	daftykins: my pc won't boot now
+<daftykins>	!recovery | cromagi ok do this then purge the package i suggested
+<ubottu>	cromagi ok do this then purge the package i suggested: if your system fails to boot normally, it may be useful to boot it into recovery mode. for instructions, see https://wiki.ubuntu.com/recoverymode
+<guest97876>	argh hang on, i have to find the path again
+<fun>	hi
+<fun>	if i run sudo rm -rf /etc/systemd will ubuntu work?
+<networkingpro>	hey everyone
+<daftykins>	lo
+<guest97876>	ok eric, i add that as a boot option, but it doesnt? like register? at all
+<guest97876>	when i go back to boot option priorities there's still nothing there
+<networkingpro>	is there an app or service that will listen for traffic on a socket and forward it to a different ip?
+<guest97876>	should i try restoring the default values for setup options?
+<oerheks>	hikarubg, solution for that old php 5.3.29 ? install precise with 5.3.10
+<eric^^>	guest97876: try a different letter or try using the usb as the file system
+<vandergroot>	hi
+<eric^^>	guest97876: no, try leaving csm disabled boot the usb
+<guest97876>	what do you mean by different letter
+<guest97876>	j:\efi\boot\grubx64.efi  is the path, are you saying to just tpye in a different letter for j?
+<eric^^>	guest97876: like e:\efi\boot\grubx64.efi
+<hikarubg>	oerheks, now i am striving to remove what i have installed... thanks for the tip on the precise tip.
+<hikarubg>	do you know how to remove make install php ?
+<eric^^>	guest97876: try or i:\efi\...
+<guest97876>	ok...just to be sure, ive been typing in fs0:\j:\efi\boot\grubx64.efi , since on the side of the screen it says "enter the path to the boot option in the format fs0:\path\filename.efi
+<eric^^>	guest97876: try fs1:\efi\boot\grubx64.efi
+<eric^^>	guest97876: are you at shell?
+<oerheks>	hikarubg, make uninstall php ?
+<guest97876>	no, im at bios
+<guest97876>	but i wil try fs1
+<hikarubg>	oerheks, yes, i did install the 5.3.29 version from the source, using make, make install ....
+<guest97876>	wait a minute
+<hikarubg>	and now i want to remove it
+<guest97876>	i see "launch efi shell from filesystem device
+<guest97876>	should i hit that?
+<eric^^>	guest97876: try using fs1 first
+<guest97876>	it still didnt show up as a saved option but ok!
+<eric^^>	guest97876: hmm try fs0:\efi\boot\grubx64.efi
+<guest97876>	yep, that didnt work
+<eric^^>	guest97876: ok, try to launch the shell
+<guest97876>	ugh, i hit that and it tells me warning: not found
+<azeirah>	hey all, does anyone here know where i can find the workspaces related code of ubuntu unity? it's a large repo
+<oerheks>	hikarubg, checkinstall would have been better, if there is no make uninstall, make install can help finding installed files.
+<reisio>	azeirah: compiz
+<hikarubg>	oerheks, and remove them? :) is this won't break nothing else?
+<azeirah>	that's in compiz? alright, i'll see if i can find something
+<oerheks>	hikarubg, i cannot guarantee it breakes something.
+<oerheks>	or not
+<eric^^>	guest97876: ok, we could install in legacy mode if you want
+<vandergroot>	i want to run a dual boot with ubuntu and windows 8. in what order should i install them?
+<fun>	can 15.04 run initd?
+<eric^^>	guest97876: you could convert it to uefi if you want
+<eric^^>	vandergroot: windows then ubuntu
+<vandergroot>	eric^^: thanks. will ubuntu handle the os selection with grub?
+<eric^^>	vandergroot: yeah
+<guest97876>	that seems to be the only available option ):
+<vandergroot>	great. thanks. :)
+<guest97876>	so, just enable legacy mode and csm again?
+<eric^^>	guest97876: yes
+<eric^^>	vandergroot: no problem :)
+<guest97876>	ok, what else
+<eric^^>	guest97876: check the bios if there is some kind of, don't boot the usb option enabled or something
+<eric^^>	also check if secureboot was enabled
+<guest97876>	well, under usb confirugration, there is legacy usb support enabled
+<leearl>	guys how do i view the refresh rate?
+<eric^^>	try to disable that, and reboot and see if it boots the usb maybe
+<eric^^>	guest97876: it's a long shot but who knows
+<guest97876>	the other legacy i was talking about was launch pxe oprom, which was described as "controls the execution of legacy pxe oprom
+<azeirah>	i'm really impressed by how readable the compiz source code is compared to what i was just reading from the unity source, lol
+<fun>	http://www.osho.com/iosho/library/read-book/online-library-programming-eve-feel-6b55b211-462?p=4036e466dc00c584d4fb410aec7f6229
+<fun>	:)
+<guest97876>	ah
+<guest97876>	we're back to grub now
+<eric^^>	guest97876: did you enable csm?
+<vandergroot>	mmmmm. grub....
+<hikarubg>	thanks, oerheks
+<leearl>	fun whoever wrote that is a psycho
+<guest97876>	ugh, i cant remember if i did or not. let me go back and check
+<fun>	leearl well what makes u say that?
+<guest97876>	yes, csm and pxe oprom both enabled
+<badluckryan>	my laptop is stuck at "boot device not found 3f0" and i have no os installed. it doesnt have a disk drive either.. anyone know a fix?
+<guest97876>	and the boot options are back as well
+<leearl>	fun, the way he is mocking religion
+<eric^^>	guest97876: try to disable csm, just to see if it will boot he usb after disabling usb legacy support
+<leearl>	u can be whatever u want just leave others be
+<daftykins>	badluckryan: no hard disk and ssd? so you mentioned not being able to get boot media to work, what did you try and how did you make them up?
+<eric^^>	guest97876: is there any mention of secureboot?
+<leearl>	and the usage of the workld mohammedan is psychosis at well
+<guest97876>	i dont think so, ill check next time im in bios
+<guest97876>	which is right now
+<leearl>	he could have just said muslim
+<leearl>	he said hindu
+<guest97876>	all my boot options are gone now that i have launch csm disabled
+<leearl>	he did not say a krishnaish
+<leearl>	krishnaist
+<guest97876>	secure boot control is disabled
+<fuchs>	leearl: pretty sure this doesn't belong in the support channel here, please take it elsewhere
+<badluckryan>	make what up?  i tried to boot a bunch of linux distros to no avail
+<eric^^>	guest97876: turn secureboot off if it's on
+<guest97876>	its off, its disabled
+<eric^^>	guest97876: ok, try restarting the pc
+<guest97876>	straight back to bios
+<guest97876>	i just want to stress that i have no boot options, none at all
+<leearl>	fuchs, right is you, sorry. *yoda style*
+<eric^^>	guest97876: ok, try to reset the bios to the defaults maybe
+<guest97876>	what about when we did the thing in grub and got from that to what seemed like installation options? when i had the black screen?
+<badluckryan>	im with guest97876. my pc is dead
+<daftykins>	badluckryan: from flash drives?
+<daftykins>	so those needed preparing.
+<badluckryan>	yes
+<guest97876>	restoring them to the defaults didnt do anything, i think the only thing i can do to get it to give me my boot options back is to enable csm
+<daftykins>	badluckryan: so what did you use and from which os?
+<eric^^>	guest97876: ok, enable csm and legacy usb and go to the grub prompt
+<badluckryan>	live usb
+<daftykins>	badluckryan: no, i mean software wise?
+<eric^^>	guest97876: try leaving legacy usb off, and see what happens
+<lmnop_>	ok lets start over wut is the problem here
+<badluckryan>	you mean what did i try to boot?
+<daftykins>	badluckryan: how did you put the isos onto the flash drive?
+<daftykins>	did you use a program, if so, which?
+<guest97876>	lmao
+<badluckryan>	im using drivedroid
+<guest97876>	now when i try to change launch csm back to enabled, and save the settings, it doesnt actually save? because when it boots up, takes me back to bios, where theyre dsiabled
+<badluckryan>	where are we going with this
+<guest97876>	why doesnt it remember that i changed my settings and saved them...
+<guest97876>	im going to re-enable usb legacy and see if that was why
+<eric^^>	guest97876: ok, good idea
+<guest97876>	wait wtf, secure boot control magically re-enabled itself, im going to see if that's it
+<guest97876>	ah, that was it
+<badluckryan>	wow good luck guest97876. seems like you're making progress
+<guest97876>	oh
+<guest97876>	ohhhh
+<guest97876>	there it is
+<guest97876>	and it took me to the installer splash screen and i am now back at the end kernel panic error
+<daftykins>	badluckryan: oh that was you - yeah so you haven't bought a flash drive yet? not really able to help until you do.
+<pokeymantrainer>	# appears as anna
+<badluckryan>	how do you set up your flash drive then..? you extract the iso to it right?
+<daftykins>	no not like an archive
+<badluckryan>	its the same exact thing
+<eric^^>	guest97876: ok, try to disable secure boot, and csm/usb legacy and see if it boots the usb
+<daftykins>	no it's not
+<guest97876>	it is booting the usb
+<badluckryan>	but suppose i did have a flash drive, whats the next step.?
+<daftykins>	badluckryan: but you don't.
+<guest97876>	it takes me to the ubuntu installation splash screen, and when i try to install ubuntu or try without installing, it gives me that kernek panic error
+<eric^^>	guest97876: csm is disabled?
+<daftykins>	badluckryan: is your phone rooted?
+<pokeymantrainer>	(#g1<:e010m1) i have this problem where my wifi keeps dropping out every now and then. my signal is pretty good, so i don't know what's happening.
+<badluckryan>	what would the next step be
+<badluckryan>	yes it is
+<guest97876>	no i dont believe it is but when it wasn't, i couldn't do anything
+<daftykins>	which rom are you using?
+<guest97876>	but i'll go try disabling it...
+<badluckryan>	slim rom
+<eric^^>	guest97876: are you pressing try ubuntu or install ubuntu btw?
+<guest97876>	either one takes me to the same kernel error, ive tried both
+<eric^^>	guest97876: ok
+<guest97876>	ok, csm has to be enabled or else i can't get out of bios
+<guest97876>	anyways, i've gotten to the ubuntu installer boot menu
+<badluckryan>	i know drivedroid works. i just need a program that boots
+<eric^^>	guest97876: ok
+<daftykins>	^ that'll just be due to conflicting parameters i'd bet ;)
+<eric^^>	guest97876: try to get grub like earlier
+<guest97876>	its been a while, how did we get to grub? it auto boots to usb now
+<eric^^>	guest97876: daftykins is probably right about that
+<eric^^>	guest97876: try to boot without the usb plugged in maybe
+<guest97876>	oh, i was able to get to grub with usb plugged in, by hitting esc while booting and selecting a different boot option
+<guest97876>	so im back at grub, what now?
+<pokeymantrainer>	# appears as bolo
+<daftykins>	badluckryan: program? what?
+<daftykins>	pokeymantrainer: either ask a question or leave please
+<daftykins>	oh you did
+<badluckryan>	nevermind guy
+<daftykins>	badluckryan: yeah buy a flash drive then come back :)
+<eric^^>	guest97876: do you want to install in legacy, or install in legacy and then convert to uefi?
+<guest97876>	i don't even know the difference, whatever you think would work
+<badluckryan>	ok girl
+<eric^^>	guest97876: ok, type linux (hd1,msdos1)/casper/vmlinuz.efi  file=/cdrom/preseed/ubuntu.seed boot=casper quiet splash nomodeset --
+<eric^^>	guest97876: we can install in legacy mode onto a gpt partition, and try to use uefi, if your bios still doesn't like it you can still use legacy
+<guest97876>	ok so uh i typed that in, nothing really seemed to happen
+<guest97876>	is that supposed to be all as one command line?
+<eric^^>	yeah
+<eric^^>	type initrd (hd1,msdos1)/casper/initrd.lz
+<guest97876>	ok so, now what? when i entered it in, it took a second, and then allowed me to type in a new line as normal. should i reboot?
+<guest97876>	ah
+<eric^^>	come to think of it, i don't see how we can convert it, cause we can't boot the live usb in uefi mode even
+<eric^^>	so i guess you'll have to use legacy mode
+<guest97876>	oh, ok. so what should i do
+<hikarubg>	oerheks,
+<eric^^>	the bios seems sketchy, it's missing the uefi shell for some reason and i have no idea honestly
+<ranglerzz>	eric^^: what
+<eric^^>	ranglerzz: you what?
+<zanzacar>	i was to write a python module that reads data from a serial port. to test i was wondering if there was a way to simulate input on the serial port.
+<zanzacar>	does anyone know of way to do that?/
+<hikarubg>	oerheks, so the answer to my problem was to use checkpackage with make install and greate the deb package, and then uninstall with dpkg -r php
+<eric^^>	ranglerzz: don't pm me nasty stuff
+<hikarubg>	nice ! :)
+<daftykins>	eric^^: do we know the make + model of this machine and whether it's up to date or not? (bios wise)
+<ranglerzz>	hikarubg: yers
+<eric^^>	ranglerzz: cunt
+<ranglerzz>	eric^^: ops
+<guest97876>	its an asus laptop, i couldnt tell you the model number since the sticker with that information got washed out when i got caught in the rain last year
+<hikarubg>	ranglerzz, has hers panties 2 sizes smaller today :)
+<daftykins>	guest97876: it'd say inside the bios i would think
+<guest97876>	just tell me what to do, i'm willing to do anything to this laptop at this point
+<daftykins>	well identifying the model would be ace
+<leearl>	guys how do u say: caja? j=j or j=h ?
+<eric^^>	guest97876: did you type the last command?
+<eric^^>	guest97876: initrd .. ?
+<eric^^>	we can probably get more info about the bios and what not from the live session
+<guest97876>	initrd (hd1,msdos1)/casper/initrd.lz? yes
+<eric^^>	ok type boot
+<eric^^>	actually the bios should have the laptop's model name
+<guest97876>	oh?
+<guest97876>	ubuntu 14.04 loading screen is up
+<guest97876>	with 4 white dots turning orange annnnnd then theres a bunch of errors and my screen went black
+<guest97876>	og
+<_xer0>	hello all, i just installed 15.04 recently on my home desktop. using a wired connection, i can't seem to get my machine to talk on the network. dhcp is enabled, but is not grabbing an address. states 'unknown' for all variables when viewing connection info through network-manager. (sorry for wall of text)
+<guest97876>	oh my god it's working
+<guest97876>	im on my desktop everything seems to be working oh man
+<guest97876>	there's a desktop shortcut that says install ubuntu 14.04.2 lts, i really want to click that and get this over with, do you suggest i do anything else first?
+<eric^^>	guest97876: it's up to you, we can either see why the bios isn't booting uefi properly or install in legacy mode
+<eric^^>	first option probably you'll have to update the bios's firmware
+<travisty>	i just did a fresh intstall of ubuntu 15.04 and when i run “sudo apt-get update” it says “0% [connecting to us.archive.ubuntu.com (2001:67c:1562::16)] …” and never gets further. does anyone have some ideas of how to debug this?
+<guest97876>	i just want to get this over with so i can get back to work...install in legacy mode would just be installing it "normally", right? so go ahead and click the install icon?
+<eric^^>	but uefi boots slightly quicker and is more modern etc.
+<eric^^>	guest97876: yeah
+<eric^^>	guest97876: hold on
+<guest97876>	i'm so happy, im finally going to have a working computer again
+<guest97876>	oh, ok
+<dumle29>	so. i have two disks in my system. one with windows on it, and one with ubuntu on it. i recently upgraded to windows 8.1 (from 7) by doing a clean install. now this wiped out grub, and i can't boot ubuntu (well i could pick the other harddisk from my boot menu. is there an easy way to get grub back from the livecd (usb stick in my case) ?
+<leearl>	guys how to view the refresh rate from command line?
+<eric^^>	guest97876: make a gpt partition, it will work with legacy, and if you ever decide to update the bios you can use uefi, plus gpt supports more partitions and other options
+<reisio>	dumle29: https://help.ubuntu.com/community/boot-repair
+<eric^^>	guest97876: open a terminal
+<dumle29>	reisio: thanks :)
+<reisio>	dumle29: basically grub-install
+<guest97876>	are you sure? i dont make a habit of fooling around with stuff like this
+<guest97876>	but i'll do what you say, you're the expert
+<eric^^>	guest97876: yeah, it's no problem
+<vandergroot>	is it possible to get ubuntu to scroll while i'm holding down the mousewheel?
+<reisio>	sure
+<dumle29>	reisio: yeah i figured that'd be the way :) thanks
+<guest97876>	hey, i got an error saying there were 0 bytes of disk space remaining, i went ahead and clicked ignore. anyways im at the terminal now
+<reisio>	guest97876: might want to make some space
+<eric^^>	ok, type sudo apt-get install pastebinit
+<reisio>	https://help.ubuntu.com/community/recoverlostdiskspace
+<guest97876>	cant, it says theres no space left on the device
+<guest97876>	which is bizarre considering its a 500 gb hard drive
+<eric^^>	guest97876: that's odd, it's supposed to be a live session
+<eric^^>	try clicking on gparted
+<bashing-om>	vandergroot: on my xterm, pressing down the scroll wheel is a "middle nouse button" click ; be involved perhaps to remap that behavior .
+<guest97876>	aha
+<guest97876>	i have two partitions
+<guest97876>	unallocated, 465.52 gib
+<pokeymantrainer>	how much ram do you have? doesn't stuff get installed into ram on a live session?
+<travisty>	i should mention that the internet seems to work otherwise - i just have trouble getting apt-get to work properly
+<daftykins>	copied and run, not installed
+<eric^^>	guest97876: ok, click on create new partition table or so
+<eric^^>	guest97876: and make a new gpt partition table
+<vandergroot>	bashing-om: i'm thinking it should either be a setting in unity or i'll just skip it. ^
+<vandergroot>	^^
+<lmnop_>	well its not really run in ram
+<guest97876>	ok, its saying itll erase all data on the entire disk /dev/sda, is that ok?
+<eric^^>	guest97876: yeah
+<guest97876>	ok
+<guest97876>	ok, so i just have a big ol unallocated space of 465.76 gigs
+<eric^^>	guest97876: ok, make a 300mb fat32 partition of type efi ( ef00 hex code )
+<eric^^>	guest97876: i can't walk you through this on gparted, but if you open sudo cgdisk /dev/sda in a terminal i've used it
+<lmnop_>	the tough way but should work
+<guest97876>	ok, ive got that terminal thing up
+<bashing-om>	travisty: i just joined the channel, but is this a source/list issue or a packge management issue ' sudo apt-get update ; sudo apt-get upgrade ' indicates what ?
+<eric^^>	ok, click on new, when it asks which sector press enter, for size type 300m
+<eric^^>	guest97876: when it asks for the hexcode type ef00
+<travisty>	bashing-om: i also just joined. so i just did a fresh install of ubuntu 15.04. the first thing i did after getting my wireless set up was to open a terminal and type “sudo apt-get update”. it only printed “0% [connecting to us.archive.ubuntu.com (2001:67c:1562::16)] …” and never made any progress.
+<travisty>	bashing-om: i just deleted /etc/apt/sources.list and used software-proeprties-gtk to create a new one, but it has the same problem
+<guest97876>	anything specific i should name this partition?
+<eric^^>	guest97876: efi partition
+<bashing-om>	travisty: ok, system problem or a hardware issue ' ping -c3 8.8.8.8 ; ping -c3 ubuntu.com ' let's see where we go from there . any yeah 15.04 is a new ball game . be aware .
+<guest97876>	ok thats done, now what
+<eric^^>	guest97876: make another partition, 2m in size, with the hex code ef02 call it bios-boot partition
+<travisty>	bashing-om: (i actually had the same problem in an older version prior to installing 15.04. i just moved from canada to the us and this problem started when i moved)
+<travisty>	bashing-om: both pings have 0 packets lost
+<guest97876>	setting the size in sectors as 2m isnt working for some reason, hitting enter just kinda deletes what i typed
+<bashing-om>	travisty: k. the ping request still applies for my thought process .
+<eric^^>	guest97876: are you sure it's the size in sectors or where it starts?
+<travisty>	bashing-om: 0% packet loss for both addresses
+<guest97876>	size in sectors, i just hit enter for first sector
+<travisty>	bashing-om: (also, thanks for the help!)
+<luckybunny>	my computer just crapped out on me agan. not sure what's going on with it, but it's been doing it a lot lately. basically froze up to the point where i had to do a reisub
+<guest97876>	ok i ended up just making it anyways, its got a size of 1007.0 kib, is that ok?
+<daftykins>	luckybunny: memtest time!
+<luckybunny>	except i think my keyboard doesn't work for that, because reisub had no effect
+<eric^^>	guest97876: yeah, no problem
+<guest97876>	ok, ready for next step
+<eric^^>	guest97876: press write
+<luckybunny>	eventually it pulled itself out, though, and my /home drectory was read-only
+<eric^^>	guest97876: ah wait
+<bashing-om>	travisty: well, that do seem to point to a system confif issue huh ? show us what the sources.list is ' cat -n /etc/apt/sources.list | pastebinit ' . let's make sure is it valid.
+<eric^^>	i think you created it before the efi one, not after it
+<travisty>	i wish i had pastebinit :(
+<guest97876>	can we just make one big partition for my os to use so i can install ubuntu already?
+<daftykins>	guest97876: nope (: that's not how it works
+<bashing-om>	travisty: sorry, no pastebin tool installed .. this may get tough to deal with .. lemme ponder a bit .
+<eric^^>	guest97876: delete the partition, create it after the efi one, press write
+<travisty>	bashing-om: pastebin.com/cf2wnqjw
+<guest97876>	delete the bios boot one i just made?
+<eric^^>	yes
+<guest97876>	ok, so make a new partition?
+<fun>	hackergirl: its just i dislike coding so maybe i can do it for fun
+<fun>	:)
+<fun>	not i , my personal reaction
+<eric^^>	bashing-om: he can use command | nc termbin.com 9999
+<daftykins>	fun: chat is over in #ubuntu-offtopic please :)
+<fun>	i used c to make cash
+<fun>	ok ok
+<leearl>	cash in the stash
+<travisty>	eric^^: awesome, thanks
+<eric^^>	no problem
+<eric^^>	guest97876: yeah
+<craigwell>	meh
+<craigwell>	i tried windows 7 disc to repair boot,
+<craigwell>	still no dice.
+<craigwell>	incredible.
+<daftykins>	craigwell: i think you want ##windows
+<craigwell>	even after reinstall win 7 to the new partition, windows would not boot. tried their bootrec.exe
+<fun>	craigwell: u can access files with ubuntu live
+<craigwell>	its a lament daftykinds
+<fun>	to copy them
+<craigwell>	daftykins
+<craigwell>	i can mount all of it no problem
+<granddan>	hello, everyone! will ubuntu run smoothly with 2 gb of ram?
+<guest97876>	anyways so new partition, what do i name it/hexcode/size?
+<fun>	lubuntu is more likely
+<daftykins>	granddan: xubuntu will
+<travisty>	bashing-om: alternatively, http://termbin.com/sxs0
+<craigwell>	i cannot get gparted, windows 7 install disc, to fix the microsoft crap
+<daftykins>	granddan: use 32-bit too
+<eric^^>	guest97876: size is 2m, hexcode is ef02 , name it bios-boot partition
+<daftykins>	craigwell: sadly no assistance can be provided with windows here in #ubuntu
+<granddan>	daftykins: is 2gb few for ubuntu?
+<daftykins>	granddan: in my opinion yes
+<bashing-om>	travisty: ok. i be look'n at your pastebin.com/cf2wnqjw . thanks eric^^ .. i also came up with 2 other solutions.
+<guest97876>	ok don
+<guest97876>	done
+<azizlight>	how do i disable the alt menu search when in full screen
+<granddan>	daftykins: what's the recommended amount of ram for ubuntu?
+<azizlight>	im playing a game, and when i press alt, it minimizes the game and opens the dash to search for commands. its really disruptive
+<craigwell>	daftykins: you see, it's beyond a windows problem. it's a drive cloning issue that i cannot resolve with either os, thank you.
+<daftykins>	granddan: it would depend more on other system specs for standard unity based ubuntu, but i'd not try with less than 4gb
+<craigwell>	daftykins: is there a hardware oriented channel you can suggest?
+<daftykins>	craigwell: yeah i remember. ##hardware - but i hear they may eat you alive
+<craigwell>	daftykins: otherwise, this is merely a light hearted lament. it's amusing to me that it's being this tricky.
+<eric^^>	guest97876: ok, press write
+<daftykins>	craigwell: well that's nice but this is a support channel not really a chat one :)
+<craigwell>	my next approach is to just install windows fresh on a new drive, and then try to clone my existing ubuntu over - but even that is a major tradeoff for me
+<guest97876>	write for which one? the efi, bios, or free space?
+<craigwell>	daftykins: thank you again. i only return with mention of the issue in the thought that perhaps someone else with insight on clonezilla or another method to help me achieve a sucessful clone might be here
+<daftykins>	craigwell: i've slept since then so forget the details anywho
+<granddan>	daftykins: i tried running it with a virtual machine, giving it 1gb of ram. it ran kinda well, i thought 2gb would be nice
+<daftykins>	granddan: depends on the graphics hardware.
+<daftykins>	granddan: the website actually has system requirements on it
+<guest97876>	eric^^, write for the bios partition?
+<bashing-om>	travisty: i see no fault with the sources.list .. should run, so let's see if we can find the why not. is 'dpkg' in a happy state ' dpkg -l dpkg ' ; returns -> "ii  dpkg" ??
+<craigwell>	daftykins: haha, yes as have i. all is well, i shall persevere and look for alternative assistance. thanks again
+<eric^^>	guest97876: yeah, it should write the new partitions
+<granddan>	daftykins: i will take a look at it. i was planning to dual-boot it alongside other os, but i want it to run smoothly
+<xangua>	azizlight: i think you can disable it with the "unity tweak tool", you can find it in the software centre
+<guest97876>	ok, it says are you sure you wantt o write the partition table to disk (yes or no)
+<guest97876>	im assuming yes, for both the bios one and the efi one?
+<eric^^>	guest97876: yes
+<guest97876>	ok, the two of them are written. whats next.
+<eric^^>	guest97876: launch the installer
+<guest97876>	awwwwww yeaaaaaaah
+<eric^^>	and when it asks about installing, press on something else
+<lmnop_>	for ubntu?
+<guest97876>	its ok that i have this 465.5 gigs of free space though? i dont need to do anything about that?
+<travisty>	bashing-om: i’m not sure how to read the output: http://termbin.com/uob2
+<travisty>	i guess that looks like it does the right thing
+<eric^^>	guest97876: you can continue partitioning in the installer and set the mountpoints
+<guest97876>	ok, im just waiting for the installer now...
+<guest97876>	nothing seems to be happening so im a little bit worried...
+<azizlight>	xangua: ah nice. i changed the keyboard shortcut for it
+<azizlight>	xangua: thanks!

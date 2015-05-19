@@ -1,0 +1,1 @@
+[12:23] <toddy> hmm, ich habe da einen Übersetzungsstring "[TOC]". Das es in den Klammern ist, bedeutet doch, dass es ein Link oder Menüpunkt ist, oder? Darf/muss soetwas übersetzt werden?

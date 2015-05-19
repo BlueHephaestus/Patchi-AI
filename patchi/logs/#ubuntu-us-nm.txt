@@ -1,0 +1,11 @@
+[20:45] <n0wje> hello all anyone here for a question?
+[20:46] <nick125> possibly
+[20:47] <n0wje> brb wife is calling.
+[21:12] <n0wje> ok I am back I installed 10.10 ion a new hard drive SATA. when the systems boots it stop trying to find  the HD. ubuntu drops to the busybox shell ist ther a way to fix this?
+[21:12] <n0wje> I think it is RootDelay=
+[21:16] <nick125> Hm. At the grub menu, press e on the Ubuntu entry and look for the kernel line and add rootdelay=40 on that line and press enter, then press whatever key it says to boot (b, I believe)
+[21:17] <n0wje> ok I will try it thanks going to reboot
+[21:17] <n0wje> brb
+[21:35] <n0wje> ok found out my problem it has to do with the sata devices in my computer. I unpluged one of the hard drives and change the sata dvd to the master position. It works now boot fine.. Thanks for the help.
+[22:23] <n0wje> hey can anyone connect to msn and icq via empathy?
+[23:31] <nick125> I know that ICQ changed a setting so you have to change the endpoint to login.icq.com instead of login.aol.com

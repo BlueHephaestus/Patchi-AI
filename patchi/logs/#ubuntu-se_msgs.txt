@@ -1,0 +1,22 @@
+<recharge> morrn  :)
+<recharge> är det okej om jag pastar en dialog med hund här i chatten så att andra kan lära sig också?
+<recharge> handlar om kodi och filebot
+<screedo> morron
+<recharge> morrn
+<recharge> jag pastar, säg till om jag gör fel så att jag vet det nästa gång  :)
+<recharge> [06:55:15] <recharge> jag menar, gör du musik eller lägger upp youtube klipp eller något? [06:56:08] <hund> nae. jag kör kodi på den. [06:56:32] <hund> jag har inga tv-kanaler. jag kikar mest på youtube och twitch. [06:58:26] <recharge> okej [06:58:32] <recharge> vad är kodi för något? [06:58:42] <hund> xbmc [06:58:53] <hund> det heter kodi nu. [06:58:57] <recharge> x box media center? [06:59:04]
+<recharge> 06:59:04] <hund> yes [06:59:15] <recharge> har bara hört talas om det [06:59:43] <hund> dom bytte namn då xbmc/kodi inte har något med xbox att göra längre. [06:59:56] <recharge> ok [07:01:03] <recharge> detsamma som filebot? [07:01:27] <recharge> får upp det när jag söker på kodi i appstore [07:01:37] <recharge> men den kostar [07:02:35] <hund> det är ett mediacenter. kan spela upp rar-arkiv, har
+<recharge> 07:02:35] <hund> det är ett mediacenter. kan spela upp rar-arkiv, har stöd för massa tjänster via plugins. spotify, youtube osv osv. kan automatiskt hämta info om filmer och serier. man kan även hämta undertexter med ett par tryck. [07:03:02] <hund> ingen aning vad filebot är. [07:03:07] <recharge> lårer ju schysst [07:03:13] <recharge> låter* [07:04:51] <hund> det är rätt smidigt. [07:13:31] <rec
+<recharge> [07:13:31] <recharge> får du betala för det på xubuntu? [07:13:49] <hund> kodi är open source. [07:15:45] <recharge> ahh.. okej..  så filebot, som jag fick när jag sökte på kodi, är inte open source - i och med att jag skulle få betala? verkar vara något liknande  kodi. [07:16:49] <hund> precis. [07:17:15] <hund> filebot är en film/tv-organiserare. [07:18:39] <hund> http://kodi.wiki/view/official_
+<recharge> [07:18:39] <hund> http://kodi.wiki/view/official_ubuntu_ppa [07:29:11] <recharge> hur gör jag om jag skulle vilja ha kodi (eller filebot) utan att betala? vad kör jag för kommando? [07:31:52] <hund> kodi kostar inget. [07:32:02] <hund> kika på länken jag skickade. [07:32:17] <hund> lägg till deras ppa. [07:36:38] <recharge> jo, men hur lägger jag till ppa. använder ju trusty och om jag skulle vilj
+<recharge> [07:36:38] <recharge> jo, men hur lägger jag till ppa. använder ju trusty och om jag skulle vilja ha en stabil version av kodi, hur gör jag då? hur får jag ner det på datorn liksom? [07:36:59] <recharge> filebot finns ju i appstore, men kostar. [07:37:27] <hund> filebot och kodi är två helt skilda saker. [07:38:43] <hund>  sudo add-apt-repository ppa:team-xbmc/ppa [07:40:20] <recharge> okej, tack.
+<recharge> [07:40:20] <recharge> okej, tack. jag är inte så bekant med kommandon. [07:40:29] <hund> i pll [07:40:54] <hund> hoppsan. höll på att tappa telefonen. :p [07:41:25] <hund> du behöver uppdatera förråden när du lagt till det nya förrådet också. [07:41:40] <recharge> sudo apt-get update? [07:41:41] <hund> sudo apt-get update [07:41:45] <hund> yes [07:41:46] <recharge> ok [07:43:57] <recharge> och hur
+<hund> 1. du postar en vägg med text. 2. du postar privata meddelanden utan tillåtelse.
+<recharge> okej.. sorry
+<recharge> hur ska jag göra?
+<recharge> tacksam för hjälp hur eller hur
+<hund> 1. posta inte en vägg med text. använd hastebin eller liknande. 2. fråga alltid vederbörande om tillåtelse innan du offentliggör privata meddelanden.
+<recharge> Är det inte meningen att man ska diskutera och hjälpa varandra här? fast det kanske blir otydligt.
+<recharge> ber om ursäkt
+<recharge> Är det okej om jag pastebinar den från 06:15:55 hund?
+<recharge> från den*

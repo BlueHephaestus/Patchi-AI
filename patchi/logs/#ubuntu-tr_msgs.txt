@@ -1,0 +1,3 @@
+<fnoyanisi> selam
+<conqueror> http://pastebin.com/mxjcact1
+<conqueror> burada üstte çalışan şey neden aşağıdakinde çalışmıyor? sql cümleciklerini phpmyadmin'den denedim. oradan problem yok

@@ -1,0 +1,62 @@
+[17:48] <CIA-5> inyoka [sandbox]: EnTeQuAk * 9d3f7197d542:1699 inyoka/wiki/models.py: add delete to page cascade option in wiki.Page
+[17:48] <CIA-5> inyoka [sandbox]: EnTeQuAk * 044c2afc1499:1700 (2 files in 2 dirs): one underscore is enough for test database tables
+[17:56] <MarkusH> EnTeQuAk: http://paste.pocoo.org/show/snJxuNdjkswSaMPXhwW4/
+[17:59] <MarkusH> DasIch: Glückwunsch zum 1000. Post im Forum
+[18:13] <EnTeQuAk> stalker? :D
+[18:15] <hefeweiz3n> EnTeQuAk: MarkusH hat die "User verfolgen" Option schon eingebaut :D
+[18:15] <EnTeQuAk> ah
+[18:15] <MarkusH> hehe
+[18:23] <EnTeQuAk> hab ich nen Denkfehler, oder ist MySQL die einzige DB die primary keys nicht wieder zurück setzt?
+[18:23] <EnTeQuAk> also wenn ich daten lösche
+[18:23] <EnTeQuAk> weil bei allen anderen bekomme ich bei objekt rein, objekt löschen und neues objekt rein immer ID = 1
+[18:23] <EnTeQuAk> bei MySQL ID = 2
+[18:24] <MarkusH> EnTeQuAk: primary-keys werden mit autoincrement immer weitergezählt
+[18:26] <EnTeQuAk> primary keys sind immer autocinrement
+[18:28] <hefeweiz3n> der logik nach dürften PKs auch nicht wiederverwendet werden
+[18:28] <MarkusH> also werden die IMMER hochgezählt und nicht zurückgesetzt
+[18:28] <MarkusH> hefeweiz3n: +1
+[18:28] <hefeweiz3n> sollten
+[18:29] <hefeweiz3n> bei informix (hab ich mal in nem praktikum benutzt) war das mein ich der fall
+[18:29] <MarkusH> Dreck
+[18:29] <hefeweiz3n> sollte aber nur bei auto-increment passieren
+[18:29] <hefeweiz3n> von hand müsste es gehen
+[18:30] <hefeweiz3n> http://stackoverflow.com/questions/253522/do-numerical-primary-keys-of-deleted-records-in-a-database-get-reused-for-future
+[18:30] <hefeweiz3n> antwort 2 erklärts für mysql
+[18:31] <hefeweiz3n> bin mal abendessen machen
+[18:33] <EnTeQuAk> genau, antwort 2 erklärts für mysql…
+[18:33] <EnTeQuAk> grml
+[18:35] <EnTeQuAk> hossa swege 
+[18:35] <swege> nabend
+[18:36] <EnTeQuAk> hefeweiz3n, naja, obwohl erklären tuts nichts
+[18:36] <EnTeQuAk> alle haben ID 1, MySQL als einzige 2…
+[18:37] <MarkusH> swege: was hältst du davon, wenn wir uns auf behind.uu. mal vorstellen? Also mal einen kurzen Blogartikel schreiben ?
+[18:38] <swege> MarkusH: bin nicht so der große schreiber und wüsste auch nicht was ich da hinschreiben sollte, also ich machs nicht :)
+[18:38] <MarkusH> ok
+[18:38] <swege> wurden in entes vorletztem artikel ja auch genannt ;)
+[18:40] <EnTeQuAk> so, gleich passt auf…
+[18:40] <CIA-5> inyoka [sandbox]: EnTeQuAk * 6a44a8d92a91:1701 tests/core/test_forms.py: don't test for proper id. MySQL does fancy things with primary key ids
+[18:40] <CIA-5> inyoka [sandbox]: EnTeQuAk * 903821455751:1702 tests/utils/test_confirm.py: Fix test_confirm: don't hardcode an objects id, use the ids the database gives us
+[18:42] <webshox-build> Yippie, build fixed!
+[18:42] <webshox-build> Project inyoka-ng » mysql,2.7 build #12: FIXED in 1 min 56 sec: http://webshox.org:8080/job/inyoka-ng/./database=mysql,python=2.7/12/
+[18:42] <EnTeQuAk> tschacka!!!!!!!!
+[18:42]  * EnTeQuAk hat webshox-build ganz dolle lieb :)
+[18:43] <MarkusH> und nu ?
+[18:46] <EnTeQuAk> fehlt nur noch postgresql ;)
+[18:52] <CIA-5> inyoka [sandbox]: EnTeQuAk * 37f3a00c31e3:1703 inyoka/core/auth/models.py: specify cascade rule on group.parent relationship
+[19:20] <pocoo> changes in inyokabugs: Ticket #191 (CSS-Filter filtert {{| |}} heraus) created <http://trac.staging.ubuntuusers.de/ticket/191>
+[19:53] <MarkusH> was sagt ihr zum 2. Teil von # 190: http://trac.staging.ubuntuusers.de/ticket/190
+[19:54] <MarkusH> ich wäre ja was das verlinken angeht für ein wontfix
+[20:05] <CIA-5> inyoka [prod-sa06]: MarkusH * 9f63f3111d40:5011 inyoka/forum/ (models.py forms.py): changed UBUNTU_DISTROS to a set, instead of a dictionary. fixes #190
+[20:06] <EnTeQuAk> MarkusH, der link is eig. am einfachsten ;)
+[20:06] <pocoo> changes in inyokabugs: Ticket #190 (Versionsangabe bei neuen Threads) closed <http://trac.staging.ubuntuusers.de/ticket/190#comment:2>
+[20:29] <pocoo> changes in inyokabugs: Ticket #192 (Icon von user-Makro weg) created <http://trac.staging.ubuntuusers.de/ticket/192>
+[20:30] <CIA-5> inyoka [prod-sa06]: MarkusH * 25650770f40d:5012 inyoka/static/js/ (forum.min.js forum.js): notifications on selecting a Ubuntu version when writing/editing a topic now link to the wiki page of te selected version and the version type ...
+[20:34] <EnTeQuAk> hrm, #192 is ja auch fancy ;)
+[20:37] <MarkusH> EnTeQuAk: bin ich auch gerade auf der suche
+[20:38] <MarkusH> ich würde ja fast drauf tippen, dass die Datei fehlt
+[22:02] <apollo13> encbladexp: ideen zu 192?
+[22:02] <apollo13> EnTeQuAk: ^ meinte ich eigentlich
+[22:05] <apollo13> MarkusH: deine changes in 190 machen wohl nicht sonst noch was put?
+[22:08] <apollo13> EnTeQuAk: also deine checkins sind manchmal komisch, old mode: 644, new mode: 755, warum brauchen bilder executeable bit?
+[22:24] <CIA-5> inyoka [prod-sa06]: soeren * 26bfd166d13e:5013 inyoka/static/style/markup.css: Restored markup.css. Fixes #192.
+[22:26] <pocoo> changes in inyokabugs: Ticket #192 (Icon von user-Makro weg) closed <http://trac.staging.ubuntuusers.de/ticket/192#comment:2>

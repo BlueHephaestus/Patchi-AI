@@ -1,0 +1,235 @@
+<linvnew> ubuntulog2: hi
+<linvnew> 有人吗
+<mars__> 有啊
+<linvnew> mars__: :-)你好
+<linvnew> 一共5个人
+<mars__> －.－  嗯，什么ubuntu中国的人这么少呢
+<linvnew> 减去一个机器人
+<linvnew> 还有4个人
+<mars__> ubuntu不是很火吗
+<linvnew> mars__: 什么意思？很火？
+<linvnew> locobot_1: 你好？会说话吗？
+<mars__> －.－ 很火。。就是那个很抢手
+<linvnew> ubuntulog2: 你好，能说一个字吗？
+<mars__> 我靠，怎么没人呢
+<linvnew> mars__: 用的人是比以前多了，但还是小众，不到5%
+<linvnew> mars__: 你用的是ubuntu吗？
+<linvnew> mars__: 那两个人不说话啊！怎么回事？
+<linvnew> mars__: 你怎么也不说了？
+<linvnew> mars__:  在马？
+<linvnew> 你们都在干什么？！！
+<linvnew> 为什么都不回答！！
+<linvnew> 这是聊天室啊！
+<mars__> 你还是去ubuntu-cn吧，那里人多
+<linvnew> mars__: 你怎么不去
+<mars__> 我在那
+<linvnew> mars__: 你在这里干吗？
+<mars__> 我靠，不过那里没人说话
+<mars__>  我刚才在＃ubuntu说中文被禁言了 0.0
+<linvnew> 那里我也去过，但是我的等级低，所以说不上话
+<linvnew> #ubuntu必须說英语吗？
+<mars__> 是得，那里管理员警告我了
+<mars__> mars__: help! channel emergency! (only use this trigger in emergencies) -  elky, madpilot, tritium, nalioth, tonyyarusso, pricechild, amaranth, jrib, myrtti, mneptok, pici, jpds, gnomefreak, bazhang, jussi, flannel, ikonia, maco, h00k, idleone, or nhandler!
+<linvnew> 呵呵……
+<mars__>  mars__, meng: /join #ubuntu-cn for chinese. this channel is english only.
+<linvnew> 对了，我是一个新手，今年才开始用ubuntu，
+<linvnew> 我用的10.04，你呢？
+<mars__> 我用的是10.10
+<linvnew> 感觉怎么样？
+<mars__> 就那样吧。。
+<mars__> 换个mac主题，还不错
+<linvnew> 我的显卡是mx440的老显卡，10.10装不上驱动，就算了
+<mars__> 呵呵，你是做什么工作的
+<mars__> 是it么
+<linvnew> 不是，纯粹是喜欢玩电脑，业余爱好者，你呢？
+<linvnew> 我用的主题是elementary，个人感觉非常不错
+<linvnew> 图标用faenza的，
+<linvnew> 你的主题是全套的mac吗？
+<mars__> 是的
+<mars__> macbuntu
+<mars__> 我是搞网络安全的，用linux已经很多年了
+<linvnew> :-)，我以前也装过，还行
+<mars__> 之前主要做redhat
+<linvnew> 啊！拜一下先，
+<linvnew> linux听说是灰常安全的啊
+<mars__> 不一定，主要看应用玩着怎么样
+<linvnew> 我自从装了后一直是在裸奔，会不会有什么问题啊！
+<linvnew> 你上ubuntu中文论坛吗？
+<mars__> 上得很少
+<linvnew> 哦，我在上面学了不少东西，认识了很多像你这样的专业人士和高手
+<mars__> redhat是工作必须，ubuntu是生活必须，所以上redhat比较多
+<linvnew> 你不用windows？
+<linvnew> 能和你交个朋友吗？我现在很需要你们的指点^_^
+<mars__> 也用，，，我电脑装了三个系统
+<mars__> 可以啊
+<linvnew> 我的联系方法是linvnew@gmail.com，邮件、gtalk都行，
+<linvnew> 认识你是我今天最高兴的事情
+<linvnew> 你现在在上班吗？
+<mars__> houshao55@gmail.com ..
+<mars__> 武汉，你呢，
+<mars__> 看错了，我正在上班
+<linvnew> 我在汉中，是陕西的一个小城市
+<linvnew> 搞it工资很不错吧！
+<linvnew> 我在gtalk上加你了
+<linvnew> netpro: 你好，这里基本没有人说话，你为什么来这里呢？
+<netpro> 到处逛逛。。
+<linvnew> 见到你说话，我很高兴
+<linvnew> 这里很清净
+<netpro> 确实很清净的说。。
+<linvnew> 在你来之前只有mars会说话
+<linvnew> 现在他也不说了
+<netpro> -  -
+<mars__>  netpro 已经加入此频道 (~netpro@58.48.140.250)。您已经加入了频道 #ubuntu-zh (~mars@58.48.140.250)
+<linvnew> netpro: 你用ubuntu吗？
+<mars__> 0.0
+<linvnew> mars__: 什么意思？
+<linvnew> mars__: 刚才进来一个netpro，会说话的，呵呵
+<mars__> 58.48.140.250
+<linvnew> mars__: 你的ip？
+<netpro> - -
+<linvnew> 你怎么也不说了，难道这个聊天室有静默效果？
+<netpro> 话说我不用ubuntu..
+<linvnew> netpro: 那你用的什么呢？
+<netpro> fedora
+<linvnew> 呵呵，mars用的是redhat
+<linvnew> 我用的是ubuntu10.04
+<netpro> 话说linux版本比他上面跑的软件还多。。
+<linvnew> 今年才从windows转过来，后悔为什么没有早些用
+<linvnew> 是啊是啊
+<mars__> 啊，用fedora
+<mars__> 用cenos算了
+<linvnew> 前段时间我装过arch，发现自己等级太低，还是先老老实实用ubuntu吧
+<linvnew> 我发现#ubuntu的好处了
+<linvnew> 可以学英文
+<netpro> arch？很少见的说。。
+<linvnew> 自己配置的地方太多，我现在的水平搞不定
+<linvnew> mars走了
+<linvnew> 你用了很久了吧！
+<linvnew> 现在这里又只有两个人说话了
+<netpro> 服务器用的比较多。。。桌面版最近xp
+<netpro> 挂了才用的。。
+<linvnew> 我是个小白^_^
+<linvnew> 你是搞it的吧
+<netpro> 额。。
+<linvnew> 多多指教啊
+<linvnew> 你上ubuntu的中文论坛吗？
+<netpro> 不上。。
+<linvnew> 嗯嗯……我就是在哪里学习起步的
+<linvnew> 哪你平时在哪里提高呢？
+<netpro> 56cto 和 51cto上找视频看    有问题就google  什么论坛都去过 只要能解决问题  但很少发贴。。
+<netpro> 话说换了个马甲来了
+<linvnew> ^_^，又来了一个
+<linvnew> 这是谁的马甲？
+<netpro>  --> vicious 已经加入此频道 (~mars@58.48.140.250)。
+<linvnew> 啊！你怎么看到的，真厉害
+<vicious> 0.0
+<linvnew> 我怎么看不到啊？
+<linvnew> vicious: 你好
+<vicious> 好个啥啊！已经好过了
+<netpro> - -
+<linvnew> vicious: 你能不能给一个相对确定的昵称，我…该怎么称呼呢？
+<vicious> 以后就这个了，邪恶
+<linvnew> 记住了
+<linvnew> netpro: 你呢？你的昵称经常换吗？
+<linvnew> netpro: - -
+<linvnew> vicious: 你用的什么软件上聊天室的？
+<netpro> 不。。
+<vicious> konversation
+<linvnew> netpro: 你是怎么看见别人ip的，可以教教我吗？
+<linvnew> vicious: 哇！听都没有听过，ubuntu有吗？
+<netpro> whois
+<linvnew> whois netpro
+<linvnew> netpro: 请问你用的什么软件？
+<netpro> 跟他一样。。
+<linvnew> 我想试试看
+<netpro> 前面要加/
+<linvnew> 天啊！ exiv2 gdebi-kde install-package kdebase-runtime kdebase-runtime-data
+<linvnew>   kdelibs-bin kdelibs5 kdelibs5-data kdepimlibs-data kdepimlibs5 kdesudo
+<linvnew>   kpackagekit kubuntu-debug-installer libakonadiprivate1 libattica0
+<linvnew>   libboost-program-options1.40.0 libclucene0ldbl libdbusmenu-qt2 libexiv2-6
+<linvnew>   libindicate-qt0 libiodbc2 libmysqlclient16 libpackagekit-glib2-12
+<linvnew>   libpackagekit-qt-12 libplasma3 libpolkit-qt-1-0 libqca2 libqt4-help
+<linvnew>   libqt4-qt3support libqt4-scripttools libqt4-sql libqt4-sql-mysql libsoprano4
+<linvnew>   libssh-4 libstreamanalyzer0 libstreams0 libxcb-shape0 libxcb-xv0 libxine1
+<linvnew>   libxine1-bin libxine1-console libxine1-misc-plugins libxine1-x mysql-common
+<linvnew>   oxygen-icon-theme packagekit packagekit-backend-apt phonon
+<linvnew>   phonon-backend-xine plasma-scriptengine-javascript polkit-kde-1 python-kde4
+<linvnew>   python-packagekit python-qt4 python-sip shared-desktop-ontologies
+<linvnew>   software-properties-kde soprano-daemon ttf-dejavu ttf-dejavu-extra
+<linvnew>   update-manager-kde virtuoso-nepomuk
+<linvnew> 建议安装的软件包：
+<linvnew>   djvulibre-bin hspell akonadi-server libqca2-plugin-cyrus-sasl
+<linvnew>   libqca2-plugin-gnupg libqca2-plugin-ossl libqca2-plugin-pkcs11 libqt4-dev
+<linvnew>   gxine xine-ui libxine1-doc libxine-doc libxine1-ffmpeg
+<linvnew>   phonon-backend-gstreamer phonon-backend-vlc phonon-backend-mplayer
+<linvnew>   kcm-phonon-xine python-qt4-dbg
+<linvnew> 下列【新】软件包将被安装：
+<linvnew>   exiv2 gdebi-kde install-package kdebase-runtime kdebase-runtime-data
+<linvnew>   kdelibs-bin kdelibs5 kdelibs5-data kdepimlibs-data kdepimlibs5 kdesudo
+<linvnew>   konversation kpackagekit kubuntu-debug-installer libakonadiprivate1
+<linvnew>   libattica0 libboost-program-options1.40.0 libclucene0ldbl libdbusmenu-qt2
+<linvnew>   libexiv2-6 libindicate-qt0 libiodbc2 libmysqlclient16 libpackagekit-glib2-12
+<linvnew>   libpackagekit-qt-12 libplasma3 libpolkit-qt-1-0 libqca2 libqt4-help
+<linvnew>   libqt4-qt3support libqt4-scripttools libqt4-sql libqt4-sql-mysql libsoprano4
+<linvnew>   libssh-4 libstreamanalyzer0 libstreams0 libxcb-shape0 libxcb-xv0 libxine1
+<linvnew>   libxine1-bin libxine1-console libxine1-misc-plugins libxine1-x mysql-common
+<linvnew>   oxygen-icon-theme packagekit packagekit-backend-apt phonon
+<linvnew>   phonon-backend-xine plasma-scriptengine-javascript polkit-kde-1 python-kde4
+<linvnew>   python-packagekit python-qt4 python-sip shared-desktop-ontologies
+<linvnew>   software-properties-kde soprano-daemon ttf-dejavu ttf-dejavu-extra
+<linvnew>   update-manager-kde virtuoso-nepomuk
+<linvnew> 这真的只是一个聊天室的软件吗？
+<linvnew> 太恐怖了
+<linvnew> 我现在用的是empathy
+<linvnew> 这个whois好像不行
+<vicious> "/whois 用户史"
+<vicious> "/whois 用户名"
+<linvnew> 我换别的软件试试，你们用的软件需要的东西怎么那么多
+<netpro> fedora自带的。。
+<linvnew> 我有个irssi可是还不熟，貌似功能也挺多的，我换过去试试
+<linvnew> o(∩∩)o...哈哈，我看见了
+<linvnew> 你们俩我都看见了
+<linvnew> 咦，你们俩是一样的啊！
+<linvnew> 你们认不认识呢？
+<netpro> 话说在一个办公室。。
+<linvnew> 呵呵，真好
+<linvnew> 同事啊
+<netpro> 呵呵。。
+<linvnew> 你是做什么的呢？
+<netpro> it
+<netpro> 民工。。
+<linvnew> 具体it那个方面呢
+<linvnew> 别这么说，这可是个技术要求非常高的行业
+<linvnew> 我想做都做不了
+<netpro> 话说打着高科技的幌子 干着民工的活。。
+<netpro> 主要网络安全方面。。
+<linvnew> 什么行业刚开始的时候都不容易，干上几年慢慢入行了就好了
+<netpro> 话说你是做做什么的？
+<linvnew> 我在家开个小商店，没事喜欢折腾一下电脑，
+<linvnew> 纯属业余爱好者
+<netpro> 一般非专业人士很少会用到linux的更别说irc了。。
+<linvnew> 我喜欢电脑，非常羡慕你们这些专业人士
+<linvnew> 我今年才刚刚用上ubuntu的，以前一直是windows，现在除了打游戏，一般不进windows
+<linvnew> qq也不用了
+<linvnew> 我是在ubuntu中文论坛上起步的，那里对我这样的新手很包容
+<linvnew> qq据说是非常的不安全，你们平时怎么用？
+<linvnew> 毕竟很多朋友都在那上面啊
+<netpro> 什么都用。。。邮箱为主   个人的话主要也是qq 吧。。  不过一般是webqq
+<linvnew> 我以后也用webqq，有时候语言偏激一下下，别被请去喝茶=_=!
+<netpro> - -
+<linvnew> 很想和你们这样的专业人士和高手交朋友，多学些知识，可以吗？
+<netpro> 实际上我也是菜鸟一个。。
+<linvnew> 没必要这么谦虚啊，能在这行工作本身已经很说明问题了^_^
+<netpro> 事实linux和我们的工作没有太大的联系     和你一样只是出于个人爱好罢了。。
+<linvnew> 那有机会多交流交流
+<linvnew> 我的gmail、gtalk、twitter、facebook都是linvnew，如果以后见面了希望你能提示一下
+<linvnew> 我的忘性不是一般的好，:-)
+<netpro> 恩。。  不错嘛  twitter  facebook都有玩   翻墙技术肯定不赖。。
+<linvnew> netpro: 一般常用的就gmail和gtalk，偶尔翻一下，
+<linvnew> 我对政治、色情这些东西倒不敏感，但是一些没有什么意识形态的纯技术网站也被墙了，所以不得不学翻墙
+<netpro> 呵呵。。不多说了。。。还的赶一份报告。。。以后有时间再聊。。
+<linvnew> 好，再见
+<linvnew> locobot_1: 你是机器人吗？
+<linvnew> ubuntulog2: 你也是机器人吗？
+<linvnew> chanserv: 你还是机器人吗？
+<linvnew> 算你们狠！

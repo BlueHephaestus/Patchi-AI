@@ -1,0 +1,1686 @@
+**** BEGIN LOGGING AT Tue Apr 28 22:59:41 2015
+
+Apr 28 23:31:44 <canonprinter>	(I'm fairly new to HTML) I have a table and its border is "1" and its cellspacing is "1", but the border looks like this http://i.icap.me/2941430278757bb23.png , is there a way I can make the border as thin as like 1 pixel
+Apr 28 23:35:45 <jrich523>	canonprinter: 1 is 1px
+Apr 28 23:36:07 <jrich523>	also, use things like fiddler
+Apr 28 23:37:24 <canonprinter>	oh
+Apr 28 23:37:43 <jrich523>	with fiddler you can show us what you're doing and we can edit it/show you
+Apr 28 23:38:00 <jrich523>	plunker is also pretty cool
+Apr 28 23:39:11 <canonprinter>	ok
+Apr 28 23:39:25 <jrich523>	also using Chrome or FF with its devtools can be very helpful, because basically what you're asking is CSS related
+Apr 28 23:39:39 <canonprinter>	ok
+Apr 28 23:39:42 <canonprinter>	but like
+Apr 28 23:39:46 <canonprinter>	http://i.icap.me/29414302792340f93.png
+Apr 28 23:39:48 <canonprinter>	that's what i want
+Apr 28 23:39:51 <canonprinter>	but the table
+Apr 28 23:40:01 <canonprinter>	has slightly thicker borders? not sure how to explain it
+Apr 28 23:40:02 <jrich523>	well thats WAY thicker than 1px
+Apr 28 23:40:06 <canonprinter>	well
+Apr 28 23:40:08 <canonprinter>	yes obviously
+Apr 28 23:40:09 <jrich523>	thats like 10 or 15px
+Apr 28 23:40:22 <canonprinter>	well yes I zoomed in quite a bit
+Apr 28 23:40:32 <canonprinter>	but I mean like that, but those lines are only 1px big
+Apr 28 23:40:42 <jrich523>	.....
+Apr 28 23:40:47 <jrich523>	1px is subjective
+Apr 28 23:41:02 <jrich523>	especially when you've got some random zoom going on
+Apr 28 23:41:19 <canonprinter>	ok
+Apr 28 23:41:21 <canonprinter>	here http://i.icap.me/29414302793673cb5.png
+Apr 28 23:41:22 <jrich523>	which is why i say, use fiddler, that way you can just show me a rendered version of your code and i can edit it on the fly
+Apr 28 23:41:23 <canonprinter>	like that
+Apr 28 23:41:29 <canonprinter>	ok
+Apr 28 23:41:33 <canonprinter>	I'll check out fiddler
+Apr 28 23:41:35 <jrich523>	so, thats more so a drop shadow
+Apr 28 23:41:57 <jrich523>	https://jsfiddle.net/
+Apr 28 23:42:43 <jrich523>	https://jsfiddle.net/#&togetherjs=cSgSkFoIwb
+Apr 28 23:47:35 <jrich523>	next time, just provide a link to jsfiddle
+Apr 28 23:49:38 <Visage>	`paste
+Apr 28 23:49:43 <Visage>	Bleh, bot still broken.
+Apr 28 23:50:29 <Visage>	Live pastebins: http://www.webdevout.net/test, http://www.jsfiddle.net/, http://tinkerbin.com/, http://jsbin.com
+**** ENDING LOGGING AT Tue Apr 28 23:57:37 2015
+
+**** BEGIN LOGGING AT Tue Apr 28 23:57:37 2015
+
+<DragonPunch>	why isnt the password field being cleared when i press the refresh button
+<Visage>	DragonPunch: Because your browser is remembering it, probably.
+<DragonPunch>	ai ya yai
+<Meir`>	what's your perfect approach to make a little colored square with definition next to it? (i need it for color legend)
+<[tyrant]>	just joined
+<[tyrant]>	the perfect apprach is to make a little colored square with definition next to it
+<[tyrant]>	y0 so i need a few peeps
+<[tyrant]>	taking over food
+<Meir`>	[tyrant], just exploring the most elegant way
+<Meir`>	it can be a little div, or table td, or anything else
+<[tyrant]>	elegance is not a definition
+<[tyrant]>	what it look like
+<[tyrant]>	ill tell you
+<Meir`>	http://i.stack.imgur.com/CXcjS.png
+<Meir`>	i wanna mimic this with some clean html code
+<[tyrant]>	thats
+<[tyrant]>	jesus dude
+<[tyrant]>	ul with the squares on side
+<Meir`>	i'm just wondering about the *squears* themselves
+<[tyrant]>	you make an image
+<Meir`>	are they small divs in your opinion?
+<[tyrant]>	and get it done
+<[tyrant]>	no
+<Meir`>	that's exatcly what i wanna avoid
+<Meir`>	or perhaps i'll make by css3?
+<[tyrant]>	margin with that image in the li elements
+<[tyrant]>	no
+<[tyrant]>	not even close to css3
+<Meir`>	i don't want to create permanent images
+<oksushi>	Meir`: anything about “how things look” goes to #css
+<CoJaBo>	..isn't there a square option already? lol
+<[tyrant]>	haha
+<CoJaBo>	list-style: square;  even.. lol
+<Meir`>	CoJaBo, well, there's the ul css list-style-type:square
+<[tyrant]>	he had such an elaborate starting question
+<Meir`>	[tyrant], i'm just a bit crazy about beautifuling the code
+<[tyrant]>	you should be
+<[tyrant]>	stop it guys
+<[tyrant]>	img and done
+<[tyrant]>	hes not making google
+<[tyrant]>	damn
+<Meir`>	[tyrant], i CAN'T use permanent images
+<[tyrant]>	what bandwidth?
+<Meir`>	it should be dynamic, following some selected css color by the user
+<[tyrant]>	hahahaha
+<[tyrant]>	pick your hacks man
+<Meir`>	it's not about storage
+<CoJaBo>	..whytf would you use images for that when theres that style built-in
+<[tyrant]>	just put the img to the left
+<Meir`>	CoJaBo, 'cause controlling the bullet size is a pain
+<CoJaBo>	If it has to be exact, hell, use ::before or something
+<CoJaBo>	It's #css anyway, so yeh..
+<[tyrant]>	stop yes
+<Meir`>	i'm already there
+<Meir`>	thanks for your kind and offensive help...
+<[tyrant]>	no you’re not
+<[tyrant]>	not offensive
+<[tyrant]>	i told you what to do
+<[tyrant]>	put the img in css and do your ul
+<[tyrant]>	i gotta use irc more
+<[tyrant]>	been a while
+<[tyrant]>	used it most in efnet
+<krambiorix>	hi, here are my meta tags : http://laravel.io/bin/BLyx5   ->howcome my page is still cached? I see in firebug that the date is today but two hours ago..
+<iaj>	Hi there, got a small question I have a log file that I link to on my webserver, just the plain log file, however that log file is in utf-8 fileencoding, and on the webpage it seems like its latin1 or something, eg. weird umlaut characters
+<iaj>	Do I have to create a php file that sets body and head to be utf-8 and just read the file-contents?
+*	Link is now known as Guest84740
+*	Link_y is now known as Link
+<oksushi>	`utf-8 @ iaj
+<oksushi>	iaj: a) the page must be saved with UTF-8 encoding; b) the 'Content-Type' HTTP header must specify the UTF-8 encoding; c) data pulled from databases must be saved UTF-8-encoded; d) any database connections must be using UTF-8.
+<catricycle>	hello
+<catricycle>	i was wondering if i can place robot text in <body>
+*	dust--_ is now known as dust--
+<MagneticDuck>	lol wtf is robot text
+<Visage>	I wondered that myself.
+<MagneticDuck>	maybe it's like
+<MagneticDuck>	what robots .. type ..
+<catricycle>	:D
+<MagneticDuck>	catricycle: what do you mean by robot text?
+<MagneticDuck>	robots.txt?
+<catricycle>	yea
+<catricycle>	i just have access to content managment system
+<catricycle>	but not to website files
+<catricycle>	so i thought, maybe i can add that meta tag inside <body>
+<MagneticDuck>	I don't think so
+<MagneticDuck>	oh wait
+<MagneticDuck>	hmmm, you could try
+*	jadesoturi__ is now known as jadesoturi
+<Visage>	What also made him think it was a meta tag solution? Heh.
+<bytegap>	Hi guys, I need some help. I have a width scroll bar on my lab project web site, even though I have the width set to 100%. Can anyone tell me what might cause that?
+<Johnny->	try #css
+<bytegap>	Thanks
+<Visage>	I love psychic helmet questions.
+*	Cybert1nus is now known as Cybertinus
+*	AtomicB0mB is now known as atomicb0mb
+*	buxfiger is now known as bugfixer
+<bytegap>	Hi guys, can anyone recommend me some high-quality resources for learning HTML5, CSS3 and JS?
+<Visage>	bytegap: Explore the intricacies of HTML and CSS here: http://www.w3.org/community/webed/wiki/Main_Page, http://docs.webplatform.org/wiki/html/tutorials, http://docs.webplatform.org/wiki/css/tutorials, http://css.maxdesign.com.au, http://diveintohtml5.info, http://html5doctor.com
+<bytegap>	Thanks, Visage.
+<bytegap>	I was hoping there is some kind of compilation of high-quality resources in the form of a book, but this will have to do.
+<steeze>	anyone here used adobe muse?
+<steeze>	i don't have it, but i'm trying to help a friend
+<bytegap>	What is that, steeze?
+<steeze>	wsyiwyg site maker i believe bytegap
+<steeze>	trying to help my friend host. im not familiar with how it exports the site. wondering if its just html,css, then he can host on github pages
+<bytegap>	Hmm, I'll check it out, but making web sites with a WYSIWYG editor is not cool.
+<steeze>	bytegap, haha i know. it's not my site.
+<Visage>	bytegap: Books are too often outdated and wrong. We never recommend them here.
+<Visage>	steeze: Please read the channel topic. No WYSIWYGs.
+<bytegap>	Visage, I though so. I'm used to learning technology from books, so that's why I asked.
+*	bytegap_ is now known as bytegap
+*	bytegap_ is now known as bytegap
+<Bray90820>	Does anyone know of a good RSS reader to embed onto my blog
+<duckey>	Bray90820, use JS to make a new one??
+<Bray90820>	I was hoping to use an already made one
+<Bray90820>	I'm gonna be imbeding it int tumblr and idk if tumblt even supports JavaScript
+*	Mmango is now known as m0n0pr0tic
+*	m0n0pr0tic is now known as mmango
+<Visage>	Bray90820: Please ask about finding tools in #web. This channel is for markup language support only.
+<Bray90820>	Alright
+<Bray90820>	Thanks
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Wed Apr 29 22:40:30 2015
+
+**** BEGIN LOGGING AT Wed Apr 29 22:40:56 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Remote host closed socket)
+**** ENDING LOGGING AT Wed Apr 29 22:40:56 2015
+
+**** BEGIN LOGGING AT Wed Apr 29 22:41:22 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Remote host closed socket)
+**** ENDING LOGGING AT Wed Apr 29 22:41:22 2015
+
+**** BEGIN LOGGING AT Wed Apr 29 22:41:49 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	RudyValencia- is now known as RudyValencia
+*	tuor_ is now known as tuor
+<thecoolguy>	hello
+*	Temur is now known as Guest22583
+*	nub is now known as callumacrae
+*	suexec_ is now known as suexec
+*	Temur is now known as Guest27986
+<iaj>	Hi there.
+<iaj>	Is it possible to use an <a> tag to initiate the same as an <input type="submit"> would do? eg. replace the input tag with a defined onclick="return optin_subscribe_check();" with an a tag?
+<atoem>	hi
+<atoem>	look www.scooterelektro.nl/1/
+<atoem>	html5 not?
+<atoem>	did make a h6 in the logo with fons size 0
+<atoem>	will that do good for SEO?
+*	ormaaj_ is now known as ormaaj
+<nimomo>	hi, I use Facebook share plugin which opens a pop up. The Chrome pop up blocker blocks it. How can I solve this issue?
+<iaj>	When I just want to have a input type="submit" that submits a form, how does it need to look like?
+<pacMakaveli>	<input type="submit" value="Submit form" />
+<iaj>	can I style that as a button?
+<Visage>	iaj: ...It already is a button, but yes, you have our permission. :)
+<iaj>	Visage: thats what I wanted to hear thanks
+<pacMakaveli>	:))
+<Visage>	iaj: Alternatively, you could do <button type="submit">Send some shit</button>, then style away.
+<iaj>	hehe, yeah! :)
+<code_pod>	I have a parallax web page that has a button that loads next project showcase. Upon clicking that button I wanna 1) load next project images and put them in right places(In order to accomplish this I use document.getElementById("someId").src = "some image") 2) Change the animation such as fading(I use Animation.css)
+<code_pod>	In my javascript file I have a global variable that contains a string that represent current project name
+<code_pod>	And I have a function called loadNextProject() that get called when clicking said button
+<code_pod>	Inside the function I use if/else if on current project name and based on that I load images and change .src of each <img ... />
+<code_pod>	It's not a good solution since it doesn't work 'cause if we have lots of project handling these project just using an if/else if is not rational
+<code_pod>	Any idea?
+<Visage>	code_pod: You want ##javascript. Down the hall. We only deal with markup here.
+<code_pod>	Visage: Okay, sorry.
+<atoem>	<img ... />?
+<atoem>	<img ../>?
+<code_pod>	atoem: I meant img tag buy using it
+<code_pod>	atoem: Any idea?
+<atoem>	well it is css and not html
+<code_pod>	atoem: Well, my main question is that how to load images though I have css related question too
+<Visage>	Right, #css for those.
+<code_pod>	Visage: Thanks
+<dolphinling>	Hi. IE (all versions) has a bug with <base> where if you set window.location = "a/relative/url/", <base> doesn't get applied. Is there some way I can feature detect for this bug, or should I give in and use browser detection?
+<Visage>	dolphinling: You should ask the ##javascript folks if there's a JS solution.
+<dolphinling>	Visage: will do, thanks
+<kushite>	Hi guys!
+<atoem>	time for red alert!
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Thu Apr 30 12:57:12 2015
+
+**** BEGIN LOGGING AT Thu Apr 30 12:57:38 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Thu Apr 30 13:13:58 2015
+
+**** BEGIN LOGGING AT Mon May 04 23:44:26 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<ravenzz>	Is there any way to select by custom data attributes on IE<9?
+<ravenzz>	probably a question for #css
+<ravenzz>	sorry
+<thecoolguy>	 Is it bad practice to format things with a table like this and would it be better to use css ? https://jsfiddle.net/yrguwpgz/
+<texasmynsted>	Is it valid to add an id property to a meta tag?
+<texasmynsted>	never mind looks like id is valid for all html5 tags
+<rajrajraj>	is there any such option audio.onTime(5:00, function(){}); in html
+<rajrajraj>	html5*
+*	hassoon is now known as hasssoon
+*	hasssoon is now known as hassoon
+<Pantolon>	is it possible to bypass html validation. As far as i understand if you make javascript off you can type malicious input. But afaik no way to disable hhtml5 validation attribute. Or may be html validation attribute works with java script under the hood. Is that treue
+<Matip>	Hello!
+<Matip>	How do you do so that the box with "Bar" has its own scroll bars? http://jsfiddle.net/zzqz3jhy/
+<Matip>	I don't want to scroll the whole page, only the green box
+<Matip>	any idea?
+<CoJaBo>	Matip: see topic
+<Matip>	CoJaBo, read, what's next?
+<CoJaBo>	Matip: The styling bit.
+<Matip>	you mean the stuff about tables?
+<CoJaBo>	The #html channel is just for the markup; you want #css for CSS
+<Matip>	ah, ok
+<Matip>	got it
+<Matip>	sorry, you're right, wrong channel :P
+<nikhil_>	how do i make a form submit when a file is uploaded?
+<nikhil_>	or rather, when a file is chosen
+<lilmonkey>	Not with HTML.
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Tue May 05 06:54:36 2015
+
+**** BEGIN LOGGING AT Tue May 05 06:59:26 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Tue May 05 07:13:37 2015
+
+**** BEGIN LOGGING AT Tue May 05 07:14:07 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	RudyValencia- is now known as RudyValencia
+<harris>	HELLO
+<foofin>	Hello!
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Tue May 05 09:06:40 2015
+
+**** BEGIN LOGGING AT Tue May 05 09:07:04 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Remote host closed socket)
+**** ENDING LOGGING AT Tue May 05 09:07:05 2015
+
+**** BEGIN LOGGING AT Tue May 05 09:08:10 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<rajrajraj>	https://jsfiddle.net/mjw8wg3h/ why am i not able to run this in "BACKGROUND" in android built in browser, can anyone help please...
+<rajrajraj>	here is the full code https://www.irccloud.com/pastebin/dNHKeNMj
+<Visage>	rajrajraj: You already know this channel is only about markup. Keep your questions to markup only, please.
+*	Ulrike is now known as Moolrike
+<el_juliano>	Can anyone tell me why this does not work: http://pastebin.com/qgFaYhy7
+<Visage>	el_juliano: What exactly doesn't work? Be specific. Don't make us guess. Also, if this is a JS issue, then you want ##javascript, down the hall.
+<overbythere>	How can I escape brackets used in HTML template files? So I can have inline CSS such as body { padding:0; } without it being converted to body (unknown)? The details about the template system are here, but dont include any escape help http://manpages.ubuntu.com/manpages/oneiric/man8/tinyproxy.8.html
+<el_juliano>	Visage: When i open the file with my browser, it shows ma an error message that the password typed is wrong
+<el_juliano>	Visage: And the html document is to automatically login to facebook when opening the file with the browser.
+<Visage>	el_juliano: Right, that's not an HTML issue.
+<el_juliano>	Visage: Thank you very much :)
+<Visage>	overbythere: Sounds like a terrible template system if that is indeed the issue. You should also be using external CSS files anyway.
+<overbythere>	Visage it's running on my router as a transparent proxy, so having an external css file isn't as easy as I would want it to be, believe me if I could put one in I would.. any ideas what template system it is using, or how I could start finding that out?
+<overbythere>	ah there's a tinyproxy channel, will try there, thanks for your help though Visage :)
+<Visage>	Heh, good luck.
+<overbythere>	turns out it needs a double bracket, so body {{ padding:0; }, weird eh?
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Tue May 05 13:16:41 2015
+
+**** BEGIN LOGGING AT Tue May 05 13:21:14 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Tue May 05 13:42:41 2015
+
+**** BEGIN LOGGING AT Tue May 05 13:48:41 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<tongcx>	hi guys, where should i put <link>? in body or header?
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Tue May 05 15:03:14 2015
+
+**** BEGIN LOGGING AT Tue May 05 15:03:42 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Tue May 05 15:15:01 2015
+
+**** BEGIN LOGGING AT Tue May 05 15:22:03 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	hassoon is now known as touchey_PusyCat
+*	Guest42984 is now known as SPF|Cloud
+*	Mangopear is now known as mmango
+*	touchey_PusyCat is now known as hassoon
+*	Fudster_ is now known as Fudster
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Tue May 05 18:54:44 2015
+
+**** BEGIN LOGGING AT Tue May 05 18:59:57 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	AMERICA__ is now known as AMERICAN_PSYCHO
+*	AMERICAN_PSYCHO is now known as AMERICA__
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Tue May 05 20:38:04 2015
+
+**** BEGIN LOGGING AT Tue May 05 20:47:42 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Mmango is now known as phdiffeQSatan
+*	hakker is now known as boxer
+<harris>	how can i have a button hidden when a html program starts
+<Visage>	"html program..."
+*	phdiffeQSatan is now known as DiffeQsAreSatan
+<duckey>	I am having some trouble positioning these paragraphs. Like the conclusion is at the top of the page. HALP plz. https://jsfiddle.net/vhczqd6x/
+<harris>	Visage, hey
+*	\mSg_mini is now known as \mSg
+<psYbR>	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
+<psYbR>	bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img border="0" src="http://kiwichat.nz/pgm-show_image.php?id=47363" /></p>
+<psYbR>	Yep.
+<Chulbul>	I'm using object and embed instead of iframe but on iphone, there is no scrollbar
+<Visage>	Chulbul: Why do you think you needed an iframe in the first place? What are you trying to do?
+<Chulbul>	Visage, http://www.connekd.com here is the website, scrollbar is working on web, but when opened in ios safari, it just displays the visiable content and I can't scroll left or down
+<Visage>	Chulbul: Again, why do you think you need an iframe?
+<Chulbul>	Visage, I replaced iframe with objetct embed also
+<Visage>	...
+<Chulbul>	what else i can do here if i want to show content from other sub domain to main domain
+<Chulbul>	as per my knowledde, i can use iframe or embed object
+<Chulbul>	could you sugest me something
+<Visage>	Easy. You fetch the data from the server and display it. You need to look at things like XHR and/or CORS (Javascript.)
+<Visage>	There is no need to use a silly iframe or object.
+<Visage>	You use JS and some server-side magic and write a proper API.
+<Chulbul>	do you mean to say that I should get the html from sub domain and then display it on main domain?
+<Chulbul>	but why don't you prefer iframe or embed object, this simply is resolving my problem with one line of code although its just not working on iphone and that is my major requirment to make it work on iphone
+<Visage>	Do you even know what XHR and JSON are?
+<Chulbul>	yes I know json, xhr . Im web developer
+<Visage>	Then use CORS and XHR to do what you want.
+<Visage>	Build a proper API.
+<Visage>	Sometimes the shortest path isn't always the correct one.
+<Chulbul>	Yeah I can understand Visage, so you mean that using iframe or embed object is simply a bad idea?
+<Chulbul>	may i know the reason please
+<Visage>	Using an iframe isn't...bad.. it's just not the right solution for what you want to do.
+<Chulbul>	Visage, okay thanks
+<davvblack>	Anyone know if theres a wy as a webmaster to change the window.document.referrer a child cross-domain iframe sees?
+<davvblack>	i know it can be hidden, not sure if it is spoofable
+<Visage>	davvblack: Not a markup question.
+<rajrajraj>	 is there any code that can run in background of android built in browser specially when phone is locked
+<Visage>	rajrajraj: Same for you. You know this already.
+<Visage>	This channel is only for HTML (the markup language.)
+<rajrajraj>	Visage:  is there any markup that runs in browser even when it is minimized and phone is locked
+<Visage>	rajrajraj: HTML doesn't "run" in that sense anyway, android or not. Maybe you meant Javascript.
+<rajrajraj>	Visage: i dont know
+<rajrajraj>	Visage:  i just want anything on browser to run when its minimized and phone is locked
+<Visage>	Sounds like a silly and potentially dangerous idea. Whatever. Ask the ##javascript folks. That's as good as you're gonna get unless you make your android app or whatever.
+<thecoolguy>	Anyone know why the margins aren't being updated ? https://jsfiddle.net/DTcHh/7355/
+<Visage>	thecoolguy: You already knows margins are a CSS thing.
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Wed May 06 12:34:54 2015
+
+**** BEGIN LOGGING AT Wed May 06 14:19:37 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Wed May 06 15:05:06 2015
+
+**** BEGIN LOGGING AT Wed May 06 15:20:16 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Wed May 06 15:49:55 2015
+
+**** BEGIN LOGGING AT Wed May 06 15:54:49 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<harris>	hello
+<foofin>	Hello!
+<Basketball>	hello
+<foofin>	Hello!
+<Basketball>	anyone know a good video that teaches html div and table
+<Visage>	Basketball: Don't be silly.
+<Visage>	`schools @ Basketball
+<rivvles>	Basketball, Explore the intricacies of HTML and CSS here: http://www.w3.org/community/webed/wiki/Main_Page, http://docs.webplatform.org/wiki/html/tutorials, http://docs.webplatform.org/wiki/css/tutorials, http://css.maxdesign.com.au, http://diveintohtml5.info, http://html5doctor.com
+<Basketball>	Visage, ??
+<lilmonkey>	foofin: can you turn that off please?
+<Basketball>	'schools @ Basketball '
+<Visage>	Basketball: We don't do videos here, we do links. The bot pasted you some.
+<Basketball>	'schools @ Basketball'
+<Basketball>	'schools @ Visage '
+<uxfi>	lol
+<uxfi>	Basketball is 12
+<Basketball>	'schools @ Visage'
+<lilmonkey>	Dear lord
+<Visage>	I can tell. :)
+<uxfi>	troll
+<uxfi>	he's done this crap before
+<Basketball>	what why wont that work
+<Basketball>	'schools @ Visage
+<Visage>	Basketball: Go read some links, sheesh.
+<Visage>	uxfi: Yeah, he's been here before...
+<uxfi>	lol he left
+<uxfi>	or here
+<uxfi>	anwyays brb
+<Visage>	2015-01-10 16:23:09 <Basketball> arent websites written in html <- Classic. :)
+<lilmonkey>	That's so wrong. Everyone know websites are written in notepad.exe.
+<lilmonkey>	knows*
+<Visage>	Heh.
+<Visage>	Wait, I don't have .exe files. I call shenanigans!
+<lilmonkey>	Well you clearly don't write websites then.
+<Visage>	Probably not. :sniffle:
+<lilmonkey>	Btw, did you know that the linux kernel is written in notepad too?
+<lilmonkey>	Notepad is very versatile.
+<Visage>	You mean notepad.exe, right?
+<Visage>	Is that different than notepad?
+<lilmonkey>	Shhh
+<d4rklit3>	what is best semantics to use if i have a page that lists projects
+<d4rklit3>	each project has a div with some headlines
+<d4rklit3>	can i use an H1 in each project for its title?
+<d4rklit3>	.project.tile > .tile-text > h1
+**** ENDING LOGGING AT Wed May 06 17:14:31 2015
+
+**** BEGIN LOGGING AT Wed May 06 17:17:46 2015
+
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Wed May 06 17:43:59 2015
+
+**** BEGIN LOGGING AT Wed May 06 18:42:08 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Wed May 06 18:42:10 2015
+
+**** BEGIN LOGGING AT Wed May 06 18:42:58 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Remote host closed socket)
+**** ENDING LOGGING AT Wed May 06 18:43:00 2015
+
+**** BEGIN LOGGING AT Wed May 06 18:43:46 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Remote host closed socket)
+**** ENDING LOGGING AT Wed May 06 18:43:49 2015
+
+**** BEGIN LOGGING AT Wed May 06 19:42:43 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<tongcx>	hi guys, want to use polymer for material design, really struggling how to implement some layout
+<tongcx>	I basically want to have a big textbox in the middle
+<tongcx>	But I don't know how to learn about all the structures, which elements should I use
+<Johnny->	tongcx, there's a #polymer channel
+<tongcx>	Johnny-: thanks, but I guess my problem is that there are so many "layout", "elements", "flex". I'd like to find somewhere to learn how everything fit together
+<Johnny->	#web maybe? This channel is strictly for HTML, not a mixmash of all web tech
+<tongcx>	Johnny-: thanks
+<harris>	hey
+*	Mmango is now known as BeautifulCacti
+<hassoon>	how can i insert a date thing from a html form into the mysql db :o
+<tty>	hi. i want to have have 10+ image-maps. i have created on some image-mapping software but is so crumbershome to make any changes. can i create the image maps on illustrator so that i can edit them easier?
+<Bear10>	I'm looking at srcset and I'm wondering if there's a way to tell it to use one image for a certain screen with given width or another.
+<Bear10>	or is there another way of dealing with this
+<ReelsJigs>	can someone help me to locate a specific command within a html script
+*	\mSg_mini is now known as \mSg
+<tongcx>	hi guys, how to have a tooltip or value displayed for <input type="range">?
+<Pilum>	title
+<tongcx>	Pilum: how?
+<Pilum>	title="tooltip"
+<tongcx>	Pilum: still didn't get it, can you give me more complete code?
+<Pilum>	<input type="range" title="tooltip">
+<tongcx>	Pilum: nothing happened
+<tongcx>	Pilum: i'm using chrome
+<Pilum>	Works just fine in chromium.
+<Pilum>	jsfiddle.net/v9gqr4qf/
+<tongcx>	Pilum: thanks
+<tongcx>	Another problem is that seems I cannot set default value for range input
+<Pilum>	What are you doing then?
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Thu May 07 11:21:52 2015
+
+**** BEGIN LOGGING AT Thu May 07 11:26:17 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Thu May 07 12:36:36 2015
+
+**** BEGIN LOGGING AT Thu May 07 14:28:16 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<DarkElement>	chi
+<DarkElement>	oops
+<rodd>	hi I need help with form and a button with onclick: https://jsfiddle.net/Laz289mx/ how can I keep it from triggering the onlick when I enter some text in the textfield then hit enter in my keyboard? (Check the network tab in your dev tools, it will call something_else.php)
+<rodd>	nvm added type=button solved
+<Visage>	...
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Thu May 07 15:11:47 2015
+
+**** BEGIN LOGGING AT Thu May 07 15:25:27 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<dkfn>	is there a way to put a hyperlink to the current page if <base> element is activated?
+<Visage>	dkfn: Obviously use a relative link that would resolve to the current page or else use a full URL that would.
+<dkfn>	but that is infeasible
+<Visage>	Sure it is. You have access to a server-side language or JS in the client, don't you?
+<dkfn>	i could use JS
+<Visage>	Then simply get the current URL with JS and, well, you win.
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Thu May 07 20:53:12 2015
+
+**** BEGIN LOGGING AT Thu May 07 21:02:40 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<steeze>	is there a better supported alternative to <nobr> ?
+<uxfi>	April 12, 2011 10:03 a.m.
+<uxfi>	whoops
+<Visage>	steeze: Explain what you're trying to do and we'll provide a better alternative.
+<steeze>	Visage, i said never mind because i figured it out ^_^
+<steeze>	oh wait woops that was another channel
+<steeze>	either way
+<Visage>	Heh.
+*	PortaLu is now known as Lucretia
+*	hassoon is now known as margaux-billard
+*	margaux-billard is now known as Casseur_fou
+<billy71>	hi
+<billy71>	microdata, can I use multiple properties per element? Because I would hate to nest them somehow.
+<billy71>	Ah yes, could I nest them at least? span in span? to avoid extra css just for having them next to each other?
+*	Casseur_fou is now known as hassoon
+*	Exagone313_ is now known as Exagone313
+<compact>	hey guys. in html I've got a date input. date('Y-m-d') works, but i don't want to add the day to the input. however date('Y-m') won't show up any date in the input. know anyway around it?
+<Docmarten>	morning all, having a bizarre problem with formatting a form layout in a phonegap app...I am beginning to think its a bug but need some additional eyes on it: http://forum.ionicframework.com/t/possible-bug-form-input-wrapping-issues/22580
+<Docmarten>	It is happening on two forms, one above the map and one below the map.  Should be one line forms but its forcing everything to be wrapped causing the form to spread across three lines.
+<Visage>	Docmarten: Formatting and styling are all CSS issues. Did you read the channel /topic?
+<Docmarten>	I did, but no one was responding over there, figured I would get attention here.  but...that aside, i finally figured out the issue.  Not a bug, but its a framework formatting parameter that must be included that I wasn't aware of.
+<Visage>	Good that you solved it, but remember, just because no one in a particular channel is saying anything is no excuse to go bother other off-topic channels.
+<Docmarten>	fair enough
+<blinky_>	hi all, is it possible to have a scroll bar within a datalist, the contents of mine are running off the bottom of the page and I am not able to get to the bottom ones.?
+*	Matrixiumn is now known as Xack
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Fri May 08 16:10:38 2015
+
+**** BEGIN LOGGING AT Fri May 08 16:29:07 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	[freenode-info] help freenode weed out clonebots -- please register your IRC nick and auto-identify: http://freenode.net/faq.shtml#nicksetup
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Fri May 08 16:29:27 2015
+
+**** BEGIN LOGGING AT Fri May 08 16:29:51 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<secrettriangle>	Why won't the clip-path CSS rule on <image> apply in Firefox? I have to set the it in style="" (i.e. element styles) for some reason http://secrettriangle.net:31004/
+<lilmonkey>	secrettriangle: please read the channel topic
+<secrettriangle>	lilmonkey: if you want me to do something please tell me what you want me to do instead of making me guess
+<lilmonkey>	There's nothing to guess. Read the fucking channel topic.
+<secrettriangle>	OK done
+<secrettriangle>	Why won't the clip-path CSS rule on <image> apply in Firefox? I have to set the it in style="" (i.e. element styles) for some reason http://secrettriangle.net:31004/
+<lilmonkey>	Sigh
+*	ChanServ sets quiet on *!*@unaffiliated/secrettriangle
+<Visage>	Hugs.
+<Visage>	Readin' is hard.
+<atoem>	it is
+<atoem>	its not native for me
+<atoem>	specialy geek enlish
+<atoem>	g
+<lilmonkey>	Not to sound like too much of an ass, but that's not our problem. English-language channel, English-language topic. If it's too hard for someone because of a language barrier, they should go find a support channel or forum or whatever in a language more comfortable for them.
+<lilmonkey>	AKA "ignorance is no excuse"
+<atoem>	it's not too hard!
+<lilmonkey>	Good!
+<atoem>	i have more problems with chinese language
+<lilmonkey>	Me too! Go figure :)
+<atoem>	ow, I'm not the only one:)
+<Visage>	atoem: That's not even the real issue. The thing is that most folks who have styling questions here DON'T read the topic at all. They think that "Well, it deals with HTML anyway" or "Yuo can't have HTML without CSS" gives them an excuse to bother off-topic channels.
+<Visage>	Not to mention they don't understand the way freenode is set up. Channels exist for a particular reason/topic. If they don't like it and think they can do better, hey, feel free to /part and start your own chan.
+<Visage>	...Which reminds me, gonna start work on an #html rules page at some point.
+<atoem>	a whole page with rules?
+<Visage>	Oh yes.
+<Visage>	A topic can only be so large.
+<atoem>	do we need that?
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Fri May 08 17:25:08 2015
+
+**** BEGIN LOGGING AT Fri May 08 17:28:20 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<lilmonkey>	No need for that to be a rule; that's common sense.
+<lilmonkey>	We don't need a rule saying "no molesting children" either.
+<lilmonkey>	brb :)
+<Visage>	atoem: No, the rule is "Don't do stupid shit."
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Fri May 08 18:47:06 2015
+
+**** BEGIN LOGGING AT Fri May 08 19:10:36 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Fri May 08 19:11:08 2015
+
+**** BEGIN LOGGING AT Fri May 08 19:11:38 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	[freenode-info] channel flooding and no channel staff around to help? Please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+*	Channel #html url: http://diveintohtml5.info
+<uxfi>	hi atoem
+<uxfi>	lilmonkey secrettriable has asked that for days now
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Fri May 08 20:51:12 2015
+
+**** BEGIN LOGGING AT Fri May 08 20:55:58 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Fri May 08 21:23:30 2015
+
+**** BEGIN LOGGING AT Fri May 08 21:34:56 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Fri May 08 21:38:52 2015
+
+**** BEGIN LOGGING AT Fri May 08 21:43:29 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<michaeladairhelp>	I need help with my boostrap site, on the index my carousel works but not in my General page... https://tynmk-mikeadair.c9.io/General.html as you can see, in the General page, it'll change the link when you press the left or right button which shouldn't happen....
+<michaeladairhelp>	I need help with my boostrap site, on the index my carousel works but not in my General page... https://tynmk-mikeadair.c9.io/General.html as you can see, in the General page, it'll change the link when you press the left or right button which shouldn't happen....
+<oksushi>	michaeladairhelp: this channel is for help with HTML only. Ask ##bootstrap if you want help with that
+<michaeladairhelp>	Ah okay, sorry! :D
+<michaeladairhelp>	(if you could help me with it though, that would be cool... the bootstrap channel seems to be dead...) I'd be eternally grateful.
+<oksushi>	all the folk that want to help with Bootstrap are there
+<michaeladairhelp>	Well, I think we should call the cops cause someone seems to have shot up that irc...
+<Visage>	Wut?
+<michaeladairhelp>	Can anyone do me a quick help favor?
+<michaeladairhelp>	It involves bootstrap...
+<oksushi>	michaeladairhelp: stop asking about that here
+<michaeladairhelp>	oksushi: Alright, sorry.. I was just getting no help at the bootstrap one.
+<oksushi>	that doesn’t make it a discussion for #html. Try looking for other ways to get support if IRC is not working for you
+<michaeladairhelp>	oksushi: I guess I'll just code it in javascript. Thanks.
+<Ephexeve>	Hey guys, I am writting a HTML parser, I wonder if there if any easy way I can get the date from an article (when it was created)
+<Ephexeve>	trying to find a tag where in general, everyone ueses
+<Ephexeve>	*uses
+<oksushi>	depends on the HTML. These days, it’s likely <time> - unless it’s marked up with a schema (see http://schema.org/Article for an example)
+<Ephexeve>	thx
+<oksushi>	<time> can have a pubdate attribute iirc
+<Ephexeve>	cool
+<explodes>	Is there anything wrong with this HTML? http://pastie.org/10179286 When it renders, the button has no value and the images src is empty.
+<explodes>	(as inspected in the chrome dev tools)
+<explodes>	chrome dev tools looks like this: http://explod.io/hosted/ss.png
+*	idafyaid is now known as Guest40723
+<explodes>	JK found it
+<explodes>	Python bug i'm retarded sometime
+<explodes>	gg
+<ANJ7>	how can I get rid of the dotted rectangular selection for a button in html
+<speedio>	how can i place an image so it wont take up a whole row, instead just the very first part of the row?
+*	Wiched is now known as asdasdgaasasd
+*	idafyaid is now known as Guest23901
+*	dust--_ is now known as dust--
+<uskerine>	how can I make that a field can not be edited?
+<uskerine>	input type="text"
+<Visage>	uskerine: Use the readonly attribute.
+<feodoran>	I am trying to get a constant width for all <input type="text"> and <select> field. I found "box-sizing: border-box;", but it does not work in this example: http://pastebin.com/pjNknkYw  can someone help me out?
+<lilmonkey>	feodoran: please read the channel topic
+<Visage>	feodoran: Did you read the channel /topic?
+<lilmonkey>	lol
+<Visage>	lilmonkey: Jinx!
+<lilmonkey>	:)
+<feodoran>	sorry, I got no response in #css yet, so I thought I give it a try here
+<Visage>	feodoran: A very common tactic, but no, #css is still the channel to ask in. Just have patience.
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Sat May 09 11:37:33 2015
+
+**** BEGIN LOGGING AT Sat May 09 11:37:57 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Sat May 09 11:45:15 2015
+
+**** BEGIN LOGGING AT Sat May 09 16:09:48 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Xack is now known as CaveJohnson
+*	ItsLuke is now known as Guest49013
+*	Guest49013 is now known as Eclipse
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sat May 09 18:51:39 2015
+
+**** BEGIN LOGGING AT Sat May 09 18:56:23 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sat May 09 18:58:03 2015
+
+**** BEGIN LOGGING AT Sat May 09 19:39:37 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	[freenode-info] why register and identify? your IRC nick is how people know you. http://freenode.net/faq.shtml#nicksetup
+*	Channel #html url: http://diveintohtml5.info
+<duckey>	Visage, actually, I learned a little Js. Maybe it is a far shot, does not mean you must shut on my dream.
+<Visage>	He's got no chance.
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Sat May 09 19:45:39 2015
+
+**** BEGIN LOGGING AT Sat May 09 19:50:35 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	[freenode-info] channel trolls and no channel staff around to help? please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sat May 09 20:05:14 2015
+
+**** BEGIN LOGGING AT Sat May 09 20:09:32 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	m0noprotic is now known as mmango
+<Hi-Angel>	Is there a tag to paste a bunch of text with special characters (like «<») and newlines? Or do I have to convert this all into an according &amp, etc?
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sat May 09 20:20:42 2015
+
+**** BEGIN LOGGING AT Sat May 09 20:24:36 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<Hi-Angel>	Hm… It is harder than I thought… I am trying to use html to write a document. I tried before Latex, but it have a big problems with unicode, so people adviced me html. Seems it isn't that easy…
+<Hi-Angel>	Ah, screening≡escaping
+<lilmonkey>	It's plenty easy.
+<lilmonkey>	In Latex or HTML.
+<lilmonkey>	You don't have to escape any unicode.
+<Visage>	Hi-Angel: latex doesn't have a problem with unicode at all. Try looking at xetex.
+<Visage>	But that's another subject entirely.
+<Hi-Angel>	lilmonkey, well, I just have a bunch of text, and I am surely need to do something with newlines there and symbols like «>». That what I meant
+<lilmonkey>	Why are the newlines significant?
+<Hi-Angel>	Well, because if these are pasted as is, then it displaying like one single line. Tbh I didn't searched yet about tags specifically to newlines, because I thought here is solution for both newlines and special symbols
+<lilmonkey>	But why are the newlines significant?
+<Hi-Angel>	Because newlines should be displayed in the text.
+<lilmonkey>	What is their purpose?
+<Hi-Angel>	To separate lines of text
+<lilmonkey>	you mean to create paragraphs?
+<Hi-Angel>	Well, paragraphs here, as I see, looks just like an usual separate lines, so, I think, yes
+<Hi-Angel>	Okay, anyway, thank you, I see, I ought to find some converter for a text to be pasted
+<lilmonkey>	I don't think you understand how HTML is used, then. HTML describes content. If you have content with paragraphs, you use the appropriate element to indicate that: <p>
+<lilmonkey>	... and so forth for everything else.
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sat May 09 20:42:26 2015
+
+**** BEGIN LOGGING AT Sat May 09 20:57:11 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Sat May 09 23:39:47 2015
+
+**** BEGIN LOGGING AT Sat May 09 23:41:38 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<ExoUNX>	hello :D
+<Visage>	ExoUNX: We only help with markup here. If you want styling help, then you want #css.
+<Visage>	You should probably fix those validation errors first though.
+<ExoUNX>	Visage, yah will do, and yah I went to #css
+<_3by8>	Would someone please tell me why my code isn't working? It's very simple. Just some HTML with some jQuery. http://pastebin.com/PF2cMAyU
+<uxfi>	hi _3by8
+<uxfi>	:)
+<_3by8>	hi!
+<_3by8>	ux = user experience?!
+<meandrain>	hi
+*	maqr_ is now known as maqr
+*	mmango is now known as bananaHammock
+<gemclip>	Is there a rule of thumb for line height vs font size?
+<Textmode>	gemclip: a point is an actual unit of measurement. so yes.
+<gemclip>	whats the rule?
+<Textmode>	gemclip: the typographic point is defined as 1/72 of a standard international inch, which is the measure from baseline to top-line. this measure is equal to the "point size" of the font, by definition.
+<Textmode>	(though if a given system is (or can be) properly calibrated is a different story.
+<gemclip>	sorry I must not have explained what I was looking for clear enough
+<gemclip>	if a font size is 14px the rule of thumb would be a line height of 18px or 120% ect...
+<gemclip>	the ratio of font-size to line-height
+<Textmode>	…is a font metric, technically its utterly at definition of the font; part of its data.
+<Textmode>	certainly some values are more common than others. 120% sounds about right.
+<Textmode>	as a sort of average.
+<Textmode>	but you might find fonts where thats quite wrong. eg some terse or small-cap fonts have essentially no decenders, and thus don't need the room. conversely some script or true italics can have rather elaberate or long decenders in which case you might be looking at closer to 175%
+<Textmode>	if you have access to such data, you should just get the line height from the font's metrics. its the only real answer.
+<Textmode>	(true italics as opposed to mechanically tilted fonts)
+<gemclip>	I found what I was looking for. Thank you for your help
+<gemclip>	good article here in ref to the topic: http://www.pearsonified.com/2011/12/golden-ratio-typography.php
+<uskerine>	hi, is there any linux command line utility to automatically indent html code?
+<gemclip>	what editor?
+<uskerine>	command line, no editor
+<gemclip>	that doesnt make sense
+<gemclip>	how are you looking at the code?
+<uskerine>	I use vi
+<gemclip>	so vi is your editor
+<uskerine>	ok, a tool for vi would fit too
+<uskerine>	but I would prefer command line
+<gemclip>	Use the > command. To indent 5 lines, 5>>
+<gemclip>	vi is not the command line
+<uskerine>	I am looking for something like this: http://manpages.ubuntu.com/manpages/dapper/man1/tidy.1.html
+<gemclip>	vi is a screen-oriented text editor
+<uskerine>	that command does not work
+<uskerine>	I want to have an indentation mess and correct the mess
+<uskerine>	html tidy works fine but it adds header and body tags, and I have files with partial HTML code (such as <ul> lists)
+<gemclip>	do you only have a shell?
+<Textmode>	uskerine: for dumbfire indenting you could probably do something with sed. otherwise look at the program called "indent"
+<uskerine>	there must be something, "tidy" works but it adds the "missing" tags, which in my case aren't missing
+<uskerine>	found it:    tidy -config tidyConfig -wrap 132 -i -o sideBarMenu.html2 -c sideBarMenu.html
+<uskerine>	you can tell not to add missing tags
+<uskerine>	thanks anyway
+<uskerine>	http://tidy.sourceforge.net/docs/tidy_man.html#DETAILED%20CONFIGURATION%20OPTIONS
+*	idafyaid is now known as Guest8144
+*	idafyaid1 is now known as idafyaid
+<resio>	in html5, should you still use /> for void elements
+<resio>	like <input type='submit />   or <br />
+<lilmonkey>	"Still"?
+<resio>	yeah still
+<lilmonkey>	There's no "still".
+<resio>	you had to for html4
+<lilmonkey>	Um, no.
+<resio>	well didnt -have to-
+<lilmonkey>	It wasn't even valid in HTML4.
+<resio>	alright
+<resio>	xhtml
+<resio>	didnt know you had to get very detailed ehre
+<lilmonkey>	Not for closing elements, anyway. HTML4, being an SGML language, uses the / alone to self-close an element, with the following > being a normal, printed character.
+<resio>	thanks
+<lilmonkey>	Browsers chose not to implement that fun bit of SGML to help out all the idiot devs who thought they could use XML semantics in HTML.
+<lilmonkey>	Anyway, moving on...
+<lilmonkey>	You are allowed to do it in HTML5, but you don't have to.
+<lilmonkey>	"Didnt know you had to get very detailed ehre"... what does that even mean? If you want a correct answer, which I'll assume you do, the question needs to be right, too, obviously.
+<resio>	lilmonkey. i appreciate the help. perhaps the question wasn't "right" because i used the word 'still' and that spiraled sideways, but the purpose of my question i think was clear
+<lilmonkey>	We don't just answer questions here, sorry. We educate.
+<lilmonkey>	I'm terribly sorry for inconveniencing you with the burden of extra knowledge, though. Perhaps next time you should ask in a different channel! :)
+<resio>	:(
+*	callumacrae is now known as cm
+*	cm is now known as callumacrae
+<Visage>	"I'm terribly sorry for inconveniencing you with the burden of extra knowledge." <- New shirt slogan. :)
+<lilmonkey>	Hehe ^_^
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sun May 10 14:51:07 2015
+
+**** BEGIN LOGGING AT Sun May 10 14:59:40 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sun May 10 16:37:09 2015
+
+**** BEGIN LOGGING AT Sun May 10 16:39:17 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	[freenode-info] help freenode weed out clonebots -- please register your IRC nick and auto-identify: http://freenode.net/faq.shtml#nicksetup
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sun May 10 17:40:24 2015
+
+**** BEGIN LOGGING AT Sun May 10 18:09:29 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sun May 10 18:23:24 2015
+
+**** BEGIN LOGGING AT Sun May 10 18:31:18 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sun May 10 18:31:48 2015
+
+**** BEGIN LOGGING AT Sun May 10 18:32:17 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	SirCmpwn is now known as SirCmpwnTest
+*	SirCmpwnTest is now known as SirCmpwn
+<blackpawnSC>	may i ask a HTTP protocol question?
+<Visage>	blackpawnSC: This channel is for HTML, as in markup only.
+<blackpawnSC>	do you know what channel would be appropriate for questions about implementing http protocol to handle html file uploads?
+<Visage>	Probably in whatever channel supports the language you're using.
+<blackpawnSC>	well implementing a server in C... i can upload to my server properly from CURL but with Safari and Chrome the browser sends headers then seems to wait for my server instead of continue with full file contents.. trying to figure out what response it's expecting
+<Visage>	Right, aren't there http libraries for C?
+<Textmode>	Visage: I presume they mean from scratch.
+<Visage>	Probably, but it's still a C question.
+<Textmode>	blackpawnSC: HTTP lint services come in real handy when developing a server. you might have to dig a bit for a free one, though.
+<blackpawnSC>	well is question about the protocol. i've read the RFCs for http 1.1 and multipart/form but haven't found answer yet
+<Textmode>	Visage: no, it really isn't. though I get your point about it not being on topic here either.
+<Textmode>	blackpawnSC: perhaps in ##programming ?
+<Textmode>	wasn't there a #webdev ?
+<Visage>	There's #web, and there's also ##c.
+<uxfi>	elo
+<blackpawnSC>	thanks for the suggestions... Visage's prompt about using http library led me to google and find a couple open source ones i can look at their source code to see how they are handling POST with files
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sun May 10 20:53:31 2015
+
+**** BEGIN LOGGING AT Sun May 10 21:10:07 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Mmango is now known as m0noprotic
+*	m0noprotic is now known as mmango
+*	mmango is now known as monoqrotic
+*	Mmango is now known as mmmmmmmmmmm
+*	mmmmmmmmmmm is now known as mmmmmnmmmmm
+*	mmmmmnmmmmm is now known as mmano
+*	mmano is now known as mmango
+<iaj>	hi there :)
+<iaj>	When I want to have a button with type="submit" to submit a form from outside the actual form, how could I do that?
+<DragonPunch>	i have an iframe
+<DragonPunch>	<iframe width=\"540\" height=\"304\" data-src=\"//www.youtube-nocookie.com/embed/UKY3scPIMd8\" frameborder=\"0\" allowfullscreen></iframe>
+<DragonPunch>	how do i test this and get the video?
+<Industrial>	Hi. I have an element "<textarea id="title" class="title" placeholder="Mijn subdoel is" maxlength="40" data-required="true" autofocus=""></textarea>"
+<Industrial>	$('#title') returns one jquery result. both $('#title').focus(); and $('#title')[0].focus(); have no effect on the input. it doesn't get focused. Any idea why?
+<oksushi>	Industrial: this is #html - perhaps you want ##jquery?
+<Industrial>	oksushi: well the HTML api's .focus $('x')[0].focus() also didnt work
+<Industrial>	and it does return undefined :S
+<oksushi>	this channel is for questions about HTML, not JavaScript. You can try ##javascript
+<Industrial>	okay.
+**** BEGIN LOGGING AT Mon May 11 22:12:58 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<iaj>	Hi there, which image format is best suited for being used in webdesign?
+<iaj>	That shall be acting responsive?
+<CoJaBo>	iaj: Depends on what the image is of
+<CoJaBo>	iaj: You want #web for that tho.
+<sweb>	how can i tell object or embed height is auto of size of flash object ?
+<sweb>	remove height attribute will hide element
+*	ec-not-irccloud is now known as ec
+*	ec is now known as ec\
+<Macaveli>	I have the following table is it possible to move everything up so artikel 1 and and artikel 2 start on the same height? https://jsfiddle.net/4wk0zqts/1/
+*	Burt is now known as Guest82861
+*	zcm is now known as Guest89980
+*	Rudy- is now known as RudyValencia
+*	DragonPunch is now known as ClamsCasino
+<uxfi>	newbie to le HTML css
+<Visage>	uxfi: Aren't they all? :)
+<uxfi>	Visage haha
+<uxfi>	yep
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Tue May 12 13:32:21 2015
+
+**** BEGIN LOGGING AT Tue May 12 13:37:40 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Tue May 12 13:42:59 2015
+
+**** BEGIN LOGGING AT Tue May 12 13:51:31 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	AtomicB0mB is now known as atomicbmb
+*	atomicbmb is now known as atomicb0mb
+<dna113p>	in html is there a tag that I can wrap every word inside of a <p></p> in that would allow me to dynamically allow me to style a word but otherwise default to a normal word in a paragraph?
+<Visage>	dna113p: Well, HTML doesn't know about "dynamic" things, but you're probably thinking of SPAN.
+<DarkElement>	Is it possible to use a wordpress plugin in html?
+<DarkElement>	Basically, without wordpress.
+<lilmonkey>	...
+<DarkElement>	I'm just wondering if there is a way
+<DarkElement>	with php, javascript, html, etc
+<Visage>	...Wow.
+<Visage>	DarkElement: Don't be silly.
+<Visage>	Not that you'd want to anyway, since anything wordpress is a steaming turd.
+<DarkElement>	Didnt think so XD
+*	Bray9082_ is now known as Bray90820
+*	Ulrike_Rayne is now known as Ulrike
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Tue May 12 17:13:01 2015
+
+**** BEGIN LOGGING AT Tue May 12 17:20:45 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<anahumar>	can anyone take a look and tell why li display : inline is not taking place? https://jsfiddle.net/7xxqtxek/
+<lilmonkey>	anahumar: please read the channel topic
+*	Dorf_ is now known as Dorf
+*	Mmango is now known as AggressiveCactus
+*	AggressiveCactus is now known as letsTalkAboutCac
+*	letsTalkAboutCac is now known as letsTalkCacti
+*	letsTalkCacti is now known as They
+*	They is now known as mmango
+<godzirra>	Hey guys.  I'm watching Vince Allen's talk and it says one parent can have multiple box shadows.  Is this true?  Duplicating the box-shadow and giving it a different position on the same css selector moves the box shadow, it doesn't duplicate it for me.
+<oksushi>	godzirra: #css is over there -->
+<godzirra>	Oh, sorry.  Thanks.
+<VIncere>	Is there any easy to repeat SVG to the full width of the screen?
+*	VIncere is now known as Vincere
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Wed May 13 02:08:11 2015
+
+**** BEGIN LOGGING AT Wed May 13 02:09:50 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<Elemae2>	I have a problem. I just used a youtube video with iframe and it worked. But as soon as I switched to another one, I think because of https, it won't show up.
+<Elemae2>	Why?
+*	Wiched is now known as Guest38768
+*	hassoon is now known as Absolument
+*	dan2k3k4k5 is now known as dan2k3k4
+<supsup>	is there any reason to have text as part of your image vs just having html text on top of the image?
+<uxfi>	hi supay
+<uxfi>	er
+<uxfi>	supsup
+<Visage>	uxfi: Yes?
+<uxfi>	Visage oh was looking for someone
+<uxfi>	Visage nvm Ill ask here later
+<Visage>	If you were looking for someone, it might be a better idea to PM them or use memoserv.
+<uxfi>	ah
+<uxfi>	ok
+<uxfi>	Visage sure I'll ask le questions here later
+<Sal>	hi
+<Sal>	anyone here has experience with html mobile apps?
+*	Absolument is now known as hassoon
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Wed May 13 14:56:43 2015
+
+**** BEGIN LOGGING AT Wed May 13 15:01:02 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Wed May 13 15:03:14 2015
+
+**** BEGIN LOGGING AT Wed May 13 15:14:46 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<Visage>	mcoffee: Sorry, but this channel is for markup support only. For general web-related questions or help finding tools, ask in #web.
+<mcoffee>	Visage: thanks, and sorry for the wrong channel.
+<Jayflux>	hah, thanks for the referal Visage
+*	GarethAdams_ is now known as GarethAdams
+<[alyssa]>	What's the advantage of using ul/li versus using the Unicode for the bullets directly? The latter seems more flexible for my purposes..
+<Visage>	[alyssa]: Semantics. HTML _always_ and _only_ describes content.
+<Visage>	And you always want to mark up your content the best way(s) possible.
+<Visage>	Think about accessibility.
+<Visage>	If you think that "using the bullets directly" somehow implies a list, then you're stuck in the past and you still think that HTML is something visual, which it isn't.
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Wed May 13 17:45:36 2015
+
+**** BEGIN LOGGING AT Wed May 13 20:25:59 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Wed May 13 20:26:23 2015
+
+**** BEGIN LOGGING AT Wed May 13 20:26:51 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<adsjlkdk>	what cool stuff cna you make with html5
+<CoJaBo>	did you have an actual Queston
+*	Mmango is now known as AtlasTXSummer
+*	AtlasTXSummer is now known as mmango
+<Visage>	adsjlkdk: This is going to sound crazy, but you can create ...markup. Unless you're talking about "HTML 5: The collection of technologies", but no, we only deal with the markup portion here.
+<adsjlkdk>	whats the difference between htlm5 and html
+<Visage>	adsjlkdk: Are you sure you're not just trolling?
+<adsjlkdk>	why do you say i am trolling
+<adsjlkdk>	are regular people expected to know the difference nowadays
+<Visage>	No, it's just with your nick and your questions, my troll sense just went off. :)
+<adsjlkdk>	last time i remembered some people cant even use an email and you expect us to know all this
+<Visage>	Lulwut
+<adsjlkdk>	i can use an email but im just saying
+<Visage>	Anyway, what's the difference? Semantics and new technologies, such as a drawing API, among others.
+*	bytegap is now known as tadpole1359
+*	tadpole1359 is now known as vulture1359
+*	vulture1359 is now known as God1359
+*	God1359 is now known as bytegap
+*	\mSg_mini is now known as \mSg
+*	hassoon is now known as Gogmagog
+<linuxmint>	Hello, need some help on where to upload my littlewebsite files to the bigwebsite's domain alias little website?
+<DreamStiffler>	Hi guys, Im new. I am trying to do a divs positioning as per here : http://ibin.co/21g7y7mnQ87z . I have used relative positioning to get those divs in place. And used left:**% right: **% top bottom etc. But the problem im having is that there will always be that spacing in the bottom. I had viewed the source a few thousand times and i couldnt get whats causing the space. Please also note that these divs are nested in one big d
+<DreamStiffler>	got it on fiddle https://jsfiddle.net/Lw2237u7/
+<DreamStiffler>	the space
+<keestu>	hi, is it possible to use more than one video tag in html5 in single page ?
+<lilmonkey>	Yes of course, why wouldn't it be...
+<keestu>	getUserMedia has only one callback wherein i provides only one stream object which the user have choosen ?
+<lilmonkey>	keestu: and? You asked about video elements, something entirely different.
+<keestu>	i use getusermedia to get local usb camera object attached and pass it to video tag.
+<lilmonkey>	Why don't you just ask what you mean? Sounds like what you wanted to ask is if you can capture more than one local camera source at the same time, to which the answer is no.
+<keestu>	lilmonkey, sorry. while i type window got changed.
+<keestu>	lilmonkey, that's right.. i was thinking to capture more than one camera at a time.
+<keestu>	lilmonkey,  where can i find official documentation that says only one camera supported ?
+<keestu>	lilmonkey, i am able to show both the cameras... :) :)
+<lilmonkey>	keestu: ok cool. It wasn't possible in the past, but I suppose a lot has changed recently.
+<keestu>	:)
+<keestu>	lilmonkey,  is it possible to display a browser window that sits always on top of the desktop applications ?
+<keestu>	i feel not possible. but that of asking.
+<lilmonkey>	Never heard of any such thing.
+<keestu>	ok
+<anahumar>	can anyone tell why this html form is not functional? http://pastebin.com/KNWk9mRd
+<anahumar>	when I submit it doesn't show any variables in the url
+<anahumar>	hello fuckers
+<anahumar>	can any none fucker help out there
+<oddskill>	how do i make the images (class img-sircle) (below carousel directly over the Heading) to be links too ? http://getbootstrap.com/examples/carousel/
+<oddskill>	simply put a ahref in same div ?
+<oddskill>	got it sry for taking your time
+*	Gogmagog is now known as hassoon
+<SirLagz>	Azrael_-: have you even looked at the video.js website ?
+<uxfi>	hi
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Thu May 14 12:17:44 2015
+
+**** BEGIN LOGGING AT Thu May 14 12:22:35 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Thu May 14 12:24:39 2015
+
+**** BEGIN LOGGING AT Thu May 14 12:30:36 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Thu May 14 12:40:59 2015
+
+**** BEGIN LOGGING AT Thu May 14 12:55:53 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<Azrael_->	hi
+<Azrael_->	i want to stream a video file and provide the user a nice player. how can i set this up best?
+<giuseppesolinas>	hello
+<foofin>	Hello!
+<giuseppesolinas>	I'm having a problem with a html5 canvas that won't resize past a value in height
+<giuseppesolinas>	keeping its ratio but cropping the lower part
+<giuseppesolinas>	is there a way in which I can set this limit?
+<lilmonkey>	foofin: I asked you to turn that off
+<lilmonkey>	giuseppesolinas: not with HTML. #css probably.
+<giuseppesolinas>	lilmonkey, css height does not affect canvas element in the proper way
+<Yaksman>	dunno/win 1
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Thu May 14 15:46:36 2015
+
+**** BEGIN LOGGING AT Thu May 14 15:52:32 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Thu May 14 15:53:45 2015
+
+**** BEGIN LOGGING AT Thu May 14 15:58:36 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Thu May 14 16:02:07 2015
+
+**** BEGIN LOGGING AT Thu May 14 19:59:41 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	idafyaid is now known as bebilonu
+<Cryp71c>	For something simple, like Pong, is it concievable for it to be implemented using html5 and javascript elements? Just javascript and traditional html / graphics elements?
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Thu May 14 20:55:51 2015
+
+**** BEGIN LOGGING AT Thu May 14 21:01:26 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	cactuscactus is now known as FLowOfTheElectro
+<ravenzz>	bewilled: the browser will render the page and won't wait in that specific case
+<ravenzz>	meaning that you can see unstyled stuff if you put your styles at the bottom of the page
+*	FLowOfTheElectro is now known as mmango
+**** ENDING LOGGING AT Thu May 14 22:54:33 2015
+
+**** BEGIN LOGGING AT Fri May 15 00:12:50 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<root3d>	hello everyone
+<root3d>	i have some issue with validator.w3c.org
+<root3d>	i am getting:  Bad value ”og:title” for attribute property on element meta: The string og:title”” is not an absolute URL. but its title there is no need for url. how's that possible ?
+<iam>	is there a reason my page won't load a song with a question mark in the song name?
+*	RudyValencia- is now known as RudyValencia
+<itsgokul>	how to displaying overflow content inside template
+<itsgokul>	without overflow:scroll
+<oksushi>	itsgokul: #css is over there -->
+<itsgokul>	ok
+<Keksike>	how to make my form work with form-completing or chrome autofill?
+<krzkrz>	whats a good article that explains how to use html 5 elements (articles, aside, section, etc)?
+<d3m0n>	krzkrz: can try out http://html5doctor.com/
+<krzkrz>	ty
+<tty>	hi. i want to check 2 fields if the entered email is the same
+<tty>	i am using bootstfrap
+<tty>	bootstrap.
+<tty>	is there a way to validate this?
+<d3m0n>	tty: with JS, yes.
+<tty>	d3m0n: do you have any example? i have tried http://reactiveraven.github.io/jqBootstrapValidation/
+<tty>	but didnt work
+<d3m0n>	tty: Works in the link you provided. Are you sure you implemented it correctly?
+<d3m0n>	Also, make sure that works with the bootstrap JS you included.
+<d3m0n>	Actually it doesnt even look like it uses it, just jQuery
+<tty>	d3m0n: hm ok will do a check
+<d3m0n>	tty: It should work, check JS errors on your browers too.
+<fleshtheworld>	hey guys, im making a sortable table using jquery. what methods are there to update table list?
+<fleshtheworld>	example, there are 10 people on the list, they are in order of who is paied the most, eventually the order will, plus more people may be added, etc.
+<fleshtheworld>	paid*, and 'eventually order will change'
+<krzkrz>	can you have two aside elements in an article?
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Fri May 15 07:48:20 2015
+
+**** BEGIN LOGGING AT Fri May 15 08:09:39 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+**** ENDING LOGGING AT Fri May 15 08:48:33 2015
+
+**** BEGIN LOGGING AT Fri May 15 15:43:45 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	oddskill is now known as oddskill_away
+*	oddskill_away is now known as oddskill
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Fri May 15 19:20:28 2015
+
+**** BEGIN LOGGING AT Fri May 15 20:05:59 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Fri May 15 20:06:55 2015
+
+**** BEGIN LOGGING AT Fri May 15 20:54:10 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	bejonu is now known as irobevjodu
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sat May 16 01:28:20 2015
+
+**** BEGIN LOGGING AT Sat May 16 01:28:46 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Wiched is now known as Guest52724
+*	eichiro_ is now known as eichiro
+*	You are now known as 6A4ACI4OJ
+*	bakingbread is now known as icedp
+<RabSimpson>	hi folks. i'd like to use a special character in the value of a form button, but entering the code (such as &#10142;) just outputs that instead of the character. any ideas?
+<RabSimpson>	ignore me. the problem appears to be in changing the value using jquery. i'll ask in that channel.
+<Visage>	RabSimpson: Um, no.
+<Visage>	RabSimpson: Just use UTF-8 everywhere and there won't be a problem.
+<Visage>	You never need to use an entity for that; entities have always been an escaping mechanism.
+<RabSimpson>	visage: if i add the character to the html directly, it outputs as required, but i need to change it using jquery as the text changes before the form is submitted in order to guide the user.
+<Visage>	Right, so, what's the problem with changing it to another UTF-8 character?
+<RabSimpson>	it's this specific character i'm looking to use.
+<Visage>	They're all available in unicode.
+<RabSimpson>	apparently not if you're using jquery to set it.
+<Visage>	I'll add that to the list of reasons to not use failquery then. :)
+*	ItsLuke is now known as Guest72490
+*	CaveJohnson is now known as Xack
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sat May 16 11:42:54 2015
+
+**** BEGIN LOGGING AT Sat May 16 12:36:08 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Sat May 16 12:45:52 2015
+
+**** BEGIN LOGGING AT Sat May 16 12:50:19 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<buscon>	hi all,
+<buscon>	i am developing a simple html5 application and i would like to keep the mobile browser page alive, even if the user is not touching the screen
+<buscon>	is it possible to set the timeout of android or iOS with html5?
+<buscon>	i mean, the timeout of the screen of the phone
+<buscon>	i had some connection problems
+<buscon>	in case someone has an answer to my question, i'm happy to read it :)
+<AlphaAtom>	I don't think that it would be possible, given that the user sets that actually on the phone OS and any potential solution would be hacky as hell I would imagine
+<buscon>	I have found this:
+<buscon>	https://developer.mozilla.org/en-US/docs/Web/API/Navigator/requestWakeLock#Specification
+<buscon>	i'm also trying it out but don't see any effect...
+<AlphaAtom>	buscon: "This feature is not on a current W3C standards track, but it is supported on the Firefox OS platform. Although implementations may change in the future and it is not supported widely across browsers, it is suitable for use in code dedicated to Firefox OS apps."
+<AlphaAtom>	from the top of that page
+<buscon>	yes, in my case would be fine though, because it is a lan application
+<AlphaAtom>	for firefox OS only?
+<buscon>	yes, i'd be fine with that
+<buscon>	at least for the moment
+<buscon>	but it doesn't look like working
+<buscon>	my phone does turn off...
+<buscon>	what i actually want is that the browser keep running a javascript even if the screen turn off
+<buscon>	is that maybe possible
+<buscon>	?
+<FrenchieUser12>	is the form attribute from the Select element supported in IE
+<FrenchieUser12>	if not what other methods can i use to pass the selected option to my form when it is submitted in IE
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Sat May 16 16:57:21 2015
+
+**** BEGIN LOGGING AT Sat May 16 17:00:23 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sat May 16 17:46:54 2015
+
+**** BEGIN LOGGING AT Sat May 16 18:48:40 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Matrixiumn is now known as Xack
+<mhammons>	hi, is there a way to make css transitions apply to display: none -> display: block?
+<Visage>	mhammons: Did you read our channel /topic when you joined?
+*	idafyaid is now known as peskypokemon
+<blackcat79>	Hello
+<siervo>	hey
+<blackcat79>	Because gmail won't let you Email zip files anymore. How to you send your code to someone? I can't sent the folder because it opens up.
+<siervo>	dropbox?
+<blackcat79>	Ok that might be something worth looking into.
+<siervo>	are you sure they don't let you send zips?
+<siervo>	I'm pretty sure I was able to do it a few weeks ago
+<blackcat79>	I don't know if the recipient has drop box. Its an employer interested in hiring me to code for them.
+<siervo>	if you get dropbox or one drive you can generate a share link
+<siervo>	I've used them both to send resumes out
+<blackcat79>	Can you use dropbox for free?
+<siervo>	of course
+<siervo>	onedrive is free also
+<Visage>	Thiis is all cool, guys, but none of this is HTML-related.
+<blackcat79>	Ok. Thanks. Let me create an account.
+<siervo>	yeah sorry visage
+<siervo>	trying to help the guy
+<blackcat79>	yes and I appreciate that.
+<Visage>	siervo: Take it to PM then. :)
+<Visage>	blackcat79: In the future, #web for general web questions.
+<uxfi>	elo
+*	emma_ is now known as emma
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sat May 16 22:46:52 2015
+
+**** BEGIN LOGGING AT Sat May 16 23:06:22 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sat May 16 23:06:22 2015
+
+**** BEGIN LOGGING AT Sat May 16 23:06:49 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sat May 16 23:06:49 2015
+
+**** BEGIN LOGGING AT Sat May 16 23:07:18 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sat May 16 23:07:18 2015
+
+**** BEGIN LOGGING AT Sat May 16 23:07:44 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sat May 16 23:07:44 2015
+
+**** BEGIN LOGGING AT Sat May 16 23:08:12 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sat May 16 23:08:12 2015
+
+**** BEGIN LOGGING AT Sat May 16 23:08:37 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<Levandia>	:)
+*	widoz is away: auto-away
+*	widoz is away: auto-away
+*	widoz is back (gone 00:03:06)
+*	widoz is away: auto-away
+*	widoz is back (gone 00:02:21)
+*	widoz is away: auto-away
+*	widoz is back (gone 00:15:19)
+*	Guest72490 is now known as Eclipse
+<Visage>	widoz: Turn that off, please.
+<widoz>	just do it, I'm so sorry
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Sun May 17 10:31:52 2015
+
+**** BEGIN LOGGING AT Sun May 17 11:24:07 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Sun May 17 11:33:36 2015
+
+**** BEGIN LOGGING AT Sun May 17 12:16:54 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+<T1960CT>	Hello, can anyone help me figure out how to access my new domain with Altervista? I paid for the Redirect option but I cant figure out how to not have it always link back to sitename.altervista.org instead of sitename.com
+<T1960CT>	From what I've read it has something to do with the DNS, but those two things are in separate option categories and neither of them change anything
+<T1960CT>	If I access the IP of sitename.com it brings me to a page confirming that the domain has been successfully set up, but I cant seem to access the page using the URL without it being sent back to the .altervista.org one
+<Visage>	Sigh.
+<Visage>	#html, the new "Because domains and DNS obviously deal with HTML."
+<Textmode>	Visage: perhaps the topic line should say what we *don't* deal with?
+<Visage>	Textmode: Topics can't be that long, silly.
+<Visage>	I mean, we clearly don't deal with talk of various cheeses, but I'm not going to put that in the topic.
+<Textmode>	shit, you don't? where there goes my reason for being here!
+<asahi>	I'm seeing some code that looks like <button class="foo"><a href>continue</a></button>. Is there some tutorial on using an <a href> in this way, where href isn't given a value?
+<Visage>	asahi: That's invalid markup. You can't nest interactive content.
+<Visage>	asahi: The spec also says "The href attribute on a and area elements must have a value that is a valid URL potentially surrounded by spaces." So yeah, it needs a valid url or you don't include that attribute at all.
+<asahi>	Visage: so an anchor tag cannot be nested in a button tag? or is it the lack of href value that makes it invalid?
+<Textmode>	both.
+<Visage>	No, you cannot nest an A in a BUTTON ever. Those are interactive elements.
+<asahi>	Visage: I see. thank you
+<Visage>	And as I just said, an @href with no value is also invaild. When in doubt, validate.
+<asahi>	got it
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Sun May 17 15:07:30 2015
+
+**** BEGIN LOGGING AT Sun May 17 15:18:57 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	AtomicB0mB is now known as atomicb0mb
+<AtomicB0mB>	Its necessary the use of <h1> inside the header tag?
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Sun May 17 15:33:30 2015
+
+**** BEGIN LOGGING AT Sun May 17 15:59:31 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	Dorf_ is now known as Dorf
+<pagios>	 hi i am developing a cordvoa app, iframe in the app is scrollable from android smoothly but on ios i have to put my finger on the right side and try to catch the scrollbar to make it scroll, how can i make ios work like android by scrolling the iframe from anywhere on the window? here is my code any idea how to get scrolling working fine with ios? on android it works: http://pastie.org/10193819
+*	Disconnected (No such device or address)
+**** ENDING LOGGING AT Sun May 17 18:01:32 2015
+
+**** BEGIN LOGGING AT Sun May 17 18:02:01 2015
+
+*	Now talking on #html
+*	Topic for #html is: HyperText Markup Language | http://www.w3.org/TR/html5/ | #css for styling | No WYSIWYGs | Tables aren't for layout: http://xrl.us/kd35 , http://goo.gl/8yFKr | Separate Content and Presentation: http://goo.gl/2DtpJO | Validate first: http://validator.w3.org/ | W3C reference: say e.g. `html5 div | Paste links, not code: `paste
+*	Topic for #html set by lilmonkey (Tue Jul 08 16:43:58 2014)
+*	Channel #html url: http://diveintohtml5.info
+*	ormaaj_ is now known as ormaaj
+**** ENDING LOGGING AT Sun May 17 20:05:06 2015
+

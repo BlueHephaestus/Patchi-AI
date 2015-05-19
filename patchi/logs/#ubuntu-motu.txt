@@ -1,0 +1,9 @@
+=== emma_ is now known as emma
+=== Elimin8r is now known as Elimin8er
+[15:21] <sethj> Is there a process for requesting a package be added to the liveCD/default install? How does that work?
+[17:38] <Fantu> https://bugs.launchpad.net/ubuntu/+source/gvfs/+bug/517021 still not pushed to trusty, why?
+[17:38] <ubottu> Ubuntu bug 517021 in gvfs (Ubuntu Utopic) "gvfsd-metadata causes 100% CPU usage" [Undecided,Fix committed]
+[17:43] <mitya57> Fantu: according to http://people.canonical.com/~ubuntu-archive/pending-sru.html the fix breaks some autopkgtests
+[17:43] <mitya57> That may be a false positive, but someone needs to double-check that
+[17:47] <Fantu> thanks for reply
+[17:49] <Fantu> I not tested the official proposed packages but another I did with the same patch before and is ok

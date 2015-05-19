@@ -1,0 +1,1 @@
+=== ChanServ changed the topic of #ubuntu-louisiana to: We have moved to #ubuntu-us-la, please type /join #ubuntu-us-la to get to us

@@ -1,0 +1,11 @@
+[00:49] <mup> Bug #1455840 was opened: network-bridge compatibility with Open vSwitch <network> <openvswitch> <ovs> <juju-core:New> <https://launchpad.net/bugs/1455840>
+=== kadams54 is now known as kadams54-away
+=== kadams54 is now known as kadams54-away
+=== kadams54-away is now known as kadams54
+=== kadams54_ is now known as kadams54-away
+[21:27] <davecheney> mwhudson: do arm put "superceeded" on the background of every page unconditionally
+[21:28] <davecheney> or are there actually some pages they have not yet depricated ?
+[21:28] <mwhudson> davecheney: heh
+[21:28] <mwhudson> davecheney: only the pages that have been around long enough to be found by google, i think
+[21:28] <mwhudson> there will be a version that does not have superceded written on
+[21:28] <mwhudson> but it can be pretty hard to find

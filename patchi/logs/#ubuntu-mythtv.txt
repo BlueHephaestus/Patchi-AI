@@ -1,0 +1,6 @@
+[12:46] <Knight80> Hello everyone!
+[12:46] <Knight80> Good afternoon from Spain
+[12:46] <Knight80> :)
+[12:46] <Knight80> I'm having some problems with my remote and mythtv
+[12:47] <Knight80> I'm putting the lircrc file in /home/user/.mythtv
+[12:47] <Knight80> But still doesn't work

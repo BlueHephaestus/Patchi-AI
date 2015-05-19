@@ -1,0 +1,115 @@
+<pedro3005> jdeloach, nvidia plays nicer with linux
+<phrea> hmm, my gf has a pc that uses karmic, it used to be able to go online via the onboard nic, but all the sudden it doesnt anymore...
+<pedro3005> phrea, oh noes!
+<phrea> i told her to reboot the system while the utp is connected
+<jdeloach> yeah. too bad i didn't know that two years ago when i bought my computer :( would have gotten nvidia
+<phrea> both nic and utp cable are fully working
+<pedro3005> phrea, the card is detected?
+<phrea> yes
+<phrea> more news later ;)
+<nhandler> as a heads up, ubuntulog is now in this channel. public logs will be available on irclogs.ubuntu.com now
+<phrea> oh no..
+<pedro3005> i guess i can't plot my murders here now
+<phrea> i hate irc logs...
+<phrea> pedro3005: we now have to be careful indeed
+<phrea> ;)
+<pedro3005> lukjad86, i'm still out to get you, know that
+<phrea> dude, shhht, that just got posted on the irclogs man !
+<phrea> oh, i just clicked, and it seems that everything ever posted here has already been logged...
+<phrea> excuse me if i sign off.
+<pedro3005> oh cool
+<pedro3005> i can track myself down
+<pedro3005> let's see, 2008
+<pedro3005> wait, no
+<pedro3005> phrea, it's general ubuntu logs, not this channel
+<phrea> i noticed :)
+<phrea> that's why i stfu'ed
+<pedro3005> you made me believe for a second i could re-live a part of my life!
+<pedro3005> :p
+<phrea> well, you can
+<pedro3005> phrea, shit, http://irclogs.ubuntu.com/2010/03/04/%23ubuntu-beginners.txt
+<phrea> indeed, sir
+<phrea> it seems a bit chaotic
+<phrea> i'd devise them in channels, rather than year/month/date
+<phrea> but that's just me
+<pedro3005> yeah
+<pedro3005> truth is
+<pedro3005> you gotta reach a whole new level of boredom to go through that stuff
+<pedro3005> so probably it'll go unread
+<phrea> indeed
+<phrea> that's why i would devise them via channels
+<phrea> to save some boredom time
+<coldfire> ive rebooted several times and gnome is still locking up. the only thing i did before this happened is install some av programs. what should i do? reinstall ubuntu?
+<pedro3005> coldfire, with programs exactly?
+<coldfire> clamav, bitdeffender and avg
+<pedro3005> coldfire, try uninstalling?
+<coldfire> i cant it locks up on boot
+<pedro3005> coldfire, try pressing ctrl alt f1 as it's locked up
+<coldfire> ok it started terminal..what do to remove them from here?
+<pedro3005> coldfire, how did you install them?
+<coldfire> .deb packages and in synaptic
+<pedro3005> coldfire, 'sudo apt-get purge packagenames'
+<coldfire> couldnt find package names
+<coldfire> oh nm
+<coldfire> i get it
+<pedro3005> yeah
+<coldfire> rebooting now
+<coldfire> thanks
+<quickard> i can not log in to ubuntu because i can not see nor enter anything into the user accounts window
+<mathay> quickard: kind of that your keyboard isn't responding?
+<mathay> *kind of like
+<mathay> ie, you can still move your mouse around and what not, right?
+<quickard> yes
+<quickard> i can move the mouse, i can see the accessability window
+<quickard> and when i hit the power button the shutdown window pops up, then it tells me that the desktop is not responding
+<quickard> when i go to shutdown it says that the gnome desktop is not responding
+<wojox> do i just register my nickname here with: /msg nickserv register
+<elfy> and a e-mail address
+<elfy> eg /msg nickserv register bar foo@bar.com
+<wojox> what about the password?
+<elfy> syntax: register <password> <email-address>
+<wojox> will it be seen or is it not ipportant
+<elfy> it would be seen if you made a mistake and it was read as text - i usually do stuff like that in the server window xchat gives me
+<wojox> thanks elfy
+<elfy> welcome :)
+<akos> hi team
+<akos> would anyone know why this would happen: lsattr: operation not supported while reading flags on/usr/sbin/addgroup
+<akos> ?
+<mongoosedog> hey guys i downloaded a movie, i'm left with files with boxes with rar on them, i can't seem to extract them? anyone know how to make the files into the movie file?
+<nigelb> is this a legal download?
+<nigelb> if its not, we won't be able to help you
+<leoquant> hi elfy
+<elfy> hi leoquant
+<leoquant> how are you?
+<nigelb> hello there elfy :)
+<nigelb> and hey leoquant
+<leoquant> good to be logged
+<leoquant> and coc-ed
+<leoquant> damn good
+<elfy> hi nigelb
+<elfy> and i don't need reminding ;)
+<nigelb> hehe
+<leoquant> mohil your cloak is fine now
+<leoquant> :p
+<mohi1> o_o
+<tdn> i have a machine with two network adapters: an ethernet adapter and a wireless adapter. how can i turn the wireless adapter into an access point?
+<nigelb> tdn: you're looking for internet connection sharing?
+<tdn> nigelb, i want to use this machine as access point to set up wireless connection.
+<nigelb> tdn: does this help you? http://doctormo.ubuntu-ma.us/2009/12/06/ubuntus-internet-connection-sharing/
+<tdn> nigelb, rt73usb/qcom <- this is my wlan card.
+<tdn> nigelb, no. i only have ssh access to the box.
+<tdn> at the moment.
+<nigelb> oh
+<tdn> if i write iwconfig wlan0 mode master, i get an error: error for wireless request "set mode" (8b06) :     set failed on device wlan0 ; invalid argument.
+<nigelb> tdn: try this forum post then http://ubuntuforums.org/showthread.php?t=91370
+<nigelb> my knowledge of networking is kind of minimal, so i'm not sure how much debugging i can do
+<catchitbaby1> hi
+<silver_fox_> o/
+<darkx> hello, i was wondering if someone could help me set up a vnc server on ubuntu with a mirror driver :) (i read that using a mirror driver gives better performance)
+<youknoweddavis> hey everybody, i was wondering if any one had experience with karmic and kodak cameras?
+<youknoweddavis> ive tries f-spot, with crazy "unable to lock" errors, and camera who doesnt seem to be able to coonect to it.
+<elfy> hi bodsda
+<bodhi_zazen> boo !!!
+<pedro3005> bodhi_zazen, what?
+<paultag> hai bodhi_zazen :)
+<paultag> bodhi_zazen, may i pm?

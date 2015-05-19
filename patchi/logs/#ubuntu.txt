@@ -1,0 +1,2687 @@
+[00:01] <GefilteFish> Can someone help me fix this "boot device not found 3f0" error? What I did was delete my EFI partition now I'm stuck with a bricked laptop with Xubuntu installed, but inaccessible. All the Linux distros I've tried on a LiveUSB won't boot. Super Grub2 Disk is the only exception but it's kind of useless. I can use it to get to Xubuntu's terminal though.
+[00:04] <bekks> Fuchs: still no luck. your /etc/sudoers.d/virtualbox suggestion works, but I have no access to directories/files owned by vbox:vbox when running gksudo /usr/bin/VBoxManage
+[00:04] <Fuchs> bekks: well, is root part of the vbox group?
+[00:05] <bekks> not until now
+[00:05] <tgm4883> uh, would root not have access to everything?
+[00:05] <bekks> I guess I have to re-login now?
+[00:06] <Fuchs> bekks: nope
+[00:06] <dprc> tgm4883: most of the time
+[00:06] <Fuchs> thinking of it, is camel part of the vbox group?
+[00:07] <Fuchs> even though I am rather sure that file permissions are based on the user you run the command as (and local short tests confirm that), but not knowing what exactly the script does
+[00:07] <bekks> Fuchs: thomasvs_ he scrp
+[00:07] <Fuchs> wat
+[00:08] <bekks> sorry :)
+[00:09] <bekks> the script runs: "/usr/bin/VBoxHeadless -s myvm", but I get a permission denied
+[00:10] <Fuchs> it would be interesting to see on what it actually fails, maybe strace would do, but that sounds like a bit of an overkill
+[00:10] <EriC^^> bekks: camel is your user or the user you want to run as?
+[00:11] <Fuchs> it is ran as root  (at least that is what we specified in the sudoers) by camel
+[00:11] <bekks> camel is the user who wants to run the script which executes /usr/bin/VBoxHeadless -s myvm as vbox user.
+[00:11] <Fuchs> err, wait
+[00:11] <Fuchs> bekks: can I see that sudo command
+[00:12] <Fuchs> because I, fully on purpose (which I also mentioned), limited it on root and root only. If you want to run it as a different user (and don't talk of the group vbox here) you need to adapt that ...
+[00:12] <Fuchs> because yes, otherwise that will very obviously fail
+[00:12] <EriC^^> bekks: <your user> ALL= (ALL) NOPASSWD: /bin/su camel -lc "bash /path/to/script"
+[00:13] <Fuchs> EriC^^: wrong way around. Camel is the user who wants to run the script, not a user wants to run it as camel
+[00:13] <EriC^^> oh
+[00:14] <Fuchs> the sudoers is likely to be correct, _unless_ he wants to run the command as the user vbox, not root. In that case the (root) should be changed to either (vbox) or, less secure, (ALL)
+[00:16] <Fuchs> bekks: or wait, is the script actually ran as root and then that does something as a different user? In that case I'd like to see that script
+[00:16] <Fuchs> because chances are that the issue lies there
+[00:17] <EriC^^> Fuchs: i think the script runs as camel
+[00:17] <Fuchs> nope
+[00:17] <EriC^^> i mean by camel as vbox
+[00:17] <Fuchs> neither
+[00:17] <Fuchs> read backlog, see the sudoers configuration
+[00:18] <EriC^^> he said he didn't want to write his password to run it as another user
+[00:18] <Fuchs> yes, that I do know.
+[00:18] <grend> Fuchs: have you used smarttools to check health of hdd?
+[00:19] <grend> I run command that dafty suggested and short self test shows ok
+[00:19] <bekks>  /etc/sudoers.d/virtualbox: http://paste.ubuntu.com/11175737/ - command run as user camel: "sudo -u vbox /usr/bin/VirtualBox list runningvms" results in: http://pastebin.com/NFiCGxKs
+[00:19] <Fuchs> bekks: yeah, that won't work
+[00:20] <Fuchs> bekks: the part in the braces () limits who can run the scripts, as I mentioned, fully on purpose set to root. Either change that to vbox or, less secure, ALL
+[00:20] <grend> or perhaps anyone here can help? I plan to reinistall ubuntu and to be sure disk is fine now
+[00:21] <daftykins> grend: the command i gave is not going to fix that drive, it was faulty when we first spoke
+[00:21] <Fuchs> bekks: because I try to avoid VirtualBox whenever possible, I have no idea whether it somewhere does require root, though
+[00:21] <grend> daftykins: it was 1 bad sector
+[00:21] <daftykins> grend: again you're ignoring the other part i pointed out :)
+[00:21] <grend> daftykins: so I run the command and smart tools
+[00:21] <Fuchs> bekks: however, changing that (root) part to either (vbox) or (ALL) should at least work until that point where it does need root permissions
+[00:21] <daftykins> grend: unfortunately you gave me a very poor attitude last time you were on, so i no longer wish to assist you.
+[00:21] <daftykins> so good luck
+[00:21] <grend> thats fine :D
+[00:21] <grend> and thanks
+[00:22] <EriC^^> Fuchs: he changed it
+[00:23] <grend> daftykins: plus attitude is matter of perception and perception varies :) thats that
+[00:25] <Fuchs> EriC^^: yeah, we probably resolved it in a channel with less noise and a better language than English.
+[00:26] <ltk> i use the ubuntu14.04lts, when i use the tmux, but it doesn't have highlight.
+[00:28] <ltk> who to deal with？
+[00:28] <angelle> knock knock
+[00:28] <angelle> ........
+[00:29] <angelle> knock knock............
+[00:29] <SchrodingersScat> !ask | angelle
+[00:29] <ubottu> angelle: Please don't ask to ask a question, simply ask the question (all on ONE line and in the channel, so that others can read and follow it easily). If anyone knows the answer they will most likely reply. :-) See also !patience
+[00:29] <angelle> for God sake anybody there?  knock knock knock...........
+[00:30] <bazhang> angelle, ask an actual question
+[00:30] <angelle> OK
+[00:30] <bazhang> angelle, stop knocking
+[00:31] <angelle> bazhang what are the pros and cons of installing Ubuntu over windows 10 pro x64?
+[00:31] <SchrodingersScat> !ot | angelle
+[00:31] <ubottu> angelle: #ubuntu is the Ubuntu support channel, for all Ubuntu-related support questions. Please use #ubuntu-offtopic for other topics (though our !guidelines apply there too). Thanks!
+[00:31] <bazhang> angelle, great topic for #ubuntu-offtopic not here
+[00:31] <angelle> yes that's what I'm asking
+[00:31] <dprc> angelle: this is a support channel; if you would like to discuss the merits of ubuntu please /join #ubuntu-discuss
+[00:31] <ltk> what's mean "knock"?
+[00:31] <angelle> it's Ubuntu related
+[00:32] <SchrodingersScat> angelle: not a ubuntu support question
+[00:32] <angelle> it means knocking on your door
+[00:32] <bazhang> angelle, so go to that channel and ask, this is ubuntu tech support only not polls, opinions etc
+[00:32] <angelle> you people are funny
+[00:32] <angelle> how could this channel potentially be Ubuntu customer service support if you don't even  know what knock knock is?
+[00:33] <bazhang> angelle, and there is a channel just for that type of chit chat, and this one is not it
+[00:33] <angelle> I was knocking for like 5 min before someone answered
+[00:33] <cryptodan> Can anyone see this: Å?
+[00:33] <tgm4883> angelle: this isn't customer service support
+[00:33] <angelle> well it is called Ubuntu
+[00:33] <tgm4883> angelle: yes, and?
+[00:33] <dprc> cryptodan: an angstrom
+[00:33] <OerHeks> community volunteer support
+[00:34] <tgm4883> yes community support
+=== morosUnknown is now known as moros
+=== moros is now known as morosUnknown
+=== joao is now known as Mete-
+=== sireebob_ is now known as sireebob
+[00:50] <robert__> Hello everyone
+[00:51] <QuantumVacuum> Hi robert
+[00:51] <robert__> Hello everyone this is my first time here
+[00:52] <robert__> Hello Q nice to meet ya
+[00:52] <Bray90820> So I am trying to start firefox on 140.4 and I am getting this message "Your Firefox profile cannot be loaded. It may be missing or inaccessible"
+[00:52] <robert__> Is this a good place to come for answer about Ubuntu?
+[00:52] <QuantumVacuum> For sure, although I'm pretty new to it as well
+[00:53] <EriC^^> Bray90820: type sudo chown <your user>: ~
+[00:53] <Bashing-om> robert__: This is ubuntu support, ask your ubuntu support qustion .
+[00:53] <robert__> Same here I've been using it for a few months now but love it.
+[00:53] <EriC^^> Bray90820: type sudo chown -R <your user>: ~
+[00:54] <Bray90820> There we go
+[00:54] <Bray90820> Thanks
+[00:54] <EriC^^> no problem
+[00:54] <robert__> How do I change my text color?
+[00:55] <Bray90820> My other question is some apps that came from the software center arn't showing in the unity dash
+[00:55] <EriC^^> Bray90820: which apps?
+[00:56] <Bray90820> system-config-samba it's a gui for samba
+[00:56] <robert__> Test
+[00:56] <EriC^^> Bray90820: type dpkg -L system-config-samba | grep .desktop
+[00:56] <Bray90820> robert__: I can see your test
+[00:57] <robert__> I'm trying to change the text color
+[00:57] <Bray90820> EriC^^: Still not in the dash
+[00:58] <EriC^^> Bray90820: yeah, but does anything show up after you type the command?
+[00:58] <robert__> Anyone know how to change the text color?
+[00:58] <nbt> robert__: what text color?
+[00:59] <robert__> My text color for this chat
+[00:59] <Bray90820> EriC^^: https://gist.github.com/anonymous/3d06a8f8a5770a756fe3
+[01:00] <EriC^^> Bray90820: type grep Name /usr/share/applications/system-config-samba.desktop
+[01:00] <QuantumVacuum> robert__, what IRC client are you using?
+[01:00] <robert__> Hex chat
+=== idafyaid is now known as peskypokemon
+[01:01] <Bray90820> EriC^^: https://gist.github.com/anonymous/640b1c0a14a7f3e5dc31
+[01:01] <EriC^^> Bray90820: if you type samba in the dash nothing shows up?
+[01:02] <QuantumVacuum> hmm, i'm not sure. I use xchat haha
+[01:02] <Bray90820> EriC^^: Nothing related to the app
+[01:02] <robert__> Oh ok Q thanks
+[01:03] <EriC^^> Bray90820: what shows up?
+[01:04] <Bray90820> EriC^^:
+[01:04] <Bray90820> https://dl.dropboxusercontent.com/u/33402675/Samba.png
+[01:04] <robert__> test
+[01:05] <EriC^^> Bray90820: try pressing super+a and type samba
+[01:05] <Bray90820> robert__: still black
+[01:05] <robert__> Thanks for the welcome guys I will surly be back
+[01:05] <EriC^^> robert__: you can't change the text in this channel
+[01:05] <robert__> Really
+[01:06] <EriC^^> you can maybe change it in your client to show differently for you
+[01:06] <EriC^^> yeah
+[01:06] <EriC^^> usually ctrl+k followed by foreground then background color changes text like ctrl+k then 0,1 for white on black
+[01:06] <EriC^^> but it won't be sent here cause colors are turned off
+[01:07] <robert__> Yes I have my client open now but not sure how to change it. I did change a few colors but it stall looks the same on this end.
+[01:07] <Bray90820> EriC^^: all that seemed to do was change the resolution no samba still
+[01:08] <robert__> Ok thanks so much everyone for the help I have another place I can get help with Ubuntu
+[01:08]  * Anoniem4l test
+[01:09] <EriC^^> Bray90820: what's your end goal? to put it in the launcher?
+[01:10] <Bray90820> EriC^^: Yes
+[01:10] <Bray90820> I don't wanna have to run it from tee terminal
+[01:10] <Bray90820> the
+[01:10] <EriC^^> Bray90820: ok, type nautilus /usr/share/applications and drag it to the launcher
+[01:12] <robert__> Have a great night everyone
+[01:12] <Anoniem4l> Nem0 wut
+[01:14] <Bray90820> EriC^^: every time I try to open it from that location it says "There was an error launching the application"
+[01:14] <EriC^^> Bray90820: from the launcher?
+[01:14] <EriC^^> Bray90820: type grep Exec /usr/share/applications/system-config-samba.desktop
+[01:14] <Bray90820> It won't even stay in the launcher
+[01:16] <Bray90820> Yes it's gksu
+[01:16] <Bray90820> EriC^^: https://gist.github.com/anonymous/aa050ab8d74eee6fdad2
+=== joao_ is now known as Mete-
+[01:16] <EriC^^> Bray90820: how do you launch it from the terminal?
+[01:18] <Bray90820> EriC^^: https://gist.github.com/anonymous/95348c004f97905db76c
+=== megabit|away is now known as megabitdragon
+[01:19] <EriC^^> Bray90820: try gksu system-config-samba
+[01:20] <Bray90820> Well "sudo system-config-samba" worked
+[01:20] <EriC^^> you shouldn't use sudo with gui programs, it will mess up the permissions
+[01:20] <Bray90820> https://gist.github.com/anonymous/53a4a6772b3c84f7651f
+[01:21] <Bray90820> Should I install gksu
+[01:21] <EriC^^> yes
+[01:22] <BLACK_POWER> sup crakkkers
+[01:22] <Bray90820> EriC^^: gksu system-config-samba won't accept my sudo password
+[01:23] <EriC^^> Bray90820: type gksu-properties
+[01:24] <EriC^^> is it set to sudo?
+[01:24] <BLACK_POWER> wanna end racesm?
+[01:24] <Bray90820> does gksu use the su password or the sudo password
+[01:25] <EriC^^> Bray90820: they should be the same
+[01:25] <Bray90820> So gksu should be the sudo password?
+[01:25] <bodhi_zazen> Bray90820, your login or sudo password, same thing
+[01:25] <Bray90820> but is GKSU and Sudo the same thing?
+[01:25] <EriC^^> Bray90820: yeah
+[01:26] <Bray90820> ok
+[01:26] <Bray90820> Authentication mode is sudo and grab mode is enabled
+[01:26] <EriC^^> ok
+[01:29] <Quicksteve> hello there, I'm currently trying to install Windows 7 as a secondary OS on my external USB HDD. I have followed the steps outlined here http://www.sevenforums.com/tutorials/7943-install-windows-7-fast-without-dvd-usb-device.html .That part works without any issues, however I can't get Windows to start. I've tried using update-grup and bootrepair, both add the menu entry, however upon selection it fails with unable to find device
+[01:30] <Quicksteve> Here is the link given to me by bootrepair: http://paste.ubuntu.com/11176476/
+[01:30] <Bray90820> EriC^^: anything else for me to try
+[01:31] <OerHeks> Bray90820, maybe restart samba ..
+[01:32] <Quicksteve> Ubuntu is installed on /dev/sda, ubuntu home is on /dev/sdg1, Windows is on /dev/sdg2
+[01:33] <Quicksteve> Both ubuntu itself and the user files are encrypted
+[01:33] <bodhi_zazen> Quicksteve, probably need to select to boot windows in your bios
+[01:34] <Quicksteve> Is there any way I could use it over Grub?
+[01:34] <BLACK_POWER> crakkker
+[01:38] <Quicksteve> I'll restart and see if selecting that drive in the bios works.
+[01:44] <Quicksteve> Hello, I'm back. Sadly, selecting the drive in BIOS does not work, it does not show up.
+[01:46] <Quicksteve> Any other ideas possibly?
+[01:53] <bodhi_zazen> Quicksteve, what error do you get when you boot windows
+[01:54] <Quicksteve> It says something along the lines of: "Disk not found: <volume id here>"
+[01:55] <daftykins> sounds like you need to boot Windows media and let it repair boot
+[01:59] <ary> Hi. I had installed opera on my elementary os, but flashplugin doesn't work.
+[01:59] <ary> how can I put flashplugin to work?
+[02:00] <daftykins> !elementary | ary
+[02:00] <ubottu> ary: Elementary OS is an Ubuntu derivative which is supported in their IRC channel #elementary on irc.freenode.net - http://elementaryos.org/ for more information on this distribution.
+[02:00] <daftykins> sorry no support here
+[02:02] <Quicksteve> the actual error message was "error: no such device: <volume id here>"
+[02:04] <ary> hi. Now i am on ubuntu. How do I install flashplugin on opera?
+[02:04] <Quicksteve> I have checked and blkid outputs the same volume id as in the error:
+[02:04] <Quicksteve>  /dev/sdg2        429EF1F063C8FFBB                       ntfs       Windows
+[02:06] <owen1> ubuntu 14.04 on carbon x1 2nd gen. usb3 is not working. how do i troubleshoot this?
+[02:06] <daftykins> 14.04.2 ? which kernel?
+[02:07] <owen1> daftykins: are u talking to me?
+[02:08] <daftykins> yes
+[02:08] <owen1> 3.16.0-31-generic #43-Ubuntu SMP
+[02:08] <daftykins> ok so yeah it's 14.04.2 with the utopic HWE
+=== Yukkii is now known as Dhs92
+[02:09] <owen1> is it a good thing? (:
+[02:09] <daftykins> my advice would be to try a more recent mainline kernel
+[02:09] <daftykins> !mainline
+[02:09] <ubottu> The kernel team supply continuous mainline kernel builds which can be useful for tracking down issues or testing recent changes in the Linux kernel. More information is available at https://wiki.ubuntu.com/Kernel/MainlineBuilds
+[02:09] <daftykins> 14.04 comes with 3.13 so that's also a plan
+[02:09] <owen1> daftykins: i can upgrade to 15.04
+[02:09] <owen1> or just do fresh install
+[02:10] <daftykins> depends whether you want to abandon LTS.
+[02:10] <owen1> daftykins: what's the benefit of staying on LTs?
+[02:10] <daftykins> you could at least boot 15.04 and test it out
+[02:10] <daftykins> !lts
+[02:10] <ubottu> LTS means Long Term Support. Until 12.04 LTS versions of Ubuntu were supported for 3 years on the desktop, and 5 years on the server; since 12.04 (Precise Pangolin) LTS versions will be supported for 5 years on the desktop and server. The latest LTS version of Ubuntu is !Trusty (Trusty Tahr 14.04)
+[02:11] <owen1> daftykins: so i can boot ubuntu 15.04 from a usb and not install it, and see if everything works?
+[02:11] <daftykins> yip
+[02:11] <owen1> perfect! thanks
+[02:11] <daftykins> that's what live sessions are for \o/
+[02:11] <owen1> hopefuly the usb 3 will work as well
+[02:12] <Quicksteve> daftykins, I'm not sure if the windows tools will help here as installing windows on an external drive is normally not possible.
+[02:12] <daftykins> it searches for installations and repairs them if necessary, i didn't pay attention to how exotic your setup is :)
+[02:13] <Quicksteve> http://paste.ubuntu.com/11176476/ <- output from bootrepair
+[02:14] <Quicksteve> I believe that should contain most of the information
+[02:15] <daftykins> sorry too late for me, i'm off
+[02:15] <Quicksteve> thanks for the help anyway :)
+=== emma_ is now known as emma
+=== Guest79583 is now known as ost
+[02:24] <nahtnam> Hey. I was wondering if there was a way to make it so that I can make my laptop beep via my android phone WHILE the laptop is in sleep mode.
+[02:32] <cdauth> hey, i just upgraded to ubuntu 15.04 and suddenly the dspam package seems to be missing? here it is listed for vivid: https://code.launchpad.net/ubuntu/+source/dspam. any ideas why this can be and where to get the package?
+=== sleepypc is now known as `hypermist`
+[02:35] <OerHeks> dspam, Deleted on 2014-08-31(From Debian) ROM; No longer maintained upstream; Debian bug #754810
+[02:35] <ubottu> Debian bug 754810 in ftp.debian.org "RM: dspam -- ROM; No longer maintained upstream" [Normal,Open] http://bugs.debian.org/754810
+[02:37] <omeed> hello
+[02:38] <cdauth> OerHeks: thanks for the info
+[02:38] <yurikoles> hello, people
+[02:38] <yurikoles> is this chat loged?
+[02:39] <Bashing-om> yurikoles: Yes, this channel is logged.
+[02:39] <yurikoles> could you give me a link?
+[02:39] <OerHeks> !logs
+[02:39] <ubottu> Official channel logs can be found at http://irclogs.ubuntu.com/ . LoCo channels are now logged there too.
+[02:40] <yurikoles> is there a sping for gays?
+[02:40] <yurikoles> like Gaybuntu?
+[02:40] <omeed> ..wow
+[02:41] <yurikoles> oh sorry, bad joke
+[02:41] <yurikoles> you know the applle computers use FreeBSD for gays spin
+[02:42] <yurikoles> and this joke is even worse
+[02:42] <yurikoles> because I'm on OS X now
+[02:42] <omeed> it might be a good one if it were actually comprehensible
+[02:42] <yurikoles> but I'm not gay, it's a PC
+[02:46] <yurikoles> Ubuntu is a spin of Debian for newbies?
+[02:52] <user__> Hello everyone
+[02:53] <user__> Is it possible to run ubuntu on this new tablets with intel atom quad core? They ship with windows 8.1
+[02:53] <yurikoles> hello, user__
+[02:54] <user__> i've managed to boot on bios of my tab
+[02:54] <yurikoles> since windows 8.1 logo program requires oems to inclue option to disable secure boot - yes
+[02:55] <yurikoles> but I don't know how do you insert flash drive into it
+[02:55] <user__> how can i do that? i need a uefi linux enabled image?
+[02:55] <yurikoles> it has an sdcard?
+[02:55] <user__> yes and i have a usb pen with micro usb :D
+[02:55] <yurikoles> ubuntu images are uefi enabled nowadays
+[02:56] <yurikoles> just use win32diskimager
+[02:56] <yurikoles> it's an easiest way to create bootable drive for me
+[02:57] <yurikoles> just select correct file filter (*.*) instead of default (*.img) and choose a file with ubuntu
+=== administrator is now known as Guest15604
+[02:57] <user__> yurikoles, right, ive tryed with multiboot
+[02:57] <yurikoles> so?
+[02:57] <user__> yurikoles, do you know multiboot?
+[02:58] <user__> well it doesnt boot
+[02:58] <yurikoles> you mean this: http://multibootusb.org/ ?
+=== megabitdragon is now known as megabit|away
+[02:59] <user__> yurikoles, yes
+[03:00] <stellamaris> aas
+[03:00] <yurikoles> try my advice
+[03:00] <user__> yeah i will
+[03:00] <polymute> s
+[03:00] <yurikoles> win32diskimager just writes bytes of iso image to flash drive device
+[03:01] <yurikoles> it's an analougue of dd program on linux
+[03:07] <multidex> so is this the wrong in this forum to ask where the good torrent sites are that aren't raided and taken over
+[03:07] <multidex> grooveshark is GONE
+[03:07] <SchrodingersScat> correct, wrong place
+[03:08] <SchrodingersScat> !torrents
+[03:08] <ubottu> Vivid can be torrented from http://torrent.ubuntu.com/simple/vivid/desktop/ubuntu-15.04-desktop-i386.iso.torrent or http://torrent.ubuntu.com/simple/vivid/server/ubuntu-15.04-server-amd64.iso.torrent depending on your needs. Other flavors can be found at http://torrent.ubuntu.com:6969
+[03:08] <SchrodingersScat> unless you mean ubuntu torrents, got plenty of them
+[03:10] <polymute> anyone else catch flak at work for using ubuntu?
+[03:10] <polymute> I legitimately prefer ubuntu and fedora over any other distros Ive tried
+[03:11] <multidex> !torranents
+[03:13] <GefilteFish> I deleted my efi partition by accident. Howdo i rebuild it?
+[03:16] <HedgeMage> GefilteFish: Deleted the partition, or its contents?
+=== tahr193531 is now known as stevend4le
+[03:22] <GefilteFish> I actually deleted the partition
+[03:22] <GefilteFish> But created it
+[03:22] <GefilteFish> Recreated it
+[03:22] <HedgeMage> Okay, so once you re-created it, did you also set its type to EFI?  That's code ef00 if I recall correctly.
+[03:22] <HedgeMage> (I can check)
+[03:23] <HedgeMage> Then you'd need to format it to fat 32.  Be careful that it's 32, some older tools default to 16 bit when making vfat filesystems, hell if I know why that's still true.
+[03:25] <HedgeMage> Next, replace the EFI partition's UUID in your fstab with the new UUID.
+[03:25] <GefilteFish> Ok i did that. It also has a boot flag
+[03:26] <HedgeMage> After that, it's possible that reinstalling a package or two (I'd start with your kernel) could automagically repopulate that partition as it should be and tell your UEFI firmware that the Ubuntu system exists.
+[03:27] <HedgeMage> If not, I can try to run you through the manual process before I fall asleep, but no guarantee I'll be up that long.
+=== `hypermist` is now known as sleepypc
+[03:28] <Fun> hi folks
+[03:28] <Fun> how I can install latest intel drivers_
+[03:28] <Fun> for graphics
+[03:29] <GefilteFish> Idk the commands to reinstall those things
+[03:29] <aeon-ltd> Fun: there is only one package for that, unless you wanna use beta or testing
+[03:29] <Fun> oki which one is it_
+[03:30] <aeon-ltd> sudo apt-get install xserver-xorg-video-intel
+[03:30] <Fun> weird
+[03:31] <Fun> its already installed however brightness is less
+[03:31] <Fun> I have installed lubuntu 15.04
+=== smile is now known as Guest97581
+[03:32] <jeeves_moss> when I run "ldattach pps /dev/pps1", I get "ldattach: invalid line discipline: pps".  what am I doing wrong?
+[03:32] <Fun> i had 14.04 0n same laptop screen was brigther
+[03:32] <Fun> brighter
+[03:34] <yurikoles> http://askubuntu.com/questions/540911/how-to-adjust-screen-brightness-in-ubuntu-14-04
+[03:37] <boogieidm> I'm needing to download audio files from a website. Not YouTube or any of that. It's a free audiobook. I did it with the first book, but I can't remember how to with the second book. I used to know a simple way to do this. It was like right click, inspect element, right click and save on the MP3 file link. Any idea how to do this?
+[03:38] <Emanuel> I have a USB hard drive that is making clicking sounds. I tried to check the SMART status from my system but it's greyed out. How can I access tis data?
+[03:38] <Emanuel> boogieidm: if you know the complete url you can use wget
+[03:39] <boogieidm> Emanuel Well it's like a flash player that you have to keep clicking the next chapter on.
+[03:39] <aeon-ltd> Fun: there is software that controls screen brightness, i'm pretty sure it's independent from the graphics drivers
+[03:40] <Emanuel> Second question I have how to I enable remote desktop forwarding so I can connect remottley with a GUI rather than a ssh terminial connection
+[03:40] <Emanuel> boogieidm: No idea then.
+[03:40] <aeon-ltd> boogieidm: why can't you do what you did before?
+[03:41] <boogieidm> aeon-ltd: I can't remember how I did it. Now I'm thinking it may be wget after a quick google search.
+[03:42] <aeon-ltd> post the link if it doesn't require logging into anything
+[03:43] <boogieidm> Think I got it. Where does wget save to?
+=== SonikkuAmerica is now known as littlebunnyfufu
+[03:44] <aeon-ltd> boogieidm: it'll be the root of your user unless you changed directory
+=== littlebunnyfufu is now known as S-USA
+=== S-USA is now known as S-USA|Werehog
+=== S-USA|Werehog is now known as Shadow4000
+[03:45] <boogieidm> See there was a super simple way to do it before. It's driving me crazy.
+=== Shadow4000 is now known as HedgehogUSA
+[03:45] <UserUS> How do I change the terminal color/text colors?
+=== HedgehogUSA is now known as He_Who_Is_Nuts
+[03:46] <aeon-ltd> UserUS: a terminal may have individual settings, but the terminal (bash) will be handled in .Xdefaults
+=== He_Who_Is_Nuts is now known as SonikkuUSA|N
+[03:46] <UserUS> aeon-ltd: Is that in /bin?
+[03:46] <GefilteFish> Do you know how to repopulate /boot/efi/ ???
+[03:47] <aeon-ltd> UserUS: no that's in your home
+[03:48] <aeon-ltd> UserUS: examples http://crunchbang.org/forums/viewtopic.php?id=9935#5
+=== asdofindia is now known as Guest14213
+[03:50] <UserUS> aeon-ltd: I'm looking in the Home directory but I only see basic folders, such as downloads, documents...etc.?
+[03:51] <aeon-ltd> UserUS: it's a dotfile, hidden
+[03:51] <Emanuel> Anyone here using CrashPlan on Ubuntu? I need to know how to store it's backups onto an external USB drive
+[03:51] <UserUS> aeon-ltd: Nvm I found more info on the wiki. thx man.
+[03:52] <aeon-ltd> no problem
+[03:55] <boogieidm> aeon-ltd: I remember now. I was using a jail broken iPad. I'm letting my sister borrow it till Tuesday. Tis life. Lol
+[03:55] <boogieidm> aeon-ltd: any idea how to download each of these chapters?
+[03:56] <boogieidm> aeon-ltd: livingaudio.co.uk/store/authors/gnormanlippert/jpcg
+=== ochorocho1 is now known as ochorocho
+[03:58] <anderson_> Bom dia
+[04:04] <aeon-ltd> boogieidm: no idea
+=== devuser is now known as pepigno75
+=== pepigno75 is now known as devuser
+[04:29] <FoolsRun> Hi, I need some basic bash shell scripting help. I need to do a while loop for while the output of a shell command doesn't contain a grep'ed value. Basically while ! hcitool con | grep $MAC   --how do I write that?
+[04:40] <Phosis> Question all...and hello...I'm doing something very simple...making a bash script with menu to run my doom mods. When I run it it says /bin/doom: line 1: !#/bin/bas: No such file or directory
+[04:40] <Phosis> the interesting is, it still runs.
+[04:42] <Phosis> I'm a little confused because after editing my ~/.profile to add the path for the script, I am not exactly sure where it is running the script from. Because if it is removed from /home/username/bin or /bin, either one of those, it will fail to work.
+[04:46] <nbt> Phosis: change line 1 of your script to #!/bin/bash
+[04:46] <Phosis> It is actually
+[04:47] <nbt> no
+[04:47] <Phosis> The first line of my script: !#/bin/bash
+[04:47] <treelzebub> Phosis: #! != !#  :P
+[04:48] <Phosis> Oh christ
+[04:48] <Phosis> I didnt notice.
+[04:48] <treelzebub> happens to the best of us.
+[04:48] <Phosis> Thank you, haha.
+[04:48] <Phosis> Yep that certainly fixed it. Thanks again!!
+[04:49] <treelzebub> +1 nbt
+[04:49] <Phosis> Agreed
+=== pferreira is now known as PauloFerreira25
+=== owner_ is now known as Guest31519
+[04:55] <Phosis> Another question...Looking for more vague direction since I'm learning scripting and don't want much hand holding, but not sure where to start. The script I made runs gzdoom, depending on the option selected, with different WAD files. But when gzdoom quits, the terminal is left waiting for more user input. When really, I'd like the script to stop running altogether after the choice is made and the game boots up.
+[04:56] <Phosis> So when you quit game, the script is no longer waiting for input, you are simply back at a bash prompt.
+[05:05] <tonyyarusso> Phosis: Pastebin the script?
+[05:05] <tonyyarusso> or maybe you already did, /me reads scrollback
+[05:06] <Phosis> one sec
+[05:07] <Phosis> http://pastebin.com/kCXcShGF
+[05:12] <piter0> alguien sabe como reparar el centro de software de ubuntu que no puedo instalar nada
+[05:13] <basil2x> !spanish
+[05:13] <ubottu> En la mayoría de los canales de Ubuntu, se habla sólo en inglés. Si busca ayuda en español entre al canal #ubuntu-es; escriba " /join #ubuntu-es " (sin comillas) y presione intro.
+[05:13] <quizme> hi, i am trying to get photos from my camera's microsd card onto my computer
+[05:13] <quizme> anybody know how to do that ?
+[05:13] <basil2x> Stick the microsd in the microsd slot on your computer, or get an adapter and use the sd slot.
+[05:13] <quizme> i bought a hytac unversal card reader, but after plugging it in, nothing happens
+[05:13] <piter0> lo que pasa es que nadie contesta igual
+[05:14] <basil2x> !spanish
+[05:14] <basil2x> !spanish pietr0
+[05:14] <basil2x> Well that was obviously wrong
+[05:15] <basil2x> Hmmm... does the hytac show up in your devices?  quizme
+[05:15] <quizme> basil2x: it doesn't show up in the list of /dev/sd* devices
+[05:16] <jellow> quizme: does it work anywhere else ?
+[05:16] <basil2x> try lsusb
+[05:16] <quizme> jellow i only have one computer
+[05:16] <basil2x> see if it's there
+[05:17] <quizme> basil2x ok
+[05:18] <quizme> basil2x: i did lsusb before and after inserting the hytac card reader and the number of lines of output is the same
+[05:19] <basil2x> does a line say hytac?
+[05:19] <quizme> basil2x: nope, i just checked
+[05:19] <basil2x> and are you sticking the card in the right slot, the right way round?
+[05:19] <basil2x> Hmmm... then it's not seeing the reader at all.
+[05:20] <quizme> i took out the card and reinserted it upside down
+[05:20] <basil2x> pastebin the output of lsusb, if you would.
+[05:20] <quizme> basil2x ok
+[05:20] <tonyyarusso> Phosis: Try this: http://pastebin.com/rSEge98w
+[05:21] <basil2x> And... this is important... paste the link in here. ;)
+[05:21] <quizme> basil2x http://pastebin.com/87n8WMX1
+[05:21] <quizme> :)
+[05:22] <basil2x> It's not there at all.
+[05:22] <basil2x> You might have a dud, or it might be linux-unfriendly.
+[05:23] <basil2x> Not familiar enough with hytac to say which.
+[05:23] <quizme> basil2x: i have a Lexr 633x
+[05:23] <quizme> microsSDD HC I 32GB
+[05:23] <quizme> does that go in the SD or M2 slot of the hytac univrsal sd reader
+[05:24] <Ender_Wiggin> Im having issues seeing my ububuntu 14.04 machine on my Win 8.1 and Win 7 machines It was working fine for a while, then just randmly stopped being able to accesss and now I cant even see it under my netowrk at all. My win7 machine sees it, it will let me access folders, but not files
+[05:24] <basil2x> there should ne a microSD slot
+[05:24] <quizme> which slot is the microSD slot ?
+[05:24] <basil2x> Most multi readres have one
+[05:24] <quizme> SD or M2 ?
+[05:25] <basil2x> Try either.  which one fits it best?
+[05:25] <Ender_Wiggin> Actually, now I cant access it either on my Win7 at all
+[05:26] <quizme> basil2x i think the SD one
+[05:26] <Ender_Wiggin> ahh nvmd think i figured it out
+[05:26] <basil2x> OK, quizme
+[05:26] <quizme> basil2x i'm gonna reboot. thanks for talking it out with me
+[05:26] <quizme> brb
+[05:26] <basil2x> But if it's not linux-friendly, your reader, it won't matter.
+[05:27] <quizme> basil2x oh
+[05:27] <quizme> basil2x so u mean if i inserted the reading device even without the card inserted correctly it should have appeared in lsusb ?
+[05:27] <basil2x> Yup
+[05:27] <quizme> basil2x ok
+[05:28] <quizme> so i wasted $8 i guess
+[05:28] <basil2x> If it was only £6, you got off lucky.
+[05:29] <quizme> basil2x i pressed the plug in further and a red light turned on
+[05:29] <quizme> let me try again
+[05:29] <basil2x> Well, there you go
+[05:30] <quizme> basil2x still not showing up in lusb
+[05:30] <quizme> i'll reboot
+[05:30] <quizme> brb
+=== Dhs92 is now known as Yukitteru
+=== Yukitteru is now known as Yukkii
+[05:31] <basil2x> We'll be here, quiz
+[05:33] <quizme_> basil2x: still a no-go after reboot
+[05:34] <quizme_> it says linux 4.0 compatible
+[05:34] <quizme_> on the box
+[05:34] <basil2x> pastebim both lsusb and lspci, quizme_
+[05:34] <basil2x> pastebin*
+[05:34] <quizme_> basil2x
+[05:36] <basil2x> Or not
+[05:36] <quizme_> http://pastebin.com/Q16eZy9x
+[05:37] <quizme_> basil2x: http://pastebin.com/Av58x2cx
+[05:37] <basil2x> OK... the reader's there.  It's actually a Realtek, no matter who sold it.
+[05:37] <quizme_> basil2x but i think there is a built-in reader
+[05:38] <quizme_> basil2x but it's not microsd
+[05:39] <basil2x> AH
+[05:40] <basil2x> OK... your device isn't listed then
+[05:40] <basil2x> Sec
+[05:41] <pi-alpha> test
+[05:41] <quizme_> basil2x: after removing the usb reader here is my lspci: http://pastebin.com/mKAuPTYT
+[05:41] <pi-alpha> hi, my screen brightness seems to suddenly not be working with k/x/lubuntu, 14.04 15.04. but an old cd with unity ubuntu, screen brightness works.
+[05:41] <quizme_> basil2x: it's the same
+[05:44] <basil2x> I'd say get one from a different manufacturer, quizme_ .  At £6, it's not a big spend.
+[05:44] <quizme_> basil2x yeah thank you for your help
+[05:44] <basil2x> That it doesn't show up at all is rather odd.
+[05:44] <edwardT> on which debian version is ubuntu 15.04 based ?
+[05:46] <edwardT> on which debian version is ubuntu 15.04 based ?
+[05:48] <sugoiryu> hi, how can i install curl 7.42.1
+[05:50] <MichaelHabib> hi, I have a VPS and want to limit each user from seeing ANY files in other user's home folder, whats best way to do that
+[05:50] <MichaelHabib> linke now I can SSH to my VPS as one of the users & see files under /home/OtherUser/www/ from any account
+[05:52] <backbox_> bro...give me some Tekilla
+[05:52] <Tekilla> haha :)
+=== RoBo_V3 is now known as RoBo_V
+[05:53] <backbox_> some Presidente
+[05:53] <wafflejock> MichaelHabib, believe you want something like this http://allanfeid.com/content/creating-chroot-jail-ssh-access
+[05:54] <backbox_> i got kush
+[05:54] <wafflejock> sugoiryu, would either need to get/compile the binary or use a PPA
+[05:54] <lotuspsychje> !ot | backbox_
+[05:54] <ubottu> backbox_: #ubuntu is the Ubuntu support channel, for all Ubuntu-related support questions. Please use #ubuntu-offtopic for other topics (though our !guidelines apply there too). Thanks!
+[05:54] <sugoiryu> wafflejock, hmm ok thanks
+[05:54] <MichaelHabib> wafflejock: thanks , will read that and find a way to make it work on my VPS which has CPanel
+[05:55] <MichaelHabib> wafflejock: Right now its just me using the server, but in case of a problem I dont want anyone to be able to see other accounts files for any reason
+[05:56] <ki7mt> basil2x, this is a rather complex question. Ubuntu imports source packages from Debian, not binary packages, those are built on Launchpad. See this link for details: https://wiki.ubuntu.com/DebianImportFreeze
+[05:57] <wafflejock> MichaelHabib, yeah understandable personally I setup my server so it does continuous integration stuff using Jenkins so when I push changes with git to the server it automatically builds and backs up and deploys sites for users, and I just control access to git itself using GitLab so no one else needs hands on the server
+[05:57] <Phosis> tonyyarusso: thanks!
+[05:57] <wafflejock> MichaelHabib, I've tried setting up vsftpd but not really super successful with that, let me know if this works out or you get stuck can try to help troubleshoot if I'm still around
+[05:58] <leogrey> tryton freeze on ubuntu
+[05:58] <basil2x> ki7mt, why tell me?
+[05:59] <edwardT> can anybody tell me on which debian version is ubuntu 15.04 based ?
+[06:00] <ki7mt> basil2x, That is also a good question .. I have no idea why I told you that .. was supposed to tel edwardT .. my bad
+[06:00] <basil2x> ;)
+[06:00] <edwardT> ?
+[06:01] <ki7mt> edwardT, You asked what version Ubuntu 15.04 is / was based on.
+[06:01] <edwardT> yes
+[06:01] <edwardT> jessie?
+=== Samul|AWAY is now known as Samul`
+[06:01] <ki7mt> edwardT, See my answer above .. all be it to the wrong person \o/
+[06:02] <edwardT> ok thanks
+[06:02] <wafflejock> ah okay finally put that conversation together, that was confusing
+[06:02] <yurikoles> it's based on sid
+[06:02] <yurikoles> and exeprimental
+[06:02] <yurikoles> not testing
+[06:03] <ki7mt> Yes, sid == unstable
+=== daniel is now known as Guest8268
+[06:04] <edwardT> so basically 15.04 is based on sid?
+[06:05] <ki7mt> edwardT, Yes, but bare in mind, it's a snapshot at the Ubuntu import freeze. Sid can be very different from one Ubuntu release to the next.
+[06:05] <edwardT> ok
+[06:06] <ki7mt> edwardT, Debian does not release on a schedule like Ubuntu. It's when the power to be determine when it's time. That could be one year or two or more.
+[06:07] <edwardT> insightful,thanks
+[06:08]  * basil2x starts poking the 'System Problem Detected' popup that shows up at every boot, and doesn't actually do or mean naything.
+[06:09] <Bray90820> How would I auto mount a drive on boot
+[06:11] <zerowaitstate> Bray90820: add it to your /etc/fstab
+[06:11] <backbox_> i was kickout as net1pcCrypto and as ChicagoXXX and I'm back as backbox.....hahaha......give the hackers a break....lol
+[06:12] <Bray90820> zerowaitstate: What should I add to mount /dev/sda
+[06:12] <zerowaitstate> um, is /dev/sda partitioned?
+[06:12] <zerowaitstate> Bray90820: lsblk should tell you what partitions are available
+[06:13] <Bray90820> Yes
+[06:13] <zerowaitstate> you mount a particular partition, i.e., /dev/sda5
+[06:13] <Bray90820> I wanna add dev/sda3/ and dev/sdb/ ro fstab
+[06:13] <hdon_> Bray90820: /dev/sda refers to your disk, but /dev/sda1 for example refers to a particular partition on that disk
+[06:13] <RoBo_V> using rtcwake does it take any power if yes how much approx or negligible
+[06:13] <ki7mt> /dev/sda would be the device, not a partition .. you don't mount devices, you mount partitions on a device.
+[06:13] <Bray90820> dev/sdb1
+[06:14] <hdon_> ki7mt: well, you CAN mount a disk... if the disk begins with a filesystem and not a partition table
+[06:14] <Bray90820> Ahh your right
+[06:14] <zerowaitstate> read the man page for fstab. generally you can use the "defaults" option and it works well enough
+[06:14] <backbox_>  12
+[06:14] <backbox_> down vote
+[06:14] <backbox_> accepted
+[06:14] <backbox_> 	
+[06:14] <backbox_> You can use fdisk to have an idea of what kind of partitions you have, for example:
+[06:14] <backbox_> fdisk -l
+[06:15] <ki7mt> hdon_, true, ok, but is that what he wants
+[06:15] <hdon_> :3
+[06:15] <zerowaitstate> you will have to specify the filesystem type in fstab, but lsblk should tell you that
+[06:16] <zerowaitstate> sorry, i meant blkid
+[06:16] <hdon_> :)
+[06:16] <Bray90820> backbox_: do you mean like the mount point or what
+[06:17] <zerowaitstate> backbox_: don't pay attention to blackbox; he is spamming with scripts or something
+[06:18] <zerowaitstate> Bray90820: fdisk -l or gdisk -l works, depending on whether the device is partitioned using MBR or GPT
+[06:19] <ki7mt> Bray90820,tell us what you have and what your trying to automount, sd card, USB device, second had drive .. it is partitioned with a file system ?
+[06:19] <rahsd> hi
+[06:19] <rahsd> I want to compile somethings. What should i apt-get install to be able to do that
+[06:19] <Bray90820> zerowaitstate: https://gist.github.com/anonymous/11c4df023a1cc068cf57
+[06:19] <Bray90820> It didn't work correctly
+[06:20] <rahsd> what is the meta package for make 4make gcc binutils headers and ...
+[06:20] <ki7mt> rahsd, You have a C compiler installed by default
+[06:20] <zerowaitstate> Bray90820: however, blkid will give you the UUID of the filesystem. This is useful, as you can use that to specify the partition, instead of /dev/sda1 for example. This is useful if the enumeration of the drives change, such as can happen if you move a disk to a different SATA channel
+[06:20] <zerowaitstate> Bray90820: you gotta preface your command with sudo
+[06:21] <yurikoles> build-essnetials
+[06:21] <rahsd> ki7mt: automake linux headers and ...?
+[06:21] <zerowaitstate> Bray90820: you need root permission to see the raw block device
+[06:21] <rahsd> yurikoles: me?
+[06:21] <yurikoles> build-essentials
+[06:21] <yurikoles> yes
+[06:21] <yurikoles> and also apt-get buil-dep <package>
+[06:21] <yurikoles> bu you have to enable deb-srs repos
+[06:22] <rahsd> yurikoles: tnx
+[06:22] <yurikoles> do you know how to enable source repos?
+=== hdon_ is now known as hdon
+[06:22] <yurikoles> in software center there is option for managing source.list
+[06:23] <zerowaitstate> yurikoles: you have to uncomment the proper lines in sources.list
+[06:23] <ki7mt> rahsd, build-essential is primarily for packaging, it even states that in the description . and build-dep would probably require enable source packages in your source lists.
+[06:23] <zerowaitstate> yurikoles: then run apt-get update
+[06:23] <yurikoles> it's not for me
+[06:23] <yurikoles> it's for rahsd
+[06:23] <zerowaitstate> for whoever then
+[06:23] <yurikoles> I'm trying to explain how to do this in gui
+[06:24] <zerowaitstate> i can't be expected to actually read other people's replies when I give advice. it's too distracting
+[06:24] <yurikoles> it's very hard to modify something that requires root privileges in linux gui
+[06:24] <ki7mt> rahsd, what are you trying to compile, that would make it easier to recommend what you need.
+[06:24] <yurikoles> yes, rahsd
+[06:24] <zerowaitstate> yurikoles: well, there's always gksudo, but yeah
+[06:25] <zerowaitstate> yurikoles: usually I alt-F2 in Unity and gksudo a command
+[06:25] <yurikoles> for example one can use kubuntu, hehe
+[06:25] <rahsd> ki7mt: slap text editor
+=== parduse is now known as Guest35778
+[06:25] <zerowaitstate> rahsd: ah, the nodejs thingy?
+[06:25] <wafflejock> zerowaitstate, guake yo :)
+[06:25] <tapout> my headphones won't work, but my speakers do
+[06:26] <tapout> when i plug in my headphones, the speakers mute but no sound comes out the phones
+[06:26] <yurikoles> rahsd: you need to install nodejs
+[06:26] <ki7mt> rahsd, That's .js and json  .. you'd need a JRE package at a minimum
+[06:26] <zerowaitstate> ki7mt: uhhhh
+[06:26] <zerowaitstate> ki7mt: js is javascript, not java
+[06:26] <wafflejock> tapout, check sudo apt-get install alsautils, then alsamixer
+[06:27] <yurikoles> curl -sL https://raw.githubusercontent.com/slap-editor/slap/master/install.sh | sh
+[06:27] <zerowaitstate> ki7mt: nodejs stuff runs on V8 javascript VM
+[06:27] <yurikoles> it's easy
+[06:27] <yurikoles> it install on my mac
+[06:27] <yurikoles> will try on debian box
+[06:28] <ki7mt> zerowaitstate, Ok, and ?
+[06:28] <yurikoles> nope, stretch is not supported
+[06:28] <zerowaitstate> i couldn't get used to slap. the text mode mouse integration was weird
+[06:28] <HMA> who is hacker in here :)
+[06:29] <zerowaitstate> what is a hacker?
+[06:29] <HackerII> used his mac for firewood
+[06:29] <zerowaitstate> they make them out of wood now?
+[06:29] <HackerII> no
+[06:29] <HackerII> steve burned me, so i thought it was fitting
+[06:30] <tapout> wafflejock, how do i get it to auto-sense?  now i got the headphones working, no speakers
+[06:30] <zerowaitstate> it's a testament to the guy that I don't have to ask which Steve you're talking about
+[06:30] <HMA> tell me who is hacker
+[06:31] <jaysodyssey> Hacker unlike bill waste of space gates, steve was a visionary, he may have had his issues but he was a man ahead of his time
+[06:31] <baldrick> Question: 14.04 LTS - Networking: What files is the GUI network config touching
+[06:31] <wafflejock> tapout, not sure exactly what triggers the change between speakers and the jack but alsamixer should let you adjust the levels, is it muting or dropping the levels to 0 when you switch?
+[06:31] <HMA> who is hacker let teach me :)
+[06:31] <jaysodyssey> lordy i remember alsamixer
+[06:31] <jaysodyssey> anyone remember jackedin
+[06:31] <zerowaitstate> HMA: this is a support channel, not DefCon
+[06:32] <HMA> then ?
+[06:32] <tapout> it is, but once it's on headphones, teh sound is stuck to headphones, i can increase the speaker sound and nothing
+[06:32] <yurikoles> !hacker | HMA
+[06:32] <ubottu> HMA: A hacker is a person who delights in having an intimate understanding of the internal workings of a system, computers and computer networks in particular, as defined by Request for Comments (RFC) 1392 - i.e. a good programmer  -- crackers on the other hand break systems, see also !piracy
+[06:32] <jaysodyssey> sounds like my iphone lol
+[06:32] <yurikoles> whe all hackers here
+[06:32] <HMA> so teach me become hacker :)
+[06:33] <dprc> http://www.catb.org/~esr/faqs/hacker-howto.html
+=== Samul` is now known as Samul|AWAY
+[06:33] <yurikoles> first of all /join #archlinux
+[06:33] <wafflejock> tapout, hit m with a volume output selected to toggle mute
+[06:33] <wafflejock> tapout, make sure it's not muted
+[06:33] <yurikoles> ubuntu is a debian spin for housewifes
+[06:34] <yurikoles> real hacker system is arch linux
+[06:34] <tapout> nah it's not muted, but what kicks it back in is to fn+mute, fn+mute
+[06:34] <tapout> at least i know how to get it back
+[06:34] <kunji> yurikoles: That's hilarious
+[06:34] <HMA> ok
+[06:34] <wafflejock> tapout, hmm k yeah would need to check out your audio chipset to search further if you're interested in finding a fix
+[06:35] <varod> hello
+[06:35] <yurikoles> hi
+[06:35] <dprc> must be why arch lead dev's boxen get rooted all the time; all those leet hax
+[06:35] <varod> i am using ubuntu 15.04 and i am wondering about dnsmasq
+[06:35] <Johnny_Linux> el oh el
+[06:35] <wafflejock> tapout, you can use lspci -k, to see a list of your hardware with device ids on the left that you can use to search for any known issues or workarounds
+[06:35] <yurikoles> dprc, tell me more
+[06:35] <Johnny_Linux> arch is broke
+[06:35] <kunji> varod: dnsmasq is cool
+[06:36] <yurikoles> proof?
+[06:36] <varod> why a dns query is faster directly from the server than from dnsmasq
+=== Samul|AWAY is now known as Samul`
+[06:36] <HMA> have no arch linux in irc
+[06:37] <yurikoles> #archlinux
+[06:37] <varod> http://paste.ubuntu-fr-secours.org/src-147018
+[06:37] <tapout> don't bother with arch linux
+[06:37] <Johnny_Linux>  #brokeos
+[06:37] <tapout> it's a pain in the rear unless you like that
+[06:37] <tapout> thanks wafflejock
+[06:37] <tapout> i'm good enough to keep rocking
+[06:37] <dprc> ask archives wayback machine; phrakture rm the thread from bbs (years after the fact)
+[06:38] <kunji> OS war is dumb
+[06:38] <dprc> happened like 3, 4 times IIRC
+[06:38] <kunji> Arch documentation is certainly very nice, I quite often make use of it on Ubuntu
+[06:38] <iamrohit7> can anyone compile gnome shell 3.16 on ubuntu without any hiccups?
+[06:40] <wafflejock> iamrohit7, nope looks like there's still work on it to even be in a PPA https://launchpad.net/~gnome3-team/+archive/ubuntu/gnome3-staging/?field.series_filter=vivid
+[06:41] <wafflejock> iamrohit7, looks like they have it building but says there are still potentially critical problems
+[06:42] <iamrohit7> wafflejock: is there any distro that can without any problems?
+[06:44] <wafflejock> iamrohit7, well I believe like some people were just discussing arch might be an option https://www.archlinux.org/packages/extra/x86_64/gnome-shell/ but you'd probably want to check with their IRC room
+[06:44] <wafflejock> also that assumes you're fine with rolling releases
+[06:45] <dprc> if building from source, rolling is the last thing you want; unless you feel like chasing git anyway
+[06:46] <yurikoles> dprc, that link was not to aur, but for binary package
+[06:46] <tapout> best pdf reader for ubuntu is.. ?
+[06:47] <dprc> they asked about building it
+[06:47] <iamrohit7> wafflejock: i am stuck with some unavailable dependencies on debian 8.
+[06:47] <wafflejock> tapout, depends on what you consider best, for some things I've needed Adobe Reader... forget what exactly
+[06:47] <iamrohit7> tapout: evince, light and to the point
+[06:48] <wafflejock> iamrohit7, ah yeah last one I used was from the PPA I linked above but was 3.14 and still eventually had problems
+[06:48] <ki7mt> tapout, for *Nix in general, these are pretty good ; Evince, Okular, Adobe Reader, FoxIt Reader
+[06:49] <wafflejock> iamrohit7, I am looking forward to the rework of the notifications though... but will probably just wait for now don't want to have to wipe my work machine for it
+[06:49] <iamrohit7> wafflejock, same here
+[06:51] <tapout> thanks
+[06:51] <h4xk3r5> hello
+[06:51] <dprc> tapout: mupdf works
+=== Samul` is now known as Samul|AWAY
+[06:56] <Johnny_Linux> so
+[06:56] <yurikoles> iamrohit7: this channel is for ubuntu, for debian support please join #debian
+[06:56] <yurikoles> so what?
+[06:57] <Johnny_Linux> reboot
+[06:58] <yurikoles> !reboot
+[06:58] <yurikoles> channel is not rebooting
+[06:58] <yurikoles> but wait!
+[06:58] <yurikoles> !sudo reboot
+[06:58] <Johnny_Linux> live by your last statement
+=== Samul|AWAY is now known as Samul`
+=== x2f is now known as x2f[away]
+[07:22] <RoBo_V> guys what is excellent way to schedule shutdown and wakeup up ubuntu pc
+[07:27] <yurikoles> cron?
+[07:27] <yurikoles> but wait
+[07:28] <yurikoles> how do you think it will wake up from shutdown state?
+[07:28] <dprc> you can use wake-on-lan to bring it back up if the bios/uefi + networking equipment support it
+[07:29] <llutz> RoBo_V: acpi-, nvram-wakeup  if your mobo supports it
+[07:34] <RoBo_V> yurikoles: or suspend stae
+[07:35] <RoBo_V> llutz: i try it
+[07:35] <wafflejock> RoBo_V, http://www.landscapelightingworld.com/Mechanical-Timer-low-voltage-transformers-p/7-i-mech-timer.htm?utm_source=google&utm_medium=cpc&utm_campaign=GoogleShopping&gdftrk=gdfV29730_a_7c3426_a_7c10067_a_7c7_d_I_d_mech_d_timer
+[07:35] <wafflejock> :)
+[07:37] <yurikoles> there is a joke about first server of Mail.ru. it says that they have another PC, a Windows-based to reset their server by requring it to eject a cdrom
+[07:37] <RoBo_V> lol wafflejock
+=== thomas_ is now known as Guest92663
+[07:42] <windows7_> who is running #ubuntu on a windows 7 host right now?
+[07:43] <yurikoles> what do you mean, like in virtualbox or so?
+[07:43] <windows7_> exactly
+[07:44] <owen1> (ubuntu 14.04) will 'do-release-upgrade' upgrade me to 14.10 or to 15.04?
+[07:44] <llutz> owen1: 14.10
+[07:44] <yurikoles> owen1, from what version?
+[07:44] <yurikoles> jumps are alovwed for lts only releases
+[07:45] <owen1> yurikoles: i am on 14.04
+[07:45] <yurikoles> ubuntu way is reinstall
+[07:45] <cyberalex4life> it is usually the best way to reinstall
+[07:45] <owen1> yurikoles: so it's better to just reinstall? ok
+[07:46] <yurikoles> I have run one experiment: installed lucid and tried to upgrade it through all releases with no luck
+[07:46] <yurikoles> no
+[07:46] <yurikoles> of course no
+[07:46] <owen1> is it risky to install 15.04?
+[07:46] <yurikoles> do you have a searate /home?
+[07:46] <owen1> no
+[07:46] <owen1> i don't care about the data
+[07:46] <yurikoles> hi, windows7_
+[07:47] <yurikoles> but you should care about settings
+[07:47] <yurikoles> it's very boring to setup all things again
+[07:47] <yurikoles> trust me
+[07:47] <windows7_> hi yurikoles
+[07:47] <owen1> yurikoles: i have all my settings in a git repo
+[07:48] <yurikoles> oh, so you are a haker, doesn't you?
+[07:48] <windows7_> what ;setting; owen1
+[07:49] <windows7_> better than dropbox right now eh eh eh
+[07:50] <yurikoles> you mean git?
+[07:50] <yurikoles> google drive is better, but Insync client is very stupid, need to wait for official one
+[07:51] <Johnny_Linux> sheesh
+[07:51] <Johnny_Linux> google ??
+[07:51] <Johnny_Linux> el oh el
+[07:52] <yurikoles> you don't like google?
+[07:52] <cyberalex4life> yurikoles: to keep your settings from one reinstall to another use a separate home partition that you don't format
+[07:52] <yurikoles> thank you
+[07:52] <windows7_> is it that simple?
+[07:52] <yurikoles> and another one for /etc, yes?
+[07:52] <kunji> yes
+[07:52] <windows7_> what about apps in /etc/
+[07:52] <windows7_> oh
+[07:52] <yurikoles> I was first
+[07:52] <yurikoles> but no
+[07:52] <windows7_> so just those two huh
+[07:52] <yurikoles> it will have conflicts
+[07:53] <kunji> lol, it's as simple as keeping what you want to keep.  I'll put it that way.
+[07:53] <yurikoles> dpkg is alays updating them
+[07:53] <yurikoles> and different distros use different paths, and so on
+[07:53] <windows7_> yeah
+[07:54] <yurikoles> so what is you question, windows7_?
+[07:54] <yurikoles> I can try to run ubunut on OSX if you wish
+[07:54] <kunji> I would prefer git over google drive though, versioning is nice
+[07:54] <owen1> yurikoles: yup. git
+[07:54] <owen1> github
+[07:54] <yurikoles> even atop of winodws 10 TP
+[07:54] <cyberalex4life> yurikoles: Even from a distro to another you can keep program settings. The main settings are in ~/.config/dconf. If you want to reset the settings delete those. If you want to do a partially clean reinstall use the live cd and delete the settings you want to get ridd of
+[07:55] <windows7_> i want to connect two VPSes running on VirtualBox on a windows 7 host laptop with 4g ram
+[07:55] <windows7_> is that dumb?
+[07:55] <yurikoles> of course
+[07:55] <kunji> Not necessarily github, you could put it on another machine or yours someplace over ssh.
+[07:55] <windows7_> one vps webserver, other vps = database
+[07:55] <yurikoles> do you have network set up as bridged?
+[07:55] <windows7_> *ifconfing*
+[07:55] <windows7_> i dont know
+[07:56] <yurikoles> I know about settings, it was not my question
+[07:56] <yurikoles> I mean in virtualbox
+[07:56] <windows7_> no
+[07:56] <windows7_> its running nat
+[07:56] <windows7_> im on the first box now
+[07:56] <windows7_> i havent created the second yet
+[07:57] <yurikoles> so first you need to enable bridging in machine settings
+[07:57] <windows7_> just updating some conf on the first box now
+[07:57] <yurikoles> but shutdown before that
+[07:57] <windows7_> hm ok
+[07:57] <windows7_> brb
+[08:01] <windows7_> so yurikoles
+[08:01] <windows7_> my connection is bridged
+[08:02] <yurikoles> ok
+[08:02] <yurikoles> try to ping it from cmd on win
+[08:04] <windows7_> would it be a subnet like 192.168.0.15?
+[08:04] <SohamG> Please can someone give me the command for installing unity over gnome in 14.04? I found this "sudo apt-get install ubuntu-desktop ubuntu-session unity-control-center unity-settings-daemon xul-ext-webaccounts". Is it correct?
+[08:05] <Ben64> SohamG: just ubuntu-desktop should pull in everything required
+[08:05] <windows7_> SohamG: or have you tried apt-get install unity?
+[08:05] <SohamG> Havent tried anything yet...
+[08:06] <SohamG> And whats the command for getting rid of gnome/gnome shell after installation of unity?
+[08:06] <windows7_> well try what i said first because its quicker
+[08:06] <windows7_> then do what Ben64 said
+[08:06] <windows7_> or just do the thing you think might work
+[08:07] <phix> hmmmm, someone has a nick named windows7_?
+[08:07] <phix> and is in a ubuntu channel?
+[08:07] <windows7_> phix: identified with services and everything
+[08:07]  * phix breaks open the popcorn and takes a seat
+[08:08] <SohamG> Whats the command for removing gnome?
+[08:08] <phix> SohamG: I would like to know the command to get rid of unity, it is a PITA
+[08:09] <windows7_> apt-get remove unity
+[08:09] <windows7_> bam hish
+[08:09] <Ben64> SohamG: thats a harder question
+[08:09] <windows7_> apt-get remove gnome
+[08:09] <Ben64> don't do that ^
+[08:09] <windows7_> lol
+[08:09] <windows7_> do it
+[08:09] <SohamG> gnome or gnome shell?
+[08:09] <phix> haha
+[08:09] <Ben64> unity requires gnome
+[08:09] <windows7_> because unity is a PITA
+[08:10] <phix> I like gnome
+[08:10] <windows7_> and it requires gnome
+[08:10] <windows7_> to do that
+[08:10] <phix> what is the gnome replacement to unity package called again?
+[08:10] <windows7_> because its shit, on top of gnome
+[08:10] <phix> Does unity work under KDE?
+[08:10] <Ben64> windows7_: the language is not necessary here
+[08:10] <windows7_> Ben64: sorry man
+[08:11] <windows7_> its late
+[08:11] <windows7_> i need to hook up these boxes
+[08:11] <cyberalex4life> windows7_: to remove unity you could try sudo apt-get autoremove unity ubuntu-desktop lightdm
+[08:12] <cyberalex4life> but it's not necessary safe. You may end up loosing things you don't want to loose
+[08:13] <windows7_> i dont want to remove anything cyberalex4life
+[08:13] <windows7_> im diggin my 14.04
+[08:13] <windows7_> LTS
+[08:13] <windows7_> uhn
+[08:13] <kilograme> help, how can install X11 on Ubuntu Core?
+[08:14] <Ben64> kilograme: sudo apt-get install xorg
+[08:15] <kilograme> Ben64 Snappy Ubuntu Core doesn't use apt
+[08:15] <Ben64> "Ubuntu Core delivers a functional user-space environment, with full support for installation of additional software from the Ubuntu repositories, through the use of the apt-get command. "
+[08:15] <kilograme> and snappy install xorg doesn't work
+[08:15] <kilograme> snappy ubuntu core
+[08:15] <cyberalex4life> windows7_: As for install gnome-shell (or Ubuntu Gnome): sudo apt-get install ubuntu-gnome-desktop
+[08:15] <windows7_> im not doing that no way
+[08:15] <kilograme> https://developer.ubuntu.com/en/snappy/
+[08:16] <windows7_> thats almost a gig
+[08:16] <lotuspsychje> kilograme: on wich device are you installing snappy?
+[08:17] <kilograme> lotuspsychje x86 qemu
+[08:17] <kilograme> there is no xorg snappy package... but how do i make one? :(
+[08:18] <lotuspsychje> kilograme: maybe ask the #snappy guys about it?
+[08:18] <kilograme> good idea :D
+[08:18] <yurikoles> windows7_, so what do you want?
+[08:19] <yurikoles> let's do this by steps
+[08:19] <windows7_> awesome
+[08:19] <windows7_> i like you yurikoles
+[08:19] <yurikoles> first of all you wanted to connect it through vpn?
+[08:19] <windows7_> we can do this
+[08:19] <windows7_> no
+[08:19] <windows7_> maybe
+[08:19] <windows7_> sure
+[08:21] <yurikoles> what kind of vpn do you want?
+[08:23] <yurikoles> windows7_: there is different types of vpn!
+[08:24] <yurikoles> do you want a windows machines to be also connected to it?
+=== myke_ is now known as unicodegoat
+[08:32] <Fjorgynn> :)
+[08:40] <justgreg> hey all, I'm on Lubuntu 15.10. The Toolbar icon for network connections is no longer showing up, and every time the system suspends I need to reboot to reconnect to ethernet or wifi. I'm on a lenovo g480, and this started about 12 hours ago when I edited the lxsession database. "Network" is selected under LXSession configuration-> Autostart. Help!
+[08:42] <yurikoles_> did you filled a bug reports>
+[08:42] <yurikoles_> ?
+[08:43] <yurikoles_> it's started a week ago, man. there will be mass rebuild for gcc5, it's bad idea to run it now
+[08:43] <justgreg> yurikoles_: are you talk to me?
+[08:44] <yurikoles_> >15.10
+[08:44] <yurikoles_> or it's 14.10?
+[08:46] <justgreg> I thought it was 15.10, but it's 15.04 - vivid
+[08:46] <yurikoles_> not much better
+[08:46] <justgreg> :-/
+[08:46] <yurikoles_> always use lts after .2 point release
+[08:47] <justgreg> I didn't file a report because I wanted to make sure it was a bug and not user error.
+[08:47] <justgreg> and thanks yurikoles_ I'm trying the proprietary drivers first and see what's up.
+[08:48] <yurikoles_> also, don't use networkmanager stuff
+[08:48] <justgreg> what should I use?
+[08:49] <yurikoles_> for ethernet /etc/network/interfaces is enough
+[08:51] <yurikoles_> also, there was a conversation about unstable network yeasterday. so you are not alone
+[08:51] <justgreg> ... in the meantime?
+[08:51] <yurikoles_> but wait, have you tried to launch it  manually? I mean this applet for network?
+[08:52] <justgreg> <- n00b - what would that entail?
+[08:52] <yurikoles_> one guy has to switch to phone throtling because of unstable ethernet connection
+[08:57] <frank1e> hello
+[08:57] <frank1e> any ideas how to install libdb via terminal? always says packet now found or something
+[08:58] <lotuspsychje> !info libdb
+[08:58] <ubottu> Package libdb does not exist in vivid
+[08:58] <lotuspsychje> frank1e: what are you trying to do exactly?
+[08:58] <frank1e> I'm on elementaryOS by the way (which is based on Ubuntu as I heard)
+[08:59] <frank1e> Installing the Bitcoin-qt client lotuspsychje
+[08:59] <llutz> !find libdb
+[08:59] <ubottu> Found: libdb++-dev, libdb-dev, libdb-java-dev, libdb-sql-dev, libdb5.3, libdb5.3++, libdb5.3++-dev, libdb5.3-dbg, libdb5.3-dev, libdb5.3-java (and 147 others) http://packages.ubuntu.com/search?keywords=libdb&searchon=names&suite=vivid&section=all
+[08:59] <llutz> frank1e: you need to specify which version of libdb
+[08:59] <lotuspsychje> frank1e: join #elementary
+[08:59] <frank1e> lotuspsychje, already did, people do not seem to help over there
+[08:59] <SCHAAP137> hi, ubuntu 15.04 MATE here; for some reason, mate-appearance-properties never shuts down properly after being used
+[09:00] <SCHAAP137> it hangs on 100% CPU and i need to killall it manually
+[09:00] <frank1e> llutz, no idea which one I need. Bitcoin-QT installation only pointed out that libdb is needed.
+[09:00] <SCHAAP137> any reason why this could happen?
+[09:01] <frank1e> :/
+[09:02] <lotuspsychje> frank1e: bitcoin-qt doesnt show apt-cache, wich guide are you following
+[09:03] <frank1e> lotuspsychje since installing it, seems complicated I had to follow a guide from a user, who left irc halfway through the procedure. am stuck at the part with libdb which I need to install somehow.
+[09:03] <kevindf> Hello, I'm attempting to setup Bind server and configuring the reverse zones now. I'd like to create a reverse zone for 192.168.50.0, If i'm correct the file name has to be "db.50.168.192" and zone "50.168.192.in-addr.arpa" { right?
+[09:04] <lotuspsychje> frank1e: i reccomend you to install an official ubuntu bitcoin package, check software centre
+[09:05] <frank1e> lotuspsychje, Bitcoin-QT / Bitcoindeamon are not on the software store.
+[09:05] <frank1e> lotuspsychje, which is why I need to install those 2 by hand.
+[09:05] <SCHAAP137> frank1e, http://askubuntu.com/questions/41001/how-do-i-install-bitcoin-in-ubuntu
+[09:05] <lotuspsychje> frank1e: if you install something manually, its best to follow the official site/guide
+[09:05] <SCHAAP137> have you even tried googling?
+[09:05] <SCHAAP137> 1st hit
+[09:06] <frank1e> SCHAAP137, Yes, I have tried and found multiple tutorials which ended with basicly nothing because outdated, not working etc.
+[09:06] <SCHAAP137> frank1e, try: sudo add-apt-repository ppa:bitcoin/bitcoin
+[09:06] <SCHAAP137> then sudo apt-get update
+[09:06] <SCHAAP137> sudo apt-get install bitcoin-qt
+[09:07] <frank1e> SCHAAP137, already done, no result.
+[09:07] <lotuspsychje> kevindf: maybe the #ubuntu-server or ##networking guys can also help you?
+[09:07] <frank1e> have downloaded it manually now. but installing -still- needs libdb
+[09:08] <lotuspsychje> frank1e: as llutz suggested, you need to know wich lib
+[09:08] <frank1e> terminal only says that "libdb" is needed. nothing more.
+=== baldrick is now known as Guest94669
+[09:08] <frank1e> no version or anything.
+[09:08] <frank1e> ----> no idea which version it needs.
+[09:08] <SCHAAP137> you're trying to compile it from source?
+[09:09] <frank1e> no
+[09:09] <kevindf> will ask it there, thanks
+[09:09] <frank1e> just install the package I downloaded SCHAAP137
+[09:09] <mvk> i've installed a newer kernel (v4.02 on vivid 15.04), with dpkg -i ......
+[09:09] <SCHAAP137> frank1e, you could try installing libdb5.3 first, then retry
+[09:09] <mvk> do i have to worry for kernel updates from the official repos?
+[09:09] <frank1e> SCHAAP137, ok wait
+[09:09] <lotuspsychje> !mainline | mvk
+[09:09] <ubottu> mvk: The kernel team supply continuous mainline kernel builds which can be useful for tracking down issues or testing recent changes in the Linux kernel. More information is available at https://wiki.ubuntu.com/Kernel/MainlineBuilds
+[09:10] <llutz> frank1e: you downloaded the .deb from the ppa? use libdb4.8 then
+[09:10] <frank1e> llutz whats the exact command for that pleaser
+[09:10] <llutz> frank1e: "man  apt-get"
+[09:10] <lotuspsychje> EriC^: morning
+[09:10] <EriC^> morning lotuspsychje
+[09:11] <OERIAS> can someone help with me this: http://i.imgur.com/BNv9m9H.png
+[09:11] <mvk> lotuspsychje: i did install a newer mailine kernel yes
+[09:11] <mvk> so does that mean i dont have to worry for updates?
+[09:11] <OERIAS> ^^ Gnome chess looks like gnome app with window controls
+[09:11] <OERIAS> from gnome
+[09:11] <frank1e> llutz letting it install libdb now, brb
+[09:11] <OERIAS> I'd like to know if i can get unity controls on them
+[09:13] <mvk> lotuspsychje: ?
+[09:14] <lotuspsychje> mvk: not sure i dont mess with kernels
+=== darkness is now known as DEdSec
+=== DEdSec is now known as DedSec
+[09:14] <yurikoles_> mainline has no ppa
+[09:15] <yurikoles_> if thre will be exploit, then you know...
+[09:15] <DedSec> Hello People :)
+[09:15] <mvk> yurikoles_: i installed 4.02 from http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.0.2-wily/
+[09:15] <lotuspsychje> DedSec: welcome
+[09:15] <mvk> yurikoles_: when there are updates to the kernel in the official ppa / repos, will this overwrite my 4.02 (i want to keep 4.02...)
+[09:16] <mvk> ?
+[09:16] <DedSec> Thank you
+[09:16] <yurikoles_> it will alway boot the latest one
+[09:16] <mvk> what defines this?
+[09:16] <mvk> isnt that grub?
+[09:17] <yurikoles_> yes, ubuntu's grub script
+[09:17] <frank1e> llutz libdb is now installed. But the installation still fails. Can't even see any errors in the terminal log that make any sense
+[09:17] <mvk> ok, well in case it somehow does install a new kernel and changes my default -> i can always change it back
+[09:17] <mvk> but i trust on you :))) :D
+[09:17] <Ben64> mvk: is there a reason you don't want to use the normal kernel
+[09:18] <yurikoles_> it's better to use xorg-edgers
+[09:18] <mvk> Ben64: rtl8192ee works horrible (especially with the 3.19's)
+[09:18] <frank1e> I install my packages like this: sudo dpkg -i bitcoin-qt_0.10.1-trusty3_amd64.deb  <--- is that right? because it always ends up failing with the installation via terminal
+[09:18] <yurikoles_> it will have new kernel if needed
+[09:18] <yurikoles_> what version of ubuntu is your system based on?
+[09:18] <mvk> got it working ok now, out of the box, without changes (although i needed to add some systemd scripts for suspend/resume)
+[09:19] <lotuspsychje> frank1e: this is just why elementary and ubuntu have seperate channels
+[09:19] <Ben64> ah ok, well whenever a kernel update comes out, you should install a new one anyway
+[09:19] <Ben64> mvk: ^
+[09:19] <lotuspsychje> frank1e: try ubuntu and bitcoin-qt perhaps
+[09:20] <lotuspsychje> mvk: have you tryed updating drivers/firmware for your rtl device?
+[09:20] <mvk> Ben64: i think it will take a while before 4.0 comes to 15.04 ;-)
+[09:20] <mvk> lotuspsychje: yes, yes
+[09:21] <Ben64> mvk: i just mean, if theres an update to 15.04's kernel, that means theres something that got fixed, so you should grab a new 4.0 with that fix
+[09:21] <llutz> frank1e: "dpkg -I bitcoin-qt_0.10.1-trusty3_amd64.deb"    -"uppercase i"    to get a list of dependencies
+[09:21] <mvk> lotuspsychje: realtek provided (what a horrible company btw), a firmware bin in januari, but it still doesnt work well
+[09:21] <yurikoles_> frank1e: ehttp://www.distrogeeks.com/install-bitcoin-qt-ubuntu/
+[09:21] <mvk> NetworkManager is buggy in 15.04 thats a known problem, check launchpad
+[09:22] <mvk> but together with 3.19 and a realtek 8192ee => HORROR
+[09:22] <yurikoles_> mvk: you will need to go to web and download a couple of files, dpkg -i theme
+[09:22] <yurikoles_> it's boring
+[09:22] <yurikoles_> try to find some ppa
+[09:22] <lotuspsychje> mvk: if you want more stable goto LTS perhaps
+[09:22] <wangchaohui> hello world
+[09:23] <yurikoles_> another news about nm in 15.04
+[09:23] <mvk> lotuspsychje: my system is working 100% fine with 4.02 (i have one PCC error on boot, but thats only informational)
+[09:24] <yurikoles_> I had heard 3 times in this channel about networking problems today
+[09:24] <Kartagis> anyone using cairo-dock?
+[09:24] <mvk> so i want to stick to it (thinkpad: t440s)
+[09:24] <Kartagis> yurikoles_: wanna  hear a 4th time?
+[09:24] <lotuspsychje> mvk: as Ben64 said, if kernel gets an update, youll have to update it for security reasons
+[09:25] <lotuspsychje> mvk: but its your choice of course, to use the best working kernel as long as you need
+[09:25] <mvk> yurikoles_: nm is broken > 650 bugs.. https://bugs.launchpad.net/ubuntu/+source/network-manager
+[09:25] <lotuspsychje> Kartagis: ask your question about cairo
+[09:26] <yurikoles_> that's why I use networkd on my arch
+[09:26] <yurikoles_> and used just dhcp before
+[09:27] <Kartagis> lotuspsychje: I just wanted to know if anyone  is getting their icons die and show question marks instead
+[09:27] <tyagi> how to register a channel
+[09:27] <tyagi> or join
+[09:27] <lotuspsychje> Kartagis: did you uninstall packages perhaps?
+[09:27] <lotuspsychje> !register | tyagi
+[09:27] <ubottu> tyagi: Information about registering your nickname: https://help.ubuntu.com/community/InternetRelayChat/Registration - Type « /nick <nickname> » to select your nickname. Registration help available by typing /join #freenode
+[09:27] <MonkeyDust> Kartagis  4th time, 5th time, until someone enters who knows the answer
+[09:28] <Kartagis> tyagi: #freenode
+[09:28] <tyagi> thanks all
+[09:28] <lotuspsychje> Kartagis: have you tryed docky instead, nice and lightweight?
+[09:28] <Kartagis> lotuspsychje: nope, this happens after a while, and gets fixed when I logout/in
+[09:29] <lotuspsychje> !info docky | Kartagis try this :p
+[09:29] <ubottu> Kartagis try this :p: docky (source: docky): Elegant, powerful, clean dock. In component universe, is optional. Version 2.2.0-2 (vivid), package size 591 kB, installed size 3594 kB
+[09:29] <Kartagis> lotuspsychje: nope, let me try
+=== sleepypc is now known as `hypermist`
+[09:33] <ayi> hi
+[09:33] <yurikoles_> hi, ayi
+[09:34] <mvk> .. ok.. playing with powermanagement got me disconnected... > this rtl8192ee breaks when something tries to control its powermanagement
+[09:34] <mvk> i wish i had the oppertunity to say F** YOU to Realtek, like Linus did to Nvidia ;-)
+[09:34] <mvk> OEM's like DELL/HP/Lenovo shouldnt do business with them
+[09:36] <lotuspsychje> mvk: im sure you can get a stable realtek chipset on 14.04 with the right firmware/driver
+[09:37] <mvk> lotuspsychje: no you dont
+[09:37] <mvk> lotuspsychje: you dont have any, and you havent tried to
+[09:37] <lotuspsychje> mvk: the past has proved otherwise in this channel
+[09:39] <mvk> lotuspsychje: it doesnt work / connect during installation
+[09:40] <mvk> and it doesnt work'out of the box' after installation
+[09:41] <mvk> it works with lwfinger github sources (who is this Larry Finger btw..?), but then is instable and breaks when powermanagement is using it > same with 4.0 kernel (but less unstable)
+[09:41] <lotuspsychje> mvk: did you install 14.04 with cable + updates enabled during setup?
+[09:41] <mvk> yes i did
+[09:41] <lotuspsychje> mvk: can you paste wich driver shows at sudo lshw -C network ?
+=== VlanY is now known as VlanX
+[09:43] <mvk> lotuspsychje: http://pastebin.ca/3004300
+[09:46] <lotuspsychje> mvk: shows firmware: NA
+[09:46] <mvk>  dmesg |grep firm [    1.579869] rtl8192ee: Using firmware rtlwifi/rtl8192eefw.bin
+[09:46] <mvk> lotuspsychje: thats a bug then
+[09:47] <lotuspsychje> mvk: did you installed that manually from reatkes site?
+[09:47] <lotuspsychje> realtek
+[09:47] <mvk> lotuspsychje: nopes, its kernel 4.02 default
+[09:49] <lotuspsychje> mvk: i would surely try back on 14.04 and switch drivers until you get it straight
+[09:51] <KingPrawn22> Hi guys. On Ubuntu Gnome 15.04 and having trouble removing the Gnome 'system monitor'. Have uninstalled/purged, but there is still a gap between Caffine and the weather extension where system monitor still exists. Nothing shows up, but it is taking up this space.
+[09:51] <lotuspsychje> mvk: and tail -f /var/log/syslog and tail -f /var/log/dmesg in realtime to see whats happening to your wifi
+[09:54] <mvk> lotuspsychje: thanks for the tips!!
+[09:54] <mvk> .. .lets try something more then.. :)
+[09:54] <mvk> bbl
+[09:55] <lotuspsychje> mvk: good luck!
+[09:55] <mvk> thank you
+[10:00] <lotuspsychje> mvk: might be worth the try to check bios updates for your laptop also
+[10:04] <[FreeLay]> F0RDY (uid82100@charlton.irccloud.com) has Joined #ubuntu
+[10:04] <[FreeLay]> <F0RDY> Irc.foxatomic.net
+[10:04] <[FreeLay]> <F0RDY> Irc.foxatomic.net
+[10:05] <MonkeyDust> [FreeLay]  stop
+[10:05] <[FreeLay]> <F0RDY> Irc.foxatomic.net
+[10:05] <MrElendig> it is a spambot
+[10:05] <MrElendig> telling it to stop does nothing
+[10:05] <[FreeLay]> <F0RDY> Irc.foxatomic.net
+[10:08] <[FreeLay]> <F0RDY> Irc.foxatomic.net
+[10:08] <[FreeLay]> <F0RDY> Irc.foxatomic.net
+[10:09] <lotuspsychje> !ops | [FreeLay]
+[10:09] <ubottu> [FreeLay]: Help! Channel emergency! (ONLY use this trigger in emergencies) - Pici, Myrtti, jrib, Amaranth, tonyyarusso, Nalioth, lamont, CarlK, elky, mneptok, PriceChild, Tm_T, jpds, ikonia, Flannel, genii, wgrant, stdin, h00k, IdleOne, nhandler, Jordan_U, popey, Corey, ocean, cprofitt, djones, Madpilot, gnomefreak, lhavelund, k1l, rww, phunyguy, bazhang
+[10:09] <[FreeLay]> <F0RDY> Irc.foxatomic.net
+[10:09] <[FreeLay]> <F0RDY> Irc.foxatomic.net
+[10:10] <[FreeLay]> <F0RDY> Irc.foxatomic.net
+[10:10] <[FreeLay]> <F0RDY> Irc.foxatomic.net
+[10:10] <[FreeLay]> <F0RDY> Irc.foxatomic.net
+[10:10] <kevindf> I have some scripts in my ~/bin and would like to excecute this just by typing the name without being into the directory, How can I do this?
+[10:11] <MrElendig> update the PATH in .bash_profile or whatever shell you are using
+[10:11] <lotuspsychje> kevindf: maybe you can create a specific terminal that sets your default dir in /bin?
+[10:11]  * MrElendig prefers ".local/bin since it is semi-standard
+[10:12] <MrElendig> PATH="$PATH":whateveryoulike
+[10:13] <MrElendig> set it in .(shell_)profile so that it doesn't get duplicated with every new shell you open
+[10:13] <kevindf> thx
+[10:15] <kevindf> Also I been trying to remove the white dots from the login menu recently, trying removing "draw-grid" in dconf-editor as regular user & as root but that did not work. Using the lightdm user I can't seem to get into the dconf editor
+[10:15] <kevindf> on ubuntu 15.04
+[10:16] <rahsd_> how to install syntax helper and highlight in emacs?
+[10:16] <MrElendig> rahsd_: emacs has a built-in plugin manager now that you can use
+=== rahsd_ is now known as rahsd
+[10:17] <lotuspsychje> rahsd: i think ive used vim-gtk also for syntax highlighting too
+[10:17] <MrElendig> rahsd: http://emacswiki.org/emacs/ELPA
+[10:17] <rahsd> MrElendig: M-x php ==>> doesn't find anything!
+[10:18] <MrElendig> read that page
+[10:18] <MonkeyDust> rahsd  try to find something else, so you know it works
+=== misha is now known as Guest26553
+[10:21] <nics> Hi all.
+[10:22] <nics> With overlayfs, is ist somehow possible to let the lowerdir's files appear to be owned by a different user than they actually are?
+=== misha_ is now known as Guest26840
+[10:29] <kibMaf> Hello guys, I have faced with a little issue in starting oracle DB server on my ubuntu 14.04. the command 'sudo service oracle-xe restart' is showing an error message like 'failed to run net listener'
+[10:29] <kibMaf> Any solution?
+[10:30] <MonkeyDust> kibMaf  is that a server? if yes, there's also #ubuntu-server
+[10:31] <kibMaf> no, it's desktop PC
+[10:34] <kutunluu> Is there a way to install server to a machine without keyboard and monitor ?
+[10:34] <kutunluu> i have physical access, same network etc.
+[10:35] <MonkeyDust> katherine  use ssh from another pc, then use tasksel (task select)
+[10:35] <lexx_> fuck off
+=== lexx_ is now known as COMPUTER-ASS-HOL
+[10:36] <kutunluu> lol
+[10:36] <katherine> uh ..
+[10:37] <robhol> forgot sudo
+[10:37] <LeMike> some command is responsible for giving a ext4 filesystem a label. how am I supposed to find such commands without internet? `man -k disk label` does not bring up `tune2fs` which can do it :/ what is a neat way to search within the manual/help? grepping "/usr/share/man" has no output at all -.-
+[10:38] <MonkeyDust> LeMike  man man
+[10:41] <MonkeyDust> LeMike  if you look for something inside a man page, use a forward slash, like   /somewordhere
+[10:41] <llutz> LeMike: e2label
+[10:42] <kunji> LeMike: if you have gparted installed you can assign a label in that and watch the output.  But I think llutz just gave it to you anyway.
+[10:42] <llutz> LeMike: "man -k label"
+[10:43] <llutz> LeMike:  zgrep -r  ....    /usr/share/man/*      man-pages are mostly gzipped
+[10:47] <MonkeyDust> kutunluu  just noticed, the ssh hint was for you, not for katherine
+[10:48] <kutunluu> MonkeyDust, thanks, i am reading on ubuntu web now :P
+[10:48] <LeMike> thanks MonkeyDust . sorry kunji the thing is that I like to know `man` better - once a week I work without any internet for practice. as llutz said using `zgrep LABEL $(find)` could bring it up when searching in the correct directory (zgrep has no recursion) ;) thanks!
+[10:49] <kunji> LeMike: Ah, sorry, I didn't realize the objective here, and didn't know that anyway, I also learned something ^_^
+[10:56] <longgoodbye> hi there, try to search forums and google but I can't find the solution for this:
+=== andrea is now known as Guest60866
+[10:56] <longgoodbye> sudo: add-apt-repository: command not found
+[10:57] <llutz> !info apt-add-repository
+[10:57] <ubottu> Package apt-add-repository does not exist in vivid
+[10:57] <longgoodbye> It's a openVZ vps. maybe its something missing in the template for the openvz? or how do I fix this?
+[10:57] <llutz> !info python-software-properties
+[10:57] <ubottu> python-software-properties (source: software-properties): manage the repositories that you install software from. In component universe, is optional. Version 0.96.4 (vivid), package size 19 kB, installed size 136 kB
+[10:58] <llutz> longgoodbye: ^^
+[10:58] <longgoodbye> llutz can't install that with apt-get
+[10:58] <longgoodbye> thats one of the most common anwsers on the google-search I did
+[11:04] <llutz> longgoodbye: but that vps is running debian/ubuntu and has universe-repos activated?
+[11:04] <BluesKaj> Hiyas all
+[11:04] <longgoodbye> running ubuntu
+[11:04] <longgoodbye> not sure about repos
+[11:04] <longgoodbye> how do I check it?
+[11:05] <llutz> longgoodbye: check *.list  in /etc/apt/
+[11:05] <longgoodbye> just sources.list
+[11:06] <metallic> Hello, I remember there is a command on the shell that tells the command name of an installed application, does anyone know that command? I have installed a program but I do not know how to call it from the command line.
+[11:07] <llutz> metallic: dpkg -L "packagename" |grep bin
+[11:07] <metallic> yes!! It was that
+[11:07] <metallic> I remember now, thanks!
+[11:11] <longgoodbye> llutz i'm completly lost here. even if I try to add more repos, theadd-apt-repository does not work.
+[11:11] <longgoodbye> its the first time this hapens on me. this is a diferent vps provider so I was thinking on some problem with the template they install or something.
+[11:12] <bekks> longgoodbye: So pastebin your /etc/apt/sources.list please.
+[11:12] <bekks> Along with cat /etc/issue
+[11:13] <longgoodbye> here you go bekks http://paste.ubuntu.com/11184579/
+[11:14] <bekks> longgoodbye: Whats the entire output of "sudo apt-get update; sudo apt-get install python-software-properties"?
+[11:15] <longgoodbye> http://paste.ubuntu.com/11184618/
+[11:15] <longgoodbye> weird, not it says that python-software-properties is already the newest version.
+[11:16] <bekks> longgoodbye: So add-apt-repository is already installed. Whats the exact issue now?
+[11:16] <longgoodbye> but I'm still unable to use the add-apt-repository
+[11:16] <bekks> Why?
+[11:16] <longgoodbye> because: -bash: add-apt-repository: command not found
+[11:17] <longgoodbye> and that problem is the one I've been searching all morning for it.
+[11:17] <longgoodbye> *for thye solution
+[11:17] <longgoodbye> *the
+[11:17] <longgoodbye> damn keyboard :/
+[11:18] <bekks> longgoodbye: Did you try reinstalling that package?
+[11:18] <longgoodbye> the python-software-properties ?
+[11:18] <bekks> longgoodbye: Yes.
+[11:19] <metallic> What does exactly longgoodbye wants? sorry I disconnected to try a thing :)
+[11:19] <metallic> want*
+[11:19] <metallic> being capable of using the "add-apt-repository" command?
+[11:20] <longgoodbye> try that just now. remove, then install. add-apt-repository does not work.
+[11:20] <bekks> "does not work" is misleading. It tells you that the command is not found.
+[11:20] <longgoodbye> metallic yeah
+[11:20] <longgoodbye> -bash: add-apt-repository: command not found
+[11:20] <longgoodbye> does not "just" work as it should :p
+[11:20] <metallic> longgoodbye: have you tried adding repositories  by directly editing the /etc/apt/sourcelist file?
+[11:21] <longgoodbye> nop
+[11:21] <bekks> metallic: http://paste.ubuntu.com/11184579/
+[11:21] <metallic> since the add-apt thing is not working... It would be a nice idea
+[11:21] <longgoodbye> btw, my main goal is to install x2go on this vps
+[11:22] <longgoodbye> thats why I need to use that command
+[11:22] <longgoodbye> but one problem at the time :p I'm sure I can install it by myself... after dealing with this  problem.
+[11:23] <bekks> longgoodbye: So did you reinstall the package now?
+[11:23] <longgoodbye> a few mins ago
+[11:23] <longgoodbye> and its still the same not found error
+[11:24] <bekks> longgoodbye: So run "hash -r" and "which add-apt-repository"
+[11:24] <longgoodbye> run both. still command not found
+[11:25] <metallic> my add-apt-repository is located at /usr/bin/ :/
+[11:25] <longgoodbye> even if I add it on sources.list manualy I dont know how to add the ppa:x2go/stable
+[11:25] <bekks> longgoodbye: Whats the output of /usr/bin/add-apt-repository ?
+[11:25] <bekks> "ls -lha /usr/bin/add-apt-repository"
+[11:26] <longgoodbye> -bash: /usr/bin/add-apt-repository: No such file or directory
+[11:26] <metallic> that is sure weird
+[11:26] <longgoodbye> ls: cannot access /usr/bin/add-apt-repository: No such file or directory
+[11:26] <longgoodbye> yeah... 1 hour weird of hassle. :/
+[11:26] <bekks> And whats the entire output of "sudo apt-get purge python-software-properties; sudo apt-get install python-software-porperties"?
+[11:26] <aquaguy> Hello, I'm running a 14.04 LTS server. The machine can access internet without a problem but I can't access local computers from the server nor access the server from the local network. I don't know what could be wrong and I don't know where to start. interfaces has both the lo and eth0 interfaces. (auto lo; iface lo inet loopback;; auto eth0; iface eth0 inet dhcp) ; are new lines.
+[11:27] <Fjorgynn> port forwarding?
+[11:27] <aquaguy> ping google.com receives the packages. ping 10.0.1.2 for example returns Host unreachable.
+[11:27] <longgoodbye> http://paste.ubuntu.com/11184846/
+[11:27] <Fjorgynn> aquaguy: install nmap
+[11:28] <bekks> longgoodbye: Note your typo.
+[11:28] <Fjorgynn> aquaguy: can you post your ifconfig output?
+[11:28] <aquaguy> sure
+[11:28] <bekks> longgoodbye: Pastebin sudo apt-get install python-software-properties please
+[11:29] <longgoodbye> sorry, didnt pay attention to the command
+[11:29] <longgoodbye> got it
+[11:29] <longgoodbye> http://paste.ubuntu.com/11184880/
+[11:29] <longgoodbye> But I still get -bash: add-apt-repository: command not found
+[11:30]  * longgoodbye furious
+[11:30] <metallic> bekks: http://askubuntu.com/questions/493460/how-to-install-add-apt-repository-using-the-terminal
+[11:30] <longgoodbye> this just dosnt make sense :s
+[11:30] <metallic> maybe longgoodbye should try python3-software-properties
+[11:31] <longgoodbye> oh waittt
+[11:31] <longgoodbye> got it
+[11:31] <longgoodbye> metallic solution worked
+[11:31] <longgoodbye> not the 3
+[11:31] <aquaguy> http://paste.ubuntu.com/11184895/
+[11:31] <longgoodbye> but one of those there
+[11:32] <metallic> longgoodbye: do you mean that you are able to execute "add-apt-repository"?
+[11:32] <Fjorgynn> aquaguy: so you are connected that's good
+[11:32] <bekks> longgoodbye: Install: software-properties-common
+[11:32] <longgoodbye> metallic yes it does
+[11:32] <metallic> nice!
+[11:33] <aquaguy> Fjorgynn: yes, but I can reach local network computers, the ping always returns Host unreachable
+[11:33] <longgoodbye> I allready have that bekks
+[11:33] <bekks> longgoodbye: according to packages.ubuntu.com, python-software-properties and python3-software-properties are the same package.
+[11:33] <longgoodbye> I?m allmost sure I can finish x2go instalation now
+[11:33] <aquaguy> or doesn't output anything at all
+[11:33] <longgoodbye> I fix it using the sudo apt-get install software-properties-common
+[11:33] <longgoodbye> not the python3 one
+[11:34] <longgoodbye> thank you both for your help guys.
+[11:34] <metallic> longgoodbye: remember that "ask Ubuntu" is a good place to look for questions :)
+[11:34] <Fjorgynn> aquaguy: some sort of dhcp problem?
+[11:34] <MonkeyDust> longgoodbye  that was quite entertaining, glad you found it
+[11:36] <longgoodbye> metallic I've been there but I did not find that post at first glance. :)
+[11:36] <longgoodbye> thank you all
+[11:36] <longgoodbye> :)
+[11:36] <metallic> kisses
+[11:37] <Flo_K> hello
+[11:41] <irisk> hello, the icon for connecting to a network is not appearing in the title bar, can anyone help?
+[11:42] <EriC^> irisk: type nm-applet &
+[11:42] <irisk> with the "&" ?
+[11:42] <EriC^> yeah
+[11:42] <EriC^> then type exit
+[11:42] <irisk> yes it has appeared
+[11:43] <EriC^> ok, type exit
+[11:43] <irisk> but do I have to do this everytime?
+[11:43] <irisk> is this bug or sth?
+[11:43] <EriC^> no, it should appear by itself
+[11:43] <irisk> well, when i start my computer it does
+[11:43] <irisk> but after a minute or so, it disappears
+[11:44] <EriC^> that's odd
+[11:44] <irisk> it's probably cos i'm on 15.04
+[11:44] <EriC^> even so that shouldn't happen
+[11:44] <irisk> non LTS <sheepish grin>
+[11:45] <EriC^> check /var/log/syslog for any segfaults or errors when it happens
+[11:45] <irisk> well if it interests you
+[11:45] <irisk> i get a couple of errors
+[11:45] <irisk> when i did nm-applet
+[11:45] <irisk> (nm-applet:14956): Gtk-WARNING **: Theme parsing error: gtk-widgets.css:2:16: Theming engine 'adwaita' not found
+[11:45] <EriC^> type grep -A10 nm-applet /var/log/syslog | nc termbin.com 9999
+[11:46] <irisk> http://termbin.com/9x9e
+[11:47] <EriC^> try dmesg | grep nm-applet | nc termbin.com 9999
+[11:48] <irisk> "Use netcat"
+[11:48] <EriC^> try dmesg | grep nm-applet |& curl -F "sprunge=<-" sprunge.us
+[11:48] <irisk> EriC^: i think it's because i'm using a non-stable theme
+[11:49] <irisk> did you see the link?
+[11:49] <irisk> above?
+[11:49] <EriC^> irisk: yeah those aren't major errors though
+[11:49] <EriC^> and they are from couple minutes ago
+[11:50] <EriC^> try the dmesg command, maybe it has more info
+[11:50] <irisk> try command not found
+[11:50] <EriC^> dmesg | grep nm-applet |& curl -F "sprunge=<-" sprunge.us
+[11:50] <irisk> http://sprunge.us/HhOY
+[11:50] <EriC^> ok
+[11:50] <irisk> empty
+[11:51] <EriC^> ok, next time when it crashes check dmesg or /var/log/syslog
+[11:51] <irisk> will do
+[11:51] <irisk> that last command ?
+[11:51] <EriC^> or you could try running it from a terminal and keeping it open so it might say why it crashed
+[11:51] <irisk> dmesg | grep nm-applet |& curl -F "sprunge=<-" sprunge.u ?
+[11:52] <EriC^> irisk: just type dmesg alone and take a look at it
+[11:52] <irisk> ok thanks
+[11:53] <EriC^> irisk: or type less /var/log/syslog to view the syslog
+[11:53] <EriC^> less /var/log/syslog
+[11:53] <irisk> coolio
+[11:54] <irisk> and by the way, is there no way to connect to a network without using that applet?
+[11:54] <irisk> i hunted around but i couldn't find a "connect to this network" anywhere
+[11:55] <EriC^> settings > network
+=== Elimin8r is now known as Elimin8er
+[11:55] <irisk> hmm okay
+[11:56] <EriC^> nm-connection-editor too
+[11:56] <fxmulder> so I have ubuntu desktop running in a virtual machine and when I pull up the vm console the desktop takes up about 80% of the width and then starts repeating, why would it do that?
+[11:56] <EriC^> to add stuff
+[11:56] <irisk> yes, i found that - but in the end i had to turn on autoconnect
+[11:57] <EriC^> irisk: there's nmcli but it's dreadful
+[11:58] <EriC^> i guess once you know how to use it it's better, i've never really gave it much interest
+[11:58] <EriC^> *given
+[11:59] <irisk> okay :D
+[11:59] <sennn> damn it i just love ubuntu......
+[12:00] <ubuntu> hi
+=== ubuntu is now known as Guest65699
+[12:01] <Guest65699> hi
+[12:02] <ioria> someone added  in   /etc/xdg/autostart/nm-applet.desktop  'dbus-launch nm-applet'  in Exec line
+[12:03] <irisk> ioria: was that for me?
+=== ColtonDRG-Core is now known as ColtonDRG
+[12:04] <rainbowwarrior> hello , can someone please help me ? I am running Ubuntu 15.04 and kde desktop and when I connect to my vpn websites do not load although I am connected to my network (wireless) and my vpn, how do i fix it so once connected it loads websites please ?
+[12:04] <ioria> irisk you can try : http://askubuntu.com/questions/507310/network-manager-icon-disappeared-14-04
+[12:05] <BluesKaj> rainbowwarrior, does vpn server have a script that you run to install the config file etc?
+[12:06] <rainbowwarrior> BluesKaj no
+=== EriC^ is now known as EriC^^
+[12:06] <BluesKaj> rainbowwarrior, which vpn protocol ?
+[12:07] <rainbowwarrior> BluesKaj OpenVPN
+[12:07] <maddawg2> pasta
+[12:07] <maddawg2> oops
+[12:07] <maddawg2> wrong tab
+[12:07] <maddawg2> lol
+[12:07]  * rainbowwarrior eats the pasta thank you :)
+[12:08] <MonkeyDust> !pastabin.com
+[12:08] <BluesKaj> rainbowwarrior, did you install network-manager-openvpn?
+[12:09] <rainbowwarrior> BluesKaj let me look
+[12:10] <rainbowwarrior> BluesKaj :- yes
+[12:11] <mac11> Hi
+[12:13] <BluesKaj> rainbowwarrior, is the vpnserver/provider for home use or a production machine?
+[12:13] <dengxinjun> helloworld
+[12:14] <dengxinjun> I writing code
+[12:14] <MonkeyDust> dengxinjun  nice, but not here
+[12:14] <rainbowwarrior> BluesKaj , home use (its with private internet access )
+[12:15] <BluesKaj> rainbowwarrior, PIA ?
+[12:16] <rainbowwarrior> BluesKaj , yes
+[12:16] <rainbowwarrior> BluesKaj , PIA are my vpn provider
+[12:17] <BluesKaj> rainbowwarrior, if it is you have to follow this: https://www.privateinternetaccess.com/pages/client-support/#ubuntu_openvpn_installer
+[12:18] <dengxinjun> you in ...
+[12:18] <rainbowwarrior> BluesKaj ok thank you I will try that
+[12:19] <BluesKaj> rainbowwarrior, I use the PIA as well, so if you have any problems I can help
+[12:21] <iamrohit7> my isp uses an authentication mechanism, a java servlet and i am required to login everytime i want to connect to the internet using a web browser how do i automate this when i turn on the computer?
+[12:23] <Avihay_work__> iamrohit7: there's a project called phantomJS. it runs a headless webkit based browser. I don't know if it supports java-plugins, but if it does, you could set keyboard focus on the applet, and inject the key sequence needed to login
+[12:23] <Avihay_work__> also, click events
+[12:24] <rainbowwarrior> BluesKaj done that still having problems it not loading any websites
+[12:26] <BluesKaj> rainbowwarrior, did it ask for your username and pw when trying to connect?
+[12:26] <rainbowwarrior> BluesKaj yes
+[12:27] <BluesKaj> and it shows you are connected via vpn in network manager ?
+[12:27] <rainbowwarrior> BluesKaj , yes
+[12:29] <iamrohit7> Avihay_work__, i was hoping if there was a way to do it with bash or alike
+[12:29] <Avihay_work__> iamrohit7: well, theoretically, you only need to send a specific packet
+[12:29] <rainbowwarrior> BluesKaj I can connect to the vpn fine and it says connected and get the icon to show its connected to the vpn, but for some reason it is not loading websites
+[12:30] <Avihay_work__> or a set of packets
+[12:32] <iamrohit7> Avihay_work__, okay...
+[12:32] <Avihay_work__> iamrohit7:  mocking around with wireshark (packet-capture) and netcat  wouldn't be much fun, but it's doable, I guess, I mean your ISP probably doesn't bother with encryption...
+[12:35] <BluesKaj> rainbowwarrior, ok run this in the console, sudo netstat -tapen, look for "open vpn" and further down " 5096/nm-openvpn-ser " or some such
+[12:37] <rainbowwarrior> BluesKaj nothing like that, remember i can't be on chat etc with the vpn all I can do is connect
+[12:38] <idiermarley> alguno habla en español?
+[12:38] <llutz> !es | idiermarley
+[12:39] <ubottu> idiermarley: En la mayoría de los canales de Ubuntu, se habla sólo en inglés. Si busca ayuda en español entre al canal #ubuntu-es; escriba " /join #ubuntu-es " (sin comillas) y presione intro.
+[12:39] <iamrohit7> Avihay_work__: do you know what this mechanism is called?
+[12:39] <Avihay_work__> I beg your pardon?
+[12:40] <Avihay_work__> a captive gateway?
+[12:40] <iamrohit7> Avihay_work__: thanks
+[12:41] <BluesKaj> rainbowwarrior, do you have some iptables rules setup or a firewall ?
+[12:41] <rainbowwarrior> BluesKaj no
+[12:45] <Knight80> Hello everyone
+[12:45] <SCHAAP137> greetings
+[12:45] <Knight80> Do any of you use mythtv?
+[12:45] <SCHAAP137> not me
+[12:46] <Knight80> Do you know how to properly configure lirc?
+[12:46] <lotuspsychje> !mythtv | Knight80
+[12:46] <ubottu> Knight80: mythtv is a TV framework for Linux - Instructions for using with Ubuntu at https://help.ubuntu.com/community/MythTV - For discussion and specific support, try #ubuntu-mythtv
+[12:48] <dengxinjun> you man?
+=== esc_type is now known as jews
+[12:48] <QuantumVacuum> I'm a man
+[12:49] <dengxinjun> oh
+[12:49] <BluesKaj> rainbowwarrior, ok run this, sudo service network-manager restart
+[12:51] <dengxinjun> i from china
+[12:51] <dengxinjun> I man is china of?
+[12:51] <jatt> maybe
+[12:51] <Johnny_Linux> must be kids day
+[12:51] <BluesKaj> !cn | dengxinjun
+[12:51] <ubottu> dengxinjun: 如欲獲得中文的協助，請輸入 /join #ubuntu-cn 或 /join #ubuntu-tw
+=== andrea is now known as Guest33966
+[12:58] <rainbowwarrior2> BluesKaj , Still having problems even tried using the dns i.p's :(
+[13:00] <BluesKaj> rainbowwarrior2, have you tried different servers in the PIA list in network manager  /
+[13:01] <rainbowwarrior2> BluesKaj yes and still no luck :(
+[13:02] <BluesKaj> rainbowwarrior2, that's strange , I'm connected to the mexico server atm
+=== Ricardus_ is now known as Ricardus
+[13:12] <wakatana> helo
+[13:12] <freefen0517> hello, i think i need help with iptables-filtering/forwarding
+[13:13] <wakatana> what is the default /etc/apt/sources.list for 13.04 ?
+[13:13] <wakatana> I have downloaded preconfigured virtual machine image with this distro but I am not able to do update
+[13:13] <wakatana> or install anything
+[13:14] <lotuspsychje> wakatana: 13.04 is eol
+[13:14] <llutz> wakatana: you'll need to update http://fridge.ubuntu.com/2014/01/28/ubuntu-13-04-raring-ringtail-end-of-life-reached-on-january-27-2014/
+[13:14] <llutz> !eol | wakatana
+[13:14] <ubottu> wakatana: End-Of-Life is the time when security updates and support for an Ubuntu release stop, see https://wiki.ubuntu.com/Releases for more information. Looking to upgrade from an EOL release? See https://help.ubuntu.com/community/EOLUpgrades
+[13:14] <lotuspsychje> !iptables | freefen0517
+[13:14] <ubottu> freefen0517: Ubuntu, like any other Linux distribution, has built-in firewall capabilities. The firewall is managed using the 'ufw' command - see https://help.ubuntu.com/community/UFW | GUI frontends such as gufw and ufw-kde also exist. | An alternative to ufw is the 'iptables' command - See https://help.ubuntu.com/community/IptablesHowTo
+[13:16] <wakatana> llutz: I know it is old distro but bascially I need isntall openssh-server and maybe x11vnc server
+[13:16] <wakatana> no mater that are old packages
+[13:16] <MonkeyDust> wakatana  here are more preconfigured virtual boxes http://www.vagrantbox.es/
+[13:16] <wakatana> security does not matter becaue it is only virtual machine and I wont be connected to internet
+[13:16] <wakatana> MonkeyDust: I know but this one is specific with one software that I need
+[13:16] <wakatana> nupic
+[13:17] <MonkeyDust> wakatana  13.04 is dead, as in: not breathing anymore
+[13:17] <wakatana> I just want to install ssh server (even old) to old distro nothing more
+[13:17] <freefen0517> lotuspsychje, thanks, but i know what iptables is and does
+[13:17] <lotuspsychje> freefen0517: then ask your specific issue in channel please
+[13:18] <MonkeyDust> wakatana  supported ubuntu releases have ssh too
+[13:18] <freefen0517>  running 14.04 as host with bridge. qemu-vm running. vm gets ip from dhcpd from outside the host - so network works more or less. ping/ssh from host to vm works - and back... just not to the outside
+[13:19] <freefen0517> how could i debug, whats going wrong?
+[13:19] <llutz> freefen0517: enabled ipforwarding on host?
+[13:19] <wakatana> MonkeyDust: I do not want to install new release
+[13:19] <wakatana> I am aware of all it constraints etc.
+[13:19] <MonkeyDust> wakatana  than you cannot ask help here
+[13:20] <MonkeyDust> then*
+[13:20] <wakatana> this old I am using becauese it is only preconfigured distro from the application mainainer
+[13:20] <freefen0517> llutz, this? echo “1” > /proc/sys/net/ipv4/ip_forward
+[13:20] <MrElendig> build your own packages
+[13:20] <freefen0517> yes, i tried
+[13:20] <MrElendig> or get a better host
+[13:20] <wakatana> the only thing that I want to access it remote by ssh nothing more nothing less
+[13:20] <reddiz> hey ehm, how can I register my account?
+[13:20] <lotuspsychje> !register | reddiz
+[13:20] <ubottu> reddiz: Information about registering your nickname: https://help.ubuntu.com/community/InternetRelayChat/Registration - Type « /nick <nickname> » to select your nickname. Registration help available by typing /join #freenode
+[13:21] <reddiz> thanks :)
+[13:21] <MonkeyDust> wakatana  ok, use ssh, but don't try to update, because the software source is no longer available
+[13:21] <llutz> freefen0517: and a "cat /proc/sys/net/ipv4/ip_forward" returns 1?
+[13:22] <dale__> ey
+[13:26] <Fjorgynn> ubuntu server is interesting
+[13:28] <freefen0517> llutz, yes its 1
+[13:29] <Fjorgynn> so the best way to install a minimum Ubuntu system is ubuntu server installation?
+[13:29] <llutz> !mini | Fjorgynn
+[13:29] <ubottu> Fjorgynn: The Minimal CD image is very small in size, and it downloads most packages from the Internet during installation, allowing you to select only those you want.  The installer is text based (rather than graphical as used on the Desktop DVD). See https://help.ubuntu.com/community/Installation/MinimalCD
+[13:30] <Fjorgynn> I din't know that ubuntu still had minimal netinstaller
+[13:30] <wakatana> MonkeyDust: This is what I was looking for :) sudo sed -i -e 's/archive.ubuntu.com\|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
+[13:31] <rainbowwarrior> BluesKaj , I have same problem with the Unity desktop as well, I can connect to the vpn but again can not do anything like visit websites, chat etc
+[13:32] <MrElendig> check your routing
+[13:32] <freefen0517> MrElendig, i?
+[13:32] <MrElendig> asuming you are getting timeouts and not invalid url errors
+[13:33] <BluesKaj> rainbowwarrior, do have the skybroadband shield set up on your internet service?
+[13:33] <MrElendig> freefen0517: yes
+[13:33] <rainbowwarrior> BluesKaj , not that I know of
+[13:34] <MrElendig> s/url/resolve/
+=== QuantumVacuum is now known as QuantumVacuum-AF
+[13:34] <freefen0517> MrElendig, the routing from vm to host is fine... ping/ssh works in both directions. same for the host itself
+[13:35] <BluesKaj> rainbowwarrior, i think you had better check it out. It might be in effect by default so you may need to call them to invoke the "negative option" so to speak
+[13:35] <freefen0517> MrElendig, just not from vm to outside and back
+[13:35] <Fjorgynn> llutz: thank you
+[13:36] <freefen0517> but the vm gets its ip from the dhcpd from outside fine
+[13:36] <wakatana> Can I somehow tune Unity to run faster I am saving every piece of memory because it is running on older laptom under virtual machine
+[13:37] <rainbowwarrior> BluesKaj , Ok will do ty, but I managed to use it on linux mint 17.1 (rebecca) and could visit websites etc, but i did have a problem of it dropping on now and then, so I think you are right
+[13:37] <rainbowwarrior> out* not no
+[13:37] <rainbowwarrior> not on*
+[13:37] <longgoodbye> I've installed x2go with Mate desktop and everything works fine... exept google chrome. it installs but dosnt load when I try to open. I try to do some search and found out that this might be a problem with monitors, but all the solutions are not working. any hints on this?
+[13:38] <BluesKaj> rainbowwarrior, it's the only thing that i can think of that may be a problem
+[13:38] <rainbowwarrior> BluesKaj, ok thank you
+=== rafaelsoaresbr_ is now known as rafaelsoaresbr
+[13:42] <kunji> longgoodbye: I have a solution, use Firefox :P, ... but sorry, no, I don't know how to make chrome work, it's usually just worked for me, but I'm not using Mate
+[13:43] <hamza_> wsh
+[13:45] <longgoodbye> kudu thats what I'm using... but, offtopic, firefox sucks in some ways :p
+[13:45] <Ubuntivity> Hello
+[13:45] <Ubuntivity> Is it possible to convert GTK2 theme into GTK3 theme?
+[13:46] <teward> longgoodbye: run `google-chrome` from the command line and see if it works?
+[13:46] <teward> and make a note of any errors/debugdata that shows
+[13:48] <longgoodbye> teward I ran google-chrome-stable as I dont have the chromiun
+[13:48] <longgoodbye> the error is: Failed to move to new namespace: PID namespaces supported, Network namespace supported, but failed: errno = Operation not permitted
+[13:49] <Ubuntivity> A lazy admin would just fix that with a 'sudo' :P longgoodbye
+[13:49] <teward> longgoodbye: FYI i didn't say chromium, i said chrome :P
+[13:49] <teward> longgoodbye: a lazy admin would fix that with a 'sudo' but that'd run as root and for security reasons I can't suggest that
+[13:50] <ubuntuser13> why Text file created in ubuntu/Linux not appeared correctly in Window's Corel Draw?
+[13:50] <Ubuntivity> teward: that's why we shouldn't be lazy :}
+[13:50] <longgoodbye> teward lol I see. so the question is: I ***DID*** install chrome and other apps as root. then I obvious just login as a normal user. I can't install it as the user as I dont have permitions. so what's the catch? :p
+[13:50] <teward> Ubuntivity: true
+[13:51] <kader> hi
+[13:51] <Ubuntivity> Hello kader
+[13:51] <teward> longgoodbye: you can only install software as superuser.  you can't make Chrome work if it's saying operation not permitted.  i'm not a chrome expert but you could consider googling the specific error you have to try and see if anyone else has seen the problem.
+=== QuantumVacuum-AF is now known as QuantumVacuum
+[13:51] <teward> ubuntuser13: clarify "not appeared correctly" and explain what that means
+[13:52] <Ubuntivity> about GTK3... ? :]
+[13:52] <MrElendig> longgoodbye: never install anything by hand as root
+[13:52] <teward> longgoodbye: how did you install it, the .deb from google chrome's site via dpkg?
+[13:53] <kader> I'm using backbox so I have issues to install the driver og my graphic card, can someone help me please?
+[13:53] <MrElendig> what card?
+[13:54] <freefen0517> oh... on the host iptables --list show all on accept... should i have forward-rules for the bridge to get the qemu-vm have net? from tap0 to eth0 and back?
+[13:54] <MonkeyDust> kader  backbox is not supported here
+[13:54] <ubuntuser13> teward: means when i copy the content from text to windows corel Draw Using UTF-8 and My native language Fonts. text is not appeared correctly formatted . for example :  ਪਾਣੀ  means Water in Punjabi. it shows  ਪਾੀਣ ।
+[13:55] <kader> Ok thanks
+[13:56] <longgoodbye> MrElendig it was not by hand
+[13:56] <longgoodbye> it was using apt-get
+[13:56] <longgoodbye> but as root, obviously (root == sudo)
+[13:56] <MrElendig> good
+[13:58] <teward> ubuntuser13: I don't think that's an Ubuntu problem, since the issue is how Windows interprets the text.
+[13:58] <longgoodbye> I got this...
+[13:58] <teward> ubuntuser13: you may want ot start by talking with corel support.
+[13:58] <longgoodbye> its because its an openvz container
+[13:58] <longgoodbye> https://github.com/travis-ci/travis-ci/issues/938
+[13:58] <jiri_> a
+[13:58] <jiri_> hi all
+[13:58] <jiri_> any one from Microsoft?
+[13:58] <teward> jiri_: this is not a Microsoft channel, it's an Ubuntu Linux channel, try ##windows.
+[13:59] <teward> (althoug Microsoft has no IRC support)
+[13:59] <jiri_> ok
+[13:59] <jiri_> where can i buy new windows?
+[13:59] <ubuntuser13> teward: ok Thanks.
+[13:59] <longgoodbye> lol, buy new windows?
+[13:59] <jiri_> yes
+[13:59] <longgoodbye> I can offer you my old ones
+[13:59] <longgoodbye> windows 98 se
+[13:59] <longgoodbye> I have it on cd
+[13:59] <jiri_> XP20015
+[14:00] <longgoodbye> you need to search the web. this is a linux channel as someone explained earlier
+[14:00] <jiri_> only XP 2015
+[14:00] <MonkeyDust> jiri_  type /j ##windows and ask there  (that's double #)
+[14:00] <jiri_> www.buy-windows?
+[14:01] <MonkeyDust> jiri_  stop
+[14:01] <jiri_> or smart windows? please help my
+[14:01] <MonkeyDust> jiri_  you know what to do, now stop
+[14:02] <jiri_> www.usa.com?
+[14:02] <teward> jiri_: that's offtopic here.
+[14:03] <jiri_> any one from georgia?
+[14:03] <MrElendig> jiri_: no, there are no people in georgia
+[14:03] <MrElendig> only sheeps
+[14:04] <jiri_> any Bill Gates here?
+=== andrex is now known as andrex|off
+[14:04] <jiri_> how can buy new windows?
+[14:05] <BluesKaj> !windows | jiri_
+[14:05] <ubottu> jiri_: For discussion on Microsoft software, or help with same, please visit ##windows. See http://launchpad.net/distros/ubuntu/+bug/1 http://linux.oneandoneis2.org/LNW.htm and /msg ubottu equivalents
+[14:06] <jiri_> and windows?
+[14:06] <freefen0517> llutz, MrElendig may you please help me to debug the routing step by step?
+=== Guest33966 is now known as VLanX
+[14:07] <BluesKaj> jiri_, join the ##windows chatroom, this is ubuntu linux support\
+[14:09] <MonkeyDust> jiri_  wants attention, not help
+[14:09] <longgoodbye> teward and MrElendig  and everyone who asks in the future
+[14:09] <longgoodbye> I fix it
+[14:09] <longgoodbye> you just need to run chrome with -no-sandbox
+[14:09] <longgoodbye> as there is a known bug with openvz
+[14:09] <MrElendig> ping 8.8.8.8
+[14:09] <longgoodbye> its less secure? yeah. but it runs. without the sandbox, it does not run. period.
+[14:10] <wakatana> it is possible to make dist upgrade from Ubuntu 13.04 to latest Ubuntu?
+[14:10] <ablest1980> hello
+[14:10] <ablest1980> how do i set ubuntu software to default settings?
+[14:10] <MonkeyDust> wakatana  https://help.ubuntu.com/community/EOLUpgrades
+[14:10] <teward> wakatana: not directly.  you need to update to 13.10 and then to 14.04.  http://askubuntu.com/questions/91815/how-to-install-software-or-upgrade-from-an-old-unsupported-release may help you get started.
+[14:11] <teward> wakatana: also the link MonkeyDust gave you.  Consider a fresh install, though, after backing up critical data you don't want to lose.
+[14:11] <wakatana> ok thank you
+[14:12] <wakatana> just one question I want to ask I have read about debootstrap chroot, I do not know if I understand it well but is it capable to istall e.g. debian or another ubuntu version under debootstrap chroot and use it ? or what is it purpose?
+[14:14] <ablest1980> how do i set ubuntu software update to default settings?
+=== andrea is now known as Guest61500
+[14:15] <ablest1980> how do i set ubuntu software updater to default settings?
+[14:18] <Ubuntivity> Is there a way to display GTK2 themes in Ubuntu 12.04?
+=== parduse is now known as Guest58874
+[14:21] <arymj> hi
+[14:24] <kyle123> Hey has anyone got liquidsoap working with libav for stremaing to twitch/livestream?
+[14:25]  * Ubuntivity prefers soap bars
+[14:26] <MonkeyDust> !info liquidsoap
+[14:26] <ubottu> liquidsoap (source: liquidsoap): audio streaming language. In component universe, is optional. Version 1.1.1-7ubuntu1 (vivid), package size 1476 kB, installed size 6010 kB
+[14:27] <A1F4> hello
+[14:27] <MonkeyDust> kyle123  #ubuntustudio is multimedia dedicated, better ask there
+[14:27] <kyle123> thanks @MonkeyDust
+[14:29] <A1F4> can you help me to find truly secure ,hardend version of ubuntu desktop.
+=== zz_nakaori is now known as nakaori
+[14:31] <A1F4> \list
+[14:32] <jnm> Hello, I was just wondering how many GBs it is normal for the file system to take. What infos are stored here? My machine is still calculating and it is already at 73... is this just because too much software is in installed? Any insights would be welcome.
+[14:32] <Hounddog> hey guys, what is the best way to find what is using up all the space on a server?
+[14:32] <Ubuntivity> !info soap
+[14:32] <ubottu> Package soap does not exist in vivid
+[14:32] <Hounddog> i have a webserver running on ubuntu and the releases only using 300 mb and 14gb is used. need to check if there is nothing fishy going on there
+[14:33] <EriC^^> jnm: ubuntu is around 7gb, any added gb's are from installed packages or stuff in the home dir
+[14:34] <jnm> EriC^^: Okay - home drive was only under 15, so I guess I have installed quite a few packages !
+[14:34] <EriC^^> jnm: hmm, packages don't take up that much space i think
+[14:35] <jnm> EriC^^: That's kind of what I though too...
+[14:35] <EriC^^> jnm: type df -h
+[14:35] <MonkeyDust> A1F4  http://hardenubuntu.com/
+[14:36] <EriC^^> jnm: also sudo du -sh /*
+[14:37] <EriC^^> jnm: paste in paste.ubuntu.com
+[14:37] <jnm> EriC^^: Oh... I was wrong home drive is at over 60. I'll have to see what is there!
+[14:37] <EriC^^> oh ok
+[14:37] <mohit> network-manager not working!
+[14:37] <mohit> using ubuntu mate
+[14:38] <teward> mohit: 'not working' is vague, be more specific about what's not working
+[14:39] <mohit> its not displayed in taskbar nor any 3g dongle is displayed
+[14:39] <mohit> *its pplet
+[14:39] <mohit> *applet
+[14:39] <A1F4> MonkeyDust its for server. if only diffrence between server and desktop is GUI than its works.
+[14:39] <A1F4> am i right ?
+[14:40] <A1F4> thank you MonkeyDust.
+[14:41] <mohit> in ubuntu 14.10 when i plugin same 3g dongle it detects and connects easily
+[14:41] <jnm> EriC^^: Hmmm. So the total of the 'normal' folders (eg: Videos) is about 15, while if I include the '.folders' (eg: .xournal) it jumps to 60. Are the '.files' just settings? Am I missing something? I want to delete any unecessary files to switch to a new OS (lubuntu) but I don't quite know where to find all these heavy mystery .files.
+[14:42] <EriC^^> it's the trash dir
+[14:43] <EriC^^> ~/.local/share/Trash/files
+[14:43] <EriC^^> mayb
+[14:44] <jnm> EriC^^: You're right! What! 45gB in this file? Are these just things I deleted? Why are they there? Can I just empty it? So 'permantly deleting' is not really permanent?
+[14:45] <mohit> iam not getting ubuntu mate network applet in taskbar any help?
+[14:45] <jnm> EriC^^: Oh wait - do these all disappear when I 'empty' the 'trash'?
+=== nakaori is now known as zz_nakaori
+[14:46] <EriC^^> jnm: yes
+[14:48] <EriC^^> jnm: you can click on the trash at the bottom of the launcher to view them
+[14:50] <jnm> EriC^^: Thanks. Space has been reacquired!
+[14:50] <EriC^^> jnm: great :D
+[14:50] <mohit> caja icons are weird like default mate
+=== jews is now known as esc_type
+[14:58] <camsn0w> hai
+[14:58] <camsn0w> Does anyone know how to get all the cool command line tools for awesome wm
+[14:58] <MrElendig> #awesomewm on oftc
+[14:58] <MrElendig> or #asesome or whatever their channel is named
+[14:59] <camsn0w> Alright thanks mang
+[14:59] <ablest1980> hello
+[15:00] <ablest1980> how do i set default settings in ubuntu software updater?
+[15:00] <Jabo> having trouble getting any kind of remote desktop working in 15.04
+[15:01] <Jabo> tightvnc, x11rdp-o-matic
+[15:02] <ablest1980> jabo do you know how revert default setting in software updater?
+[15:03] <mohit> how can i reset desktop setting for taskbar etc
+[15:04] <Jabo> ablest1980, you probably have to do it manually
+=== Betaboy is now known as binouzours
+[15:05] <Jabo> e.g. under 'Ubuntu Software' everything should be ticked
+[15:05] <circ-user-UUQh3> yeah
+=== binouzours is now known as BiNouZours
+[15:05] <Jabo> under 'Other Software' you should only have Canonical Partners
+[15:05] <ablest1980> ok
+[15:06] <Jabo> under 'Updates' tick everything but the pre-released option
+[15:06] <Jabo> then set: Daily, Display Immediately, Display Weekly, For Any New Version
+[15:06] <Jabo> in that order
+[15:06] <Jabo> under 'Authentication' there's a restore defaults button so tick that
+=== ToAruShiroiNeko_ is now known as ToAruShiroiNeko
+[15:07] <Jabo> then under 'Additional Drivers' the default might be 'do not use' for everything
+[15:07]  * Jabo thumbs up
+[15:08] <ablest1980> source should be - ?
+[15:08] <ablest1980> - source code
+=== ToAruShiroiNeko is now known as ToAruShiroiNeko_
+[15:08] <Jabo> downloaded from the server in your country
+=== ToAruShiroiNeko_ is now known as ToAruShiroiNeko
+[15:09] <ricard> is good kernel 3.13.0-53
+[15:09] <camsn0w> Can anyone help with awesome wm the channel for that is deaad
+[15:09] <ricard> donwload the ppa
+[15:10] <ablest1980> other software tab has software center and its tick or check
+[15:10] <Jabo> ricard, 3.19.0-16 ftw
+[15:10] <MrElendig> ricard: I would rather have a 4.0 kernel
+[15:10] <ablest1980> thats all it shows
+[15:10] <_Odin_> #Jabo, I can't say enough about Teamviewer. Works every time, fast, reliable. Alas, not Open Source but function trumps wishes. ;)
+[15:10] <HedgeMage> camsn0w: I'm not sure your question is strictly related to awesome...what cli tools are you looking for?
+[15:10] <Jabo> ablest1980, nothing is ticked in my 'other software' tab
+[15:10] <camsn0w> I just want the standard bundle most awesome users seem to have
+[15:10] <Jabo> and I haven't messed with it
+[15:11] <ablest1980> ok
+[15:11] <Jabo> _Odin_, thanks I'll give that a try
+[15:11] <ablest1980> so dont worry about it?
+[15:11] <camsn0w> Does that like come standard or do you have to manully get them
+=== `hypermist` is now known as infernoman2
+[15:12] <ricard> yes bad not are in distro
+[15:12] <Knight80> Hello everyone!
+[15:12] <HedgeMage> camsn0w: I have no idea what awesome users use, as I'm an i3 user. :)
+[15:12] <ablest1980> hello
+=== infernoman2 is now known as `hypermist`
+[15:12] <camsn0w> I just want some cool looking cli tools thats all
+[15:13] <MrElendig> camsn0w: install ponysay then
+[15:13] <HedgeMage> lol
+[15:13] <HedgeMage> We don't do cowsay any more?
+[15:13] <Knight80> How should I remove the vdr service? I mean I did apt-get remove vdr but still can start the service by typing sudo service vdr start...
+[15:13] <HedgeMage> Mooo!
+[15:13] <MrElendig> https://github.com/erkin/ponysay
+[15:13] <HedgeMage> cute
+[15:14] <HedgeMage> camsn0w: I pretty much live in the command line...I can recommend good cli tools if you tell me the things you'd like to do. :)
+[15:14] <ablest1980> jabo how do restore 'other software' settings in software updater?
+[15:15] <camsn0w> I'd like an easy to use mail client in command line and a flac player
+[15:15] <ablest1980> canonical isnt listed i have it deleted
+[15:15] <Jabo> google the details ablest1980
+[15:15] <ablest1980> k
+[15:15] <HedgeMage> camsn0w: for command-line mail, mutt is still the best IMO...it's a PITA to configure initially, but once you get it going and get used to it (took me about a week) it's quite efficient.
+[15:16] <camsn0w> HedgeMage But mostly I'd like to figure out how to get like a zenburn colors in terminal
+[15:16] <ricard> sou no is good kernel 3.13.0-53
+[15:16] <HedgeMage> camsn0w: Fair warning, mutt is known to choke hard on some badly-misformatted HTML-only emails **stares pointedly at people at her workplace who use outlooks web app with the default settings**
+[15:16] <camsn0w> eww outlook
+[15:17] <HedgeMage> camsn0w: Whatever terminal emulator you use has color settings (so does your actual shell, but it sounds like you are concerned with behavior in X, not at the console)
+[15:17] <camsn0w> I use gnome-terminal and termanator
+[15:17] <HedgeMage> camsn0w: I've been in xfce4-terminal forever despite not using xfce4, as it "just works" for the various things I do with minimal (usually zero) fuss.
+=== x2f[away] is now known as x2f
+[15:18] <camsn0w> How do you get diffrently colored text tho
+[15:18] <ricard> not old is wery good
+[15:19] <HedgeMage> camsn0w: Well, even after you select the color scheme in your terminal emulator's settings, you still have to have applications that are sending color codes.  For example, ls can send color or not depending on settings and invocation.
+[15:20] <wakatana> how can I disable ntwork manager ?
+[15:20] <camsn0w> hmm like what ones
+[15:20] <HedgeMage> camsn0w: My IRC client, weechat, uses colors to show when I've been spoken to, and mark certain parts of its UI.
+[15:20] <wakatana> permanentky
+[15:20] <wakatana> *permanently
+[15:21] <HedgeMage> wakatana: uninstall it via apt
+[15:21] <wakatana> HedgeMage: it is only way?
+[15:21] <tom1502> hey everybody! can i start a VNC server on my server via ssh? I do have a headless server in my basement and want to access it via VNC which is not running currently. But i have SSH access… possible?
+[15:21] <BadLuckRyan> Hello, can someone walk me through how to recreate my EFI partition? I deleted it by accident but found a way to make one with GParted. I have a workaround to get to Xubuntu desktop but when my laptop boots normally I get "boot device not found 3f0".   Basically, i need to repopulate the /boot/efi/ path
+[15:21] <wakatana> tom1502: yes it is possible
+[15:21] <ricard> bay
+[15:21] <wakatana> tom1502: http://seb.so/vnc-from-boot-without-logging-in-ubuntu-lubuntu-xubuntu-and-mint-lmde/
+[15:21] <HedgeMage> wakatana: Well, you could just turn it off, but having unused executable code lying around on your system is kind of pointless.
+[15:22] <ablest1980> jabo cant find the answer
+[15:22] <wakatana> HedgeMage: i will uninstall it when everytinh will be ok without it trust me ;)
+[15:22] <tom1502> @wakatana: thx, will check
+[15:22] <wakatana> so how can i disable it?
+[15:23] <_Odin_> #camsn0w You can change the background and text colors from gconftool or by setterm
+[15:23] <ablest1980> jab in other software i deleted everything but software center how do i put everything back
+[15:23] <HedgeMage> wakatana: service network-manager stop
+[15:23] <HedgeMage> wakatana: then remove it from the runlevel so it doesn't start up again
+[15:25] <MonkeyDust> wakatana  file still exists: https://www.liberiangeek.net/2012/03/disable-network-manager-in-ubuntu-11-10-oneiric-ocelot/
+=== tvh_ is now known as tvh
+[15:26] <wakatana> HedgeMage: so if this does not return anything it is disabled: ls -l /etc/rc$(who -r | awk '{print $2}').d/ | grep -i manager
+[15:27] <ablest1980> anyone know how to restore 'other software' tab in software updater i deleted everthing but software center
+[15:28] <BLACK_POWER> let's kill some craKKKers
+[15:28] <BLACK_POWER> racist ass wyte ppl is da cause o all da trubble in dis world nigga
+[15:29] <ablest1980> wasnt you here as white_power?
+[15:30] <OerHeks> !ops
+[15:30] <ubottu> Help! Channel emergency! (ONLY use this trigger in emergencies) - Pici, Myrtti, jrib, Amaranth, tonyyarusso, Nalioth, lamont, CarlK, elky, mneptok, PriceChild, Tm_T, jpds, ikonia, Flannel, genii, wgrant, stdin, h00k, IdleOne, nhandler, Jordan_U, popey, Corey, ocean, cprofitt, djones, Madpilot, gnomefreak, lhavelund, k1l, rww, phunyguy, bazhang
+[15:30] <BLACK_POWER> dafuq yu say racist ass bitch... stupid racest ass crakkkers wanna impress ppl from they racesm
+[15:30] <SchrodingersScat> !language | BLACK_POWER
+[15:30] <ubottu> BLACK_POWER: The main Ubuntu channels require that you speak in calm, polite English. For other languages, please visit https://wiki.ubuntu.com/IRC/ChannelList
+[15:30] <BluesKaj> ablest1980, enable the canonical partners in /etc/apt/sources.list
+[15:30] <ablest1980> w3rd
+[15:30] <BLACK_POWER> bitch yu racest nd dat shit ain't aight yu stupid ass cracka
+[15:31] <BluesKaj> ablest1980, then apt-get update
+[15:31] <ablest1980> hello SonikkuAmerica
+[15:31] <HedgeMage> wakatana: Sorry, was pulled afk...looks fine
+[15:31] <BLACK_POWER> all the problems in the world been come thru white honkkky ass crakkkers
+[15:31] <ablest1980> only software center listed
+[15:31] <ablest1980> how i do /ect/apt/sources.list?
+[15:32] <ablest1980> just type /ect/apt/sources.list in term?
+[15:32] <Jabo> vi /etc/apt/sources.list
+[15:32] <Jabo> to look at it
+[15:32] <vooze> Is there some GUI tool to show battery max mAh in Ubuntu?
+[15:33]  * Jabo installs teamviewer
+=== parduse is now known as Guest53945
+[15:33] <BluesKaj>  /etc/apt/sources.list with gedit, ablest1980
+[15:33] <BadLuckRyan> Lol extremely ignorant whoever that is.
+[15:33] <Lantizia> Hey, when opening a .zip with my file manager it opens in the proper GUI file-roller program, if opened with Chrome then it uses xdg-open which determines it should be opened with the 'less' utility ... is there some way to see *all* preferred applications in a GUI utility of some kind for both xdg-open and non-xdg-open methods???
+[15:34] <ablest1980> ablest1980@ablest1980-HP-Pavilion-g6-Notebook-PC:~$ sudo /etc/apt/sources.list
+[15:34] <ablest1980> sudo: /etc/apt/sources.list: command not found
+[15:34] <Jabo> vi /etc/apt/sources.list
+[15:35] <ablest1980> BluesKaj,  show me
+[15:35] <ablest1980> ok jabo what next?
+[15:36] <Jabo> ablest1980, is it empty?
+[15:36] <tax> hello, can anyone help be get sound working on Xubuntu 15.04?
+[15:36] <Jabo> yay, teamviewer works
+[15:36] <Jabo> good shout _Odin_
+[15:36] <ablest1980> shows stuff
+[15:38] <_Odin_> Thank you Jabo.
+[15:39] <BluesKaj> ablest1980, you have a type in the path, it's , alt+f2 , the gksudo gedit /etc/apt/sources.list , then remove the # from the beginning of the canonical partners line then save the file, then open a terminal and do sudo apt-get update
+[15:39] <ablest1980> k
+[15:39] <BluesKaj> er typo
+[15:40] <ratspecker> BluesKaj:you bum
+[15:41] <ablest1980> 1;5Q
+[15:41] <ablest1980> W10: Warning: Changing a readonly file
+[15:41] <ratspecker> ablest1980: did BluesKaj call you a dog
+[15:41] <ablest1980> no
+[15:42] <ablest1980> BluesKaj, i did alt+f2 after i typed etc/apt/sources.list
+[15:43] <ablest1980> 1;5Q
+[15:43] <ablest1980> W10: Warning: Changing a readonly file
+[15:43] <Ben64> ablest1980: did you use gksudo
+[15:43] <ablest1980> no
+[15:44] <Ben64> well there you go
+[15:44] <BluesKaj> ablest1980, to edit with root permissions do: gksudo gedit /etc/apt/sources.list , then save the file
+[15:44] <ablest1980> gksudo not installed
+[15:45] <ObrienDave> sudo apt-get install gksudo
+[15:46] <BluesKaj> so what's the command these days for gtk edits?
+[15:46] <BluesKaj> I'm on KDE
+[15:46] <ablest1980> ablest1980@ablest1980-HP-Pavilion-g6-Notebook-PC:~$ sudo apt-get install gksudo
+[15:46] <ablest1980> [sudo] password for ablest1980:
+[15:46] <ablest1980> E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)
+[15:46] <ablest1980> E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?
+[15:46] <daftykins> don't paste, ablest1980
+[15:47] <BluesKaj> ablest1980, close the softwarte center
+[15:47] <ablest1980> update is running maybe why
+[15:47] <daftykins> yes only one package manager can run at once
+[15:48] <BluesKaj> you can't open the sources.list when software center is using it
+[15:48] <ObrienDave> software center, synaptic and apt-get interfere with each other. only run one at a time
+=== mahe is now known as mahe_elino
+[15:48] <ablest1980> doesnt work
+[15:48] <ioria> gksu
+=== mahe is now known as mahe_elino
+[15:51] <BluesKaj> ablest1980, install gksu, once the software center has stopped updating
+[15:51] <baffled-clown> hey all. I have drives in a raid 0 config and ubuntu "can't" recognize them because they're also bitlocked. I want to back the array up without unlocking it. I tried to use DD to backup each drive in the array, but of course, it won't let me without turning off raid. There's two partitions listed in /dev/mapper/, one is 300 MB (telling windows how to boot and unlock the drives) and the other is the partition to backup
+[15:51] <ablest1980> i dont have software center open
+[15:51] <ablest1980> says another process is using it
+[15:51] <ablest1980> ok
+[15:51] <annoymouse> I figure you guys would know about Licenses (or if not, you can point me to the right channel)
+[15:52] <annoymouse> I'm unsure if I want to use GPL of MIT for my project
+[15:52] <baffled-clown> do I use dd directly on them?
+[15:52] <annoymouse> I want all distributed and modified copies to give credit to me (as the original author)
+[15:52] <annoymouse> Do both of those licenses do that?
+=== ValicekB_ is now known as ValicekB
+[15:53] <brontosaurusrex> annoymouse: none of this i think
+[15:53] <ObrienDave> there is that type of license, i don't remember the name
+[15:53] <wagonboi> i just created a new user and had to manually create the home dir. when i login as the new user, my terminal just shows $. do i need to create a .ssh file in my home dir?
+[15:54] <baffled-clown> look, gparted shows the /dev/mapper/something partition as bitlocked.....it can see it's bitlocked but I can't figure out if ubuntu can unlock it if I give it the key file
+[15:54] <OerHeks> annoymouse, check yourself http://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses
+[15:55] <baffled-clown> or how to give it the key
+[15:55] <Borealix> how can i make cairo-dock load on startup?
+[15:55] <annoymouse> OerHeks: I've been reading about the differences for the past hour, but the legal language has been over my head
+[15:55] <llutz> baffled-clown: use ssh-copy-id
+[15:55] <ablest1980> Blue1, how do i restore the whole software updater to original settings?
+[15:55] <ablest1980> BluesKaj,
+[15:55] <ablest1980> sorry
+[15:55] <ObrienDave> annoymouse, let me look at them. brb
+[15:56] <Knight80> I'm trying to completely remove some packages, but I can still initiate their services
+[15:56] <baffled-clown> llutz:  does that copy the raw data to .img like I want or?
+[15:56] <Knight80> I did sudo apt-get remove tvheadend and sudo apt-get remove vdr
+[15:56] <llutz> baffled-clown: sorry, wrong nick.
+[15:56] <baffled-clown> i actually just want to backup the drives still encrypted to .img
+[15:56] <baffled-clown> without being unlocked
+[15:56] <Knight80> But I can still type sudo service vdr start, and the service starts
+[15:57] <Adie> Hey guys!!!
+[15:57] <wakatana> i have unsinstalled network manager and have this uder /etc/network/interfaces
+[15:57] <wakatana> http://pastebin.com/raw.php?i=SXnyy4NJ
+[15:57] <wakatana> but after boot eth0 is down
+[15:57] <llutz> wakatana:  "auto eth0" missing
+[15:58] <Adie> test
+[15:59] <BluesKaj> ablest1980, https://help.ubuntu.com/community/Repositories/Ubuntu
+[15:59] <ioria> wakatana auto eth0
+[16:00] <ablest1980> ok
+[16:01] <Borealix> how can i make cairo-dock load on startup?
+[16:01] <wakatana> ioria: that way? http://pastebin.com/raw.php?i=6REWsC97
+[16:02] <llutz> wakatana: in most cases you don't need "allow-hotplug"
+[16:02] <ablest1980> :(
+[16:02] <ablest1980> BluesKaj, help
+[16:03] <ablest1980> what do i type again
+[16:03] <ioria> wakatana you can sudo ifup eth0 oryou can edit interfaces ... do you really need allow-hotplug ?
+[16:03] <ablest1980> should work now
+[16:03] <wakatana> llutz: ok i am commeenting it
+[16:03] <wakatana> ioria: probably not
+[16:03] <wakatana> u just want to have static ip
+[16:03] <wakatana> getway, mask, dnes
+[16:03] <wakatana> *dns
+[16:04] <ioria> wakatana restart networking
+[16:04] <ObrienDave> annoymouse, I would think you would want to use GPL and include in the license that you are to be given credit as the original author. i am no expert on these matters
+[16:05] <annoymouse> ObrienDave: Thanks, but I'm pretty sure that I can't modify the GPL
+[16:05] <annoymouse> ObrienDave: I found this http://www.gnu.org/licenses/gpl-faq.html#IWantCredit
+[16:06] <annoymouse> What do you think that means?
+[16:06] <ObrienDave> sec
+[16:07] <ObrienDave> annoymouse, it means as long as you hold a valid copyright, you can require to be given credit as the original author
+[16:07] <annoymouse> So that's what I want!
+[16:08] <ObrienDave> but you MUST have it copyrighted. it's like $35 / year
+[16:08] <ablest1980> BluesKaj, http://paste.ubuntu.com/11188943/
+[16:08] <annoymouse> oh...
+[16:09] <ObrienDave> http://www.copyright.gov/
+[16:10] <ObrienDave> not really sure on the fees involved
+[16:10] <wakatana> ioria: thank you
+=== JexSys is now known as Faylite
+[16:10] <ioria> wakatana np
+[16:12] <annoymouse> ObrienDave: I think MIT requires all modified versions to keep a copy of the original license
+[16:12] <annoymouse> So then maybe that's the route I should go down
+[16:12] <ObrienDave> further research is in order, for sure
+[16:12] <annoymouse> yes, thanks a lot
+[16:12] <ObrienDave> np
+[16:14] <Knight80> I have removed the services "vdr" and "tvheadend" but I can still start them with "sudo service vdr start" and "sudo service tvheadend start"
+[16:15] <Knight80> How can this be?
+[16:15] <Knight80> They're causing a conflict with mythtv
+[16:16] <pavlos> Knight80, maybe they are still in /etc/init.d/
+[16:17] <Knight80> pavlos I think I got it. I was trying to remove them with "sudo apt-get remove vdr" instead of "sudo apt-get purge vdr"
+[16:17] <Nubuntoo> Hi I am having some trouble running the 15.04 live CD. After picking 'install ubuntu' Initramfs is telling me it is ' unable to find a medium containing a live filesystem'. The DVD drive is on the primary ide channel and the DVD iso is verified to  the one on the sitematch the
+[16:20] <Nubuntoo> Is there any way to see more logs about why my boot failed from inside the initramfs busybox?
+[16:21] <Nubuntoo> There is only 1 line at the top saying 'probe failed'
+[16:22] <Nubuntoo> If I press escape while it is tryin g to boot it just has a bunch of 'stdin: not a typewriter' lines
+=== k10d is now known as k10d_afk
+=== victor is now known as Guest30651
+[16:33] <markiv> is this xkb file correct? http://paste.ubuntu.com/11189415/
+[16:35] <markiv> When I view the layout, it correctly shows the tilde as left alt, but caps lock still shows as caps lock
+[16:35] <markiv> "Show Keyboard Layout" from the widget in gnome 3.
+[16:42] <pavlos> markiv, maybe you need to repeat Ctrl_L in line 12 if I follow the pattern ...
+[16:44] <Nubuntoo> Kind of stuck installing Ubuntu now, unetbootin also failed to change my boot.ini
+[16:45] <Nubuntoo> When I tried the hard disk option before
+[16:45] <pavlos> markiv, never mind, seems if only one symbol is defined, it works always regardless pressing Shift.
+[16:52] <BadLuckRyan> Sorry i dc'ed
+[16:52] <ioria> Nubuntoo, never occurred to me , but try this http://askubuntu.com/questions/543675/trying-to-boot-from-usb-scanning-disc-for-index-files
+[16:53] <Nubuntoo> Thanks ioria
+[16:53] <ioria> Nubuntoo, np
+[16:55] <sjmikem> dpkg -S /etc/default/networking returns that it is from ifupdown package
+[16:55] <Lantizia> if a package has made 30 .desktop files... without actually altering/deleting them... Can I tell the freedesktop/xdg system to ignore them?
+[16:55] <sjmikem> but reinstalling ifupdown did not restore the file
+[16:55] <sjmikem> running 14.10 if it matters
+[16:58] <amigoo89> hey since I deleted my mail.log file, in order to clear it, it doesn't refresh the new log entries there anymore, I already restarted syslog, didn't help.
+[16:58] <daftykins> sjmikem: purge reinstall?
+[16:58] <amigoo89> what can I do?
+[16:59] <daftykins> amigoo89: so the file isn't there? touch it and assign the correct permissions
+[16:59] <ki7rw> anyone know what irc channel i should join to ask about android cellphone encryption?
+[16:59] <delt> Hello
+[16:59] <delt> how do i let another user play sound on my alsa/jack/pulse session?
+[16:59] <daftykins> ki7rw: use the bot 'alis' and stop using this channel as your personal freenode directory.
+[16:59] <islandmonkeee> Hello, after resizing and adding on more space to my Ubuntu partition from my Windows partition, Ubuntu will boot but will become screenless after the Plymouth splash has finished. If I change to a different tty layer then I get a screen. What has happened/how can I recover from such a situation?
+[16:59] <ki7rw> geez - such cranky people on the internet
+[17:00] <amigoo89> ki7rw: which permission does it need?
+[17:00] <delt> i have pulseaudio running as a jack client - how do i set permissions so i can run programs as another user with sound?
+[17:01] <islandmonkeee> BTW, I am talking about Ubuntu 15.04 with an Intel HD4000, Lenovo Z500
+[17:02] <sjmikem> daftykins: that did not restore the file
+[17:02] <delt> either with pulseaudio or directly with jack
+[17:02] <sjmikem> system still seems to run ok...
+[17:02] <daftykins> sjmikem: extract it from the .deb
+[17:02] <sjmikem> daftykins: what step normally creates that file?
+[17:03] <daftykins> i don't understand what you mean
+[17:06] <sjmikem> daftykins: how does /etc/default/networking normally get extracted from the .deb
+[17:06] <sjmikem> I know I can extract it manually
+[17:06] <islandmonkeee> Hello, after resizing and adding on more space to my Ubuntu partition from my Windows partition, Ubuntu will boot but will become screenless after the Plymouth splash has finished. If I change to a different tty layer then I get a screen. What has happened/how can I recover from such a situation? Ubuntu 15.04 with an Intel HD4000, Lenovo Z500
+[17:06] <daftykins> sjmikem: i don't know why purges and reinstalls sometimes skip some files at times, i'm just suggesting how to deal with it :)
+=== `hypermist` is now known as sleepypc
+[17:09] <sjmikem> default file is all comments anyway :-)
+[17:09] <islandmonkeee> Hello, after resizing and adding on more space to my Ubuntu partition from my Windows partition, Ubuntu will boot but will become screenless after the Plymouth splash has finished. If I change to a different tty layer then I get a screen. What has happened/how can I recover from such a situation? Ubuntu 15.04 with an Intel HD4000, Lenovo Z500
+[17:09] <daftykins> sjmikem: heh what's the point in having it then? :D
+[17:09] <daftykins> if you edited it and broke something, it's always good to copy files before editing
+[17:09] <daftykins> !repeat | islandmonkeee
+[17:09] <ubottu> islandmonkeee: Don't feel ignored and repeat your question quickly; if nobody knows your answer, nobody will answer you. While you wait, try searching https://help.ubuntu.com or http://ubuntuforums.org or http://askubuntu.com/
+[17:09] <le_compere_toura> Hello
+[17:10] <sjmikem> daftykins: I accidentally deleted it while doing something unrelated
+[17:10] <le_compere_toura> somebody has already try an ubuntu phone?
+[17:10] <islandmonkeee> I know I know
+[17:10] <daftykins> !touch | le_compere_toura
+[17:10] <ubottu> le_compere_toura: Information about the Ubuntu Touch platform for Phone and Tablet is available here https://wiki.ubuntu.com/Touch . Support and discussion in #ubuntu-touch
+[17:10] <daftykins> islandmonkeee: then don't do it :)
+[17:11] <stack477> oh shit they did
+[17:12] <HedgeMage> hrm?
+[17:12] <daftykins> !language | stack477
+[17:12] <ubottu> stack477: The main Ubuntu channels require that you speak in calm, polite English. For other languages, please visit https://wiki.ubuntu.com/IRC/ChannelList
+[17:13] <islandmonkeee> daftykins: Theoretically, what if there was somebody who had joined the server in between my messages and would know how to would help through to a solution
+[17:13] <daftykins> islandmonkeee: the time you left wouldn't have been enough.
+[17:14] <ioria> islandmonkeee, did you see something in Xorg.0.log ?
+[17:15] <ryan> hi
+[17:15] <islandmonkeee> ioria: The only EE I saw was the Intel driver being unable to find a drm file, hold up a sec, if I load up my other computer so I can see it and type here at the same time
+=== ryan is now known as Guest19844
+=== k10d_afk is now known as k10d
+[17:17] <pavlos> islandmonkeee, you may have to boot off a LIVE CD and chroot & update grub. This might help, http://askubuntu.com/questions/123099/not-able-to-create-boot-partition-in-grub-after-resizing-ubuntu-partition
+[17:17] <^charlie> I am trying to add lzma squashfs support to my kernel, and some instructions tell me to build the modules using "m-a".  I am not a novice user, but I don't recognize "m-a" and looking it up has been pretty difficult.  Anyone know what this abbreviates?
+[17:19] <bekks> ^charlie: Which instructions in particular do you refer to?
+[17:19] <^charlie> https://answers.launchpad.net/ubuntu/+source/squashfs/+question/34199
+[17:19] <islandmonkeee> pavlos: Okay, I'll try it nevertheless, but I had no problems with booting up at all, I'm just having graphics problems
+[17:20] <bekks> ^charlie: Thats a command provided by the package "module-assistant"
+[17:21] <^charlie> perfect beks thanks
+[17:21] <ioria> islandmonkeee, dpkg -l  xserver-xorg-video-intel
+[17:22] <islandmonkeee> ioria: Roger that, rebooting now
+[17:22] <Saint_Martin_de_> @hzut
+[17:23] <Saint_Martin_de_> @hzut Hello
+[17:24] <superfast> Does anyone know about a PDFeditor? I just want to add Text over a PDF form and print it but it is design as a form technically but actually is just a scanned form with prefect quality
+[17:24] <TechChristoph> hi does anyone know to create ppa ?
+[17:24] <TechChristoph> i want to manage my ubuntu-server with thath
+[17:24] <TechChristoph> with this
+[17:25] <OerHeks> TechChristoph, see https://help.launchpad.net/Packaging/PPA
+[17:25] <TechChristoph> mabe i should script repos
+[17:25] <Guest19844> who has the ubuntu phone
+[17:26] <OerHeks> !phone | Guest19844, some do >
+[17:26] <ubottu> Guest19844, some do >: Information about the Ubuntu Touch platform for Phone and Tablet is available here https://wiki.ubuntu.com/Touch . Support and discussion in #ubuntu-touch
+[17:27] <Nubuntoo> Ioria, unfortunately, changing the boot options as suggested did not help. The boot options also look different in 15.04 than 14, but it accepted the suggested changes without error. A lot of newer articles with similar problems suggest that its uefi interfering or raid, but this is an old xp box with a ide DVD drive
+[17:28] <Saint_Martin_de_> @hzut Hello
+[17:28] <Saint_Martin_de_> @hzut Hello
+[17:28] <TechChristoph> OerHeks: and if i want to manage not just ubuntu-servers ? but also debian and so on
+[17:29] <islandmonkeee> ioria: Hello, from Ubuntu side :) must be some small blip, everything is working nicely now. Thanks for your help anyway
+[17:29] <ioria> islandmonkeee, the Gods love you
+[17:30] <ioria> Nubuntoo, then try Lubuntu
+[17:30] <digitsm> Hello
+[17:30] <digitsm> I have xubuntu 14.04.1
+[17:30] <digitsm> Both internal microphone and external microphone of my laptop doesn't work
+[17:30] <Nubuntoo> Hm OK
+[17:30] <digitsm> can someone help me how to trouble?
+[17:30] <ioria> Nubuntoo, then you can install gnome if you want
+[17:31] <OerHeks> TechChristoph, so what do you mean with managing not-ubuntu servers and launchpad?
+=== cattata1056 is now known as cattytatty
+[17:31] <Senjai> Hello. I was trying to upgrade from 13.10 to 15.04. I did so with a live USB. I selected the upgrade option. And the UEFI boot setting. On boot I got a grub missing symbol error and was thrown into grub rescue.
+[17:32] <Senjai> I rebooted again to get into bios
+[17:32] <TechChristoph> well sometimes i must install software on them which are on others computers mainly on my laptop
+[17:32] <Nubuntoo> I don't think specs is the problem, it's a dual core with 1gb of ram, which is above minimum spec I think
+[17:32] <Senjai> But no bios showed up, and no boot
+[17:32] <Senjai> Any ideas?
+=== cattytatty is now known as cattata1056
+[17:32] <Senjai> Just a black screen. I can't figure out how to get into the BIOS
+[17:32] <islandmonkeee> digitsm: What js your computer? Does it have one of those dreaded combo mics, where the output and input jack is crammed into one?
+[17:32] <bekks> Senjai: you need to update to 14.04, then 14.10, then 15.04 - you cannot update directly.
+[17:32] <TechChristoph> OerHeks: for now i have a script on a usb-stick which installs all the software
+[17:32] <TechChristoph> on the stick is a python-script which does that for me
+[17:32] <Senjai> bekks: Alright, so my issue here, is that I cannot get into my bios now at all.. That's the problem I'm currently trying to cover
+[17:33] <islandmonkeee> digitsm: Combo jacks* sorry
+[17:33] <TechChristoph> but can i do this over the network ?
+[17:33] <TechChristoph> not just with the stick
+[17:33] <Senjai> bekks: I can just do a fresh install, and that's fine. But I kinda need a boot menu to do so
+[17:33] <digitsm> islandmonkeee, My laptop is an old Dell Latitude D-830 (7 years old). It has separate jacks for input and output
+[17:33] <ioria> Nubuntoo, it's 32 or 64 ?
+[17:33] <bekks> Senjai: Well, then you need to find out on how to get into the bios, by looking it up in the manual of your computer/mainboard. Thats nothing Ubuntu can help you with.
+[17:33] <Nubuntoo> 64 athlon
+[17:33] <Senjai> bekks: It stopped working after the ubuntu install. My bios key is F2
+[17:34] <Senjai> But it seems to skip the BIOS now after the install
+[17:34] <bekks> Senjai: Ubuntu doesnt alter the BIOS at all.
+[17:34] <ioria> Nubuntoo, it's dual core that ?
+[17:35] <Nubuntoo> Yes
+[17:35] <OerHeks> TechChristoph, sure you can build a deb from a pythonscript on launchpad, but it would not be usefull for other servers i guess.
+[17:35] <digitsm> islandmonkeee, Unfortunately any microphone is unavailable in audio settings: http://oi57.tinypic.com/xatc0l.jpg
+[17:35] <TechChristoph> OerHeks: ok many thanks so far :-)
+[17:36] <Nubuntoo> If you know a place that explains how to debug the initramfs mounting from busybox I could tinker around a bit
+[17:39] <ioria> Nubuntoo, well, i think that 'google is your friend', but you could try Lubuntu with no harm, in the meanwhile
+[17:39] <TechChristoph> Nubuntoo: i use lubuntu on my laptop
+[17:39] <TechChristoph> with a 3.19 kernel
+[17:40] <Nubuntoo> Since its so early in the boot process I kind of wonder if lubuntu helps, doesn't it boot in a similar way?
+[17:40] <TechChristoph> it boots just like ubuntu
+[17:40] <TechChristoph> its just lighter
+[17:40] <ioria> Nubuntoo, another reason to try , i guess
+[17:41] <TechChristoph> but if you are fan of the commandline
+[17:41] <owen1> when i type sh i see: E: no packages found.   any tips?
+[17:41] <TechChristoph> then maybe not
+[17:41] <bekks> owen1: whats the purpose of typing "sh"?
+[17:41] <owen1> bekks: installing docker - wget -qO- https://get.docker.com/ | sh
+[17:41] <ioria> Nubuntoo, you can use linuxpendrive for the stick
+[17:41] <goju> My CMOS clock is running slow but how Ubuntu clock is showing the correct time ?
+[17:42] <bekks> owen1: And whats the entire output of that command?
+[17:42] <owen1> bekks: E: No packages found
+[17:42] <Nubuntoo> I don't have a stick for this, so we havea bout 8 DVDs worth of distro to try left :p
+[17:42] <bekks> owen1: Do you have wget installed? :)
+[17:42] <TechChristoph> no stick ?
+[17:42] <TechChristoph> mhm
+[17:42] <owen1> bekks: which wget => /usr/bin/wget
+[17:43] <bekks> owen1: And whats the output of "which sh"?
+[17:43] <TechChristoph> sh is the shell
+[17:43] <owen1> bekks: /bin/sh
+[17:43] <bekks> owen1: So it exists. :)
+[17:43] <owen1> yup
+[17:43] <bekks> TechChristoph: sh is one shell, not the shell :)
+[17:43] <owen1> maybe i need to be sudo
+[17:43] <owen1> 1 sec
+[17:43] <bekks> owen1: No.
+[17:43] <ioria> Nubuntoo, you meant Athlon 64 X2, i got it
+[17:43] <owen1> bekks: works now!
+[17:44] <owen1> sudo su
+[17:44] <bekks> sudo su is crap.
+[17:44] <Nubuntoo> Yes ioria
+[17:44] <bekks> Either use sudo, or sudo -i, but sudo su is just nonsense.
+[17:44] <netameta> How can i copy everything from a folder to another ?
+[17:45] <netameta> so say i am at var/www/folderOne, and i want to copy the content of var/www/folderTwo
+[17:45] <owen1> bekks: interesting. what is the difference between sudo su and sudo -i
+[17:46] <bekks> owen1: sudo su is nonsense, sudo -i provides you a login shell with root privileges.
+[17:46] <Nubuntoo> I'm going to try to get busybox to list my fs dev state and get a screenshot for you guys
+[17:46] <bekks> owen1: sudo su executes su with root privileges to get you a shell implicitely.
+[17:47] <owen1> bekks: and sudo -i?
+[17:47] <kokut> Hello, anyone knows how to configure USB wifi sticks?
+[17:48] <bekks> owen1: I told you. :)
+[17:48] <owen1> bekks: oh. sorry!
+[17:49] <owen1> bekks: i am still not sure why the 'implicit shell' is an issue
+[17:50] <owen1> so far i did stuff with sudo su with no issues.
+[17:50] <owen1> unless there are security concerns i should be aware of
+[17:50] <bekks> owen1: generally you just want to use "sudo".
+[17:50] <kokut> Hello, anyone knows how to configure an usb wifi transciever?
+[17:51] <kokut> transceiver*
+[17:51] <bekks> owen1: sudo su starts a su as root to give you a root shell. Same thing as just running sudo -i, or even shorter, sudo yourcommand, to execute yourcommand as root.
+[17:52] <owen1> bekks: got it
+[17:52] <OerHeks> kokut, plug it in and see if it showes up in networkmanager, if not, open the restricted drivers tool to see if a driver shows up, that can take a minute.
+[17:53] <kokut> OerHeks: what do you mean restricted drivers?
+[17:53] <teward> kokut: drivers taht aren't open source
+[17:54] <teward> kokut: such as broadcom drivers and such
+[17:54] <teward> proprietary drivers, even.
+[17:55] <kokut> teward: it came with a mini cd and it says it supports linux
+[17:55] <OerHeks> type driver in dash
+[17:55] <kokut> whut
+[17:56] <teward> kokut: use the driver tool first, before using the minicd
+[17:56] <teward> follow OerHeks' suggestion
+[17:56] <Eddi> hi
+[17:56] <teward> (those minicds are usually for Windows not *nix)
+[17:56] <kokut> i went to software and updates > additional drivers and nothing pops up
+[17:58] <Eddi> hi
+[17:58] <OerHeks> kokut, then use lsusb to find your wifi device, and do some research
+[17:58] <kokut> it has a linux folder
+[17:58] <kokut> the mini cd
+[17:58] <kokut> :O
+[17:59] <punjabidon> suspend not working
+[17:59] <punjabidon> anyone have any idea?
+[17:59] <punjabidon> currently running noeveau graphic drivers
+[18:00] <kokut> lol wtf? i can't open the linux file it says file type not supported
+[18:00] <Eddi> I use Ubuntu 14.04 server edition and it constantly fails to define my remouvable usb-disk. why does it happen?
+[18:00] <cattata1056> what extension is it?
+[18:00] <kokut> oh well it also has a bz2 file
+[18:00] <cattata1056> pack it and install
+[18:01] <Finetundra> hello everyone, does anyone know why clementine would suddenly stop responding to media keys?
+[18:03] <punjabidon> a
+[18:03] <kilde> Please Help. Using 14.04, Eth0 will not connect, I have to connect via USB tethered through my phone and even then my ubuntu disconnects and reconnects me. This is not a router problem as this also happens when my phone is on 4g.
+[18:04] <Chocolateraineu> Good afternoon, I'm having some issues with graphic driver. Card: Advanced Micro Devices [AMD/ATI] RV350 [Radeon 9550] X.Org: 1.16.0 drivers: ati,vesa,radeon FAILED: fbdev Resolution: 1280x1024@0.0hz  GLX Renderer: Gallium 0.4 on llvmpipe (LLVM 3.5, 128 bits) GLX Version: 3.0 Mesa 10.3.2
+[18:05] <Chocolateraineu> Can't change resolution or refresh rate and screen can go yellow from time to time
+[18:05] <Eddi> Where did you get driver?
+[18:05] <Eddi> do you use amdconfig?
+[18:05] <Chocolateraineu> Just installed Xubuntu 14.04 and updated it
+[18:06] <punjabidon> suspend not working
+[18:06] <punjabidon> anyone have any idea?
+[18:06] <punjabidon> currently running noeveau graphic drivers
+[18:06] <Eddi> you should download driver suitable to your card from the official site and install it.
+[18:06] <Chocolateraineu> it's quite an old card, does amdconfig supports old ones?
+[18:06] <bekks> !ati | Chocolateraineu
+[18:06] <ubottu> Chocolateraineu: For Ati/NVidia/Matrox video cards, see https://help.ubuntu.com/community/VideoDriverHowto
+[18:07] <Chocolateraineu> Weird, this card usually worked OOTB on all distros. O.o
+[18:07] <bekks> Chocolateraineu: And now it doesnt. So you have to read the link given ;)
+=== happy is now known as Guest67525
+[18:08] <_Rarity> Hello. Is it possible to prevent a kernel module from updating on apt-get upgrade?
+[18:09] <bekks> _Rarity: you can pin it, but that will break if you are updating the kernel.
+[18:09] <bekks> _Rarity: Which module on which kernel on which Ubuntu? :)
+[18:09] <kokut> so i just sudo make in the folder with the MakeFile and now what?
+=== evandro is now known as Guest13638
+[18:11] <_Rarity> bekks: The hid_apple module on Ubuntu 14.04, kernel: 3.13.0-52 generic. The module is only slightly changes, so it should work on almost all kernels
+[18:12] <Phosis> When bash scripting is there a system call where, upon loading up the program in the script, the script running in the background ends and the user is brought back to to a command prompt?
+[18:12] <_Rarity> bekks: It is just slightly annoying to have to load it every time I upgrade the kernel. (I know, it is a first world problem :P ...)
+=== evandro_ is now known as Guest31227
+[18:12] <Phosis> I have a script that is a menu option for running a game. But when I exit the game, I want the script to stop running.
+[18:13] <bekks> _Rarity: It will not work on other kernels, since the version of the kernel changes. You have to rebuild it every time.
+[18:13] <Chocolateraineu> bekks: Oh hell no, my days of fighting with xorg.conf are over haha maybe it's a faulty install, will test with others USB. Bye peeps
+[18:13] <cattata1056> kill the process Phosis
+[18:13] <Phosis> but if I kill the process in the script, won't the game immediately close also?
+[18:13] <SchrodingersScat> Phosis: break could work if it's in a loop, can also try exit
+[18:13] <bekks> Chocolateraineu: Reinstalling will not fix it.
+[18:13] <bekks> Chocolateraineu: Reading how to fix it will.
+[18:14] <Phosis> BREAK!
+[18:14] <Phosis> Break worked
+[18:14] <Chocolateraineu> bekks: Let's agree to disagree
+[18:14] <Phosis> thank you!
+[18:14] <SchrodingersScat> Phosis: welcome, have fun
+[18:14] <punjabidon> suspend not working
+[18:14] <punjabidon> anyone have any ideas?
+[18:14] <_Rarity> bekks: Oh. I figured the module would work on different versions of the kernel, since it is a keyboard module that has (almost) nothing to do with the kernel itself
+[18:14] <_Rarity> bekks: Thanks anyways
+[18:14] <bekks> Chocolateraineu: I'm agreeing to just ignore your future issues with that install :)
+[18:15] <bekks> _Rarity: technically, nothing changes in the module. But the version of the kernel it is linked again changes, so you have to reinstall it every time.
+[18:18] <sp1rs> hello
+[18:18] <sp1rs> I have dev space of 53GB and i want this space to add to my home .. can this is possible ??
+[18:18] <Eddi> quite possible
+[18:19] <sp1rs> how ?
+[18:19] <MrElendig> sp1rs: is it located right after your /home partition?
+=== Guest12868 is now known as _xer0
+[18:19] <OerHeks> boot a live iso, and use gparted :-)
+[18:20] <sp1rs> MrElendig: OerHeks my df -h output http://pastebin.com/2mYLXn00
+[18:20] <MrElendig> I don't do pastebin.com
+[18:20] <MrElendig> also f/gdisk would be more useful
+[18:20] <sp1rs> mount dev/sda7 with dev/sda6 .. sda7 is my home
+[18:20] <OerHeks> what is the output of fdisk -l ? paste.ubuntu.com
+[18:21] <OerHeks> if it borders it should be easy
+[18:21] <sp1rs> ya it is border
+[18:21] <ablest1980> hello
+[18:21] <sp1rs> OerHeks: fdisk -l no output
+[18:22] <ablest1980> how do improve my wireless connection connectivity
+[18:22] <ablest1980> i
+[18:23] <ablest1980> i only get 1 led out of 5 and it keeps disconnecting
+[18:23] <ablest1980> or resetting
+[18:23] <bazhang> ask about extenders in ##networking ablest1980
+[18:23] <ablest1980> ok
+[18:23] <ablest1980> thanks
+[18:24] <Nubuntoo> If you have 5ghz devices, setting your WiFi thing to 5ghz if it supports it can also help if the problem is interference
+=== joao is now known as Mete-
+[18:25] <ReGiStRaS> whats the replacement for portmap ?
+[18:26] <ReGiStRaS> whats the replacement for portmap ?
+[18:26] <_xer0> I have the same issue as ablest1980 I swap on and off from the 5ghz as I seem to drop connection alot :/
+[18:27] <ReGiStRaS> whats the replacement for portmap ?
+[18:27] <abdulmalik> Salam
+[18:27] <ReGiStRaS> whats the replacement for portmap ?
+[18:27] <_xer0> rpcbind?
+[18:28] <ablest1980> :/
+[18:29] <ablest1980> im getting help in ##networking xer0
+[18:29] <ablest1980> come join
+[18:29] <_xer0> I might join you xD
+[18:29] <ablest1980> XD
+[18:30] <abdulmalik> hi there
+[18:30] <abdulmalik> are these all chatbots?
+[18:30] <bazhang> no
+[18:30] <abdulmalik> any  real person here?
+[18:30] <wesley9946> yes they are
+[18:30] <bazhang> abdulmalik, what is your ubuntu issue
+[18:31] <teward> abdulmalik: what's your ubuntu issue?
+[18:31] <bubben> ..
+[18:31]  * wesley9946 asks the same as teward
+[18:31] <feneco_> whats the lightest ubuntu variant at the moment?
+[18:31] <wesley9946> lubuntu
+[18:31] <teward> feneco_: Lubuntu, probably
+[18:31] <abdulmalik> none
+[18:32] <wesley9946> http://lubuntu.net/
+[18:32] <android_> Algum brasileiro ai
+[18:32] <teward> abdulmalik: if you do not have an Ubuntu question, then offtopic questions and discussion should take place in #ubuntu-offtopic or a general chat channel, not #ubuntu
+[18:32] <abdulmalik> @bazhang non
+[18:32] <wesley9946> @feneco_: about what computer config should we talk about?
+[18:32] <android_> algum brasileiro ai
+[18:32] <kostkon> !pt | android_
+[18:32] <ubottu> android_: Por favor, use #ubuntu-br para ajuda em português. Para entrar no canal por favor faça "/join #ubuntu-br" sem as aspas. Para a comunidade local portuguêsa, use #ubuntu-pt. Obrigada.
+[18:33] <abdulmalik> anyone know how to tunnel connections through dns servers like yourfreedom?
+[18:33] <wesley9946> @feneco_: what is the amount of RAM, what is the processor speed?
+[18:34] <SchrodingersScat> !info iodine | abdulmalik
+[18:34] <ubottu> abdulmalik: iodine (source: iodine): tool for tunneling IPv4 data through a DNS server. In component universe, is extra. Version 0.7.0-3 (vivid), package size 81 kB, installed size 266 kB
+[18:34] <teward> feneco_: Lubuntu is the lighest, but depending on your RAM, processor speed, etc. you may want to use something less lightweight.
+[18:34] <docmur_> I'm running a ubuntu server and run I tiger I get an alert about a rootkit,  so I ran chkrootkit and I got: Checking `bindshell'...                                     INFECTED (PORTS:  465), This is a mail port, so should I take action or leave it?
+[18:35] <teward> docmur_: chkrootkit is just a tool, it will say 'infected' but it's up to you to determine what's abnormal for your setup
+[18:35] <telmac> if I install to a flash drive using the gui boot disk tool, can I then boot from that in order to reinstall?
+[18:35] <owen1> usb3 port not working. ubuntu 15.04, 3.19.0-16-generic #16-Ubuntu, thinkpad x1 carbon gen2, enabled in the bios.   any ideas?
+[18:35] <teward> docmur_: i use rkhunter and it reports port 10022 is open per a signature of a given baddie, but in fact it's my iptables-locked-down ssh port on a system i use
+[18:36] <teward> docmur_: so you have to be able to look at the 'tools' and determine what is abnormal for the system
+[18:36] <docmur_> fair enough
+[18:36] <telmac> can the same tool be used to install ubuntu normally to a HDD?
+[18:36] <docmur_> just checking
+[18:36] <econdudeawesome> Howdy all! Trying to get my fstab to work right, and am super unfamiliar with the options. I have a vfat partition that is being mounted, and plex won't read. What I would like to do is mount it to a specific user (me) instead of root (as is the case for the "defaults" option in fstab). Any suggestions or pointers?
+[18:37] <teward> econdudeawesome: paste the fstab if you wouldn't mind to paste.ubuntu.com
+[18:37] <markiv`> When I hold alt in gnome 3, it shows the window changer popup. This is before I hit any other keys. This means I have to hit alt and f at almost the exact same time if I want to select an apps *F*ile menu bar via keyboard. I want to disable this "hold alt to show window changer" feature.
+[18:37] <teward> econdudeawesome: iirc the vfat mount line can have additional options for uid,gid which you can set
+[18:37] <teward> econdudeawesome: but i have to doublecheck the mount manpage
+[18:37] <ax562> how can I reset or replace all video related functions in ubuntu 12.05 lts 64bit?
+[18:37] <Lemonade1947> Hey guys, when apt-get updating, I get a whole lot of "Failed to fetch http://gb.archive.ubuntu.com/..." and I have no idea why.
+[18:38] <teward> econdudeawesome: https://www.kernel.org/doc/Documentation/filesystems/vfat.txt  <-- relevant
+[18:38] <econdudeawesome> teward: that's exactly what I'm looking for I think. I can't seem to parse the unhelpful forum spam on the topic from the actual documentation/articles.
+[18:38] <teward> `uid=###,gid=###,mask=###` are all important options for your use case, likely
+[18:38] <ax562> I'm running a lappy and was using the vga output to a lcd display and now when not connected to ext display I get black screen
+[18:39] <econdudeawesome> best I found was https://help.ubuntu.com/community/Fstab, so thanks! Now to figure out how to look up the uid/gid/mask
+[18:39] <bazhang> !blkid
+[18:39] <ubottu> To see a list of your devices/partitions and their corresponding UUID's, run this command in a !shell: « sudo blkid » (see https://wiki.ubuntu.com/LibAtaForAtaDisks for the rationale behind the transition to UUID)
+[18:39] <econdudeawesome> http://paste.ubuntu.com/11191400/ on the last line
+[18:40] <ax562> anyone?
+[18:40] <econdudeawesome> bazhang: thanks, I have hte UUIDs, was looking for UID/GID
+[18:40] <bazhang> patience ax562
+[18:40] <OerHeks> ax562, see the FN key + internal/external screen key maybe?
+[18:41] <wesley9946> @ax562: is there some Fn key which you can press to toggle between ext/int screen
+[18:41] <delt> SOLVED, thanks to the very kind folks in #linux ... now everything works perfectly!
+[18:41] <swiftynb> is there a reason that this would not work?     exec /home/ubuntu/test/mybinary
+[18:42] <swiftynb> in an upstart script?
+[18:42] <sp1rs> partition is like this .... sda7 .. sd6   .. no i have to add sda7 space to sda6 .. how will i do it in gparted ?
+[18:42] <swiftynb> ./mybinary runs fine
+[18:42] <swiftynb> but when i do upstart it just crashes
+[18:42] <feneco_> wesley9946 its for virtualization
+[18:42] <ax562> wesley9946 no
+[18:42] <telmac> sp1rs: there's a thing to "shrink" a partition
+[18:43] <feneco_> i want to know if the difference between something like ubuntu to lubuntu is noticeable
+[18:43] <bazhang> very much so feneco_
+[18:44] <wesley9946> @ax562: and what if you power cycle the lappy?
+[18:44] <sp1rs> telmac: is there any option in gparted ?
+[18:44] <sp1rs> i didnt see any
+[18:44] <ax562> wesley9946 the problem is nvdia is set to automatically output to ext lcd
+[18:45] <Promille> Hey guys. Is there any open source programs for managing(e.g. throttle) bandwith for specific applicatons. Im using 14.04
+[18:46] <bazhang> !info wondershaper
+[18:46] <ubottu> wondershaper (source: wondershaper): Easy to use traffic shaping script. In component universe, is extra. Version 1.1a-7 (vivid), package size 14 kB, installed size 54 kB
+[18:46] <bazhang> !info trickle
+[18:46] <ubottu> trickle (source: trickle): user-space bandwidth shaper. In component universe, is optional. Version 1.07-10ubuntu2 (vivid), package size 32 kB, installed size 147 kB
+[18:46] <bazhang> see above Promille
+[18:46] <wesley9946> !info wesley9946
+[18:46] <ubottu> Package wesley9946 does not exist in vivid
+[18:47] <wesley9946> !gpu
+[18:47] <Promille> thanks bazhang ill check it out
+[18:47] <bazhang>  /msg ubottu wesley9946
+[18:47] <[twisti]> i get http://pastebin.com/xHm2cfRV, how can i proceed ? i just want to remove the offending packages
+[18:47] <[twisti]> LTS 12.04 if that matters
+[18:48] <ax562> anyone know how to reset ubuntu video drivers to stock?
+[18:48] <Nubuntoo> Ioria fwiw I am giving up on the livecd. It seems I am running into that problem where a mix of ide and sata devices is confusing the boot process. Fsdisk -l lists just my disk drives not the DVD. Blkid does show a sr0 device but I have no idea if that's the DVD drive and how to mount it
+[18:49] <jatt> [twisti]: sudo apt-get -f upgrade
+[18:49] <xangua> ax562: reset from what? What did you install
+[18:50] <jatt> [twisti]: and use aptitude instead of apt-get, apt-get dependency handling is crap
+[18:50] <[twisti]> jatt: no change, http://pastebin.com/RFteQ9yH
+[18:51] <ax562> xangua I'm trying to use laptop screen but laptop screen will not work because It's set to output to ext driver
+[18:51] <jatt> [twisti]: sudo dpkg --purge remove bitlbee
+[18:51] <jatt> [twisti]: and install again
+[18:51] <[twisti]> twisti@attic ~ $ sudo dpkg --purge remove bitlbee
+[18:51] <[twisti]> dpkg: warning: there's no installed package matching remove
+[18:52] <ax562> I believe I changed system file sometime ago to set at boot
+[18:52] <[twisti]> bitlbee seems to be gone though, so thanks
+[18:53] <jatt> strange maybe that is a very old dpkg version, it works with 15.04
+[18:54] <ax562> any ideas #ubuntu?
+[18:54] <Borealix>  fuck her right in the pussy
+[18:54] <Nubuntoo> It just booted into initramfs from a disk that is now empty :/
+=== EriC^^ is now known as bigheel
+[19:01] <shizles> sup
+=== bigheel is now known as EriC^^
+[19:08] <snowly> hello folks
+=== Johnny_Linux is now known as |nv|s|b|e
+[19:09]  * |nv|s|b|e is now known as
+[19:09] <telmac> so if I want to replace unit/compiz with some minimal wm
+[19:10] <telmac> without just removing unity in apt
+[19:10] <telmac> and booting into a shell
+[19:10] <telmac> wat do?
+[19:10] <snowly> is there a way to fix the steam tray icon so that it doesn't show previously uninstalled games? even a complete purge/reinstall didn't work, the tray menu is populated with games that are not even installed.
+[19:10] <sjmikem> when I see a process has an fd of : socket:[65149], how do I get more info about that socket?  ss -a | grep 65149 does not show anything
+[19:11] <Maicros> If I install android studio through umake do I have to wait for canonical to package the updates before I can download it? Excluding re-downloading  the whole application?
+[19:12] <markiv`> my god this alt menu is obnoxious, it even interrupts my alt-tabbing unless i press them almost simultaneously
+[19:12] <markiv`> satanic
+[19:13] <EriC^^> markiv`: you can disable it if you want
+[19:13] <markiv`> i want
+[19:13] <EriC^^> settings > keyboard > shortcuts
+[19:13] <markiv`> but it's not unity, it's gnome 3
+[19:15] <John357> hi
+[19:16] <John357> hi
+[19:16] <John357> anybody?
+[19:16] <markiv`> hi
+[19:16] <markiv`> irc
+[19:17] <telmac> no seriously how do I remove unity
+[19:17] <John357> can you explain how this program works?
+[19:17] <John357> I do not understand it
+[19:17] <John357> unity player?
+[19:19] <markiv`> In Gnome, when you hold alt for like 800ms, the window changer pops up, interfering with every alt key shortcut combination. Does anyone know how to disable this insanity?
+[19:21] <John357> hi
+[19:22] <ablest1980> hello
+=== cattata1056_ is now known as cattata1056
+[19:23] <ablest1980> how do i change my hardware address?
+[19:24] <bekks> ablest1980: HArdware address of what, and why?
+[19:25] <stacks88> i just ran adduser bob.. then after i ran the command 'groups', and it only says root. but when i do cat /etc/groups|grep bob , i see bob there. Is it normal that when i type groups, i DONT see bob as a listed group?
+[19:25] <ablest1980> because it says 45 instead of 43
+[19:25] <kokut> anyone knows how to pass internet from one computer to another via ethernet in ubuntu?
+[19:25] <bekks> ablest1980: And why is that important?
+[19:25] <aeon-ltd> !internetsharing
+[19:25] <ablest1980> my connection keeps going out
+[19:26] <ablest1980> should my hardware be the same as my mac address?
+[19:26] <bekks> ablest1980: And why do you suspect that "45" instead of "43" will change something about that?
+[19:26] <bekks> ablest1980: What are you talking about? Please clarify.
+[19:26] <aeon-ltd> kokut: some stuff https://help.ubuntu.com/community/Internet/ConnectionSharing http://askubuntu.com/questions/359856/share-wireless-internet-connection-through-ethernet
+[19:26] <kokut> aeon-ltd: yea found that ty
+[19:27] <aeon-ltd> no prob
+[19:28] <ablest1980> im having wireless connection trouble i notice that my mac address is different from the what my wireless address 43 hardware address still says 45
+[19:28] <ablest1980> trouble
+[19:29] <ablest1980> my mac address what 45 at the end on the usb wireless stick its 43 on the end
+[19:30] <bekks> ablest1980: And why is that of any relevance for anything?
+[19:30] <qwyos> cosmic rays
+[19:30] <ablest1980> my connection kept going out
+[19:30] <bekks> ablest1980: And why do you suspect the mac address to be relevant for that?
+[19:31] <ablest1980> it seems to be working now but my hardware address still say 45 at the end
+[19:31] <bekks> ablest1980: And why is that of any relevance?
+[19:31] <ablest1980> didnt know what was wronf till i  notice the mac on the usb stick was 43 and the setting was 45
+[19:32] <bekks> ablest1980: Why do you suspect that messing with the mac address will fix your issue?
+[19:32] <ablest1980> because it seems to be working now
+[19:33] <ablest1980> but my hardware address till says 45 at the end
+[19:33] <bekks> ablest1980: Forget that hardware address and please answer my questions...
+[19:33] <aeon-ltd> they are just identifiers, pretty much a name
+[19:33] <ablest1980> ask again
+[19:33] <bekks> ablest1980: Why do you think that a different address will fix your issues?
+[19:33] <ablest1980> yes
+[19:33] <ablest1980> its suppose to be 43 not 45
+[19:34] <bekks> ablest1980: No.
+[19:34] <ablest1980> no why?
+[19:34] <bekks> MAC addresses are supposed to be UNIQUE.
+[19:34] <bekks> They shall not be identical, ever.
+[19:34] <aeon-ltd> did you change it?
+[19:34] <ablest1980> mac and hardware is same untill i put mac address 43 instead of 45
+[19:35] <ablest1980> ok
+[19:35] <bekks> ablest1980: you told that numerous times. It doesnt matter at all.
+[19:35] <aeon-ltd> because if you changed it and the router has strict filtering rules it won't let you connect unless you are on it's whitelist
+[19:35] <ablest1980> whys it working now?
+[19:35] <aeon-ltd> any number of reasons
+[19:35] <telmac> ablest1980: does the router have a whitelist?
+[19:35] <ablest1980> no router
+[19:35] <aeon-ltd> ok....
+[19:35] <ablest1980> usb wireless srick from netzero
+[19:35] <telmac> uhhhh
+[19:35] <ablest1980> stick
+[19:36] <telmac> no, what are you connectin to
+[19:36] <telmac> where is your connection coming from
+[19:36] <ablest1980> the mac on the stick is 43 on the end
+[19:36] <bekks> ablest1980: Forget that MAC.
+[19:36] <aeon-ltd> are you trolling?
+[19:36] <bekks> ablest1980: Stop repeating that please.
+[19:36] <ablest1980> but the setting was 45 at the end
+[19:36] <telmac> please stop repeating yourself
+[19:36] <aeon-ltd> oy oy oy
+[19:36] <telmac> where are you connecting to?
+[19:37] <telmac> you are connecting to a wireless network, yes?
+[19:37] <ablest1980> yes
+[19:37] <bekks> That wireless network is connected to a router.
+[19:37] <bekks> Most likely, at least.
+[19:38] <ablest1980> it connects to netzero
+[19:38] <bekks> What is "netzero"?
+[19:38] <telmac> ablest1980: is that your isp?
+[19:38] <ablest1980> yes
+[19:38] <telmac> so, you have a modem
+[19:38] <telmac> from this company
+[19:38] <telmac> which also provides wireless?
+[19:38] <ablest1980> usb wireless stick
+[19:38] <telmac> no, see
+[19:38] <telmac> the wireless has to come from somewhere
+[19:38] <ablest1980> from netzero
+[19:39] <telmac> bekks: p(trolling)?
+[19:39] <telmac> I think >80
+[19:39] <bekks> telmac: Yes.
+[19:40] <telmac> bekks: like idk someone could just be really really dense
+[19:40] <telmac> but most people who don't know about computers will answer your question or say "I don't know what that means/ I don't have the information to answer"
+[19:41] <ablest1980> you know im right
+[19:41] <ablest1980> it should be 43
+[19:41] <bekks> ablest1980: No, you arent.
+[19:42] <telmac> about what?
+[19:42] <aeon-ltd> ablest1980: explain why it should be 43
+[19:42] <bekks> ablest1980: you dont provide valuable information, even after asking you numerous times. I am resting your case that for.
+[19:42] <aeon-ltd> that should clear things up for the people here
+[19:42] <ukinami> !pt_pt
+[19:42] <ukinami> !pt
+[19:42] <ubottu> Por favor, use #ubuntu-br para ajuda em português. Para entrar no canal por favor faça "/join #ubuntu-br" sem as aspas. Para a comunidade local portuguêsa, use #ubuntu-pt. Obrigada.
+[19:45] <Dr-007> my ubuntu seems to get confused what network card it should use to reach the internet
+[19:46] <Dr-007> ip route has: default via 192.168.37.2 dev eth0
+[19:46] <Dr-007> what else could "screw" it up?
+=== EmmaSocks is now known as Guest90214
+=== EmmaSucks is now known as EmmaSocks
+[19:46] <daftykins> Dr-007: is this a desktop install of ubuntu with network manager handling the network connections?
+[19:47] <Pricey> What's the difference between nvidia-331 & nvidia-331-updates ?
+[19:47] <Dr-007> daftykins, no. its a cli server ubuntu. where i'm editting the /etc/network/interfaces
+[19:47] <Dr-007> ive made eth1 "dumb"
+[19:47] <Dr-007> by disabling everything
+[19:47] <daftykins> can you share your file?
+[19:47] <Dr-007> but still. when i try to ping google.com it takes linux a while to figure out which ethernet card it should use
+[19:47] <bekks> Pricey: The latter receives updates, the former doesnt.
+[19:48] <Dr-007> daftykins, sure. let me upload it somewhere
+[19:48] <daftykins> Dr-007: paste.ubuntu.com is ace
+[19:48] <Pricey> bekks: Odd, do you know why?
+[19:48] <daftykins> Dr-007: you should only have one default gateway so i don't see why it'd take time
+[19:49] <d3ad7rack> Dr-007 what's your routing table look like?
+[19:49] <bekks> Pricey: The answer to the this askubuntu question explains it in detail: http://askubuntu.com/questions/363835/nvidia-304-updates-vs-nvidia-304-and-similar
+[19:49] <Pricey> bekks: Fantastic, thanks.
+[19:50] <bekks> Pricey: yw
+[19:51] <punjabidon> suspend not working
+[19:51] <punjabidon> any possible reasons?
+[19:51] <Dr-007> daftykins, http://paste.ubuntu.com/11192646/
+[19:52] <Dr-007> ./etc/network/interfaces eth1 is now currently disabled and it still takes a while for the first ping to appear on the screen
+[19:52] <telmac> was the feature removed from ubuntu to log into a session of a different WM?
+[19:53] <daftykins> Dr-007: your router is seriously .2 ?
+[19:53] <daftykins> telmac: no you must not have it installed correctly if it is not presented
+[19:53] <telmac> do I need to do more than apt-get install i3?
+[19:54] <telmac> (that's my wm)
+[19:54] <telmac> I installed totally stock standard ubuntu
+[19:54] <daftykins> i don't have a clue about i3.
+[19:54] <Dr-007> daftykins, it actually is a virtual machine. but that ip is correct. yes
+[19:54] <telmac> well it's unity's problem not i3's
+[19:54] <telmac> also btw nouveau keeps crashing when I start ff
+[19:54] <daftykins> telmac: no it's likely an issue with you not installing the requisite packages to provide an i3 session
+[19:54] <daftykins> which is what lightdm would look at in order to offer the alternative :)
+[19:54] <telmac> daftykins: let me present my problem different
+[19:55] <telmac> a. fuck compiz
+[19:55] <telmac> b. fuck unity
+[19:55] <HedgeMage> telmac: if you don't get it solved by the time I'm back from afk, I can go find my ubuntu laptop and help debug (I'm a i3 user)
+[19:55] <bekks> c. watch your language.
+[19:55] <daftykins> !language | telmac Congratulations you're now getting ignored :)
+[19:55] <ubottu> telmac Congratulations you're now getting ignored :): The main Ubuntu channels require that you speak in calm, polite English. For other languages, please visit https://wiki.ubuntu.com/IRC/ChannelList
+[19:55] <telmac> c. how can I get ubuntu to boot into a shell and allow me to log in from VT2?
+[19:55] <telmac> ?
+[19:55] <d3ad7rack> •telmac• recovery mode should allow for that
+[19:56] <telmac> I mean, I want that normally
+[19:56] <daftykins> Dr-007: what's the tap interface for?
+[19:56] <telmac> I had that on debian, boot into a shell and then start x manually
+[19:56] <Dr-007> openvpn
+[19:57] <daftykins> Dr-007: tried configuring your eth0 statically? seems it'd make sense regardless of how it'd impact the problem
+[19:57] <Flannel> telmac: If you're looking for a minimal install, it's usually easier to build up from a command-line only install, rather than peel away all of the extra GUI stuff.  You can use the server CD or the minimal CD to do so.
+[19:57] <Dr-007> daftykins, i did not. good one. i will try this
+[19:58] <pavlos> telmac, change the /etc/default/grub from quiet splash to text
+[19:58] <pavlos> telmac, and update-grub
+[19:58] <telmac> Flannel: canonical used to distribute a "mini.iso"
+[19:58] <daftykins> still do
+[19:58] <daftykins> !mini
+[19:58] <ubottu> The Minimal CD image is very small in size, and it downloads most packages from the Internet during installation, allowing you to select only those you want.  The installer is text based (rather than graphical as used on the Desktop DVD). See https://help.ubuntu.com/community/Installation/MinimalCD
+[19:58] <telmac> which I looked for but could not find for 15.5
+[19:58] <Flannel> telmac: They still do.
+[19:58] <telmac> *.4
+[19:59] <Flannel> telmac: https://help.ubuntu.com/community/Installation/MinimalCD
+[19:59] <telmac> okay well that's much better
+[19:59] <telmac> I was looking for like twenty minutes for that and gave up
+[20:01] <mebus> W: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/binary-i386/Packages  404  Not Found
+[20:01] <mebus> Why is this happening?
+[20:01] <mebus> What would be a correct line in sources.list here?
+[20:02] <daftykins> mebus: run a "sudo apt-get clean && sudo apt-get update" just to double check
+[20:03] <daftykins> actually that URL definitely doesn't exist so somethings wrong :)
+[20:03] <mebus> daftykins: doesn't help.
+[20:03] <mebus> the url is wrong
+[20:04] <mebus> what can I do?
+[20:04] <daftykins> mebus: backup your current sources file and try http://repogen.simplylinux.ch/
+[20:04] <Flannel> mebus: Can you open http://archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/binary-i386/ in your browser?
+[20:05] <mebus> Flannel: yes.
+[20:06] <Flannel> mebus: Nothing looks out of the ordinary there, you can get to it in a browser too.
+[20:06] <mebus> http://pastebin.com/raw.php?i=5YsmRtXK
+[20:07] <guntbert> Flannel: the file name is wrong - there are Packages.gz and Packages.bz2
+[20:07] <mebus> network problem
+[20:08] <mebus> sorry.
+[20:08] <Flannel> guntbert: That's always the case though.
+[20:08] <Flannel> guntbert: It automagically knows to grab the compressed versions
+[20:08] <crzdcarney> Hey i have a question.  I installed Linux, encrypted the entire drive, it automatically made a 32 gb swap partition.  Would it be easier to just backup everything, reinstall, set the correct swap partition size, then reload the data from the backup?  or can i some how resize the swap even though its encrypted?
+[20:09] <guntbert> Flannel: never seen before - sorry :-)
+[20:09] <HedgeMage> crzdcarney: assuming a standard LUKS+LVM2 setup, you can safely resize.  However, keep in mind that if you want suspend-to-disk functionality, your swap must be a bit bigger than your RAM total.
+[20:10] <Raeth> Hello. I tried out Unity for the first time today and have set the dock to auto-hide, however I cannot push it open with my tablet, only the mouse. Does anyone know of this problem?
+[20:10] <crzdcarney> I have 32 gb of ram
+[20:10] <crzdcarney> I wanted to shrink it down to 4 gb ... is that a bad idea?
+[20:10] <HedgeMage> crzdcarney: Then if you shrink your SWAP, you may lose suspend-to-disk capability (depending on how full your RAM is when you suspend).
+[20:11] <crzdcarney> can i disable suspend to disk?
+[20:11] <crzdcarney> i am guessing suspend to disk is the same as hibernate?
+[20:11] <crzdcarney> sorry i am new to linux
+[20:11] <HedgeMage> yes, suspend-to-disk is hibernate
+[20:12] <HedgeMage> You can just not use it...I'm not sure how deeply into Ubuntu's configs you would have to dig to disable it.  I use other distros primarily, just have ubuntu on one of my work machines.
+[20:13] <crzdcarney> i am actually on linux mint right now not ubuntu
+[20:13] <Borealix> ./clear
+[20:13] <Borealix> opps
+[20:14] <bekks> crzdcarney: So refer to the mint support community please.
+[20:15] <HedgeMage> telmac: btw, I'm back now if you need i3 help
+[20:15] <crzdcarney> i tried, not super helpful, figured i would check here since mint and ubuntu are similar
+[20:16] <crzdcarney> but thank you for pointing me in the right direction
+[20:17] <MadHatter42> hello everyone
+[20:17] <MadHatter42> iptables -t nat -A PREROUTING -p tcp --dport 20001 -j DNAT --to-destination 192.168.0.6:3389
+[20:17] <MadHatter42> i did a nat like this
+[20:17] <MadHatter42> having forward to accept
+[20:17] <MadHatter42> it still doesnt work
+=== Goober is now known as Guest10595
+=== Samul` is now known as Samul|AWAY
+[20:24] <metallic> A swift question, what is the difference between "umount /something" and "umount -l /something"? I am not sure if I understand the description of the -l flag on the man page
+[20:24] <EriC^^> metallic: umount -l will lazy unmount it
+[20:24] <EriC^^> meaning it will tell the system it is unmounted, but it actually won't get unmounted until all the files aren't in use yet
+[20:25] <EriC^^> which is dangerous, in case you unplug the usb after a umount -l, cause some files will still be open
+[20:25] <metallic> mmmm... interesting, thanks EriC^^ :)
+[20:26] <EriC^^> no problem :)
+[20:26] <metallic> Now I get what the man page means ^^
+[20:26] <metallic> I am not afraid of data loss since I want to loss data actually :/
+[20:27] <doncamote> hola
+[20:27] <Voyage> I plugged in a usb disk but dolphin is not showing it. what should I do? it used to auto mount it even in the past.
+[20:29] <telmac> HedgeMage: is there a way with the regular unity to leave unity in place, give me the splash screen, but when I log in give me an i3 session?
+[20:30] <telmac> it seemed that was fucked/impossible so right now I'm just installing minimal
+[20:31] <daftykins> we warned you about the language already, telmac -please be polite.
+[20:31] <telmac> daftykins: I would contend your conception of politeness
+[20:31] <Johnny_Linux> grow up
+=== alberto is now known as Guest78196
+[20:32] <Guest78196> hola buenas tardes
+[20:32] <telmac> Johnny_Linux: no really, it's absolutely artificial
+[20:32] <daftykins> telmac: channel rules, either abide by them or leave.
+[20:33] <Guest78196> hola
+[20:33] <daftykins> !es | Guest78196
+[20:33] <ubottu> Guest78196: En la mayoría de los canales de Ubuntu, se habla sólo en inglés. Si busca ayuda en español entre al canal #ubuntu-es; escriba " /join #ubuntu-es " (sin comillas) y presione intro.
+[20:41] <SomeAnonDude> anyone knows how to connect the hinges of the small f1 to delete keys?
+[20:41] <Seveas> SomeAnonDude: that depends on the keyboard and is hopelessly offtopic in here :)
+[20:44] <SomeAnonDude> Seveas: okay
+[20:44] <pantato> the guides i am seeing for AMD proprietary driver installation say there should be a sh file downloaded from the ati site. I'm only seeing deb files on the site
+[20:44] <pantato> should i choose "linux 64" or "ubuntu 64"
+[20:45] <daftykins> ubuntu i should think
+[20:45] <daftykins> perhaps they've finally changed how they provide things
+=== parduse is now known as Guest56628
+[20:46] <pantato> yeah. I had a little trouble last time i tried it with the deb package. This is a clean install now though. I'll report back how it goes
+[20:46] <HedgeMage> telmac: You can, from the login screen, select an i3 session...but IIRC (haven't done it in a while) there was a need to disable a bunch of stuff Ubuntu starts by default for all X sessions.
+[20:46] <OerHeks> if you run ubuntu, why not choose ubuntu 64 ..
+[20:46] <HedgeMage> telmac: That said, I'd prefer the minimal install...less cruft to contend with.
+[20:47] <pantato> lol this package has 2 stars in the software center =\
+[20:47] <pantato> i wonder which version has the most stars
+=== Doyle is now known as Berserker
+=== Berserker is now known as Doyle_AFK
+[20:56] <dubhdara> can someone tell me why when I try to set up a static ip in ubuntu why when i go to reboot it will not let me use the wireless in on the computer again
+[20:58] <telmac> HedgeMage: yeah, I'm trying a minimal
+[20:58] <telmac> first try grub install failed so I stupidly accepted no grub
+[20:58] <telmac> and so it couldn't boot at all
+[20:59] <qwyos> What's the default gnome-terminal font? It's not Monospace is it?
+[21:00] <HedgeMage> telmac: And now you know why gentoo is my primary distro. :)
+[21:01] <teward> dubhdara: the static IP address needs to be in the internal IP range for the router.
+[21:01] <teward> dubhdara: if it's not you have zero network connectivity.
+[21:01] <teward> dubhdara: did you verify the IP address you assigned is in the acceptable IP range, and that the IP address isn't already in use on the network?
+[21:01] <dubhdara> no
+[21:01] <telmac> HedgeMage: I was using debian for a while but the repos, even on "unstable" aren't as good as ubuntu
+[21:01] <dubhdara> I used 192.168.1.10
+[21:01] <telmac> and I don't want to deal with arch/gentoo/whatever
+[21:02] <dubhdara> and 192.168.1.1
+[21:02] <dubhdara> okay i will do it this time thanks
+[21:03] <dubhdara> i been trying to set up a mumble server
+[21:03] <dubhdara> a pain in the butt
+[21:03] <HedgeMage> telmac: Depends on your needs...I've run into enough edge case things I want to do that even sucking up the systemd thing I end up with no real win running Ubuntu in terms of admin overhead.
+[21:06] <qwyos> ok, it's Ubuntu Mono 13
+[21:07] <ablest1980> hello how do i change from eth1 to eth0 ?
+[21:08] <telmac> HedgeMage: I'm noob enough not to get why systemd is such a big deal
+[21:08] <Voyage> in latest kubuntu, my desktop isnt just loading. I see no taskbar and no wallpaper. xhcat just popup up so I am able to chat here. Tried rebooting too. same
+[21:11] <kokut> Hello, is there anything like sudo apt-get install lamp-server^ but for lemp server? (with nginx instead of apache)
+[21:12] <HedgeMage> telmac: it's a code quality and security nightmare.
+[21:12] <bekks> kokut: Install nginx, mysql and php.
+[21:12] <HedgeMage> telmac: But that's a rant I expect this chan to be tired of by now.
+[21:12] <kokut> bekks: yea but it takes more time and configuration
+[21:13] <bekks> kokut: Yeah. And? :)
+[21:13] <kokut> bekks: and thats why i'm asking
+[21:13] <bekks> kokut: It is just one command. :)
+[21:14] <hdon> hi all :) can anyone recommend an alternative to evolution for email client? (need smtp, imap, ssl+tls)
+[21:15] <bekks> hdon: thunderbird
+[21:17] <telmac> okay, grub failed again
+[21:17] <telmac> I'm using the 15.4 mini installer, and the grub installer failed
+[21:19] <zykotick9> hdon: i use mutt myself.  mozilla has an email client thunderbird might be it's name (icedove in debian)...
+=== helder is now known as Guest27922
+[21:21] <Dr-007> daftykins, setting a static IP did not resolve the issue
+[21:21] <Dr-007> does the order in ip route make a "difference" ?
+[21:22] <genii> First match wins
+[21:22] <Benno-007> hdon: Take a look at http://www.claws-mail.org/themes.php?section=downloads too. It has many themes and plugins like pgp (inline and mime)... It's small and fast.
+=== Josh is now known as Guest97876
+[21:28] <Guest97876> hello, can anyone please help me with a problem i'm having? i'm trying to boot Ubuntu 14.04 from a USB drive, I can get to the Ubuntu installation screen, but I'm having a problem
+[21:29] <EriC^^> Guest97876: what's happening?
+[21:29] <Spec-Chum> Guest97876, what's the issue?
+[21:29] <Spec-Chum> oh, lol
+[21:30] <Guest97876> 1 second, im trying to get the screen back up so i can type it
+[21:30] <Guest97876> UGH sorry, give me a moment please
+[21:32] <telmac> well that's fucking broken
+[21:32] <bekks> telmac: Can you finally watch your language please?
+[21:32] <telmac> grub install failed again
+[21:32] <telmac> tried lilo
+[21:32] <telmac> hmm, that's even weirder
+[21:35] <student_> ahoj
+[21:35] <Guest97876> Ok, I was able to get my computer to the Ubuntu installer splash screen earlier, but I can't get it to do it anymore after I had unplugged my USB drive
+[21:35] <telmac> bekks: so, when I tried to install from mini.iso I got to the end and then the grub install failed
+[21:35] <Guest97876> When I boot my computer, I go to the purple GNU GRUB screen, where I can choose either Ubuntu, Adv. Options for Ubuntu, or two memory test options
+[21:36] <telmac> so I tried lilo, and lilo itself seems to work but the kernel is totally dead
+[21:36] <EriC^^> Guest97876: what are you trying to do?
+[21:36] <Guest97876> I'm trying to install Ubuntu 14.04
+[21:36] <telmac> Guest97876: have you plugged your lash drive back in?
+[21:36] <Guest97876> ok now, i'm back to the error i've been having for days
+[21:36] <Guest97876> yes
+=== JanC_ is now known as JanC
+[21:37] <telmac> did you select the flash drive from your bios's boot screen?
+[21:37] <Guest97876> i'm at "Gave up waiting for root device", and i'm at this command line type thing with (initramfs)
+[21:37] <Guest97876> I did.
+[21:37] <telmac> you did, since you plugged it back in?
+[21:37] <Guest97876> Yeah, I manually typed in the path and everything.
+[21:38] <EriC^^> Guest97876: that sounds like ubuntu is installed already and is failing to boot
+[21:38] <Guest97876> Yeah, let me tell you what happened
+[21:38] <Guest97876> I had a Windows 8 laptop. A long time ago. I got fed up, installed 14.04. It was super buggy.
+[21:39] <Guest97876> A few days ago, I decided I wanted to wipe it and start fresh. I deleted one of my partitions (probably why it cant boot, i know i really messed up here), and turned it off. I've been stuck with the initramfs error ever since.
+[21:39] <Guest97876> I have no idea what to do.
+[21:39] <telmac> my guess would be that you deleted grub
+[21:39] <telmac> so, you should just reinstall
+[21:39] <Guest97876> no, i'm able to go to this grub screen
+[21:39] <Guest97876> i'm TRYING to reinstall
+[21:39] <EriC^^> Guest97876: do you have data on it that you need?
+[21:39] <Guest97876> no, nothing on it that i need
+[21:39] <telmac> yeah no I'm getting to that
+[21:40] <Guest97876> i would LOVE to wipe the thing from scratch
+[21:40] <telmac> idk why you needed to type in the path for your flash drive
+[21:40] <EriC^^> Guest97876: ok, how did you make the live usb?
+[21:40] <telmac> like uh, shouldn't your bios just give you a list of bootable devices?
+[21:40] <telmac> and btw have you tried booting the live usb on anything else?
+[21:40] <Guest97876> Well, originally I just downloaded the iso and popped it on there, but then i used a program that was reccomended to me from an ubuntu website, i cant remember what it is exactly but i believe it works
+[21:40] <Guest97876> as i WAS able to get to the ubuntu splash screen earlier
+[21:41] <Guest97876> but when i tried installing, i got an error
+[21:41] <Guest97876> the error was kernel panic-not syncing: VFS: unable to mount root fs on unknown block(0,2)
+[21:42] <EriC^^> Guest97876: ok, are you using uefi?
+[21:42] <Guest97876> Uefi?
+[21:43] <Guest97876> I'm not quite sure.
+[21:43] <EriC^^> Guest97876: ok, enter the bios, and check is uefi is enabled or not, and the boot order
+[21:43] <Guest97876> got it, will do that now.
+[21:44] <Guest97876> arghh, every time i go into the bios i have to retype in the path
+[21:44] <EriC^^> Guest97876: what do you mean?
+[21:45] <Guest97876> Well, it's not a boot option when I start BIOS back up. I had previously entered it in and saved my changes, so I have to Add New Boot Option again
+[21:45] <Guest97876> also I'm not seeing anything about UEFI, where would that be at
+[21:46] <Guest97876> J:\EFI\BOOT\grubx64.efi is my path, im just posing it so i dont forget it later
+[21:47] <Guest97876> anyways, i've now added the usb as a boot option, and set it as Boot Option #1. What else do I need to do
+[21:47] <EriC^^> Guest97876: ok, so that means you're using uefi, as grubx64.efi is the efi file
+[21:47] <EriC^^> Guest97876: set the usb as the first option, and then reboot so it loads
+[21:48] <Guest97876> Ok, that didn't do anything.
+[21:48] <Guest97876> It still takes me to the purple ubuntu screen that says GNU GRUB version 2.02 on the top
+[21:49] <Guest97876> not the splash screen that i was able to get to earlier, which i did i think by randomly hitting enter on some things in the Boot Override section
+[21:49] <EriC^^> Guest97876: ok, try to press esc when the pc boots, you might get a boot options menu, select it and then choose usb uefi
+[21:49] <owen1> closing the lid doesn't hibernate (15.05). any tips?
+[21:50] <Guest97876> ok i did get that screen BUT for some reason, the usb isnt an option!!
+[21:50] <Guest97876> i dont get why it wont save, i AM hitting save changes
+[21:51] <EriC^^> Guest97876: try a different usb port
+[21:51] <Guest97876> Oh my god.
+[21:51] <Guest97876> I think that might be it.
+[21:51] <telmac> lololol
+[21:52] <Guest97876> if this fixes it im going to lose my shit, pardon my language
+[21:52] <Guest97876> (In a good way)
+[21:52] <schindler> Hey, can someone help me setup bumblebee? Its refusing to work
+[21:53] <daftykins> schindler: nvidia-prime is bumblebee's replacement
+[21:53] <Guest97876> ok, its STILL not showing up on that boot device screen, but it does show a USB device that hasnt been plugged into my laptop for DAYS? im going to try selecting that, maybe it is reading my usb as the old one or something
+[21:53] <daftykins> no reason to use it anymore
+[21:53] <Guest97876> YES
+[21:53] <Guest97876> THERE WE GO
+[21:53] <schindler> ooo, let me go look that up
+[21:53] <Guest97876> ok im at the ubuntu splash screen and now back to that error
+[21:53] <Guest97876> kernel panic-not syncing: VFS: unable to mount root fs on unknown block(0,2)
+[21:53] <Guest97876> which i have no idea how to fix
+[21:54] <EriC^^> Guest97876: ok, boot the grubx64.efi file you booted earlier
+[21:54] <Guest97876> how do i do that?
+[21:55] <Guest97876> isnt booting the grubx64.efi file what got me to the ubuntu install splash screen?
+[21:55] <schindler> does anyone know what the wildcard is for the nvida settings string matching? is it *?
+[21:55] <EriC^^> Guest97876: when you got the boot options menu earlier was there a boot from file?
+[21:55] <daftykins> schindler: just purge all nvidia* all bumblebee* then install nvidia-### and nvidia-prime from default repos
+[21:55] <schindler> yea I already did that
+[21:56] <daftykins> schindler: including nvidia-prime?
+[21:56] <daftykins> despite not knowing what it is 0o
+[21:56] <EriC^^> Guest97876: booting that file should try to boot your old ubuntu installation, we need grub
+[21:56] <schindler> yes
+[21:56] <EriC^^> Guest97876: so boot it, and when grub appears press c
+[21:56] <Guest97876> ahhhh
+[21:57] <Guest97876> ok, im at the grub command line, what now?
+[21:57] <schindler> What I ment if for the application profile rules
+[21:57] <daftykins> schindler: huh?
+[21:57] <schindler> is*
+[21:57] <EriC^^> Guest97876: type ls
+[21:57] <daftykins> schindler: did you not get the package nvidia-settings too?
+[21:58] <schindler> in nvidia-settings, you can set rules
+[21:58] <schindler> I just wanna know for the "string matching" part, do I need to add a wildcard
+[21:58] <Guest97876> ok, it returned
+[21:58] <EriC^^> Guest97876: do you still have the iso you downloaded for the live usb?
+[21:58] <schindler> like *java*
+[21:58] <Guest97876> (hd0) (hd0,msdos1) (hd1) (hd1, msdos1)
+[21:59] <daftykins> eh never dealt with that directly, might be best to look it up
+[21:59] <schindler> k thx
+[21:59] <Guest97876> the iso is on the usb
+[21:59] <EriC^^> Guest97876: yeah, but do you have the original file somewhere else?
+[22:00] <Guest97876> i don't think so. i mean, i could download it again right now
+[22:00] <ubuntuislove> Hello guys good afternoon, how can I check the FPS of video I'm watching on YouTube or Twitch.tv, In windows I used fraps, Thank you.
+[22:00] <EriC^^> Guest97876: ok, type ls (hd0,msdos1) and tell me what you see
+[22:00] <daftykins> ubuntuislove: right click and use the stats for nerds thing for YT
+[22:01] <enigma_> hi
+[22:01] <ablest1980> hi
+[22:01] <enigma_> how are you all
+[22:01] <EriC^^> Guest97876: ls (hd0,msdos1)/
+[22:01] <ablest1980> im ok u
+[22:01] <enigma_> good where you fromplease
+[22:01] <ablest1980> ny
+[22:01] <Guest97876> Ok, it tells me
+[22:02] <enigma_> newyork is that chief
+[22:02] <ablest1980> yes
+[22:02] <ablest1980> u
+[22:02] <enigma_> cool
+[22:02] <ubuntuislove> @daftykins, thank you very much that works for YouTube, any idea about Twitch.
+[22:02] <ablest1980> thanks
+[22:02] <Guest97876> Partition hd0,msdos1: filesystem type ext* - last modification time 2015-05-15 15:38:21 Friday, UUID 1a8aadbf-7341-420b-b77e-25389a966c5b - partition start at 1024KiB - Total size 248832KiB
+[22:02] <stacks88> i just ran adduser bob.. then after i ran the command 'groups', and it only says root. but when i do cat /etc/groups|grep bob , i see bob there. Is it normal that when i type groups, i DONT see bob as a listed group?
+[22:03] <daftykins> ubuntuislove: nah i'd have answered both in one go if so \o/
+[22:03] <enigma_> so any uk user in here
+[22:03] <enigma_> users*
+[22:03] <EriC^^> stacks88: yes, you need to logout and back in
+[22:03] <ubuntuislove> @daftykins :) wish you to have nice day
+[22:04] <cromagi> anyone on kubuntu 15.04?
+[22:04] <EriC^^> Guest97876: ok, type ls (hd0,msdos1)/
+=== shadok_ is now known as shadok
+[22:04] <cromagi> ?
+[22:04] <stacks88> i logged out nad back in, still see root as the only group, but im guessing this is normal since theres tons of groups in /etc/group and i dont se any of those listed either when typing groups
+[22:04] <daftykins> cromagi: all the folks in #kubuntu are - but if you ask your next question, it might be easier to help
+[22:05] <EriC^^> Guest97876: are you sure that legacy mode is not enabled in the bios?
+[22:05] <Guest97876> ooh lord, thats a lot to type in
+[22:05] <cromagi> It still feels super unstable. Spotify doesnt work, windows have "seizures" so to speak when i minimize maximize open or close them.
+[22:05] <LeEarl> hi
+[22:05] <Guest97876> im not sure, do you want me to go check right now?

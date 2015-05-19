@@ -1,0 +1,187 @@
+[01:16] <cinerama_> test
+[01:16] <shantorn> thefinn93, do you recall the ppa
+[01:18] <thefinn93> one sec
+[01:18] <thefinn93> i'll pull it up
+[01:18] <thefinn93> http://j.mp/rmx93F
+[01:19] <thefinn93> shantorn, http://j.mp/rmx93F
+[01:25] <thefinn93> shantorn, report back when you get it
+[01:27] <thefinn93> or dont
+[02:00] <shantorn> rebooting now
+[02:00] <thefinn93> alright
+[02:00] <thefinn93> good luck
+[02:04] <thefinn93> so how'd it go?
+[02:04] <thefinn93> clearly not completely ruined
+[02:04] <thefinn93> lol
+[02:04] <thefinn93> maybe so
+[02:05] <shantorn_> well it wont let me login
+[02:06] <shantorn_> same error i got last time
+[02:06] <thefinn93> which is?
+[02:07] <shantorn_> failed to load session "gnome" and i tried ubuntu and got failed to load "ubunut"
+[02:08] <thefinn93> oh
+[02:08] <thefinn93> were there any other options?
+[02:08] <shantorn_> concole
+[02:08] <thefinn93> oh
+[02:08] <thefinn93> hmm
+[02:09] <thefinn93> try running aptitude and installing gnome-session
+[02:09] <thefinn93> or fixing it
+[02:09] <thefinn93> from tty1
+[02:09] <thefinn93> oh shit i gtg
+[02:09] <thefinn93> best of luck
+[03:55] <goddard> hey does usb 3 work for you guys?
+[04:23] <goddard> I have two threads I am trying to solve anyone have ideas let me know http://ubuntuforums.org/showthread.php?t=1816495   http://ubuntuforums.org/showthread.php?t=1817164
+[06:42] <bkerensa> oh
+[06:42] <bkerensa> thought I should mention this channel is now logged :)
+[06:49] <bkerensa> Well guys were still waiting for Ubuntu LoCo Council to list us on loco.ubuntu.com and not sure how long this process takes
+[07:19] <bkerensa> HI
+[07:19] <bkerensa> :D
+[07:20] <thefinn93> HI!
+[07:20] <thefinn93> :D
+[08:08] <goddard> you guys use a software firewall helper for your ip tables?
+[08:08] <bkerensa> nah
+[08:09] <bkerensa> just terminal here
+[08:10] <goddard> firewall builder sounded interesting especially its push feature
+[08:10] <goddard> maybe for you to since you are gonna setup some servers
+[08:11] <goddard> damn didn't realize how late it was
+[08:12] <goddard> new nvidia drivers came out still didn't fix the issue i made a forum post about it http://ubuntuforums.org/showthread.php?p=11113783#post11113783  if anyone can help let me know
+[08:12] <goddard> im out
+[12:19] <shantorn> morning all
+[13:29] <shantorn> good morning all
+[16:57] <bkerensa> Hello All... Hope you are having a super-charged morning!
+[16:59] <thefinn93> totally...
+[17:04] <bkerensa> finn whats ur fb url I wanna add u
+[17:04] <thefinn93> http://facebook.com/finniswatchingyou
+[17:04] <bkerensa> lol I cant add u
+[17:05] <bkerensa> :P
+[17:05] <thefinn93> send me yours, i'll add you
+[17:05] <bkerensa> http://www.facebook.com/bkerensa <--- consistent in branding
+[17:05] <thefinn93> of course
+[17:05] <thefinn93> i'm usually consistant
+[17:05] <thefinn93> but my facebook is different
+[17:05] <thefinn93> because screw facebook
+[17:07] <bkerensa> :P I saw you at their booth
+[17:07] <thefinn93> yeah
+[17:07] <bkerensa> You know you would take a job for them
+[17:07] <bkerensa> :D
+[17:07] <thefinn93> telling them how much they suck
+[17:07] <thefinn93> :D
+[17:08] <bkerensa> are you going to be at Jono's weekly Q&A on ustream?
+[17:08] <thefinn93> i wasn't aware of it
+[17:08] <thefinn93> where
+[17:08] <bkerensa> http://www.ustream.tv/channel/at-home-with-jono-bacon
+[17:09] <thefinn93> when is it?
+[17:09] <thefinn93> 11?
+[17:09] <thefinn93> that's what it looks like based on past streams
+[17:10] <bkerensa> 11am
+[17:10] <bkerensa> every wednesday
+[17:10] <thefinn93> kk
+[17:10] <bkerensa> I have only been to one before
+[17:10] <bkerensa> :D
+[17:15] <bkerensa> MarkDude: dont forget offtopic
+[17:16]  * MarkDude will add it later
+[20:06] <bkerensa> hi
+[20:06] <thefinn93> ...
+[20:24] <goddard> hi
+[20:24] <goddard> no one has been able to fix my two problems yet haha darn
+[21:22] <goddard> so i have a 64 bit operating system but half the drivers are 32 how do they work with that
+[21:22] <goddard> i was looking at a lot of my drivers and some are 32 bit
+[21:22] <thefinn93> should work
+[21:23] <goddard> it works but does it hurt performance
+[21:23] <thefinn93> proly
+[21:23] <goddard> i wonder what a completely non-backwards compatible pc looks like
+[21:24] <goddard> all update software hardware and drivers without the old crap
+[21:24] <thefinn93> http://i.imgur.com/1eEh9.png
+[21:24] <goddard> i wonder if anyone has done tests
+[21:24] <thefinn93> unrelated
+[21:24] <goddard> haha
+[21:25] <thefinn93> off to do shit, then to pack for defcon
+[21:25] <thefinn93> i hear there are gonna be feds there, like actively recruiting
+[21:25] <goddard> you going huh
+[21:25] <goddard> nice i went to 18
+[21:25] <thefinn93> nice
+[21:25] <goddard> it was fun
+[21:25] <thefinn93> cool
+[21:25] <thefinn93> i expect it to be fun
+[21:25] <goddard> turn off your bluetooth and wifi
+[21:25] <goddard> and be ready to crack some bades
+[21:25] <thefinn93> i was planning on wiping my Ubuntu install
+[21:25] <goddard> badges
+[21:26] <thefinn93> yep
+[21:26] <thefinn93> also, got tunneling setup on a VPS should I need to get online
+[21:26] <goddard> smart
+[21:27] <goddard> man now i wanna go
+[21:27] <thefinn93> book a plane
+[21:27] <thefinn93> go
+[21:27] <thefinn93> or drive
+[21:27] <thefinn93> tickets are $150
+[21:28] <goddard> when does it start?
+[21:28] <thefinn93> tomorrow
+[21:28] <goddard> haha
+[21:28] <thefinn93> not many of the talks happen then
+[21:28] <thefinn93> just sort of getting started
+[21:28] <thefinn93> stuff starts happening on friday
+[21:29] <goddard> gonna have to think about it .. it is so tempting
+[21:30] <thefinn93> it'll be fun
+[21:30] <thefinn93> i gtg tho
+[21:30] <thefinn93> pack and shit
+[21:30] <thefinn93> bye
+[21:31] <goddard> let me crash in your room!
+[22:04] <bkerensa> :D
+[22:09] <bkerensa> lol
+[22:10] <bkerensa> better use bleachbit to do a wipe
+[22:10] <bkerensa> and make sure your iptables, roothunter and everything is primed and ready
+[22:10] <bkerensa> :)
+[22:11] <thefinn93> bkerensa, gonna wipe my main system
+[22:11] <thefinn93> like trash it and expand the BT5 partition to everything
+[22:11] <thefinn93> might reinstall that
+[22:11] <thefinn93> i got BT5 32bit on accident
+[22:12] <goddard> you staying at the rivera?
+[22:13] <goddard> riviera
+[22:17] <goddard> if i can get a free plane ticket im going
+[22:17] <thefinn93> staying at the rio
+[22:17] <thefinn93> where the con is
+[22:23] <goddard> let me sleep on your floor i dont stink that bad :D
+[22:24] <thefinn93> na
+[22:24] <thefinn93> can't
+[22:25] <thefinn93> my dad's, um, accompanying me
+[22:25] <thefinn93> he doesn't trust me in vegas alone
+[22:25] <thefinn93> I said ok because he's paying for the trip, my college, etc
+[22:26] <goddard> damn lucky bastard
+[22:26] <goddard> thats cool if i can get the plane ticket cheap im sure i can find some ones floor to crash on
+[22:27] <thefinn93> yeah
+[22:27] <thefinn93> tweet about it
+[22:27] <thefinn93> #defcon
+[22:27] <thefinn93> someone will help out
+[22:27] <goddard> plus the BBQ you get a chance to talk to a lot of people
+[22:27] <thefinn93> ask pdx2600, other groups that you're associated with
+[22:27] <thefinn93> yeah
+[22:27] <goddard> oh nice didn't think about the pdx2600
+[22:28] <thefinn93> yeah they're not too big, but worth a try
+[22:28] <thefinn93> have you ever been there?
+[22:28] <thefinn93> oh and i'm sure some guys from brainsilo are going
+[22:28] <goddard> i went to 18
+[22:28] <goddard> i paid for everything then
+[22:28] <thefinn93> damn
+[22:29] <goddard> was fun but i had my girlfriend with me
+[22:29] <goddard> now i will go by myself
+[22:29] <thefinn93> my girlfriend would not come with me to that
+[22:29] <goddard> so no need for all the frills
+[22:29] <thefinn93> yeah
+[22:29] <goddard> yeah dont bring her
+[22:29] <goddard> unless she likes computers
+[22:29] <goddard> mine was so bored and it divided my time
+[22:29] <thefinn93> yep
+[22:30] <thefinn93> that's what mine would do
+[22:30] <goddard> i had to go to a talk or two then do something fun for her
+[22:30] <thefinn93> except she wouldn't come in the first place
+[22:30] <goddard> haha
+[22:30] <thefinn93> "you want me to go to some convention halfway across the country with you? and it's about something I don't even care about?"
+[22:31] <goddard> haha
+[22:31] <thefinn93> lol
+[22:31] <thefinn93> there's a #defcon on freenode
+[22:31] <thefinn93> topic was set in 2008
+[22:31] <thefinn93> one other idler
+[22:31] <thefinn93> lets try efnet
+[22:32] <thefinn93> invite only
+[22:33] <thefinn93> this does NOT belong on the ontopic channel
+[22:33]  * thefinn93 goes to #ubuntu-or-us-offtopic
+[22:35] <goddard> we have an offtopic channel as well ? good for planning ahead but not popular enough yet for that :D

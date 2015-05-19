@@ -1,0 +1,28 @@
+[03:12] <sturmflut_> http://www.meizu.com/products/ubuntu.html It's official!
+[04:33] <ahoneybun> \o/
+[06:49] <cliftonts> Morning all
+[06:55] <cliftonts> ....or not.
+[07:12] <DanChapman> :-D morning cliftonts
+[07:14] <cliftonts> Aah! There is life.
+[07:16] <cliftonts> A bit of a weird question, I'm accessing through the SDK and when I loaded today it did a wine configuration before it loaded up. Why on earth is Ubuntu specific software even touching wine?
+[07:48] <bzoltan> cliftonts: the Ubuntu SDK has nothing to do with wine
+[07:48] <bzoltan> cliftonts:  what ubuntu are you on?
+[07:53] <cliftonts> 15.04
+[07:53] <cliftonts> Trust me, I clicked the icon and configuring wine popped up for 10 seconds before the sdk loaded. Baffled me.
+[07:55] <bzoltan> cliftonts:  it is not about trust :) I am the one who is responsible for most of the sdk packaging and package architecture ... trust me, there is no wine related bit in th SDK
+[07:55] <cliftonts> I don't doubt it bzoltan, but that is what happened. Coincidence perhaps? Something else going on at the same time.
+[07:56] <bzoltan> cliftonts:  i have not used wine inthe last 7 years.. so I do not know what wine uses on the system
+[07:56] <cliftonts> Anyway, my reason for coming here is to find out if anyone can tell me what the average wait is for getting an application reviewed in the developer portal is.
+[07:56] <cliftonts> I've been waiting for 10 days so far and the portal gives away no clues.
+[07:56] <bzoltan> cliftonts:  I think it was a coincidence :)
+[07:57] <bzoltan> cliftonts:  I do not know much about the developer portal' s intake process mhall119 might do.
+[07:58] <cliftonts> There does not seem to be any way to get help or feedback on there. Just submit and twiddle your thumbs hoping it might eventually do something.
+[07:58] <cliftonts> There is no wait longer than one where you can't tell your place in the queue!
+[08:00] <cliftonts> I would use the SDK to create my app but it baffles me. I've all but given up trying to figure it out as nobody seems willing to tell me anything about it.
+[08:04] <bzoltan> cliftonts:  about the store intake process mhall119 will help you.
+[08:04] <bzoltan> cliftonts:  do you have any functional problem with the SDK?
+[08:06] <cliftonts> My problem is that, like quickly or any of these systems that pre-build an empty frame for you, it throws several windows of code at you without actually telling you which ones you edit, which ones you shouldn't.
+[08:06] <cliftonts> Or what each is for.
+[08:06] <cliftonts> I have to dash out now anyway but I'm sure I'll crack it one day.
+=== aaron__ is now known as ahoneybun
+=== aaron__ is now known as ahoneybun

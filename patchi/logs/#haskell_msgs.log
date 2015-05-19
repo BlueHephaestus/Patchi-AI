@@ -1,0 +1,224 @@
+<jle`>	lokathor: ah yeah, you don't want a monad instance for either e
+<big_g>	yeah
+<dcoutts>	big_g: currently we don't have a good method for that, just have to use google site:hackage.haskell.org
+<jle`>	you want a monad instance for (io . either e)
+<jle`>	so you can bind things like io (either e a)
+<c_wraith>	that's more or less eithert e io
+<jle`>	io (either e a) -> (a -> io (either e b)) -> io (either e b)
+<big_g>	dcoutts, someone should make that mapping
+<c_wraith>	:t eithert
+<lambdabot>	    not in scope: data constructor ‘eithert’
+<lambdabot>	    perhaps you meant variable ‘either’ (imported from data.either)
+<jle`>	yeah, exactly :)
+<jle`>	these days the trendy thing is exceptt
+<darkelement>	sorry to interrupt, but do any of you know where i can find large logs of this or other channels? i'm making a bot and would really like some more data.
+<dcoutts>	big_g: i'm planning to add it to the hackage search function
+<jle`>	darkelement: it's in the topic :)
+<darkelement>	._. thanks
+<big_g>	dcoutts, you're a saint
+<ij>	can i make ghci ommit all the crap at the beginning?
+<lokathor>	so look into eithert?
+<rhaps0dy>	and this channel is very active, you'll get lots of lines
+<jle`>	exceptt is in transformers/mtl
+<jle`>	eithert is only in a separate library
+<darkelement>	now that i'm here, what is haskell most similar to, language-wise?
+<lokathor>	i recall something about transformers and mtl being very similar, but not quite
+<clint>	mtl is built on top of transformers
+<jle`>	transformers provides monad transformers (like exceptt), and mtl provides typeclasses that abstract over monads with multiple effects
+<kadoban>	darkelement: of the procedural languages that people commonly know, it's about equidistant from them all. it's /wayyyy/ over there on the right somewhere, and they're grouped fairly closely wayyyyy on the left (on an imaginary graph of closeness to haskell)
+<darkelement>	kadoban, haha, alright. so would you say it's a good scripting language then? still containing the general concepts that relate it to other languages
+<lokathor>	haskell has some libs that let you do scripting type things easily
+<lpaste>	jle` annotated “updated-example” with “updated-example (annotation)” at http://lpaste.net/132817#a132818
+<jle`>	lokathor: i added an annotation on how you'd use exceptt to do what you want
+<lpaste>	jle` revised “updated-example (annotation)”: “no title” at http://lpaste.net/132818
+<kadoban>	darkelement: wellll, it's not really a scripting language per-se. i guess you could kinda use it as one, but it's probably not great at that
+<darkelement>	kadoban, so what does it do best?
+<lokathor>	ah ha, yes this is the sort of cleanlyness that i figured could be attained
+<jle`>	oops, edited it
+<jle`>	you can also just return (i, d) from the exceptt block
+<big_g>	how do i resolve a missing dependecy on a ofrien library from cabal?
+<jle`>	and then call c i d from "outside" the block
+<dcoutts>	big_g: usually it's a matter of apt-get installing the appropriate -dev package
+<zed_>	hi : ) is there someone who ever worked through this example: http://ptrckprry.com/blog/programming/2008/08/26/a-monte-carlo-monad-for-haskell/
+<big_g>	it says that package doesn't exist in zlib
+<kadoban>	darkelement: it's general purpose, just 'scripting language' is kind of just "execute this series of imperative steps". if that's all you're doing, haskell won't do much for you really.
+<jle`>	kadoban: it can offer type safeness :)
+<jle`>	the benefits of haskell extend to imperative algorithms too
+<mauke>	darkelement: haskell is similar to miranda and ocaml
+<darkelement>	hmm, time to look up miranda and ocaml
+<reinh>	well, i prefer it to bash for many scripting tasks
+<darkelement>	interesting, not what i expected
+<darkelement>	maybe i'll get into haskell later
+<lokathor>	if i have an algorithm in java that works via lots of variable mutation, assuming i wanted a haskell version with a similar structure, i'd probably use state and possibly lenses, right?
+<tuplanolla>	it'll teach you to hate many other languages, if nothing else, darkelement.
+<mauke>	lokathor: possibly st if it's local mutation
+<lokathor>	it is local to each function call, yes
+<darkelement>	._.
+<mauke>	the first tutorial is free
+<mauke>	> runst (do v <- newstref 21; modifystref v (* 2); readstref v)
+<lambdabot>	 42
+<mauke>	there, local variables
+<lokathor>	in this case, the algo is a *little* more complex than that sadly
+<ronh->	lokathor why would that be a problem? you can allocate as many strefs as you need, and do arbitrary mutations on each
+<lokathor>	oh it's not a problem really
+<simpson>	lokathor: what's the algorithm?
+<lokathor>	an fov computation thing, https://github.com/lokathor/jrogueliketoolkit/blob/master/src/main/java/rl/toolkit/fov/ppfov.java is the code
+<tuplanolla>	bresenham?
+<tuplanolla>	it shouldn't require mutable state.
+<c_wraith>	bresenham is just a list of inflection points.
+<lokathor>	it's not bresenham
+<c_wraith>	err.  not inflection, transition
+<lokathor>	this kind of fov is called precise permissive
+<c_wraith>	that looks like a bfs, of sorts
+<tuplanolla>	this seems vaguely familiar. does dcss use this?
+<lokathor>	it involves keeping a list of "views", and then scanning out wards and updating the views as you find walls
+<c_wraith>	that's very bfs-like
+<lokathor>	also, dcss does use this, as far as i know
+<tuplanolla>	you're probably better off without st.
+<lokathor>	i'm not quite savvy enough in haskell yet to try to convert this particular part of java into haskell
+<c_wraith>	i wrote a combinator to capture the recursion pattern of "process a list of elements storing state and adding to the list with each element processed"
+<c_wraith>	http://lpaste.net/102101
+<c_wraith>	i don't even remember how it works, but i keep it on hand because it does.  :)
+<srpx>	til haskell complains of ambiguous instances even when a class has only one instance o.o
+<c_wraith>	you might always add another instance
+<srpx>	i know, just found it funny
+<c_wraith>	it's warning you that it doesn't have enough information to know for sure that you mean the one that exists.
+<geekosaur>	typeclasses are open
+<monochrom>	until link time no one knows "there is only one instance"
+<geekosaur>	^
+<srpx>	fair enough
+<geekosaur>	except typeclasses are long gone by then...
+<monochrom>	and we are too lazy to write our own linkers. we just call ld, which only knows c, not haskell.
+<geekosaur>	there are only dictionaries passed at runtime
+<monochrom>	lastly, if you have only one instance, don't use a type class.
+<lokathor>	monochrom, what if you know you proabbly want to write a second instance later on?
+<lokathor>	wait until then?
+<monochrom>	then "there will only be one instance" is false.
+<tel>	is it the case that coyoneda is "the" free functor? what about yoneda then?
+<abhillman>	is there a great way to read the type of an object into a string?
+<c_wraith>	abhillman: at runtime or compile-time?
+<johnw>	abhillman: if it's typeable (which everything is in 7.10), you can yes
+<abhillman>	c_wraith: runtime
+<c_wraith>	> show $ typeof "hello"
+<lambdabot>	 "[char]"
+<c_wraith>	> show $ typeof ()
+<lambdabot>	 "()"
+<lokathor>	johnw, were some things not typeable before 7.10?
+<c_wraith>	7.10 made typeable instances auto-generated for all types
+<abhillman>	c_wraith: wow, thanks this is great
+<c_wraith>	before that, you had to manually specify you wanted one
+<c_wraith>	:t typeof
+<lambdabot>	typeable a => a -> typerep
+<lpsmith>	abhillman,  you can do that now,  see https://github.com/lpsmith/postgresql-simple/commit/5cc3d00770b985c3ca59d8d1ff8faf03a1ff5eb5 and https://github.com/lpsmith/postgresql-libpq/commit/9966598852fc31cc1fad7c3b2833362fb65af20b
+<lpsmith>	no need to construct the query from scratch,  just use the identifier and/or qualifiedidentifier types in the types module.
+<abhillman>	lpsmith: yea! i noticed that. trying to figure out how to get it to work
+<lpsmith>	abhillman,  if you use {-# language overloadedstrings #-},   you can write things such as  execute conn "drop table ?" ("schema.tablename" :: qualifiedidentifier)
+<lpsmith>	err, there'll need to be an only on that
+<abhillman>	lpsmith: nice, let me give that a try
+<tel>	offhand, (liftcoyoneda :: f a -> coyenda f a) not requiring a functor constraint feels right w.r.t. it being the free functor functor
+<abhillman>	lpsmith: http://lpaste.net/6115632103464894464
+<johnw>	tel: where did you read that it's the free functor functor?
+<tel>	johnw i didn't, i'm trying to figure it out
+<abhillman>	lpsmith: in general, can work around the issue by using (<>)
+<abhillman>	lpsmith: would love, however, to use qualifiedidentifier
+<johnw>	tel: i ask, because just last week i made a note to myself to investigate whether yoneda is the same thing as the free functor :)
+<dmj`>	abhillman: why can't you?
+<dmj`>	qualifiedidentifier (maybe text) text
+<tel>	johnw haha, yeah. there's something complicated here and i'm not completely sure how to wrap my head around it
+<lpsmith>	abhillman,  in this case,  you could use tostring
+<lpsmith>	however, tostring on qualifiedidentifer isn't all that robust
+<lpsmith>	so it's there mostly for writing literal qualifiedidentifiers
+<lpsmith>	:t tostring
+<lambdabot>	    not in scope: ‘tostring’
+<lambdabot>	    perhaps you meant ‘bslc.tostrict’ (imported from data.bytestring.lazy.char8)
+<lpsmith>	err
+<lpsmith>	:t fromstring
+<lambdabot>	isstring a => string -> a
+<johnw>	tel: for example, there's http://stackoverflow.com/questions/14387839/functors-and-free-objects-in-hask
+<lpsmith>	in the case of "create database ?",  you probably want to use identifier,  not qualifiedidentifier
+<lpsmith>	so
+<johnw>	tel: there are other ways (container type in dependently typed languages, for example) to turn things that are not functors into functors, and they are not a free object for functors either
+<lpsmith>	abhillman, http://lpaste.net/6115632103464894464
+<tel>	johnw i'm looking for the functor left adjoint to a forgetful functor which merely drops `fmap`
+<johnw>	i don't think you can drop fmap using a functor :)
+<kirill`>	i'm trying to use the cpp extension, and seem that __line__ gets expanded to line number, but __function__ doesn't exist. i'd like to get the top-level haskell definition in which the pragma got expanded, like in c++. is there a way to do that?
+<johnw>	all forgetful functors have to have fmap
+<tel>	johnw well, no, it's a higher order functor in this case
+<tel>	forget :: (* -> *) -> (* -> *)
+<tuplanolla>	isn't it __func__, kirill`?
+<kirill`>	tuplanolla: ghc gives me "found hole __func__"
+<tel>	we can pretend with something like `type forget g a = g a` and then promising to never call `fmap` on `g`s recieved in this case
+<tuplanolla>	that's funny.
+<kirill`>	it might be __func__ depending on c++ compiler, i don't remember tbh
+<tuplanolla>	i don't know about c++, but it's __func__ in modern c revisions.
+<tel>	or we can reify functor into types more specifically and say `data afunctor f a = af { body :: f a, fmap :: forall a b . (a -> b) -> (f a -> f b) }`
+<johnw>	tel: so you mean stripping away the morphism mapping, to leave just the object mapping
+<abhillman>	lpsmith: nice! thanks! this looks great
+<kirill`>	tuplanolla: i looked it up, you're right, __func__ is standard
+<geekosaur>	__function__ is implemented inside of gcc, it is not cpp. and if it were in cpp, cpp would not understand haskell declarations
+<tel>	johnw yeah
+<johnw>	how would the free functor to that provide the morphisms back?
+<tel>	instance functor (coyoneda f)
+<kirill`>	geekosaur: okay, so ghc doesn't expand anything like that?
+<tel>	instance functor (yoneda f)
+<johnw>	that doesn't really answer my question though
+<geekosaur>	not that i'm aware of, no
+<johnw>	forget haskell for a moment
+<kirill`>	that's a shame, it would be helpful
+<johnw>	you have a category whose objects are functors, mapping objects and morphisms; and a category whose objects are just object mappings; the free functor going back would have to enrich the second category with morphism mappings, but this information has been lost
+<abhillman>	is there some simple way to say "1." looks like a float whereas "1" looks like an int? i could check for "." then dispatch to text.read.readmaybe, for example, but wondering if there is another great way.
+<abhillman>	dispatch to text.read.readmaybe s :: int or text.read.readmaybe :: float depending on whether a '.' is in there
+<abhillman>	* maybe int; maybe float respectively
+<tel>	johnw so yeah, it enriches them by holding the mapped object along with an object mapping (obj, map). we start with the id mapping which we can always access and given any object mapping f we can map (obj, map) pairs by composing f and map.
+<tel>	the same way coyoneda works
+<tuplanolla>	if you want precise control, it's not difficult to roll your own parser that uses data.char, abhillman.
+<johnw>	tel: i don't understand "enriches them by holding the mapped object"
+<johnw>	the forget functor's job is to forget
+<johnw>	not remember for the sake of the free functor
+<mgomezch_>	> let n = "1." in left <$> readmaybe n <|> right <$> readmaybe n :: maybe (either int float)
+<lambdabot>	 not in scope: ‘readmaybe’not in scope: ‘readmaybe’
+<mgomezch_>	):
+<mgomezch_>	something like that might work?
+<abhillman>	tuplanolla: sounds good. in general, is parsec or attoparsec a good choice? something else?
+<johnw>	also, i don't think looking at how coyoneda works is going to clarify our thinking, because haskell adds a lot of structure that makes the underlying theory harder to see
+<johnw>	if we can work it out purely in a category theoretic context, then we can see how that maps back to haskell
+<tuplanolla>	you could define data like a = intlike int | floatlike float and use text.parsec similar to how mgomezch just did.
+<tel>	johnw yes, i don't think i need the forgetful functor to do anything besides eliminate the object mapping.
+<abhillman>	oh wow, that is nice
+<mgomezch_>	though it doesn’t actually work, as «1.» isn’t accepted by read float
+<abhillman>	mgomezch_: thanks
+<tel>	johnw i'm alright with eliminating structure from haskell, but it's going to get increasingly difficult to discuss without some kind of notation :)
+<johnw>	tel: let's just define exactly what the free and forgetful functors do in this case
+<johnw>	since the yoneda lemma assumes that 'f' is always a functor, so i'm not sure yet how the "feature" of haskell's coyoneda embedding, allowing you to use an 'f' that is not a functor, relates
+<srpx>	why is there no "^/^" and "^*^" operators on linear? should i just use "/" instead, despite it using the num instance for vectors which you suggested me to avoid?
+<tel>	johnw: a functor is a pair (f_o, f_a), forget (f_o, f_a) = f_o
+<johnw>	ok
+<tel>	free f_o = (o_new, a_new)
+<abhillman>	thanks all for the help
+<tel>	o_new obj = (f_o, id_obj)
+<tel>	rather
+<tel>	(f_o obj, id_obj)
+<tel>	a_new map = \(fobj, map) = (fobj, f . map)
+<johnw>	where is 'f' from?
+<tel>	sorry
+<tel>	a_new f = \(fobj, map) = (fobj, f . map)
+<johnw>	so, f_a is hom(f_o, -), right?
+<johnw>	sorry, have to run
+<johnw>	i'll be back on later
+<tel>	alright, i'll keep thinking on it
+<tel>	cheers :)
+<pamelloes>	is there a way to convert an instance of data.bits into an integer?
+<lokathor>	any instance?
+<pamelloes>	mhm
+<pamelloes>	actually, let's make it finitebits
+<lokathor>	well normally i'd say fromintegral... but for bits
+<lokathor>	well you could start with 0 and copy in the bits one at a time
+<pamelloes>	hm, looks like that's my only option
+<jasonkuhrt>	hi, i would like to know if haskell supports delimited continuations and why/why not? and, by "delimited continuations" i mean http://www.cs.indiana.edu/~sabry/papers/yield.pdf
+<axman6>	jasonkuhrt: i'm no expert, but i believe the use of laziness means that such mechanisms aren't really needed. lazy lists can be used for many of the operations you'd use yield for in other languages, and for the rest, there's various streaming io libraries (pipes, conduit etc.)
+<geekosaur>	http://hackage.haskell.org/package/cc-delcont
+<geekosaur>	?
+<lokathor>	pamelloes, prelude data.foldable data.bits> let finitebitstointeger x = foldl' (\int bitnum
+<lokathor>	 -> if (testbit x bitnum) then (setbit int bitnum) else int ) 0 [0..(finitebitsi
+<lokathor>	ze x)]
+<lokathor>	whoops, pasted in the newlines.. but you get the idea i think

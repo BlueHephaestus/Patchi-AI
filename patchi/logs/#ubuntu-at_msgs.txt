@@ -1,0 +1,20 @@
+<nrwlion> moin mootbot-at
+<daniel0108> hi guntbert
+<guntbert> hi daniel0108, hab grad dein memo gesehen, ich gehs an sobald ich zeit hab (heute eher nicht mehr) :)
+<daniel0108> guntbert: okay :)
+<guntbert> daniel0108: äh -- im wiki-text- : "du" oder "sie" ?
+<daniel0108> nimm sie, ist höflicher ;)
+<daniel0108> guntbert: ^
+<guntbert> ok
+<guntbert> daniel0108: möchtest du die wiki-seite abonnieren? wär vielleicht nicht schlecht (gegen vandalismus und blödheit) :-)
+<daniel0108> werd ich machen, guntbert :)
+<guntbert> nur net genau jetzt, server-probleme?
+<daniel0108> wieso?
+<daniel0108> wenn so ein error kommt beim wiki, einfach doppelt auf den speichern button drücken ;)
+<daniel0108> 1 request geht manchmal verloren
+<daniel0108> is ein bug
+<guntbert> daniel0108: geht net - die seite "internal server error" hat keinen button :-))
+<daniel0108> guntbert: ich hab gemeint, bevor er error kommt :p und immer deinen edit vorher kopieren
+<guntbert> daniel0108: danke für die erinnerung :-)  - btw ich hab in deinem text den satz über englisch abgeändert - ich glaub so sagt er besser was gemeint ist :-)
+<daniel0108> okay, danke :)
+<daniel0108> du darfst auch das formatting ein bisschen ändern, zum beispiel ein paar worte fett machen, wie du es beim deutschen text gemacht hast :)

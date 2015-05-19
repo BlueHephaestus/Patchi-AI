@@ -1,0 +1,186 @@
+**** BEGIN LOGGING AT Mon May 18 19:19:59 2015
+
+*	Now talking on #mysql
+*	Topic for #mysql is: MySQL help channel || 5.6.24 GA, 5.5.43, 5.1.73 || Register with NickServ to talk: goo.gl/sRG7M || pastie.org or sqlfiddle.com || Guidelines goo.gl/nbojn || How to use the bot: goo.gl/Hqgjb || We don't * PMA -> #phpmyadmin || MySQL Workbench help -> #workbench || MySQL Cluster -> #mysql-ndb || We help you find solutions, not give answers || Humor mandatory
+*	Topic for #mysql set by raymond!~rderoo@unaffiliated/rainmkr (Sat May 02 00:22:52 2015)
+<DarkElement>	Hey guys how can I view and make databases, tables, etc. With a program, rather than just the command prompt?
+<aradapilot>	!t DarkElement client
+<aradapilot>	hm
+<DarkElement>	I can use ubuntu or windows, just kinda new to this and hoping to use what I saw a friend use
+<aradapilot>	there's no client one?
+<aradapilot>	DarkElement: navicat, sequelpro, workbench, some others
+<aradapilot>	there are quite a few options
+<DarkElement>	Alrighty
+<DarkElement>	Easier on linux right
+<aradapilot>	try a couple and pick whichever you like best
+<aradapilot>	most are cross-platform
+<DarkElement>	aradapilot, I will do just this, thank you
+<DarkElement>	I think I'll use Ubuntu anyway
+<DarkElement>	XD
+<aradapilot>	cool, start with those.  i think sequelpro might be mac only, the other two are all platforms
+<nesoi>	oops, hardware problem
+<nesoi>	so what was the obvious solution to my mysql CLI login issue? :)
+<aradapilot>	mysql -h hostname/ip
+*	aradapilot steals mgriffin's thunder
+<nesoi>	-h and then -u then -p?
+<DarkElement>	aradapilot, is navicat lite alright?
+<DarkElement>	aradapilot, also, how will we know there was lightning now?
+<nesoi>	worked!
+<nesoi>	thanks!
+<DarkElement>	*lite -> free trial
+<DarkElement>	Also unsure which is better for all of this, Ubuntu or windows 7. Opinions?
+<mgriffin>	aradapilot++
+<aradapilot>	DarkElement: yeah go for the free trial.  if you like it, they have a $15 version that has the most useful stuff.
+<aradapilot>	I use ubuntu on my desktop and have a mac laptop
+<DarkElement>	aradapilot, alright, but which OS woudl you recommend for it
+<DarkElement>	Oh.
+<DarkElement>	So you haven't tried it in windows? how is it on ubuntu?
+<aradapilot>	works fine
+<aradapilot>	yeah, i don't have a windows machine
+<DarkElement>	Alright
+<DarkElement>	I've been liking linux more and more anyways
+<DarkElement>	XD
+<aradapilot>	welcome to the club!
+<DarkElement>	Coming closer and closer to fully booting into and installing Ubuntu on my currently Windows 7 laptop. Just VMWare for now, howver.
+<DarkElement>	*installing Ubuntu and never going back*
+*	ChanServ gives channel operator status to thumbs
+*	thumbs sets ban on *!*rejerson6@*.85.162.249-static.reverse.softlayer.com
+*	thumbs has kicked rejerson69 from #mysql (rejerson69)
+*	thumbs removes channel operator status from thumbs
+*	ChanServ gives channel operator status to thumbs
+*	thumbs removes ban on *!*rejerson6@*.85.162.249-static.reverse.softlayer.com
+*	thumbs sets ban on *!*@*.85.162.249-static.reverse.softlayer.com
+*	thumbs removes channel operator status from thumbs
+<mgriffin>	thumbs++
+<nesoi>	does anyone here know if snapshots are guaranteed to be transaction-consistent?
+<nesoi>	and have a reference? :)
+<ss23>	What kind of snapshots?
+<nesoi>	AWS RDS MySQL snapshots actually ss23
+<nesoi>	but snapshots in general
+<nesoi>	I haven't found any reference to how transaction safe snapshots are so far
+<mgriffin>	anything that isnt commited will be rolled back on startup
+<nesoi>	mgriffin:  so you're saying that they do end up consistent?
+<mgriffin>	nesoi: i would check with your provider but they would be pretty worthless otherwise
+<nesoi>	heh. True, but I never assume anything will work as expected unless someone says it really does. And even then I'm not 100% certain.
+<mgriffin>	well ask your provider and get it in writing (or read the docs they have written and have a lawyer double check everything)
+<nesoi>	mgriffin:  :)
+<mgriffin>	"snapshots" in general can be either consistent or inconsistent, depending on your data and your method
+<mgriffin>	blindly creating an lvm/xfs snapshot should be safe if you don't care about non-transactional tables
+<nesoi>	interesting. what do you mean about "non-transactional tables'?
+<nesoi>	mean by
+<mgriffin>	!t nesoi myisam
+<ubiquity_bot>	nesoi: a malfunctioning form of blackhole engine that sometimes accidentally stores data.
+<nesoi>	oh I see
+<nesoi>	but if we're using InnoDB that's not an issue, you're saying.
+<mgriffin>	maybe. do you care about binary log position?
+<mgriffin>	also, if you are using innodb, maybe you want xtrabackup not "snapshots" if snapshots are really expensive in your case
+<mgriffin>	https://www.percona.com/blog/2013/07/09/lvm-read-performance-during-snapshots/
+<mgriffin>	(does not apply to thin provisioning)
+<nesoi>	I'm not sure if I do or not in this case. If we restore from a snapshot and set up replication subsequently it probably doesn't matter?
+<mgriffin>	not sure what you are asking.
+<nesoi>	maybe I'm not either! How about: when would one care about binary log position with regard to snapshots?
+<mgriffin>	pitr or new slaves of this server
+<mgriffin>	(using existing backups)
+<nesoi>	so let's say we have a replicated server
+<nesoi>	and everything fails totally
+<nesoi>	and we're left with a snapshot
+<nesoi>	and have to bring it all back from that
+<nesoi>	are there any issues there that I should think about?
+<mgriffin>	pitr
+<nesoi>	other than that I'm not seeing a case
+<nesoi>	pitr?
+<mgriffin>	yes, the thing i keep talking about
+<nesoi>	:)
+<nesoi>	I see
+<nesoi>	so what do you do if you care about that?
+<mgriffin>	usually you hold FLUSH TABLES WITH READ LOCK, acquire the binary log position, create the snapshot, and finally release the lock
+<mgriffin>	rds might be something different'
+<nesoi>	ah
+<nesoi>	I think this is dong what your'e suggesting https://github.com/alestic/ec2-consistent-snapshot
+<nesoi>	hm. or maybe not
+<mgriffin>	that is not rds.
+<nesoi>	oops, right. Maybe worth asking AWS support about.
+<mgriffin>	nesoi: start with docs http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIT.html
+<nesoi>	good idea
+<nesoi>	right, that's with backups
+<nesoi>	but this is a different use case
+<mgriffin>	i have no idea sorry.
+<nesoi>	thanks though!
+<JJjack>	what's the best approach to creating a report from multple table count and date range?
+<aradapilot>	JJjack: a query!
+<aradapilot>	we're going to need a bit more info than that
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Mon May 18 20:45:30 2015
+
+**** BEGIN LOGGING AT Mon May 18 21:17:08 2015
+
+*	Now talking on #mysql
+*	Topic for #mysql is: MySQL help channel || 5.6.24 GA, 5.5.43, 5.1.73 || Register with NickServ to talk: goo.gl/sRG7M || pastie.org or sqlfiddle.com || Guidelines goo.gl/nbojn || How to use the bot: goo.gl/Hqgjb || We don't * PMA -> #phpmyadmin || MySQL Workbench help -> #workbench || MySQL Cluster -> #mysql-ndb || We help you find solutions, not give answers || Humor mandatory
+*	Topic for #mysql set by raymond!~rderoo@unaffiliated/rainmkr (Sat May 02 00:22:52 2015)
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Mon May 18 21:17:08 2015
+
+**** BEGIN LOGGING AT Mon May 18 21:17:31 2015
+
+*	Now talking on #mysql
+*	Topic for #mysql is: MySQL help channel || 5.6.24 GA, 5.5.43, 5.1.73 || Register with NickServ to talk: goo.gl/sRG7M || pastie.org or sqlfiddle.com || Guidelines goo.gl/nbojn || How to use the bot: goo.gl/Hqgjb || We don't * PMA -> #phpmyadmin || MySQL Workbench help -> #workbench || MySQL Cluster -> #mysql-ndb || We help you find solutions, not give answers || Humor mandatory
+*	Topic for #mysql set by raymond!~rderoo@unaffiliated/rainmkr (Sat May 02 00:22:52 2015)
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Mon May 18 21:17:32 2015
+
+**** BEGIN LOGGING AT Mon May 18 21:17:56 2015
+
+*	Now talking on #mysql
+*	Topic for #mysql is: MySQL help channel || 5.6.24 GA, 5.5.43, 5.1.73 || Register with NickServ to talk: goo.gl/sRG7M || pastie.org or sqlfiddle.com || Guidelines goo.gl/nbojn || How to use the bot: goo.gl/Hqgjb || We don't * PMA -> #phpmyadmin || MySQL Workbench help -> #workbench || MySQL Cluster -> #mysql-ndb || We help you find solutions, not give answers || Humor mandatory
+*	Topic for #mysql set by raymond!~rderoo@unaffiliated/rainmkr (Sat May 02 00:22:52 2015)
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Mon May 18 21:17:57 2015
+
+**** BEGIN LOGGING AT Mon May 18 21:18:21 2015
+
+*	Now talking on #mysql
+*	Topic for #mysql is: MySQL help channel || 5.6.24 GA, 5.5.43, 5.1.73 || Register with NickServ to talk: goo.gl/sRG7M || pastie.org or sqlfiddle.com || Guidelines goo.gl/nbojn || How to use the bot: goo.gl/Hqgjb || We don't * PMA -> #phpmyadmin || MySQL Workbench help -> #workbench || MySQL Cluster -> #mysql-ndb || We help you find solutions, not give answers || Humor mandatory
+*	Topic for #mysql set by raymond!~rderoo@unaffiliated/rainmkr (Sat May 02 00:22:52 2015)
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Mon May 18 21:18:22 2015
+
+**** BEGIN LOGGING AT Mon May 18 21:18:49 2015
+
+*	Now talking on #mysql
+*	Topic for #mysql is: MySQL help channel || 5.6.24 GA, 5.5.43, 5.1.73 || Register with NickServ to talk: goo.gl/sRG7M || pastie.org or sqlfiddle.com || Guidelines goo.gl/nbojn || How to use the bot: goo.gl/Hqgjb || We don't * PMA -> #phpmyadmin || MySQL Workbench help -> #workbench || MySQL Cluster -> #mysql-ndb || We help you find solutions, not give answers || Humor mandatory
+*	Topic for #mysql set by raymond!~rderoo@unaffiliated/rainmkr (Sat May 02 00:22:52 2015)
+*	Disconnected (Remote host closed socket)
+**** ENDING LOGGING AT Mon May 18 21:18:50 2015
+
+**** BEGIN LOGGING AT Mon May 18 21:19:14 2015
+
+*	Now talking on #mysql
+*	Topic for #mysql is: MySQL help channel || 5.6.24 GA, 5.5.43, 5.1.73 || Register with NickServ to talk: goo.gl/sRG7M || pastie.org or sqlfiddle.com || Guidelines goo.gl/nbojn || How to use the bot: goo.gl/Hqgjb || We don't * PMA -> #phpmyadmin || MySQL Workbench help -> #workbench || MySQL Cluster -> #mysql-ndb || We help you find solutions, not give answers || Humor mandatory
+*	Topic for #mysql set by raymond!~rderoo@unaffiliated/rainmkr (Sat May 02 00:22:52 2015)
+*	Disconnected (Remote host closed socket)
+**** ENDING LOGGING AT Mon May 18 21:19:15 2015
+
+**** BEGIN LOGGING AT Mon May 18 21:19:39 2015
+
+*	Now talking on #mysql
+*	Topic for #mysql is: MySQL help channel || 5.6.24 GA, 5.5.43, 5.1.73 || Register with NickServ to talk: goo.gl/sRG7M || pastie.org or sqlfiddle.com || Guidelines goo.gl/nbojn || How to use the bot: goo.gl/Hqgjb || We don't * PMA -> #phpmyadmin || MySQL Workbench help -> #workbench || MySQL Cluster -> #mysql-ndb || We help you find solutions, not give answers || Humor mandatory
+*	Topic for #mysql set by raymond!~rderoo@unaffiliated/rainmkr (Sat May 02 00:22:52 2015)
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Mon May 18 21:19:40 2015
+
+**** BEGIN LOGGING AT Mon May 18 21:20:03 2015
+
+*	Now talking on #mysql
+*	Topic for #mysql is: MySQL help channel || 5.6.24 GA, 5.5.43, 5.1.73 || Register with NickServ to talk: goo.gl/sRG7M || pastie.org or sqlfiddle.com || Guidelines goo.gl/nbojn || How to use the bot: goo.gl/Hqgjb || We don't * PMA -> #phpmyadmin || MySQL Workbench help -> #workbench || MySQL Cluster -> #mysql-ndb || We help you find solutions, not give answers || Humor mandatory
+*	Topic for #mysql set by raymond!~rderoo@unaffiliated/rainmkr (Sat May 02 00:22:52 2015)
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Mon May 18 21:20:03 2015
+
+**** BEGIN LOGGING AT Mon May 18 21:20:29 2015
+
+*	Now talking on #mysql
+*	Topic for #mysql is: MySQL help channel || 5.6.24 GA, 5.5.43, 5.1.73 || Register with NickServ to talk: goo.gl/sRG7M || pastie.org or sqlfiddle.com || Guidelines goo.gl/nbojn || How to use the bot: goo.gl/Hqgjb || We don't * PMA -> #phpmyadmin || MySQL Workbench help -> #workbench || MySQL Cluster -> #mysql-ndb || We help you find solutions, not give answers || Humor mandatory
+*	Topic for #mysql set by raymond!~rderoo@unaffiliated/rainmkr (Sat May 02 00:22:52 2015)
+*	Disconnected (Connection reset by peer)
+**** ENDING LOGGING AT Mon May 18 21:20:30 2015
+

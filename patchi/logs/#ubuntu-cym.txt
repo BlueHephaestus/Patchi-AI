@@ -1,0 +1,15 @@
+[00:45] <Painwithin> hello, i was wondering if this is where i could ask a question about this strange driver issue im having
+[00:46] <Painwithin> im trying to figure out how to get info a safe mode type thing in ubuntu 10.04
+[00:47] <ianto> Painwithin: You can ask and I'll try to help but I can't guarantee a good answer ;)
+[00:48] <Painwithin> ok so basicly what happend was, sometime this morning the PC randomly froze, and now it freezes during boot
+[00:48] <ianto> Painwithin: What would you like done?
+[00:48] <Painwithin> but after some research i discovered its a driver issue
+[00:49] <Painwithin> im wonder, how can i fix the driver problem if i cant get into ubuntu?
+[00:50] <ianto> Painwithin: https://help.ubuntu.com/community/Grub2#Command%20Line%20and%20Rescue%20Mode
+[00:50] <ianto> That will help you boot into command line / rescue mode
+[00:50] <ianto> Do you have any additional information for what you want to do afterwards?
+[00:51] <Painwithin> um, nope i think i'll be good after this point
+[00:51] <Painwithin> thank a bunch
+[00:51] <Painwithin> i couldnt find anything, probly using the wrong keywords when im searching
+[00:52] <ianto> Best of luck with it then, any additional problems just feel free to ask
+[00:52] <Painwithin> ok, thanks again
